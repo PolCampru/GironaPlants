@@ -1,0 +1,24 @@
+{
+  "nabvar": [
+    {
+      "name": "Accueil",
+      "url": "/"
+    },
+    {
+      "name": "Produits",
+      "url": "/products"
+    },
+    {
+      "name": "À propos de nous",
+      "url": "/about-us"
+    },
+    {
+      "name": "Catalogues",
+      "url": "/catalogs"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "navbar": [
+    { "name": "Inici", "url": "/" },
+    { "name": "Productes", "url": "/products" },
+    { "name": "Nosaltres", "url": "/about-us" },
+    { "name": "Catàlegs", "url": "/catalogs" },
+    { "name": "Contacte", "url": "/contact" }
+  ],
+  "logo": "LOGO GIRONAPLANTS",
+  "cart": "Carret"
+}
