@@ -12,10 +12,13 @@ import {
   LanguageSelector,
   CartIcon,
 } from "./Navbar.style";
+import { getLanguages } from "@/lib/languages";
 
 const Navbar = () => {
   const { t, i18n, ready } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+
+  const languages = getLanguages();
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -54,7 +57,7 @@ const Navbar = () => {
         <LanguageSelector>
           <span>{selectedLanguage.toUpperCase()}</span>
           <ul>
-            {["ca", "en", "es", "fr"].map((lang) => (
+            {languages.map((lang) => (
               <li key={lang} onClick={() => changeLanguage(lang)}>
                 {lang.toUpperCase()}
               </li>
