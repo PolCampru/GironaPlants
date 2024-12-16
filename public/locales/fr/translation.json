@@ -8,7 +8,7 @@
       { "name": "Contact", "url": "/fr/contact" }
     ],
     "budget": {
-      "src": "/images/listIcon.png",
+      "src": "/images/listIcon.svg",
       "alt": "Icône de liste",
       "title": "Budget"
     }

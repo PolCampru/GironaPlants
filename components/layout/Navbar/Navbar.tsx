@@ -24,7 +24,7 @@ const Navbar = () => {
     returnObjects: true,
   }) as { name: string; url: string }[];
 
-  const LanguageSelectorData = t("navbar.budget", {
+  const LanguageSelectorData = t("navbar.budgetAndLanguage", {
     returnObjects: true,
   }) as { [key: string]: string };
 

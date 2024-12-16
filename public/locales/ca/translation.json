@@ -7,10 +7,12 @@
       { "name": "Ofertes", "url": "/ca/offers" },
       { "name": "Contacte", "url": "/ca/contact" }
     ],
-    "budget": {
-      "src": "/images/listIcon.png",
-      "alt": "Icona de llista",
-      "title": "Pressupost"
+    "budgetAndLanguage": {
+      "srcList": "/images/listIcon.svg",
+      "altList": "Icona de llista",
+      "title": "Pressupost",
+      "srcVector": "/images/vectorIcon.svg",
+      "altVector": "Icona de vector"
     }
   },
   "logo": {
