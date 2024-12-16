@@ -1,11 +1,11 @@
 {
   "navbar": {
     "paths": [
-      { "name": "Inici", "url": "/" },
-      { "name": "Productes", "url": "/products" },
-      { "name": "Nosaltres", "url": "/about-us" },
-      { "name": "Catàlegs", "url": "/catalogs" },
-      { "name": "Contacte", "url": "/contact" }
+      { "name": "Inici", "url": "/ca" },
+      { "name": "Productes", "url": "/ca/products" },
+      { "name": "Nosaltres", "url": "/ca/about-us" },
+      { "name": "Ofertes", "url": "/ca/offers" },
+      { "name": "Contacte", "url": "/ca/contact" }
     ],
     "budget": {
       "src": "/images/listIcon.png",

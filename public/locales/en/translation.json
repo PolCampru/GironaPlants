@@ -1,12 +1,20 @@
 {
-  "navbar": [
-    { "name": "Home", "url": "/" },
-    { "name": "Products", "url": "/products" },
-    { "name": "About Us", "url": "/about-us" },
-    { "name": "Catalogs", "url": "/catalogs" },
-    { "name": "Contact", "url": "/contact" }
-  ],
-  "logo": "/images/logo.png",
-  "logoAlt": "Company Logo",
-  "cart": "Cart"
+  "navbar": {
+    "paths": [
+      { "name": "Home", "url": "/en" },
+      { "name": "Products", "url": "/en/products" },
+      { "name": "About Us", "url": "/en/about-us" },
+      { "name": "Offers", "url": "/en/offers" },
+      { "name": "Contact", "url": "/en/contact" }
+    ],
+    "budget": {
+      "src": "/images/listIcon.png",
+      "alt": "List icon",
+      "title": "Budget"
+    }
+  },
+  "logo": {
+    "src": "/images/logo.png",
+    "alt": "Company logo"
+  }
 }

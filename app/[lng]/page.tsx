@@ -5,5 +5,5 @@ export default async function Home({ params }: { params: { lng: string } }) {
   // const { data: pageData } = await axios.get(
   //   `${process.env.STRAPI_API_URL}/pages?locale=${lng}`
   // );
-  return <main>Hello World! {lng}</main>;
+  return <main style={{ paddingTop: "100px" }}>Hello World! {lng}</main>;
 }
