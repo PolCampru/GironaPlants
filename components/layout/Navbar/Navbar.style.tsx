@@ -34,14 +34,15 @@ export const MenuContainer = styled.div`
 export const NavItem = styled(motion.div)<{ selected: boolean }>`
   position: relative;
   margin: 0 0.5rem;
+  z-index: 10;
 
   a {
+    position: relative;
     color: ${(props) => props.theme.colors.dark};
     cursor: pointer;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     display: inline-block;
-    position: relative;
     transition: background-color 0.3s;
 
     &:hover {
@@ -54,7 +55,6 @@ export const NavItem = styled(motion.div)<{ selected: boolean }>`
     `
     a {
       color: ${props.theme.colors.white};
-      z-index: 150;
     }
   `}
 `;
@@ -67,7 +67,7 @@ export const SelectedBackground = styled(motion.div)`
   height: 100%;
   border-radius: 20px;
   background-color: ${(props) => props.theme.colors.brandGreen};
-  z-index: 110;
+  z-index: -1;
 `;
 
 export const RightContainer = styled.div`
