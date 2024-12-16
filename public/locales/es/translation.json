@@ -7,10 +7,12 @@
       { "name": "Ofertas", "url": "/es/offers" },
       { "name": "Contacto", "url": "/es/contact" }
     ],
-    "budget": {
-      "src": "/images/listIcon.svg",
-      "alt": "Icono de lista",
-      "title": "Presupuesto"
+    "budgetAndLanguage": {
+      "srcList": "/images/listIcon.svg",
+      "altList": "Icono de lista",
+      "title": "Presupuesto",
+      "srcVector": "/images/vectorIcon.svg",
+      "altVector": "Icono de vector"
     }
   },
   "logo": {

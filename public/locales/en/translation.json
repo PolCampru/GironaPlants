@@ -7,14 +7,16 @@
       { "name": "Offers", "url": "/en/offers" },
       { "name": "Contact", "url": "/en/contact" }
     ],
-    "budget": {
-      "src": "/images/listIcon.svg",
-      "alt": "List icon",
-      "title": "Budget"
+    "budgetAndLanguage": {
+      "srcList": "/images/listIcon.svg",
+      "altList": "List Icon",
+      "title": "Budget",
+      "srcVector": "/images/vectorIcon.svg",
+      "altVector": "Vector Icon"
     }
   },
   "logo": {
     "src": "/images/logo.png",
-    "alt": "Company logo"
+    "alt": "Company Logo"
   }
 }

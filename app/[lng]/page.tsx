@@ -1,4 +1,3 @@
-import Loader from "@/components/ui/Loader/Loader";
 import axios from "axios";
 
 export default async function Home({ params }: { params: { lng: string } }) {

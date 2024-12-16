@@ -3,14 +3,16 @@
     "paths": [
       { "name": "Accueil", "url": "/fr" },
       { "name": "Produits", "url": "/fr/products" },
-      { "name": "À propos", "url": "/fr/about-us" },
+      { "name": "À propos de nous", "url": "/fr/about-us" },
       { "name": "Offres", "url": "/fr/offers" },
       { "name": "Contact", "url": "/fr/contact" }
     ],
-    "budget": {
-      "src": "/images/listIcon.svg",
-      "alt": "Icône de liste",
-      "title": "Budget"
+    "budgetAndLanguage": {
+      "srcList": "/images/listIcon.svg",
+      "altList": "Icône de liste",
+      "title": "Budget",
+      "srcVector": "/images/vectorIcon.svg",
+      "altVector": "Icône de vecteur"
     }
   },
   "logo": {
