@@ -1,24 +1,12 @@
 {
-  "nabvar": [
-    {
-      "name": "Inicio",
-      "url": "/"
-    },
-    {
-      "name": "Productos",
-      "url": "/products"
-    },
-    {
-      "name": "Nosotros",
-      "url": "/about-us"
-    },
-    {
-      "name": "Catálogos",
-      "url": "/catalogs"
-    },
-    {
-      "name": "Contacto",
-      "url": "/contact"
-    }
-  ]
+  "navbar": [
+    { "name": "Inicio", "url": "/" },
+    { "name": "Productos", "url": "/products" },
+    { "name": "Nosotros", "url": "/about-us" },
+    { "name": "Catálogos", "url": "/catalogs" },
+    { "name": "Contacto", "url": "/contact" }
+  ],
+  "logo": "/images/logo.png",
+  "logoAlt": "Logo de la empresa",
+  "cart": "Carrito"
 }

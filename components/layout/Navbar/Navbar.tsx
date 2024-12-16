@@ -1,69 +1,49 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
 import {
   NavbarWrapper,
   LogoContainer,
   MenuContainer,
   NavItem,
   RightContainer,
-  LanguageSelector,
-  CartIcon,
 } from "./Navbar.style";
-import { getLanguages } from "@/lib/languages";
+import LanguageSelector from "@/components/specific/LanguageSelector/LanguageSelector";
 
 const Navbar = () => {
   const { t, i18n, ready } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
-  const languages = getLanguages();
-
-  const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-    setSelectedLanguage(lang);
-  };
-
-  const navbarItems = t("navbar", {
+  const navbarItems = t("navbar.paths", {
     returnObjects: true,
   }) as { name: string; url: string }[];
+
+  const LanguageSelectorData = t("navbar.budget", {
+    returnObjects: true,
+  }) as { [key: string]: string };
 
   if (!ready) return <div>Loading...</div>;
 
   return (
     <NavbarWrapper>
       <LogoContainer>
-        <h1>{t("logo")}</h1>
+        <img src={t("logo.src") as string} alt={t("logo.alt")} />
       </LogoContainer>
 
       <MenuContainer>
-        {navbarItems.map((item, index) => (
-          <NavItem key={index} href={item.url}>
+        {navbarItems.map((item) => (
+          <NavItem
+            key={item.name}
+            href={item.url}
+            selected={window.location.pathname === item.url}
+          >
             {item.name}
           </NavItem>
         ))}
       </MenuContainer>
 
       <RightContainer>
-        <CartIcon>
-          <Image
-            src="/images/cart-icon.svg"
-            alt={t("cart")}
-            width={20}
-            height={20}
-          />
-        </CartIcon>
-        <LanguageSelector>
-          <span>{selectedLanguage.toUpperCase()}</span>
-          <ul>
-            {languages.map((lang) => (
-              <li key={lang} onClick={() => changeLanguage(lang)}>
-                {lang.toUpperCase()}
-              </li>
-            ))}
-          </ul>
-        </LanguageSelector>
+        <LanguageSelector i18n={i18n} data={LanguageSelectorData} />
       </RightContainer>
     </NavbarWrapper>
   );

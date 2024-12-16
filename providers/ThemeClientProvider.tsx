@@ -1,5 +1,6 @@
 "use client";
 
+import "@/lib/i18n";
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 import theme from "@/lib/theme";

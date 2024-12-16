@@ -5,7 +5,6 @@ import ThemeClientProvider from "@/providers/ThemeClientProvider";
 import { Inter } from "next/font/google";
 import { getLanguages } from "@/lib/languages";
 import * as React from "react";
-import "@/lib/i18n";
 
 interface RootLayoutProps {
   children: ReactNode;

@@ -1,11 +1,20 @@
 {
-  "navbar": [
-    { "name": "Inici", "url": "/" },
-    { "name": "Productes", "url": "/products" },
-    { "name": "Nosaltres", "url": "/about-us" },
-    { "name": "Catàlegs", "url": "/catalogs" },
-    { "name": "Contacte", "url": "/contact" }
-  ],
-  "logo": "LOGO GIRONAPLANTS",
-  "cart": "Carret"
+  "navbar": {
+    "paths": [
+      { "name": "Inici", "url": "/" },
+      { "name": "Productes", "url": "/products" },
+      { "name": "Nosaltres", "url": "/about-us" },
+      { "name": "Catàlegs", "url": "/catalogs" },
+      { "name": "Contacte", "url": "/contact" }
+    ],
+    "budget": {
+      "src": "/images/listIcon.png",
+      "alt": "Icona de llista",
+      "title": "Pressupost"
+    }
+  },
+  "logo": {
+    "src": "/images/logo.png",
+    "alt": "Logo de l'empresa"
+  }
 }
