@@ -14,6 +14,7 @@ import BudgetAndLanguage from "@/components/specific/LanguageSelector/BudgetAndL
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Loader from "@/components/ui/Loader/Loader";
 
 const Navbar = () => {
   const { t, i18n, ready } = useTranslation();
@@ -27,7 +28,12 @@ const Navbar = () => {
     returnObjects: true,
   }) as { [key: string]: string };
 
-  if (!ready) return <div>Loading...</div>;
+  if (!ready)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
 
   const navbarVariants = {
     hidden: { y: -50, opacity: 0 },
