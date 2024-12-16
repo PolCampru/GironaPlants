@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar/Navbar";
+import Footer from "@/components/layout/Footer/Footer";
 import ThemeClientProvider from "@/providers/ThemeClientProvider";
 import { Inter } from "next/font/google";
 import { getLanguages } from "@/lib/languages";
@@ -30,6 +31,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
         <ThemeClientProvider>
           <Navbar />
           {children}
+          <Footer />
         </ThemeClientProvider>
       </body>
     </html>

@@ -10,6 +10,7 @@ const theme = {
     moss: "rgba(10, 42, 53, 1)",
     dark: "rgba(32, 23, 22, 1)",
     white: "rgba(255, 255, 255, 1)",
+    footerBlur: "rgba(212, 225, 150, 1)",
   },
 };
 
