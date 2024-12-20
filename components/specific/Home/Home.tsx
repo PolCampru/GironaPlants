@@ -1,5 +1,5 @@
 "use client";
-import Checkbox from "@/components/ui/CheckBox/CheckBox";
+import { InputText } from "@/components/ui/Form/InputText/InputText";
 import React from "react";
 
 const Home = () => {
@@ -10,12 +10,7 @@ const Home = () => {
     <div>
       <h1>Welcome to Girona Plants</h1>
       <p>Your one-stop shop for all your plant needs!</p>
-      <Checkbox
-        checked={true}
-        onChange={() => handleChange()}
-        label="Container"
-        error={true}
-      ></Checkbox>
+      <InputText label="Surname" value="" name="surname" />
     </div>
   );
 };
