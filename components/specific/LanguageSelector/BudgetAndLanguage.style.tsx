@@ -4,18 +4,20 @@ import { motion } from "framer-motion";
 export const BudgetAndLanguageWrapper = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.creamLight};
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
+
+  padding: 0.25rem 0.3rem;
+  border-radius: 6.25rem;
 `;
 
 export const BudgetContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  background-color: ${(props) => props.theme.colors.creamLight};
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
+  gap: 0.25rem;
+
+  padding: 0.8125rem 0.75rem;
+
+  border-radius: 6.25rem;
+
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 
@@ -38,26 +40,28 @@ export const BudgetContainer = styled.div`
 
   p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: inherit;
   }
 `;
 
 export const Line = styled.div`
-  height: 1.5rem;
-  width: 3px;
+  height: 2.5rem;
+  width: 0.1rem;
   background-color: ${(props) => props.theme.colors.cream};
   margin: 0 1rem;
 `;
 
-export const LanguageContainer = styled(motion.div)<{ isOpen: boolean }>`
+export const LanguageContainer = styled.div``;
+
+export const LanguageButton = styled(motion.div)<{ isOpen: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 6.25rem;
   padding: 0.5rem 1rem;
   background-color: ${(props) => props.theme.colors.creamLight};
   transition: background-color 0.3s, color 0.3s;

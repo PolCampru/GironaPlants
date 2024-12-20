@@ -3,7 +3,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { FooterWrapper, Logo, FooterImage } from "./Footer.style";
+import {
+  FooterWrapper,
+  HorizontalLine,
+  ContactContainer,
+  Logo,
+  InfoContainer,
+  ImageFooter,
+} from "./Footer.style";
 
 const footerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -28,19 +35,6 @@ const itemVariants = {
   },
 };
 
-const imageVariants = {
-  hidden: { opacity: 0, x: 20 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-  hover: {
-    scale: 1.05,
-    transition: { duration: 0.3, ease: "easeInOut" },
-  },
-};
-
 const logoVariants = {
   hover: {
     scale: 1.05,
@@ -48,21 +42,37 @@ const logoVariants = {
   },
 };
 
-const blurVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 0.3,
-    y: 0,
-    transition: { duration: 1.2, ease: "easeOut" },
-  },
-};
-
 const Footer = () => {
   const { t } = useTranslation();
+
   const data = t("footer", { returnObjects: true }) as {
-    [key: string]: any;
+    contact?: {
+      email?: string;
+      phone?: string;
+      title?: string;
+      rights?: string;
+      privacyPolicy?: string;
+      termsOfService?: string;
+    };
   };
-  const logo = t("logo", { returnObjects: true }) as { [key: string]: string };
+  const logo = t("logo", { returnObjects: true }) as {
+    src: string;
+    alt: string;
+  };
+
+  const contact = data.contact || {};
+
+  const mailTo = () => {
+    if (contact.email) {
+      window.location.href = `mailto:${contact.email}`;
+    }
+  };
+
+  const callPhone = () => {
+    if (contact.phone) {
+      window.location.href = `tel:${contact.phone}`;
+    }
+  };
 
   return (
     <motion.footer
@@ -72,28 +82,78 @@ const Footer = () => {
       style={{ position: "relative" }}
     >
       <FooterWrapper>
-        <Logo as={motion.div} whileHover="hover" variants={logoVariants}>
-          <img
-            src={logo.src}
-            alt={logo.alt}
-            style={{ width: "100%", height: "100%" }}
+        <ContactContainer>
+          <Logo>
+            {logo.src && (
+              <motion.img
+                variants={logoVariants}
+                whileHover="hover"
+                src={logo.src}
+                alt={logo.alt || "Logo"}
+                width="100%"
+                height="100%"
+              />
+            )}
+          </Logo>
+          {contact.title && (
+            <motion.p variants={itemVariants}>{contact.title}</motion.p>
+          )}
+          {contact.phone && (
+            <motion.p
+              onClick={callPhone}
+              variants={itemVariants}
+              style={{ cursor: "pointer" }}
+            >
+              {contact.phone}
+            </motion.p>
+          )}
+          {contact.email && (
+            <motion.p
+              onClick={mailTo}
+              variants={itemVariants}
+              style={{ cursor: "pointer" }}
+            >
+              {contact.email}
+            </motion.p>
+          )}
+        </ContactContainer>
+        <HorizontalLine />
+        <InfoContainer>
+          {contact.rights && (
+            <motion.p variants={itemVariants}>
+              © {new Date().getFullYear()} {contact.rights}
+            </motion.p>
+          )}
+          <div style={{ display: "flex", gap: "1rem" }}>
+            {contact.privacyPolicy && (
+              <motion.p
+                style={{ cursor: "pointer" }}
+                variants={itemVariants}
+                onClick={() => console.log("privacy")}
+              >
+                {contact.privacyPolicy}
+              </motion.p>
+            )}
+            {contact.termsOfService && (
+              <motion.p
+                style={{ cursor: "pointer" }}
+                variants={itemVariants}
+                onClick={() => console.log("tos")}
+              >
+                {contact.termsOfService}
+              </motion.p>
+            )}
+          </div>
+        </InfoContainer>
+        <ImageFooter>
+          <motion.img
+            src="/images/imageFooter.png"
+            alt="Footer"
+            width="100%"
+            height="100%"
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
           />
-        </Logo>
-        <motion.h2 variants={itemVariants}>{data.contact?.title}:</motion.h2>
-        <motion.p variants={itemVariants}>{data.contact?.phone}</motion.p>
-        <motion.p variants={itemVariants}>{data.contact?.email}</motion.p>
-
-        <FooterImage
-          as={motion.div}
-          variants={imageVariants}
-          whileHover="hover"
-        >
-          <img
-            src={data.image?.src}
-            alt={data.image?.alt}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </FooterImage>
+        </ImageFooter>
       </FooterWrapper>
     </motion.footer>
   );

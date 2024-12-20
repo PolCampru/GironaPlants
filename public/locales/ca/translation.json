@@ -3,8 +3,9 @@
     "paths": [
       { "name": "Inici", "url": "/ca" },
       { "name": "Productes", "url": "/ca/products" },
-      { "name": "Nosaltres", "url": "/ca/about-us" },
       { "name": "Ofertes", "url": "/ca/offers" },
+      { "name": "Nosaltres", "url": "/ca/about-us" },
+      { "name": "Calàlegs", "url": "/ca/catalogues" },
       { "name": "Contacte", "url": "/ca/contact" }
     ],
     "budgetAndLanguage": {
@@ -21,10 +22,13 @@
   },
   "footer": {
     "contact": {
-      "title": "Contacte",
+      "title": "Contacte:",
       "phone": "+34 639 811 560",
       "email": "gironaplants@gironaplants.com",
-      "linkedin": "https://www.linkedin.com/in/gironaplants/"
+      "linkedin": "https://www.linkedin.com/in/gironaplants/",
+      "rights": ", Tots els drets reservats",
+      "privacyPolicy": "Política de privacitat",
+      "termsOfService": "Termes de servei"
     },
     "image": {
       "src": "/images/imageFooter.png",

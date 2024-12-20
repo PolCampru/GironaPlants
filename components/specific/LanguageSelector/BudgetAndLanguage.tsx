@@ -6,6 +6,7 @@ import {
   BudgetAndLanguageWrapper,
   Line,
   LanguageContainer,
+  LanguageButton,
   DropdownMenu,
   DropdownItem,
   BudgetDrawer,
@@ -44,8 +45,11 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
       <Line />
 
       {/* Language Selector */}
-      <div style={{ position: "relative" }} id="language-container">
-        <LanguageContainer
+      <LanguageContainer
+        style={{ position: "relative" }}
+        id="language-container"
+      >
+        <LanguageButton
           isOpen={isLanguageOpen}
           onClick={toggleLanguageMenu}
           initial={false}
@@ -60,7 +64,7 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
         >
           {currentLanguage.toUpperCase()}
           <img src={data.srcVector} alt={data.altVector} />
-        </LanguageContainer>
+        </LanguageButton>
 
         <AnimatePresence>
           {isLanguageOpen && (
@@ -84,7 +88,7 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
             </DropdownMenu>
           )}
         </AnimatePresence>
-      </div>
+      </LanguageContainer>
 
       {/* Budget Drawer */}
       <AnimatePresence>

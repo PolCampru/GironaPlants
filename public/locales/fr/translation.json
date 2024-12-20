@@ -3,8 +3,9 @@
     "paths": [
       { "name": "Accueil", "url": "/fr" },
       { "name": "Produits", "url": "/fr/products" },
-      { "name": "À propos de nous", "url": "/fr/about-us" },
       { "name": "Offres", "url": "/fr/offers" },
+      { "name": "À propos de nous", "url": "/fr/about-us" },
+      { "name": "Catalogues", "url": "/fr/catalogues" },
       { "name": "Contact", "url": "/fr/contact" }
     ],
     "budgetAndLanguage": {
@@ -18,5 +19,20 @@
   "logo": {
     "src": "/images/logo.png",
     "alt": "Logo de l'entreprise"
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact :",
+      "phone": "+34 639 811 560",
+      "email": "gironaplants@gironaplants.com",
+      "linkedin": "https://www.linkedin.com/in/gironaplants/",
+      "rights": ", Tous droits réservés",
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfService": "Conditions d'utilisation"
+    },
+    "image": {
+      "src": "/images/imageFooter.png",
+      "alt": "Image du pied de page"
+    }
   }
 }
