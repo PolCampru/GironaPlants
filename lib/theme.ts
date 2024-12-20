@@ -1,3 +1,4 @@
+// theme.ts
 const theme = {
   colors: {
     cream: "rgba(255, 253, 208, 1)",
@@ -11,6 +12,7 @@ const theme = {
     dark: "rgba(32, 23, 22, 1)",
     white: "rgba(255, 255, 255, 1)",
     footerBlur: "rgba(212, 225, 150, 1)",
+    gray: "rgba(189, 189, 189, 1)",
   },
 };
 

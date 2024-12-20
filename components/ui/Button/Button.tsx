@@ -1,10 +1,25 @@
 "use client";
 import React, { ButtonHTMLAttributes } from "react";
 import { ButtonText, Circle, Icon, StyledButton } from "./Button.style";
+import { button } from "framer-motion/client";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
+
+const buttonVariants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.3,
+      ease: "easeOut",
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 const Button = ({ children, ...props }: ButtonProps) => {
   return (
@@ -12,6 +27,9 @@ const Button = ({ children, ...props }: ButtonProps) => {
       className="learn-more"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
+      variants={buttonVariants}
+      initial="hidden"
+      animate="visible"
     >
       <Circle className="circle">
         <Icon className="icon arrow" />
