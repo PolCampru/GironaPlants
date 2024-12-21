@@ -46,11 +46,15 @@ export const FormContainer = styled.form`
 
     cursor: pointer;
 
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
     &:hover {
       background-color: ${(props) => props.theme.colors.hoverGreen2};
       color: ${(props) => props.theme.colors.dark};
+    }
+
+    &:active {
+      transform: scale(0.98);
     }
 
     color: ${(props) => props.theme.colors.white};

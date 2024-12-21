@@ -31,7 +31,6 @@ export const InputText = ({
   return (
     <WaveGroup className={`wave-group ${hasError ? "has-error" : ""}`}>
       <Component
-        required={required}
         className="input"
         name={name}
         value={value}

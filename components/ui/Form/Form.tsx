@@ -12,14 +12,18 @@ import FilterToggle from "../FilterToggle/FilterToggle";
 import FileSelector from "../FileSelector/FileSelector";
 
 const Form = () => {
-  const { handleChange, formValues, removeFile } = useForm();
-  const { t } = useTranslation();
-  const data = t("form", { returnObjects: true }) as FormType;
+  const { handleChange, formValues, removeFile, handleSubmit, data } =
+    useForm();
   return (
     <FormWrapper>
       <Title title={data.title} />
       <p className="subtitle">{data.subtitle}</p>
-      <FormContainer>
+      <FormContainer
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit(e);
+        }}
+      >
         {data.inputs.map((input) => {
           if (formValues["type"] === "particular" && input.name === "company") {
             return null;
