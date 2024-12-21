@@ -5,9 +5,12 @@ interface InputTextProps {
   label: string;
   name?: string;
   value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   required?: boolean;
   errors?: string | null;
+  as?: "input" | "textarea";
   [key: string]: any;
 }
 
@@ -18,15 +21,17 @@ export const InputText = ({
   onChange,
   required = false,
   errors = null,
+  as = "input",
   ...rest
 }: InputTextProps) => {
   const hasError = Boolean(errors);
 
+  const Component = as;
+
   return (
     <WaveGroup className={`wave-group ${hasError ? "has-error" : ""}`}>
-      <input
+      <Component
         required={required}
-        type="text"
         className="input"
         name={name}
         value={value}
@@ -42,9 +47,17 @@ export const InputText = ({
             className="label-char"
             style={{ "--index": index } as React.CSSProperties}
           >
-            {char}
+            {char === " " ? "\u00A0" : char}
           </span>
         ))}
+        {required && (
+          <span
+            className="label-char"
+            style={{ color: "orange", marginLeft: "0.2rem" }}
+          >
+            *
+          </span>
+        )}
       </label>
       {hasError && (
         <div style={{ color: "red", fontSize: "12px", marginTop: "5px" }}>

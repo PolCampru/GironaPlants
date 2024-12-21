@@ -10,7 +10,7 @@ export const NavbarWrapper = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  padding-inline: 2.44rem;
+  padding-inline: 2.4rem;
 
   position: fixed;
   top: 1rem;

@@ -7,7 +7,7 @@ export const WaveGroup = styled.div`
     font-size: 16px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 200px;
+    width: 100%;
     border: none;
     border-bottom: ${(props) => `1px solid ${props.theme.colors.gray}`};
     background: transparent;
@@ -29,8 +29,8 @@ export const WaveGroup = styled.div`
   }
 
   .label-char {
-    transition: 0.2s ease all;
-    transition-delay: calc(var(--index) * 0.05s);
+    transition: 0.1s ease all;
+    transition-delay: calc(var(--index) * 0.01s);
   }
 
   .input:focus ~ .label .label-char,
@@ -43,7 +43,7 @@ export const WaveGroup = styled.div`
   .bar {
     position: relative;
     display: block;
-    width: 200px;
+    width: 100%;
   }
 
   .bar:before,
@@ -75,5 +75,12 @@ export const WaveGroup = styled.div`
   }
   &.has-error .label .label-char {
     color: ${(props) => props.theme.colors.orange};
+  }
+
+  textarea.input {
+    resize: vertical;
+    min-height: 7rem;
+    max-height: 15rem;
+    padding: 10px 10px 10px 5px;
   }
 `;

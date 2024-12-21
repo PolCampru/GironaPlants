@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import {
   CheckboxContainer,
@@ -15,7 +15,8 @@ interface CheckboxProps {
   checked: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   error?: boolean;
-  id?: string;
+  name: string;
+  size?: "small" | "medium" | "large";
 }
 
 const shakeVariant = {
@@ -36,7 +37,8 @@ const Checkbox = ({
   checked,
   onChange,
   error = false,
-  id,
+  name,
+  size = "medium",
   ...props
 }: CheckboxProps) => (
   <CheckboxContainer
@@ -47,7 +49,7 @@ const Checkbox = ({
     animate={error ? "shake" : "animate"}
   >
     <HiddenCheckbox
-      id={id}
+      name={name}
       checked={checked}
       onChange={onChange}
       aria-invalid={error}
@@ -60,8 +62,11 @@ const Checkbox = ({
       initial={{ scale: 1 }}
       animate={{ scale: checked ? 1.2 : 1 }}
       transition={{ type: "spring", stiffness: 300 }}
+      $size={size}
     />
-    <LabelText $error={error}>{label}</LabelText>
+    <LabelText $error={error} $size={size}>
+      {label}
+    </LabelText>
   </CheckboxContainer>
 );
 

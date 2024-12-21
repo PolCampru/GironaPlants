@@ -16,3 +16,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.layout-content {
+  padding-inline: 2.4rem;
+}

@@ -64,5 +64,5 @@ export const ImageFooter = styled.div`
   position: absolute;
   bottom: 4.8rem;
   right: 5rem;
-  width: 12rem;
+  width: 10rem;
 `;

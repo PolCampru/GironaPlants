@@ -30,7 +30,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
       <body>
         <ThemeClientProvider>
           <Navbar />
-          {children}
+          <div className="layout-content">{children}</div>
           <Footer />
         </ThemeClientProvider>
       </body>

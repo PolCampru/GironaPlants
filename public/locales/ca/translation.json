@@ -20,6 +20,63 @@
     "src": "/images/logo.png",
     "alt": "Logo de l'empresa"
   },
+  "form": {
+    "title": "Formulari de sol·licitud",
+    "subtitle": "Emplena aquest breu formulari per a completar la sol·licitud de pressupost. És essencial per a oferir-te una proposta personalitzada. Completa els camps perquè puguem contactar-te i proporcionar-te la informació que necessites de manera ràpida i precisa.",
+    "submit": "Enviar",
+    "remove": "Eliminar",
+    "inputs": [
+      {
+        "type": "toggle",
+        "name": "type",
+        "options": [
+          { "label": "Empresa", "value": "company" },
+          { "label": "Particular", "value": "particular" }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Empresa",
+        "name": "company",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Nom i cognoms",
+        "name": "name"
+      },
+      {
+        "type": "text",
+        "label": "Correu electrònic",
+        "name": "email",
+        "required": true,
+        "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      },
+      {
+        "type": "text",
+        "label": "Telèfon",
+        "name": "phone",
+        "required": true,
+        "regex": "^[0-9]{9}$"
+      },
+      {
+        "type": "textarea",
+        "label": "Comentari",
+        "name": "comment"
+      },
+      {
+        "type": "file",
+        "label": "Afegir document",
+        "name": "files"
+      },
+      {
+        "type": "checkbox",
+        "label": "Accepto la Política de Privacitat",
+        "name": "privacyPolicy",
+        "required": true
+      }
+    ]
+  },
   "footer": {
     "contact": {
       "title": "Contacte:",
