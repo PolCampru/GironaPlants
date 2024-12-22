@@ -1,5 +1,5 @@
 "use client";
-import { WaveGroup } from "./InputText.style";
+import { ContainerError, WaveGroup } from "./InputText.style";
 
 interface InputTextProps {
   label: string;
@@ -58,11 +58,7 @@ export const InputText = ({
           </span>
         )}
       </label>
-      {hasError && (
-        <div style={{ color: "red", fontSize: "12px", marginTop: "5px" }}>
-          {errors}
-        </div>
-      )}
+      {hasError && <ContainerError>{errors}</ContainerError>}
     </WaveGroup>
   );
 };

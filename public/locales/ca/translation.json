@@ -25,6 +25,20 @@
     "subtitle": "Emplena aquest breu formulari per a completar la sol·licitud de pressupost. És essencial per a oferir-te una proposta personalitzada. Completa els camps perquè puguem contactar-te i proporcionar-te la informació que necessites de manera ràpida i precisa.",
     "submit": "Enviar",
     "remove": "Eliminar",
+    "messages": {
+      "inProgress": {
+        "title": "Enviant la sol·licitud...",
+        "text": "Si us plau, espera uns segons."
+      },
+      "success": {
+        "title": "Sol·licitud enviada",
+        "text": "Gràcies per confiar en nosaltres. Hem rebut la teva sol·licitud i ens posarem en contacte amb tu el més aviat possible."
+      },
+      "error": {
+        "title": "Error en l'enviament",
+        "text": "Hi ha hagut un error en l'enviament de la sol·licitud. Si us plau, torna a intentar"
+      }
+    },
     "inputs": [
       {
         "type": "toggle",
@@ -43,21 +57,20 @@
       {
         "type": "text",
         "label": "Nom i cognoms",
-        "name": "name"
+        "name": "name",
+        "required": true
       },
       {
         "type": "text",
         "label": "Correu electrònic",
         "name": "email",
-        "required": true,
-        "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+        "required": true
       },
       {
         "type": "text",
         "label": "Telèfon",
         "name": "phone",
-        "required": true,
-        "regex": "^[0-9]{9}$"
+        "required": true
       },
       {
         "type": "textarea",

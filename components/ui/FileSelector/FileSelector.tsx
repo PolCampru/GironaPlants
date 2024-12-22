@@ -37,7 +37,7 @@ const FileSelector = ({
         onChange={onChange}
       />
 
-      {files.length > 0 && (
+      {files && files.length > 0 && (
         <AnimatePresence>
           <motion.ul
             className="file-list"
@@ -45,25 +45,26 @@ const FileSelector = ({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {files.map((file, index) => (
-              <motion.li
-                key={index}
-                className="file-item"
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: 10, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                <span>{file.name}</span>
-                <button
-                  type="button"
-                  className="remove-button"
-                  onClick={() => removeFile(name, index)}
+            {files &&
+              files.map((file, index) => (
+                <motion.li
+                  key={index}
+                  className="file-item"
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: 10, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
                 >
-                  {remove}
-                </button>
-              </motion.li>
-            ))}
+                  <span>{file.name}</span>
+                  <button
+                    type="button"
+                    className="remove-button"
+                    onClick={() => removeFile(name, index)}
+                  >
+                    {remove}
+                  </button>
+                </motion.li>
+              ))}
           </motion.ul>
         </AnimatePresence>
       )}

@@ -1,10 +1,15 @@
+export type FormField<T> = {
+  value: T;
+  error: string;
+};
+
 export type FormValuesType = {
-  type: string;
-  company: string;
-  name: string;
-  email: string;
-  phone: string;
-  comment: string;
-  files: File[];
-  privacyPolicy: boolean;
+  type: FormField<string>;
+  company: FormField<string>;
+  name: FormField<string>;
+  email: FormField<string>;
+  phone: FormField<string>;
+  comment: FormField<string>;
+  files: FormField<File[]>;
+  privacyPolicy: FormField<boolean>;
 };

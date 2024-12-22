@@ -31,6 +31,7 @@ export const WaveGroup = styled.div`
   .label-char {
     transition: 0.1s ease all;
     transition-delay: calc(var(--index) * 0.01s);
+    font-size: 0.875rem;
   }
 
   .input:focus ~ .label .label-char,
@@ -83,4 +84,13 @@ export const WaveGroup = styled.div`
     max-height: 15rem;
     padding: 10px 10px 10px 5px;
   }
+`;
+
+export const ContainerError = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: ${(props) => props.theme.colors.orange};
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
 `;

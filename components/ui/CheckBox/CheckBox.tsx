@@ -21,9 +21,10 @@ interface CheckboxProps {
 
 const shakeVariant = {
   shake: {
-    x: [0, -5, 5, -5, 5, 0],
+    x: [0, -10, 10, -10, 10, 0],
     transition: { duration: 0.4 },
   },
+  initial: { x: 0 },
 };
 
 const appearVariant = {

@@ -16,6 +16,20 @@ export type FormType = {
   subtitle: string;
   remove: string;
   submit: string;
+  messages: {
+    inProgress: {
+      title: string;
+      text: string;
+    };
+    success: {
+      title: string;
+      text: string;
+    };
+    error: {
+      title: string;
+      text: string;
+    };
+  };
   inputs: (
     | {
         type: "toggle";
@@ -27,7 +41,6 @@ export type FormType = {
         label: string;
         name: keyof FormValuesType;
         required?: boolean;
-        regex?: string;
       }
   )[];
 };
