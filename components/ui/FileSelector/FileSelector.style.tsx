@@ -19,10 +19,11 @@ export const FileSelectorWrapper = styled.div`
     gap: 0.5rem;
     text-decoration: underline;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, margin-left 0.3s;
 
     &:hover {
       transform: scale(1.05);
+      margin-left: 0.2rem;
     }
 
     label {

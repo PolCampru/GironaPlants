@@ -46,3 +46,14 @@ export type FormType = {
       }
   )[];
 };
+
+export type PhoneAndEmailType = {
+  phone: {
+    title: string;
+    text: string;
+  };
+  email: {
+    title: string;
+    text: string;
+  };
+};

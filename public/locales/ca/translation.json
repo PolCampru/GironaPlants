@@ -97,6 +97,16 @@
       }
     ]
   },
+  "contact": {
+    "phone": {
+      "title": "Telèfon",
+      "text": "+34 639 811 560"
+    },
+    "email": {
+      "title": "Correu electrònic",
+      "text": "gironaplants@gironaplants.com"
+    }
+  },
   "footer": {
     "contact": {
       "title": "Contacte:",
