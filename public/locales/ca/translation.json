@@ -52,25 +52,32 @@
         "type": "text",
         "label": "Empresa",
         "name": "company",
-        "required": true
+        "required": true,
+        "requiredError": "L'empresa és un camp obligatori"
       },
       {
         "type": "text",
         "label": "Nom i cognoms",
         "name": "name",
-        "required": true
+        "required": true,
+        "requiredError": "El nom i cognoms són un camp obligatori",
+        "formatError": "El nom i cognoms han de contenir com a mínim 3 caràcters"
       },
       {
         "type": "text",
         "label": "Correu electrònic",
         "name": "email",
-        "required": true
+        "required": true,
+        "requiredError": "El correu electrònic és un camp obligatori",
+        "formatError": "El format del correu electrònic no és vàlid"
       },
       {
         "type": "text",
         "label": "Telèfon",
         "name": "phone",
-        "required": true
+        "required": true,
+        "requiredError": "El telèfon és un camp obligatori",
+        "formatError": "El format del telèfon no és vàlid"
       },
       {
         "type": "textarea",

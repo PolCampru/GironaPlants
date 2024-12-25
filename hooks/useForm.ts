@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, use, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { initialFormValues } from "@/data/Form";
 import { FormValuesType } from "@/types/Form";
 import Swal from "sweetalert2";
@@ -19,70 +19,45 @@ const useForm = () => {
   const { t } = useTranslation();
   const data = t("form", { returnObjects: true }) as FormType;
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, type, value, checked, files } = event.target;
-    const fieldName = name as keyof FormValuesType;
-    const fieldValue = type === "checkbox" ? checked : value;
-
-    if (fieldName === "files") {
-      const newFiles = Array.from(files || []);
-      const actualFiles = formValues[fieldName] as unknown as File[];
-      const selectedFiles = [...actualFiles, ...newFiles];
-      setFormValues((prev) => ({
-        ...prev,
-        [fieldName]: { value: selectedFiles, error: "" },
-      }));
-    } else {
-      setFormValues((prev) => ({
-        ...prev,
-        [fieldName]: fieldValue,
-      }));
-    }
-
-    const error = validateField(fieldName, fieldValue);
-    setFormErrors((prev) => ({
-      ...prev,
-      [fieldName]: error,
-    }));
-  };
-
-  const removeFile = (name: keyof FormValuesType, index: number) => {
-    setFormValues((formValues) => {
-      const newFiles = (formValues[name] as unknown as File[]).filter(
-        (file, fileIndex) => fileIndex !== index
-      );
-
-      return {
-        ...formValues,
-        [name]: newFiles,
-      };
-    });
-  };
-
-  const resetForm = () => {
-    setFormValues({ ...initialFormValues });
-  };
-
   const validateField = (
     name: keyof FormValuesType,
     value: string | boolean | File[]
   ): string => {
     switch (name) {
+      case "company":
+        if (value === "" && formValues.type.value === "company") {
+          const input = data.inputs.find((input) => input.name === name);
+          console.log(input);
+          if (input && input.type !== "toggle" && "requiredError" in input) {
+            return input.requiredError || "Company required";
+          }
+        }
+        return "";
       case "email":
         if (value === "") {
-          return "El correo electrónico es obligatorio";
+          const input = data.inputs.find((input) => input.name === name);
+          if (input && input.type !== "toggle" && "requiredError" in input) {
+            return input.requiredError || "Email required";
+          }
         }
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(value as string)) {
-          return "Correo electrónico inválido";
+          const input = data.inputs.find((input) => input.name === name);
+          if (input && input.type !== "toggle" && "formatError" in input) {
+            return input.formatError || "Email format error";
+          }
         }
         return "";
       case "name":
         if (value === "") {
-          return "Nombre y apellidos son obligatorios";
+          const input = data.inputs.find((input) => input.name === name);
+          if (input && input.type !== "toggle" && "requiredError" in input)
+            return input.requiredError || "Name required";
         }
         if ((value as string).trim().length < 2) {
-          return "El nombre debe tener al menos 2 caracteres";
+          const input = data.inputs.find((input) => input.name === name);
+          if (input && input.type !== "toggle" && "formatError" in input)
+            return input.formatError || "Name format error";
         }
         return "";
       case "privacyPolicy":
@@ -92,11 +67,17 @@ const useForm = () => {
         return "";
       case "phone":
         if (value === "") {
-          return "El teléfono es obligatorio";
+          const input = data.inputs.find((input) => input.name === name);
+          if (input && input.type !== "toggle" && "requiredError" in input) {
+            return input.requiredError || "Phone required";
+          }
         }
         const phoneRegex = /^\d{9}$/;
         if (!phoneRegex.test(value as string)) {
-          return "Teléfono inválido";
+          const input = data.inputs.find((input) => input.name === name);
+          if (input && input.type !== "toggle" && "formatError" in input) {
+            return input.formatError || "Phone format error";
+          }
         }
         return "";
       default:
@@ -104,14 +85,56 @@ const useForm = () => {
     }
   };
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, type, value, checked, files } = event.target;
+    const fieldName = name as keyof FormValuesType;
+
+    let newValue: string | boolean | File[] = value;
+
+    if (type === "checkbox") {
+      newValue = checked;
+    } else if (type === "file") {
+      const newFiles = Array.from(files || []);
+      const existingFiles = (formValues[fieldName].value as File[]) || [];
+      newValue = [...existingFiles, ...newFiles];
+    }
+
+    setFormValues((prev) => ({
+      ...prev,
+      [fieldName]: {
+        ...prev[fieldName],
+        value: newValue,
+      },
+    }));
+
+    const error = validateField(fieldName, newValue);
+    setFormErrors((prev) => ({
+      ...prev,
+      [fieldName]: error,
+    }));
+  };
+
+  const removeFile = (fieldName: keyof FormValuesType, fileIndex: number) => {
+    setFormValues((prev) => {
+      const existingFiles = (prev[fieldName].value as File[]) || [];
+      const newFiles = existingFiles.filter((_, index) => index !== fileIndex);
+
+      return {
+        ...prev,
+        [fieldName]: {
+          ...prev[fieldName],
+          value: newFiles,
+        },
+      };
+    });
+  };
+
   const validateForm = (): boolean => {
     const errors: Partial<Record<keyof FormValuesType, string>> = {};
 
     (Object.keys(formValues) as Array<keyof FormValuesType>).forEach((key) => {
-      const error = validateField(
-        key,
-        formValues[key] as unknown as string | boolean | File[]
-      );
+      const fieldValue = formValues[key].value;
+      const error = validateField(key, fieldValue);
       if (error) {
         errors[key] = error;
       }
@@ -121,11 +144,18 @@ const useForm = () => {
     return Object.keys(errors).length === 0;
   };
 
+  const resetForm = () => {
+    setFormValues({ ...initialFormValues });
+    setFormErrors({});
+  };
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     if (!validateForm()) {
       return;
     }
+
     try {
       Swal.fire({
         title: data.messages.inProgress.title,
@@ -137,15 +167,16 @@ const useForm = () => {
       });
 
       const formData = new FormData();
-      Object.entries(formValues).forEach(([key, value]) => {
-        if (key === "files" && Array.isArray(value)) {
-          value.forEach((file) => {
+
+      Object.entries(formValues).forEach(([key, field]) => {
+        if (key === "files" && Array.isArray(field.value)) {
+          (field.value as File[]).forEach((file) => {
             formData.append("files", file);
           });
         } else if (key === "privacyPolicy") {
-          formData.append(key, value ? "true" : "false");
+          formData.append(key, field.value ? "true" : "false");
         } else {
-          formData.append(key, String(value));
+          formData.append(key, String(field.value));
         }
       });
 
@@ -174,6 +205,8 @@ const useForm = () => {
       });
     }
   };
+
+  console.log(formValues);
 
   return {
     formValues,

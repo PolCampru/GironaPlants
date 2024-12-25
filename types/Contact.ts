@@ -41,6 +41,8 @@ export type FormType = {
         label: string;
         name: keyof FormValuesType;
         required?: boolean;
+        requiredError?: string;
+        formatError?: string;
       }
   )[];
 };

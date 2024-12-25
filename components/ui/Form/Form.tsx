@@ -8,6 +8,7 @@ import useForm from "@/hooks/useForm";
 import React from "react";
 import FilterToggle from "../FilterToggle/FilterToggle";
 import FileSelector from "../FileSelector/FileSelector";
+import { form } from "framer-motion/client";
 
 const Form = () => {
   const {
@@ -18,6 +19,7 @@ const Form = () => {
     data,
     formErrors,
   } = useForm();
+
   return (
     <FormWrapper>
       <Title title={data.title} />
@@ -32,7 +34,7 @@ const Form = () => {
           data.inputs &&
           data.inputs.map((input) => {
             if (
-              (formValues["type"] as unknown) === "particular" &&
+              (formValues["type"].value as unknown) === "particular" &&
               input.name === "company"
             ) {
               return null;
@@ -64,14 +66,14 @@ const Form = () => {
                 />
               );
             } else if (input.type === "checkbox") {
-              console.log(formValues[input.name] as unknown as boolean);
+              console.log(formErrors[input.name]);
               return (
                 <Checkbox
                   key={input.name}
                   label={input.label}
                   name={input.name}
-                  error={formErrors[input.name] !== ""}
-                  checked={formValues[input.name] as unknown as boolean}
+                  error={formErrors[input.name] as unknown as boolean}
+                  checked={formValues[input.name].value as unknown as boolean}
                   onChange={(e) => handleChange(e)}
                   size="small"
                 />
@@ -81,7 +83,9 @@ const Form = () => {
                 <FilterToggle
                   key={input.name}
                   options={input.options}
-                  selectedKey={formValues[input.name] as unknown as string}
+                  selectedKey={
+                    formValues[input.name].value as unknown as string
+                  }
                   onChange={(value: string) =>
                     handleChange({
                       target: { name: input.name, value },
