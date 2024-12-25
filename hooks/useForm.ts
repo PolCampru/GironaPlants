@@ -1,91 +1,91 @@
 "use client";
 
-import { FormEvent, useState } from "react";
-import { initialFormValues } from "@/data/Form";
-import { FormValuesType } from "@/types/Form";
+import { useState, FormEvent, ChangeEvent } from "react";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
+
+import { initialFormValues } from "@/data/Form";
+import { FormValuesType } from "@/types/Form";
 import { FormType } from "@/types/Contact";
 
 const useForm = () => {
-  const [formValues, setFormValues] = useState<FormValuesType>({
-    ...initialFormValues,
-  });
+  const { t } = useTranslation();
+  const data = t("form", { returnObjects: true }) as FormType;
 
+  const [formValues, setFormValues] =
+    useState<FormValuesType>(initialFormValues);
   const [formErrors, setFormErrors] = useState<
     Partial<Record<keyof FormValuesType, string>>
   >({});
 
-  const { t } = useTranslation();
-  const data = t("form", { returnObjects: true }) as FormType;
+  const getInputConfig = (fieldName: keyof FormValuesType) => {
+    return data.inputs.find((input) => input.name === fieldName);
+  };
 
   const validateField = (
-    name: keyof FormValuesType,
+    fieldName: keyof FormValuesType,
     value: string | boolean | File[]
   ): string => {
-    switch (name) {
-      case "company":
+    const config = getInputConfig(fieldName);
+
+    const getErrorMessage = (errorKey: "requiredError" | "formatError") => {
+      if (!config || config.type === "toggle") return "";
+      return (config as any)[errorKey] ?? "";
+    };
+
+    switch (fieldName) {
+      case "company": {
         if (value === "" && formValues.type.value === "company") {
-          const input = data.inputs.find((input) => input.name === name);
-          console.log(input);
-          if (input && input.type !== "toggle" && "requiredError" in input) {
-            return input.requiredError || "Company required";
-          }
+          return getErrorMessage("requiredError") || "Company is required.";
         }
         return "";
-      case "email":
+      }
+
+      case "name": {
         if (value === "") {
-          const input = data.inputs.find((input) => input.name === name);
-          if (input && input.type !== "toggle" && "requiredError" in input) {
-            return input.requiredError || "Email required";
-          }
+          return getErrorMessage("requiredError") || "Name is required.";
+        }
+        if ((value as string).trim().length < 2) {
+          return getErrorMessage("formatError") || "Name is too short.";
+        }
+        return "";
+      }
+
+      case "email": {
+        if (value === "") {
+          return getErrorMessage("requiredError") || "Email is required.";
         }
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(value as string)) {
-          const input = data.inputs.find((input) => input.name === name);
-          if (input && input.type !== "toggle" && "formatError" in input) {
-            return input.formatError || "Email format error";
-          }
+          return getErrorMessage("formatError") || "Invalid email format.";
         }
         return "";
-      case "name":
+      }
+
+      case "phone": {
         if (value === "") {
-          const input = data.inputs.find((input) => input.name === name);
-          if (input && input.type !== "toggle" && "requiredError" in input)
-            return input.requiredError || "Name required";
-        }
-        if ((value as string).trim().length < 2) {
-          const input = data.inputs.find((input) => input.name === name);
-          if (input && input.type !== "toggle" && "formatError" in input)
-            return input.formatError || "Name format error";
-        }
-        return "";
-      case "privacyPolicy":
-        if (value === false) {
-          return "Debes aceptar la política de privacidad";
-        }
-        return "";
-      case "phone":
-        if (value === "") {
-          const input = data.inputs.find((input) => input.name === name);
-          if (input && input.type !== "toggle" && "requiredError" in input) {
-            return input.requiredError || "Phone required";
-          }
+          return getErrorMessage("requiredError") || "Phone is required.";
         }
         const phoneRegex = /^\d{9}$/;
         if (!phoneRegex.test(value as string)) {
-          const input = data.inputs.find((input) => input.name === name);
-          if (input && input.type !== "toggle" && "formatError" in input) {
-            return input.formatError || "Phone format error";
-          }
+          return getErrorMessage("formatError") || "Invalid phone number.";
         }
         return "";
+      }
+
+      case "privacyPolicy": {
+        if (value === false) {
+          return "You must accept the privacy policy.";
+        }
+        return "";
+      }
+
       default:
         return "";
     }
   };
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, type, value, checked, files } = event.target;
     const fieldName = name as keyof FormValuesType;
 
@@ -130,22 +130,23 @@ const useForm = () => {
   };
 
   const validateForm = (): boolean => {
-    const errors: Partial<Record<keyof FormValuesType, string>> = {};
+    const newErrors: Partial<Record<keyof FormValuesType, string>> = {};
 
-    (Object.keys(formValues) as Array<keyof FormValuesType>).forEach((key) => {
-      const fieldValue = formValues[key].value;
-      const error = validateField(key, fieldValue);
+    (Object.keys(formValues) as (keyof FormValuesType)[]).forEach((key) => {
+      const value = formValues[key].value;
+      const error = validateField(key, value);
       if (error) {
-        errors[key] = error;
+        newErrors[key] = error;
       }
     });
 
-    setFormErrors(errors);
-    return Object.keys(errors).length === 0;
+    setFormErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
   };
 
   const resetForm = () => {
-    setFormValues({ ...initialFormValues });
+    setFormValues(initialFormValues);
     setFormErrors({});
   };
 
@@ -167,7 +168,6 @@ const useForm = () => {
       });
 
       const formData = new FormData();
-
       Object.entries(formValues).forEach(([key, field]) => {
         if (key === "files" && Array.isArray(field.value)) {
           (field.value as File[]).forEach((file) => {
@@ -186,7 +186,7 @@ const useForm = () => {
       });
 
       if (!response.ok) {
-        throw new Error("Error al enviar el formulario");
+        throw new Error("Error sending form data");
       }
 
       Swal.fire({
@@ -206,15 +206,13 @@ const useForm = () => {
     }
   };
 
-  console.log(formValues);
-
   return {
     formValues,
-    data,
     formErrors,
+    data,
     handleChange,
-    resetForm,
     removeFile,
+    resetForm,
     handleSubmit,
   };
 };

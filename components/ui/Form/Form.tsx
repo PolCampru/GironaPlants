@@ -66,7 +66,6 @@ const Form = () => {
                 />
               );
             } else if (input.type === "checkbox") {
-              console.log(formErrors[input.name]);
               return (
                 <Checkbox
                   key={input.name}

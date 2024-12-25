@@ -5,7 +5,7 @@ const theme = {
     creamLight: "rgba(250, 247, 240, 1)",
     sand: "rgba(248, 238, 180, 1)",
     orange: "rgba(255, 119, 68, 1)",
-    red: "rgb(211, 47, 47)",
+    red: "rgb(240, 87, 68, 1)",
     lime: "rgba(228, 246, 142, 1)",
     brandGreen: "rgba(17, 139, 80, 1)",
     hoverGreen2: "rgba(17, 139, 80, 0.7)",
