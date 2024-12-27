@@ -19,7 +19,7 @@ const OurClients = ({ data }: { data: OurClientsProps }) => {
       </ContainerTitle>
       <ContainerClients>
         {data.our_clients.clients.map((client) => (
-          <ClientCart>
+          <ClientCart key={client.name}>
             <img src={client.image} alt={client.name} />
             <p>{client.name}</p>
           </ClientCart>

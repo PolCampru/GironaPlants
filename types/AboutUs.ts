@@ -33,4 +33,13 @@ export type OurClientsProps = {
   };
 };
 
-export type AboutUsDataType = HeroAboutUsProps & OurClientsProps;
+export type CataloguesProps = {
+  title_catalogues: string;
+  subtitle_catalogues: string;
+  button_catalogues: string;
+  locale: string;
+};
+
+export type AboutUsDataType = HeroAboutUsProps &
+  OurClientsProps &
+  CataloguesProps;
