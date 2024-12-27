@@ -14,11 +14,11 @@ const Loader = ({ size = 60, duration = 3, colors }: LoaderProps) => {
 
   return (
     <LoaderContainer>
-      <Corners size={size} duration={duration}>
-        <Corner variant={1} color={cornerColors[0]} duration={duration} />
-        <Corner variant={2} color={cornerColors[1]} duration={duration} />
-        <Corner variant={3} color={cornerColors[2]} duration={duration} />
-        <Corner variant={4} color={cornerColors[3]} duration={duration} />
+      <Corners $size={size} $duration={duration}>
+        <Corner $variant={1} $color={cornerColors[0]} $duration={duration} />
+        <Corner $variant={2} $color={cornerColors[1]} $duration={duration} />
+        <Corner $variant={3} $color={cornerColors[2]} $duration={duration} />
+        <Corner $variant={4} $color={cornerColors[3]} $duration={duration} />
       </Corners>
     </LoaderContainer>
   );

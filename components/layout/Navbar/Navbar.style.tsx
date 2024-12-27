@@ -49,8 +49,6 @@ export const NavItem = styled(motion.div)<{ selected: boolean }>`
   border-radius: 6.25rem;
 
   a {
-    position: relative;
-
     border-radius: 6.25rem;
     padding: 0.8125rem 0.75rem;
 

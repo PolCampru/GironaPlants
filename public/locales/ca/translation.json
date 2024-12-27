@@ -107,6 +107,52 @@
       "text": "gironaplants@gironaplants.com"
     }
   },
+  "about-us": {
+    "title": "Els nostres clients",
+    "subtitle": "Treballem amb una àmplia gamma de clients",
+    "clients": [
+      {
+        "name": "Viveristes",
+        "image": "/images/viveristes.svg"
+      },
+      {
+        "name": "Gardens",
+        "image": "/images/gardens.svg"
+      },
+      {
+        "name": "Jardiners",
+        "image": "/images/jardiners.svg"
+      },
+      {
+        "name": "Obra pública",
+        "image": "/images/obraPublica.svg"
+      },
+      {
+        "name": "Sostenibles",
+        "image": "/images/sostenibles.svg"
+      },
+      {
+        "name": "Paisagistes",
+        "image": "/images/paisagistes.svg"
+      },
+      {
+        "name": "Comercials",
+        "image": "/images/comercials.svg"
+      },
+      {
+        "name": "Fruiters",
+        "image": "/images/fruiters.svg"
+      },
+      {
+        "name": "Organismes oficials",
+        "image": "/images/organismesOficials.svg"
+      },
+      {
+        "name": "Repobladors forestals",
+        "image": "/images/repobladorsForestals.svg"
+      }
+    ]
+  },
   "footer": {
     "contact": {
       "title": "Contacte:",

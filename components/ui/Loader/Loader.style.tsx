@@ -36,8 +36,8 @@ export const spin4 = keyframes`
 `;
 
 interface CornersProps {
-  size: number;
-  duration: number;
+  $size: number;
+  $duration: number;
 }
 
 export const LoaderContainer = styled.div`
@@ -49,17 +49,17 @@ export const LoaderContainer = styled.div`
 `;
 
 export const Corners = styled.div<CornersProps>`
-  width: ${(props) => props.size}px;
-  height: ${(props) => props.size}px;
+  width: ${(props) => props.$size}px;
+  height: ${(props) => props.$size}px;
   position: relative;
   transform-origin: center;
-  animation: ${spin} ${(props) => props.duration}s infinite linear;
+  animation: ${spin} ${(props) => props.$duration}s infinite linear;
 `;
 
 interface CornerProps {
-  variant: number;
-  color: string;
-  duration: number;
+  $variant: number;
+  $color: string;
+  $duration: number;
 }
 
 export const Corner = styled.div<CornerProps>`
@@ -72,32 +72,32 @@ export const Corner = styled.div<CornerProps>`
     width: 48%;
     height: 48%;
     border-radius: 0 40% 0 40%;
-    background-color: ${(props) => props.theme.colors.brandGreen};
+    background-color: ${(props) => props.$color};
     content: "";
   }
 
   ${(props) =>
-    props.variant === 1 &&
+    props.$variant === 1 &&
     css`
-      animation: ${spin1} ${props.duration}s infinite
+      animation: ${spin1} ${props.$duration}s infinite
         cubic-bezier(0.785, 0.135, 0.15, 0.86);
     `}
   ${(props) =>
-    props.variant === 2 &&
+    props.$variant === 2 &&
     css`
-      animation: ${spin2} ${props.duration}s infinite
+      animation: ${spin2} ${props.$duration}s infinite
         cubic-bezier(0.785, 0.135, 0.15, 0.86);
     `}
   ${(props) =>
-    props.variant === 3 &&
+    props.$variant === 3 &&
     css`
-      animation: ${spin3} ${props.duration}s infinite
+      animation: ${spin3} ${props.$duration}s infinite
         cubic-bezier(0.785, 0.135, 0.15, 0.86);
     `}
   ${(props) =>
-    props.variant === 4 &&
+    props.$variant === 4 &&
     css`
-      animation: ${spin4} ${props.duration}s infinite
+      animation: ${spin4} ${props.$duration}s infinite
         cubic-bezier(0.785, 0.135, 0.15, 0.86);
     `}
 `;

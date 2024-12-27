@@ -3,12 +3,12 @@ import { PhoneAndEmailType } from "@/types/Contact";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { PhoneAndEmailWrapper } from "./PhoneAndEmail.style";
+import Loader from "@/components/ui/Loader/Loader";
 
 const PhoneAndEmail = () => {
   const { t } = useTranslation();
   const data = t("contact", { returnObjects: true }) as PhoneAndEmailType;
-  console.log(data);
-  if (!data.phone) return null;
+  if (!data.phone) return <Loader />;
   return (
     <PhoneAndEmailWrapper>
       <div
