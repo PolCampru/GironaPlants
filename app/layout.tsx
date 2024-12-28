@@ -6,6 +6,7 @@ import ThemeClientProvider from "@/providers/ThemeClientProvider";
 import { Inter } from "next/font/google";
 import { getLanguages } from "@/lib/languages";
 import * as React from "react";
+import { ReduxProvider } from "./reduxProvider";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -29,8 +30,10 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
     <html lang={language} className={inter.variable}>
       <body>
         <ThemeClientProvider>
-          <Navbar />
-          <div className="layout-content">{children}</div>
+          <ReduxProvider>
+            <Navbar />
+            <div className="layout-content">{children}</div>
+          </ReduxProvider>
           <Footer />
         </ThemeClientProvider>
       </body>

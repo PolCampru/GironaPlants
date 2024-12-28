@@ -163,7 +163,7 @@ const useForm = () => {
         text: data.messages.inProgress.text,
         allowOutsideClick: false,
         didOpen: () => {
-          Swal.showLoading();
+          Swal.showLoading(null);
         },
       });
 
