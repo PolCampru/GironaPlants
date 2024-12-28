@@ -19,7 +19,8 @@
     "react-dom": "^19.0.0",
     "react-i18next": "^15.1.4",
     "styled-components": "^6.1.13",
-    "sweetalert2": "^11.15.3"
+    "sweetalert2": "^11.15.3",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",

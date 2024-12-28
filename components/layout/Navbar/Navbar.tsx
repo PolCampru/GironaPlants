@@ -79,32 +79,33 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
         >
-          {navbarItems.map((item) => {
-            const isSelected = pathname === item.url;
-            return (
-              <NavItem
-                as={motion.div}
-                key={item.name}
-                variants={itemVariants}
-                selected={isSelected}
-              >
-                <Link href={item.url}>
-                  {item.name}
-                  {isSelected && (
-                    <SelectedBackground
-                      layoutId="selectedBackground"
-                      initial={false}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 30,
-                      }}
-                    />
-                  )}
-                </Link>
-              </NavItem>
-            );
-          })}
+          {navbarItems &&
+            navbarItems.map((item) => {
+              const isSelected = pathname === item.url;
+              return (
+                <NavItem
+                  as={motion.div}
+                  key={item.name}
+                  variants={itemVariants}
+                  selected={isSelected}
+                >
+                  <Link href={item.url}>
+                    {item.name}
+                    {isSelected && (
+                      <SelectedBackground
+                        layoutId="selectedBackground"
+                        initial={false}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 30,
+                        }}
+                      />
+                    )}
+                  </Link>
+                </NavItem>
+              );
+            })}
         </MenuContainer>
 
         <RightContainer
