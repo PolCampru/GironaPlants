@@ -28,7 +28,6 @@ export default function useProducts() {
   ) => {
     try {
       dispatch(setLoading(true));
-      console.log("Fetching plants...");
       const response = await fetch(
         `/api/strapi/plants?pagination[pageSize]=${pageSize}&pagination[page]=${newPage}&${query}`
       );

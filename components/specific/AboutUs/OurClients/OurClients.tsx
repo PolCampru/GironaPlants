@@ -10,7 +10,6 @@ import {
 import Title from "@/components/ui/Title/Title";
 
 const OurClients = ({ data }: { data: OurClientsProps }) => {
-  console.log(data);
   return (
     <OurClientsWrapper>
       <ContainerTitle>

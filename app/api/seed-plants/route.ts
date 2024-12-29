@@ -33,8 +33,6 @@ export async function POST(request: NextRequest) {
       process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
     }/GironaPlantsCatalogue.xlsx`;
 
-    console.log("Reading file", fileUrl);
-
     const response = await fetch(fileUrl);
     if (!response.ok) {
       throw new Error(`Failed to fetch file: ${fileUrl} (${response.status})`);
@@ -46,10 +44,7 @@ export async function POST(request: NextRequest) {
     const sheetName = workbook.SheetNames[0];
     const rows = xlsx.utils.sheet_to_json<PlantRow>(workbook.Sheets[sheetName]);
 
-    console.log("Rows", rows);
     const filteredRows = rows.filter((row) => row.PRICE);
-
-    console.log("Filtered rows", filteredRows);
 
     for (const row of filteredRows) {
       const { GENUS, DESCRIPTION, "POT SIZE": potSize, HEIGHT, PRICE } = row;
@@ -64,7 +59,6 @@ export async function POST(request: NextRequest) {
         },
       };
 
-      console.log("Row payload", payload);
       const response = await fetch(`${strapiBaseUrl}/api/plants`, {
         method: "POST",
         headers: {
