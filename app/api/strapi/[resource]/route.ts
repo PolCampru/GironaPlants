@@ -5,10 +5,10 @@ const STRAPI_TOKEN = process.env.STRAPI_TOKEN;
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { resource: string } }
+  context: { params: { resource: string } }
 ) {
   try {
-    const { resource } = params;
+    const { resource } = await context.params;
 
     const url = new URL(req.url);
 
