@@ -1,27 +1,31 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const TableWrapper = styled.div`
+export const TableWrapper = styled(motion.div)`
   width: 100%;
+  height: 100%;
   margin: 6px 0px 0px;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
-  height: 72vh;
-
   overflow-x: hidden;
   overflow-y: auto;
-
   position: relative;
+
   table {
     width: 100%;
     border-radius: 10px;
     border-collapse: collapse;
+
     thead {
       border-radius: 10px 10px 0px 0px;
+
       th {
-        background: #f9fafb;
-        height: 60px;
+        background: ${(props) => props.theme.colors.creamLight};
+        height: 2rem;
         padding: 0px 0px 0px 20px;
         text-align: left;
-        font-size: 15px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.5rem;
 
         &:last-of-type {
           width: 180px;
@@ -39,14 +43,21 @@ const TableWrapper = styled.div`
     }
 
     tr {
-      border-bottom: 1px solid #eee;
       &:last-of-type {
         border-bottom: none;
       }
+
+      &:hover {
+        background-color: ${(props) => props.theme.colors.lightGray};
+      }
+
       td {
         padding: 0px 0px 0px 20px;
-        height: 60px;
-        font-size: 15px;
+        height: 3.125rem;
+        font-size: 1rem;
+        border: 1px solid ${(props) => props.theme.colors.lightGray};
+        cursor: pointer;
+
         &:last-of-type {
           width: 180px;
         }
@@ -56,30 +67,12 @@ const TableWrapper = styled.div`
       input {
         opacity: 0%;
       }
-      &:hover {
-        &:not(:last-of-type) {
-          cursor: pointer;
-          background: rgba(81, 142, 248, 0.1);
-          svg {
-            color: #3758f9;
-          }
-          input {
-            opacity: 100%;
-          }
-        }
-      }
-      input[type="checkbox"]:checked {
-        opacity: 100%;
-      }
-    }
-
-    .rowSelected {
-      background: rgba(81, 142, 248, 0.1);
     }
 
     tbody {
       position: relative;
     }
+
     .trigger {
       height: 60px;
       margin-top: 10px;
@@ -87,6 +80,11 @@ const TableWrapper = styled.div`
       display: flex !important;
       justify-content: center;
       position: absolute;
+
+      td {
+        border: none;
+      }
+
       .observer {
         width: 20px;
         height: 20px;
@@ -94,5 +92,3 @@ const TableWrapper = styled.div`
     }
   }
 `;
-
-export { TableWrapper };

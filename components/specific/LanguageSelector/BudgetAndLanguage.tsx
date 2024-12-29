@@ -30,6 +30,7 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
     handleLanguageSelect,
     languages,
     currentLanguage,
+    items,
   } = useBudgetAndLanguage({ i18n });
 
   return (
@@ -40,6 +41,7 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
       >
         <img src={data.srcList} alt={data.altList} />
         <p>{data.title}</p>
+        <span>{items.length}</span>
       </BudgetContainer>
 
       <Line />

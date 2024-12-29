@@ -18,6 +18,8 @@ export const BudgetContainer = styled.div`
 
   border-radius: 6.25rem;
 
+  position: relative;
+
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 
@@ -43,6 +45,25 @@ export const BudgetContainer = styled.div`
     font-size: 0.875rem;
     font-weight: 500;
     color: inherit;
+  }
+
+  span {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    right: -6px;
+
+    background-color: ${(props) => props.theme.colors.brandGreen};
+    color: ${(props) => props.theme.colors.white};
+    border-radius: 50%;
+
+    font-size: 0.7rem;
+    font-weight: 500;
   }
 `;
 

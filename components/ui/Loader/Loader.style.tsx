@@ -1,6 +1,18 @@
 "use client";
 
 import styled, { keyframes, css } from "styled-components";
+import { motion } from "framer-motion";
+
+interface CornerProps {
+  $variant: number;
+  $color: string;
+  $duration: number;
+}
+
+interface CornersProps {
+  $size: number;
+  $duration: number;
+}
 
 export const spin = keyframes`
   0% { transform: rotate(0deg); }
@@ -35,16 +47,10 @@ export const spin4 = keyframes`
   100% { transform: rotate(360deg); }
 `;
 
-interface CornersProps {
-  $size: number;
-  $duration: number;
-}
-
-export const LoaderContainer = styled.div`
+export const LoaderContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background-color: transparent;
 `;
 
@@ -55,12 +61,6 @@ export const Corners = styled.div<CornersProps>`
   transform-origin: center;
   animation: ${spin} ${(props) => props.$duration}s infinite linear;
 `;
-
-interface CornerProps {
-  $variant: number;
-  $color: string;
-  $duration: number;
-}
 
 export const Corner = styled.div<CornerProps>`
   width: 100%;

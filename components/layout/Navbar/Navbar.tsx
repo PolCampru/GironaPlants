@@ -15,6 +15,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Loader from "@/components/ui/Loader/Loader";
+import {
+  itemVariants,
+  menuVariants,
+  navbarVariants,
+} from "@/animations/NavBar";
 
 const Navbar = () => {
   const { t, i18n, ready } = useTranslation();
@@ -34,28 +39,6 @@ const Navbar = () => {
         <Loader />
       </div>
     );
-
-  const navbarVariants = {
-    hidden: { y: -50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { type: "spring", stiffness: 50 },
-    },
-  };
-
-  const menuVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { delay: 0.2, staggerChildren: 0.1 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   return (
     <motion.div

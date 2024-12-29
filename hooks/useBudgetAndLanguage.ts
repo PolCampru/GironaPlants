@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store";
 
 interface UseBudgetAndLanguageProps {
   i18n: any;
@@ -8,6 +10,8 @@ interface UseBudgetAndLanguageProps {
 const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
   const [isLanguageOpen, setIsLanguageOpen] = useState<boolean>(false);
   const [isBudgetOpen, setIsBudgetOpen] = useState<boolean>(false);
+
+  const { items } = useSelector((state: RootState) => state.cart);
 
   const router = useRouter();
   const pathname = usePathname();
@@ -104,6 +108,7 @@ const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
     handleLanguageSelect,
     languages,
     currentLanguage,
+    items,
   };
 };
 

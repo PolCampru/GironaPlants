@@ -11,7 +11,7 @@ export default function Plants() {
 
   return (
     <PlantsWrapper>
-      {loading ? (
+      {!plants ? (
         <Loader />
       ) : (
         <Table
