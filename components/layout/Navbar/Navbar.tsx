@@ -79,7 +79,7 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
         >
-          {navbarItems &&
+          {Array.isArray(navbarItems) &&
             navbarItems.map((item) => {
               const isSelected = pathname === item.url;
               return (

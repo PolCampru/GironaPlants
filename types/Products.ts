@@ -10,6 +10,15 @@ export type PlantType = {
   id: number;
 } & PlantAttributesType;
 
+export type Meta = {
+  page: number;
+  pageCount: number;
+  total: number;
+  query: string;
+};
+
 export type PlantsStateType = {
-  data: PlantType[];
+  plants: PlantType[];
+  meta: Meta;
+  loading: boolean;
 };

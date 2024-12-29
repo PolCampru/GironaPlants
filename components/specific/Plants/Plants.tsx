@@ -1,41 +1,27 @@
 "use client";
 
-import { AppDispatch, RootState } from "@/store";
-import { initPlants } from "@/store/features/plantsSlice";
+import useProducts from "@/hooks/useProducts";
 import { PlantType } from "@/types/Products";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { PlantsWrapper } from "./Plants.style";
+import Loader from "@/components/ui/Loader/Loader";
+import Table from "@/components/layout/Table/Table";
 
-interface ClientProductsProps {
-  data: PlantType[];
-}
-
-export default function ClientProducts({ data }: ClientProductsProps) {
-  const dispatch = useDispatch<AppDispatch>();
-  const plants = useSelector((state: RootState) => state.plants.data);
-
-  useEffect(() => {
-    dispatch(initPlants(data));
-  }, [dispatch, data]);
-
-  if (!plants?.length) {
-    return <p>No plants found!</p>;
-  }
+export default function Plants() {
+  const { plants, loading, getScrollPlants, generateColumns } = useProducts();
 
   return (
-    <div>
-      <h1>Products (SSR + Redux)</h1>
-      <p>Welcome to the products page!</p>
-      <hr />
-
-      <ul>
-        {plants.map((plant: PlantType) => (
-          <li key={plant.id}>
-            <strong>{plant.genus}</strong>
-            <div>{plant.description}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <PlantsWrapper>
+      {loading ? (
+        <Loader />
+      ) : (
+        <Table
+          data={plants}
+          columns={generateColumns()}
+          loading={loading}
+          refetch={getScrollPlants}
+          onRowClick={() => console.log("Row clicked")}
+        />
+      )}
+    </PlantsWrapper>
   );
 }
