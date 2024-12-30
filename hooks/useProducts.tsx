@@ -8,7 +8,7 @@ import {
   setPageScroll,
   setQuery,
 } from "@/store/features/plantsSlice";
-import { Meta, PlantType } from "@/types/Products";
+import { Meta, PlantType, QueryType } from "@/types/Products";
 import { createColumnHelper } from "@tanstack/react-table";
 import { useEffect } from "react";
 import AddToCart from "@/components/ui/AddToCart/AddToCart";
@@ -20,6 +20,8 @@ export default function useProducts() {
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants
   );
+
+  const query = meta.query;
 
   const { items } = useSelector((state: RootState) => state.cart);
 
@@ -41,15 +43,37 @@ export default function useProducts() {
     if (!loading) getPlants(meta.query, meta.page, 25);
   }, []);
 
+  const generateStrapiQuery = (query: QueryType) => {
+    let strapiQuery = "";
+    if (query.search) {
+      strapiQuery += `filters[description][$containsi]=${query.search}`;
+    }
+
+    if (Object.keys(query.genus).length > 0) {
+      strapiQuery += `&filters[genus][$in]=${Object.values(query.genus).join(
+        ","
+      )}`;
+    }
+
+    if (Object.keys(query.format).length > 0) {
+      strapiQuery += `&filters[pot_size][$in]=${Object.values(
+        query.format
+      ).join(",")}`;
+    }
+
+    return strapiQuery;
+  };
+
   const getPlants = async (
-    query: string,
+    query: QueryType,
     newPage: number,
     pageSize: number
   ) => {
     try {
       dispatch(setLoading(true));
+      const strapiQuery = generateStrapiQuery(query);
       const response = await fetch(
-        `/api/strapi/plants?pagination[pageSize]=${pageSize}&pagination[page]=${newPage}&${query}&fields[0]=genus&fields[1]=description&fields[2]=pot_size&fields[3]=height&fields[4]=price`
+        `/api/strapi/plants?pagination[pageSize]=${pageSize}&pagination[page]=${newPage}&${strapiQuery}&fields[0]=genus&fields[1]=description&fields[2]=pot_size&fields[3]=height&fields[4]=price`
       );
       const data = await response.json();
 
@@ -66,14 +90,13 @@ export default function useProducts() {
         page: data.meta.pagination.page,
         pageCount: data.meta.pagination.pageCount,
         total: data.meta.pagination.total,
-        query,
+        query: data.meta.pagination.query,
       };
 
       dispatch(
         initPlants({
           data: plants,
           meta: meta,
-          query,
         })
       );
     } catch (error) {
@@ -83,11 +106,11 @@ export default function useProducts() {
     }
   };
 
+  //fer global aquesta funció handleFilter passant el nom del filtre i el valor
   const searchByDescription = (description: string) => {
     dispatch(resetPageScroll());
     console.log(description);
-    const newQuery = `filters[description][$containsi]=${description}`;
-    console.log(newQuery);
+    const newQuery = { ...meta.query, search: description };
     dispatch(setQuery(newQuery));
     getPlants(newQuery, 1, 25);
   };
@@ -159,6 +182,7 @@ export default function useProducts() {
   return {
     plants,
     loading,
+    query,
     getScrollPlants,
     generateColumns,
     searchByDescription,

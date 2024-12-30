@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const TableWrapper = styled(motion.div)`
   width: 100%;
-  height: 100%;
+  height: 60rem;
   margin: 6px 0px 0px;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
   overflow-x: hidden;

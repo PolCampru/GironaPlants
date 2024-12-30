@@ -20,6 +20,7 @@ export default function Plants() {
   const {
     plants,
     loading,
+    query,
     getScrollPlants,
     generateColumns,
     searchByDescription,
@@ -36,7 +37,8 @@ export default function Plants() {
           </div>
           <Search
             placeholder="Cerca..."
-            onSearch={(value) => searchByDescription(value)}
+            onChange={(value) => searchByDescription(value)}
+            value={query.search}
           />
           <Checkbox
             label="Ofertes"

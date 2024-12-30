@@ -1,4 +1,4 @@
-import { Meta, PlantsStateType, PlantType } from "@/types/Products";
+import { Meta, PlantsStateType, PlantType, QueryType } from "@/types/Products";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: PlantsStateType = {
@@ -7,7 +7,12 @@ const initialState: PlantsStateType = {
     page: 0,
     pageCount: 0,
     total: 0,
-    query: "",
+    query: {
+      search: "",
+      offers: false,
+      genus: {},
+      format: {},
+    },
   },
   loading: false,
 };
@@ -18,9 +23,9 @@ const plantsSlice = createSlice({
   reducers: {
     initPlants(
       state,
-      action: PayloadAction<{ data: PlantType[]; meta: Meta; query: string }>
+      action: PayloadAction<{ data: PlantType[]; meta: Meta }>
     ) {
-      const { data, meta, query } = action.payload;
+      const { data, meta } = action.payload;
       if (meta.page !== 0 && meta.page <= meta.pageCount)
         state.plants = [...state.plants, ...data];
       else state.plants = data;
@@ -29,7 +34,6 @@ const plantsSlice = createSlice({
         ...state.meta,
         pageCount: meta.pageCount,
         total: meta.total,
-        query,
       };
     },
 
@@ -44,11 +48,10 @@ const plantsSlice = createSlice({
     resetPageScroll(state: PlantsStateType) {
       state.meta.page = 0;
     },
-
-    setQuery(state: PlantsStateType, action: PayloadAction<string>) {
+    setQuery(state: PlantsStateType, action: PayloadAction<QueryType>) {
       state.plants = [];
-      state.meta.query = action.payload;
       state.meta.page = 0;
+      state.meta.query = action.payload;
     },
   },
 });
