@@ -11,7 +11,7 @@ import OurClients from "@/components/specific/AboutUs/OurClients/OurClients";
 import Catalogues from "@/components/specific/AboutUs/Catalogues/Catalogues";
 
 export default async function AboutUsPage({ params }: AboutUsPageProps) {
-  const { lng } = params;
+  const { lng } = await params;
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 

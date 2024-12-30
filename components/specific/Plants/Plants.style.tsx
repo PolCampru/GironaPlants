@@ -6,4 +6,44 @@ export const PlantsWrapper = styled.div`
 
   padding-top: 8rem;
   padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 3%;
+`;
+
+export const ContainerGlobal = styled.div`
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2%;
+`;
+
+export const ContainerFilters = styled.div`
+  width: 15%;
+`;
+
+export const ContainerProducts = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+`;
+
+export const ContainerOffers = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const ContainerSearch = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
