@@ -3,8 +3,10 @@
 import { RootState } from "@/store";
 import {
   initPlants,
+  resetPageScroll,
   setLoading,
   setPageScroll,
+  setQuery,
 } from "@/store/features/plantsSlice";
 import { Meta, PlantType } from "@/types/Products";
 import { createColumnHelper } from "@tanstack/react-table";
@@ -81,6 +83,15 @@ export default function useProducts() {
     }
   };
 
+  const searchByDescription = (description: string) => {
+    dispatch(resetPageScroll());
+    console.log(description);
+    const newQuery = `filters[description][$containsi]=${description}`;
+    console.log(newQuery);
+    dispatch(setQuery(newQuery));
+    getPlants(newQuery, 1, 25);
+  };
+
   const getScrollPlants = async () => {
     if (meta.total > plants.length && !loading) {
       dispatch(setPageScroll());
@@ -145,5 +156,11 @@ export default function useProducts() {
     }),
   ];
 
-  return { plants, loading, getScrollPlants, generateColumns };
+  return {
+    plants,
+    loading,
+    getScrollPlants,
+    generateColumns,
+    searchByDescription,
+  };
 }

@@ -8,6 +8,7 @@ import {
   StyledCheckbox,
   LabelText,
 } from "./CheckBox.style";
+import { shakeVariant, appearVariant } from "@/animations/CheckBox";
 
 interface CheckboxProps {
   className?: string;
@@ -18,19 +19,6 @@ interface CheckboxProps {
   name: string;
   size?: "small" | "medium" | "large";
 }
-
-const shakeVariant = {
-  shake: {
-    x: [0, -10, 10, -10, 10, 0],
-    transition: { duration: 0.4 },
-  },
-  initial: { x: 0 },
-};
-
-const appearVariant = {
-  initial: { opacity: 0, y: 10 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
 
 const Checkbox = ({
   className,

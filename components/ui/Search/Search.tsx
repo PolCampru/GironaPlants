@@ -1,11 +1,28 @@
-import React from "react";
+import React, { FormEvent, useState } from "react";
 import { StyledWrapper } from "./Search.style";
 
-const Search = ({ placeholder }: { placeholder: string }) => {
+interface SearchProps {
+  placeholder: string;
+  onSearch?: (value: string) => void;
+}
+
+const Search = ({ placeholder, onSearch }: SearchProps) => {
+  const [value, setValue] = useState("");
+
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    onSearch?.(value);
+  }
+
+  function handleReset() {
+    setValue("");
+    onSearch?.("");
+  }
+
   return (
     <StyledWrapper>
-      <form className="form">
-        <button>
+      <div className="form" onChange={handleSubmit}>
+        <button type="submit">
           <svg
             width={17}
             height={16}
@@ -23,13 +40,21 @@ const Search = ({ placeholder }: { placeholder: string }) => {
             />
           </svg>
         </button>
+
         <input
           className="input"
           placeholder={placeholder}
           required
           type="text"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
         />
-        <button className="reset" type="reset">
+
+        <button
+          className="reset"
+          type="button" // Important: don't trigger form submit
+          onClick={handleReset}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -45,7 +70,7 @@ const Search = ({ placeholder }: { placeholder: string }) => {
             />
           </svg>
         </button>
-      </form>
+      </div>
     </StyledWrapper>
   );
 };

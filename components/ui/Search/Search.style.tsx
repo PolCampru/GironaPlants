@@ -64,6 +64,12 @@ export const StyledWrapper = styled.div`
     background: none;
     opacity: 0;
     visibility: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
   }
   input:not(:placeholder-shown) ~ .reset {
     opacity: 1;

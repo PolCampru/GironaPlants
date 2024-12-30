@@ -30,13 +30,25 @@ export const ContainerFilters = styled.div`
   justify-content: start;
   align-items: start;
   gap: 1rem;
+
+  .container-filters {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
 `;
 
 export const ContainerProducts = styled.div`
   width: 84%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 `;
@@ -51,4 +63,11 @@ export const ContainerSearch = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+`;
+
+export const HorizontalLine = styled.div`
+  width: 100%;
+  height: 0.1rem;
+  border-radius: 0.1rem;
+  background-color: ${(props) => props.theme.colors.gray};
 `;
