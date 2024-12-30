@@ -15,8 +15,8 @@ const Loader = ({ size = 60, duration = 3, colors }: LoaderProps) => {
   return (
     <LoaderContainer
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.5 } }}
     >
       <Corners $size={size} $duration={duration}>
         <Corner $variant={1} $color={cornerColors[0]} $duration={duration} />

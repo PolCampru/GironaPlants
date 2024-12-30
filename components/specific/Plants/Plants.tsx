@@ -12,6 +12,7 @@ import {
 import Loader from "@/components/ui/Loader/Loader";
 import Table from "@/components/layout/Table/Table";
 import Title from "@/components/ui/Title/Title";
+import Search from "@/components/ui/Search/Search";
 
 export default function Plants() {
   const { plants, loading, getScrollPlants, generateColumns } = useProducts();
@@ -20,7 +21,10 @@ export default function Plants() {
     <PlantsWrapper>
       <Title title="Productes" />
       <ContainerGlobal>
-        <ContainerFilters>Aquí van els filtres</ContainerFilters>
+        <ContainerFilters>
+          Aquí van els filtres
+          <Search placeholder="Cerca..." />
+        </ContainerFilters>
         <ContainerProducts>
           <ContainerSearch>Aquí van els filtres aplicats</ContainerSearch>
           <ContainerOffers>Aquí van les ofertes</ContainerOffers>

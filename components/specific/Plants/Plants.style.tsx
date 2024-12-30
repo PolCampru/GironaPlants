@@ -20,15 +20,20 @@ export const ContainerGlobal = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 2%;
+  gap: 1.5%;
 `;
 
 export const ContainerFilters = styled.div`
-  width: 15%;
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
 `;
 
 export const ContainerProducts = styled.div`
-  width: 80%;
+  width: 84%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
