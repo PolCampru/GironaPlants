@@ -26,6 +26,10 @@ export type PlantsStateType = {
 export type QueryType = {
   search: string;
   offers: boolean;
-  genus: Record<number, string>;
   format: Record<number, string>;
 };
+
+export type potSizeOptionsType = {
+  id: number;
+  value: string;
+}[];

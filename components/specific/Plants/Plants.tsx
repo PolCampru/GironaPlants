@@ -15,6 +15,8 @@ import Table from "@/components/layout/Table/Table";
 import Title from "@/components/ui/Title/Title";
 import Search from "@/components/ui/Search/Search";
 import Checkbox from "@/components/ui/CheckBox/CheckBox";
+import { potSizeOptions } from "@/data/Products";
+import Filters from "./Filters/Filters";
 
 export default function Plants() {
   const {
@@ -23,7 +25,7 @@ export default function Plants() {
     query,
     getScrollPlants,
     generateColumns,
-    searchByDescription,
+    handleFilter,
   } = useProducts();
 
   return (
@@ -37,16 +39,22 @@ export default function Plants() {
           </div>
           <Search
             placeholder="Cerca..."
-            onChange={(value) => searchByDescription(value)}
+            onChange={(value) => handleFilter("search", value)}
             value={query.search}
           />
           <Checkbox
             label="Ofertes"
-            checked={false}
-            onChange={() => console.log("change")}
+            checked={query.offers}
+            onChange={() => handleFilter("offers", !query.offers)}
             name="offers"
           />
           <HorizontalLine />
+          <Filters
+            options={potSizeOptions}
+            data={query.format}
+            onChange={handleFilter}
+            title="Format"
+          />
         </ContainerFilters>
         <ContainerProducts>
           <ContainerSearch>Aquí van els filtres aplicats</ContainerSearch>

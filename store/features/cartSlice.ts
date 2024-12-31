@@ -3,6 +3,9 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const loadCartFromLocalStorage = (): CartStateType => {
   try {
+    if (typeof window === "undefined") {
+      return { items: [] };
+    } else if (!localStorage) return { items: [] };
     const serializedCart = localStorage.getItem("cartItems");
     if (serializedCart === null) {
       return { items: [] };

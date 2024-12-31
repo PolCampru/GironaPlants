@@ -10,7 +10,6 @@ const initialState: PlantsStateType = {
     query: {
       search: "",
       offers: false,
-      genus: {},
       format: {},
     },
   },
@@ -46,11 +45,10 @@ const plantsSlice = createSlice({
     },
 
     resetPageScroll(state: PlantsStateType) {
+      state.plants = [];
       state.meta.page = 0;
     },
     setQuery(state: PlantsStateType, action: PayloadAction<QueryType>) {
-      state.plants = [];
-      state.meta.page = 0;
       state.meta.query = action.payload;
     },
   },

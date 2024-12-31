@@ -1,8 +1,44 @@
-import { QueryType } from "@/types/Products";
+import { potSizeOptionsType, QueryType } from "@/types/Products";
 
 export const initialQueryState: QueryType = {
   search: "",
   offers: false,
-  genus: {},
   format: {},
 };
+
+export const potSizeOptions: potSizeOptionsType = [
+  { id: 1, value: "0/1 Rd" },
+  { id: 2, value: "0/1/2 Rd" },
+  { id: 3, value: "0/2 Rd" },
+  { id: 4, value: "1/0 Rd" },
+  { id: 5, value: "1/1 Rd" },
+  { id: 6, value: "1/2 Rd" },
+  { id: 7, value: "2/0 Rd" },
+  { id: 8, value: "2/1 Rd" },
+  { id: 9, value: "2/2 Rd" },
+  { id: 10, value: "AH" },
+  { id: 11, value: "AF150" },
+  { id: 12, value: "AF200" },
+  { id: 13, value: "AF250" },
+  { id: 14, value: "AF300" },
+  { id: 15, value: "AF350" },
+  { id: 16, value: "AF400" },
+  { id: 17, value: "AF2000" },
+  { id: 18, value: "M7" },
+  { id: 19, value: "M8" },
+  { id: 20, value: "M9" },
+  { id: 21, value: "M10" },
+  { id: 22, value: "M11" },
+  { id: 23, value: "M11 X/1/0" },
+  { id: 24, value: "M13" },
+  { id: 25, value: "C1" },
+  { id: 26, value: "C1,3" },
+  { id: 27, value: "C1,4" },
+  { id: 28, value: "C1,5" },
+  { id: 29, value: "C2" },
+  { id: 30, value: "C2,5" },
+  { id: 31, value: "C3" },
+  { id: 32, value: "C5" },
+  { id: 33, value: "C7" },
+  { id: 34, value: "C10" },
+];

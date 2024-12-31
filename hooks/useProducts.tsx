@@ -49,12 +49,6 @@ export default function useProducts() {
       strapiQuery += `filters[description][$containsi]=${query.search}`;
     }
 
-    if (Object.keys(query.genus).length > 0) {
-      strapiQuery += `&filters[genus][$in]=${Object.values(query.genus).join(
-        ","
-      )}`;
-    }
-
     if (Object.keys(query.format).length > 0) {
       strapiQuery += `&filters[pot_size][$in]=${Object.values(
         query.format
@@ -106,15 +100,36 @@ export default function useProducts() {
     }
   };
 
-  //fer global aquesta funció handleFilter passant el nom del filtre i el valor
-  const searchByDescription = (description: string) => {
-    dispatch(resetPageScroll());
-    console.log(description);
-    const newQuery = { ...meta.query, search: description };
-    dispatch(setQuery(newQuery));
-    getPlants(newQuery, 1, 25);
-  };
+  const handleFilter = (
+    name: keyof QueryType,
+    value: string | boolean | Record<number, string>
+  ) => {
+    if (name !== "offers") dispatch(resetPageScroll());
 
+    let newQuery = { ...meta.query };
+
+    if (name === "search") {
+      newQuery.search = value as string;
+    } else if (name === "offers") {
+      newQuery.offers = !newQuery.offers;
+    } else if (name === "format") {
+      const format = value as Record<number, string>;
+      console.log(format);
+      if (Object.keys(format).length === 0) {
+        newQuery.format = {};
+      } else {
+        newQuery.format = { ...query.format, ...format };
+      }
+    }
+
+    console.log(query.format);
+
+    dispatch(setQuery(newQuery));
+
+    if (name !== "offers") {
+      getPlants(newQuery, 1, 25);
+    }
+  };
   const getScrollPlants = async () => {
     if (meta.total > plants.length && !loading) {
       dispatch(setPageScroll());
@@ -185,6 +200,6 @@ export default function useProducts() {
     query,
     getScrollPlants,
     generateColumns,
-    searchByDescription,
+    handleFilter,
   };
 }
