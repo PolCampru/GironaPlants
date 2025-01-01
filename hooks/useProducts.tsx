@@ -46,13 +46,18 @@ export default function useProducts() {
   const generateStrapiQuery = (query: QueryType) => {
     let strapiQuery = "";
     if (query.search) {
-      strapiQuery += `filters[description][$containsi]=${query.search}`;
+      strapiQuery += `filters[description][$containsi]=${encodeURIComponent(
+        query.search
+      )}`;
     }
 
-    if (Object.keys(query.format).length > 0) {
-      strapiQuery += `&filters[pot_size][$in]=${Object.values(
-        query.format
-      ).join(",")}`;
+    const formatValues = Object.values(query.format);
+    if (formatValues.length > 0) {
+      formatValues.forEach((value, index) => {
+        strapiQuery += `${
+          strapiQuery ? "&" : ""
+        }filters[$or][${index}][pot_size][$eq]=${encodeURIComponent(value)}`;
+      });
     }
 
     return strapiQuery;
@@ -113,16 +118,21 @@ export default function useProducts() {
     } else if (name === "offers") {
       newQuery.offers = !newQuery.offers;
     } else if (name === "format") {
-      const format = value as Record<number, string>;
-      console.log(format);
-      if (Object.keys(format).length === 0) {
-        newQuery.format = {};
-      } else {
-        newQuery.format = { ...query.format, ...format };
-      }
-    }
+      const selectedFormats = value as Record<number, string>;
+      let currentFormats = { ...(newQuery.format ?? {}) } as Record<
+        number,
+        string
+      >;
 
-    console.log(query.format);
+      for (const [key, val] of Object.entries(selectedFormats)) {
+        if (currentFormats.hasOwnProperty(key)) {
+          delete currentFormats[key as unknown as number];
+        } else {
+          currentFormats[key as unknown as number] = val;
+        }
+      }
+      newQuery.format = currentFormats;
+    }
 
     dispatch(setQuery(newQuery));
 
@@ -130,6 +140,7 @@ export default function useProducts() {
       getPlants(newQuery, 1, 25);
     }
   };
+
   const getScrollPlants = async () => {
     if (meta.total > plants.length && !loading) {
       dispatch(setPageScroll());
