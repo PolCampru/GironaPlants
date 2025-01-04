@@ -8,15 +8,20 @@ import {
   setPageScroll,
   setQuery,
 } from "@/store/features/plantsSlice";
-import { Meta, PlantType, QueryType } from "@/types/Products";
+import { Meta, PlantType, productsDataType, QueryType } from "@/types/Products";
 import { createColumnHelper } from "@tanstack/react-table";
 import { useEffect } from "react";
 import AddToCart from "@/components/ui/AddToCart/AddToCart";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "@/store/features/cartSlice";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 
 export default function useProducts() {
+  const { t } = useTranslation();
+
+  const data = t("products", { returnObjects: true }) as productsDataType;
+
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants
   );
@@ -56,7 +61,9 @@ export default function useProducts() {
       formatValues.forEach((value, index) => {
         strapiQuery += `${
           strapiQuery ? "&" : ""
-        }filters[$or][${index}][pot_size][$eq]=${encodeURIComponent(value)}`;
+        }filters[$or][${index}][pot_size][$containsi]=${encodeURIComponent(
+          value
+        )}`;
       });
     }
 
@@ -177,23 +184,23 @@ export default function useProducts() {
 
   const generateColumns = () => [
     columnHelper.accessor("genus", {
-      header: "GENUS",
+      header: data.table.titleGenus,
       cell: (info) => info.getValue(),
     }),
     columnHelper.accessor("description", {
-      header: "DESCRIPTION",
+      header: data.table.titleDescription,
       cell: (info) => info.getValue(),
     }),
     columnHelper.accessor("pot_size", {
-      header: "POT SIZE",
+      header: data.table.titlePotSize,
       cell: (info) => info.getValue(),
     }),
     columnHelper.accessor("height", {
-      header: "HEIGHT",
+      header: data.table.titleHeight,
       cell: (info) => info.getValue(),
     }),
     columnHelper.accessor("price", {
-      header: "PRICE",
+      header: data.table.titlePrice,
       cell: (info) => `${info.getValue()} €`,
     }),
     columnHelper.display({
@@ -212,5 +219,6 @@ export default function useProducts() {
     getScrollPlants,
     generateColumns,
     handleFilter,
+    data,
   };
 }

@@ -153,6 +153,32 @@
       }
     ]
   },
+  "products": {
+    "title": "Productes",
+    "table": {
+      "titleGenus": "GÈNERE",
+      "titleDescription": "DESCRIPCIÓ",
+      "titleFormat": "FORMAT",
+      "titleHeight": "ALÇADA",
+      "titlePrice": "PREU"
+    },
+    "filters": {
+      "title": "Filtres",
+      "searchPlaceholder": "Cerca...",
+      "offersTitle": "Ofertes",
+      "potFilters": {
+        "title": "Format",
+        "seeAll": "Veure tots",
+        "options": [
+          { "id": 1, "value": "Rd", "label": "Arrel nua" },
+          { "id": 2, "value": "AH", "label": "Alvèol hortícola" },
+          { "id": 3, "value": "AF", "label": "Alvèol forestal" },
+          { "id": 4, "value": "M", "label": "Test" },
+          { "id": 5, "value": "C", "label": "Contenidor" }
+        ]
+      }
+    }
+  },
   "footer": {
     "contact": {
       "title": "Contacte:",

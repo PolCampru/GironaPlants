@@ -23,38 +23,41 @@ export default function Plants() {
     plants,
     loading,
     query,
+    data,
     getScrollPlants,
     generateColumns,
     handleFilter,
   } = useProducts();
 
+  if (!data.filters) return <Loader />;
+
   return (
     <PlantsWrapper>
-      <Title title="Productes" />
+      <Title title={data.title} />
       <ContainerGlobal>
         <ContainerFilters>
           <div className="container-filters">
             <img src="/images/products/filters.svg" alt="filters" />
-            <p>Filtres</p>
+            <p>{data.filters.title}</p>
           </div>
           <Search
-            placeholder="Cerca..."
+            placeholder={data.filters.searchPlaceholder}
             onChange={(value) => handleFilter("search", value)}
             value={query.search}
           />
           <Checkbox
-            label="Ofertes"
+            label={data.filters.offersTitle}
             checked={query.offers}
             onChange={() => handleFilter("offers", !query.offers)}
             name="offers"
           />
           <HorizontalLine />
           <Filters
-            options={potSizeOptions}
+            options={data.filters.potFilters.options}
             data={query.format}
             onChange={handleFilter}
-            title="Format"
-            seeAll="Veure tots"
+            title={data.filters.potFilters.title}
+            seeAll={data.filters.potFilters.seeAll}
           />
         </ContainerFilters>
         <ContainerProducts>

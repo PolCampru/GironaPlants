@@ -4,7 +4,7 @@ export const containerVariants = {
     transition: { duration: 0.3 },
   },
   collapsed: {
-    height: "8.3rem",
+    height: "7rem",
     transition: { duration: 0.3 },
   },
 };

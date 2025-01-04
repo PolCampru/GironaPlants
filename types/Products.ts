@@ -32,4 +32,30 @@ export type QueryType = {
 export type potSizeOptionsType = {
   id: number;
   value: string;
+  label: string;
 }[];
+
+export type productsDataType = {
+  title: string;
+  table: {
+    titleGenus: string;
+    titleDescription: string;
+    titlePotSize: string;
+    titleHeight: string;
+    titlePrice: string;
+  };
+  filters: {
+    title: string;
+    searchPlaceholder: string;
+    offersTitle: string;
+    potFilters: {
+      title: string;
+      seeAll: string;
+      options: {
+        id: number;
+        value: string;
+        label: string;
+      }[];
+    };
+  };
+};

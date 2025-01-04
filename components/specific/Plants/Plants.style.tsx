@@ -10,7 +10,7 @@ export const PlantsWrapper = styled.div`
   flex-direction: column;
   align-items: start;
 
-  gap: 3%;
+  gap: 2.8rem;
 `;
 
 export const ContainerGlobal = styled.div`
