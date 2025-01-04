@@ -54,6 +54,7 @@ export default function Plants() {
             data={query.format}
             onChange={handleFilter}
             title="Format"
+            seeAll="Veure tots"
           />
         </ContainerFilters>
         <ContainerProducts>
