@@ -107,7 +107,7 @@ const Navbar = () => {
 
       {modalState.value === "addPlant" && (
         <Modal closeModal={setHideModal}>
-          <ModalAddPlant />
+          <ModalAddPlant closeModal={setHideModal} />
         </Modal>
       )}
     </motion.div>

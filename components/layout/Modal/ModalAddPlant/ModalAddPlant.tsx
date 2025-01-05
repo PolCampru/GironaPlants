@@ -1,3 +1,4 @@
+// ModalAddPlant.tsx
 import useProducts from "@/hooks/useProducts";
 import { ModalAddPlantWrapper } from "./ModalAddPlant.style";
 import Title from "@/components/ui/Title/Title";
@@ -5,7 +6,7 @@ import { InputText } from "@/components/ui/Form/InputText/InputText";
 import { PlantType } from "@/types/Products";
 import { useState } from "react";
 
-const ModalAddPlant = () => {
+const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
   const { handleAddToCart, dataAddProduct } = useProducts();
   const [plant, setPlant] = useState<Partial<PlantType>>({});
   const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
@@ -39,11 +40,20 @@ const ModalAddPlant = () => {
       return;
     }
 
-    handleAddToCart(plant as PlantType);
+    const newPlant = { ...plant } as PlantType;
+    newPlant.id = Math.floor(Math.random() * 1000);
+
+    handleAddToCart(newPlant as PlantType);
+    closeModal();
   };
 
   return (
-    <ModalAddPlantWrapper>
+    <ModalAddPlantWrapper
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.3 }}
+    >
       <Title title={dataAddProduct.modal.title} />
 
       {dataAddProduct.modal.inputs?.map((input) => (
@@ -52,13 +62,15 @@ const ModalAddPlant = () => {
           label={input.label}
           name={input.name}
           value={(plant[input.name as keyof PlantType] as string) || ""}
-          error={formErrors[input.name]}
-          onChange={() => handleChange}
+          errors={formErrors[input.name]}
+          onChange={(e) =>
+            handleChange(e as React.ChangeEvent<HTMLInputElement>)
+          }
           required={input.required}
         />
       ))}
 
-      <button onClick={handleSubmit}>{dataAddProduct.button}</button>
+      <button onClick={handleSubmit}>{dataAddProduct.modal.button}</button>
     </ModalAddPlantWrapper>
   );
 };
