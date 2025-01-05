@@ -5,7 +5,7 @@ export default async function HomePage({
 }: {
   params: { lng: string };
 }) {
-  const { lng } = params;
+  const { lng } = await params;
 
   return (
     <main>

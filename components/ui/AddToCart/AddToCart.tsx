@@ -1,14 +1,21 @@
 import styled from "styled-components";
 import theme from "@/lib/theme";
+import React from "react";
 
-const AddToCartWrapper = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
+interface AddToCartProps {
+  onClick: () => void;
+  size?: string;
+}
+
+const AddToCartWrapper = styled.div<{ size: string }>`
+  width: ${({ size }) => size};
+  height: ${({ size }) => size};
 
   border-radius: 100%;
   background-color: ${theme.colors.hoverGreen};
 
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background-color: ${theme.colors.brandGreen};
@@ -22,9 +29,9 @@ const AddToCartWrapper = styled.div`
   }
 `;
 
-const AddToCart = ({ onClick }: { onClick: () => void }) => {
+const AddToCart: React.FC<AddToCartProps> = ({ onClick, size = "1.5rem" }) => {
   return (
-    <AddToCartWrapper onClick={onClick}>
+    <AddToCartWrapper onClick={onClick} size={size}>
       <img
         src="/images/plus.svg"
         alt="plus"

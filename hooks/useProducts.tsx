@@ -23,6 +23,7 @@ import { addItem } from "@/store/features/cartSlice";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
 import { showModal } from "@/store/features/modalSlice";
+import { OfferType } from "@/types/Offers";
 
 export default function useProducts() {
   const { t } = useTranslation();
@@ -55,7 +56,7 @@ export default function useProducts() {
   });
 
   useEffect(() => {
-    if (!loading) getPlants(meta.query, meta.page, 25);
+    if (!loading && plants.length < 1) getPlants(meta.query, meta.page, 25);
   }, []);
 
   const generateStrapiQuery = (query: QueryType) => {
@@ -165,7 +166,7 @@ export default function useProducts() {
     }
   };
 
-  const handleAddToCart = (plant: PlantType) => {
+  const handleAddToCart = (plant: PlantType | OfferType) => {
     if (items.find((item) => item.id === plant.id)) {
       Toast.fire({
         icon: "error",
@@ -181,6 +182,10 @@ export default function useProducts() {
         pot_size: plant.pot_size,
         height: plant.height,
         quantity: plant.quantity ? plant.quantity : 25,
+        image: "images" in plant && plant.images ? plant.images[0].url : "",
+        oldPrice: "old_price" in plant ? plant.old_price : undefined,
+        newPrice: "new_price" in plant ? plant.new_price : undefined,
+        discount: "discount" in plant ? plant.discount : undefined,
       })
     );
 

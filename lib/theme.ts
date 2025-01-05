@@ -6,6 +6,7 @@ const theme = {
     sand: "rgba(248, 238, 180, 1)",
     orange: "rgba(255, 119, 68, 1)",
     red: "rgb(240, 87, 68, 1)",
+    discountRed: "rgba(255, 20, 24, 0.76)",
     lime: "rgba(228, 246, 142, 1)",
     brandGreen: "rgba(17, 139, 80, 1)",
     hoverGreen2: "rgba(17, 139, 80, 0.7)",
