@@ -163,7 +163,6 @@
         {
           "label": "Gènere",
           "name": "genus",
-          "required": true,
           "requiredError": "El gènere és un camp obligatori"
         },
         {
@@ -192,7 +191,7 @@
     "table": {
       "titleGenus": "GÈNERE",
       "titleDescription": "DESCRIPCIÓ",
-      "titleFormat": "FORMAT",
+      "titlePotSize": "FORMAT",
       "titleHeight": "ALÇADA",
       "titlePrice": "PREU"
     },

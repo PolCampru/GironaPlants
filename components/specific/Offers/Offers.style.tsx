@@ -14,6 +14,7 @@ export const OffersWrapper = styled.div`
   .container-offers {
     width: 100%;
     margin-top: 2.8rem;
+    padding-bottom: 1rem;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
