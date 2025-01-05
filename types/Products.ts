@@ -4,6 +4,7 @@ export type PlantAttributesType = {
   pot_size: string;
   height: string;
   price: number;
+  quantity?: number;
 };
 
 export type PlantType = {
@@ -57,5 +58,19 @@ export type productsDataType = {
         label: string;
       }[];
     };
+  };
+};
+
+export type AddProductType = {
+  question: string;
+  button: string;
+  modal: {
+    title: string;
+    inputs: {
+      label: string;
+      name: string;
+      required?: boolean;
+      requiredError: string;
+    }[];
   };
 };

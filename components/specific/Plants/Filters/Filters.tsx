@@ -12,7 +12,7 @@ interface FiltersProps {
   seeAll: string;
   onChange: (
     name: keyof QueryType,
-    value: string | boolean | { [x: number]: string }
+    value: string | boolean | Record<number, string>
   ) => void;
 }
 

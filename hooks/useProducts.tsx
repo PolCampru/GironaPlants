@@ -8,7 +8,13 @@ import {
   setPageScroll,
   setQuery,
 } from "@/store/features/plantsSlice";
-import { Meta, PlantType, productsDataType, QueryType } from "@/types/Products";
+import {
+  AddProductType,
+  Meta,
+  PlantType,
+  productsDataType,
+  QueryType,
+} from "@/types/Products";
 import { createColumnHelper } from "@tanstack/react-table";
 import { useEffect } from "react";
 import AddToCart from "@/components/ui/AddToCart/AddToCart";
@@ -16,11 +22,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "@/store/features/cartSlice";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
+import { showModal } from "@/store/features/modalSlice";
 
 export default function useProducts() {
   const { t } = useTranslation();
 
   const data = t("products", { returnObjects: true }) as productsDataType;
+  const dataAddProduct = t("add-products", {
+    returnObjects: true,
+  }) as AddProductType;
 
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants
@@ -170,7 +180,7 @@ export default function useProducts() {
         description: plant.description,
         pot_size: plant.pot_size,
         height: plant.height,
-        quantity: 25,
+        quantity: plant.quantity ? plant.quantity : 25,
       })
     );
 
@@ -178,6 +188,10 @@ export default function useProducts() {
       icon: "success",
       title: "Plant added to cart",
     });
+  };
+
+  const addPlant = () => {
+    dispatch(showModal("addPlant"));
   };
 
   const columnHelper = createColumnHelper<PlantType>();
@@ -216,9 +230,12 @@ export default function useProducts() {
     plants,
     loading,
     query,
+    data,
+    dataAddProduct,
     getScrollPlants,
     generateColumns,
     handleFilter,
-    data,
+    handleAddToCart,
+    addPlant,
   };
 }

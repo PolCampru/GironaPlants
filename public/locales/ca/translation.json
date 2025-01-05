@@ -153,6 +153,39 @@
       }
     ]
   },
+  "add-products": {
+    "question": "No has trobat el producte que busques?",
+    "button": "Afegeix-lo aquí",
+    "modal": {
+      "title": "Afegir planta",
+      "inputs": [
+        {
+          "label": "Gènere",
+          "name": "genus",
+          "required": true,
+          "requiredError": "El gènere és un camp obligatori"
+        },
+        {
+          "label": "Descripció",
+          "name": "description",
+          "required": true,
+          "requiredError": "La descripció és un camp obligatori"
+        },
+        {
+          "label": "Format",
+          "name": "format"
+        },
+        {
+          "label": "Alçada",
+          "name": "height"
+        },
+        {
+          "label": "Quantitat",
+          "name": "quantity"
+        }
+      ]
+    }
+  },
   "products": {
     "title": "Productes",
     "table": {

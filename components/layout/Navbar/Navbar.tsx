@@ -20,10 +20,15 @@ import {
   menuVariants,
   navbarVariants,
 } from "@/animations/NavBar";
+import useModal from "@/hooks/useModal";
+import Modal from "../Modal/Modal";
+import ModalAddPlant from "../Modal/ModalAddPlant/ModalAddPlant";
 
 const Navbar = () => {
   const { t, i18n, ready } = useTranslation();
   const pathname = usePathname();
+
+  const { modalState, setHideModal } = useModal();
 
   const navbarItems = t("navbar.paths", {
     returnObjects: true,
@@ -99,6 +104,12 @@ const Navbar = () => {
           <BudgetAndLanguage i18n={i18n} data={LanguageSelectorData} />
         </RightContainer>
       </NavbarWrapper>
+
+      {modalState.value === "addPlant" && (
+        <Modal closeModal={setHideModal}>
+          <ModalAddPlant />
+        </Modal>
+      )}
     </motion.div>
   );
 };

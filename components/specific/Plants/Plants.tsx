@@ -15,8 +15,8 @@ import Table from "@/components/layout/Table/Table";
 import Title from "@/components/ui/Title/Title";
 import Search from "@/components/ui/Search/Search";
 import Checkbox from "@/components/ui/CheckBox/CheckBox";
-import { potSizeOptions } from "@/data/Products";
 import Filters from "./Filters/Filters";
+import AppliedFilters from "./AppliedFilters/AppliedFilters";
 
 export default function Plants() {
   const {
@@ -24,9 +24,11 @@ export default function Plants() {
     loading,
     query,
     data,
+    dataAddProduct,
     getScrollPlants,
     generateColumns,
     handleFilter,
+    addPlant,
   } = useProducts();
 
   if (!data.filters) return <Loader />;
@@ -61,7 +63,14 @@ export default function Plants() {
           />
         </ContainerFilters>
         <ContainerProducts>
-          <ContainerSearch>Aquí van els filtres aplicats</ContainerSearch>
+          <ContainerSearch>
+            <AppliedFilters
+              filters={query}
+              handleRemove={handleFilter}
+              dataAddProduct={dataAddProduct}
+              addPlant={addPlant}
+            />
+          </ContainerSearch>
           <ContainerOffers>Aquí van les ofertes</ContainerOffers>
           {!plants ? (
             <Loader />
