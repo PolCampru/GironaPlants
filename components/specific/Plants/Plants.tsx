@@ -31,7 +31,7 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
     generateColumns,
     handleAddToCart,
     handleFilter,
-    addPlant,
+    addCostumPlant,
   } = useProducts();
 
   if (!data.filters) return <Loader />;
@@ -73,7 +73,7 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
               filters={query}
               handleRemove={handleFilter}
               dataAddProduct={dataAddProduct}
-              addPlant={addPlant}
+              addPlant={addCostumPlant}
             />
           </ContainerSearch>
           <OffersCarousel

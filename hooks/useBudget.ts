@@ -1,0 +1,36 @@
+"use client";
+
+import { RootState } from "@/store";
+
+import { useDispatch, useSelector } from "react-redux";
+import { clearCart, removeItem } from "@/store/features/cartSlice";
+import { useTranslation } from "react-i18next";
+import { showModal } from "@/store/features/modalSlice";
+import { ItemType } from "@/types/Cart";
+
+export default function useBudget() {
+  const { t } = useTranslation();
+
+  const { items } = useSelector((state: RootState) => state.cart);
+
+  const dispatch = useDispatch();
+
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
+
+  const addCostumPlant = () => {
+    dispatch(showModal("addPlant"));
+  };
+
+  const deleteItem = (item: ItemType) => {
+    dispatch(removeItem(item));
+  };
+
+  return {
+    items,
+    addCostumPlant,
+    handleClearCart,
+    deleteItem,
+  };
+}

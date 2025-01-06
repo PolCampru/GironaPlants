@@ -15,6 +15,7 @@ import {
 } from "./BudgetAndLanguage.style";
 import { AnimatePresence } from "framer-motion";
 import useBudgetAndLanguage from "@/hooks/useBudgetAndLanguage";
+import BudgetNavbar from "./BudgetNavbar/BudgetNavbar";
 
 interface LanguageSelectorProps {
   i18n: any;
@@ -112,10 +113,7 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
               <CloseButton onClick={() => setIsBudgetOpen(false)}>
                 <img src="/images/crossIcon.svg" alt="Close" />
               </CloseButton>
-              <div>
-                <h2>Budget Details</h2>
-                <p>This is where your budget component will be displayed.</p>
-              </div>
+              <BudgetNavbar />
             </BudgetDrawer>
           </>
         )}

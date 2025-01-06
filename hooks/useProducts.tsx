@@ -182,7 +182,8 @@ export default function useProducts() {
         pot_size: plant.pot_size,
         height: plant.height,
         quantity: plant.quantity ? plant.quantity : 25,
-        image: "images" in plant && plant.images ? plant.images[0].url : "",
+        min_quantity: plant.quantity ? plant.quantity : 25,
+        image: "images" in plant ? plant.images : undefined,
         oldPrice: "old_price" in plant ? plant.old_price : undefined,
         newPrice: "new_price" in plant ? plant.new_price : undefined,
         discount: "discount" in plant ? plant.discount : undefined,
@@ -195,7 +196,7 @@ export default function useProducts() {
     });
   };
 
-  const addPlant = () => {
+  const addCostumPlant = () => {
     dispatch(showModal("addPlant"));
   };
 
@@ -241,6 +242,6 @@ export default function useProducts() {
     generateColumns,
     handleFilter,
     handleAddToCart,
-    addPlant,
+    addCostumPlant,
   };
 }

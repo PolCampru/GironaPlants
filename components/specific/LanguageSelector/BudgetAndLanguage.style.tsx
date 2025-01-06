@@ -145,7 +145,7 @@ export const BudgetDrawer = styled(motion.div)`
   right: 0;
   width: 35%;
   height: 100%;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.creamLight};
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 1rem;
