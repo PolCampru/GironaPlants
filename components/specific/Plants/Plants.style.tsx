@@ -51,13 +51,6 @@ export const ContainerProducts = styled.div`
   justify-content: center;
   gap: 1rem;
 `;
-
-export const ContainerOffers = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-`;
-
 export const ContainerSearch = styled.div`
   width: 100%;
   display: flex;

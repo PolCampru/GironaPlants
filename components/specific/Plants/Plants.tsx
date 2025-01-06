@@ -4,7 +4,6 @@ import useProducts from "@/hooks/useProducts";
 import {
   ContainerFilters,
   ContainerGlobal,
-  ContainerOffers,
   ContainerProducts,
   ContainerSearch,
   HorizontalLine,
@@ -17,8 +16,11 @@ import Search from "@/components/ui/Search/Search";
 import Checkbox from "@/components/ui/CheckBox/CheckBox";
 import Filters from "./Filters/Filters";
 import AppliedFilters from "./AppliedFilters/AppliedFilters";
+import { OffersDataType } from "@/types/Offers";
+import OffertCardMini from "./OffertCardMini/OffertCardMini";
+import { OffersCarousel } from "./ContainerOffers/ContainerOffers";
 
-export default function Plants() {
+export default function Plants({ offersData }: { offersData: OffersDataType }) {
   const {
     plants,
     loading,
@@ -27,6 +29,7 @@ export default function Plants() {
     dataAddProduct,
     getScrollPlants,
     generateColumns,
+    handleAddToCart,
     handleFilter,
     addPlant,
   } = useProducts();
@@ -47,12 +50,14 @@ export default function Plants() {
             onChange={(value) => handleFilter("search", value)}
             value={query.search}
           />
-          <Checkbox
-            label={data.filters.offersTitle}
-            checked={query.offers}
-            onChange={() => handleFilter("offers", !query.offers)}
-            name="offers"
-          />
+          {offersData && offersData.length > 0 && (
+            <Checkbox
+              label={data.filters.offersTitle}
+              checked={query.offers}
+              onChange={() => handleFilter("offers", !query.offers)}
+              name="offers"
+            />
+          )}
           <HorizontalLine />
           <Filters
             options={data.filters.potFilters.options}
@@ -71,7 +76,12 @@ export default function Plants() {
               addPlant={addPlant}
             />
           </ContainerSearch>
-          <ContainerOffers>Aquí van les ofertes</ContainerOffers>
+          <OffersCarousel
+            query={query}
+            data={data}
+            offersData={offersData}
+            handleAddToCart={handleAddToCart}
+          />
           {!plants ? (
             <Loader />
           ) : (

@@ -75,3 +75,9 @@ export type AddProductType = {
     }[];
   };
 };
+
+export type ProductsPageProps = {
+  params: {
+    lng: string;
+  };
+};

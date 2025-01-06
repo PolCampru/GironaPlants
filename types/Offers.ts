@@ -22,4 +22,4 @@ export type OfferType = {
   images: Image[];
 };
 
-export type offersDataType = OfferType[];
+export type OffersDataType = OfferType[];
