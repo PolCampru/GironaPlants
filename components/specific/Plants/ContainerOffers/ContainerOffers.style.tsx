@@ -24,18 +24,23 @@ export const ContainerHeader = styled.div`
     text-transform: uppercase;
     margin-right: 1.5rem;
   }
+`;
 
-  .container-arrow {
-    display: flex;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.4rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.25rem;
-    background-color: ${(props) => props.theme.colors.lightGreen};
-    cursor: pointer;
-  }
+export const ContainerArrow = styled.div<{ $isActive?: boolean }>`
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  transition: 0.3s ease-in-out;
+
+  background-color: ${(props) =>
+    props.$isActive ? props.theme.colors.lightGreen : props.theme.colors.gray};
+
+  filter: ${(props) => (props.$isActive ? "none" : "grayscale(1)")};
+  cursor: pointer;
 `;
 
 export const ContainerCards = styled.div`
@@ -50,7 +55,7 @@ export const ContainerCards = styled.div`
 export const CarouselInner = styled.div`
   display: flex;
   position: absolute;
-  gap: 10px;
+  gap: 0.625rem;
   left: 0;
   transition: 0.3s ease-in-out;
 `;

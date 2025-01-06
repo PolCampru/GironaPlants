@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import {
   CarouselInner,
+  ContainerArrow,
   ContainerCards,
   ContainerHeader,
   ContainerOffers,
@@ -22,17 +23,39 @@ export function OffersCarousel({
   handleAddToCart,
 }: OffersCarouselProps) {
   const [leftValue, setLeftValue] = useState(0);
+  const [maxLeft, setMaxLeft] = useState(0);
 
   const carouselInnerRef = useRef<HTMLDivElement | null>(null);
   const containerCardsRef = useRef<HTMLDivElement | null>(null);
 
+  const calculateMaxLeft = () => {
+    if (!carouselInnerRef.current || !containerCardsRef.current) {
+      setMaxLeft(0);
+      return;
+    }
+
+    const innerWidth = carouselInnerRef.current.scrollWidth + 272;
+    const viewportWidth = containerCardsRef.current.clientWidth;
+    const movementSize = getMovementSize();
+
+    const totalMovements = Math.ceil(
+      (innerWidth - viewportWidth) / movementSize
+    );
+
+    setMaxLeft(-movementSize * (totalMovements - 1));
+  };
+
   useEffect(() => {
     if (!carouselInnerRef.current || !containerCardsRef.current) return;
 
-    const onResize = () => {};
+    calculateMaxLeft();
+
+    const onResize = () => {
+      calculateMaxLeft();
+    };
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
-  }, []);
+  }, [offersData]);
 
   const getMovementSize = (): number => {
     if (!carouselInnerRef.current?.firstElementChild) return 272;
@@ -53,7 +76,7 @@ export function OffersCarousel({
 
     const innerWidth = carouselInnerRef.current.scrollWidth;
     const viewportWidth = containerCardsRef.current.clientWidth;
-    const maxLeft = -(innerWidth - viewportWidth);
+    const maxLeft = -(innerWidth - viewportWidth + 272);
 
     const newLeft = leftValue - getMovementSize();
     if (newLeft >= maxLeft) {
@@ -66,7 +89,7 @@ export function OffersCarousel({
       <ContainerHeader>
         <p>{data.filters.offersTitle}</p>
 
-        <div className="container-arrow" onClick={handlePrev}>
+        <ContainerArrow onClick={handlePrev} $isActive={leftValue < 0}>
           <img
             src="/images/products/arrowIcon.svg"
             alt="arrow"
@@ -76,15 +99,15 @@ export function OffersCarousel({
               transform: "rotate(180deg)",
             }}
           />
-        </div>
+        </ContainerArrow>
 
-        <div className="container-arrow" onClick={handleNext}>
+        <ContainerArrow onClick={handleNext} $isActive={leftValue > maxLeft}>
           <img
             src="/images/products/arrowIcon.svg"
             alt="arrow"
             style={{ width: "100%", height: "100%" }}
           />
-        </div>
+        </ContainerArrow>
       </ContainerHeader>
 
       <ContainerCards ref={containerCardsRef}>

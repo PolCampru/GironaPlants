@@ -6,7 +6,7 @@ import AddToCart from "@/components/ui/AddToCart/AddToCart";
 
 export const CardWrapper = styled.div`
   width: 17rem;
-  height: 17rem;
+  height: 18rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -46,9 +46,15 @@ export const CardWrapper = styled.div`
     padding-bottom: 0.25rem;
   }
 
-  .attributes {
-    font-size: 0.75rem;
-    font-weight: 300;
+  .container-attributes {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    .attributes {
+      font-size: 0.75rem;
+      font-weight: 300;
+    }
   }
 
   .container-price {
@@ -91,8 +97,10 @@ const OffertCardMini = ({ offer, handleAddToCart }: OffertCardMiniProps) => {
       <ImageCarrousel images={offer.images} />
       <p className="genus">{offer.genus}</p>
       <p className="description">{offer.description}</p>
-      <p className="attributes">{offer.pot_size}</p>
-      <p className="attributes">{offer.height}</p>
+      <div className="container-attributes">
+        {offer.pot_size && <p className="attributes">{offer.pot_size}</p>}
+        {offer.height && <p className="attributes">{offer.height}</p>}
+      </div>
       <div className="container-price">
         <p className="new-price">{offer.new_price}€</p>
         <p className="old-price">{offer.old_price}€</p>
