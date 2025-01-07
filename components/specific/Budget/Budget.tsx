@@ -13,9 +13,15 @@ interface BudgetProps {
   items: ItemType[];
   handleClearCart: () => void;
   deleteItem: (item: ItemType) => void;
+  handleChangeQuantity: (id: number, quantity: number) => void;
 }
 
-const Budget = ({ items, handleClearCart, deleteItem }: BudgetProps) => {
+const Budget = ({
+  items,
+  handleClearCart,
+  deleteItem,
+  handleChangeQuantity,
+}: BudgetProps) => {
   return (
     <BudgetWrapper>
       <ContainerHeader>
@@ -29,7 +35,12 @@ const Budget = ({ items, handleClearCart, deleteItem }: BudgetProps) => {
       <ContainerItems>
         {items.map((item, index) => (
           <>
-            <BudgetItem key={item.id} item={item} deleteItem={deleteItem} />
+            <BudgetItem
+              key={item.id}
+              item={item}
+              deleteItem={deleteItem}
+              handleChangeQuantity={handleChangeQuantity}
+            />
             {index + 1 < items.length && <Line />}
           </>
         ))}

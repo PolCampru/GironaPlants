@@ -12,10 +12,14 @@ import Quantity from "./Quantity/Quantity";
 interface BudgetItemProps {
   item: ItemType;
   deleteItem: (item: ItemType) => void;
+  handleChangeQuantity: (id: number, quantity: number) => void;
 }
 
-const BudgetItem = ({ item, deleteItem }: BudgetItemProps) => {
-  console.log(item.image);
+const BudgetItem = ({
+  item,
+  deleteItem,
+  handleChangeQuantity,
+}: BudgetItemProps) => {
   return (
     <BudgetItemWrapper>
       <ContainerImgText>
@@ -42,7 +46,11 @@ const BudgetItem = ({ item, deleteItem }: BudgetItemProps) => {
         <Quantity
           minQuantity={item.min_quantity}
           value={item.quantity}
-          onChange={() => console.log("change")}
+          onChange={(newValue: number) =>
+            handleChangeQuantity(item.id, newValue)
+          }
+          title="Quantitat: "
+          error="La quantitat mínima és "
         />
       </ContainerEnd>
       <CloseButton onClick={() => deleteItem(item)}>

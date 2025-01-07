@@ -3,7 +3,11 @@
 import { RootState } from "@/store";
 
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart, removeItem } from "@/store/features/cartSlice";
+import {
+  clearCart,
+  removeItem,
+  editQuantity,
+} from "@/store/features/cartSlice";
 import { useTranslation } from "react-i18next";
 import { showModal } from "@/store/features/modalSlice";
 import { ItemType } from "@/types/Cart";
@@ -27,10 +31,15 @@ export default function useBudget() {
     dispatch(removeItem(item));
   };
 
+  const handleChangeQuantity = (id: number, quantity: number) => {
+    dispatch(editQuantity({ id, quantity }));
+  };
+
   return {
     items,
     addCostumPlant,
     handleClearCart,
     deleteItem,
+    handleChangeQuantity,
   };
 }

@@ -5,7 +5,8 @@ import Budget from "../../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
 
 const BudgetNavbar = () => {
-  const { items, handleClearCart, deleteItem } = useBudget();
+  const { items, handleClearCart, deleteItem, handleChangeQuantity } =
+    useBudget();
 
   return (
     <BudgetNavbarWrapper>
@@ -14,9 +15,12 @@ const BudgetNavbar = () => {
         items={items}
         handleClearCart={handleClearCart}
         deleteItem={deleteItem}
+        handleChangeQuantity={handleChangeQuantity}
       />
-      Aquí van les plantes Aquí va per afegir una planta Aquí va per continuar
-      al formulari de sol·licitud de pressupost
+      <div style={{ height: "100px" }}>
+        Aquí van les plantes Aquí va per afegir una planta Aquí va per continuar
+        al formulari de sol·licitud de pressupost
+      </div>
     </BudgetNavbarWrapper>
   );
 };

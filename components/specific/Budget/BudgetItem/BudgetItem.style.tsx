@@ -9,19 +9,18 @@ export const BudgetItemWrapper = styled.div`
   gap: 1rem;
 
   position: relative;
-  overflow: hidden;
 `;
 
 export const CloseButton = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
 
   transition: transform 0.3s;
 
@@ -84,6 +83,7 @@ export const ContainerEnd = styled.div`
   display: flex;
   justify-content: end;
   align-items: end;
+  gap: 1rem;
 
   .container-price {
     display: flex;
