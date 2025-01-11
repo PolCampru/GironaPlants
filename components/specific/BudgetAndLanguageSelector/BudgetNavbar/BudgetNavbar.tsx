@@ -30,7 +30,7 @@ const BudgetNavbar = ({ lng }: { lng: string }) => {
           {dataAddProduct.question}
           <span onClick={addCostumPlant}>{dataAddProduct.button}</span>
         </AddPlant>
-        <Link href={`${lng}/budget`} className="link">
+        <Link href={`budget`} className="link">
           Formulari de sol·licitud
         </Link>
       </AddPlantAndContinueWrapper>
