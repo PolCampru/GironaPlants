@@ -21,7 +21,7 @@ export const AddPlantAndContinueWrapper = styled.div`
   align-items: center;
   gap: 1rem;
 
-  button {
+  .link {
     display: flex;
     width: 100%;
     height: 3.125rem;

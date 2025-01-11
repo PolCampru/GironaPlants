@@ -10,7 +10,7 @@ import {
   RightContainer,
   SelectedBackground,
 } from "./Navbar.style";
-import BudgetAndLanguage from "@/components/specific/LanguageSelector/BudgetAndLanguage";
+import BudgetAndLanguage from "@/components/specific/BudgetAndLanguageSelector/BudgetAndLanguage";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

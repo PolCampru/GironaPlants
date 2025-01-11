@@ -113,7 +113,7 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
               <CloseButton onClick={() => setIsBudgetOpen(false)}>
                 <img src="/images/crossIcon.svg" alt="Close" />
               </CloseButton>
-              <BudgetNavbar />
+              <BudgetNavbar lng={currentLanguage} />
             </BudgetDrawer>
           </>
         )}

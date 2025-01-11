@@ -8,8 +8,9 @@ import Title from "@/components/ui/Title/Title";
 import Budget from "../../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
 import useProducts from "@/hooks/useProducts";
+import Link from "next/link";
 
-const BudgetNavbar = () => {
+const BudgetNavbar = ({ lng }: { lng: string }) => {
   const { items, handleClearCart, deleteItem, handleChangeQuantity } =
     useBudget();
 
@@ -29,7 +30,9 @@ const BudgetNavbar = () => {
           {dataAddProduct.question}
           <span onClick={addCostumPlant}>{dataAddProduct.button}</span>
         </AddPlant>
-        <button>Formulari de sol·licitud</button>
+        <Link href={`${lng}/budget`} className="link">
+          Formulari de sol·licitud
+        </Link>
       </AddPlantAndContinueWrapper>
     </BudgetNavbarWrapper>
   );

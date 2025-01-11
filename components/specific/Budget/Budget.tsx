@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import { ItemType } from "@/types/Cart";
-import React from "react";
 import {
   BudgetWrapper,
   ContainerHeader,
@@ -22,31 +22,38 @@ const Budget = ({
   deleteItem,
   handleChangeQuantity,
 }: BudgetProps) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredItems = items.filter((item) =>
+    item.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <BudgetWrapper>
       <ContainerHeader>
         <Search
           placeholder="Cerca..."
-          value=""
-          onChange={() => console.log("search")}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e)}
         />
         <p onClick={handleClearCart}>Buidar la sol·licitud</p>
       </ContainerHeader>
+
       <ContainerItems>
-        {items.map((item, index) => (
+        {filteredItems.map((item, index) => (
           <React.Fragment key={item.id}>
             <BudgetItem
-              key={item.id}
               item={item}
               deleteItem={deleteItem}
               handleChangeQuantity={handleChangeQuantity}
             />
-            {index + 1 < items.length && <Line />}
+            {index + 1 < filteredItems.length && <Line />}
           </React.Fragment>
         ))}
       </ContainerItems>
+
       <p className="total">
-        Total: <span>{items.length} articles</span>
+        Total: <span>{filteredItems.length} articles</span>
       </p>
     </BudgetWrapper>
   );
