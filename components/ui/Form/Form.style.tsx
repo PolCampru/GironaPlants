@@ -29,6 +29,7 @@ export const FormContainer = styled.form`
   height: 100%;
 
   overflow-y: auto;
+  overflow-x: hidden;
 
   .submit {
     display: flex;

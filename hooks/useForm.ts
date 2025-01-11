@@ -7,10 +7,13 @@ import { useTranslation } from "react-i18next";
 import { initialFormValues } from "@/data/Form";
 import { FormValuesType } from "@/types/Form";
 import { FormType } from "@/types/Contact";
+import useBudget from "./useBudget";
+import { ItemType } from "@/types/Cart";
 
 const useForm = () => {
   const { t } = useTranslation();
   const data = t("form", { returnObjects: true }) as FormType;
+  const { items, handleClearCart } = useBudget();
 
   const [formValues, setFormValues] =
     useState<FormValuesType>(initialFormValues);
@@ -173,12 +176,15 @@ const useForm = () => {
           (field.value as File[]).forEach((file) => {
             formData.append("files", file);
           });
-        } else if (key === "privacyPolicy") {
-          formData.append(key, field.value ? "true" : "false");
         } else {
           formData.append(key, String(field.value));
         }
       });
+
+      if (window.location.pathname.includes("/budget")) {
+        const itemsJson = JSON.stringify(items);
+        formData.append("items", itemsJson);
+      }
 
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -194,6 +200,10 @@ const useForm = () => {
         title: data.messages.success.title,
         text: data.messages.success.text,
       });
+
+      if (window.location.pathname.includes("/budget")) {
+        handleClearCart();
+      }
 
       resetForm();
       (event.target as HTMLFormElement).reset();
