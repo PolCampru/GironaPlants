@@ -86,7 +86,6 @@ const Quantity = ({
     }
 
     const newValue = parseInt(inputValue, 10);
-    console.log("newValue", newValue);
 
     if (isNaN(newValue)) {
       return;

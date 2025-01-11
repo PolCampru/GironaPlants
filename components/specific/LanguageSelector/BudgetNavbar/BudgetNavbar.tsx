@@ -1,12 +1,19 @@
 import React from "react";
-import { BudgetNavbarWrapper } from "./BudgetNavbar.style";
+import {
+  AddPlant,
+  AddPlantAndContinueWrapper,
+  BudgetNavbarWrapper,
+} from "./BudgetNavbar.style";
 import Title from "@/components/ui/Title/Title";
 import Budget from "../../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
+import useProducts from "@/hooks/useProducts";
 
 const BudgetNavbar = () => {
   const { items, handleClearCart, deleteItem, handleChangeQuantity } =
     useBudget();
+
+  const { dataAddProduct, addCostumPlant } = useProducts();
 
   return (
     <BudgetNavbarWrapper>
@@ -17,10 +24,13 @@ const BudgetNavbar = () => {
         deleteItem={deleteItem}
         handleChangeQuantity={handleChangeQuantity}
       />
-      <div style={{ height: "100px" }}>
-        Aquí van les plantes Aquí va per afegir una planta Aquí va per continuar
-        al formulari de sol·licitud de pressupost
-      </div>
+      <AddPlantAndContinueWrapper>
+        <AddPlant>
+          {dataAddProduct.question}
+          <span onClick={addCostumPlant}>{dataAddProduct.button}</span>
+        </AddPlant>
+        <button>Formulari de sol·licitud</button>
+      </AddPlantAndContinueWrapper>
     </BudgetNavbarWrapper>
   );
 };

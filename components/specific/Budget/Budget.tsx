@@ -34,7 +34,7 @@ const Budget = ({
       </ContainerHeader>
       <ContainerItems>
         {items.map((item, index) => (
-          <>
+          <React.Fragment key={item.id}>
             <BudgetItem
               key={item.id}
               item={item}
@@ -42,9 +42,12 @@ const Budget = ({
               handleChangeQuantity={handleChangeQuantity}
             />
             {index + 1 < items.length && <Line />}
-          </>
+          </React.Fragment>
         ))}
       </ContainerItems>
+      <p className="total">
+        Total: <span>{items.length} articles</span>
+      </p>
     </BudgetWrapper>
   );
 };

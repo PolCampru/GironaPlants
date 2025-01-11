@@ -17,7 +17,6 @@ import Checkbox from "@/components/ui/CheckBox/CheckBox";
 import Filters from "./Filters/Filters";
 import AppliedFilters from "./AppliedFilters/AppliedFilters";
 import { OffersDataType } from "@/types/Offers";
-import OffertCardMini from "./OffertCardMini/OffertCardMini";
 import { OffersCarousel } from "./ContainerOffers/ContainerOffers";
 
 export default function Plants({ offersData }: { offersData: OffersDataType }) {

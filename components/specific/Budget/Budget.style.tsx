@@ -8,6 +8,22 @@ export const BudgetWrapper = styled.div`
   justify-content: start;
   align-items: start;
   gap: 0.5rem;
+
+  .total {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-weight: 400;
+    line-height: 1.5rem;
+
+    span {
+      font-weight: 700;
+      line-height: 1.5rem;
+    }
+  }
 `;
 
 export const ContainerHeader = styled.div`
@@ -30,7 +46,7 @@ export const ContainerHeader = styled.div`
 
 export const ContainerItems = styled.div`
   width: 100%;
-  height: 74vh;
+  height: 68vh;
   display: flex;
   flex-direction: column;
   justify-content: start;

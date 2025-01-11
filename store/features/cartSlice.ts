@@ -34,6 +34,7 @@ const cartSlice = createSlice({
   reducers: {
     addItem(state, action: PayloadAction<ItemType>) {
       state.items.push(action.payload);
+      state.items.sort((a, b) => a.id - b.id);
       saveCartToLocalStorage(state);
     },
     removeItem(state, action: PayloadAction<ItemType>) {
