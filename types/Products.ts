@@ -66,6 +66,7 @@ export type AddProductType = {
   button: string;
   modal: {
     title: string;
+    subtitle: string;
     button: string;
     inputs: {
       label: string;

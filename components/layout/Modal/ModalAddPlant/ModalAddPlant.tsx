@@ -55,9 +55,11 @@ const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
       transition={{ duration: 0.3 }}
     >
       <Title title={dataAddProduct.modal.title} />
+      <p>{dataAddProduct.modal.subtitle}</p>
 
       {dataAddProduct.modal.inputs?.map((input) => (
         <InputText
+          style={{ width: "100%" }}
           key={input.name}
           label={input.label}
           name={input.name}

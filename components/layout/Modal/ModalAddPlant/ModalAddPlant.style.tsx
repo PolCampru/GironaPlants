@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const ModalAddPlantWrapper = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
   button {
     display: flex;
     width: 100%;

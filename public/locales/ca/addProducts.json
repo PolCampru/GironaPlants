@@ -3,7 +3,8 @@
     "question": "No has trobat el producte que busques?",
     "button": "Afegeix-lo aquí",
     "modal": {
-      "title": "Afegir planta",
+      "title": "Afegeix un nou producte",
+      "subtitle": "Si no has trobat el producte que buscaves, omple aquest formulari i afegeix-lo al pressupost",
       "button": "Afegir",
       "inputs": [
         {
