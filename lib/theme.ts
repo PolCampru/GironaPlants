@@ -1,6 +1,3 @@
-import { li } from "framer-motion/client";
-
-// theme.ts
 const theme = {
   colors: {
     cream: "rgba(255, 253, 208, 1)",

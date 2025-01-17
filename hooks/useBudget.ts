@@ -8,13 +8,10 @@ import {
   removeItem,
   editQuantity,
 } from "@/store/features/cartSlice";
-import { useTranslation } from "react-i18next";
 import { showModal } from "@/store/features/modalSlice";
 import { ItemType } from "@/types/Cart";
 
 export default function useBudget() {
-  const { t } = useTranslation();
-
   const { items } = useSelector((state: RootState) => state.cart);
 
   const dispatch = useDispatch();

@@ -11,7 +11,6 @@ import {
 import BudgetAndLanguage from "@/components/specific/BudgetAndLanguageSelector/BudgetAndLanguage";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Loader from "@/components/ui/Loader/Loader";
 import {
   itemVariants,
@@ -28,7 +27,7 @@ const Navbar = () => {
     setHideModal,
     ready,
     scrollDirection,
-    t,
+    logo,
     navbarItems,
     pathname,
     LanguageSelectorData,
@@ -56,7 +55,7 @@ const Navbar = () => {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
         >
-          <img src={t("logo.src") as string} alt={t("logo.alt")} />
+          <img src={logo.src} alt={logo.alt} />
         </LogoContainer>
 
         <MenuContainer

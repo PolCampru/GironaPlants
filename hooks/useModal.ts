@@ -1,6 +1,5 @@
 import { RootState } from "@/store";
 import { hideModal, showModal } from "@/store/features/modalSlice";
-import { i } from "framer-motion/client";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -10,7 +9,7 @@ const useModal = () => {
   const modalState = useSelector((state: RootState) => state.modal);
   const dispatch = useDispatch();
 
-  const { t, i18n, ready } = useTranslation();
+  const { t, i18n, ready } = useTranslation(["navbar", "common"]);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -40,13 +39,18 @@ const useModal = () => {
     dispatch(hideModal());
   };
 
-  const navbarItems = t("navbar.paths", {
+  const navbarItems = t("paths", {
     returnObjects: true,
   }) as { name: string; url: string }[];
 
-  const LanguageSelectorData = t("navbar.budgetAndLanguage", {
+  const LanguageSelectorData = t("budgetAndLanguage", {
     returnObjects: true,
   }) as { [key: string]: string };
+
+  const logo = t("logo", { ns: "common", returnObjects: true }) as {
+    src: string;
+    alt: string;
+  };
 
   const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
 
@@ -57,7 +61,7 @@ const useModal = () => {
     LanguageSelectorData,
     scrollDirection,
     ready,
-    t,
+    logo,
     i18n,
     setShowModal,
     setHideModal,

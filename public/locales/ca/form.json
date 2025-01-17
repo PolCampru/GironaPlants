@@ -1,0 +1,79 @@
+{
+  "form": {
+    "title": "Formulari de sol·licitud",
+    "subtitle": "Emplena aquest breu formulari per a completar la sol·licitud de pressupost. És essencial per a oferir-te una proposta personalitzada. Completa els camps perquè puguem contactar-te i proporcionar-te la informació que necessites de manera ràpida i precisa.",
+    "submit": "Enviar",
+    "remove": "Eliminar",
+    "messages": {
+      "inProgress": {
+        "title": "Enviant la sol·licitud...",
+        "text": "Si us plau, espera uns segons."
+      },
+      "success": {
+        "title": "Sol·licitud enviada",
+        "text": "Gràcies per confiar en nosaltres. Hem rebut la teva sol·licitud i ens posarem en contacte amb tu el més aviat possible."
+      },
+      "error": {
+        "title": "Error en l'enviament",
+        "text": "Hi ha hagut un error en l'enviament de la sol·licitud. Si us plau, torna a intentar"
+      }
+    },
+    "inputs": [
+      {
+        "type": "toggle",
+        "name": "type",
+        "options": [
+          { "label": "Empresa", "value": "company" },
+          { "label": "Particular", "value": "particular" }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Empresa",
+        "name": "company",
+        "required": true,
+        "requiredError": "L'empresa és un camp obligatori"
+      },
+      {
+        "type": "text",
+        "label": "Nom i cognoms",
+        "name": "name",
+        "required": true,
+        "requiredError": "El nom i cognoms són un camp obligatori",
+        "formatError": "El nom i cognoms han de contenir com a mínim 3 caràcters"
+      },
+      {
+        "type": "text",
+        "label": "Correu electrònic",
+        "name": "email",
+        "required": true,
+        "requiredError": "El correu electrònic és un camp obligatori",
+        "formatError": "El format del correu electrònic no és vàlid"
+      },
+      {
+        "type": "text",
+        "label": "Telèfon",
+        "name": "phone",
+        "required": true,
+        "requiredError": "El telèfon és un camp obligatori",
+        "formatError": "El format del telèfon no és vàlid"
+      },
+      {
+        "type": "textarea",
+        "label": "Comentari",
+        "name": "comment"
+      },
+      {
+        "type": "file",
+        "label": "Afegir document",
+        "name": "files"
+      },
+      {
+        "type": "checkbox",
+        "label": "Accepto la Política de Privacitat",
+        "name": "privacyPolicy",
+        "required": true
+      }
+    ]
+  }
+}

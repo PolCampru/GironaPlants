@@ -26,12 +26,16 @@ import { showModal } from "@/store/features/modalSlice";
 import { OfferType } from "@/types/Offers";
 
 export default function useProducts() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["products", "addProducts"]);
 
   const data = t("products", { returnObjects: true }) as productsDataType;
-  const dataAddProduct = t("add-products", {
+  const dataAddProduct = t("addProducts", {
+    ns: "addProducts",
     returnObjects: true,
   }) as AddProductType;
+
+  console.log(data);
+  console.log(dataAddProduct);
 
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants

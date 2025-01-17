@@ -11,7 +11,7 @@ import useBudget from "./useBudget";
 import { ItemType } from "@/types/Cart";
 
 const useForm = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["form"]);
   const data = t("form", { returnObjects: true }) as FormType;
   const { items, handleClearCart } = useBudget();
 
