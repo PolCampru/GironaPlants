@@ -39,18 +39,22 @@ const Budget = ({
         <p onClick={handleClearCart}>Buidar la sol·licitud</p>
       </ContainerHeader>
 
-      <ContainerItems>
-        {filteredItems.map((item, index) => (
-          <React.Fragment key={item.id}>
-            <BudgetItem
-              item={item}
-              deleteItem={deleteItem}
-              handleChangeQuantity={handleChangeQuantity}
-            />
-            {index + 1 < filteredItems.length && <Line />}
-          </React.Fragment>
-        ))}
-      </ContainerItems>
+      {items.length === 0 ? (
+        <ContainerItems>No hi ha articles a la sol·licitud</ContainerItems>
+      ) : (
+        <ContainerItems>
+          {filteredItems.map((item, index) => (
+            <React.Fragment key={item.id}>
+              <BudgetItem
+                item={item}
+                deleteItem={deleteItem}
+                handleChangeQuantity={handleChangeQuantity}
+              />
+              {index + 1 < filteredItems.length && <Line />}
+            </React.Fragment>
+          ))}
+        </ContainerItems>
+      )}
 
       <p className="total">
         Total: <span>{filteredItems.length} articles</span>

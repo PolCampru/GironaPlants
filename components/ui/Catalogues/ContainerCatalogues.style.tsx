@@ -37,28 +37,15 @@ export const StyledWrapper = styled.div`
   }
 
   .main:hover #c1 {
-    transform: translateX(-300px) rotate(-15deg);
+    transform: translateX(-30px) rotate(-10deg);
   }
   .main:hover #c2 {
-    transform: translateX(-100px) rotate(-7deg);
+    transform: translateX(-10px) rotate(-5deg);
   }
   .main:hover #c3 {
-    transform: translateX(100px) rotate(7deg);
+    transform: translateX(10px) rotate(5deg);
   }
   .main:hover #c4 {
-    transform: translateX(300px) rotate(15deg);
-  }
-
-  #c1:hover {
-    transform: translateX(-300px) rotate(0deg) !important;
-  }
-  #c2:hover {
-    transform: translateX(-100px) rotate(0deg) !important;
-  }
-  #c3:hover {
-    transform: translateX(100px) rotate(0deg) !important;
-  }
-  #c4:hover {
-    transform: translateX(300px) rotate(0deg) !important;
+    transform: translateX(30px) rotate(10deg);
   }
 `;

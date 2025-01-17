@@ -14,11 +14,11 @@ export const boxVariants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.6, ease: "easeInOut" },
+    transition: { duration: 0.3, ease: "easeInOut" },
   },
 };
 
 export const dataVariants = {
   hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut" } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
 };

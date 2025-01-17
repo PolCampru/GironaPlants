@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import { useTranslation } from "react-i18next";
 import {
   NavbarWrapper,
   LogoContainer,
@@ -25,32 +23,32 @@ import Modal from "../Modal/Modal";
 import ModalAddPlant from "../Modal/ModalAddPlant/ModalAddPlant";
 
 const Navbar = () => {
-  const { t, i18n, ready } = useTranslation();
-  const pathname = usePathname();
+  const {
+    modalState,
+    setHideModal,
+    ready,
+    scrollDirection,
+    t,
+    navbarItems,
+    pathname,
+    LanguageSelectorData,
+    i18n,
+  } = useModal();
 
-  const { modalState, setHideModal } = useModal();
-
-  const navbarItems = t("navbar.paths", {
-    returnObjects: true,
-  }) as { name: string; url: string }[];
-
-  const LanguageSelectorData = t("navbar.budgetAndLanguage", {
-    returnObjects: true,
-  }) as { [key: string]: string };
-
-  if (!ready)
+  if (!ready) {
     return (
       <div>
         <Loader />
       </div>
     );
+  }
 
   return (
     <motion.div
       variants={navbarVariants}
-      initial="hidden"
-      animate="visible"
-      style={{ width: "100%" }}
+      initial="visible"
+      animate={scrollDirection === "down" ? "hidden" : "visible"}
+      style={{ width: "100%", position: "fixed", top: 0, zIndex: 999 }}
     >
       <NavbarWrapper>
         <LogoContainer
@@ -101,7 +99,11 @@ const Navbar = () => {
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
         >
-          <BudgetAndLanguage i18n={i18n} data={LanguageSelectorData} />
+          <BudgetAndLanguage
+            i18n={i18n}
+            data={LanguageSelectorData}
+            setHideModal={setHideModal}
+          />
         </RightContainer>
       </NavbarWrapper>
 

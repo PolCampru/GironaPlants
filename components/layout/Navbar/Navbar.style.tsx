@@ -4,16 +4,18 @@ import { motion } from "framer-motion";
 
 export const NavbarWrapper = styled.nav`
   width: 100%;
-  height: 4.875rem;
+  height: 6.875rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding-inline: 2.4rem;
+  padding-top: 1rem;
 
   position: fixed;
-  top: 1rem;
+  top: 0;
+  left: 0;
 
   background-color: ${(props) => props.theme.colors.white};
   z-index: 100;

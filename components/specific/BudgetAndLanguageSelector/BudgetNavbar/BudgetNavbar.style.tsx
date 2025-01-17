@@ -11,7 +11,7 @@ export const BudgetNavbarWrapper = styled.div`
   gap: 0.5rem;
 `;
 
-export const AddPlantAndContinueWrapper = styled.div`
+export const AddPlantAndContinueWrapper = styled.div<{ $isDisabled: boolean }>`
   width: 100%;
   height: 100%;
 
@@ -32,20 +32,24 @@ export const AddPlantAndContinueWrapper = styled.div`
 
     border: none;
     border-radius: 6.25rem;
-    background-color: ${(props) => props.theme.colors.brandGreen};
+    background-color: ${(props) =>
+      props.$isDisabled
+        ? props.theme.colors.gray
+        : props.theme.colors.brandGreen};
     color: ${(props) => props.theme.colors.white};
 
-    cursor: pointer;
+    cursor: ${(props) => (props.$isDisabled ? "not-allowed" : "pointer")};
 
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
     &:hover {
-      background-color: ${(props) => props.theme.colors.hoverGreen2};
-      color: ${(props) => props.theme.colors.dark};
+      background-color: ${(props) =>
+        !props.$isDisabled && props.theme.colors.hoverGreen2};
+      color: ${(props) => !props.$isDisabled && props.theme.colors.dark};
     }
 
     &:active {
-      transform: scale(0.98);
+      transform: ${(props) => !props.$isDisabled && "scale(0.98)"};
     }
 
     color: ${(props) => props.theme.colors.white};

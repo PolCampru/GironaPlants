@@ -10,9 +10,17 @@ import useBudget from "@/hooks/useBudget";
 import useProducts from "@/hooks/useProducts";
 import Link from "next/link";
 
-const BudgetNavbar = ({ lng }: { lng: string }) => {
+const BudgetNavbar = ({
+  lng,
+  setHideModal,
+}: {
+  lng: string;
+  setHideModal: (value: boolean) => void;
+}) => {
   const { items, handleClearCart, deleteItem, handleChangeQuantity } =
     useBudget();
+
+  const disabled = items.length === 0;
 
   const { dataAddProduct, addCostumPlant } = useProducts();
 
@@ -25,12 +33,22 @@ const BudgetNavbar = ({ lng }: { lng: string }) => {
         deleteItem={deleteItem}
         handleChangeQuantity={handleChangeQuantity}
       />
-      <AddPlantAndContinueWrapper>
+      <AddPlantAndContinueWrapper $isDisabled={disabled}>
         <AddPlant>
           {dataAddProduct.question}
           <span onClick={addCostumPlant}>{dataAddProduct.button}</span>
         </AddPlant>
-        <Link href={`budget`} className="link">
+        <Link
+          href={`budget`}
+          className="link"
+          onClick={(e) => {
+            if (disabled) {
+              e.preventDefault();
+            } else {
+              setHideModal(false);
+            }
+          }}
+        >
           Formulari de sol·licitud
         </Link>
       </AddPlantAndContinueWrapper>

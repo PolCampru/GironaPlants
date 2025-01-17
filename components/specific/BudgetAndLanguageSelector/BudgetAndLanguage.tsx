@@ -20,9 +20,14 @@ import BudgetNavbar from "./BudgetNavbar/BudgetNavbar";
 interface LanguageSelectorProps {
   i18n: any;
   data: { [key: string]: string };
+  setHideModal: () => void;
 }
 
-const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
+const BudgetAndLanguage = ({
+  i18n,
+  data,
+  setHideModal,
+}: LanguageSelectorProps) => {
   const {
     isLanguageOpen,
     isBudgetOpen,
@@ -113,7 +118,10 @@ const BudgetAndLanguage = ({ i18n, data }: LanguageSelectorProps) => {
               <CloseButton onClick={() => setIsBudgetOpen(false)}>
                 <img src="/images/crossIcon.svg" alt="Close" />
               </CloseButton>
-              <BudgetNavbar lng={currentLanguage} />
+              <BudgetNavbar
+                lng={currentLanguage}
+                setHideModal={setIsBudgetOpen}
+              />
             </BudgetDrawer>
           </>
         )}
