@@ -15,16 +15,17 @@ export default async function AboutUsPage({ params }: AboutUsPageProps) {
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-  const url = `${baseUrl}/api/strapi/about-us?locale=${lng}&populate=*&fields[0]=id&fields[1]=title&fields[2]=subtitle&fields[3]=hero_button&fields[4]=locale&fields[5]=our_clients&fields[6]=title_catalogues&fields[7]=subtitle_catalogues&fields[8]=button_catalogues`;
+  const url = `${baseUrl}/api/strapi/about-us?locale=${lng}&populate=*&fields[0]=id&fields[1]=title&fields[2]=subtitle&fields[3]=hero_button&fields[4]=locale&fields[5]=our_clients&fields[6]=catalogues_title&fields[7]=catalogues_subtitle&fields[8]=catalogues_button`;
 
   const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch data: ${response.statusText}`);
-  }
 
   const json = await response.json();
 
   const aboutUsData: AboutUsDataType = json.data;
+
+  if (!aboutUsData) {
+    return null;
+  }
 
   const heroAboutUsData: HeroAboutUsProps = {
     hero_images: aboutUsData.hero_images,
@@ -39,10 +40,10 @@ export default async function AboutUsPage({ params }: AboutUsPageProps) {
   };
 
   const cataloguesData: CataloguesProps = {
-    title_catalogues: aboutUsData.title_catalogues,
-    subtitle_catalogues: aboutUsData.subtitle_catalogues,
-    button_catalogues: aboutUsData.button_catalogues,
-    locale: aboutUsData.locale,
+    catalogues_title: aboutUsData.catalogues_title,
+    catalogues_subtitle: aboutUsData.catalogues_subtitle,
+    catalogues_button: aboutUsData.catalogues_button,
+    locale: lng,
   };
 
   return (

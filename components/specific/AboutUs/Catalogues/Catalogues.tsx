@@ -12,10 +12,10 @@ const Catalogues = ({ data }: { data: CataloguesProps }) => {
     <CataloguesWrapper>
       <ContainerCatalogs />
       <ContainerInfo>
-        <Title title={data.title_catalogues} />
-        <p>{data.subtitle_catalogues}</p>
+        <Title title={data.catalogues_title} />
+        <p>{data.catalogues_subtitle}</p>
         <Link href={`/${data.locale}/catalogues`}>
-          <Button>{data.button_catalogues}</Button>
+          <Button>{data.catalogues_button}</Button>
         </Link>
       </ContainerInfo>
     </CataloguesWrapper>

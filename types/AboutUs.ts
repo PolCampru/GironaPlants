@@ -34,9 +34,9 @@ export type OurClientsProps = {
 };
 
 export type CataloguesProps = {
-  title_catalogues: string;
-  subtitle_catalogues: string;
-  button_catalogues: string;
+  catalogues_title: string;
+  catalogues_subtitle: string;
+  catalogues_button: string;
   locale: string;
 };
 

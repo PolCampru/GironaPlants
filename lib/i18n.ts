@@ -19,6 +19,7 @@ i18n
       "contact",
       "footer",
       "form",
+      "home",
       "navbar",
       "products",
     ],

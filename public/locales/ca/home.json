@@ -1,0 +1,49 @@
+{
+  "ourPlants": [
+    {
+      "key": "plant1",
+      "title": "Plantes Forestals",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant2",
+      "title": "Esqueixos Arrelats",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant3",
+      "title": "Arbustos i Coníferes",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant4",
+      "title": "Jardineria Sostenible",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant5",
+      "title": "Entapitzants",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant6",
+      "title": "Gramínees",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant7",
+      "title": "Plantes Aquàtiques",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant8",
+      "title": "Falgueres",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant9",
+      "title": "Altres",
+      "img": "img/plant1.jpg"
+    }
+  ]
+}

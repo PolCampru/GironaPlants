@@ -34,9 +34,6 @@ export default function useProducts() {
     returnObjects: true,
   }) as AddProductType;
 
-  console.log(data);
-  console.log(dataAddProduct);
-
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants
   );

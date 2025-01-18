@@ -16,10 +16,10 @@ const MyBox = ({
   width,
   height,
   color,
-  borderRadiusTopLeft,
-  borderRadiusTopRight,
-  borderRadiusBottomLeft,
-  borderRadiusBottomRight,
+  borderRadiusTopLeft = "0rem",
+  borderRadiusTopRight = "0rem",
+  borderRadiusBottomLeft = "0rem",
+  borderRadiusBottomRight = "0rem",
   imageUrl,
 }: MyBoxProps) => {
   return (
