@@ -43,7 +43,7 @@ const logoVariants = {
 };
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["footer", "common"]);
 
   const data = t("footer", { returnObjects: true }) as {
     contact?: {
@@ -55,7 +55,8 @@ const Footer = () => {
       termsOfService?: string;
     };
   };
-  const logo = t("logo", { returnObjects: true }) as {
+
+  const logo = t("logo", { ns: "common", returnObjects: true }) as {
     src: string;
     alt: string;
   };
