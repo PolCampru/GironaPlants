@@ -9,7 +9,9 @@ import Link from "next/link";
 
 const Catalogues = ({ data }: { data: CataloguesProps }) => {
   return (
-    <CataloguesWrapper>
+    <CataloguesWrapper
+      onClick={() => (window.location.href = `/${data.locale}/catalogues`)}
+    >
       <ContainerCatalogs />
       <ContainerInfo>
         <Title title={data.catalogues_title} />

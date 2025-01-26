@@ -48,6 +48,7 @@ const plantsSlice = createSlice({
       state.plants = [];
       state.meta.page = 0;
     },
+
     setQuery(state: PlantsStateType, action: PayloadAction<QueryType>) {
       state.meta.query = action.payload;
     },

@@ -48,7 +48,7 @@ export default function useProducts() {
     toast: true,
     position: "top-end",
     showConfirmButton: false,
-    timer: 1500,
+    timer: 1200,
     timerProgressBar: true,
     didOpen: (toast) => {
       toast.onmouseenter = Swal.stopTimer;

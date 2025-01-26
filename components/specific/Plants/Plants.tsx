@@ -89,7 +89,6 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
               columns={generateColumns()}
               loading={loading}
               refetch={getScrollPlants}
-              onRowClick={() => console.log("Row clicked")}
             />
           )}
         </ContainerProducts>

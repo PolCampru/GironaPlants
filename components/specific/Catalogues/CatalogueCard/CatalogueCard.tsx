@@ -29,7 +29,7 @@ const CatalogueCardWrapper = styled.div`
   }
 `;
 
-const ContainerImage = styled.div<{ clickable: boolean }>`
+const ContainerImage = styled.div<{ $clickable: boolean }>`
   width: 100%;
   height: 100%;
   padding-right: 30%;
@@ -38,11 +38,11 @@ const ContainerImage = styled.div<{ clickable: boolean }>`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: ${({ clickable }) => (clickable ? "pointer" : "default")};
+    cursor: ${({ $clickable }) => ($clickable ? "pointer" : "default")};
     transition: transform 0.3s ease;
 
-    ${({ clickable }) =>
-      clickable &&
+    ${({ $clickable }) =>
+      $clickable &&
       `
       &:hover {
         transform: scale(1.05) rotate(2deg);
@@ -63,7 +63,7 @@ const CatalogueCard = ({
 
   return (
     <CatalogueCardWrapper>
-      <ContainerImage clickable={isClickable}>
+      <ContainerImage $clickable={isClickable}>
         <img
           src={imageUrl}
           alt={title}
