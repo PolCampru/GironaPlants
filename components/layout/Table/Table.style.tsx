@@ -3,36 +3,29 @@ import { motion } from "framer-motion";
 
 export const TableWrapper = styled(motion.div)`
   width: 100%;
-  height: 60rem;
-  margin: 6px 0px 0px;
-  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+  height: 55rem;
+  margin: 0.375rem 0 0;
+  box-shadow: 0 0.1875rem 0.5rem 0 rgba(0, 0, 0, 0.08);
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 
   table {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border-collapse: collapse;
 
     thead {
-      border-radius: 10px 10px 0px 0px;
+      border-radius: 0.625rem 0.625rem 0 0;
 
       th {
         background: ${(props) => props.theme.colors.creamLight};
         height: 2rem;
-        padding: 0px 0px 0px 20px;
+        padding: 0 0 0 1.25rem;
         text-align: left;
         font-size: 0.75rem;
         font-weight: 500;
         line-height: 1.5rem;
-
-        &:last-of-type {
-          width: 180px;
-        }
-        &:first-of-type {
-          width: 20px;
-        }
       }
     }
 
@@ -52,14 +45,27 @@ export const TableWrapper = styled(motion.div)`
       }
 
       td {
-        padding: 0px 0px 0px 20px;
+        padding: 0 0 0 1.25rem;
         height: 3.125rem;
         font-size: 1rem;
-        border: 1px solid ${(props) => props.theme.colors.lightGray};
+        border: 0.0625rem solid ${(props) => props.theme.colors.lightGray};
         cursor: pointer;
 
-        &:last-of-type {
-          width: 180px;
+        &:nth-child(1) {
+          width: 13rem;
+        }
+
+        &:nth-child(3) {
+          width: 8.125rem;
+        }
+        &:nth-child(4) {
+          width: 8.125rem;
+        }
+        &:nth-child(5) {
+          width: 8.125rem;
+        }
+        &:nth-child(6) {
+          width: 4.3125rem;
         }
       }
 
@@ -74,8 +80,8 @@ export const TableWrapper = styled(motion.div)`
     }
 
     .trigger {
-      height: 60px;
-      margin-top: 10px;
+      height: 3.75rem;
+      margin-top: 0.625rem;
       width: 100%;
       display: flex !important;
       justify-content: center;
@@ -86,8 +92,8 @@ export const TableWrapper = styled(motion.div)`
       }
 
       .observer {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
       }
     }
   }
