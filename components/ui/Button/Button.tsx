@@ -1,7 +1,7 @@
 "use client";
+
 import React, { ButtonHTMLAttributes } from "react";
 import { ButtonText, Circle, Icon, StyledButton } from "./Button.style";
-import { button } from "framer-motion/client";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -21,7 +21,7 @@ const buttonVariants = {
   },
 };
 
-const Button = ({ children, ...props }: ButtonProps) => {
+const Button = ({ children }: ButtonProps) => {
   return (
     <StyledButton
       className="learn-more"

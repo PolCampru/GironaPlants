@@ -22,6 +22,7 @@ export const NavbarWrapper = styled.nav`
 `;
 
 export const LogoContainer = styled.div`
+  height: 100%;
   img {
     width: 100%;
     height: 100%;

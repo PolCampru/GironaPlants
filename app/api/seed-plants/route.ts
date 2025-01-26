@@ -24,7 +24,9 @@ export async function POST(request: NextRequest) {
     const strapiToken = process.env.STRAPI_TOKEN;
     if (!strapiBaseUrl || !strapiToken) {
       return NextResponse.json(
-        { error: "Missing STRAPI_BASE_URL or STRAPI_TOKEN in environment." },
+        {
+          error: "Missing STRAPI_BASE_URL or STRAPI_TOKEN in environment.",
+        },
         { status: 500 }
       );
     }
