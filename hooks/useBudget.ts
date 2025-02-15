@@ -10,9 +10,13 @@ import {
 } from "@/store/features/cartSlice";
 import { showModal } from "@/store/features/modalSlice";
 import { ItemType } from "@/types/Cart";
+import { useTranslation } from "react-i18next";
+import { BudgetDataType } from "@/types/Budget";
 
 export default function useBudget() {
   const { items } = useSelector((state: RootState) => state.cart);
+  const { t } = useTranslation(["budget"]);
+  const budgetData = t("budget", { returnObjects: true }) as BudgetDataType;
 
   const dispatch = useDispatch();
 
@@ -34,6 +38,7 @@ export default function useBudget() {
 
   return {
     items,
+    budgetData,
     addCostumPlant,
     handleClearCart,
     deleteItem,

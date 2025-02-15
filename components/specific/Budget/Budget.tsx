@@ -4,13 +4,16 @@ import {
   BudgetWrapper,
   ContainerHeader,
   ContainerItems,
+  EmptyState,
   Line,
 } from "./Budget.style";
 import Search from "@/components/ui/Search/Search";
 import BudgetItem from "./BudgetItem/BudgetItem";
+import { SpecificBudgetDataType } from "@/types/Budget";
 
 interface BudgetProps {
   items: ItemType[];
+  data: SpecificBudgetDataType;
   handleClearCart: () => void;
   deleteItem: (item: ItemType) => void;
   handleChangeQuantity: (id: number, quantity: number) => void;
@@ -18,6 +21,7 @@ interface BudgetProps {
 
 const Budget = ({
   items,
+  data,
   handleClearCart,
   deleteItem,
   handleChangeQuantity,
@@ -36,11 +40,14 @@ const Budget = ({
           value={searchTerm}
           onChange={(e) => setSearchTerm(e)}
         />
-        <p onClick={handleClearCart}>Buidar la sol·licitud</p>
+        <p onClick={handleClearCart}>{data.emptyCard}</p>
       </ContainerHeader>
 
       {items.length === 0 ? (
-        <ContainerItems>No hi ha articles a la sol·licitud</ContainerItems>
+        <EmptyState>
+          <img src="/images/products/emptyState.png" alt="EmptyState" />
+          <h3>{data.emptyState}</h3>
+        </EmptyState>
       ) : (
         <ContainerItems>
           {filteredItems.map((item, index) => (
@@ -57,7 +64,10 @@ const Budget = ({
       )}
 
       <p className="total">
-        Total: <span>{filteredItems.length} articles</span>
+        {data.total}:{" "}
+        <span>
+          {filteredItems.length} {data.articles}
+        </span>
       </p>
     </BudgetWrapper>
   );

@@ -9,6 +9,7 @@ import Budget from "../../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
 import useProducts from "@/hooks/useProducts";
 import Link from "next/link";
+import { SpecificBudgetDataType } from "@/types/Budget";
 
 const BudgetNavbar = ({
   lng,
@@ -17,21 +18,36 @@ const BudgetNavbar = ({
   lng: string;
   setHideModal: (value: boolean) => void;
 }) => {
-  const { items, handleClearCart, deleteItem, handleChangeQuantity } =
-    useBudget();
+  const {
+    items,
+    budgetData,
+    handleClearCart,
+    deleteItem,
+    handleChangeQuantity,
+  } = useBudget();
 
   const disabled = items.length === 0;
 
   const { dataAddProduct, addCostumPlant } = useProducts();
 
+  const specificBudgetData: SpecificBudgetDataType = {
+    emptyCard: budgetData.emptyCard,
+    emptyState: budgetData.emptyState,
+    total: budgetData.total,
+    articles: budgetData.articles,
+    addPlant1: budgetData.addPlant1,
+    addPlant2: budgetData.addPlant2,
+  };
+
   return (
     <BudgetNavbarWrapper>
-      <Title title="Sol·licitud de pressupost" />
+      <Title title={budgetData.title} />
       <Budget
         items={items}
         handleClearCart={handleClearCart}
         deleteItem={deleteItem}
         handleChangeQuantity={handleChangeQuantity}
+        data={specificBudgetData}
       />
       <AddPlantAndContinueWrapper $isDisabled={disabled}>
         <AddPlant>
@@ -49,7 +65,7 @@ const BudgetNavbar = ({
             }
           }}
         >
-          Formulari de sol·licitud
+          {budgetData.button}
         </Link>
       </AddPlantAndContinueWrapper>
     </BudgetNavbarWrapper>

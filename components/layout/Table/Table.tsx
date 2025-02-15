@@ -16,6 +16,7 @@ interface TableProps<T> {
   columns: ColumnDef<T, any>[];
   loading: boolean;
   refetch: () => void;
+  emptyStateFunction?: () => void;
   onRowClick?: (row: T) => void;
 }
 
@@ -24,6 +25,7 @@ function Table<T>({
   columns,
   loading,
   refetch,
+  emptyStateFunction,
   onRowClick,
 }: TableProps<T>) {
   const tableContainerRef = useRef<HTMLDivElement>(null);
@@ -109,7 +111,9 @@ function Table<T>({
         </tbody>
       </table>
 
-      {data.length === 0 && !loading && <EmptyState />}
+      {data.length === 0 && !loading && (
+        <EmptyState emptyStateFunction={emptyStateFunction} />
+      )}
     </TableWrapper>
   );
 }

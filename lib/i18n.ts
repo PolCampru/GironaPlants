@@ -15,6 +15,7 @@ i18n
     ns: [
       "aboutUs",
       "addProducts",
+      "budget",
       "common",
       "contact",
       "footer",

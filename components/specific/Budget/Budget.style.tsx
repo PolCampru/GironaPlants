@@ -26,6 +26,27 @@ export const BudgetWrapper = styled.div`
   }
 `;
 
+export const EmptyState = styled.div`
+  width: 100%;
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+`;
+
 export const ContainerHeader = styled.div`
   width: 100%;
   display: flex;

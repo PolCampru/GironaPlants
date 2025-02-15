@@ -89,6 +89,7 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
               columns={generateColumns()}
               loading={loading}
               refetch={getScrollPlants}
+              emptyStateFunction={() => addCostumPlant()}
             />
           )}
         </ContainerProducts>

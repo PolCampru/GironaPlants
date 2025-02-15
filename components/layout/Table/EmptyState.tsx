@@ -19,6 +19,11 @@ const EmptyStateWrapper = styled.div`
   p {
     margin: 0;
     font-size: 16px;
+
+    span {
+      cursor: pointer;
+      color: ${({ theme }) => theme.colors.brandGreen};
+    }
   }
 
   .icon-container {
@@ -32,7 +37,11 @@ const EmptyStateWrapper = styled.div`
   }
 `;
 
-function EmptyState() {
+function EmptyState({
+  emptyStateFunction,
+}: {
+  emptyStateFunction?: () => void;
+}) {
   let language = "es";
   if (typeof window !== "undefined") {
     const url = window.location.href;
@@ -50,22 +59,33 @@ function EmptyState() {
       {language === "en" ? (
         <>
           <h3>No results found</h3>
-          <p>Please try another search.</p>
+          <p>
+            Add what you need <span onClick={emptyStateFunction}>here</span>
+          </p>
         </>
       ) : language === "ca" ? (
         <>
           <h3>No s'han trobat resultats</h3>
-          <p>Si us plau, intenta una altra cerca.</p>
+          <p>
+            Afegeix el que necessitis{" "}
+            <span onClick={emptyStateFunction}>aquí</span>
+          </p>
         </>
       ) : language === "fr" ? (
         <>
           <h3>Aucun résultat trouvé</h3>
-          <p>Veuillez essayer une autre recherche.</p>
+          <p>
+            Ajoutez ce dont vous avez besoin{" "}
+            <span onClick={emptyStateFunction}>ici</span>
+          </p>
         </>
       ) : (
         <>
           <h3>No se han encontrado resultados</h3>
-          <p>Por favor, realiza otra búsqueda.</p>
+          <p>
+            Añade lo que necesitas{" "}
+            <span onClick={emptyStateFunction}>aquí</span>
+          </p>
         </>
       )}
     </EmptyStateWrapper>
