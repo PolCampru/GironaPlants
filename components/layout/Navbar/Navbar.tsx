@@ -78,7 +78,7 @@ const Navbar = () => {
                     {item.name}
                     {isSelected && (
                       <SelectedBackground
-                        layoutId="selectedBackground"
+                        // layoutId="selectedBackground"
                         initial={false}
                         transition={{
                           type: "spring",

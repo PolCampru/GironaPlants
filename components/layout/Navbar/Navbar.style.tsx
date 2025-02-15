@@ -15,7 +15,6 @@ export const NavbarWrapper = styled.nav`
 
   position: fixed;
   top: 0;
-  left: 0;
 
   background-color: ${(props) => props.theme.colors.white};
   z-index: 100;

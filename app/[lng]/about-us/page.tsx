@@ -10,6 +10,11 @@ import HeroAboutUs from "@/components/specific/AboutUs/Hero/Hero";
 import OurClients from "@/components/specific/AboutUs/OurClients/OurClients";
 import Catalogues from "@/components/specific/AboutUs/Catalogues/Catalogues";
 
+export const metadata = {
+  title: "GironaPlants About Us",
+  description: "Welcome to the about us page",
+};
+
 export default async function AboutUsPage({ params }: AboutUsPageProps) {
   const { lng } = await params;
 

@@ -3,6 +3,11 @@ import Plants from "@/components/specific/Plants/Plants";
 import { ProductsPageProps } from "@/types/Products";
 import { fetchStrapiData } from "@/lib/strapi";
 
+export const metadata = {
+  title: "GironaPlants Products",
+  description: "Bienvenido a la página de productos",
+};
+
 export default async function ProductsPage({ params }: ProductsPageProps) {
   const { lng } = await params;
 

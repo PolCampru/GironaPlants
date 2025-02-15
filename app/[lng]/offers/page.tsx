@@ -1,7 +1,12 @@
 import Offers from "@/components/specific/Offers/Offers";
 import { fetchStrapiData } from "@/lib/strapi";
-import { OffersDataType, OffersPageProps } from "@/types/Offers";
+import { OffersPageProps } from "@/types/Offers";
 import React from "react";
+
+export const metadata = {
+  title: "GironaPlants Offers",
+  description: "Bienvenido a la página de ofertas",
+};
 
 const OffersPage = async ({ params }: OffersPageProps) => {
   const { lng } = await params;

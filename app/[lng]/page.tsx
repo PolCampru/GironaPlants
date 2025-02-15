@@ -10,6 +10,11 @@ import {
   PlantsHomeProps,
 } from "@/types/Home";
 
+export const metadata = {
+  title: "GironaPlants Home",
+  description: "Bienvenido a la página de inicio",
+};
+
 export default async function HomePage({ params }: HomePageProps) {
   const { lng } = await params;
 

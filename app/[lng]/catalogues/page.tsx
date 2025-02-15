@@ -9,6 +9,11 @@ import {
 import { ContactHomeProps } from "@/types/Home";
 import React from "react";
 
+export const metadata = {
+  title: "GironaPlants Catalogues",
+  description: "Bienvenido a la página de catálogos",
+};
+
 export default async function CataloguesPage({ params }: CataloguesProps) {
   const { lng } = await params;
 
