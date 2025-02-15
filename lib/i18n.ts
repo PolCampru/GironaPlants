@@ -24,6 +24,10 @@ i18n
       "navbar",
       "products",
     ],
+    detection: {
+      order: ["querystring", "cookie", "localStorage", "navigator", "htmlTag"],
+      caches: ["cookie"],
+    },
     defaultNS: "common",
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
