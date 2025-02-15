@@ -18,4 +18,8 @@ export const TitleWrapper = styled.h1`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;

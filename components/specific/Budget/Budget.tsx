@@ -40,7 +40,9 @@ const Budget = ({
           value={searchTerm}
           onChange={(e) => setSearchTerm(e)}
         />
-        <p onClick={handleClearCart}>{data.emptyCard}</p>
+        <p className="empty-cart" onClick={handleClearCart}>
+          {data.emptyCard}
+        </p>
       </ContainerHeader>
 
       {items.length === 0 ? (

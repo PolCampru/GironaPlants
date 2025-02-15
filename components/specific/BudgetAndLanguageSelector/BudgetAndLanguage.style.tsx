@@ -65,6 +65,12 @@ export const BudgetContainer = styled.div`
     font-size: 0.7rem;
     font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+    p {
+      display: none;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -151,6 +157,13 @@ export const BudgetDrawer = styled(motion.div)`
   padding: 1rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const CloseButton = styled.button`

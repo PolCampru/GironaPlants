@@ -59,6 +59,12 @@ export type productsDataType = {
       }[];
     };
   };
+  errorAddToCart: {
+    title: string;
+  };
+  successAddToCart: {
+    title: string;
+  };
 };
 
 export type AddProductType = {

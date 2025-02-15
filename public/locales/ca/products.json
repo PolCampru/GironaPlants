@@ -23,6 +23,12 @@
           { "id": 5, "value": "C", "label": "Contenidor" }
         ]
       }
+    },
+    "errorAddToCart": {
+      "title": "L'article ja està al carret"
+    },
+    "successAddToCart": {
+      "title": "Article afegit al carret"
     }
   }
 }

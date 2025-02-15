@@ -34,6 +34,8 @@ export default function useProducts() {
     returnObjects: true,
   }) as AddProductType;
 
+  console.log(data);
+
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants
   );
@@ -171,7 +173,7 @@ export default function useProducts() {
     if (items.find((item) => item.id === plant.id)) {
       Toast.fire({
         icon: "error",
-        title: "Plant already in cart",
+        title: data.errorAddToCart.title,
       });
       return;
     }
@@ -193,7 +195,7 @@ export default function useProducts() {
 
     Toast.fire({
       icon: "success",
-      title: "Plant added to cart",
+      title: data.successAddToCart.title,
     });
   };
 

@@ -45,6 +45,24 @@ export const EmptyState = styled.div`
     width: 50%;
     height: auto;
   }
+
+  @media (max-width: 1440px) {
+    height: 64vh;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    height: 60vh;
+  }
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const ContainerHeader = styled.div`
@@ -52,6 +70,10 @@ export const ContainerHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .empty-cart {
+    text-align: right;
+  }
 
   p {
     font-size: 1rem;

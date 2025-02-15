@@ -53,11 +53,8 @@ export const AddPlantAndContinueWrapper = styled.div<{ $isDisabled: boolean }>`
     }
 
     color: ${(props) => props.theme.colors.white};
-    font-family: Inter;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
   }
 `;
 
@@ -74,5 +71,9 @@ export const AddPlant = styled.div`
     &:hover {
       transform: scale(1.1);
     }
+  }
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
   }
 `;
