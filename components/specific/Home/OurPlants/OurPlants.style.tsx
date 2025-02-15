@@ -15,6 +15,12 @@ export const OurPlantsWrapper = styled.section`
     font-size: 2rem;
     font-weight: 700;
   }
+
+  @media (max-width: 1024px) {
+    h2 {
+      width: 100%;
+    }
+  }
 `;
 
 export const PlantsContainer = styled.div`

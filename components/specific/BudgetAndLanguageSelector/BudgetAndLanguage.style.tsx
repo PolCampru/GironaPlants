@@ -64,6 +64,8 @@ export const BudgetContainer = styled.div`
 
     font-size: 0.7rem;
     font-weight: 500;
+
+    z-index: 1;
   }
 
   @media (max-width: 768px) {
@@ -78,6 +80,10 @@ export const Line = styled.div`
   width: 0.1rem;
   background-color: ${(props) => props.theme.colors.cream};
   margin: 0 1rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const LanguageContainer = styled.div``;

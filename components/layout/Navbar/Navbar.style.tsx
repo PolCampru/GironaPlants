@@ -23,6 +23,12 @@ export const LogoContainer = styled.div`
     height: 100%;
     object-fit: contain;
   }
+
+  @media (max-width: 475px) {
+    img {
+      width: 60%;
+    }
+  }
 `;
 
 export const MenuContainer = styled.div`
@@ -87,9 +93,12 @@ export const RightContainer = styled.div`
   gap: 0.2rem;
   border-radius: 6.25rem;
   background-color: ${(props) => props.theme.colors.creamLight};
+
+  @media (max-width: 1024px) {
+    gap: 0;
+  }
 `;
 
-/* Botón hamburger: oculto en desktop y visible en mobile */
 export const Hamburger = styled.button`
   display: none;
   background: transparent;
@@ -102,7 +111,6 @@ export const Hamburger = styled.button`
   }
 `;
 
-/* Menú móvil: solo visible en pantallas pequeñas */
 export const MobileMenu = styled(motion.div)`
   position: fixed;
   top: 6.875rem;

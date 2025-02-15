@@ -9,6 +9,12 @@ export const CataloguesWrapper = styled.div`
 
   margin-inline: auto;
   margin-bottom: 5rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 `;
 
 export const ContainerInfo = styled.div`
@@ -23,5 +29,9 @@ export const ContainerInfo = styled.div`
   p {
     font-size: 2rem;
     font-weight: 700;
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 `;
