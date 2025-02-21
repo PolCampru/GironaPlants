@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const OfferCardWrapper = styled.div`
   width: 100%;
   height: 15rem;
+  min-width: 50rem;
+  flex: 1;
 
   position: relative;
 
@@ -37,6 +39,8 @@ export const OfferCardWrapper = styled.div`
     border-radius: 0.25rem;
     background: ${(props) => props.theme.colors.discountRed};
     color: ${(props) => props.theme.colors.white};
+
+    z-index: 1;
   }
 
   .container-img-text {
@@ -55,25 +59,19 @@ export const OfferCardWrapper = styled.div`
 
       .description {
         font-size: 1rem;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
         margin-bottom: 0.25rem;
       }
 
       .attributes {
         font-size: 0.75rem;
-        font-style: normal;
         font-weight: 300;
-        line-height: normal;
       }
 
       .text {
         margin-top: 1rem;
         font-size: 0.875rem;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
       }
     }
   }
@@ -101,6 +99,38 @@ export const OfferCardWrapper = styled.div`
       font-weight: 500;
       text-decoration-line: strikethrough;
       text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-height: 25rem;
+    min-width: 100%;
+    margin: 0.25rem;
+
+    .container-img-text {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      padding: 1.5rem;
+
+      .container-text {
+        height: auto;
+        .attributes {
+          font-size: 0.625rem;
+        }
+
+        .text {
+          margin-top: 0.5rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .container-price {
+      padding: 1.5rem;
+      width: 100%;
+      height: auto;
     }
   }
 `;

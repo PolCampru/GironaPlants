@@ -14,31 +14,34 @@ import {
   CloseButton,
 } from "./BudgetAndLanguage.style";
 import { AnimatePresence } from "framer-motion";
-import useBudgetAndLanguage from "@/hooks/useBudgetAndLanguage";
 import BudgetNavbar from "./BudgetNavbar/BudgetNavbar";
 
 interface LanguageSelectorProps {
   i18n: any;
   data: { [key: string]: string };
   setHideModal: () => void;
+
+  isLanguageOpen: boolean;
+  isBudgetOpen: boolean;
+  toggleLanguageMenu: () => void;
+  setIsBudgetOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  handleLanguageSelect: (lng: string) => void;
+  languages: string[];
+  currentLanguage: string;
+  items: any[];
 }
 
 const BudgetAndLanguage = ({
-  i18n,
   data,
-  setHideModal,
+  isLanguageOpen,
+  isBudgetOpen,
+  toggleLanguageMenu,
+  setIsBudgetOpen,
+  handleLanguageSelect,
+  languages,
+  currentLanguage,
+  items,
 }: LanguageSelectorProps) => {
-  const {
-    isLanguageOpen,
-    isBudgetOpen,
-    toggleLanguageMenu,
-    setIsBudgetOpen,
-    handleLanguageSelect,
-    languages,
-    currentLanguage,
-    items,
-  } = useBudgetAndLanguage({ i18n });
-
   return (
     <BudgetAndLanguageWrapper>
       <BudgetContainer
@@ -52,7 +55,6 @@ const BudgetAndLanguage = ({
 
       <Line />
 
-      {/* Language Selector */}
       <LanguageContainer
         style={{ position: "relative" }}
         id="language-container"
@@ -98,7 +100,6 @@ const BudgetAndLanguage = ({
         </AnimatePresence>
       </LanguageContainer>
 
-      {/* Budget Drawer */}
       <AnimatePresence>
         {isBudgetOpen && (
           <>

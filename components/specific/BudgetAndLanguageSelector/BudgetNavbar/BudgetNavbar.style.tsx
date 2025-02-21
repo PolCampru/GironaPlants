@@ -75,5 +75,6 @@ export const AddPlant = styled.div`
 
   @media (max-width: 1440px) {
     flex-direction: column;
+    text-align: center;
   }
 `;

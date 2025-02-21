@@ -10,10 +10,19 @@ export const TableWrapper = styled(motion.div)`
   overflow-y: auto;
   position: relative;
 
+  @media (max-width: 1024px) {
+    height: auto;
+    min-height: 55rem;
+    max-height: 55rem;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
   table {
     width: 100%;
     border-radius: 0.625rem;
     border-collapse: collapse;
+    white-space: nowrap;
 
     thead {
       border-radius: 0.625rem 0.625rem 0 0;
@@ -70,6 +79,7 @@ export const TableWrapper = styled(motion.div)`
       }
 
       transition: 0.2s;
+
       input {
         opacity: 0%;
       }

@@ -35,6 +35,10 @@ const EmptyStateWrapper = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 function EmptyState({

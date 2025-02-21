@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import useProducts from "@/hooks/useProducts";
 import {
   ContainerFilters,
@@ -8,7 +9,13 @@ import {
   ContainerSearch,
   HorizontalLine,
   PlantsWrapper,
+  FilterToggleButton,
+  FilterMenuMobile,
+  FilterContent,
+  FilterOverlay,
+  CloseButton,
 } from "./Plants.style";
+import { IoClose } from "react-icons/io5";
 import Loader from "@/components/ui/Loader/Loader";
 import Table from "@/components/layout/Table/Table";
 import Title from "@/components/ui/Title/Title";
@@ -20,6 +27,8 @@ import { OffersDataType } from "@/types/Offers";
 import { OffersCarousel } from "./ContainerOffers/ContainerOffers";
 
 export default function Plants({ offersData }: { offersData: OffersDataType }) {
+  const [showFilters, setShowFilters] = useState(false);
+
   const {
     plants,
     loading,
@@ -35,9 +44,23 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
 
   if (!data.filters) return <Loader />;
 
+  const toggleFilters = () => {
+    setShowFilters((prev) => !prev);
+  };
+
+  const closeFilters = () => {
+    setShowFilters(false);
+  };
+
   return (
     <PlantsWrapper>
-      <Title title={data.title} />
+      <div className="title-container">
+        <Title title={data.title} />
+        <FilterToggleButton onClick={toggleFilters}>
+          <img src="/images/products/filters.svg" alt="filters" />
+        </FilterToggleButton>
+      </div>
+
       <ContainerGlobal>
         <ContainerFilters>
           <div className="container-filters">
@@ -66,6 +89,56 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
             seeAll={data.filters.potFilters.seeAll}
           />
         </ContainerFilters>
+
+        {showFilters && (
+          <FilterOverlay
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.5 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={closeFilters}
+          />
+        )}
+
+        <FilterMenuMobile
+          initial={{ x: "100%" }}
+          animate={{ x: showFilters ? 0 : "100%" }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <FilterContent>
+            <CloseButton onClick={closeFilters}>
+              <IoClose size={24} />
+            </CloseButton>
+
+            <div className="container-filters">
+              <img src="/images/products/filters.svg" alt="filters" />
+              <p>{data.filters.title}</p>
+            </div>
+            <Search
+              placeholder={data.filters.searchPlaceholder}
+              onChange={(value) => handleFilter("search", value)}
+              value={query.search}
+            />
+            {offersData && offersData.length > 0 && (
+              <Checkbox
+                label={data.filters.offersTitle}
+                checked={query.offers}
+                onChange={() => handleFilter("offers", !query.offers)}
+                name="offers"
+              />
+            )}
+            <HorizontalLine />
+            <Filters
+              options={data.filters.potFilters.options}
+              data={query.format}
+              onChange={handleFilter}
+              title={data.filters.potFilters.title}
+              seeAll={data.filters.potFilters.seeAll}
+            />
+          </FilterContent>
+        </FilterMenuMobile>
+
         <ContainerProducts>
           <ContainerSearch>
             <AppliedFilters

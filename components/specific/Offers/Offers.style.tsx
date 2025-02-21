@@ -16,8 +16,10 @@ export const OffersWrapper = styled.div`
     margin-top: 2.8rem;
     padding-bottom: 1rem;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
     gap: 1rem;
 
     scroll-behavior: smooth;

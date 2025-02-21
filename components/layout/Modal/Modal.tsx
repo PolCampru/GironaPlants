@@ -26,6 +26,11 @@ const ModalWrapper = styled.div`
 
     border-radius: 20px;
     box-shadow: 0px 0px 0px 4px ${theme.colors.hoverGreen2};
+
+    @media (max-width: 768px) {
+      padding: 34px 20px 34px 20px;
+      width: 90%;
+    }
   }
 `;
 

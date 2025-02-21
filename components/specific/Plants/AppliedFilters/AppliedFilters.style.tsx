@@ -32,4 +32,8 @@ export const AddPlant = styled.div`
       transform: scale(1.1);
     }
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;

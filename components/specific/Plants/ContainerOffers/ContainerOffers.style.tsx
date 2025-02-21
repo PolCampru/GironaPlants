@@ -24,6 +24,12 @@ export const ContainerHeader = styled.div`
     text-transform: uppercase;
     margin-right: 1.5rem;
   }
+
+  @media (max-width: 1024px) {
+    > div {
+      display: none;
+    }
+  }
 `;
 
 export const ContainerArrow = styled.div<{ $isActive?: boolean }>`
@@ -50,6 +56,13 @@ export const ContainerCards = styled.div`
   overflow: hidden;
   margin: auto;
   display: flex;
+
+  @media (max-width: 1024px) {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: block;
+  }
 `;
 
 export const CarouselInner = styled.div`
@@ -58,4 +71,8 @@ export const CarouselInner = styled.div`
   gap: 0.625rem;
   left: 0;
   transition: 0.3s ease-in-out;
+
+  @media (max-width: 1024px) {
+    left: auto;
+  }
 `;

@@ -16,6 +16,7 @@ const OurClients = ({ data }: { data: OurClientsProps }) => {
         <Title title={data.our_clients.title} />
         <p>{data.our_clients.subtitle}</p>
       </ContainerTitle>
+
       <ContainerClients>
         {data.our_clients.clients.map((client) => (
           <ClientCart key={client.name}>

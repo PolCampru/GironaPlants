@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutUsDataType, HeroAboutUsProps } from "@/types/AboutUs";
+import { HeroAboutUsProps } from "@/types/AboutUs";
 import React from "react";
 import { motion } from "framer-motion";
 import { ContainerData, ContainerImages, HeroWrapper } from "./Hero.style";

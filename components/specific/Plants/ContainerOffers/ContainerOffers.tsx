@@ -47,7 +47,6 @@ export function OffersCarousel({
 
   useEffect(() => {
     if (!carouselInnerRef.current || !containerCardsRef.current) return;
-
     calculateMaxLeft();
 
     const onResize = () => {
@@ -55,6 +54,7 @@ export function OffersCarousel({
     };
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [offersData]);
 
   const getMovementSize = (): number => {

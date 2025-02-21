@@ -39,13 +39,22 @@ const Navbar = () => {
     i18n,
   } = useModal();
 
+  const {
+    isLanguageOpen,
+    isBudgetOpen,
+    toggleLanguageMenu,
+    setIsBudgetOpen,
+    handleLanguageSelect,
+    languages,
+    currentLanguage,
+    items,
+  } = useBudgetAndLanguage({ i18n });
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
-
-  const { isBudgetOpen } = useBudgetAndLanguage({ i18n });
 
   if (!ready) {
     return (
@@ -61,7 +70,7 @@ const Navbar = () => {
         variants={navbarVariants}
         initial="visible"
         animate={
-          scrollDirection === "down" && isBudgetOpen ? "hidden" : "visible"
+          scrollDirection === "down" && !isBudgetOpen ? "hidden" : "visible"
         }
         style={{ width: "100%", position: "fixed", top: 0, zIndex: 999 }}
       >
@@ -94,7 +103,6 @@ const Navbar = () => {
                       {item.name}
                       {isSelected && (
                         <SelectedBackground
-                          // layoutId="selectedBackground"
                           initial={false}
                           transition={{
                             type: "spring",
@@ -118,7 +126,16 @@ const Navbar = () => {
               i18n={i18n}
               data={LanguageSelectorData}
               setHideModal={setHideModal}
+              isLanguageOpen={isLanguageOpen}
+              isBudgetOpen={isBudgetOpen}
+              toggleLanguageMenu={toggleLanguageMenu}
+              setIsBudgetOpen={setIsBudgetOpen}
+              handleLanguageSelect={handleLanguageSelect}
+              languages={languages}
+              currentLanguage={currentLanguage}
+              items={items}
             />
+
             <Hamburger onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
             </Hamburger>

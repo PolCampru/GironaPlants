@@ -17,7 +17,9 @@ const useModal = () => {
 
     const updateScrollDirection = () => {
       const scrollY = window.scrollY;
-      if (scrollY > lastScrollY) {
+      if (scrollY === 0 || scrollY < 0) {
+        setScrollDirection("up");
+      } else if (scrollY > lastScrollY) {
         setScrollDirection("down");
       } else if (scrollY < lastScrollY) {
         setScrollDirection("up");

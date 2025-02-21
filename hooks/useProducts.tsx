@@ -34,8 +34,6 @@ export default function useProducts() {
     returnObjects: true,
   }) as AddProductType;
 
-  console.log(data);
-
   const { plants, meta, loading } = useSelector(
     (state: RootState) => state.plants
   );
@@ -120,7 +118,6 @@ export default function useProducts() {
         })
       );
     } catch (error) {
-      console.log(error);
     } finally {
       dispatch(setLoading(false));
     }
