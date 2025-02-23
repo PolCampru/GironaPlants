@@ -6,6 +6,7 @@
 
 html {
   font-family: var(--font-inter), sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -19,4 +20,12 @@ img {
 
 .layout-content {
   padding-inline: 2.4rem;
+
+  @media (max-width: 1024px) {
+    padding-inline: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding-inline: 1rem;
+  }
 }

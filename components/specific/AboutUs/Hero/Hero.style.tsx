@@ -16,11 +16,9 @@ export const HeroWrapper = styled.div`
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 2rem;
-    padding-top: 6rem;
   }
 
   @media (max-width: 768px) {
-    padding-top: 4rem;
     gap: 1.5rem;
   }
 `;

@@ -18,7 +18,7 @@ const CatalogueCardWrapper = styled.div`
   align-items: start;
   justify-content: space-between;
   gap: 1.25rem;
-  max-width: 30%; /* En pantallas grandes, ocupa hasta un 30% del contenedor */
+  max-width: 30%;
 
   h3 {
     font-size: 1.5rem;
@@ -30,9 +30,8 @@ const CatalogueCardWrapper = styled.div`
     font-weight: 500;
   }
 
-  /* ================= TABLET (<= 1024px) ================= */
   @media (max-width: 1024px) {
-    max-width: 45%; /* 2 cards por fila si se usa en un contenedor flexible */
+    max-width: 45%;
 
     h3 {
       font-size: 1.3rem;
@@ -43,9 +42,8 @@ const CatalogueCardWrapper = styled.div`
     }
   }
 
-  /* ================= MOBILE (<= 768px) ================= */
   @media (max-width: 768px) {
-    max-width: 100%; /* 1 card por fila */
+    max-width: 100%;
     h3 {
       font-size: 1.2rem;
     }
@@ -59,8 +57,6 @@ const ContainerImage = styled.div<{ $clickable: boolean }>`
   width: 100%;
   height: 100%;
   padding-right: 30%;
-  /* Forzamos un espacio a la derecha para mantener proporción; 
-     si no deseas usar esta técnica, podrías considerar un aspect-ratio. */
 
   img {
     width: 100%;

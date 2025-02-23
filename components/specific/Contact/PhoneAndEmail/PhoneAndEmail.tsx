@@ -8,7 +8,9 @@ import Loader from "@/components/ui/Loader/Loader";
 const PhoneAndEmail = () => {
   const { t } = useTranslation(["contact"]);
   const data = t("contact", { returnObjects: true }) as PhoneAndEmailType;
+
   if (!data.phone) return <Loader />;
+
   return (
     <PhoneAndEmailWrapper>
       <div
@@ -21,6 +23,7 @@ const PhoneAndEmail = () => {
         </div>
         <p>{data.phone.text}</p>
       </div>
+
       <div
         className="container-contact"
         onClick={() => window.open(`mailto:${data.email.text}`)}

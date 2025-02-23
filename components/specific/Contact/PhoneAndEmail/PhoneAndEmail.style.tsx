@@ -24,16 +24,58 @@ export const PhoneAndEmailWrapper = styled.div`
     h2 {
       color: ${(props) => props.theme.colors.dark};
       font-size: 1rem;
-      font-style: normal;
       font-weight: 600;
       line-height: 150%;
     }
 
     p {
       font-size: 1.1rem;
-      font-style: normal;
       font-weight: 500;
       line-height: normal;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    gap: 2rem;
+
+    .container-contact {
+      .container-img-title {
+        img {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+
+      h2 {
+        font-size: 0.95rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .container-contact {
+      .container-img-title {
+        gap: 0.5rem;
+        img {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+      }
+
+      h2 {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 `;
