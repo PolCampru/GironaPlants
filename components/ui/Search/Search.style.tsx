@@ -47,7 +47,6 @@ export const StyledWrapper = styled.div`
     border-radius: 1px;
     transition: transform var(--timing) ease;
   }
-  /* Hover on Input */
   .form:focus-within {
     border-radius: var(--after-border-radius);
   }

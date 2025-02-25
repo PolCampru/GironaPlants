@@ -105,14 +105,12 @@ function Table<T>({
             ))}
           </AnimatePresence>
 
-          {/* Intersection Observer trigger */}
           <tr ref={observerRef} className="trigger">
             <td>{loading && <Loader size={20} />}</td>
           </tr>
         </tbody>
       </table>
 
-      {/* Empty State si no hay datos y no está cargando */}
       {data.length === 0 && !loading && (
         <EmptyState emptyStateFunction={emptyStateFunction} />
       )}

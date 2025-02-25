@@ -23,13 +23,12 @@ export const FlexContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Ajustado a 'start' para alinear la parte superior */
+  align-items: flex-start;
   gap: 1rem;
 
-  /* ========== TABLET: <= 1024px ========== */
   @media (max-width: 1024px) {
-    flex-direction: column; /* Form y budget uno debajo del otro */
-    gap: 2rem; /* Más espacio entre secciones */
+    flex-direction: column;
+    gap: 2rem;
   }
 `;
 
@@ -40,15 +39,13 @@ export const BudgetContainer = styled.div`
   padding: 1rem 2rem;
   border-radius: 0.625rem;
 
-  /* ========== TABLET: <= 1024px ========== */
   @media (max-width: 1024px) {
     width: 100%;
-    padding: 1rem; /* Reducción de padding en tablet */
+    padding: 1rem;
   }
 
-  /* ========== MOBILE: <= 768px ========== */
   @media (max-width: 768px) {
-    padding: 1rem; /* o menos, según prefieras */
+    padding: 1rem;
   }
 `;
 
@@ -57,7 +54,6 @@ export const ContactContainer = styled.div`
   height: 100%;
   border-radius: 0.625rem;
 
-  /* ========== TABLET: <= 1024px ========== */
   @media (max-width: 1024px) {
     width: 100%;
   }

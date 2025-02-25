@@ -21,7 +21,6 @@ export const StyledWrapper = styled.div`
     cursor: pointer;
   }
 
-  /* Fondos para cada carta */
   #c1 {
     background: url("/images/perennialsCatalog.jpg") no-repeat center / cover;
   }
@@ -35,7 +34,6 @@ export const StyledWrapper = styled.div`
     background: url("/images/mainCatalogue.jpg") no-repeat center / cover;
   }
 
-  /* Efecto hover en escritorio */
   .main:hover #c1 {
     transform: translateX(-30px) rotate(-10deg);
   }
@@ -49,7 +47,6 @@ export const StyledWrapper = styled.div`
     transform: translateX(30px) rotate(10deg);
   }
 
-  /* Ajustes para pantallas tipo tablet */
   @media (max-width: 1024px) {
     .main {
       width: 16rem;
@@ -69,13 +66,11 @@ export const StyledWrapper = styled.div`
     }
   }
 
-  /* Ajustes para dispositivos móviles */
   @media (max-width: 768px) {
     .main {
       width: 14rem;
       height: 18rem;
     }
-    /* En móviles, al no existir hover se aplican transformaciones por defecto */
     #c1 {
       transform: translateX(-15px) rotate(-10deg);
     }
