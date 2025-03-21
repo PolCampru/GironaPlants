@@ -16,7 +16,7 @@ import {
   QueryType,
 } from "@/types/Products";
 import { createColumnHelper } from "@tanstack/react-table";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AddToCart from "@/components/ui/AddToCart/AddToCart";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "@/store/features/cartSlice";
@@ -24,6 +24,7 @@ import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
 import { showModal } from "@/store/features/modalSlice";
 import { OfferType } from "@/types/Offers";
+import React from "react";
 
 export default function useProducts() {
   const { t } = useTranslation(["products", "addProducts"]);
@@ -202,35 +203,46 @@ export default function useProducts() {
 
   const columnHelper = createColumnHelper<PlantType>();
 
-  const generateColumns = () => [
-    columnHelper.accessor("genus", {
-      header: data.table.titleGenus,
-      cell: (info) => info.getValue(),
-    }),
-    columnHelper.accessor("description", {
-      header: data.table.titleDescription,
-      cell: (info) => info.getValue(),
-    }),
-    columnHelper.accessor("pot_size", {
-      header: data.table.titlePotSize,
-      cell: (info) => info.getValue(),
-    }),
-    columnHelper.accessor("height", {
-      header: data.table.titleHeight,
-      cell: (info) => info.getValue(),
-    }),
-    columnHelper.accessor("price", {
-      header: data.table.titlePrice,
-      cell: (info) => `${info.getValue()} €`,
-    }),
-    columnHelper.display({
+  const generateColumns = () => {
+    const windowWidth = window.innerWidth;
+
+    const addColumn = columnHelper.display({
       id: "add",
       cell: (info) => {
         const plant = info.row.original;
         return <AddToCart onClick={() => handleAddToCart(plant)} />;
       },
-    }),
-  ];
+    });
+
+    const standardColumns = [
+      columnHelper.accessor("genus", {
+        header: data.table.titleGenus,
+        cell: (info) => info.getValue(),
+      }),
+      columnHelper.accessor("description", {
+        header: data.table.titleDescription,
+        cell: (info) => info.getValue(),
+      }),
+      columnHelper.accessor("pot_size", {
+        header: data.table.titlePotSize,
+        cell: (info) => info.getValue(),
+      }),
+      columnHelper.accessor("height", {
+        header: data.table.titleHeight,
+        cell: (info) => info.getValue(),
+      }),
+      columnHelper.accessor("price", {
+        header: data.table.titlePrice,
+        cell: (info) => `${info.getValue()} €`,
+      }),
+    ];
+
+    if (windowWidth < 850) {
+      return [addColumn, ...standardColumns];
+    }
+
+    return [...standardColumns, addColumn];
+  };
 
   return {
     plants,

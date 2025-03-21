@@ -1,0 +1,36 @@
+{
+  "addProducts": {
+    "question": "Vous n'avez pas trouvé le produit que vous recherchez ?",
+    "button": "Ajoutez-le ici",
+    "modal": {
+      "title": "Ajoutez un nouveau produit",
+      "subtitle": "Si vous n'avez pas trouvé le produit que vous recherchiez, remplissez ce formulaire et ajoutez-le au devis",
+      "button": "Ajouter",
+      "inputs": [
+        {
+          "label": "Genre",
+          "name": "genus",
+          "requiredError": "Le genre est un champ obligatoire"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": true,
+          "requiredError": "La description est un champ obligatoire"
+        },
+        {
+          "label": "Format",
+          "name": "format"
+        },
+        {
+          "label": "Hauteur",
+          "name": "height"
+        },
+        {
+          "label": "Quantité",
+          "name": "quantity"
+        }
+      ]
+    }
+  }
+}

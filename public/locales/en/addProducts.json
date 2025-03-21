@@ -1,0 +1,36 @@
+{
+  "addProducts": {
+    "question": "Didn't find the product you're looking for?",
+    "button": "Add it here",
+    "modal": {
+      "title": "Add a new product",
+      "subtitle": "If you didn't find the product you were looking for, fill out this form and add it to the quote",
+      "button": "Add",
+      "inputs": [
+        {
+          "label": "Category",
+          "name": "genus",
+          "requiredError": "Category is a required field"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": true,
+          "requiredError": "Description is a required field"
+        },
+        {
+          "label": "Format",
+          "name": "format"
+        },
+        {
+          "label": "Height",
+          "name": "height"
+        },
+        {
+          "label": "Quantity",
+          "name": "quantity"
+        }
+      ]
+    }
+  }
+}

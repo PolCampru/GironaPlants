@@ -1,0 +1,12 @@
+{
+  "budget": {
+    "title": "Demande de devis",
+    "emptyCard": "Vider la demande",
+    "emptyState": "Il n'y a aucun article dans la demande",
+    "total": "Total",
+    "articles": "articles",
+    "addPlant1": "Vous n'avez pas trouvé ce que vous cherchez ?",
+    "addPlant2": "Ajoutez-le ici",
+    "button": "Formulaire de demande"
+  }
+}

@@ -11,6 +11,7 @@ import {
   InfoContainer,
   ImageFooter,
 } from "./Footer.style";
+import { useRouter, usePathname } from "next/navigation";
 
 const footerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -44,6 +45,16 @@ const logoVariants = {
 
 const Footer = () => {
   const { t } = useTranslation(["footer", "common"]);
+  const router = useRouter();
+  const pathname = usePathname();
+  const [currentLanguage, setCurrentLanguage] = React.useState("");
+
+  React.useEffect(() => {
+    if (pathname) {
+      const lang = pathname.split("/")[1];
+      setCurrentLanguage(lang);
+    }
+  }, [pathname]);
 
   const data = t("footer", { returnObjects: true }) as {
     contact?: {
@@ -72,6 +83,12 @@ const Footer = () => {
   const callPhone = () => {
     if (contact.phone) {
       window.location.href = `tel:${contact.phone}`;
+    }
+  };
+
+  const handlePrivacyClick = () => {
+    if (currentLanguage) {
+      router.push(`/${currentLanguage}/privacy`);
     }
   };
 
@@ -130,18 +147,11 @@ const Footer = () => {
               <motion.p
                 style={{ cursor: "pointer" }}
                 variants={itemVariants}
-                onClick={() => console.log("privacy")}
+                onClick={handlePrivacyClick}
+                role="button"
+                tabIndex={0}
               >
                 {contact.privacyPolicy}
-              </motion.p>
-            )}
-            {contact.termsOfService && (
-              <motion.p
-                style={{ cursor: "pointer" }}
-                variants={itemVariants}
-                onClick={() => console.log("tos")}
-              >
-                {contact.termsOfService}
               </motion.p>
             )}
           </div>

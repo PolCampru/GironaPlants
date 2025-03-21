@@ -1,0 +1,79 @@
+{
+  "form": {
+    "title": "Formulaire de demande",
+    "subtitle": "Remplissez ce bref formulaire pour compléter la demande de devis. Il est essentiel pour vous proposer une offre personnalisée. Remplissez les champs afin que nous puissions vous contacter et vous fournir les informations dont vous avez besoin de manière rapide et précise.",
+    "submit": "Envoyer",
+    "remove": "Supprimer",
+    "messages": {
+      "inProgress": {
+        "title": "Envoi de la demande...",
+        "text": "Veuillez patienter quelques secondes."
+      },
+      "success": {
+        "title": "Demande envoyée",
+        "text": "Merci de votre confiance. Nous avons bien reçu votre demande et nous vous contacterons dès que possible."
+      },
+      "error": {
+        "title": "Erreur lors de l'envoi",
+        "text": "Une erreur s'est produite lors de l'envoi de la demande. Veuillez réessayer."
+      }
+    },
+    "inputs": [
+      {
+        "type": "toggle",
+        "name": "type",
+        "options": [
+          { "label": "Entreprise", "value": "company" },
+          { "label": "Particulier", "value": "particular" }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Entreprise",
+        "name": "company",
+        "required": true,
+        "requiredError": "L'entreprise est un champ obligatoire"
+      },
+      {
+        "type": "text",
+        "label": "Nom et prénom",
+        "name": "name",
+        "required": true,
+        "requiredError": "Le nom et le prénom sont obligatoires",
+        "formatError": "Le nom et le prénom doit contenir au moins 3 caractères"
+      },
+      {
+        "type": "text",
+        "label": "Adresse e-mail",
+        "name": "email",
+        "required": true,
+        "requiredError": "L'adresse e-mail est un champ obligatoire",
+        "formatError": "Le format de l'adresse e-mail n'est pas valide"
+      },
+      {
+        "type": "text",
+        "label": "Téléphone",
+        "name": "phone",
+        "required": true,
+        "requiredError": "Le téléphone est un champ obligatoire",
+        "formatError": "Le format du téléphone n'est pas valide"
+      },
+      {
+        "type": "textarea",
+        "label": "Commentaire",
+        "name": "comment"
+      },
+      {
+        "type": "file",
+        "label": "Ajouter un document",
+        "name": "files"
+      },
+      {
+        "type": "checkbox",
+        "label": "J'accepte la Politique de confidentialité",
+        "name": "privacyPolicy",
+        "required": true
+      }
+    ]
+  }
+}

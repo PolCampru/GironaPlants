@@ -1,0 +1,79 @@
+{
+  "form": {
+    "title": "Formulario de solicitud",
+    "subtitle": "Rellena este breve formulario para completar la solicitud de presupuesto. Es esencial para ofrecerte una propuesta personalizada. Completa los campos para que podamos contactarte y proporcionarte la información que necesitas de manera rápida y precisa.",
+    "submit": "Enviar",
+    "remove": "Eliminar",
+    "messages": {
+      "inProgress": {
+        "title": "Enviando la solicitud...",
+        "text": "Por favor, espera unos segundos."
+      },
+      "success": {
+        "title": "Solicitud enviada",
+        "text": "Gracias por confiar en nosotros. Hemos recibido tu solicitud y nos pondremos en contacto contigo lo antes posible."
+      },
+      "error": {
+        "title": "Error en el envío",
+        "text": "Ha ocurrido un error en el envío de la solicitud. Por favor, inténtalo de nuevo."
+      }
+    },
+    "inputs": [
+      {
+        "type": "toggle",
+        "name": "type",
+        "options": [
+          { "label": "Empresa", "value": "company" },
+          { "label": "Particular", "value": "particular" }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Empresa",
+        "name": "company",
+        "required": true,
+        "requiredError": "La empresa es un campo obligatorio"
+      },
+      {
+        "type": "text",
+        "label": "Nombre y apellidos",
+        "name": "name",
+        "required": true,
+        "requiredError": "El nombre y apellidos son un campo obligatorio",
+        "formatError": "El nombre y apellidos deben contener al menos 3 caracteres"
+      },
+      {
+        "type": "text",
+        "label": "Correo electrónico",
+        "name": "email",
+        "required": true,
+        "requiredError": "El correo electrónico es un campo obligatorio",
+        "formatError": "El formato del correo electrónico no es válido"
+      },
+      {
+        "type": "text",
+        "label": "Teléfono",
+        "name": "phone",
+        "required": true,
+        "requiredError": "El teléfono es un campo obligatorio",
+        "formatError": "El formato del teléfono no es válido"
+      },
+      {
+        "type": "textarea",
+        "label": "Comentario",
+        "name": "comment"
+      },
+      {
+        "type": "file",
+        "label": "Agregar documento",
+        "name": "files"
+      },
+      {
+        "type": "checkbox",
+        "label": "Acepto la Política de Privacidad",
+        "name": "privacyPolicy",
+        "required": true
+      }
+    ]
+  }
+}

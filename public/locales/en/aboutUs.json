@@ -1,0 +1,46 @@
+{
+  "title": "Our Clients",
+  "subtitle": "We work with a wide range of clients",
+  "clients": [
+    {
+      "name": "Nurseries",
+      "image": "/images/viveristes.svg"
+    },
+    {
+      "name": "Gardens",
+      "image": "/images/gardens.svg"
+    },
+    {
+      "name": "Gardeners",
+      "image": "/images/jardiners.svg"
+    },
+    {
+      "name": "Public Works",
+      "image": "/images/obraPublica.svg"
+    },
+    {
+      "name": "Sustainable",
+      "image": "/images/sostenibles.svg"
+    },
+    {
+      "name": "Landscape Designers",
+      "image": "/images/paisagistes.svg"
+    },
+    {
+      "name": "Commercial",
+      "image": "/images/comercials.svg"
+    },
+    {
+      "name": "Fruit Growers",
+      "image": "/images/fruiters.svg"
+    },
+    {
+      "name": "Official Organizations",
+      "image": "/images/organismesOficials.svg"
+    },
+    {
+      "name": "Reforesters",
+      "image": "/images/repobladorsForestals.svg"
+    }
+  ]
+}

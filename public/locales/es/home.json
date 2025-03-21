@@ -1,0 +1,49 @@
+{
+  "ourPlants": [
+    {
+      "key": "plant1",
+      "title": "Plantas Forestales",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant2",
+      "title": "Esquejes Enraizados",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant3",
+      "title": "Arbustos y Coníferas",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant4",
+      "title": "Jardinería Sostenible",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant5",
+      "title": "Tapizantes",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant6",
+      "title": "Gramíneas",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant7",
+      "title": "Plantas Acuáticas",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant8",
+      "title": "Helechos",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant9",
+      "title": "Otros",
+      "img": "img/plant1.jpg"
+    }
+  ]
+}

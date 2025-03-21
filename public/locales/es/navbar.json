@@ -1,0 +1,17 @@
+{
+  "paths": [
+    { "name": "Inicio", "url": "/es" },
+    { "name": "Productos", "url": "/es/products" },
+    { "name": "Ofertas", "url": "/es/offers" },
+    { "name": "Nosotros", "url": "/es/about-us" },
+    { "name": "Catálogos", "url": "/es/catalogues" },
+    { "name": "Contacto", "url": "/es/contact" }
+  ],
+  "budgetAndLanguage": {
+    "srcList": "/images/listIcon.svg",
+    "altList": "Icono de lista",
+    "title": "Presupuesto",
+    "srcVector": "/images/vectorIcon.svg",
+    "altVector": "Icono de vector"
+  }
+}

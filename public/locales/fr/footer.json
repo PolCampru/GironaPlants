@@ -1,0 +1,17 @@
+{
+  "footer": {
+    "contact": {
+      "title": "Contact:",
+      "phone": "+34 639 811 560",
+      "email": "gironaplants@gironaplants.com",
+      "linkedin": "https://www.linkedin.com/in/gironaplants/",
+      "rights": ", Tous droits réservés",
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfService": "Conditions de service"
+    },
+    "image": {
+      "src": "/images/imageFooter.png",
+      "alt": "Image de pied de page"
+    }
+  }
+}

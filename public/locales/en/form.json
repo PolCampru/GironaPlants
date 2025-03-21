@@ -1,0 +1,79 @@
+{
+  "form": {
+    "title": "Request Form",
+    "subtitle": "Fill out this brief form to complete the quote request. It is essential for us to offer you a personalized proposal. Complete the fields so that we can contact you and provide you with the information you need quickly and accurately.",
+    "submit": "Submit",
+    "remove": "Remove",
+    "messages": {
+      "inProgress": {
+        "title": "Sending request...",
+        "text": "Please wait a few seconds."
+      },
+      "success": {
+        "title": "Request sent",
+        "text": "Thank you for trusting us. We have received your request and will contact you as soon as possible."
+      },
+      "error": {
+        "title": "Error sending request",
+        "text": "There was an error sending the request. Please try again."
+      }
+    },
+    "inputs": [
+      {
+        "type": "toggle",
+        "name": "type",
+        "options": [
+          { "label": "Company", "value": "company" },
+          { "label": "Individual", "value": "particular" }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Company",
+        "name": "company",
+        "required": true,
+        "requiredError": "Company is a required field"
+      },
+      {
+        "type": "text",
+        "label": "Name and Surname",
+        "name": "name",
+        "required": true,
+        "requiredError": "Name and surname are required",
+        "formatError": "Name and surname must contain at least 3 characters"
+      },
+      {
+        "type": "text",
+        "label": "Email",
+        "name": "email",
+        "required": true,
+        "requiredError": "Email is a required field",
+        "formatError": "The email format is not valid"
+      },
+      {
+        "type": "text",
+        "label": "Phone",
+        "name": "phone",
+        "required": true,
+        "requiredError": "Phone is a required field",
+        "formatError": "The phone format is not valid"
+      },
+      {
+        "type": "textarea",
+        "label": "Comment",
+        "name": "comment"
+      },
+      {
+        "type": "file",
+        "label": "Add document",
+        "name": "files"
+      },
+      {
+        "type": "checkbox",
+        "label": "I accept the Privacy Policy",
+        "name": "privacyPolicy",
+        "required": true
+      }
+    ]
+  }
+}

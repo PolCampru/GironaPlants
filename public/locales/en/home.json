@@ -1,0 +1,49 @@
+{
+  "ourPlants": [
+    {
+      "key": "plant1",
+      "title": "Forest Plants",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant2",
+      "title": "Rooted Cuttings",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant3",
+      "title": "Shrubs and Conifers",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant4",
+      "title": "Sustainable Gardening",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant5",
+      "title": "Groundcovers",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant6",
+      "title": "Grasses",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant7",
+      "title": "Aquatic Plants",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant8",
+      "title": "Ferns",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant9",
+      "title": "Others",
+      "img": "img/plant1.jpg"
+    }
+  ]
+}

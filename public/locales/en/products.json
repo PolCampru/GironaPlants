@@ -1,0 +1,34 @@
+{
+  "products": {
+    "title": "Products",
+    "table": {
+      "titleGenus": "GENUS",
+      "titleDescription": "DESCRIPTION",
+      "titlePotSize": "FORMAT",
+      "titleHeight": "HEIGHT",
+      "titlePrice": "PRICE"
+    },
+    "filters": {
+      "title": "Filters",
+      "searchPlaceholder": "Search...",
+      "offersTitle": "Offers",
+      "potFilters": {
+        "title": "Format",
+        "seeAll": "See all",
+        "options": [
+          { "id": 1, "value": "Rd", "label": "Bare-root" },
+          { "id": 2, "value": "AH", "label": "Horticultural cell" },
+          { "id": 3, "value": "AF", "label": "Forest cell" },
+          { "id": 4, "value": "M", "label": "Pot" },
+          { "id": 5, "value": "C", "label": "Container" }
+        ]
+      }
+    },
+    "errorAddToCart": {
+      "title": "The item is already in the cart"
+    },
+    "successAddToCart": {
+      "title": "Item added to the cart"
+    }
+  }
+}

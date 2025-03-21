@@ -1,0 +1,34 @@
+{
+  "products": {
+    "title": "Productos",
+    "table": {
+      "titleGenus": "GÉNERO",
+      "titleDescription": "DESCRIPCIÓN",
+      "titlePotSize": "FORMATO",
+      "titleHeight": "ALTURA",
+      "titlePrice": "PRECIO"
+    },
+    "filters": {
+      "title": "Filtros",
+      "searchPlaceholder": "Buscar...",
+      "offersTitle": "Ofertas",
+      "potFilters": {
+        "title": "Formato",
+        "seeAll": "Ver todos",
+        "options": [
+          { "id": 1, "value": "Rd", "label": "Raíz desnuda" },
+          { "id": 2, "value": "AH", "label": "Alvéolo hortícola" },
+          { "id": 3, "value": "AF", "label": "Alvéolo forestal" },
+          { "id": 4, "value": "M", "label": "Tiesto" },
+          { "id": 5, "value": "C", "label": "Contenedor" }
+        ]
+      }
+    },
+    "errorAddToCart": {
+      "title": "El artículo ya está en el carrito"
+    },
+    "successAddToCart": {
+      "title": "Artículo añadido al carrito"
+    }
+  }
+}

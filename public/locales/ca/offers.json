@@ -1,0 +1,8 @@
+{
+  "emptyState": {
+    "title": "No hi ha ofertes disponibles",
+    "description": "Actualment no tenim ofertes actives, però pots explorar el nostre catàleg complet de productes o contactar-nos per obtenir informació sobre properes promocions.",
+    "productsButton": "Veure productes",
+    "contactButton": "Contactar"
+  }
+}

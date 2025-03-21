@@ -1,0 +1,12 @@
+{
+  "budget": {
+    "title": "Budget request",
+    "emptyCard": "Clear the request",
+    "emptyState": "There are no items in the request",
+    "total": "Total",
+    "articles": "items",
+    "addPlant1": "Didn't find what you're looking for?",
+    "addPlant2": "Add it here",
+    "button": "Request form"
+  }
+}

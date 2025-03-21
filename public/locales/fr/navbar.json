@@ -1,0 +1,17 @@
+{
+  "paths": [
+    { "name": "Accueil", "url": "/fr" },
+    { "name": "Produits", "url": "/fr/products" },
+    { "name": "Offres", "url": "/fr/offers" },
+    { "name": "À propos", "url": "/fr/about-us" },
+    { "name": "Catalogues", "url": "/fr/catalogues" },
+    { "name": "Contact", "url": "/ca/contact" }
+  ],
+  "budgetAndLanguage": {
+    "srcList": "/images/listIcon.svg",
+    "altList": "Icône de liste",
+    "title": "Budget",
+    "srcVector": "/images/vectorIcon.svg",
+    "altVector": "Icône de vecteur"
+  }
+}

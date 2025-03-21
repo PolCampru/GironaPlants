@@ -1,0 +1,49 @@
+{
+  "ourPlants": [
+    {
+      "key": "plant1",
+      "title": "Plantes forestières",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant2",
+      "title": "Boutures enracinées",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant3",
+      "title": "Arbustes et conifères",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant4",
+      "title": "Jardinage durable",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant5",
+      "title": "Tapisants",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant6",
+      "title": "Graminées",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant7",
+      "title": "Plantes aquatiques",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant8",
+      "title": "Fougères",
+      "img": "img/plant1.jpg"
+    },
+    {
+      "key": "plant9",
+      "title": "Autres",
+      "img": "img/plant1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "budget": {
+    "title": "Solicitud de presupuesto",
+    "emptyCard": "Vaciar la solicitud",
+    "emptyState": "No hay ningún artículo en la solicitud",
+    "total": "Total",
+    "articles": "artículos",
+    "addPlant1": "¿No has encontrado lo que buscas?",
+    "addPlant2": "Añádelo aquí",
+    "button": "Formulario de solicitud"
+  }
+}

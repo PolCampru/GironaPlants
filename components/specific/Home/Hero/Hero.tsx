@@ -27,7 +27,8 @@ const HeroHome = ({ data }: { data: HeroHomeProps }) => {
         variants={dataVariants}
       >
         <h1>
-          <span>GironaPlants S.L</span> {data.hero_title}
+          <span>Girona Plants</span>
+          {data.hero_title}
         </h1>
         <p>{data.hero_subtitle}</p>
         <Link href={`/${data.locale}/products`}>

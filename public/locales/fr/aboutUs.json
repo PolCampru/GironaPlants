@@ -1,0 +1,46 @@
+{
+  "title": "Nos clients",
+  "subtitle": "Nous travaillons avec un large éventail de clients",
+  "clients": [
+    {
+      "name": "Pépiniéristes",
+      "image": "/images/viveristes.svg"
+    },
+    {
+      "name": "Jardins",
+      "image": "/images/gardens.svg"
+    },
+    {
+      "name": "Jardiniers",
+      "image": "/images/jardiners.svg"
+    },
+    {
+      "name": "Travaux publics",
+      "image": "/images/obraPublica.svg"
+    },
+    {
+      "name": "Durables",
+      "image": "/images/sostenibles.svg"
+    },
+    {
+      "name": "Paysagistes",
+      "image": "/images/paisagistes.svg"
+    },
+    {
+      "name": "Commerciaux",
+      "image": "/images/comercials.svg"
+    },
+    {
+      "name": "Fruitiers",
+      "image": "/images/fruiters.svg"
+    },
+    {
+      "name": "Organismes officiels",
+      "image": "/images/organismesOficials.svg"
+    },
+    {
+      "name": "Reboiseurs",
+      "image": "/images/repobladorsForestals.svg"
+    }
+  ]
+}

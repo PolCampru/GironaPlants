@@ -1,0 +1,34 @@
+{
+  "products": {
+    "title": "Produits",
+    "table": {
+      "titleGenus": "GENRE",
+      "titleDescription": "DESCRIPTION",
+      "titlePotSize": "FORMAT",
+      "titleHeight": "HAUTEUR",
+      "titlePrice": "PRIX"
+    },
+    "filters": {
+      "title": "Filtres",
+      "searchPlaceholder": "Recherche...",
+      "offersTitle": "Offres",
+      "potFilters": {
+        "title": "Format",
+        "seeAll": "Voir tout",
+        "options": [
+          { "id": 1, "value": "Rd", "label": "Racine nue" },
+          { "id": 2, "value": "AH", "label": "Alvéole horticole" },
+          { "id": 3, "value": "AF", "label": "Alvéole forestière" },
+          { "id": 4, "value": "M", "label": "Pot" },
+          { "id": 5, "value": "C", "label": "Conteneur" }
+        ]
+      }
+    },
+    "errorAddToCart": {
+      "title": "L'article est déjà dans le panier"
+    },
+    "successAddToCart": {
+      "title": "Article ajouté au panier"
+    }
+  }
+}

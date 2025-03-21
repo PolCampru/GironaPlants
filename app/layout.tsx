@@ -10,7 +10,6 @@ import { ReduxProvider } from "./reduxProvider";
 
 interface RootLayoutProps {
   children: ReactNode;
-  params: { lng: string };
 }
 
 const inter = Inter({
@@ -18,16 +17,9 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export async function generateStaticParams() {
-  const languages = getLanguages();
-  return languages.map((lng) => ({ lng }));
-}
-
-export default function RootLayout({ children, params }: RootLayoutProps) {
-  const language = params.lng || "ca";
-
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang={language} className={inter.variable}>
+    <html className={inter.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>

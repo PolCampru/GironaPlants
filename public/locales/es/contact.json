@@ -1,0 +1,12 @@
+{
+  "contact": {
+    "phone": {
+      "title": "Teléfono",
+      "text": "+34 639 811 560"
+    },
+    "email": {
+      "title": "Correo electrónico",
+      "text": "gironaplants@gironaplants.com"
+    }
+  }
+}

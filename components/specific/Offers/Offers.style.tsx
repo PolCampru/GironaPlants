@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const OffersWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-top: 8rem;
   padding-bottom: 2rem;
 
@@ -14,6 +14,7 @@ export const OffersWrapper = styled.div`
   .container-offers {
     width: 100%;
     margin-top: 2.8rem;
+    padding: 0.5rem;
     padding-bottom: 1rem;
 
     display: flex;
