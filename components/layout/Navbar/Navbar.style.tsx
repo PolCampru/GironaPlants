@@ -18,6 +18,7 @@ export const NavbarWrapper = styled.nav`
 
 export const LogoContainer = styled.div`
   height: 100%;
+  cursor: pointer;
   img {
     width: 100%;
     height: 100%;
@@ -25,9 +26,7 @@ export const LogoContainer = styled.div`
   }
 
   @media (max-width: 475px) {
-    img {
-      width: 60%;
-    }
+    width: 30%;
   }
 `;
 

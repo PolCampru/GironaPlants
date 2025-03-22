@@ -28,7 +28,7 @@ const i18nConfig: InitOptions = {
   detection: {
     order: ["path"],
     lookupFromPathIndex: 0,
-    caches: ["cookie"],
+    caches: [],
   },
   defaultNS: "common",
   backend: {

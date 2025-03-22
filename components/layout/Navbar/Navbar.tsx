@@ -25,7 +25,7 @@ import Modal from "../Modal/Modal";
 import ModalAddPlant from "../Modal/ModalAddPlant/ModalAddPlant";
 import { FiMenu, FiX } from "react-icons/fi";
 import useBudgetAndLanguage from "@/hooks/useBudgetAndLanguage";
-
+import { useRouter } from "next/navigation";
 const Navbar = () => {
   const {
     modalState,
@@ -49,6 +49,8 @@ const Navbar = () => {
     currentLanguage,
     items,
   } = useBudgetAndLanguage({ i18n });
+
+  const router = useRouter();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -79,6 +81,9 @@ const Navbar = () => {
             as={motion.div}
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
+            onClick={() => {
+              router.push(`/${currentLanguage}`);
+            }}
           >
             <img src={logo.src} alt={logo.alt} />
           </LogoContainer>
@@ -137,7 +142,11 @@ const Navbar = () => {
             />
 
             <Hamburger onClick={toggleMobileMenu}>
-              {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+              {isMobileMenuOpen ? (
+                <FiX size={24} color="black" />
+              ) : (
+                <FiMenu size={24} color="black" />
+              )}
             </Hamburger>
           </RightContainer>
         </NavbarWrapper>
