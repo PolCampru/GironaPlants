@@ -26,7 +26,7 @@ const i18nConfig: InitOptions = {
     "products",
   ],
   detection: {
-    order: ["path", "navigator", "htmlTag"],
+    order: ["path"],
     lookupFromPathIndex: 0,
     caches: ["cookie"],
   },

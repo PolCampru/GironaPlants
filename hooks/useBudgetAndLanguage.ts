@@ -26,36 +26,47 @@ const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
     setIsLanguageOpen((prev) => !prev);
   };
 
-  const handleLanguageSelect = (lng: string) => {
+  const handleLanguageSelect = async (lng: string) => {
     if (lng === currentLanguage) {
       setIsLanguageOpen(false);
       return;
     }
 
-    i18n.changeLanguage(lng);
-    updateURLWithLanguage(lng);
-    setIsLanguageOpen(false);
+    try {
+      await i18n.changeLanguage(lng);
+      updateURLWithLanguage(lng);
+    } finally {
+      setIsLanguageOpen(false);
+    }
   };
 
   const updateURLWithLanguage = (lng: string) => {
+    console.log("updateURLWithLanguage", lng);
     const pathSegments = pathname.split("/").filter(Boolean);
 
+    console.log("pathSegments", pathSegments);
     if (pathSegments.length === 0) {
       router.push(`/${lng}`);
       return;
     }
 
-    const firstSegment = pathSegments[0];
-    const isFirstSegmentLanguage =
-      i18n.options.supportedLngs.includes(firstSegment);
+    console.log("pathSegments", pathSegments);
 
+    const firstSegment = pathSegments[0];
+    const isFirstSegmentLanguage = languages.includes(firstSegment);
+
+    console.log("isFirstSegmentLanguage", isFirstSegmentLanguage);
+
+    let newPath;
     if (isFirstSegmentLanguage) {
       pathSegments[0] = lng;
+      newPath = `/${pathSegments.join("/")}`;
     } else {
-      pathSegments.unshift(lng);
+      newPath = `/${lng}/${pathSegments.join("/")}`;
     }
 
-    const newPath = `/${pathSegments.join("/")}`;
+    console.log("newPath", newPath);
+
     router.push(newPath);
   };
 

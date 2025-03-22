@@ -15,7 +15,6 @@ import {
 } from "./BudgetAndLanguage.style";
 import { AnimatePresence } from "framer-motion";
 import BudgetNavbar from "./BudgetNavbar/BudgetNavbar";
-import { useRouter, usePathname } from "next/navigation";
 
 interface LanguageSelectorProps {
   i18n: any;
@@ -43,29 +42,6 @@ const BudgetAndLanguage = ({
   currentLanguage,
   items,
 }: LanguageSelectorProps) => {
-  const router = useRouter();
-  const pathname = usePathname();
-
-  React.useEffect(() => {
-    const pathLocale = pathname?.split("/")[1];
-    if (
-      pathLocale &&
-      languages.includes(pathLocale) &&
-      pathLocale !== currentLanguage
-    ) {
-      handleLanguageSelect(pathLocale);
-    }
-  }, [pathname, languages, currentLanguage]);
-
-  const handleLanguageChange = (lng: string) => {
-    if (!pathname) return;
-
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${lng}`);
-    router.push(newPath);
-    handleLanguageSelect(lng);
-    toggleLanguageMenu();
-  };
-
   return (
     <BudgetAndLanguageWrapper>
       <BudgetContainer
@@ -112,9 +88,19 @@ const BudgetAndLanguage = ({
               {languages.map((lng: string) => (
                 <DropdownItem
                   key={lng}
-                  onClick={() => handleLanguageChange(lng)}
+                  onClick={() => handleLanguageSelect(lng)}
                   role="menuitem"
                   tabIndex={0}
+                  style={{
+                    backgroundColor:
+                      currentLanguage === lng
+                        ? "rgba(17, 139, 80, 1)"
+                        : undefined,
+                    color:
+                      currentLanguage === lng
+                        ? "rgba(250, 247, 240, 1)"
+                        : undefined,
+                  }}
                 >
                   {lng.toUpperCase()}
                 </DropdownItem>
