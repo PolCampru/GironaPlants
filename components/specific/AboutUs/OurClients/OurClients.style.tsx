@@ -86,4 +86,10 @@ export const ClientCart = styled.div`
   @media (max-width: 480px) {
     width: 40%;
   }
+
+  .description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+  }
 `;

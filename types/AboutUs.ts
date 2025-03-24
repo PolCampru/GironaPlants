@@ -28,6 +28,7 @@ export type OurClientsProps = {
     subtitle: string;
     clients: {
       name: string;
+      description: string;
       image: string;
     }[];
   };

@@ -37,10 +37,18 @@ export const PlantBox = styled.div`
   height: 250px;
   background-color: ${({ theme }) => theme.colors.creamLight};
   display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   color: #333;
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+  }
 `;

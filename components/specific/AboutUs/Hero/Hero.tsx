@@ -59,7 +59,7 @@ const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {
       >
         <Title title={data.title} />
         <p>
-          <span>GironaPlants S.L </span>
+          <span>Girona Plants </span>
           {data.subtitle}
         </p>
         <Link href={`/${data.locale}/products`}>

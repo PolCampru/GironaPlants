@@ -3,47 +3,56 @@
     {
       "key": "plant1",
       "title": "Plantas Forestales",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Especies autóctonas ideales para reforestaciones y proyectos de paisajismo natural en entornos mediterráneos."
     },
     {
       "key": "plant2",
       "title": "Esquejes Enraizados",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Cuttings de alta calidad para profesionales que buscan plantas fuertes y adaptadas al clima mediterráneo."
     },
     {
       "key": "plant3",
       "title": "Arbustos y Coníferas",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Variedades robustas para aportar estructura y volumen a jardines sostenibles y proyectos de landscaping."
     },
     {
       "key": "plant4",
       "title": "Jardinería Sostenible",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Soluciones ecológicas para espacios verdes que promueven la biodiversidad y el ahorro de agua."
     },
     {
       "key": "plant5",
-      "title": "Tapizantes",
-      "img": "img/plant1.jpg"
+      "title": "Cubresuelos",
+      "img": "img/plant1.jpg",
+      "description": "Plantas rastreras que cubren el suelo, reducen la erosión y ayudan a mantener la humedad en el jardín."
     },
     {
       "key": "plant6",
       "title": "Gramíneas",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Variedades ornamentales y resistentes que aportan movimiento y un toque distintivo en cualquier espacio verde."
     },
     {
       "key": "plant7",
       "title": "Plantas Acuáticas",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Especies adaptadas a zonas húmedas y estanques que mejoran la biodiversidad y atraen fauna beneficiosa."
     },
     {
       "key": "plant8",
       "title": "Helechos",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Plantas frondosas que ofrecen frescura y un aspecto exótico, ideales para áreas sombreadas y proyectos de jardinería natural."
     },
     {
       "key": "plant9",
-      "title": "Otros",
-      "img": "img/plant1.jpg"
+      "title": "Otras",
+      "img": "img/plant1.jpg",
+      "description": "Conoce el resto de nuestras plantas para completar cualquier proyecto de jardinería y paisajismo."
     }
   ]
 }

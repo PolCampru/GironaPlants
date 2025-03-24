@@ -8,7 +8,6 @@ const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  console.log("pathname", pathname);
 
   if (PUBLIC_FILE.test(pathname) || pathname.includes("/api/")) {
     return;

@@ -33,6 +33,7 @@ const OurPlants = ({ data }: { data: PlantsHomeProps }) => {
             }}
           >
             {plant.title}
+            <p>{plant.description}</p>
           </PlantBox>
         ))}
       </PlantsContainer>

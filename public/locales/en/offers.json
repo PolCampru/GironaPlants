@@ -1,7 +1,8 @@
 {
-  "title": "Offers",
-  "subtitle": "Discover our special offers",
-  "noOffers": "No offers currently available",
-  "viewProducts": "View products",
-  "contact": "Contact"
+  "emptyState": {
+    "title": "No offers currently available",
+    "description": "Currently we do not have any active offers, but you can explore our complete product catalog or contact us for information about upcoming promotions.",
+    "productsButton": "View products",
+    "contactButton": "Contact"
+  }
 }

@@ -21,7 +21,11 @@ const SectionCatalogues = ({ data }: { data: SectionCataloguesProps }) => {
           catalogue={
             data.catalogue1?.url ? `${STRAPI_URL}${data.catalogue1.url}` : ""
           }
-          imageUrl={data.catalogue1_img}
+          imageUrl={
+            data.catalogue1_img?.url
+              ? `${STRAPI_URL}${data.catalogue1_img.url}`
+              : ""
+          }
           button={data.catalogue1_button}
         />
         <CatalogueCard
@@ -30,7 +34,11 @@ const SectionCatalogues = ({ data }: { data: SectionCataloguesProps }) => {
           catalogue={
             data.catalogue2?.url ? `${STRAPI_URL}${data.catalogue2.url}` : ""
           }
-          imageUrl={data.catalogue2_img}
+          imageUrl={
+            data.catalogue2_img?.url
+              ? `${STRAPI_URL}${data.catalogue2_img.url}`
+              : ""
+          }
           button={data.catalogue2_button}
         />
         <CatalogueCard
@@ -39,7 +47,11 @@ const SectionCatalogues = ({ data }: { data: SectionCataloguesProps }) => {
           catalogue={
             data.catalogue3?.url ? `${STRAPI_URL}${data.catalogue3.url}` : ""
           }
-          imageUrl={data.catalogue3_img}
+          imageUrl={
+            data.catalogue3_img?.url
+              ? `${STRAPI_URL}${data.catalogue3_img.url}`
+              : ""
+          }
           button={data.catalogue3_button}
         />
       </ContainerCatalogues>

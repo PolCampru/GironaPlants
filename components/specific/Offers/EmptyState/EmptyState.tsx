@@ -18,8 +18,15 @@ interface EmptyStateProps {
 }
 
 const EmptyState = ({ lng }: EmptyStateProps) => {
-  const { t } = useTranslation("offers");
+  const { t, i18n } = useTranslation("offers");
   const router = useRouter();
+
+  // Forzar el idioma actual
+  React.useEffect(() => {
+    if (i18n.language !== lng) {
+      i18n.changeLanguage(lng);
+    }
+  }, [lng, i18n]);
 
   return (
     <EmptyStateContainer>

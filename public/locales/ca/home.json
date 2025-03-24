@@ -3,47 +3,56 @@
     {
       "key": "plant1",
       "title": "Plantes Forestals",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Selecció d'espècies autòctones i plantes nadiues ideals per a reforestacions i projectes de paisatge natural en entorns mediterranis."
     },
     {
       "key": "plant2",
       "title": "Esqueixos Arrelats",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Cuttings de màxima qualitat per a professionals que busquen esqueixos forts i adaptats al clima mediterrani, perfectes per impulsar jardins sostenibles."
     },
     {
       "key": "plant3",
       "title": "Arbustos i Coníferes",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Espècies robustes per a estructurar el teu jardí amb volum i textura, ideals per a dissenys de paisatgisme mediterrani i countrygardens."
     },
     {
       "key": "plant4",
       "title": "Jardineria Sostenible",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Solucions ecològiques per a projectes de Xariscaping i espaisverds que promouen la biodiversitat i l'estalvi d'aigua."
     },
     {
       "key": "plant5",
       "title": "Entapitzants",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Plantes rases que cobreixen el sòl, millorant la retenció d'humitat i contribuint a la creació d'un entorn natural i de baixa mantenència."
     },
     {
       "key": "plant6",
       "title": "Gramínees",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Varietats ornamentals i resistents, perfectes per afegir moviment i un toc distintiu en jardins de tota mena."
     },
     {
       "key": "plant7",
       "title": "Plantes Aquàtiques",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Espècies adaptades a zones humides i estanys que contribueixen a millorar la biodiversitat i atreure fauna beneficiosa."
     },
     {
       "key": "plant8",
       "title": "Falgueres",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Plantes frondoses que aporten frescor i un toc exòtic, ideals per a racons ombrívols i projectes de jardineria natural."
     },
     {
       "key": "plant9",
       "title": "Altres",
-      "img": "img/plant1.jpg"
+      "img": "img/plant1.jpg",
+      "description": "Descobreix la resta de la nostra àmplia gamma de plantes per a completar qualsevol projecte de jardineria o paisatgisme."
     }
   ]
 }

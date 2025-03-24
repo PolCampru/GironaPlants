@@ -4,6 +4,10 @@ export type CataloguesProps = {
   };
 };
 
+export type Image = {
+  url: string;
+};
+
 export type Catalogue = {
   id: number;
   documentId: string;
@@ -41,17 +45,17 @@ export type SectionCataloguesProps = {
   catalogue1_subtitle: string;
   catalogue1_button: string;
   catalogue1: Catalogue;
-  catalogue1_img: string;
+  catalogue1_img: Image;
   catalogue2_title: string;
   catalogue2_subtitle: string;
   catalogue2_button: string;
   catalogue2: Catalogue;
-  catalogue2_img: string;
+  catalogue2_img: Image;
   catalogue3_title: string;
   catalogue3_subtitle: string;
   catalogue3_button: string;
   catalogue3: Catalogue;
-  catalogue3_img: string;
+  catalogue3_img: Image;
 };
 
 export type CataloguesDataType = HeroCataloguesProps & SectionCataloguesProps;

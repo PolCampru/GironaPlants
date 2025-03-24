@@ -47,4 +47,5 @@ export type OurPlantsType = {
   key: string;
   title: string;
   img: string;
+  description: string;
 }[];

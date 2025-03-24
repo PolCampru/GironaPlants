@@ -22,6 +22,7 @@ const OurClients = ({ data }: { data: OurClientsProps }) => {
           <ClientCart key={client.name}>
             <img src={client.image} alt={client.name} />
             <p>{client.name}</p>
+            <p className="description">{client.description}</p>
           </ClientCart>
         ))}
       </ContainerClients>
