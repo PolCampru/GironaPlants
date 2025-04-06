@@ -6,6 +6,7 @@ import ThemeClientProvider from "@/providers/ThemeClientProvider";
 import { Inter } from "next/font/google";
 import * as React from "react";
 import { ReduxProvider } from "./reduxProvider";
+import CookiePrompt from "@/components/layout/Cookies/CookiePrompt";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -30,6 +31,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
           <ReduxProvider>
             <Navbar />
             <div className="layout-content">{children}</div>
+            <CookiePrompt />
           </ReduxProvider>
           <Footer />
         </ThemeClientProvider>

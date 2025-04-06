@@ -59,8 +59,30 @@ export const EmptyState = styled.div`
   }
 
   @media (max-width: 768px) {
+    height: 50vh;
+
     h3 {
       font-size: 1rem;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: auto;
+    min-height: 40vh;
+    padding: 1rem 0;
+
+    h3 {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 80%;
     }
   }
 `;
@@ -98,6 +120,24 @@ export const ContainerItems = styled.div`
 
   overflow-y: auto;
   overflow-x: hidden;
+
+  @media (max-width: 1440px) {
+    height: 64vh;
+  }
+
+  @media (max-width: 1024px) {
+    height: 60vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 50vh;
+  }
+
+  @media (max-width: 480px) {
+    height: auto;
+    min-height: 40vh;
+    max-height: 70vh;
+  }
 `;
 
 export const Line = styled.div`

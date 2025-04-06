@@ -29,31 +29,31 @@ export default async function HomePage({ params }: HomePageProps) {
   const homeData: HomeDataType = json.data;
 
   const heroHomeData: HeroHomeProps = {
-    hero_images: homeData.hero_images || [],
-    hero_title: homeData.hero_title,
-    hero_subtitle: homeData.hero_subtitle,
-    hero_button: homeData.hero_button,
+    hero_images: homeData?.hero_images || [],
+    hero_title: homeData?.hero_title || "",
+    hero_subtitle: homeData?.hero_subtitle || "",
+    hero_button: homeData?.hero_button || "",
     locale: lng,
   };
 
   const plantsHomeData: PlantsHomeProps = {
-    plants_title: homeData.plants_title,
-    plants_subtitle: homeData.plants_subtitle,
-    plants_button: homeData.plants_button,
+    plants_title: homeData?.plants_title || "",
+    plants_subtitle: homeData?.plants_subtitle || "",
+    plants_button: homeData?.plants_button || "",
     locale: lng,
   };
 
   const cataloguesHomeData: CataloguesProps = {
-    catalogues_title: homeData.catalogues_title,
-    catalogues_subtitle: homeData.catalogues_subtitle,
-    catalogues_button: homeData.catalogues_button,
+    catalogues_title: homeData?.catalogues_title || "",
+    catalogues_subtitle: homeData?.catalogues_subtitle || "",
+    catalogues_button: homeData?.catalogues_button || "",
     locale: lng,
   };
 
   const contactHomeData = {
-    contact_title: homeData.contact_title,
-    contact_subtitle: homeData.contact_subtitle,
-    contact_button: homeData.contact_button,
+    contact_title: homeData?.contact_title || "",
+    contact_subtitle: homeData?.contact_subtitle || "",
+    contact_button: homeData?.contact_button || "",
     locale: lng,
   };
 
