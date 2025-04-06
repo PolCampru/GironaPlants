@@ -10,6 +10,7 @@ interface BoxContainerProps {
   $borderRadiusBottomRight?: string;
   $imageUrl?: string;
   $color?: string;
+  $altText?: string;
 }
 
 export const BoxContainer = styled.div<BoxContainerProps>`

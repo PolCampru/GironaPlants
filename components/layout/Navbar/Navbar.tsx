@@ -26,6 +26,7 @@ import ModalAddPlant from "../Modal/ModalAddPlant/ModalAddPlant";
 import { FiMenu, FiX } from "react-icons/fi";
 import useBudgetAndLanguage from "@/hooks/useBudgetAndLanguage";
 import { useRouter } from "next/navigation";
+
 const Navbar = () => {
   const {
     modalState,
@@ -60,7 +61,7 @@ const Navbar = () => {
 
   if (!ready) {
     return (
-      <div>
+      <div aria-hidden="true">
         <Loader />
       </div>
     );
@@ -68,13 +69,15 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.div
+      <motion.nav
         variants={navbarVariants}
         initial="visible"
         animate={
           scrollDirection === "down" && !isBudgetOpen ? "hidden" : "visible"
         }
         style={{ width: "100%", position: "fixed", top: 0, zIndex: 999 }}
+        role="navigation"
+        aria-label="Navegación principal"
       >
         <NavbarWrapper>
           <LogoContainer
@@ -85,14 +88,15 @@ const Navbar = () => {
               router.push(`/${currentLanguage}`);
             }}
           >
-            <img src={logo.src} alt={logo.alt} />
+            <img src={logo.src} alt={`Logo de Girona Plants - ${logo.alt}`} />
           </LogoContainer>
 
           <MenuContainer
-            as={motion.div}
+            as={motion.nav}
             variants={menuVariants}
             initial="hidden"
             animate="visible"
+            aria-label="Menú principal"
           >
             {Array.isArray(navbarItems) &&
               navbarItems.map((item) => {
@@ -104,7 +108,10 @@ const Navbar = () => {
                     variants={itemVariants}
                     selected={isSelected}
                   >
-                    <Link href={item.url}>
+                    <Link
+                      href={item.url}
+                      aria-current={isSelected ? "page" : undefined}
+                    >
                       {item.name}
                       {isSelected && (
                         <SelectedBackground
@@ -141,11 +148,15 @@ const Navbar = () => {
               items={items}
             />
 
-            <Hamburger onClick={toggleMobileMenu}>
+            <Hamburger
+              onClick={toggleMobileMenu}
+              aria-expanded={isMobileMenuOpen}
+              aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            >
               {isMobileMenuOpen ? (
-                <FiX size={24} color="black" />
+                <FiX size={24} color="black" aria-hidden="true" />
               ) : (
-                <FiMenu size={24} color="black" />
+                <FiMenu size={24} color="black" aria-hidden="true" />
               )}
             </Hamburger>
           </RightContainer>
@@ -156,14 +167,15 @@ const Navbar = () => {
             <ModalAddPlant closeModal={setHideModal} />
           </Modal>
         )}
-      </motion.div>
+      </motion.nav>
 
       {isMobileMenuOpen && (
         <MobileMenu
-          as={motion.div}
+          as={motion.nav}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
+          aria-label="Menú móvil"
         >
           {Array.isArray(navbarItems) &&
             navbarItems.map((item) => {
@@ -174,7 +186,10 @@ const Navbar = () => {
                   selected={isSelected}
                   onClick={toggleMobileMenu}
                 >
-                  <Link href={item.url}>
+                  <Link
+                    href={item.url}
+                    aria-current={isSelected ? "page" : undefined}
+                  >
                     {item.name}
                     {isSelected && (
                       <SelectedBackground

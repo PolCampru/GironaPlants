@@ -8,9 +8,9 @@ export const metadata = {
 
 const BudgetPage = () => {
   return (
-    <main>
+    <section>
       <BudgetScreen />
-    </main>
+    </section>
   );
 };
 

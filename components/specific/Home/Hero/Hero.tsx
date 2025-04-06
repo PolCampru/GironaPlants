@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ContainerData, ContainerImages, HeroWrapper } from "./Hero.style";
 import Box from "@/components/ui/Box/Box";
+import Image from "next/image";
 
 import Button from "@/components/ui/Button/Button";
 import Link from "next/link";
@@ -31,7 +32,10 @@ const HeroHome = ({ data }: { data: HeroHomeProps }) => {
           {data.hero_title}
         </h1>
         <p>{data.hero_subtitle}</p>
-        <Link href={`/${data.locale}/products`}>
+        <Link
+          href={`/${data.locale}/products`}
+          aria-label={`Ver productos de Girona Plants - ${data.hero_button}`}
+        >
           <Button>{data.hero_button}</Button>
         </Link>
       </ContainerData>
@@ -57,16 +61,31 @@ const HeroHome = ({ data }: { data: HeroHomeProps }) => {
             fullUrl = `${STRAPI_URL}${data.hero_images[index].url}`;
           }
 
+          const altText = `Imagen de planta mediterránea en el vivero Girona Plants - ${
+            index + 1
+          }`;
+
           return (
             <motion.div key={index} variants={boxVariants}>
-              <Box
-                imageUrl={fullUrl || ""}
-                width={item.width}
-                height={item.height}
-                borderRadiusBottomRight={item.borderRadiusBottomRight}
-                borderRadiusTopLeft={item.borderRadiusTopLeft}
-                color={item.color}
-              />
+              {fullUrl ? (
+                <Box
+                  imageUrl={fullUrl}
+                  width={item.width}
+                  height={item.height}
+                  borderRadiusBottomRight={item.borderRadiusBottomRight}
+                  borderRadiusTopLeft={item.borderRadiusTopLeft}
+                  color={item.color}
+                  altText={altText}
+                />
+              ) : (
+                <Box
+                  width={item.width}
+                  height={item.height}
+                  borderRadiusBottomRight={item.borderRadiusBottomRight}
+                  borderRadiusTopLeft={item.borderRadiusTopLeft}
+                  color={item.color}
+                />
+              )}
             </motion.div>
           );
         })}

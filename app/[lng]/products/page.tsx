@@ -15,5 +15,9 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
 
   const offersData = await fetchStrapiData(url);
 
-  return <Plants offersData={offersData} />;
+  return (
+    <section>
+      <Plants offersData={offersData} />
+    </section>
+  );
 }

@@ -15,7 +15,11 @@ const OffersPage = async ({ params }: OffersPageProps) => {
 
   const offersData = await fetchStrapiData(url);
 
-  return <Offers data={offersData} lng={lng} />;
+  return (
+    <section>
+      <Offers data={offersData} lng={lng} />
+    </section>
+  );
 };
 
 export default OffersPage;

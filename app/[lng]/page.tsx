@@ -9,11 +9,52 @@ import {
   HomePageProps,
   PlantsHomeProps,
 } from "@/types/Home";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "GironaPlants Home",
-  description: "Bienvenido a la página de inicio",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { lng: string };
+}): Promise<Metadata> {
+  const { lng } = await params;
+
+  let title = "";
+  let description = "";
+
+  switch (lng) {
+    case "es":
+      title = "GironaPlants - Vivero especializado en plantas mediterráneas";
+      description =
+        "Descubre nuestra amplia selección de plantas mediterráneas, árboles y arbustos cultivados con pasión en nuestro vivero de Girona. Calidad y sostenibilidad garantizadas.";
+      break;
+    case "ca":
+      title = "GironaPlants - Viver especialitzat en plantes mediterrànies";
+      description =
+        "Descobreix la nostra àmplia selecció de plantes mediterrànies, arbres i arbustos cultivats amb passió al nostre viver de Girona. Qualitat i sostenibilitat garantides.";
+      break;
+    case "en":
+      title = "GironaPlants - Specialized nursery in Mediterranean plants";
+      description =
+        "Discover our wide selection of Mediterranean plants, trees and shrubs grown with passion in our nursery in Girona. Quality and sustainability guaranteed.";
+      break;
+    case "fr":
+      title =
+        "GironaPlants - Pépinière spécialisée en plantes méditerranéennes";
+      description =
+        "Découvrez notre large sélection de plantes méditerranéennes, d'arbres et d'arbustes cultivés avec passion dans notre pépinière de Gérone. Qualité et durabilité garanties.";
+      break;
+    default:
+      title = "GironaPlants - Plantas mediterráneas";
+      description = "Vivero especializado en plantas mediterráneas en Girona";
+  }
+
+  return {
+    title,
+    description,
+    keywords:
+      "plantas, vivero, Girona, mediterráneo, árboles, arbustos, jardinería, Catalunya",
+  };
+}
 
 export default async function HomePage({ params }: HomePageProps) {
   const { lng } = await params;
@@ -58,11 +99,19 @@ export default async function HomePage({ params }: HomePageProps) {
   };
 
   return (
-    <main>
-      <HeroHome data={heroHomeData} />
-      <OurPlants data={plantsHomeData} />
-      <Catalogues data={cataloguesHomeData} />
-      <Contact data={contactHomeData} />
-    </main>
+    <article>
+      <section>
+        <HeroHome data={heroHomeData} />
+      </section>
+      <section>
+        <OurPlants data={plantsHomeData} />
+      </section>
+      <section>
+        <Catalogues data={cataloguesHomeData} />
+      </section>
+      <section>
+        <Contact data={contactHomeData} />
+      </section>
+    </article>
   );
 }

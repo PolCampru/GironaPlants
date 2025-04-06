@@ -9,10 +9,14 @@ export const metadata = {
 
 const ContactPage = () => {
   return (
-    <main>
-      <Contact />
-      <PhoneAndEmail />
-    </main>
+    <>
+      <section>
+        <Contact />
+      </section>
+      <section>
+        <PhoneAndEmail />
+      </section>
+    </>
   );
 };
 

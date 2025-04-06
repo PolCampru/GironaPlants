@@ -11,8 +11,8 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
   const { lng } = await params;
 
   return (
-    <main>
+    <section>
       <PrivacyContent lng={lng} />
-    </main>
+    </section>
   );
 }

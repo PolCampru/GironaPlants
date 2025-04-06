@@ -12,6 +12,7 @@ import {
   ImageFooter,
 } from "./Footer.style";
 import { useRouter, usePathname } from "next/navigation";
+import Image from "next/image";
 
 const footerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -98,41 +99,55 @@ const Footer = () => {
       initial="hidden"
       animate="visible"
       style={{ position: "relative" }}
+      role="contentinfo"
+      aria-label="Información de contacto y enlaces relacionados"
     >
       <FooterWrapper>
         <ContactContainer>
           <Logo>
             {logo.src && (
-              <motion.img
-                variants={logoVariants}
-                whileHover="hover"
-                src={logo.src}
-                alt={logo.alt || "Logo"}
-                width="100%"
-                height="100%"
-              />
+              <motion.div variants={logoVariants} whileHover="hover">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt || "Logo de Girona Plants"}
+                  width={150}
+                  height={50}
+                  priority={false}
+                  loading="lazy"
+                />
+              </motion.div>
             )}
           </Logo>
           {contact.title && (
-            <motion.p variants={itemVariants}>{contact.title}</motion.p>
+            <motion.h2 variants={itemVariants}>{contact.title}</motion.h2>
           )}
           {contact.phone && (
-            <motion.p
-              onClick={callPhone}
+            <motion.a
+              href={`tel:${contact.phone}`}
               variants={itemVariants}
-              style={{ cursor: "pointer" }}
+              style={{
+                cursor: "pointer",
+                textDecoration: "none",
+                color: "inherit",
+              }}
+              aria-label={`Llamar a Girona Plants: ${contact.phone}`}
             >
               {contact.phone}
-            </motion.p>
+            </motion.a>
           )}
           {contact.email && (
-            <motion.p
-              onClick={mailTo}
+            <motion.a
+              href={`mailto:${contact.email}`}
               variants={itemVariants}
-              style={{ cursor: "pointer" }}
+              style={{
+                cursor: "pointer",
+                textDecoration: "none",
+                color: "inherit",
+              }}
+              aria-label={`Enviar email a Girona Plants: ${contact.email}`}
             >
               {contact.email}
-            </motion.p>
+            </motion.a>
           )}
         </ContactContainer>
         <HorizontalLine />
@@ -142,27 +157,34 @@ const Footer = () => {
               © {new Date().getFullYear()} {contact.rights}
             </motion.p>
           )}
-          <div style={{ display: "flex", gap: "1rem" }}>
+          <nav aria-label="Enlaces legales">
             {contact.privacyPolicy && (
-              <motion.p
-                style={{ cursor: "pointer" }}
+              <motion.a
+                style={{
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  color: "inherit",
+                }}
                 variants={itemVariants}
                 onClick={handlePrivacyClick}
-                role="button"
+                onKeyDown={(e) => e.key === "Enter" && handlePrivacyClick()}
+                role="link"
                 tabIndex={0}
+                aria-label="Ir a la página de política de privacidad"
               >
                 {contact.privacyPolicy}
-              </motion.p>
+              </motion.a>
             )}
-          </div>
+          </nav>
         </InfoContainer>
         <ImageFooter>
-          <motion.img
+          <Image
             src="/images/imageFooter.png"
-            alt="Footer"
-            width="100%"
-            height="100%"
+            alt="Imagen decorativa de plantas en el vivero Girona Plants"
+            width={500}
+            height={300}
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            loading="lazy"
           />
         </ImageFooter>
       </FooterWrapper>

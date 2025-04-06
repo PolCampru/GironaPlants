@@ -12,8 +12,8 @@ export default async function CookiePolicyPage({
   const { lng } = await params;
 
   return (
-    <main>
+    <section>
       <CookiePolicyContent lng={lng} />
-    </main>
+    </section>
   );
 }

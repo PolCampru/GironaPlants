@@ -61,12 +61,18 @@ export default async function CataloguesPage({ params }: CataloguesProps) {
   };
 
   return (
-    <main>
-      <HeroCatalogues data={heroCataloguesData} />
+    <>
+      <section>
+        <HeroCatalogues data={heroCataloguesData} />
+      </section>
       {lng !== "en" && lng !== "fr" && (
-        <SectionCatalogues data={sectionCataloguesData} />
+        <section>
+          <SectionCatalogues data={sectionCataloguesData} />
+        </section>
       )}
-      <Contact data={contactData} />
-    </main>
+      <section>
+        <Contact data={contactData} />
+      </section>
+    </>
   );
 }

@@ -53,9 +53,15 @@ export default async function AboutUsPage({ params }: AboutUsPageProps) {
 
   return (
     <>
-      <HeroAboutUs data={heroAboutUsData} />
-      <OurClients data={ourClientsData} />
-      <Catalogues data={cataloguesData} />
+      <section>
+        <HeroAboutUs data={heroAboutUsData} />
+      </section>
+      <section>
+        <OurClients data={ourClientsData} />
+      </section>
+      <section>
+        <Catalogues data={cataloguesData} />
+      </section>
     </>
   );
 }

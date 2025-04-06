@@ -10,6 +10,7 @@ interface MyBoxProps {
   borderRadiusBottomLeft?: string;
   borderRadiusBottomRight?: string;
   imageUrl?: string;
+  altText?: string;
 }
 
 const MyBox = ({
@@ -21,6 +22,7 @@ const MyBox = ({
   borderRadiusBottomLeft = "0rem",
   borderRadiusBottomRight = "0rem",
   imageUrl,
+  altText = "",
 }: MyBoxProps) => {
   return (
     <BoxContainer
@@ -32,6 +34,9 @@ const MyBox = ({
       $borderRadiusBottomLeft={borderRadiusBottomLeft}
       $borderRadiusBottomRight={borderRadiusBottomRight}
       $imageUrl={imageUrl}
+      $altText={altText}
+      aria-label={altText}
+      role={imageUrl ? "img" : "presentation"}
     />
   );
 };
