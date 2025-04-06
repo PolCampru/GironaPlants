@@ -10,6 +10,7 @@ import {
 import Search from "@/components/ui/Search/Search";
 import BudgetItem from "./BudgetItem/BudgetItem";
 import { SpecificBudgetDataType } from "@/types/Budget";
+import Image from "next/image";
 
 interface BudgetProps {
   items: ItemType[];
@@ -47,7 +48,7 @@ const Budget = ({
 
       {items.length === 0 ? (
         <EmptyState>
-          <img src="/images/products/emptyState.png" alt="EmptyState" />
+          <Image src="/images/products/emptyState.png" alt="EmptyState" />
           <h3>{data.emptyState}</h3>
         </EmptyState>
       ) : (

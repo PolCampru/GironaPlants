@@ -8,6 +8,7 @@ import {
 } from "./ContainerOffers.style";
 import OffertCardMini from "../OffertCardMini/OffertCardMini";
 import { OfferType } from "@/types/Offers";
+import Image from "next/image";
 
 interface OffersCarouselProps {
   query: { offers: boolean };
@@ -90,7 +91,7 @@ export function OffersCarousel({
         <p>{data.filters.offersTitle}</p>
 
         <ContainerArrow onClick={handlePrev} $isActive={leftValue < 0}>
-          <img
+          <Image
             src="/images/products/arrowIcon.svg"
             alt="arrow"
             style={{
@@ -102,7 +103,7 @@ export function OffersCarousel({
         </ContainerArrow>
 
         <ContainerArrow onClick={handleNext} $isActive={leftValue > maxLeft}>
-          <img
+          <Image
             src="/images/products/arrowIcon.svg"
             alt="arrow"
             style={{ width: "100%", height: "100%" }}

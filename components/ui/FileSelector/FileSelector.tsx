@@ -2,6 +2,7 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FileSelectorWrapper } from "./FileSelector.style";
 import { FormValuesType } from "@/types/Form";
+import Image from "next/image";
 
 interface FileSelectorProps {
   label: string;
@@ -25,7 +26,7 @@ const FileSelector = ({
   return (
     <FileSelectorWrapper>
       <div className="container-label">
-        <img src="/images/clip.svg" alt="Clip" />
+        <Image src="/images/clip.svg" alt="Clip" />
         <label htmlFor={name}>{label}</label>
       </div>
 

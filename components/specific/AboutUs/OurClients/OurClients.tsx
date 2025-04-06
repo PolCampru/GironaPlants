@@ -8,6 +8,7 @@ import {
   OurClientsWrapper,
 } from "./OurClients.style";
 import Title from "@/components/ui/Title/Title";
+import Image from "next/image";
 
 const OurClients = ({ data }: { data: OurClientsProps }) => {
   return (
@@ -20,7 +21,7 @@ const OurClients = ({ data }: { data: OurClientsProps }) => {
       <ContainerClients>
         {data.our_clients.clients.map((client) => (
           <ClientCart key={client.name}>
-            <img src={client.image} alt={client.name} />
+            <Image src={client.image} alt={client.name} />
             <p>{client.name}</p>
             <p className="description">{client.description}</p>
           </ClientCart>

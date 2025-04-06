@@ -45,6 +45,7 @@ const Search = ({ placeholder, onChange, value }: SearchProps) => {
           className="reset"
           type="button"
           onClick={(e) => {
+            e.preventDefault();
             onChange("");
           }}
         >

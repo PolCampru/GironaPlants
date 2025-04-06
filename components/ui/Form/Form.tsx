@@ -8,7 +8,6 @@ import useForm from "@/hooks/useForm";
 import React from "react";
 import FilterToggle from "../FilterToggle/FilterToggle";
 import FileSelector from "../FileSelector/FileSelector";
-import { form } from "framer-motion/client";
 
 const Form = () => {
   const {

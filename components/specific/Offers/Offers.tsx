@@ -5,7 +5,6 @@ import React from "react";
 import { OffersWrapper } from "./Offers.style";
 import Title from "@/components/ui/Title/Title";
 import OfferCard from "./OfferCard/OfferCard";
-import { useDispatch } from "react-redux";
 import EmptyState from "./EmptyState/EmptyState";
 
 const Offers = ({ data, lng }: { data: OfferType[]; lng: string }) => {

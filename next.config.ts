@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
     domains: ["strapi.gironaplants.es"],
     formats: ["image/avif", "image/webp"],
   },
-  swcMinify: true,
   async headers() {
     return [
       {

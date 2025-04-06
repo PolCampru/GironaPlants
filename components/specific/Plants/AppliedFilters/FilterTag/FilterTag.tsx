@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const FilterTagWrapper = styled(motion.div)`
   display: flex;
@@ -47,7 +48,7 @@ const FilterTag = ({ label, onRemove }: FilterTagProps) => {
     >
       <span>{label}</span>
       <button onClick={onRemove}>
-        <img src="/images/crossIcon.svg" alt="close" />
+        <Image src="/images/crossIcon.svg" alt="close" />
       </button>
     </FilterTagWrapper>
   );

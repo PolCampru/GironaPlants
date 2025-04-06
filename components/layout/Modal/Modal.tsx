@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import styled from "styled-components";
 import theme from "@/lib/theme";
+import Image from "next/image";
 
 const ModalWrapper = styled.div`
   position: fixed;
@@ -66,7 +67,7 @@ export const Modal = ({
       <div className="pop-up-container">
         {children}
         <CrossWrapper className="cross" onClick={() => closeModal()}>
-          <img src="/images/crossIcon.svg" alt="cross" />
+          <Image src="/images/crossIcon.svg" alt="cross" />
         </CrossWrapper>
       </div>
     </ModalWrapper>

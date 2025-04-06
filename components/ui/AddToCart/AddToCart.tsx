@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import theme from "@/lib/theme";
 import React from "react";
+import Image from "next/image";
 
 interface AddToCartProps {
   onClick: () => void;
@@ -32,7 +33,7 @@ const AddToCartWrapper = styled.div<{ size: string }>`
 const AddToCart: React.FC<AddToCartProps> = ({ onClick, size = "1.5rem" }) => {
   return (
     <AddToCartWrapper onClick={onClick} size={size}>
-      <img
+      <Image
         src="/images/plus.svg"
         alt="plus"
         style={{ width: "100%", height: "100%", objectFit: "contain" }}

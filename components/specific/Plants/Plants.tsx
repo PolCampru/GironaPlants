@@ -25,6 +25,7 @@ import Filters from "./Filters/Filters";
 import AppliedFilters from "./AppliedFilters/AppliedFilters";
 import { OffersDataType } from "@/types/Offers";
 import { OffersCarousel } from "./ContainerOffers/ContainerOffers";
+import Image from "next/image";
 
 export default function Plants({ offersData }: { offersData: OffersDataType }) {
   const [showFilters, setShowFilters] = useState(false);
@@ -57,14 +58,14 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
       <div className="title-container">
         <Title title={data.title} />
         <FilterToggleButton onClick={toggleFilters}>
-          <img src="/images/products/filters.svg" alt="filters" />
+          <Image src="/images/products/filters.svg" alt="filters" />
         </FilterToggleButton>
       </div>
 
       <ContainerGlobal>
         <ContainerFilters>
           <div className="container-filters">
-            <img src="/images/products/filters.svg" alt="filters" />
+            <Image src="/images/products/filters.svg" alt="filters" />
             <p>{data.filters.title}</p>
           </div>
           <Search
@@ -112,7 +113,7 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
             </CloseButton>
 
             <div className="container-filters">
-              <img src="/images/products/filters.svg" alt="filters" />
+              <Image src="/images/products/filters.svg" alt="filters" />
               <p>{data.filters.title}</p>
             </div>
             <Search

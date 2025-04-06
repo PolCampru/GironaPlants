@@ -15,6 +15,7 @@ import {
 } from "./BudgetAndLanguage.style";
 import { AnimatePresence } from "framer-motion";
 import BudgetNavbar from "./BudgetNavbar/BudgetNavbar";
+import Image from "next/image";
 
 interface LanguageSelectorProps {
   i18n: any;
@@ -48,7 +49,7 @@ const BudgetAndLanguage = ({
         id="budget-container"
         onClick={() => setIsBudgetOpen(true)}
       >
-        <img src={data.srcList} alt={data.altList} />
+        <Image src={data.srcList} alt={data.altList} />
         <p>{data.title}</p>
         <span>{items.length}</span>
       </BudgetContainer>
@@ -73,7 +74,7 @@ const BudgetAndLanguage = ({
           aria-expanded={isLanguageOpen}
         >
           {currentLanguage.toUpperCase()}
-          <img src={data.srcVector} alt={data.altVector} />
+          <Image src={data.srcVector} alt={data.altVector} />
         </LanguageButton>
 
         <AnimatePresence>
@@ -127,12 +128,9 @@ const BudgetAndLanguage = ({
               transition={{ type: "tween", duration: 0.3 }}
             >
               <CloseButton onClick={() => setIsBudgetOpen(false)}>
-                <img src="/images/crossIcon.svg" alt="Close" />
+                <Image src="/images/crossIcon.svg" alt="Close" />
               </CloseButton>
-              <BudgetNavbar
-                lng={currentLanguage}
-                setHideModal={setIsBudgetOpen}
-              />
+              <BudgetNavbar setHideModal={setIsBudgetOpen} />
             </BudgetDrawer>
           </>
         )}

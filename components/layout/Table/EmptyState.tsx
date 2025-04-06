@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { styled } from "styled-components";
 
 const EmptyStateWrapper = styled.div`
@@ -59,7 +60,7 @@ function EmptyState({
   }
   return (
     <EmptyStateWrapper className="empty-state-container">
-      <img src="/images/products/noResults.png" alt="no Products" />
+      <Image src="/images/products/noResults.png" alt="no Products" />
       {language === "en" ? (
         <>
           <h3>No results found</h3>
@@ -69,7 +70,7 @@ function EmptyState({
         </>
       ) : language === "ca" ? (
         <>
-          <h3>No s'han trobat resultats</h3>
+          <h3>No hem trobat resultats</h3>
           <p>
             Afegeix el que necessitis{" "}
             <span onClick={emptyStateFunction}>aquí</span>

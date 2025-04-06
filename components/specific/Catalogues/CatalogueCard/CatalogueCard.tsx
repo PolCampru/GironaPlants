@@ -3,6 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@/components/ui/Button/Button";
+import Image from "next/image";
 
 interface CatalogueCardProps {
   title: string;
@@ -96,7 +97,7 @@ const CatalogueCard = ({
   return (
     <CatalogueCardWrapper>
       <ContainerImage $clickable={isClickable}>
-        <img
+        <Image
           src={imageUrl}
           alt={title}
           onClick={() => isClickable && window.open(catalogue, "_blank")}

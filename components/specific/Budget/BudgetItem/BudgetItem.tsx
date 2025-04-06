@@ -8,6 +8,7 @@ import {
 } from "./BudgetItem.style";
 import ImageCarrousel from "../../Offers/ImageCarrousel/ImageCarrousel";
 import Quantity from "./Quantity/Quantity";
+import Image from "next/image";
 
 interface BudgetItemProps {
   item: ItemType;
@@ -54,7 +55,7 @@ const BudgetItem = ({
         />
       </ContainerEnd>
       <CloseButton onClick={() => deleteItem(item)}>
-        <img src="/images/crossIcon.svg" alt="Close" />
+        <Image src="/images/crossIcon.svg" alt="Close" />
       </CloseButton>
     </BudgetItemWrapper>
   );

@@ -6,7 +6,6 @@ import {
   FiltersWrapper,
 } from "./AppliedFilters.style";
 import FilterTag from "./FilterTag/FilterTag";
-import { data } from "framer-motion/client";
 import Loader from "@/components/ui/Loader/Loader";
 
 interface AppliedFiltersProps {

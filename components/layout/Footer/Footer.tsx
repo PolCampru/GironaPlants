@@ -75,18 +75,6 @@ const Footer = () => {
 
   const contact = data.contact || {};
 
-  const mailTo = () => {
-    if (contact.email) {
-      window.location.href = `mailto:${contact.email}`;
-    }
-  };
-
-  const callPhone = () => {
-    if (contact.phone) {
-      window.location.href = `tel:${contact.phone}`;
-    }
-  };
-
   const handlePrivacyClick = () => {
     if (currentLanguage) {
       router.push(`/${currentLanguage}/privacy`);

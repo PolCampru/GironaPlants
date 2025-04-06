@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ContainerData, ContainerImages, HeroWrapper } from "./Hero.style";
 import Box from "@/components/ui/Box/Box";
-import Image from "next/image";
 
 import Button from "@/components/ui/Button/Button";
 import Link from "next/link";

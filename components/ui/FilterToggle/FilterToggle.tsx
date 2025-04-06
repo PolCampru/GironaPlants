@@ -2,7 +2,7 @@ import { FilterToggleWrapper } from "./FilterToggle.style";
 
 interface FilterToggle {
   options: { label: string; value: string }[];
-  onChange: Function;
+  onChange: (value: string) => void;
   selectedKey: string;
 }
 

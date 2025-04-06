@@ -8,6 +8,7 @@ import {
 } from "./HeroCatalogues.style";
 import { HeroCataloguesProps } from "@/types/Catalogues";
 import Button from "@/components/ui/Button/Button";
+import Image from "next/image";
 
 const STRAPI_URL = "https://strapi.gironaplants.es";
 
@@ -25,7 +26,7 @@ const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => {
   return (
     <HeroWrapper>
       <ImageContainer onClick={handleButtonClick}>
-        <img src="/images/mainCatalogue.jpg" alt="catalogue" />
+        <Image src="/images/mainCatalogue.jpg" alt="catalogue" />
       </ImageContainer>
 
       <InfoContainer>

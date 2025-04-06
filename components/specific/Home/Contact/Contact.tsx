@@ -8,6 +8,7 @@ import {
 } from "./Contact.style";
 import { ContactHomeProps } from "@/types/Home";
 import Link from "next/link";
+import Image from "next/image";
 
 const Contact = ({ data }: { data: ContactHomeProps }) => {
   return (
@@ -26,7 +27,7 @@ const Contact = ({ data }: { data: ContactHomeProps }) => {
         <div className="background" />
         <Link href={`/${data.locale}/contact`} className="link">
           <p>{data.contact_button}</p>
-          <img src="/images/products/arrowIcon.svg" alt="arrow" />
+          <Image src="/images/products/arrowIcon.svg" alt="arrow" />
         </Link>
       </ContainerButton>
     </ContactWrapper>

@@ -1,7 +1,5 @@
 export type AboutUsPageProps = {
-  params: {
-    lng: string;
-  };
+  params: { lng: string };
 };
 
 export type ImageType = {

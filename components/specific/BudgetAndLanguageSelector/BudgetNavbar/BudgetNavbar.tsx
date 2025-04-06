@@ -12,10 +12,8 @@ import Link from "next/link";
 import { SpecificBudgetDataType } from "@/types/Budget";
 
 const BudgetNavbar = ({
-  lng,
   setHideModal,
 }: {
-  lng: string;
   setHideModal: (value: boolean) => void;
 }) => {
   const {

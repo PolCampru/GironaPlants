@@ -26,6 +26,7 @@ import ModalAddPlant from "../Modal/ModalAddPlant/ModalAddPlant";
 import { FiMenu, FiX } from "react-icons/fi";
 import useBudgetAndLanguage from "@/hooks/useBudgetAndLanguage";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const {
@@ -88,7 +89,7 @@ const Navbar = () => {
               router.push(`/${currentLanguage}`);
             }}
           >
-            <img src={logo.src} alt={`Logo de Girona Plants - ${logo.alt}`} />
+            <Image src={logo.src} alt={`Logo de Girona Plants - ${logo.alt}`} />
           </LogoContainer>
 
           <MenuContainer
