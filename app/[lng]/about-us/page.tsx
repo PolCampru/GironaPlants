@@ -15,8 +15,12 @@ export const metadata = {
   description: "Welcome to the about us page",
 };
 
-export default async function AboutUsPage({ params }: AboutUsPageProps) {
-  const { lng } = params;
+export default async function AboutUsPage({
+  params,
+}: {
+  params: AboutUsPageProps;
+}) {
+  const { lng } = await params;
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 

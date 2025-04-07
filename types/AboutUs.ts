@@ -1,6 +1,6 @@
-export type AboutUsPageProps = {
-  params: { lng: string };
-};
+export type AboutUsPageProps = Promise<{
+  lng: string;
+}>;
 
 export type ImageType = {
   id: string;
