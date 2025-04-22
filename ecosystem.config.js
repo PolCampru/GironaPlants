@@ -13,7 +13,6 @@ module.exports = {
       interpreter: "node_modules/.bin/ts-node",
       env: {
         NODE_ENV: "production",
-        PORT: 3040,
         HOST: "0.0.0.0",
       },
       env_development: {
