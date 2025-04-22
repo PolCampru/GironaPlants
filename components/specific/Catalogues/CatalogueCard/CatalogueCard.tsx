@@ -100,6 +100,8 @@ const CatalogueCard = ({
         <Image
           src={imageUrl}
           alt={title}
+          width={400}
+          height={300}
           onClick={() => isClickable && window.open(catalogue, "_blank")}
         />
       </ContainerImage>

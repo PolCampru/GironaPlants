@@ -6,7 +6,13 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ["strapi.gironaplants.es"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "strapi.gironaplants.es",
+        pathname: "/**",
+      },
+    ],
     formats: ["image/avif", "image/webp"],
   },
   async headers() {

@@ -67,7 +67,12 @@ export const Modal = ({
       <div className="pop-up-container">
         {children}
         <CrossWrapper className="cross" onClick={() => closeModal()}>
-          <Image src="/images/crossIcon.svg" alt="cross" />
+          <Image
+            src="/images/crossIcon.svg"
+            alt="cross"
+            width={24}
+            height={24}
+          />
         </CrossWrapper>
       </div>
     </ModalWrapper>

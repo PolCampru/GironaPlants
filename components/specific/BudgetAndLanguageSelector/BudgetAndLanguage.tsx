@@ -49,7 +49,7 @@ const BudgetAndLanguage = ({
         id="budget-container"
         onClick={() => setIsBudgetOpen(true)}
       >
-        <Image src={data.srcList} alt={data.altList} />
+        <Image src={data.srcList} alt={data.altList} width={24} height={24} />
         <p>{data.title}</p>
         <span>{items.length}</span>
       </BudgetContainer>
@@ -74,7 +74,12 @@ const BudgetAndLanguage = ({
           aria-expanded={isLanguageOpen}
         >
           {currentLanguage.toUpperCase()}
-          <Image src={data.srcVector} alt={data.altVector} />
+          <Image
+            src={data.srcVector}
+            alt={data.altVector}
+            width={16}
+            height={16}
+          />
         </LanguageButton>
 
         <AnimatePresence>
@@ -128,7 +133,12 @@ const BudgetAndLanguage = ({
               transition={{ type: "tween", duration: 0.3 }}
             >
               <CloseButton onClick={() => setIsBudgetOpen(false)}>
-                <Image src="/images/crossIcon.svg" alt="Close" />
+                <Image
+                  src="/images/crossIcon.svg"
+                  alt="Close"
+                  width={24}
+                  height={24}
+                />
               </CloseButton>
               <BudgetNavbar setHideModal={setIsBudgetOpen} />
             </BudgetDrawer>

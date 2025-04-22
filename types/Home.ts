@@ -1,9 +1,9 @@
 import { CataloguesProps } from "./AboutUs";
 
 export type HomePageProps = {
-  params: {
+  params: Promise<{
     lng: string;
-  };
+  }>;
 };
 
 export type ImageType = {

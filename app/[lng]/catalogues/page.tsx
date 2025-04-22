@@ -2,7 +2,7 @@ import HeroCatalogues from "@/components/specific/Catalogues/HeroCatalogues";
 import SectionCatalogues from "@/components/specific/Catalogues/Section/SectionCatalogues";
 import Contact from "@/components/specific/Home/Contact/Contact";
 import {
-  CataloguesProps,
+  CataloguesPageProps,
   HeroCataloguesProps,
   SectionCataloguesProps,
 } from "@/types/Catalogues";
@@ -10,11 +10,11 @@ import { ContactHomeProps } from "@/types/Home";
 import React from "react";
 
 export const metadata = {
-  title: "GironaPlants Catalogues",
+  title: "GironaPlants Catalogues",
   description: "Bienvenido a la página de catálogos",
 };
 
-export default async function CataloguesPage({ params }: CataloguesProps) {
+export default async function CataloguesPage({ params }: CataloguesPageProps) {
   const { lng } = await params;
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;

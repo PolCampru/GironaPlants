@@ -58,14 +58,24 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
       <div className="title-container">
         <Title title={data.title} />
         <FilterToggleButton onClick={toggleFilters}>
-          <Image src="/images/products/filters.svg" alt="filters" />
+          <Image
+            src="/images/products/filters.svg"
+            alt="filters"
+            width={24}
+            height={24}
+          />
         </FilterToggleButton>
       </div>
 
       <ContainerGlobal>
         <ContainerFilters>
           <div className="container-filters">
-            <Image src="/images/products/filters.svg" alt="filters" />
+            <Image
+              src="/images/products/filters.svg"
+              alt="filters"
+              width={24}
+              height={24}
+            />
             <p>{data.filters.title}</p>
           </div>
           <Search
@@ -113,7 +123,12 @@ export default function Plants({ offersData }: { offersData: OffersDataType }) {
             </CloseButton>
 
             <div className="container-filters">
-              <Image src="/images/products/filters.svg" alt="filters" />
+              <Image
+                src="/images/products/filters.svg"
+                alt="filters"
+                width={24}
+                height={24}
+              />
               <p>{data.filters.title}</p>
             </div>
             <Search

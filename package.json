@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prod": "pm2 start ecosystem.config.js",
+    "prod:reload": "pm2 reload ecosystem.config.js",
+    "prod:stop": "pm2 stop ecosystem.config.js",
+    "prod:status": "pm2 status"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
@@ -38,6 +42,7 @@
     "@types/redux": "^3.6.31",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }

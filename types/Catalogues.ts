@@ -4,6 +4,12 @@ export type CataloguesProps = {
   };
 };
 
+export type CataloguesPageProps = {
+  params: Promise<{
+    lng: string;
+  }>;
+};
+
 export type Image = {
   url: string;
 };

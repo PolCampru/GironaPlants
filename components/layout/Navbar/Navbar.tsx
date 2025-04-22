@@ -89,7 +89,12 @@ const Navbar = () => {
               router.push(`/${currentLanguage}`);
             }}
           >
-            <Image src={logo.src} alt={`Logo de Girona Plants - ${logo.alt}`} />
+            <Image
+              src={logo.src}
+              alt={`Logo de Girona Plants - ${logo.alt}`}
+              width={150}
+              height={50}
+            />
           </LogoContainer>
 
           <MenuContainer

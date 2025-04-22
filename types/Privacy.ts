@@ -1,5 +1,5 @@
 export interface PrivacyPageProps {
-  params: {
+  params: Promise<{
     lng: string;
-  };
+  }>;
 }

@@ -48,7 +48,12 @@ const Budget = ({
 
       {items.length === 0 ? (
         <EmptyState>
-          <Image src="/images/products/emptyState.png" alt="EmptyState" />
+          <Image
+            src="/images/products/emptyState.png"
+            alt="EmptyState"
+            width={400}
+            height={400}
+          />
           <h3>{data.emptyState}</h3>
         </EmptyState>
       ) : (

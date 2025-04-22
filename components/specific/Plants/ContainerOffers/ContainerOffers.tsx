@@ -94,6 +94,8 @@ export function OffersCarousel({
           <Image
             src="/images/products/arrowIcon.svg"
             alt="arrow"
+            width={24}
+            height={24}
             style={{
               width: "100%",
               height: "100%",
@@ -106,7 +108,13 @@ export function OffersCarousel({
           <Image
             src="/images/products/arrowIcon.svg"
             alt="arrow"
-            style={{ width: "100%", height: "100%" }}
+            width={24}
+            height={24}
+            style={{
+              width: "100%",
+              height: "100%",
+              transform: "rotate(180deg)",
+            }}
           />
         </ContainerArrow>
       </ContainerHeader>

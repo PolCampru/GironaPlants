@@ -84,7 +84,7 @@ export type AddProductType = {
 };
 
 export type ProductsPageProps = {
-  params: {
+  params: Promise<{
     lng: string;
-  };
+  }>;
 };

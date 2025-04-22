@@ -99,7 +99,7 @@ const Footer = () => {
                   src={logo.src}
                   alt={logo.alt || "Logo de Girona Plants"}
                   width={150}
-                  height={50}
+                  height={80}
                   priority={false}
                   loading="lazy"
                 />

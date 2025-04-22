@@ -1,7 +1,7 @@
 export type OffersPageProps = {
-  params: {
+  params: Promise<{
     lng: string;
-  };
+  }>;
 };
 
 export type Image = {

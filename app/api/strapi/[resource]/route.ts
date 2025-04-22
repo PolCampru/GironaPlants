@@ -5,7 +5,7 @@ const STRAPI_TOKEN = process.env.STRAPI_TOKEN;
 
 export async function GET(
   req: NextRequest,
-  context: { params: { resource: string } }
+  context: { params: Promise<{ resource: string }> }
 ) {
   try {
     const { resource } = await context.params;

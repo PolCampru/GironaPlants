@@ -10,15 +10,20 @@ module.exports = {
       autorestart: true,
       watch: false,
       max_memory_restart: "1G",
-      interpreter: "node",
-      interpreter_args: "--require ts-node/register",
+      interpreter: "node_modules/.bin/ts-node",
       env: {
         NODE_ENV: "production",
+        PORT: 3040,
+        HOST: "0.0.0.0",
       },
       env_development: {
         NODE_ENV: "development",
+        PORT: 3040,
+        HOST: "localhost",
       },
-      env_file: ".env",
+      log_date_format: "YYYY-MM-DD HH:mm:ss",
+      error_file: "logs/error.log",
+      out_file: "logs/out.log",
     },
   ],
 };

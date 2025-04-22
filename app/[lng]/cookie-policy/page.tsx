@@ -1,9 +1,9 @@
 import CookiePolicyContent from "@/components/layout/Cookies/CookiePolicyContent";
 
 interface CookiePolicyPageProps {
-  params: {
+  params: Promise<{
     lng: string;
-  };
+  }>;
 }
 
 export default async function CookiePolicyPage({

@@ -27,7 +27,12 @@ const Contact = ({ data }: { data: ContactHomeProps }) => {
         <div className="background" />
         <Link href={`/${data.locale}/contact`} className="link">
           <p>{data.contact_button}</p>
-          <Image src="/images/products/arrowIcon.svg" alt="arrow" />
+          <Image
+            src="/images/products/arrowIcon.svg"
+            alt="arrow"
+            width={24}
+            height={24}
+          />
         </Link>
       </ContainerButton>
     </ContactWrapper>

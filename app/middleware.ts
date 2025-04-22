@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getLanguages } from "./lib/languages";
+import { getLanguages } from "@/lib/languages";
 
 const locales = getLanguages();
 const defaultLocale = "ca";
@@ -7,6 +7,7 @@ const defaultLocale = "ca";
 const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(request: NextRequest) {
+  console.log("middleware ejecutándose");
   const { pathname } = request.nextUrl;
 
   if (PUBLIC_FILE.test(pathname) || pathname.includes("/api/")) {
@@ -29,3 +30,11 @@ export function middleware(request: NextRequest) {
 
   return NextResponse.redirect(new URL(`/${userLang}${pathname}`, request.url));
 }
+
+// Configurar el matcher para que el middleware se ejecute solo en las rutas específicas
+export const config = {
+  matcher: [
+    // Excluir archivos estáticos y API routes
+    "/((?!api|_next/static|_next/image|favicon.ico|images).*)",
+  ],
+};

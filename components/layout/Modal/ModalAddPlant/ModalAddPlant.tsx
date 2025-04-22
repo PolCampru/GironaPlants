@@ -41,7 +41,7 @@ const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
     }
 
     const newPlant = { ...plant } as PlantType;
-    newPlant.id = Math.floor(Math.random() * 1000);
+    newPlant.id = Date.now();
 
     handleAddToCart(newPlant as PlantType);
     closeModal();

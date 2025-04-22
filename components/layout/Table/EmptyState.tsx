@@ -60,7 +60,12 @@ function EmptyState({
   }
   return (
     <EmptyStateWrapper className="empty-state-container">
-      <Image src="/images/products/noResults.png" alt="no Products" />
+      <Image
+        src="/images/products/noResults.png"
+        alt="no Products"
+        width={500}
+        height={500}
+      />
       {language === "en" ? (
         <>
           <h3>No results found</h3>

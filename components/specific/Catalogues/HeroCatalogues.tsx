@@ -26,7 +26,12 @@ const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => {
   return (
     <HeroWrapper>
       <ImageContainer onClick={handleButtonClick}>
-        <Image src="/images/mainCatalogue.jpg" alt="catalogue" />
+        <Image
+          src="/images/mainCatalogue.jpg"
+          alt="catalogue"
+          width={800}
+          height={600}
+        />
       </ImageContainer>
 
       <InfoContainer>

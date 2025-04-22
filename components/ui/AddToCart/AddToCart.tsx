@@ -36,6 +36,8 @@ const AddToCart: React.FC<AddToCartProps> = ({ onClick, size = "1.5rem" }) => {
       <Image
         src="/images/plus.svg"
         alt="plus"
+        width={24}
+        height={24}
         style={{ width: "100%", height: "100%", objectFit: "contain" }}
       />
     </AddToCartWrapper>

@@ -19,7 +19,12 @@ const PhoneAndEmail = () => {
         onClick={() => window.open(`tel:${data.phone.text}`)}
       >
         <div className="container-img-title">
-          <Image src="/images/phone.svg" alt={data.phone.title} />
+          <Image
+            src="/images/phone.svg"
+            alt={data.phone.title}
+            width={24}
+            height={24}
+          />
           <h2>{data.phone.title}</h2>
         </div>
         <p>{data.phone.text}</p>
@@ -30,7 +35,12 @@ const PhoneAndEmail = () => {
         onClick={() => window.open(`mailto:${data.email.text}`)}
       >
         <div className="container-img-title">
-          <Image src="/images/mail.svg" alt={data.email.title} />
+          <Image
+            src="/images/mail.svg"
+            alt={data.email.title}
+            width={24}
+            height={24}
+          />
           <h2>{data.email.title}</h2>
         </div>
         <p>{data.email.text}</p>
