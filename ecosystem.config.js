@@ -10,7 +10,6 @@ module.exports = {
       autorestart: true,
       watch: false,
       max_memory_restart: "1G",
-      interpreter: "node_modules/.bin/ts-node",
       env: {
         NODE_ENV: "production",
         HOST: "0.0.0.0",
