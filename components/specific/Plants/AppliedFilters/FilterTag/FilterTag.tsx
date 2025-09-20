@@ -48,7 +48,17 @@ const FilterTag = ({ label, onRemove }: FilterTagProps) => {
     >
       <span>{label}</span>
       <button onClick={onRemove}>
-        <Image src="/images/crossIcon.svg" alt="close" width={24} height={24} />
+        <Image 
+          src="/images/crossIcon.svg" 
+          alt="close" 
+          width={18} 
+          height={18}
+          style={{
+            width: '18px',
+            height: '18px',
+            objectFit: 'contain'
+          }}
+        />
       </button>
     </FilterTagWrapper>
   );

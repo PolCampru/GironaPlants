@@ -55,7 +55,17 @@ const BudgetItem = ({
         />
       </ContainerEnd>
       <CloseButton onClick={() => deleteItem(item)}>
-        <Image src="/images/crossIcon.svg" alt="Close" width={24} height={24} />
+        <Image 
+          src="/images/crossIcon.svg" 
+          alt="Close" 
+          width={24} 
+          height={24}
+          style={{
+            width: '24px',
+            height: '24px',
+            objectFit: 'contain'
+          }}
+        />
       </CloseButton>
     </BudgetItemWrapper>
   );

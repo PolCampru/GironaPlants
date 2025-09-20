@@ -92,8 +92,16 @@ const Navbar = () => {
             <Image
               src={logo.src}
               alt={`Logo de Girona Plants - ${logo.alt}`}
-              width={150}
-              height={50}
+              width={120}
+              height={60}
+              style={{
+                width: 'auto',
+                height: '40px',
+                maxWidth: '120px',
+                objectFit: 'contain'
+              }}
+              sizes="(max-width: 768px) 100px, 120px"
+              priority
             />
           </LogoContainer>
 

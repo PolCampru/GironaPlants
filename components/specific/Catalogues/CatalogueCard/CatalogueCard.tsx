@@ -102,6 +102,13 @@ const CatalogueCard = ({
           alt={title}
           width={400}
           height={300}
+          style={{
+            width: '100%',
+            height: 'auto',
+            aspectRatio: '4/3',
+            objectFit: 'cover'
+          }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           onClick={() => isClickable && window.open(catalogue, "_blank")}
         />
       </ContainerImage>

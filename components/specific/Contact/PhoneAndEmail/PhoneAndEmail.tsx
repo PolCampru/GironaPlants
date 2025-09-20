@@ -24,6 +24,11 @@ const PhoneAndEmail = () => {
             alt={data.phone.title}
             width={24}
             height={24}
+            style={{
+              width: '24px',
+              height: '24px',
+              objectFit: 'contain'
+            }}
           />
           <h2>{data.phone.title}</h2>
         </div>
@@ -40,6 +45,11 @@ const PhoneAndEmail = () => {
             alt={data.email.title}
             width={24}
             height={24}
+            style={{
+              width: '24px',
+              height: '24px',
+              objectFit: 'contain'
+            }}
           />
           <h2>{data.email.title}</h2>
         </div>

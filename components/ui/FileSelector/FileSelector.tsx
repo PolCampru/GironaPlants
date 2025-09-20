@@ -26,7 +26,17 @@ const FileSelector = ({
   return (
     <FileSelectorWrapper>
       <div className="container-label">
-        <Image src="/images/clip.svg" alt="Clip" width={24} height={24} />
+        <Image 
+          src="/images/clip.svg" 
+          alt="Clip" 
+          width={24} 
+          height={24}
+          style={{
+            width: '24px',
+            height: '24px',
+            objectFit: 'contain'
+          }}
+        />
         <label htmlFor={name}>{label}</label>
       </div>
 

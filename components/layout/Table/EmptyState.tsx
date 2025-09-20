@@ -63,8 +63,16 @@ function EmptyState({
       <Image
         src="/images/products/noResults.png"
         alt="no Products"
-        width={500}
-        height={500}
+        width={300}
+        height={300}
+        style={{
+          width: '100%',
+          height: 'auto',
+          maxWidth: '300px',
+          aspectRatio: '1/1',
+          objectFit: 'contain'
+        }}
+        sizes="(max-width: 768px) 250px, 300px"
       />
       {language === "en" ? (
         <>

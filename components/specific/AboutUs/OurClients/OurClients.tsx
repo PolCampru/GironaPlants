@@ -24,8 +24,14 @@ const OurClients = ({ data }: { data: OurClientsProps }) => {
             <Image
               src={client.image}
               alt={client.name}
-              width={50}
-              height={50}
+              width={60}
+              height={60}
+              style={{
+                width: '60px',
+                height: '60px',
+                objectFit: 'contain'
+              }}
+              sizes="60px"
             />
             <p>{client.name}</p>
             <p className="description">{client.description}</p>

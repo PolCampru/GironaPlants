@@ -49,7 +49,17 @@ const BudgetAndLanguage = ({
         id="budget-container"
         onClick={() => setIsBudgetOpen(true)}
       >
-        <Image src={data.srcList} alt={data.altList} width={24} height={24} />
+        <Image 
+          src={data.srcList} 
+          alt={data.altList} 
+          width={24} 
+          height={24}
+          style={{
+            width: '24px',
+            height: '24px',
+            objectFit: 'contain'
+          }}
+        />
         <p>{data.title}</p>
         <span>{items.length}</span>
       </BudgetContainer>
@@ -79,6 +89,11 @@ const BudgetAndLanguage = ({
             alt={data.altVector}
             width={16}
             height={16}
+            style={{
+              width: '16px',
+              height: '16px',
+              objectFit: 'contain'
+            }}
           />
         </LanguageButton>
 
@@ -138,6 +153,11 @@ const BudgetAndLanguage = ({
                   alt="Close"
                   width={24}
                   height={24}
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                    objectFit: 'contain'
+                  }}
                 />
               </CloseButton>
               <BudgetNavbar setHideModal={setIsBudgetOpen} />

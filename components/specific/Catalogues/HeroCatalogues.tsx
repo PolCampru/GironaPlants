@@ -31,6 +31,14 @@ const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => {
           alt="catalogue"
           width={800}
           height={600}
+          style={{
+            width: '100%',
+            height: 'auto',
+            aspectRatio: '4/3',
+            objectFit: 'cover'
+          }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+          priority
         />
       </ImageContainer>
 

@@ -98,8 +98,15 @@ const Footer = () => {
                 <Image
                   src={logo.src}
                   alt={logo.alt || "Logo de Girona Plants"}
-                  width={150}
-                  height={80}
+                  width={120}
+                  height={60}
+                  style={{
+                    width: 'auto',
+                    height: '50px',
+                    maxWidth: '120px',
+                    objectFit: 'contain'
+                  }}
+                  sizes="(max-width: 768px) 100px, 120px"
                   priority={false}
                   loading="lazy"
                 />
@@ -169,9 +176,15 @@ const Footer = () => {
           <Image
             src="/images/imageFooter.png"
             alt="Imagen decorativa de plantas en el vivero Girona Plants"
-            width={500}
-            height={300}
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            width={600}
+            height={400}
+            style={{ 
+              objectFit: "cover", 
+              width: "100%", 
+              height: "100%",
+              aspectRatio: '3/2'
+            }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             loading="lazy"
           />
         </ImageFooter>
