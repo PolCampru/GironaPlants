@@ -15,7 +15,7 @@ import {
   dataVariants,
 } from "@/animations/AboutUs";
 
-const STRAPI_URL = "https://strapi.gironaplants.es";
+const STRAPI_URL = "https://api.gironaplants.com";
 
 const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {
   return (

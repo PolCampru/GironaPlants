@@ -15,7 +15,7 @@ import {
 import { HeroHomeProps } from "@/types/Home";
 import { HeroImageBox } from "@/data/Home";
 
-const STRAPI_URL = "https://strapi.gironaplants.es";
+const STRAPI_URL = "https://api.gironaplants.com";
 
 const HeroHome = ({ data }: { data: HeroHomeProps }) => {
   return (

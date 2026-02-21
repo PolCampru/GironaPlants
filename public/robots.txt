@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gironaplants.es/sitemap.xml 
+Sitemap: https://gironaplants.com/sitemap.xml 

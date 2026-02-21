@@ -10,7 +10,7 @@ import { HeroCataloguesProps } from "@/types/Catalogues";
 import Button from "@/components/ui/Button/Button";
 import Image from "next/image";
 
-const STRAPI_URL = "https://strapi.gironaplants.es";
+const STRAPI_URL = "https://api.gironaplants.com";
 
 const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => {
   const handleButtonClick = () => {

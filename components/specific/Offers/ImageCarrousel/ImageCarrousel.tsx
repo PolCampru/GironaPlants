@@ -18,7 +18,7 @@ type ImageCarrouselProps = {
   images: Image[];
 };
 
-const STRAPI_URL = "https://strapi.gironaplants.es";
+const STRAPI_URL = "https://api.gironaplants.com";
 
 function ImageCarrousel({ images }: ImageCarrouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
