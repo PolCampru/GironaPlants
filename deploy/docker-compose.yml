@@ -1,0 +1,46 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: gp-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [web]
+
+  strapi:
+    build:
+      context: ./strapi
+    container_name: gp-strapi
+    ports:
+      - "127.0.0.1:1337:1337"
+    restart: unless-stopped
+    env_file: ./strapi/.env
+    volumes:
+      - ./data:/srv/app/data
+      - ./uploads:/srv/app/public/uploads
+    networks: [web]
+
+  frontend:
+    build:
+      context: ./frontend
+      network: host
+      args:
+        NEXT_PUBLIC_BASE_URL: "https://gironaplants.com"
+        STRAPI_BASE_URL: "http://127.0.0.1:1337"
+        STRAPI_TOKEN: "${STRAPI_TOKEN}"
+    container_name: gp-frontend
+    restart: unless-stopped
+    env_file: ./frontend/.env
+    networks: [web]
+
+networks:
+  web:
+
+volumes:
+  caddy_data:
+  caddy_config:

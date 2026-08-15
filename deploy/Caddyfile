@@ -1,0 +1,8 @@
+{
+	email pol.campru@factorial.co
+}
+
+gironaplants.com, www.gironaplants.com {
+	encode gzip
+	reverse_proxy frontend:3000
+}
