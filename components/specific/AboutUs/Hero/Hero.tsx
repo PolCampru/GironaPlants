@@ -14,8 +14,7 @@ import {
   boxVariants,
   dataVariants,
 } from "@/animations/AboutUs";
-
-const STRAPI_URL = "https://api.gironaplants.com";
+import { strapiMediaUrl } from "@/lib/strapi";
 
 const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {
   return (
@@ -27,9 +26,7 @@ const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {
         variants={containerVariants}
       >
         {data.hero_images.map((image, index) => {
-          const fullUrl = image.url.startsWith("http")
-            ? image.url
-            : `${STRAPI_URL}${image.url}`;
+          const fullUrl = strapiMediaUrl(image);
 
           return (
             <motion.div key={image.id} variants={boxVariants}>

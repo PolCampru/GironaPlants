@@ -13,12 +13,11 @@ import {
   NavigationButtons,
   NavButton,
 } from "./ImageCarrousel.style";
+import { strapiMediaUrl } from "@/lib/strapi";
 
 type ImageCarrouselProps = {
   images: Image[];
 };
-
-const STRAPI_URL = "https://api.gironaplants.com";
 
 function ImageCarrousel({ images }: ImageCarrouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +50,7 @@ function ImageCarrousel({ images }: ImageCarrouselProps) {
       <AnimatePresence mode="popLayout">
         <CarouselImage
           key={images[currentIndex].url}
-          src={STRAPI_URL + images[currentIndex].url}
+          src={strapiMediaUrl(images[currentIndex])}
           alt={`Slide ${currentIndex}`}
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -80,7 +79,7 @@ function ImageCarrousel({ images }: ImageCarrouselProps) {
               &times;
             </CloseButton>
             <ModalImage
-              src={STRAPI_URL + images[currentIndex].url}
+              src={strapiMediaUrl(images[currentIndex])}
               alt={`Enlarged slide ${currentIndex}`}
             />
             {images.length > 1 && (

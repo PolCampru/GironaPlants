@@ -1,12 +1,10 @@
 import HeroCatalogues from "@/components/specific/Catalogues/HeroCatalogues";
 import SectionCatalogues from "@/components/specific/Catalogues/Section/SectionCatalogues";
 import Contact from "@/components/specific/Home/Contact/Contact";
-import {
-  CataloguesPageProps,
-  HeroCataloguesProps,
-  SectionCataloguesProps,
-} from "@/types/Catalogues";
+import { getCataloguesPage } from "@/lib/catalogues";
+import { CataloguesPageProps } from "@/types/Catalogues";
 import { ContactHomeProps } from "@/types/Home";
+import { notFound } from "next/navigation";
 import React from "react";
 
 export const metadata = {
@@ -17,57 +15,40 @@ export const metadata = {
 export default async function CataloguesPage({ params }: CataloguesPageProps) {
   const { lng } = await params;
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const data = await getCataloguesPage(lng);
 
-  const url = `${baseUrl}/api/strapi/catalogue?locale=${lng}&populate=*`;
-
-  const response = await fetch(url);
-
-  const json = await response.json();
-
-  const heroCataloguesData: HeroCataloguesProps = {
-    main_title: json.data.main_title,
-    main_subtitle: json.data.main_subtitle,
-    main_button: json.data.main_button,
-    locale: lng,
-    catalogue: json.data.main_catalogue,
-  };
-
-  const sectionCataloguesData: SectionCataloguesProps = {
-    section_title: json.data.section_title,
-    section_subtitle: json.data.section_subtitle,
-    catalogue1_title: json.data.catalogue1_title,
-    catalogue1_subtitle: json.data.catalogue1_subtitle,
-    catalogue1_button: json.data.catalogue1_button,
-    catalogue1: json.data.catalogue1,
-    catalogue1_img: json.data.catalogue1_img,
-    catalogue2_title: json.data.catalogue2_title,
-    catalogue2_subtitle: json.data.catalogue2_subtitle,
-    catalogue2_button: json.data.catalogue2_button,
-    catalogue2: json.data.catalogue2,
-    catalogue2_img: json.data.catalogue2_img,
-    catalogue3_title: json.data.catalogue3_title,
-    catalogue3_subtitle: json.data.catalogue3_subtitle,
-    catalogue3_button: json.data.catalogue3_button,
-    catalogue3: json.data.catalogue3,
-    catalogue3_img: json.data.catalogue3_img,
-  };
+  if (!data) {
+    notFound();
+  }
 
   const contactData: ContactHomeProps = {
-    contact_title: json.data.contact_title,
-    contact_subtitle: json.data.contact_subtitle,
-    contact_button: json.data.contact_button,
+    contact_title: data.contact_title,
+    contact_subtitle: data.contact_subtitle,
+    contact_button: data.contact_button,
     locale: lng,
   };
 
   return (
     <>
       <section>
-        <HeroCatalogues data={heroCataloguesData} />
+        <HeroCatalogues
+          data={{
+            main_title: data.main_title,
+            main_subtitle: data.main_subtitle,
+            main_button: data.main_button,
+            catalogue_url: data.main_catalogue_url,
+          }}
+        />
       </section>
-      {lng !== "en" && lng !== "fr" && (
+      {data.items.length > 0 && (
         <section>
-          <SectionCatalogues data={sectionCataloguesData} />
+          <SectionCatalogues
+            data={{
+              section_title: data.section_title,
+              section_subtitle: data.section_subtitle,
+              items: data.items,
+            }}
+          />
         </section>
       )}
       <section>

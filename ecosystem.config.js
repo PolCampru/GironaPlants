@@ -20,6 +20,7 @@ module.exports = {
         // Remove sensitive data from PM2 env display
         STRAPI_TOKEN: process.env.STRAPI_TOKEN,
         STRAPI_BASE_URL: process.env.STRAPI_BASE_URL,
+        STRAPI_MEDIA_URL: process.env.STRAPI_MEDIA_URL,
         EMAIL_HOST: process.env.EMAIL_HOST,
         EMAIL_PORT: process.env.EMAIL_PORT,
         EMAIL_USER: process.env.EMAIL_USER,

@@ -5,7 +5,7 @@ interface FetchOptions {
   revalidate?: number;
 }
 
-class StrapiError extends Error {
+export class StrapiError extends Error {
   constructor(
     message: string,
     public status?: number,
@@ -121,6 +121,27 @@ export async function fetchStrapiData(
 
     throw error;
   }
+}
+
+// Base URL for Strapi-hosted media (uploads). Overridable per environment so
+// the host is not hardcoded in components.
+const STRAPI_MEDIA_URL = (
+  process.env.STRAPI_MEDIA_URL ??
+  process.env.NEXT_PUBLIC_STRAPI_MEDIA_URL ??
+  "https://api.gironaplants.com"
+).replace(/\/+$/, "");
+
+/**
+ * Resolve a Strapi media object (or raw url string) to an absolute URL.
+ * Returns "" when there is no media, so callers can simply check truthiness.
+ */
+export function strapiMediaUrl(
+  media?: { url?: string | null } | string | null
+): string {
+  const url = typeof media === "string" ? media : media?.url;
+  if (!url) return "";
+  if (/^https?:\/\//.test(url)) return url;
+  return `${STRAPI_MEDIA_URL}${url}`;
 }
 
 // Direct Strapi API calls (bypassing Next.js API routes for server-side)

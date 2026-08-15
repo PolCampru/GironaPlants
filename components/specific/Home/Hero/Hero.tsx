@@ -14,8 +14,7 @@ import {
 } from "@/animations/AboutUs";
 import { HeroHomeProps } from "@/types/Home";
 import { HeroImageBox } from "@/data/Home";
-
-const STRAPI_URL = "https://api.gironaplants.com";
+import { strapiMediaUrl } from "@/lib/strapi";
 
 const HeroHome = ({ data }: { data: HeroHomeProps }) => {
   return (
@@ -47,17 +46,17 @@ const HeroHome = ({ data }: { data: HeroHomeProps }) => {
         {HeroImageBox.map((item, index) => {
           let fullUrl = null;
           if (data.hero_images.length === 1 && index === 2) {
-            fullUrl = `${STRAPI_URL}${data.hero_images[0].url}`;
+            fullUrl = strapiMediaUrl(data.hero_images[0]);
           } else if (
             data.hero_images.length === 2 &&
             (index === 1 || index === 2)
           ) {
-            fullUrl = `${STRAPI_URL}${data.hero_images[index - 1].url}`;
+            fullUrl = strapiMediaUrl(data.hero_images[index - 1]);
           } else if (
             data.hero_images[index] &&
             data.hero_images.length === HeroImageBox.length
           ) {
-            fullUrl = `${STRAPI_URL}${data.hero_images[index].url}`;
+            fullUrl = strapiMediaUrl(data.hero_images[index]);
           }
 
           const altText = `Imagen de planta mediterránea en el vivero Girona Plants - ${

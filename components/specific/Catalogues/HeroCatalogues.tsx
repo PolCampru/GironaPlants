@@ -10,14 +10,10 @@ import { HeroCataloguesProps } from "@/types/Catalogues";
 import Button from "@/components/ui/Button/Button";
 import Image from "next/image";
 
-const STRAPI_URL = "https://api.gironaplants.com";
-
 const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => {
   const handleButtonClick = () => {
-    const catalogueUrl = data.catalogue.url;
-    if (catalogueUrl) {
-      const fullUrl = `${STRAPI_URL}${catalogueUrl}`;
-      window.open(fullUrl, "_blank", "noopener,noreferrer");
+    if (data.catalogue_url) {
+      window.open(data.catalogue_url, "_blank", "noopener,noreferrer");
     } else {
       console.error("Catalogue URL is not defined.");
     }
