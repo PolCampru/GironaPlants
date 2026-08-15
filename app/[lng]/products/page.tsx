@@ -3,10 +3,17 @@ import Plants from "@/components/specific/Plants/Plants";
 import { ProductsPageProps } from "@/types/Products";
 import { fetchStrapiData } from "@/lib/strapi";
 
-export const metadata = {
-  title: "GironaPlants Products",
-  description: "Bienvenido a la página de productos",
-};
+import { Metadata } from "next";
+import { buildPageMetadata } from "@/data/seoContent";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lng: string }>;
+}): Promise<Metadata> {
+  const { lng } = await params;
+  return buildPageMetadata(lng, "products");
+}
 
 export default async function ProductsPage({ params }: ProductsPageProps) {
   const { lng } = await params;

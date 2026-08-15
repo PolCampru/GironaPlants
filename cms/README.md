@@ -1,3 +1,27 @@
+# Seeding localized site content (home + about-us)
+
+Production Strapi has no published entries for the `home` and `about-us`
+single types (the API returns 404 for every locale), so the site currently
+lives off the frontend fallbacks in `data/homeContent.ts` and
+`data/aboutUsContent.ts`. `cms/scripts/seed-site-content.js` fills the CMS
+with that same copy for all four locales (es, ca, en, fr) and publishes it,
+so editors can then manage everything from the admin panel.
+
+From the repo root (after pushing to `main`, since the runner syncs the
+server checkout from GitHub):
+
+```bash
+bash cms/seed-content-to-vps.sh              # fill empty fields only
+SEED_FORCE=1 bash cms/seed-content-to-vps.sh # overwrite existing CMS copy
+```
+
+The seed script only writes attributes that exist in the deployed schema
+(string/text/richtext/json) and reports anything it skipped — e.g. if the
+`home` type lacks `hero_badge`, `hero_secondary_button` or `trust_items`
+(JSON), add them via the schema-edit + rebuild procedure described below and
+re-run. It never touches media, relations or components, and by default it
+never overwrites content that editors typed in the admin panel.
+
 # CMS migration: catalogues as an array
 
 The `catalogue` single type currently hardcodes exactly three catalogues as

@@ -9,11 +9,23 @@ import {
 import HeroAboutUs from "@/components/specific/AboutUs/Hero/Hero";
 import OurClients from "@/components/specific/AboutUs/OurClients/OurClients";
 import Catalogues from "@/components/specific/AboutUs/Catalogues/Catalogues";
+import { getAboutUsContent } from "@/data/aboutUsContent";
+import { Metadata } from "next";
+import { buildPageMetadata } from "@/data/seoContent";
 
-export const metadata = {
-  title: "GironaPlants About Us",
-  description: "Welcome to the about us page",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lng: string }>;
+}): Promise<Metadata> {
+  const { lng } = await params;
+  return buildPageMetadata(lng, "aboutUs");
+}
+
+// Strapi content wins when a field is filled in; otherwise the local
+// fallback keeps the page complete.
+const text = (value: string | undefined | null, fallback: string) =>
+  value && value.trim() ? value : fallback;
 
 export default async function AboutUsPage({
   params,
@@ -24,34 +36,47 @@ export default async function AboutUsPage({
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-  const url = `${baseUrl}/api/strapi/about-us?locale=${lng}&populate=*&fields[0]=id&fields[1]=title&fields[2]=subtitle&fields[3]=hero_button&fields[4]=locale&fields[5]=our_clients&fields[6]=catalogues_title&fields[7]=catalogues_subtitle&fields[8]=catalogues_button`;
+  // No fields[] narrowing — see app/[lng]/page.tsx for the rationale.
+  const url = `${baseUrl}/api/strapi/about-us?locale=${lng}&populate=*`;
 
-  const response = await fetch(url);
-
-  const json = await response.json();
-
-  const aboutUsData: AboutUsDataType = json.data;
-
-  if (!aboutUsData) {
-    return null;
+  let aboutUsData: AboutUsDataType | null = null;
+  try {
+    const response = await fetch(url);
+    const json = await response.json();
+    aboutUsData = json.data ?? null;
+  } catch {
+    aboutUsData = null;
   }
 
+  const fallback = getAboutUsContent(lng);
+
   const heroAboutUsData: HeroAboutUsProps = {
-    hero_images: aboutUsData.hero_images,
-    title: aboutUsData.title,
-    subtitle: aboutUsData.subtitle,
-    hero_button: aboutUsData.hero_button,
-    locale: aboutUsData.locale,
+    hero_images: aboutUsData?.hero_images || [],
+    title: text(aboutUsData?.title, fallback.title),
+    subtitle: text(aboutUsData?.subtitle, fallback.subtitle),
+    hero_button: text(aboutUsData?.hero_button, fallback.hero_button),
+    locale: lng,
   };
 
   const ourClientsData: OurClientsProps = {
-    our_clients: aboutUsData.our_clients,
+    our_clients: aboutUsData?.our_clients?.clients?.length
+      ? aboutUsData.our_clients
+      : fallback.our_clients,
   };
 
   const cataloguesData: CataloguesProps = {
-    catalogues_title: aboutUsData.catalogues_title,
-    catalogues_subtitle: aboutUsData.catalogues_subtitle,
-    catalogues_button: aboutUsData.catalogues_button,
+    catalogues_title: text(
+      aboutUsData?.catalogues_title,
+      fallback.catalogues_title
+    ),
+    catalogues_subtitle: text(
+      aboutUsData?.catalogues_subtitle,
+      fallback.catalogues_subtitle
+    ),
+    catalogues_button: text(
+      aboutUsData?.catalogues_button,
+      fallback.catalogues_button
+    ),
     locale: lng,
   };
 

@@ -7,4 +7,5 @@ export type BoxDataType = {
   borderRadiusBottomLeft?: string;
   borderRadiusBottomRight?: string;
   imageUrl?: string;
+  defaultImage?: string;
 };

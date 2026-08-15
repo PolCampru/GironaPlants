@@ -3,10 +3,17 @@ import { fetchStrapiData } from "@/lib/strapi";
 import { OffersPageProps } from "@/types/Offers";
 import React from "react";
 
-export const metadata = {
-  title: "GironaPlants Offers",
-  description: "Bienvenido a la página de ofertas",
-};
+import { Metadata } from "next";
+import { buildPageMetadata } from "@/data/seoContent";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lng: string }>;
+}): Promise<Metadata> {
+  const { lng } = await params;
+  return buildPageMetadata(lng, "offers");
+}
 
 const OffersPage = async ({ params }: OffersPageProps) => {
   const { lng } = await params;

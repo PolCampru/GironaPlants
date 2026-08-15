@@ -15,6 +15,7 @@ import {
   PlantsHomeProps,
 } from "@/types/Home";
 import { Metadata } from "next";
+import { buildPageMetadata } from "@/data/seoContent";
 
 export async function generateMetadata({
   params,
@@ -22,43 +23,7 @@ export async function generateMetadata({
   params: Promise<{ lng: string }>;
 }): Promise<Metadata> {
   const { lng } = await params;
-
-  let title = "";
-  let description = "";
-
-  switch (lng) {
-    case "es":
-      title = "GironaPlants - Vivero especializado en plantas mediterráneas";
-      description =
-        "Descubre nuestra amplia selección de plantas mediterráneas, árboles y arbustos cultivados con pasión en nuestro vivero de Girona. Calidad y sostenibilidad garantizadas.";
-      break;
-    case "ca":
-      title = "GironaPlants - Viver especialitzat en plantes mediterrànies";
-      description =
-        "Descobreix la nostra àmplia selecció de plantes mediterrànies, arbres i arbustos cultivats amb passió al nostre viver de Girona. Qualitat i sostenibilitat garantides.";
-      break;
-    case "en":
-      title = "GironaPlants - Specialized nursery in Mediterranean plants";
-      description =
-        "Discover our wide selection of Mediterranean plants, trees and shrubs grown with passion in our nursery in Girona. Quality and sustainability guaranteed.";
-      break;
-    case "fr":
-      title =
-        "GironaPlants - Pépinière spécialisée en plantes méditerranéennes";
-      description =
-        "Découvrez notre large sélection de plantes méditerranéennes, d'arbres et d'arbustes cultivés avec passion dans notre pépinière de Gérone. Qualité et durabilité garanties.";
-      break;
-    default:
-      title = "GironaPlants - Plantas mediterráneas";
-      description = "Vivero especializado en plantas mediterráneas en Girona";
-  }
-
-  return {
-    title,
-    description,
-    keywords:
-      "plantas, vivero, Girona, mediterráneo, árboles, arbustos, jardinería, Catalunya",
-  };
+  return buildPageMetadata(lng, "home");
 }
 
 // Strapi content wins when a field is filled in; otherwise the local
@@ -71,7 +36,10 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-  const url = `${baseUrl}/api/strapi/home?locale=${lng}&populate=*&fields[0]=id&fields[1]=hero_title&fields[2]=hero_subtitle&fields[3]=hero_button&fields[4]=plants_title&fields[5]=plants_subtitle&fields[6]=plants_button&fields[7]=catalogues_title&fields[8]=catalogues_subtitle&fields[9]=catalogues_button&fields[10]=contact_title&fields[11]=contact_subtitle&fields[12]=contact_button`;
+  // No fields[] narrowing: the schema may gain fields (hero_badge,
+  // trust_items, …) over time and a stale list would either 400 the request
+  // or silently hide CMS values behind the local fallbacks.
+  const url = `${baseUrl}/api/strapi/home?locale=${lng}&populate=*`;
 
   let homeData: HomeDataType | null = null;
   try {

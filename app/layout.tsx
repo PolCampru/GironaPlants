@@ -7,7 +7,6 @@ import { Inter } from "next/font/google";
 import * as React from "react";
 import { ReduxProvider } from "./reduxProvider";
 import CookiePrompt from "@/components/layout/Cookies/CookiePrompt";
-import { BusinessStructuredData } from "@/components/seo/StructuredData";
 import ErrorBoundary from "@/components/layout/ErrorBoundary";
 
 interface RootLayoutProps {
@@ -29,8 +28,8 @@ export const metadata = {
     default: "GironaPlants - Mediterranean Plants Nursery",
     template: "%s | GironaPlants"
   },
-  description: "Specialized nursery in Mediterranean plants, trees and shrubs. Quality and sustainability guaranteed from Girona, Catalonia.",
-  keywords: ["plants", "nursery", "Girona", "Mediterranean", "trees", "shrubs", "gardening", "Catalonia"],
+  description: "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the plants your project needs, with delivery across Spain and Europe.",
+  keywords: ["plants", "nursery", "Girona", "Mediterranean", "trees", "shrubs", "gardening", "Catalonia", "wholesale plants", "plant sourcing", "landscaping"],
   authors: [{ name: "GironaPlants" }],
   creator: "GironaPlants",
   publisher: "GironaPlants",
@@ -45,12 +44,12 @@ export const metadata = {
     url: "https://gironaplants.com",
     siteName: "GironaPlants",
     title: "GironaPlants - Mediterranean Plants Nursery",
-    description: "Specialized nursery in Mediterranean plants, trees and shrubs from Girona, Catalonia.",
+    description: "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the plants your project needs.",
     images: [
       {
-        url: "/images/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/images/lavenders.jpg",
+        width: 1280,
+        height: 853,
         alt: "GironaPlants - Mediterranean Plants Nursery",
       },
     ],
@@ -58,8 +57,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GironaPlants - Mediterranean Plants Nursery",
-    description: "Specialized nursery in Mediterranean plants, trees and shrubs from Girona, Catalonia.",
-    images: ["/images/og-image.jpg"],
+    description: "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the plants your project needs.",
+    images: ["/images/lavenders.jpg"],
   },
   robots: {
     index: true,
@@ -76,21 +75,23 @@ export const metadata = {
     canonical: "/",
     languages: {
       es: "/es",
-      ca: "/ca", 
+      ca: "/ca",
       en: "/en",
       fr: "/fr",
+      "x-default": "/es",
     },
   },
 };
 
 export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
-    <html className={inter.variable} lang={params.lng}>
+    // This layout sits above the [lng] segment, so the locale param never
+    // reaches it — default the document language to the primary locale.
+    // (robots and viewport come from the metadata API; the localized JSON-LD
+    // lives in app/[lng]/layout.tsx.)
+    <html className={inter.variable} lang={params?.lng ?? "es"}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <BusinessStructuredData locale={params.lng} />
       </head>
       <body>
         <ThemeClientProvider>

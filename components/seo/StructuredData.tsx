@@ -31,47 +31,54 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
       case 'es':
         return {
           name: 'GironaPlants - Vivero de plantas mediterráneas',
-          description: 'Vivero especializado en plantas mediterráneas, árboles y arbustos en Girona, Cataluña.',
-          address: 'Girona, Cataluña, España'
+          description:
+            'Empresa familiar de la provincia de Girona. Cultivamos planta mediterránea y conseguimos las plantas que cada proyecto necesita a través de una red de viveros locales de confianza.',
+          slogan: 'Si no la cultivamos, la encontramos.'
         }
       case 'en':
         return {
           name: 'GironaPlants - Mediterranean Plants Nursery',
-          description: 'Specialized nursery in Mediterranean plants, trees and shrubs in Girona, Catalonia.',
-          address: 'Girona, Catalonia, Spain'
+          description:
+            'Family-run company from the province of Girona, Catalonia. We grow Mediterranean plants and source the plants every project needs through a trusted network of local growers.',
+          slogan: "If we don't grow it, we'll find it."
         }
       case 'fr':
         return {
           name: 'GironaPlants - Pépinière de plantes méditerranéennes',
-          description: 'Pépinière spécialisée en plantes méditerranéennes, arbres et arbustes à Gérone, Catalogne.',
-          address: 'Gérone, Catalogne, Espagne'
+          description:
+            'Entreprise familiale de la province de Gérone, en Catalogne. Nous cultivons des plantes méditerranéennes et trouvons les plantes dont chaque projet a besoin grâce à un réseau de pépinières locales de confiance.',
+          slogan: 'Si nous ne la cultivons pas, nous la trouvons.'
         }
       default: // Catalan
         return {
           name: 'GironaPlants - Viver de plantes mediterrànies',
-          description: 'Viver especialitzat en plantes mediterrànies, arbres i arbustos a Girona, Catalunya.',
-          address: 'Girona, Catalunya, Espanya'
+          description:
+            "Empresa familiar de la província de Girona. Cultivem planta mediterrània i aconseguim les plantes que cada projecte necessita a través d'una xarxa de vivers locals de confiança.",
+          slogan: 'Si no la cultivem, la trobem.'
         }
     }
   }
 
   const data = getLocalizedData()
-  
+
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://gironaplants.com',
+    '@type': ['LocalBusiness', 'GardenStore'],
+    '@id': 'https://gironaplants.com/#business',
     name: data.name,
+    alternateName: 'Girona Plants',
     description: data.description,
+    slogan: data.slogan,
     url: 'https://gironaplants.com',
-    telephone: '+34-XXX-XXX-XXX', // Replace with actual phone
+    image: 'https://gironaplants.com/images/lavenders.jpg',
+    telephone: '+34 639 811 560',
     email: 'gironaplants@gironaplants.com',
+    foundingDate: '1998',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Girona',
       addressRegion: 'Catalonia',
-      addressCountry: 'ES',
-      streetAddress: data.address
+      addressCountry: 'ES'
     },
     geo: {
       '@type': 'GeoCoordinates',
@@ -92,11 +99,10 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
         closes: '14:00'
       }
     ],
-    sameAs: [
-      // Add social media URLs when available
-    ],
-    priceRange: '€',
-    servedCuisine: [], // Not applicable for plants
+    areaServed: ['Spain', 'France', 'Andorra', 'Europe'],
+    knowsLanguage: ['ca', 'es', 'en', 'fr'],
+    sameAs: ['https://www.linkedin.com/in/gironaplants/'],
+    priceRange: '€€',
     acceptedPaymentMethod: [
       'http://purl.org/goodrelations/v1#Cash',
       'http://purl.org/goodrelations/v1#ByBankTransferInAdvance',

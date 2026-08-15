@@ -7,10 +7,17 @@ import { ContactHomeProps } from "@/types/Home";
 import { notFound } from "next/navigation";
 import React from "react";
 
-export const metadata = {
-  title: "GironaPlants Catalogues",
-  description: "Bienvenido a la página de catálogos",
-};
+import { Metadata } from "next";
+import { buildPageMetadata } from "@/data/seoContent";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lng: string }>;
+}): Promise<Metadata> {
+  const { lng } = await params;
+  return buildPageMetadata(lng, "catalogues");
+}
 
 export default async function CataloguesPage({ params }: CataloguesPageProps) {
   const { lng } = await params;

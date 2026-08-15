@@ -25,23 +25,20 @@ const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {
         animate="visible"
         variants={containerVariants}
       >
-        {data.hero_images.map((image, index) => {
-          const fullUrl = strapiMediaUrl(image);
+        {HeroImageBox.map((item, index) => {
+          const fullUrl = strapiMediaUrl(data.hero_images?.[index]);
+          const imageUrl = fullUrl || item.defaultImage;
 
           return (
-            <motion.div key={image.id} variants={boxVariants}>
+            <motion.div key={index} variants={boxVariants}>
               <Box
-                imageUrl={fullUrl || "/images/aboutUs/ilex.jpg"}
-                width={HeroImageBox[index].width}
-                height={HeroImageBox[index].height}
-                borderRadiusBottomLeft={
-                  HeroImageBox[index].borderRadiusBottomLeft
-                }
-                borderRadiusBottomRight={
-                  HeroImageBox[index].borderRadiusBottomRight
-                }
-                borderRadiusTopLeft={HeroImageBox[index].borderRadiusTopLeft}
-                borderRadiusTopRight={HeroImageBox[index].borderRadiusTopRight}
+                imageUrl={imageUrl}
+                width={item.width}
+                height={item.height}
+                borderRadiusBottomLeft={item.borderRadiusBottomLeft}
+                borderRadiusBottomRight={item.borderRadiusBottomRight}
+                borderRadiusTopLeft={item.borderRadiusTopLeft}
+                borderRadiusTopRight={item.borderRadiusTopRight}
               />
             </motion.div>
           );
