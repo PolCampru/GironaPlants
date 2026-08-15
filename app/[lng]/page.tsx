@@ -2,6 +2,11 @@ import Catalogues from "@/components/specific/AboutUs/Catalogues/Catalogues";
 import Contact from "@/components/specific/Home/Contact/Contact";
 import HeroHome from "@/components/specific/Home/Hero/Hero";
 import OurPlants from "@/components/specific/Home/OurPlants/OurPlants";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  getHomeContent,
+} from "@/data/homeContent";
 import { CataloguesProps } from "@/types/AboutUs";
 import {
   HeroHomeProps,
@@ -56,6 +61,11 @@ export async function generateMetadata({
   };
 }
 
+// Strapi content wins when a field is filled in; otherwise the local
+// fallback keeps the page complete.
+const text = (value: string | undefined | null, fallback: string) =>
+  value && value.trim() ? value : fallback;
+
 export default async function HomePage({ params }: HomePageProps) {
   const { lng } = await params;
 
@@ -63,38 +73,65 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const url = `${baseUrl}/api/strapi/home?locale=${lng}&populate=*&fields[0]=id&fields[1]=hero_title&fields[2]=hero_subtitle&fields[3]=hero_button&fields[4]=plants_title&fields[5]=plants_subtitle&fields[6]=plants_button&fields[7]=catalogues_title&fields[8]=catalogues_subtitle&fields[9]=catalogues_button&fields[10]=contact_title&fields[11]=contact_subtitle&fields[12]=contact_button`;
 
-  const response = await fetch(url);
+  let homeData: HomeDataType | null = null;
+  try {
+    const response = await fetch(url);
+    const json = await response.json();
+    homeData = json.data ?? null;
+  } catch {
+    homeData = null;
+  }
 
-  const json = await response.json();
-
-  const homeData: HomeDataType = json.data;
+  const fallback = getHomeContent(lng);
 
   const heroHomeData: HeroHomeProps = {
     hero_images: homeData?.hero_images || [],
-    hero_title: homeData?.hero_title || "",
-    hero_subtitle: homeData?.hero_subtitle || "",
-    hero_button: homeData?.hero_button || "",
+    hero_title: text(homeData?.hero_title, fallback.hero_title),
+    hero_subtitle: text(homeData?.hero_subtitle, fallback.hero_subtitle),
+    hero_button: text(homeData?.hero_button, fallback.hero_button),
+    hero_badge: text(homeData?.hero_badge, fallback.hero_badge),
+    hero_secondary_button: text(
+      homeData?.hero_secondary_button,
+      fallback.hero_secondary_button
+    ),
+    trust_items: homeData?.trust_items?.length
+      ? homeData.trust_items
+      : fallback.trust_items,
     locale: lng,
   };
 
   const plantsHomeData: PlantsHomeProps = {
-    plants_title: homeData?.plants_title || "",
-    plants_subtitle: homeData?.plants_subtitle || "",
-    plants_button: homeData?.plants_button || "",
+    plants_title: text(homeData?.plants_title, fallback.plants_title),
+    plants_subtitle: text(homeData?.plants_subtitle, fallback.plants_subtitle),
+    plants_button: text(homeData?.plants_button, fallback.plants_button),
     locale: lng,
   };
 
   const cataloguesHomeData: CataloguesProps = {
-    catalogues_title: homeData?.catalogues_title || "",
-    catalogues_subtitle: homeData?.catalogues_subtitle || "",
-    catalogues_button: homeData?.catalogues_button || "",
+    catalogues_title: text(
+      homeData?.catalogues_title,
+      fallback.catalogues_title
+    ),
+    catalogues_subtitle: text(
+      homeData?.catalogues_subtitle,
+      fallback.catalogues_subtitle
+    ),
+    catalogues_button: text(
+      homeData?.catalogues_button,
+      fallback.catalogues_button
+    ),
     locale: lng,
   };
 
   const contactHomeData = {
-    contact_title: homeData?.contact_title || "",
-    contact_subtitle: homeData?.contact_subtitle || "",
-    contact_button: homeData?.contact_button || "",
+    contact_title: text(homeData?.contact_title, fallback.contact_title),
+    contact_subtitle: text(
+      homeData?.contact_subtitle,
+      fallback.contact_subtitle
+    ),
+    contact_button: text(homeData?.contact_button, fallback.contact_button),
+    contact_phone: CONTACT_PHONE,
+    contact_email: CONTACT_EMAIL,
     locale: lng,
   };
 

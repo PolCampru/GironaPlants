@@ -2,11 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ContainerData, ContainerImages, HeroWrapper } from "./Hero.style";
+import {
+  Badge,
+  ContainerData,
+  ContainerImages,
+  CtaRow,
+  HeroWrapper,
+  TrustList,
+} from "./Hero.style";
 import Box from "@/components/ui/Box/Box";
-
-import Button from "@/components/ui/Button/Button";
-import Link from "next/link";
+import CtaLink from "@/components/ui/CtaLink/CtaLink";
+import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
 import {
   containerVariants,
   boxVariants,
@@ -25,17 +31,37 @@ const HeroHome = ({ data }: { data: HeroHomeProps }) => {
         animate="visible"
         variants={dataVariants}
       >
+        {data.hero_badge && <Badge>{data.hero_badge}</Badge>}
         <h1>
           <span>Girona Plants</span>
           {data.hero_title}
         </h1>
         <p>{data.hero_subtitle}</p>
-        <Link
-          href={`/${data.locale}/products`}
-          aria-label={`Ver productos de Girona Plants - ${data.hero_button}`}
-        >
-          <Button>{data.hero_button}</Button>
-        </Link>
+        <CtaRow>
+          <CtaLink
+            href={`/${data.locale}/products`}
+            $variant="solid"
+            aria-label={`Ver productos de Girona Plants - ${data.hero_button}`}
+          >
+            {data.hero_button}
+            <FiArrowRight aria-hidden="true" />
+          </CtaLink>
+          {data.hero_secondary_button && (
+            <CtaLink href={`/${data.locale}/contact`} $variant="outline">
+              {data.hero_secondary_button}
+            </CtaLink>
+          )}
+        </CtaRow>
+        {data.trust_items && data.trust_items.length > 0 && (
+          <TrustList>
+            {data.trust_items.map((item) => (
+              <li key={item}>
+                <FiCheckCircle aria-hidden="true" />
+                {item}
+              </li>
+            ))}
+          </TrustList>
+        )}
       </ContainerData>
       <ContainerImages
         as={motion.div}
@@ -59,31 +85,27 @@ const HeroHome = ({ data }: { data: HeroHomeProps }) => {
             fullUrl = strapiMediaUrl(data.hero_images[index]);
           }
 
-          const altText = `Imagen de planta mediterránea en el vivero Girona Plants - ${
-            index + 1
-          }`;
+          const imageUrl = fullUrl || item.defaultImage;
+
+          const altText = imageUrl
+            ? `Imagen de planta mediterránea en el vivero Girona Plants - ${
+                index + 1
+              }`
+            : undefined;
 
           return (
             <motion.div key={index} variants={boxVariants}>
-              {fullUrl ? (
-                <Box
-                  imageUrl={fullUrl}
-                  width={item.width}
-                  height={item.height}
-                  borderRadiusBottomRight={item.borderRadiusBottomRight}
-                  borderRadiusTopLeft={item.borderRadiusTopLeft}
-                  color={item.color}
-                  altText={altText}
-                />
-              ) : (
-                <Box
-                  width={item.width}
-                  height={item.height}
-                  borderRadiusBottomRight={item.borderRadiusBottomRight}
-                  borderRadiusTopLeft={item.borderRadiusTopLeft}
-                  color={item.color}
-                />
-              )}
+              <Box
+                imageUrl={imageUrl}
+                width={item.width}
+                height={item.height}
+                borderRadiusTopLeft={item.borderRadiusTopLeft}
+                borderRadiusTopRight={item.borderRadiusTopRight}
+                borderRadiusBottomLeft={item.borderRadiusBottomLeft}
+                borderRadiusBottomRight={item.borderRadiusBottomRight}
+                color={item.color}
+                altText={altText}
+              />
             </motion.div>
           );
         })}

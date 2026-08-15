@@ -3,47 +3,50 @@
     {
       "key": "plant1",
       "title": "Plantes forestières",
-      "img": "img/plant1.jpg"
+      "description": "Espèces indigènes idéales pour la reforestation et les projets de paysagisme naturel en milieu méditerranéen.",
+      "img": "/images/hazelnut.jpg"
     },
     {
       "key": "plant2",
       "title": "Boutures enracinées",
-      "img": "img/plant1.jpg"
+      "description": "Boutures de haute qualité pour les professionnels à la recherche de plantes vigoureuses adaptées au climat méditerranéen."
     },
     {
       "key": "plant3",
       "title": "Arbustes et conifères",
-      "img": "img/plant1.jpg"
+      "description": "Variétés robustes qui apportent structure et volume aux jardins durables et aux projets de paysagisme.",
+      "img": "/images/redCedar.jpg"
     },
     {
       "key": "plant4",
       "title": "Jardinage durable",
-      "img": "img/plant1.jpg"
+      "description": "Des solutions écologiques pour des espaces verts qui favorisent la biodiversité et économisent l'eau.",
+      "img": "/images/lavenders.jpg"
     },
     {
       "key": "plant5",
       "title": "Tapisants",
-      "img": "img/plant1.jpg"
+      "description": "Plantes rampantes qui couvrent le sol, réduisent l'érosion et aident à conserver l'humidité du jardin."
     },
     {
       "key": "plant6",
       "title": "Graminées",
-      "img": "img/plant1.jpg"
+      "description": "Variétés ornementales et résistantes qui apportent du mouvement et une touche distinctive à tout espace vert."
     },
     {
       "key": "plant7",
       "title": "Plantes aquatiques",
-      "img": "img/plant1.jpg"
+      "description": "Espèces adaptées aux zones humides et aux bassins qui améliorent la biodiversité et attirent une faune bénéfique."
     },
     {
       "key": "plant8",
       "title": "Fougères",
-      "img": "img/plant1.jpg"
+      "description": "Plantes luxuriantes qui apportent fraîcheur et exotisme, idéales pour les zones ombragées et les jardins naturels."
     },
     {
       "key": "plant9",
       "title": "Autres",
-      "img": "img/plant1.jpg"
+      "description": "Découvrez le reste de nos plantes pour compléter tout projet de jardinage ou de paysagisme."
     }
   ]
 }

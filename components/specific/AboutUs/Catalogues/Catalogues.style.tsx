@@ -26,9 +26,18 @@ export const ContainerInfo = styled.div`
   flex-direction: column;
   gap: 2rem;
 
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
   p {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: ${({ theme }) => theme.colors.dark};
   }
 
   @media (max-width: 1024px) {

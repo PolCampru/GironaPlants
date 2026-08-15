@@ -1,132 +1,96 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.section`
-  width: 80%;
-  height: 12.875rem;
-  padding: 0 0 0 3rem;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+  position: relative;
+  width: 100%;
+  margin: 0 auto 6rem;
+  padding: 3rem 3.5rem;
+
   background-color: ${({ theme }) => theme.colors.moss};
+  border-radius: 1.25rem;
+  overflow: hidden;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 0.625rem;
+  gap: 2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    right: -8rem;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    background-color: rgba(17, 139, 80, 0.35);
+    pointer-events: none;
+  }
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    height: auto;
-    padding: 1rem;
+    align-items: flex-start;
+    padding: 2.5rem 2rem;
     margin-bottom: 3rem;
   }
 `;
 
 export const ContainerText = styled.div`
-  width: 60%;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  gap: 0.5rem;
   color: ${({ theme }) => theme.colors.white};
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
+    line-height: 1.2;
   }
 
   h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 34rem;
   }
 
   @media (max-width: 1024px) {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-
     h2 {
-      font-size: 2rem;
-    }
-
-    h3 {
-      font-size: 1.2rem;
+      font-size: 1.85rem;
     }
   }
 `;
 
-export const ContainerButton = styled.div`
-  width: 30%;
-  height: 100%;
+export const ContactMeta = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 0.625rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin-top: 1rem;
 
-  .background {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 40px;
-    display: flex;
-    justify-content: center;
+  a {
+    display: inline-flex;
     align-items: center;
-    background-color: ${({ theme }) => theme.colors.brandGreen};
-    border-radius: 100%;
-    transition: all 0.3s;
-  }
+    gap: 0.5rem;
 
-  .link {
-    font-size: 1.5rem;
-    font-weight: 700;
     color: ${({ theme }) => theme.colors.white};
-    z-index: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.4rem;
-    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 600;
 
-    img {
-      height: 1rem;
-      filter: invert(1) brightness(100);
+    svg {
+      color: ${({ theme }) => theme.colors.lime};
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
+`;
 
-  &:hover {
-    .background {
-      left: 0;
-    }
-    .link {
-      gap: 0.8rem;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    width: 100%;
-    margin-top: 1rem;
-
-    .background {
-      width: 100%;
-      height: 300px;
-      left: 0;
-    }
-
-    .link {
-      font-size: 1.3rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .background {
-      width: 100%;
-      height: 250px;
-      left: 0;
-    }
-    .link {
-      font-size: 1.2rem;
-    }
-  }
+export const ContainerAction = styled.div`
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
 `;

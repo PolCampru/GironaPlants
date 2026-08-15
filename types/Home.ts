@@ -21,6 +21,9 @@ export type HeroHomeProps = {
   hero_title: string;
   hero_subtitle: string;
   hero_button: string;
+  hero_badge?: string;
+  hero_secondary_button?: string;
+  trust_items?: string[];
   locale: string;
 };
 
@@ -35,6 +38,8 @@ export type ContactHomeProps = {
   contact_title: string;
   contact_subtitle: string;
   contact_button: string;
+  contact_phone?: string;
+  contact_email?: string;
   locale: string;
 };
 
@@ -46,6 +51,6 @@ export type HomeDataType = HeroHomeProps &
 export type OurPlantsType = {
   key: string;
   title: string;
-  img: string;
-  description: string;
+  img?: string;
+  description?: string;
 }[];

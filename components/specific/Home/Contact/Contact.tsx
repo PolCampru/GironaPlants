@@ -3,28 +3,25 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import {
+  ContactMeta,
   ContactWrapper,
-  ContainerButton,
+  ContainerAction,
   ContainerText,
 } from "./Contact.style";
 import { ContactHomeProps } from "@/types/Home";
-import Link from "next/link";
-import Image from "next/image";
-import { fadeInUpVariants, scaleInVariants } from "@/animations/ScrollAnimations";
+import CtaLink from "@/components/ui/CtaLink/CtaLink";
+import { FiArrowRight, FiMail, FiPhone } from "react-icons/fi";
+import {
+  fadeInUpVariants,
+  scaleInVariants,
+} from "@/animations/ScrollAnimations";
 
 const Contact = ({ data }: { data: ContactHomeProps }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <ContactWrapper
-      ref={ref}
-      style={{
-        backgroundImage: `url('/path/to/your/image.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <ContactWrapper ref={ref}>
       <ContainerText
         as={motion.div}
         initial="hidden"
@@ -33,25 +30,35 @@ const Contact = ({ data }: { data: ContactHomeProps }) => {
       >
         <h2>{data.contact_title}</h2>
         <h3>{data.contact_subtitle}</h3>
+        {(data.contact_phone || data.contact_email) && (
+          <ContactMeta>
+            {data.contact_phone && (
+              <a href={`tel:${data.contact_phone.replace(/\s/g, "")}`}>
+                <FiPhone aria-hidden="true" />
+                {data.contact_phone}
+              </a>
+            )}
+            {data.contact_email && (
+              <a href={`mailto:${data.contact_email}`}>
+                <FiMail aria-hidden="true" />
+                {data.contact_email}
+              </a>
+            )}
+          </ContactMeta>
+        )}
       </ContainerText>
-      
-      <ContainerButton
+
+      <ContainerAction
         as={motion.div}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={scaleInVariants}
       >
-        <div className="background" />
-        <Link href={`/${data.locale}/contact`} className="link">
-          <p>{data.contact_button}</p>
-          <Image
-            src="/images/products/arrowIcon.svg"
-            alt="arrow"
-            width={24}
-            height={24}
-          />
-        </Link>
-      </ContainerButton>
+        <CtaLink href={`/${data.locale}/contact`} $variant="light">
+          {data.contact_button}
+          <FiArrowRight aria-hidden="true" />
+        </CtaLink>
+      </ContainerAction>
     </ContactWrapper>
   );
 };
