@@ -14,7 +14,7 @@ Reinstalado desde cero el 2026-08-14 tras un compromiso del servidor anterior.
 │   ├── Dockerfile         <- /Dockerfile (raiz del repo)
 │   ├── .dockerignore      <- /.dockerignore
 │   └── .env               <- SOLO en el servidor
-├── strapi/                <- app Strapi (NO versionada todavia)
+├── strapi/                <- app Strapi (fuente en cms/app/ de este repo)
 │   ├── Dockerfile         <- deploy/strapi.Dockerfile
 │   └── .env               <- SOLO en el servidor
 ├── data/data.db           <- SQLite (uid 1000, montado en el contenedor)
@@ -76,6 +76,5 @@ correctamente.
 
 ## Pendiente
 
-- La app Strapi (`/opt/gironaplants/strapi`) no esta en git — vive solo en el servidor.
 - `EMAIL_PASS` sigue siendo la credencial SMTP anterior al compromiso: rotar en PIMEC.
 - `catalogues`, `homes`, `about_us_pages` y `offers` estan vacios en la BBDD.

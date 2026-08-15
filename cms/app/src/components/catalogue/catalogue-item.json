@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_catalogue_catalogue_items",
+  "info": {
+    "displayName": "Catalogue Item",
+    "description": "One downloadable catalogue: card text, PDF file and cover image"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "button": {
+      "type": "string"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

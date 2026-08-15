@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": { "localized": true }
+  },
+  "attributes": {
+    "hero_title":        { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "hero_subtitle":     { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
+    "hero_button":       { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "hero_images":       { "type": "media", "multiple": true, "allowedTypes": ["images"], "pluginOptions": { "i18n": { "localized": false } } },
+    "plants_title":      { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "plants_subtitle":   { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
+    "plants_button":     { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_title":  { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_subtitle": { "type": "text",  "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_button": { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "contact_title":     { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "contact_subtitle":  { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
+    "contact_button":    { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } }
+  }
+}
