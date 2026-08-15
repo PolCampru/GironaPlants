@@ -78,7 +78,9 @@ echo "==> 7/8 Rebuilding and restarting the frontend"
 ssh "$HOST" "cd $BASE && docker compose build frontend && docker compose up -d frontend"
 
 echo "==> 8/8 Verifying the API"
-TOKEN=$(ssh "$HOST" "grep -o 'STRAPI_TOKEN: \"[a-f0-9]*\"' $BASE/docker-compose.yml | cut -d'\"' -f2")
+# The token lives in $BASE/.env (chmod 600); docker-compose.yml only references
+# it as ${STRAPI_TOKEN} so the compose file can be committed without secrets.
+TOKEN=$(ssh "$HOST" "grep '^STRAPI_TOKEN=' $BASE/.env | cut -d= -f2-")
 RESP=$(ssh "$HOST" "curl -s \"http://127.0.0.1:1337/api/catalogue?locale=es&populate[catalogues][populate]=*\" -H \"Authorization: Bearer $TOKEN\"")
 echo "$RESP" | python3 -c "
 import json, sys
