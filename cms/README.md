@@ -1,11 +1,15 @@
 # Seeding localized site content (home + about-us)
 
-Production Strapi has no published entries for the `home` and `about-us`
-single types (the API returns 404 for every locale), so the site currently
-lives off the frontend fallbacks in `data/homeContent.ts` and
-`data/aboutUsContent.ts`. `cms/scripts/seed-site-content.js` fills the CMS
-with that same copy for all four locales (es, ca, en, fr) and publishes it,
-so editors can then manage everything from the admin panel.
+Production Strapi serves published `home` and `about-us` entries in all four
+locales (es, ca, en, fr) — seeded on 2026-08-15 and re-seeded on 2026-08-27
+with the Europe-wide sourcing copy. **CMS values win over the frontend
+fallbacks in `data/homeContent.ts` and `data/aboutUsContent.ts`**, so editing
+those files alone no longer changes the live site: re-run the seed (below) or
+edit in the admin panel. The fallbacks still cover fields the CMS leaves
+empty, and the whole page if Strapi is unreachable.
+
+`cms/scripts/seed-site-content.js` pushes the repo copy into the CMS for all
+four locales and publishes it.
 
 From the repo root (after pushing to `main`, since the runner syncs the
 server checkout from GitHub):
