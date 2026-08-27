@@ -6,3 +6,34 @@ gironaplants.com, www.gironaplants.com {
 	encode gzip
 	reverse_proxy frontend:3000
 }
+
+# Strapi CMS, exposed publicly. Default-deny: only the read API and uploaded
+# media are open to the world; the admin panel, the admin API and every plugin
+# route are restricted by source IP. Anything not explicitly made public above
+# therefore stays behind the allowlist, including routes added later.
+(strapi_site) {
+	encode gzip
+
+	@public path /api/* /uploads/*
+	handle @public {
+		reverse_proxy strapi:1337
+	}
+
+	handle {
+		@untrusted not remote_ip 83.45.86.215
+		respond @untrusted "Forbidden" 403
+		reverse_proxy strapi:1337
+	}
+}
+
+# Hostinger's VPS hostname: already resolves to 46.202.135.74, live today.
+srv656147.hstgr.cloud {
+	import strapi_site
+}
+
+# Goes live on its own once an A record api.gironaplants.com -> 46.202.135.74
+# is added in the PIMEC DNS panel (the zone is not on Hostinger). Kept in its
+# own site block so its failing ACME challenges cannot affect the host above.
+api.gironaplants.com {
+	import strapi_site
+}

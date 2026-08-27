@@ -31,7 +31,7 @@ relativas del compose (`./frontend`, `./strapi`, `./data`) dependen de ello.
 |---|---|---|
 | `gp-caddy` | 80, 443 | HTTPS automatico (Let's Encrypt) para gironaplants.com y www |
 | `gp-frontend` | 3000 (interno) | Next.js, solo accesible via Caddy |
-| `gp-strapi` | 127.0.0.1:1337 | **No expuesto a internet.** Admin via tunel SSH |
+| `gp-strapi` | 1337 (via Caddy) | Publico en `srv656147.hstgr.cloud`. `/api` y `/uploads` abiertos; `/admin` restringido por IP |
 
 Los tres corren como usuario `node` sin privilegios y con `restart: unless-stopped`.
 
@@ -51,16 +51,37 @@ cd /opt/gironaplants && docker compose build frontend && docker compose up -d fr
 
 ## Panel de Strapi
 
-No es publico. Tunel:
+Expuesto a internet desde 2026-08-27 (antes solo por tunel SSH).
+
+- **https://srv656147.hstgr.cloud/admin** — activo, cert Let's Encrypt.
+- **https://api.gironaplants.com/admin** — configurado en el `Caddyfile` pero
+  aun sin certificado: falta el registro A `api.gironaplants.com` -> `46.202.135.74`
+  en el panel de PIMEC (`dns01/dns02.pimec.net`; la zona NO esta en Hostinger, la
+  API de Hostinger no puede crearla). Caddy reintenta cada 60s y emitira el cert
+  solo, sin redeploy, cuando el registro propague.
+
+Superficie publica (default-deny en el `Caddyfile`): solo `/api/*` y `/uploads/*`.
+Todo lo demas — `/admin`, la API de admin, rutas de plugins y cualquier ruta
+futura — responde 403 salvo desde las IPs de la allowlist.
+
+IP permitida actualmente: `83.45.86.215`. **Es una IP residencial dinamica**: si
+cambia de ISP o se trabaja desde otra red, el panel devuelve 403. Se arregla
+editando `remote_ip` en el snippet `(strapi_site)` del `Caddyfile` y recargando:
 
 ```bash
-ssh -L 1337:127.0.0.1:1337 root@46.202.135.74
-# abrir http://localhost:1337/admin
+scp deploy/Caddyfile root@46.202.135.74:/opt/gironaplants/Caddyfile
+ssh root@46.202.135.74 'docker exec gp-caddy caddy reload --config /etc/caddy/Caddyfile --adapter caddyfile'
 ```
 
-Para exponerlo hace falta un registro A de `api.gironaplants.com` -> `46.202.135.74`
-(el DNS esta en PIMEC, `dns01/dns02.pimec.net`, no en Hostinger) y anadir el host
-al `Caddyfile`.
+El tunel SSH sigue funcionando como via de acceso de emergencia:
+
+```bash
+ssh -L 1337:127.0.0.1:1337 root@46.202.135.74   # -> http://localhost:1337/admin
+```
+
+Nota: `config/server.ts` lleva `proxy: true` porque Caddy termina el TLS; sin eso
+Koa ignora `X-Forwarded-Proto` y el login del admin sobre HTTPS falla. Cambiar ese
+fichero exige `docker compose build strapi` (la fuente va dentro de la imagen).
 
 ## Variables de entorno (NO versionadas)
 
