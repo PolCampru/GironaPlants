@@ -46,22 +46,22 @@ type PageSeo = {
 const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
   es: {
     home: {
-      title: "GironaPlants · Vivero y plantas para proyectos en Girona",
+      title: "GironaPlants · Plantas para tu proyecto en toda Europa",
       description:
-        "Empresa familiar de Girona. Cultivamos planta mediterránea y conseguimos las plantas que tu proyecto necesita. Presupuesto en 24-48 h.",
+        "Más de 30 años consiguiendo plantas para profesionales. Cultivo propio en Girona y red de viveros en toda Europa. Presupuesto en 24-48 h.",
       keywords: [
-        "vivero Girona",
-        "plantas al por mayor Girona",
+        "proveedor de plantas Europa",
+        "suministro de plantas al por mayor",
         "plantas mediterráneas",
         "proveedor de plantas para paisajistas",
-        "vivero familiar Cataluña",
-        "plantas para proyectos de jardinería",
+        "vivero Girona",
+        "buscamos cualquier especie de planta",
       ],
     },
     products: {
       title: "Catálogo de plantas mediterráneas",
       description:
-        "Árboles, arbustos, coníferas, gramíneas, cubresuelos y planta forestal cultivados en Girona. Consulta el catálogo y pide tu oferta al por mayor sin compromiso.",
+        "Árboles, arbustos, coníferas, gramíneas, cubresuelos y planta forestal cultivados en Girona. Y si no la cultivamos, la localizamos en Europa: pide tu oferta al por mayor sin compromiso.",
       keywords: [
         "comprar plantas Girona",
         "plantas mediterráneas al por mayor",
@@ -80,13 +80,13 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
       ],
     },
     aboutUs: {
-      title: "Nosotros · Vivero familiar en Girona",
+      title: "Nosotros · Más de 30 años de experiencia en planta",
       description:
-        "Más de 25 años y dos generaciones dedicadas a la planta mediterránea. Cultivo propio y una red de viveros locales de confianza para conseguir cualquier especie.",
+        "Más de 30 años y dos generaciones dedicadas a la planta. Cultivo propio en Girona y una red de viveros en toda Europa para conseguir cualquier especie.",
       keywords: [
-        "vivero familiar Girona",
+        "proveedor de plantas Europa",
         "empresa familiar plantas",
-        "viveros en la provincia de Girona",
+        "vivero familiar Girona",
       ],
     },
     catalogues: {
@@ -118,22 +118,22 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
   },
   ca: {
     home: {
-      title: "GironaPlants · Viver i plantes per a projectes a Girona",
+      title: "GironaPlants · Plantes per al teu projecte a tot Europa",
       description:
-        "Empresa familiar de Girona. Cultivem planta mediterrània i aconseguim les plantes que el teu projecte necessita. Pressupost en 24-48 h.",
+        "Més de 30 anys aconseguint plantes per a professionals. Cultiu propi a Girona i xarxa de vivers a tot Europa. Pressupost en 24-48 h.",
       keywords: [
-        "viver Girona",
-        "plantes a l'engròs Girona",
+        "proveïdor de plantes Europa",
+        "plantes a l'engròs",
         "plantes mediterrànies",
         "proveïdor de plantes per a paisatgistes",
-        "viver familiar Catalunya",
-        "plantes per a projectes de jardineria",
+        "viver Girona",
+        "busquem qualsevol espècie de planta",
       ],
     },
     products: {
       title: "Catàleg de plantes mediterrànies",
       description:
-        "Arbres, arbustos, coníferes, gramínies, entapissants i planta forestal cultivats a Girona. Consulta el catàleg i demana la teva oferta a l'engròs sense compromís.",
+        "Arbres, arbustos, coníferes, gramínies, entapissants i planta forestal cultivats a Girona. I si no la cultivem, la localitzem a Europa: demana la teva oferta a l'engròs sense compromís.",
       keywords: [
         "comprar plantes Girona",
         "plantes mediterrànies a l'engròs",
@@ -152,13 +152,13 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
       ],
     },
     aboutUs: {
-      title: "Nosaltres · Viver familiar a Girona",
+      title: "Nosaltres · Més de 30 anys d'experiència en planta",
       description:
-        "Més de 25 anys i dues generacions dedicades a la planta mediterrània. Cultiu propi i una xarxa de vivers locals de confiança per aconseguir qualsevol espècie.",
+        "Més de 30 anys i dues generacions dedicades a la planta. Cultiu propi a Girona i una xarxa de vivers a tot Europa per aconseguir qualsevol espècie.",
       keywords: [
-        "viver familiar Girona",
+        "proveïdor de plantes Europa",
         "empresa familiar plantes",
-        "vivers a la província de Girona",
+        "viver familiar Girona",
       ],
     },
     catalogues: {
@@ -190,22 +190,22 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
   },
   en: {
     home: {
-      title: "GironaPlants · Plant nursery & sourcing in Girona, Spain",
+      title: "GironaPlants · Plant sourcing across Europe",
       description:
-        "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the exact plants your project needs. Quote within 24-48 h.",
+        "More than 30 years sourcing plants for professionals. Own production in Girona, Spain, plus a grower network across Europe. Quote within 24-48 h.",
       keywords: [
-        "wholesale plant nursery Spain",
+        "plant sourcing Europe",
+        "wholesale plant supplier Europe",
         "Mediterranean plants supplier",
-        "plant sourcing Spain",
         "plants for landscaping projects",
-        "Girona nursery",
+        "Girona plant nursery",
         "buy plants wholesale Europe",
       ],
     },
     products: {
       title: "Mediterranean plants catalogue",
       description:
-        "Trees, shrubs, conifers, ornamental grasses, ground covers and forest plants grown in Girona, Spain. Browse the catalogue and request a wholesale quote.",
+        "Trees, shrubs, conifers, ornamental grasses, ground covers and forest plants grown in Girona, Spain. Anything we don't grow, we source across Europe. Request a wholesale quote.",
       keywords: [
         "buy Mediterranean plants",
         "wholesale trees and shrubs Spain",
@@ -223,13 +223,13 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
       ],
     },
     aboutUs: {
-      title: "About us · Family nursery in Girona",
+      title: "About us · 30 years sourcing plants",
       description:
-        "More than 25 years and two generations devoted to Mediterranean plants. Our own production plus a trusted network of local growers to source any species.",
+        "More than 30 years and two generations devoted to plants. Our own production in Girona plus a grower network across Europe to source any species.",
       keywords: [
+        "plant supplier Europe",
         "family plant nursery Spain",
         "plant supplier Girona",
-        "nurseries in Catalonia",
       ],
     },
     catalogues: {
@@ -261,22 +261,22 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
   },
   fr: {
     home: {
-      title: "GironaPlants · Pépinière et plantes pour vos projets",
+      title: "GironaPlants · Plantes pour vos projets partout en Europe",
       description:
-        "Pépinière familiale à Gérone, en Catalogne. Nous cultivons des plantes méditerranéennes et trouvons celles dont votre projet a besoin. Devis sous 24-48 h.",
+        "Plus de 30 ans à trouver des plantes pour les professionnels. Production propre à Gérone et réseau de pépinières dans toute l'Europe. Devis sous 24-48 h.",
       keywords: [
-        "pépinière Espagne",
+        "fournisseur de plantes Europe",
         "plantes méditerranéennes en gros",
         "fournisseur de plantes paysagistes",
         "pépinière Gérone",
-        "achat plantes Espagne",
+        "sourcing de plantes Europe",
         "plantes pour projets paysagers",
       ],
     },
     products: {
       title: "Catalogue de plantes méditerranéennes",
       description:
-        "Arbres, arbustes, conifères, graminées, couvre-sols et plants forestiers cultivés à Gérone, en Espagne. Parcourez le catalogue et demandez votre devis en gros.",
+        "Arbres, arbustes, conifères, graminées, couvre-sols et plants forestiers cultivés à Gérone, en Espagne. Ce que nous ne cultivons pas, nous le trouvons en Europe. Demandez votre devis en gros.",
       keywords: [
         "acheter plantes méditerranéennes",
         "arbres et arbustes en gros Espagne",
@@ -294,13 +294,13 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
       ],
     },
     aboutUs: {
-      title: "À propos · Pépinière familiale à Gérone",
+      title: "À propos · Plus de 30 ans d'expérience",
       description:
-        "Plus de 25 ans et deux générations consacrées aux plantes méditerranéennes. Production propre et réseau de pépinières locales de confiance pour trouver chaque espèce.",
+        "Plus de 30 ans et deux générations consacrées aux plantes. Production propre à Gérone et réseau de pépinières dans toute l'Europe pour trouver chaque espèce.",
       keywords: [
+        "fournisseur de plantes Europe",
         "pépinière familiale Espagne",
         "fournisseur plantes Gérone",
-        "pépinières Catalogne",
       ],
     },
     catalogues: {

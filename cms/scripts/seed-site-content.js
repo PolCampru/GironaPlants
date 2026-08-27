@@ -32,20 +32,21 @@ const LOCALES = ["es", "ca", "en", "fr"];
 
 const HOME = {
   es: {
-    hero_badge: "Vivero familiar en Girona",
-    hero_title: "Las plantas que tu proyecto necesita",
+    hero_badge: "Suministro de plantas en toda Europa",
+    hero_title: "Las plantas que tu proyecto necesita, en toda Europa",
     hero_subtitle:
-      "Cultivamos planta mediterránea en Girona y localizamos cualquier especie a través de nuestra red de viveros de confianza. Si no la cultivamos, la encontramos.",
+      "Más de 30 años consiguiendo planta para profesionales. Cultivamos planta mediterránea en Girona y localizamos cualquier otra especie a través de nuestra red de viveros en España y el resto de Europa. Si no la cultivamos, la encontramos.",
     hero_button: "Ver productos",
     hero_secondary_button: "Solicitar presupuesto",
     trust_items: [
-      "Empresa familiar, 2ª generación",
-      "Cultivo propio y red de viveros locales",
+      "Más de 30 años de experiencia",
+      "Red de viveros en toda Europa",
+      "Cultivo propio en Girona",
       "Presupuesto en 24-48 h",
     ],
     plants_title: "Nuestras plantas",
     plants_subtitle:
-      "Del árbol forestal a la gramínea ornamental: encuentra la variedad perfecta para cada proyecto de jardinería y paisajismo.",
+      "Del árbol forestal a la gramínea ornamental: encuentra la variedad perfecta para cada proyecto de jardinería y paisajismo. Y si no está en el catálogo, la localizamos por ti.",
     plants_button: "Ver todo el catálogo",
     catalogues_title: "Catálogos",
     catalogues_subtitle:
@@ -53,24 +54,25 @@ const HOME = {
     catalogues_button: "Ver catálogos",
     contact_title: "¿Preparamos tu oferta?",
     contact_subtitle:
-      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos un presupuesto a medida en 24-48 h, sin compromiso.",
+      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos un presupuesto a medida en 24-48 h, sin compromiso. Servimos en toda Europa.",
     contact_button: "Solicitar presupuesto",
   },
   ca: {
-    hero_badge: "Viver familiar a Girona",
-    hero_title: "Les plantes que el teu projecte necessita",
+    hero_badge: "Subministrament de plantes a tot Europa",
+    hero_title: "Les plantes que el teu projecte necessita, a tot Europa",
     hero_subtitle:
-      "Cultivem planta mediterrània a Girona i localitzem qualsevol espècie a través de la nostra xarxa de vivers de confiança. Si no la cultivem, la trobem.",
+      "Més de 30 anys aconseguint planta per a professionals. Cultivem planta mediterrània a Girona i localitzem qualsevol altra espècie a través de la nostra xarxa de vivers a Espanya i la resta d'Europa. Si no la cultivem, la trobem.",
     hero_button: "Veure productes",
     hero_secondary_button: "Demanar pressupost",
     trust_items: [
-      "Empresa familiar, 2a generació",
-      "Cultiu propi i xarxa de vivers locals",
+      "Més de 30 anys d'experiència",
+      "Xarxa de vivers a tot Europa",
+      "Cultiu propi a Girona",
       "Pressupost en 24-48 h",
     ],
     plants_title: "Les nostres plantes",
     plants_subtitle:
-      "De l'arbre forestal a la gramínia ornamental: troba la varietat perfecta per a cada projecte de jardineria i paisatgisme.",
+      "De l'arbre forestal a la gramínia ornamental: troba la varietat perfecta per a cada projecte de jardineria i paisatgisme. I si no és al catàleg, la localitzem per tu.",
     plants_button: "Veure tot el catàleg",
     catalogues_title: "Catàlegs",
     catalogues_subtitle:
@@ -78,24 +80,25 @@ const HOME = {
     catalogues_button: "Veure catàlegs",
     contact_title: "Preparem la teva oferta?",
     contact_subtitle:
-      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem un pressupost a mida en 24-48 h, sense compromís.",
+      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem un pressupost a mida en 24-48 h, sense compromís. Servim a tot Europa.",
     contact_button: "Demanar pressupost",
   },
   en: {
-    hero_badge: "Family-run nursery in Girona",
-    hero_title: "The plants your project needs",
+    hero_badge: "Plant sourcing across Europe",
+    hero_title: "The plants your project needs, anywhere in Europe",
     hero_subtitle:
-      "We grow Mediterranean plants in Girona, Catalonia, and source any species through our trusted network of local growers. If we don't grow it, we'll find it.",
+      "More than 30 years sourcing plants for professionals. We grow Mediterranean species at our own nursery in Girona and track down everything else through our grower network across Spain and the rest of Europe. If we don't grow it, we'll find it.",
     hero_button: "Browse products",
     hero_secondary_button: "Request a quote",
     trust_items: [
-      "Second-generation family business",
-      "Own production plus a local grower network",
+      "More than 30 years of experience",
+      "Grower network across Europe",
+      "Own production in Girona",
       "Quote within 24-48 h",
     ],
     plants_title: "Our plants",
     plants_subtitle:
-      "From forest trees to ornamental grasses: find the right variety for every gardening and landscaping project.",
+      "From forest trees to ornamental grasses: find the right variety for every gardening and landscaping project — and if it isn't in the catalogue, we'll source it for you.",
     plants_button: "View full catalogue",
     catalogues_title: "Catalogues",
     catalogues_subtitle:
@@ -103,24 +106,25 @@ const HOME = {
     catalogues_button: "View catalogues",
     contact_title: "Ready for your quote?",
     contact_subtitle:
-      "Tell us what your project needs — species, sizes and quantities — and we'll send a tailored quote within 24-48 h, no obligation.",
+      "Tell us what your project needs — species, sizes and quantities — and we'll send a tailored quote within 24-48 h, no obligation. We deliver across Europe.",
     contact_button: "Request a quote",
   },
   fr: {
-    hero_badge: "Pépinière familiale à Gérone",
-    hero_title: "Les plantes dont votre projet a besoin",
+    hero_badge: "Approvisionnement en plantes en Europe",
+    hero_title: "Les plantes dont votre projet a besoin, partout en Europe",
     hero_subtitle:
-      "Nous cultivons des plantes méditerranéennes à Gérone, en Catalogne, et trouvons chaque espèce grâce à notre réseau de pépinières locales de confiance. Livraison en France et dans toute l'Europe.",
+      "Plus de 30 ans à trouver des plantes pour les professionnels. Nous cultivons des plantes méditerranéennes dans notre pépinière de Gérone et localisons toutes les autres espèces grâce à notre réseau de pépinières en Espagne et dans le reste de l'Europe. Si nous ne la cultivons pas, nous la trouvons.",
     hero_button: "Voir les produits",
     hero_secondary_button: "Demander un devis",
     trust_items: [
-      "Entreprise familiale, 2e génération",
-      "Production propre et réseau de pépinières locales",
+      "Plus de 30 ans d'expérience",
+      "Réseau de pépinières dans toute l'Europe",
+      "Production propre à Gérone",
       "Devis sous 24-48 h",
     ],
     plants_title: "Nos plantes",
     plants_subtitle:
-      "De l'arbre forestier aux graminées ornementales : trouvez la variété idéale pour chaque projet de jardinage et de paysagisme.",
+      "De l'arbre forestier aux graminées ornementales : trouvez la variété idéale pour chaque projet de jardinage et de paysagisme — et si elle n'est pas au catalogue, nous la trouvons pour vous.",
     plants_button: "Voir tout le catalogue",
     catalogues_title: "Catalogues",
     catalogues_subtitle:
@@ -128,7 +132,7 @@ const HOME = {
     catalogues_button: "Voir les catalogues",
     contact_title: "On prépare votre devis ?",
     contact_subtitle:
-      "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement.",
+      "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
     contact_button: "Demander un devis",
   },
 };
@@ -157,7 +161,7 @@ const ABOUT = {
   es: {
     title: "Una familia dedicada a las plantas",
     subtitle:
-      "es una empresa familiar de la provincia de Girona. Llevamos más de 25 años cultivando planta mediterránea y, cuando un proyecto necesita una especie que no tenemos, la conseguimos: trabajamos con una red de viveros locales de confianza para servir pedidos completos, de la primera planta a la última.",
+      "es una empresa familiar con más de 30 años de experiencia en el sector de la planta. Cultivamos planta mediterránea en la provincia de Girona y, cuando un proyecto necesita una especie que no tenemos, la conseguimos: trabajamos con una red de viveros de confianza en España y el resto de Europa para servir pedidos completos, de la primera planta a la última.",
     hero_button: "Ver nuestras plantas",
     our_clients: {
       title: "Nuestros clientes",
@@ -184,7 +188,7 @@ const ABOUT = {
   ca: {
     title: "Una família dedicada a les plantes",
     subtitle:
-      "és una empresa familiar de la província de Girona. Fa més de 25 anys que cultivem planta mediterrània i, quan un projecte necessita una espècie que no tenim, l'aconseguim: treballem amb una xarxa de vivers locals de confiança per servir comandes completes, de la primera planta a l'última.",
+      "és una empresa familiar amb més de 30 anys d'experiència en el sector de la planta. Cultivem planta mediterrània a la província de Girona i, quan un projecte necessita una espècie que no tenim, l'aconseguim: treballem amb una xarxa de vivers de confiança a Espanya i la resta d'Europa per servir comandes completes, de la primera planta a l'última.",
     hero_button: "Veure les nostres plantes",
     our_clients: {
       title: "Els nostres clients",
@@ -211,7 +215,7 @@ const ABOUT = {
   en: {
     title: "A family devoted to plants",
     subtitle:
-      "is a family-run company from the province of Girona, Catalonia. We have been growing Mediterranean plants for more than 25 years — and when a project calls for a species we don't grow, we source it through our trusted network of local nurseries, delivering complete orders across Spain and Europe.",
+      "is a family-run company with more than 30 years of experience in the plant trade. We grow Mediterranean plants in the province of Girona, Catalonia — and when a project calls for a species we don't grow, we source it through our trusted network of nurseries across Spain and the rest of Europe, delivering complete orders wherever the project is.",
     hero_button: "See our plants",
     our_clients: {
       title: "Our clients",
@@ -238,7 +242,7 @@ const ABOUT = {
   fr: {
     title: "Une famille passionnée de plantes",
     subtitle:
-      "est une entreprise familiale de la province de Gérone, en Catalogne. Depuis plus de 25 ans, nous cultivons des plantes méditerranéennes — et lorsqu'un projet demande une espèce que nous ne cultivons pas, nous la trouvons grâce à notre réseau de pépinières locales de confiance, avec livraison en France et dans toute l'Europe.",
+      "est une entreprise familiale forte de plus de 30 ans d'expérience dans le secteur végétal. Nous cultivons des plantes méditerranéennes dans la province de Gérone, en Catalogne — et lorsqu'un projet demande une espèce que nous ne cultivons pas, nous la trouvons grâce à notre réseau de pépinières de confiance en Espagne et dans le reste de l'Europe, pour livrer des commandes complètes partout en Europe.",
     hero_button: "Voir nos plantes",
     our_clients: {
       title: "Nos clients",

@@ -46,12 +46,12 @@ const content: Record<string, AboutUsFallbackContent> = {
   es: {
     title: "Una familia dedicada a las plantas",
     subtitle:
-      "es una empresa familiar de la provincia de Girona. Llevamos más de 25 años cultivando planta mediterránea y, cuando un proyecto necesita una especie que no tenemos, la conseguimos: trabajamos con una red de viveros locales de confianza para servir pedidos completos, de la primera planta a la última.",
+      "es una empresa familiar con más de 30 años de experiencia en el sector de la planta. Cultivamos planta mediterránea en la provincia de Girona y, cuando un proyecto necesita una especie que no tenemos, la conseguimos: trabajamos con una red de viveros de confianza en España y el resto de Europa para servir pedidos completos, de la primera planta a la última.",
     hero_button: "Ver nuestras plantas",
     our_clients: {
       title: "Nuestros clientes",
       subtitle:
-        "Del viverista al organismo público: damos servicio a todo tipo de proyectos verdes.",
+        "Del viverista al organismo público: damos servicio a todo tipo de proyectos verdes en toda Europa.",
       clients: withImages([
         { name: "Viveros", description: "Suministro entre viveros y planta joven para engorde." },
         { name: "Jardines", description: "Planta acabada y de temporada, lista para la venta." },
@@ -73,12 +73,12 @@ const content: Record<string, AboutUsFallbackContent> = {
   ca: {
     title: "Una família dedicada a les plantes",
     subtitle:
-      "és una empresa familiar de la província de Girona. Fa més de 25 anys que cultivem planta mediterrània i, quan un projecte necessita una espècie que no tenim, l'aconseguim: treballem amb una xarxa de vivers locals de confiança per servir comandes completes, de la primera planta a l'última.",
+      "és una empresa familiar amb més de 30 anys d'experiència en el sector de la planta. Cultivem planta mediterrània a la província de Girona i, quan un projecte necessita una espècie que no tenim, l'aconseguim: treballem amb una xarxa de vivers de confiança a Espanya i la resta d'Europa per servir comandes completes, de la primera planta a l'última.",
     hero_button: "Veure les nostres plantes",
     our_clients: {
       title: "Els nostres clients",
       subtitle:
-        "Del viverista a l'organisme públic: donem servei a tota mena de projectes verds.",
+        "Del viverista a l'organisme públic: donem servei a tota mena de projectes verds arreu d'Europa.",
       clients: withImages([
         { name: "Vivers", description: "Subministrament entre vivers i planta jove per engreixar." },
         { name: "Jardins", description: "Planta acabada i de temporada, a punt per a la venda." },
@@ -100,12 +100,12 @@ const content: Record<string, AboutUsFallbackContent> = {
   en: {
     title: "A family devoted to plants",
     subtitle:
-      "is a family-run company from the province of Girona, Catalonia. We have been growing Mediterranean plants for more than 25 years — and when a project calls for a species we don't grow, we source it through our trusted network of local nurseries, delivering complete orders across Spain and Europe.",
+      "is a family-run company with more than 30 years of experience in the plant trade. We grow Mediterranean plants in the province of Girona, Catalonia — and when a project calls for a species we don't grow, we source it through our trusted network of nurseries across Spain and the rest of Europe, delivering complete orders wherever the project is.",
     hero_button: "See our plants",
     our_clients: {
       title: "Our clients",
       subtitle:
-        "From nurseries to public bodies: we serve every kind of green project.",
+        "From nurseries to public bodies: we serve every kind of green project across Europe.",
       clients: withImages([
         { name: "Nurseries", description: "Trade supply and young plants for growing on." },
         { name: "Garden centres", description: "Finished, seasonal plants ready for retail." },
@@ -127,12 +127,12 @@ const content: Record<string, AboutUsFallbackContent> = {
   fr: {
     title: "Une famille passionnée de plantes",
     subtitle:
-      "est une entreprise familiale de la province de Gérone, en Catalogne. Depuis plus de 25 ans, nous cultivons des plantes méditerranéennes — et lorsqu'un projet demande une espèce que nous ne cultivons pas, nous la trouvons grâce à notre réseau de pépinières locales de confiance, avec livraison en France et dans toute l'Europe.",
+      "est une entreprise familiale forte de plus de 30 ans d'expérience dans le secteur végétal. Nous cultivons des plantes méditerranéennes dans la province de Gérone, en Catalogne — et lorsqu'un projet demande une espèce que nous ne cultivons pas, nous la trouvons grâce à notre réseau de pépinières de confiance en Espagne et dans le reste de l'Europe, pour livrer des commandes complètes partout en Europe.",
     hero_button: "Voir nos plantes",
     our_clients: {
       title: "Nos clients",
       subtitle:
-        "De la pépinière aux organismes publics : nous accompagnons tous les projets verts.",
+        "De la pépinière aux organismes publics : nous accompagnons tous les projets verts partout en Europe.",
       clients: withImages([
         { name: "Pépinières", description: "Approvisionnement entre professionnels et jeunes plants à élever." },
         { name: "Jardineries", description: "Plantes finies et de saison, prêtes à la vente." },

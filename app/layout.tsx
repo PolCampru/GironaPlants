@@ -25,11 +25,11 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL("https://gironaplants.com"),
   title: {
-    default: "GironaPlants - Mediterranean Plants Nursery",
+    default: "GironaPlants - Plant sourcing across Europe",
     template: "%s | GironaPlants"
   },
-  description: "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the plants your project needs, with delivery across Spain and Europe.",
-  keywords: ["plants", "nursery", "Girona", "Mediterranean", "trees", "shrubs", "gardening", "Catalonia", "wholesale plants", "plant sourcing", "landscaping"],
+  description: "More than 30 years sourcing plants for professionals. We grow Mediterranean plants at our nursery in Girona and source any other species through our grower network across Europe.",
+  keywords: ["plant sourcing Europe", "wholesale plants Europe", "plant supplier", "plants", "nursery", "Girona", "Mediterranean", "trees", "shrubs", "gardening", "Catalonia", "landscaping"],
   authors: [{ name: "GironaPlants" }],
   creator: "GironaPlants",
   publisher: "GironaPlants",
@@ -43,21 +43,21 @@ export const metadata = {
     locale: "ca_ES",
     url: "https://gironaplants.com",
     siteName: "GironaPlants",
-    title: "GironaPlants - Mediterranean Plants Nursery",
-    description: "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the plants your project needs.",
+    title: "GironaPlants - Plant sourcing across Europe",
+    description: "More than 30 years sourcing plants for professionals. Own production in Girona plus a grower network across Europe.",
     images: [
       {
         url: "/images/lavenders.jpg",
         width: 1280,
         height: 853,
-        alt: "GironaPlants - Mediterranean Plants Nursery",
+        alt: "GironaPlants - Plant sourcing across Europe",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GironaPlants - Mediterranean Plants Nursery",
-    description: "Family-run nursery in Girona, Catalonia. We grow Mediterranean plants and source the plants your project needs.",
+    title: "GironaPlants - Plant sourcing across Europe",
+    description: "More than 30 years sourcing plants for professionals. Own production in Girona plus a grower network across Europe.",
     images: ["/images/lavenders.jpg"],
   },
   robots: {

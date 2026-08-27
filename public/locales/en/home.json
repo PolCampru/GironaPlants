@@ -9,7 +9,8 @@
     {
       "key": "plant2",
       "title": "Rooted Cuttings",
-      "description": "High-quality cuttings for professionals looking for strong plants adapted to the Mediterranean climate."
+      "description": "High-quality cuttings for professionals looking for strong plants adapted to the Mediterranean climate.",
+      "img": "/images/plants/rootedCuttings.jpg"
     },
     {
       "key": "plant3",
@@ -26,27 +27,32 @@
     {
       "key": "plant5",
       "title": "Groundcovers",
-      "description": "Creeping plants that cover the soil, reduce erosion and help retain moisture in the garden."
+      "description": "Creeping plants that cover the soil, reduce erosion and help retain moisture in the garden.",
+      "img": "/images/plants/groundcovers.jpg"
     },
     {
       "key": "plant6",
       "title": "Grasses",
-      "description": "Ornamental, resilient varieties that add movement and a distinctive touch to any green space."
+      "description": "Ornamental, resilient varieties that add movement and a distinctive touch to any green space.",
+      "img": "/images/plants/grasses.jpg"
     },
     {
       "key": "plant7",
       "title": "Aquatic Plants",
-      "description": "Species adapted to wet areas and ponds that improve biodiversity and attract beneficial wildlife."
+      "description": "Species adapted to wet areas and ponds that improve biodiversity and attract beneficial wildlife.",
+      "img": "/images/plants/aquatic.jpg"
     },
     {
       "key": "plant8",
       "title": "Ferns",
-      "description": "Lush plants that bring freshness and an exotic look, ideal for shaded areas and natural gardens."
+      "description": "Lush plants that bring freshness and an exotic look, ideal for shaded areas and natural gardens.",
+      "img": "/images/plants/ferns.jpg"
     },
     {
       "key": "plant9",
       "title": "Others",
-      "description": "Discover the rest of our plants to complete any gardening or landscaping project."
+      "description": "Discover the rest of our plants to complete any gardening or landscaping project.",
+      "img": "/images/plants/nursery.jpg"
     }
   ]
 }

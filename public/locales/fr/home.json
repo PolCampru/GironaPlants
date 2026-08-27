@@ -9,7 +9,8 @@
     {
       "key": "plant2",
       "title": "Boutures enracinées",
-      "description": "Boutures de haute qualité pour les professionnels à la recherche de plantes vigoureuses adaptées au climat méditerranéen."
+      "description": "Boutures de haute qualité pour les professionnels à la recherche de plantes vigoureuses adaptées au climat méditerranéen.",
+      "img": "/images/plants/rootedCuttings.jpg"
     },
     {
       "key": "plant3",
@@ -26,27 +27,32 @@
     {
       "key": "plant5",
       "title": "Tapisants",
-      "description": "Plantes rampantes qui couvrent le sol, réduisent l'érosion et aident à conserver l'humidité du jardin."
+      "description": "Plantes rampantes qui couvrent le sol, réduisent l'érosion et aident à conserver l'humidité du jardin.",
+      "img": "/images/plants/groundcovers.jpg"
     },
     {
       "key": "plant6",
       "title": "Graminées",
-      "description": "Variétés ornementales et résistantes qui apportent du mouvement et une touche distinctive à tout espace vert."
+      "description": "Variétés ornementales et résistantes qui apportent du mouvement et une touche distinctive à tout espace vert.",
+      "img": "/images/plants/grasses.jpg"
     },
     {
       "key": "plant7",
       "title": "Plantes aquatiques",
-      "description": "Espèces adaptées aux zones humides et aux bassins qui améliorent la biodiversité et attirent une faune bénéfique."
+      "description": "Espèces adaptées aux zones humides et aux bassins qui améliorent la biodiversité et attirent une faune bénéfique.",
+      "img": "/images/plants/aquatic.jpg"
     },
     {
       "key": "plant8",
       "title": "Fougères",
-      "description": "Plantes luxuriantes qui apportent fraîcheur et exotisme, idéales pour les zones ombragées et les jardins naturels."
+      "description": "Plantes luxuriantes qui apportent fraîcheur et exotisme, idéales pour les zones ombragées et les jardins naturels.",
+      "img": "/images/plants/ferns.jpg"
     },
     {
       "key": "plant9",
       "title": "Autres",
-      "description": "Découvrez le reste de nos plantes pour compléter tout projet de jardinage ou de paysagisme."
+      "description": "Découvrez le reste de nos plantes pour compléter tout projet de jardinage ou de paysagisme.",
+      "img": "/images/plants/nursery.jpg"
     }
   ]
 }
