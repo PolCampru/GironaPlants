@@ -16,11 +16,29 @@ SEED_FORCE=1 bash cms/seed-content-to-vps.sh # overwrite existing CMS copy
 ```
 
 The seed script only writes attributes that exist in the deployed schema
-(string/text/richtext/json) and reports anything it skipped — e.g. if the
-`home` type lacks `hero_badge`, `hero_secondary_button` or `trust_items`
-(JSON), add them via the schema-edit + rebuild procedure described below and
-re-run. It never touches media, relations or components, and by default it
-never overwrites content that editors typed in the admin panel.
+(string/text/richtext/json) and reports anything it skipped. It never touches
+media, relations or components, and by default it never overwrites content
+that editors typed in the admin panel.
+
+`hero_badge`, `hero_secondary_button` and `trust_items` (JSON) were added to
+the `home` single type on 2026-08-27, so the whole hero is now editable from
+the admin panel. If the schema needs another field, add it to
+`cms/app/src/api/<type>/content-types/<type>/schema.json` in this repo, push,
+then on the VPS:
+
+```bash
+ssh root@46.202.135.74
+cd /opt/gironaplants
+cp data/data.db backups/data.db.bak-$(date +%Y%m%d-%H%M%S)
+cd frontend && git fetch --depth 1 origin main && git checkout -f -B main origin/main && cd ..
+cp frontend/cms/app/src/api/home/content-types/home/schema.json \
+   strapi/src/api/home/content-types/home/schema.json
+docker compose build strapi && docker compose up -d strapi   # tables are created on boot
+```
+
+then re-run the seed from your machine. `cms/app/` is the source of truth for
+the Strapi project, but nothing syncs it to `/opt/gironaplants/strapi/`
+automatically — that copy step is manual.
 
 # CMS migration: catalogues as an array
 
