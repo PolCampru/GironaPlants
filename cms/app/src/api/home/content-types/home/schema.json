@@ -13,9 +13,12 @@
     "i18n": { "localized": true }
   },
   "attributes": {
+    "hero_badge":        { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "hero_title":        { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "hero_subtitle":     { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
     "hero_button":       { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "hero_secondary_button": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "trust_items":       { "type": "json",    "pluginOptions": { "i18n": { "localized": true } } },
     "hero_images":       { "type": "media", "multiple": true, "allowedTypes": ["images"], "pluginOptions": { "i18n": { "localized": false } } },
     "plants_title":      { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "plants_subtitle":   { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
