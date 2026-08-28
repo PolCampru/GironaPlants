@@ -16,4 +16,7 @@ export type ItemType = {
 
 export type CartStateType = {
   items: ItemType[];
+  /** False until the browser's saved quote has been adopted after mount, so
+   *  the first client render matches the server's. */
+  hydrated: boolean;
 };

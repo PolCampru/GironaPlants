@@ -189,6 +189,13 @@ export const DrawerHeader = styled.div`
     font-weight: 500;
     color: ${({ theme }) => theme.colors.dark};
   }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    min-width: 0;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -210,8 +217,11 @@ export const CloseButton = styled.button`
   }
 `;
 
+/** The scroll now lives inside BudgetNavbar, which pins its own footer under
+ *  the list; this only has to give it the remaining height. */
 export const DrawerBody = styled.div`
   flex: 1;
-  overflow-y: auto;
-  padding: 1.25rem 1.5rem 1.5rem;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 `;

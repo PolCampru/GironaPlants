@@ -21,3 +21,13 @@ export function formatPrice(value: number | string | undefined | null, locale = 
     currency: "EUR",
   }).format(amount);
 }
+
+/**
+ * Plain integer formatting — quantities in the quote, where "1.530 unidades"
+ * has to use the locale's thousands separator.
+ */
+export function formatNumber(value: number, locale = "es") {
+  return new Intl.NumberFormat(LOCALE_TAGS[locale] ?? LOCALE_TAGS.es).format(
+    value
+  );
+}

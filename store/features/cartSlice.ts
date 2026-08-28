@@ -1,37 +1,50 @@
 import { CartStateType, ItemType } from "@/types/Cart";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const loadCartFromLocalStorage = (): CartStateType => {
+/** The lines the browser has saved. Returns [] anywhere there is no storage. */
+const loadCartFromLocalStorage = (): ItemType[] => {
   try {
-    if (typeof window === "undefined") {
-      return { items: [] };
-    } else if (!localStorage) return { items: [] };
+    if (typeof window === "undefined" || !localStorage) return [];
     const serializedCart = localStorage.getItem("cartItems");
-    if (serializedCart === null) {
-      return { items: [] };
-    }
-    return JSON.parse(serializedCart) as CartStateType;
+    if (serializedCart === null) return [];
+    const parsed = JSON.parse(serializedCart) as { items?: ItemType[] };
+    return Array.isArray(parsed?.items) ? parsed.items : [];
   } catch (error) {
     console.error("Failed to load cart from localStorage:", error);
-    return { items: [] };
+    return [];
   }
 };
 
+/** Only the lines are persisted; `hydrated` is runtime state. */
 const saveCartToLocalStorage = (cart: CartStateType) => {
   try {
-    const serializedCart = JSON.stringify(cart);
-    localStorage.setItem("cartItems", serializedCart);
+    localStorage.setItem("cartItems", JSON.stringify({ items: cart.items }));
   } catch (error) {
     console.error("Failed to save cart to localStorage:", error);
   }
 };
 
-const initialState: CartStateType = loadCartFromLocalStorage();
+/**
+ * The store starts EMPTY on both sides.
+ *
+ * It used to be seeded straight from localStorage, which only exists in the
+ * browser: the server rendered zero lines and the client rendered the real
+ * quote, so React failed hydration on every page that shows the count (the
+ * navbar badge) and threw the /budget tree away to re-render it. `hydrateCart`
+ * is dispatched from an effect after mount instead — see CartHydrator.
+ */
+const initialState: CartStateType = { items: [], hydrated: false };
 
 const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+    /** Adopts the browser's saved quote. Does not write back: this IS what
+     *  localStorage holds. */
+    hydrateCart(state, action: PayloadAction<ItemType[]>) {
+      state.items = action.payload;
+      state.hydrated = true;
+    },
     addItem(state, action: PayloadAction<ItemType>) {
       state.items.push(action.payload);
       state.items.sort((a, b) => a.id - b.id);
@@ -58,7 +71,9 @@ const cartSlice = createSlice({
   },
 });
 
-export const { addItem, removeItem, editQuantity, clearCart } =
+export const { hydrateCart, addItem, removeItem, editQuantity, clearCart } =
   cartSlice.actions;
+
+export { loadCartFromLocalStorage };
 
 export default cartSlice.reducer;

@@ -18,7 +18,7 @@ const i18nConfig: InitOptions = {
   // "privacy" was missing, so it was only ever fetched lazily on that page.
   // Only namespaces still read in the browser. Everything that has to be in
   // the server-rendered HTML moved to data/ modules — see data/navigation.ts.
-  ns: ["addProducts", "budget", "offers", "privacy", "products"],
+  ns: ["addProducts", "offers", "privacy", "products"],
   detection: {
     order: ["path"],
     lookupFromPathIndex: 0,

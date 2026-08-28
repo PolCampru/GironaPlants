@@ -1,14 +1,21 @@
+"use client";
+
 import React from "react";
-import {
-  AddPlant,
-  AddPlantAndContinueWrapper,
-  BudgetNavbarWrapper,
-} from "./BudgetNavbar.style";
+import { FiArrowRight } from "react-icons/fi";
 import Budget from "../../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
-import useProducts from "@/hooks/useProducts";
-import Link from "next/link";
-import { SpecificBudgetDataType } from "@/types/Budget";
+import useLocale from "@/hooks/useLocale";
+import { navHref } from "@/data/navigation";
+import { formatNumber } from "@/lib/format";
+import { plural } from "@/data/budgetContent";
+import {
+  AddManually,
+  ContinueDisabled,
+  ContinueLink,
+  DrawerFooter,
+  DrawerLayout,
+  DrawerScroll,
+} from "./BudgetNavbar.style";
 
 const BudgetNavbar = ({
   setHideModal,
@@ -17,54 +24,83 @@ const BudgetNavbar = ({
 }) => {
   const {
     items,
-    budgetData,
+    hydrated,
+    copy,
+    speciesCount,
+    unitCount,
+    addCostumPlant,
     handleClearCart,
     deleteItem,
+    restoreItems,
     handleChangeQuantity,
   } = useBudget();
 
-  const disabled = items.length === 0;
+  const locale = useLocale();
+  const isEmpty = items.length === 0;
 
-  const { dataAddProduct, addCostumPlant } = useProducts();
-
-  const specificBudgetData: SpecificBudgetDataType = {
-    emptyCard: budgetData.emptyCard,
-    emptyState: budgetData.emptyState,
-    total: budgetData.total,
-    articles: budgetData.articles,
-    addPlant1: budgetData.addPlant1,
-    addPlant2: budgetData.addPlant2,
-  };
+  const totals = `${plural(
+    copy.speciesOne,
+    copy.speciesMany,
+    speciesCount,
+    formatNumber(speciesCount, locale)
+  )} · ${plural(
+    copy.unitsOne,
+    copy.unitsMany,
+    unitCount,
+    formatNumber(unitCount, locale)
+  )}`;
 
   return (
-    <BudgetNavbarWrapper>
-      <Budget
-        items={items}
-        handleClearCart={handleClearCart}
-        deleteItem={deleteItem}
-        handleChangeQuantity={handleChangeQuantity}
-        data={specificBudgetData}
-      />
-      <AddPlantAndContinueWrapper $isDisabled={disabled}>
-        <AddPlant>
-          {dataAddProduct.question}
-          <span onClick={addCostumPlant}>{dataAddProduct.button}</span>
-        </AddPlant>
-        <Link
-          href={`budget`}
-          className="link"
-          onClick={(e) => {
-            if (disabled) {
-              e.preventDefault();
-            } else {
-              setHideModal(false);
-            }
-          }}
-        >
-          {budgetData.button}
-        </Link>
-      </AddPlantAndContinueWrapper>
-    </BudgetNavbarWrapper>
+    <DrawerLayout>
+      <DrawerScroll>
+        <Budget
+          variant="drawer"
+          items={items}
+          copy={copy}
+          hydrated={hydrated}
+          speciesCount={speciesCount}
+          unitCount={unitCount}
+          handleClearCart={handleClearCart}
+          deleteItem={deleteItem}
+          restoreItems={restoreItems}
+          handleChangeQuantity={handleChangeQuantity}
+          addCostumPlant={addCostumPlant}
+          onNavigate={() => setHideModal(false)}
+        />
+      </DrawerScroll>
+
+      <DrawerFooter>
+        {!isEmpty && (
+          <div className="totals">
+            <strong>{totals}</strong>
+            <span>{copy.pricedIn}</span>
+          </div>
+        )}
+
+        {isEmpty ? (
+          <ContinueDisabled type="button" disabled>
+            {copy.drawerCta}
+          </ContinueDisabled>
+        ) : (
+          // Was href="budget" — a relative href, so from /en/products it
+          // resolved to /en/products/budget.
+          <ContinueLink
+            href={navHref(locale, "budget")}
+            onClick={() => setHideModal(false)}
+          >
+            {copy.drawerCta}
+            <FiArrowRight aria-hidden="true" size={17} />
+          </ContinueLink>
+        )}
+
+        <AddManually>
+          {copy.addQuestion}
+          <button type="button" onClick={addCostumPlant}>
+            {copy.addButton}
+          </button>
+        </AddManually>
+      </DrawerFooter>
+    </DrawerLayout>
   );
 };
 

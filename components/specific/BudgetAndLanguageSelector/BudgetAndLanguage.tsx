@@ -133,7 +133,10 @@ const BudgetAndLanguage = ({
               transition={{ type: "tween", duration: 0.25 }}
             >
               <DrawerHeader>
-                <h2>{budgetLabel}</h2>
+                <div className="title">
+                  <h2>{budgetLabel}</h2>
+                  <CountBadge>{items.length}</CountBadge>
+                </div>
                 <CloseButton
                   type="button"
                   onClick={() => setIsBudgetOpen(false)}
