@@ -5,11 +5,13 @@ import Link from "next/link";
 
 export const PlantsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* Eight cells: seven genera plus the "can't find it?" card. Four and two
+     columns both divide evenly; three would leave a ragged last row. */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;
   margin-top: 2.5rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
