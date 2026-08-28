@@ -6,16 +6,25 @@ import {
   BudgetScreenWrapper,
   ContactContainer,
   FlexContainer,
-  Line,
 } from "./BudgetScreen.style";
-import Title from "@/components/ui/Title/Title";
 
 import Budget from "../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
 import Form from "@/components/ui/Form/Form";
 import { SpecificBudgetDataType } from "@/types/Budget";
+import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
+import type { PageHeading } from "@/data/pageHeadings";
+import type { FormType } from "@/types/Contact";
 
-const BudgetScreen = () => {
+const BudgetScreen = ({
+  heading,
+  formHeading,
+  formContent,
+}: {
+  heading: PageHeading;
+  formHeading: PageHeading;
+  formContent: FormType;
+}) => {
   const {
     items,
     budgetData,
@@ -35,8 +44,12 @@ const BudgetScreen = () => {
 
   return (
     <BudgetScreenWrapper>
-      <Title title={budgetData.title} />
-      <Line />
+      <SectionHeading
+        as="h1"
+        label={heading.label}
+        title={heading.title}
+        lead={heading.lead}
+      />
       <FlexContainer>
         <BudgetContainer>
           <Budget
@@ -48,7 +61,7 @@ const BudgetScreen = () => {
           />
         </BudgetContainer>
         <ContactContainer>
-          <Form />
+          <Form heading={formHeading} content={formContent} />
         </ContactContainer>
       </FlexContainer>
     </BudgetScreenWrapper>

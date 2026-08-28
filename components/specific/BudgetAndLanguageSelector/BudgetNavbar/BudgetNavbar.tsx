@@ -4,7 +4,6 @@ import {
   AddPlantAndContinueWrapper,
   BudgetNavbarWrapper,
 } from "./BudgetNavbar.style";
-import Title from "@/components/ui/Title/Title";
 import Budget from "../../Budget/Budget";
 import useBudget from "@/hooks/useBudget";
 import useProducts from "@/hooks/useProducts";
@@ -39,7 +38,6 @@ const BudgetNavbar = ({
 
   return (
     <BudgetNavbarWrapper>
-      <Title title={budgetData.title} />
       <Budget
         items={items}
         handleClearCart={handleClearCart}

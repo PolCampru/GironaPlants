@@ -1,110 +1,89 @@
+"use client";
+
 import Image from "next/image";
-import { styled } from "styled-components";
+import { useTranslation } from "react-i18next";
+import styled from "styled-components";
 
 const EmptyStateWrapper = styled.div`
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 3.5rem 1.5rem 4rem;
+  text-align: center;
 
   h3 {
-    margin-top: 32px;
-    margin-bottom: 8px;
-    font-size: 24px;
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: 1.625rem;
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.dark};
   }
+
   p {
-    margin: 0;
-    font-size: 16px;
+    font-size: 0.9375rem;
+    color: ${({ theme }) => theme.colors.muted};
+    max-width: 26rem;
+  }
 
-    span {
-      cursor: pointer;
-      color: ${({ theme }) => theme.colors.brandGreen};
+  button {
+    margin-top: 0.75rem;
+
+    display: inline-flex;
+    align-items: center;
+    height: ${({ theme }) => theme.control.height};
+    padding-inline: 1.25rem;
+
+    background: ${({ theme }) => theme.colors.brandGreen};
+    border: 0;
+    border-radius: ${({ theme }) => theme.radii.pill};
+    color: ${({ theme }) => theme.colors.white};
+
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.greenDeep};
     }
-  }
-
-  .icon-container {
-    width: 40%;
-  }
-
-  .icon {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    text-align: center;
   }
 `;
 
+/**
+ * Copy comes from i18n. It used to sniff the locale out of
+ * `window.location.href` and branch on it in JSX, which rendered the Spanish
+ * strings on the server for every locale and then swapped them on the client.
+ */
 function EmptyState({
   emptyStateFunction,
 }: {
   emptyStateFunction?: () => void;
 }) {
-  let language = "es";
-  if (typeof window !== "undefined") {
-    const url = window.location.href;
-    if (url.includes("/en")) {
-      language = "en";
-    } else if (url.includes("/ca")) {
-      language = "ca";
-    } else if (url.includes("/fr")) {
-      language = "fr";
-    }
-  }
+  const { t } = useTranslation(["products"]);
+  const copy = t("products.emptyState", { returnObjects: true }) as {
+    title?: string;
+    text?: string;
+    button?: string;
+  };
+
   return (
-    <EmptyStateWrapper className="empty-state-container">
+    <EmptyStateWrapper>
       <Image
         src="/images/products/noResults.png"
-        alt="no Products"
-        width={300}
-        height={300}
-        style={{
-          width: '100%',
-          height: 'auto',
-          maxWidth: '300px',
-          aspectRatio: '1/1',
-          objectFit: 'contain'
-        }}
-        sizes="(max-width: 768px) 250px, 300px"
+        alt=""
+        width={220}
+        height={220}
+        style={{ width: "100%", maxWidth: "13.75rem", height: "auto" }}
+        sizes="220px"
       />
-      {language === "en" ? (
-        <>
-          <h3>No results found</h3>
-          <p>
-            Add what you need <span onClick={emptyStateFunction}>here</span>
-          </p>
-        </>
-      ) : language === "ca" ? (
-        <>
-          <h3>No hem trobat resultats</h3>
-          <p>
-            Afegeix el que necessitis{" "}
-            <span onClick={emptyStateFunction}>aquí</span>
-          </p>
-        </>
-      ) : language === "fr" ? (
-        <>
-          <h3>Aucun résultat trouvé</h3>
-          <p>
-            Ajoutez ce dont vous avez besoin{" "}
-            <span onClick={emptyStateFunction}>ici</span>
-          </p>
-        </>
-      ) : (
-        <>
-          <h3>No se han encontrado resultados</h3>
-          <p>
-            Añade lo que necesitas{" "}
-            <span onClick={emptyStateFunction}>aquí</span>
-          </p>
-        </>
+      <h3>{copy?.title}</h3>
+      <p>{copy?.text}</p>
+      {emptyStateFunction && copy?.button && (
+        <button type="button" onClick={emptyStateFunction}>
+          {copy.button}
+        </button>
       )}
     </EmptyStateWrapper>
   );

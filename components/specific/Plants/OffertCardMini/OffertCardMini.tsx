@@ -1,3 +1,5 @@
+import { formatPrice } from "@/lib/format";
+import useLocale from "@/hooks/useLocale";
 import React from "react";
 import { OfferType } from "@/types/Offers";
 import styled from "styled-components";
@@ -91,6 +93,7 @@ interface OffertCardMiniProps {
 }
 
 const OffertCardMini = ({ offer, handleAddToCart }: OffertCardMiniProps) => {
+  const locale = useLocale();
   return (
     <CardWrapper>
       <div className="container-discount">-{offer.discount}%</div>
@@ -102,8 +105,8 @@ const OffertCardMini = ({ offer, handleAddToCart }: OffertCardMiniProps) => {
         {offer.height && <p className="attributes">{offer.height}</p>}
       </div>
       <div className="container-price">
-        <p className="new-price">{offer.new_price}€</p>
-        <p className="old-price">{offer.old_price}€</p>
+        <p className="new-price">{formatPrice(offer.new_price, locale)}</p>
+        <p className="old-price">{formatPrice(offer.old_price, locale)}</p>
       </div>
       <div className="container-add-to-cart">
         <AddToCart

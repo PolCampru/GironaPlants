@@ -1,37 +1,38 @@
+"use client";
+
 import styled from "styled-components";
 
-export const ContactWrapper = styled.section`
+export const ContactPanel = styled.div`
   position: relative;
-  width: 100%;
-  margin: 0 auto 6rem;
-  padding: 3rem 3.5rem;
-
-  background-color: ${({ theme }) => theme.colors.moss};
-  border-radius: 1.25rem;
   overflow: hidden;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  padding: 3.5rem;
+  border-radius: ${({ theme }) => theme.radii.panel};
+  background-color: ${({ theme }) => theme.colors.moss};
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  /* Decorative glow, behind the content. */
   &::before {
     content: "";
     position: absolute;
-    top: -8rem;
-    right: -8rem;
-    width: 24rem;
-    height: 24rem;
+    top: -8.75rem;
+    right: -7.5rem;
+    width: 26.25rem;
+    height: 26.25rem;
     border-radius: 50%;
-    background-color: rgba(17, 139, 80, 0.35);
+    background-color: rgba(17, 139, 80, 0.3);
     pointer-events: none;
   }
 
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2.5rem 2rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    padding: 2.5rem 1.75rem;
   }
 `;
 
@@ -40,46 +41,42 @@ export const ContainerText = styled.div`
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  color: ${({ theme }) => theme.colors.white};
+  gap: 0.875rem;
+  max-width: 39rem;
 
   h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  h3 {
-    font-size: 1.15rem;
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: clamp(1.875rem, 3vw, 2.5rem);
     font-weight: 400;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.85);
-    max-width: 34rem;
+    line-height: 1.1;
+    color: ${({ theme }) => theme.colors.white};
   }
 
-  @media (max-width: 1024px) {
-    h2 {
-      font-size: 1.85rem;
-    }
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.78);
   }
 `;
 
 export const ContactMeta = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 2rem;
-  margin-top: 1rem;
+  gap: 0.75rem 1.75rem;
+  margin-top: 0.5rem;
 
   a {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5625rem;
 
     color: ${({ theme }) => theme.colors.white};
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 600;
+    overflow-wrap: anywhere;
 
     svg {
+      flex-shrink: 0;
       color: ${({ theme }) => theme.colors.lime};
     }
 

@@ -16,16 +16,29 @@
     "hero_badge":        { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "hero_title":        { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "hero_subtitle":     { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
-    "hero_button":       { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "hero_secondary_button": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
-    "trust_items":       { "type": "json",    "pluginOptions": { "i18n": { "localized": true } } },
+    "hero_tag":          { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "hero_images":       { "type": "media", "multiple": true, "allowedTypes": ["images"], "pluginOptions": { "i18n": { "localized": false } } },
+
+    "search_placeholder": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "search_button":      { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "search_suggestions": { "type": "json",   "pluginOptions": { "i18n": { "localized": true } } },
+
+    "stats":             { "type": "json",    "pluginOptions": { "i18n": { "localized": true } } },
+
     "plants_title":      { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "plants_headline":   { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "plants_subtitle":   { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
     "plants_button":     { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
-    "catalogues_title":  { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
-    "catalogues_subtitle": { "type": "text",  "pluginOptions": { "i18n": { "localized": true } } },
-    "catalogues_button": { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+
+    "how_title":         { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
+    "how_steps":         { "type": "json",    "pluginOptions": { "i18n": { "localized": true } } },
+
+    "catalogues_title":     { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_headline":  { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_subtitle":  { "type": "text",   "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_button":    { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+
     "contact_title":     { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } },
     "contact_subtitle":  { "type": "text",    "pluginOptions": { "i18n": { "localized": true } } },
     "contact_button":    { "type": "string",  "pluginOptions": { "i18n": { "localized": true } } }

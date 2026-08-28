@@ -1,60 +1,41 @@
+"use client";
+
 import styled from "styled-components";
 
 export const BudgetScreenWrapper = styled.div`
-  width: 100%;
-  padding-top: 8rem;
-  padding-bottom: 2rem;
-
+  padding-top: 3.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 0.75rem;
-`;
+  gap: 1.75rem;
 
-export const Line = styled.div`
-  width: 100%;
-  height: 0.125rem;
-  align-self: stretch;
-  background: ${({ theme }) => theme.colors.hoverGreen};
+  @media (max-width: 768px) {
+    padding-top: 2.5rem;
+  }
 `;
 
 export const FlexContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 1.75rem;
+  align-items: start;
 
   @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 `;
 
 export const BudgetContainer = styled.div`
-  width: 54%;
-  height: 100%;
-  background-color: ${({ theme }) => theme.colors.creamLight};
-  padding: 1rem 2rem;
-  border-radius: 0.625rem;
-
-  @media (max-width: 1024px) {
-    width: 100%;
-    padding: 1rem;
-  }
+  padding: 1.5rem;
+  background-color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.panel};
 
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 1.125rem;
   }
 `;
 
 export const ContactContainer = styled.div`
-  width: 44%;
-  height: 100%;
-  border-radius: 0.625rem;
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
+  min-width: 0;
 `;

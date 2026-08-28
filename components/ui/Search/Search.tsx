@@ -1,72 +1,36 @@
+"use client";
+
 import React from "react";
-import { StyledWrapper } from "./Search.style";
+import { FiSearch, FiX } from "react-icons/fi";
+import { ResetButton, SearchField, SearchInput } from "./Search.style";
 
 interface SearchProps {
   placeholder: string;
   onChange: (value: string) => void;
   value: string;
+  clearLabel: string;
 }
 
-const Search = ({ placeholder, onChange, value }: SearchProps) => {
-  return (
-    <StyledWrapper>
-      <div className="form">
-        <button type="submit">
-          <svg
-            width={17}
-            height={16}
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-labelledby="search"
-          >
-            <path
-              d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
-              stroke="currentColor"
-              strokeWidth="1.333"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-
-        <input
-          className="input"
-          placeholder={placeholder}
-          required
-          type="text"
-          onChange={(e) => {
-            onChange(e.target.value);
-          }}
-          value={value}
-        />
-
-        <button
-          className="reset"
-          type="button"
-          onClick={(e) => {
-            e.preventDefault();
-            onChange("");
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-    </StyledWrapper>
-  );
-};
+const Search = ({ placeholder, onChange, value, clearLabel }: SearchProps) => (
+  <SearchField>
+    <FiSearch aria-hidden="true" size={16} />
+    {/* The old markup wrapped this in a form with a submit button and
+        `required`, so an empty field showed the browser's :invalid styling
+        before the user had typed anything. */}
+    <SearchInput
+      type="search"
+      placeholder={placeholder}
+      aria-label={placeholder}
+      value={value}
+      onChange={(event) => onChange(event.target.value)}
+      autoComplete="off"
+    />
+    {value && (
+      <ResetButton type="button" onClick={() => onChange("")} aria-label={clearLabel}>
+        <FiX aria-hidden="true" size={14} strokeWidth={2.6} />
+      </ResetButton>
+    )}
+  </SearchField>
+);
 
 export default Search;

@@ -1,6 +1,5 @@
 {
   "products": {
-    "title": "Produits",
     "table": {
       "titleGenus": "GENRE",
       "titleDescription": "DESCRIPTION",
@@ -10,25 +9,70 @@
     },
     "filters": {
       "title": "Filtres",
-      "searchPlaceholder": "Recherche...",
+      "searchPlaceholder": "Cherchez un genre ou une espèce…",
       "offersTitle": "Offres",
       "potFilters": {
         "title": "Format",
         "seeAll": "Voir tout",
         "options": [
-          { "id": 1, "value": "Rd", "label": "Racine nue" },
-          { "id": 2, "value": "AH", "label": "Alvéole horticole" },
-          { "id": 3, "value": "AF", "label": "Alvéole forestière" },
-          { "id": 4, "value": "M", "label": "Pot" },
-          { "id": 5, "value": "C", "label": "Conteneur" }
+          {
+            "id": 1,
+            "value": "Rd",
+            "label": "Racine nue"
+          },
+          {
+            "id": 2,
+            "value": "AH",
+            "label": "Alvéole horticole"
+          },
+          {
+            "id": 3,
+            "value": "AF",
+            "label": "Alvéole forestière"
+          },
+          {
+            "id": 4,
+            "value": "M",
+            "label": "Pot"
+          },
+          {
+            "id": 5,
+            "value": "C",
+            "label": "Conteneur"
+          }
         ]
-      }
+      },
+      "clear": "Effacer"
     },
     "errorAddToCart": {
       "title": "L'article est déjà dans le panier"
     },
     "successAddToCart": {
       "title": "Article ajouté au panier"
+    },
+    "resultsOne": "résultat",
+    "resultsMany": "résultats",
+    "resultsFor": "pour",
+    "showing": "Affichage",
+    "sortLabel": "Trier",
+    "sortOptions": [
+      {
+        "value": "genus:asc",
+        "label": "Genre A-Z"
+      },
+      {
+        "value": "price:asc",
+        "label": "Prix ↑"
+      },
+      {
+        "value": "price:desc",
+        "label": "Prix ↓"
+      }
+    ],
+    "emptyState": {
+      "title": "Aucun résultat",
+      "text": "Essayez un autre genre ou retirez un filtre. Si l'espèce n'est pas au catalogue, nous la cherchons pour vous.",
+      "button": "Demandez-nous cette plante"
     }
   }
 }

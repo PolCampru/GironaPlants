@@ -11,23 +11,29 @@ export const BudgetItemWrapper = styled.div`
   position: relative;
 `;
 
-export const CloseButton = styled.div`
-  width: 1rem;
-  height: 1rem;
-  display: flex;
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 0.375rem;
+  right: 0.375rem;
+
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  position: absolute;
-  top: 2px;
-  right: 2px;
+  width: 1.75rem;
+  height: 1.75rem;
 
-  transition: transform 0.3s;
-
+  background: transparent;
+  border: 0;
+  border-radius: ${({ theme }) => theme.radii.pill};
+  color: ${({ theme }) => theme.colors.muted};
   cursor: pointer;
 
+  transition: background-color 0.18s ease, color 0.18s ease;
+
   &:hover {
-    transform: rotate(90deg);
+    background-color: ${({ theme }) => theme.colors.lightGray};
+    color: ${({ theme }) => theme.colors.danger};
   }
 `;
 
@@ -100,7 +106,7 @@ export const ContainerEnd = styled.div`
     }
 
     .old-price {
-      color: ${(props) => props.theme.colors.grey};
+      color: ${(props) => props.theme.colors.gray};
       text-decoration: line-through;
       font-size: 1rem;
       font-weight: 500;

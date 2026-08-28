@@ -98,4 +98,8 @@ correctamente.
 ## Pendiente
 
 - `EMAIL_PASS` sigue siendo la credencial SMTP anterior al compromiso: rotar en PIMEC.
-- `catalogues`, `homes`, `about_us_pages` y `offers` estan vacios en la BBDD.
+- `offers` esta vacio en la BBDD (la pagina /offers muestra su estado vacio).
+  `homes`, `about_us_pages` y `catalogues` estan poblados y publicados en los
+  cuatro idiomas desde 2026-08-28 — ver `cms/README.md`.
+- Faltan por subir los PDF de catalogo (`main_catalogue` y el componente
+  repetible `catalogues`) desde el panel de Strapi.

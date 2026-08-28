@@ -1,52 +1,59 @@
-import { ReactNode } from "react";
+"use client";
 
+import { ReactNode, useEffect } from "react";
 import styled from "styled-components";
-import theme from "@/lib/theme";
-import Image from "next/image";
+import { FiX } from "react-icons/fi";
+import useUiLabels from "@/hooks/useUiLabels";
 
-const ModalWrapper = styled.div`
+const Scrim = styled.div`
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-
-  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
   z-index: 9999;
 
-  .pop-up-container {
-    background-color: white;
-    height: fit-content;
-    width: fit-content;
-    padding: 34px 60px 34px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background-color: rgba(10, 42, 53, 0.55);
+`;
 
-    border-radius: 20px;
-    box-shadow: 0px 0px 0px 4px ${theme.colors.hoverGreen2};
+const Dialog = styled.div`
+  position: relative;
+  width: min(34rem, 100%);
+  max-height: calc(100dvh - 2.5rem);
+  overflow-y: auto;
 
-    @media (max-width: 768px) {
-      padding: 34px 20px 34px 20px;
-      width: 90%;
-    }
+  padding: 2rem;
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: ${({ theme }) => theme.radii.panel};
+  box-shadow: ${({ theme }) => theme.shadow.lg};
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
   }
 `;
 
-export const CrossWrapper = styled.a`
+const CloseButton = styled.button`
   position: absolute;
-  right: 16px;
-  top: 16px;
-  cursor: pointer;
-  z-index: 9999;
-  justify-self: flex-start;
-  align-self: flex-start;
+  top: 1rem;
+  right: 1rem;
 
-  transition: transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.25rem;
+  height: 2.25rem;
+
+  background: transparent;
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.pill};
+  color: ${({ theme }) => theme.colors.dark};
+  cursor: pointer;
+
   &:hover {
-    transform: rotate(90deg);
+    background: ${({ theme }) => theme.colors.paper};
   }
 `;
 
@@ -57,25 +64,37 @@ export const Modal = ({
   children: ReactNode;
   closeModal: () => void;
 }) => {
-  const handleBackdropClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (event.target === event.currentTarget) {
-      closeModal();
-    }
-  };
+  const labels = useUiLabels();
+
+  // Escape closes it and the page behind stops scrolling — neither worked
+  // before, and the old close control was an <a> with no href or label.
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeModal();
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [closeModal]);
+
   return (
-    <ModalWrapper onClick={handleBackdropClick}>
-      <div className="pop-up-container">
+    <Scrim
+      onClick={(event) => {
+        if (event.target === event.currentTarget) closeModal();
+      }}
+    >
+      <Dialog role="dialog" aria-modal="true">
+        <CloseButton type="button" onClick={closeModal} aria-label={labels.close}>
+          <FiX aria-hidden="true" size={18} />
+        </CloseButton>
         {children}
-        <CrossWrapper className="cross" onClick={() => closeModal()}>
-          <Image
-            src="/images/crossIcon.svg"
-            alt="cross"
-            width={24}
-            height={24}
-          />
-        </CrossWrapper>
-      </div>
-    </ModalWrapper>
+      </Dialog>
+    </Scrim>
   );
 };
 

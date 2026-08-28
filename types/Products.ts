@@ -28,6 +28,8 @@ export type QueryType = {
   search: string;
   offers: boolean;
   format: Record<number, string>;
+  /** Strapi sort expression, e.g. "price:asc". */
+  sort?: string;
 };
 
 export type potSizeOptionsType = {
@@ -37,7 +39,6 @@ export type potSizeOptionsType = {
 }[];
 
 export type productsDataType = {
-  title: string;
   table: {
     titleGenus: string;
     titleDescription: string;
@@ -45,8 +46,15 @@ export type productsDataType = {
     titleHeight: string;
     titlePrice: string;
   };
+  resultsOne: string;
+  resultsMany: string;
+  resultsFor: string;
+  showing: string;
+  sortLabel: string;
+  sortOptions: { value: string; label: string }[];
   filters: {
     title: string;
+    clear: string;
     searchPlaceholder: string;
     offersTitle: string;
     potFilters: {
@@ -58,6 +66,11 @@ export type productsDataType = {
         label: string;
       }[];
     };
+  };
+  emptyState: {
+    title: string;
+    text: string;
+    button: string;
   };
   errorAddToCart: {
     title: string;
@@ -87,4 +100,5 @@ export type ProductsPageProps = {
   params: Promise<{
     lng: string;
   }>;
+  searchParams: Promise<{ search?: string | string[] }>;
 };

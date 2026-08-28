@@ -1,110 +1,119 @@
+"use client";
+
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
-export const TableWrapper = styled(motion.div)`
-  width: 100%;
-  height: 55rem;
-  margin: 0.375rem 0 0;
-  box-shadow: 0 0.1875rem 0.5rem 0 rgba(0, 0, 0, 0.08);
-  overflow-x: hidden;
+export const TableCard = styled.div`
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.card};
+  overflow: hidden;
+`;
+
+export const TableScroll = styled.div`
+  max-height: 46rem;
   overflow-y: auto;
-  position: relative;
-
-  @media (max-width: 1024px) {
-    height: auto;
-    min-height: 55rem;
-    max-height: 55rem;
-    overflow-y: auto;
-    overflow-x: auto;
-  }
+  /* Horizontal scroll lives here, so a wide table never widens the page. */
+  overflow-x: auto;
+  overscroll-behavior: contain;
 
   table {
     width: 100%;
-    border-radius: 0.625rem;
+    min-width: 44rem;
     border-collapse: collapse;
-    white-space: nowrap;
+    text-align: left;
+  }
 
-    thead {
-      border-radius: 0.625rem 0.625rem 0 0;
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
-      th {
-        background: ${(props) => props.theme.colors.creamLight};
-        height: 2rem;
-        padding: 0 0 0 1.25rem;
-        text-align: left;
-        font-size: 0.75rem;
-        font-weight: 500;
-        line-height: 1.5rem;
-      }
+    th {
+      background: ${({ theme }) => theme.colors.paper};
+      border-bottom: 1px solid ${({ theme }) => theme.colors.line};
+
+      height: 2.875rem;
+      padding-inline: 1.375rem;
+
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: ${({ theme }) => theme.colors.muted};
+      white-space: nowrap;
+    }
+  }
+
+  tbody {
+    td {
+      height: 3.375rem;
+      padding-inline: 1.375rem;
+      border-bottom: 1px solid ${({ theme }) => theme.colors.lineSoft};
+
+      font-size: 0.9375rem;
+      color: ${({ theme }) => theme.colors.dark};
+      vertical-align: middle;
     }
 
-    .header-table {
-      position: sticky;
-      top: 0;
-      z-index: 1;
+    tr:last-of-type td {
+      border-bottom: 0;
     }
 
     tr {
-      &:last-of-type {
-        border-bottom: none;
-      }
+      transition: background-color 0.15s ease;
 
-      &:hover {
-        background-color: ${(props) => props.theme.colors.lightGray};
-      }
-
-      td {
-        padding: 0 0 0 1.25rem;
-        height: 3.125rem;
-        font-size: 1rem;
-        border: 0.0625rem solid ${(props) => props.theme.colors.lightGray};
-        cursor: pointer;
-
-        &:nth-child(1) {
-          width: 13rem;
-        }
-
-        &:nth-child(3) {
-          width: 8.125rem;
-        }
-        &:nth-child(4) {
-          width: 8.125rem;
-        }
-        &:nth-child(5) {
-          width: 8.125rem;
-        }
-        &:nth-child(6) {
-          width: 4.3125rem;
-        }
-      }
-
-      transition: 0.2s;
-
-      input {
-        opacity: 0%;
+      &:hover td {
+        background-color: #f6fbf7;
       }
     }
 
-    tbody {
-      position: relative;
+    /* Keyed off the column id, not nth-of-type: the add-to-quote column
+       moves to the front below 850px, which shifted every one of these onto
+       the wrong column. */
+    td[data-col="genus"] {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
     }
 
-    .trigger {
-      height: 3.75rem;
-      margin-top: 0.625rem;
-      width: 100%;
-      display: flex !important;
-      justify-content: center;
-      position: absolute;
+    td[data-col="pot_size"],
+    td[data-col="height"],
+    td[data-col="price"] {
+      font-variant-numeric: tabular-nums;
+      color: ${({ theme }) => theme.colors.muted};
+      white-space: nowrap;
+    }
 
-      td {
-        border: none;
-      }
+    td[data-col="price"] {
+      font-weight: 700;
+      color: ${({ theme }) => theme.colors.dark};
+    }
 
-      .observer {
-        width: 1.25rem;
-        height: 1.25rem;
-      }
+    td[data-col="add"] {
+      width: 1%;
+      padding-inline: 0.875rem;
     }
   }
+`;
+
+export const LoadMoreRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: 0.75rem;
+`;
+
+export const TableFooter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.875rem;
+  border-top: 1px solid ${({ theme }) => theme.colors.line};
+  background: ${({ theme }) => theme.colors.paper};
+
+  font-size: 0.8125rem;
+  color: ${({ theme }) => theme.colors.muted};
+  font-variant-numeric: tabular-nums;
 `;

@@ -11,6 +11,7 @@ const initialState: PlantsStateType = {
       search: "",
       offers: false,
       format: {},
+      sort: "genus:asc",
     },
   },
   loading: false,

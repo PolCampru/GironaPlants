@@ -1,6 +1,5 @@
 {
   "budget": {
-    "title": "Sol·licitud de pressupost",
     "emptyCard": "Buidar la sol·licitud",
     "emptyState": "No hi ha cap article a la sol·licitud",
     "total": "Total",

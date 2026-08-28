@@ -1,3 +1,6 @@
+import { formatPrice } from "@/lib/format";
+import useLocale from "@/hooks/useLocale";
+import useUiLabels from "@/hooks/useUiLabels";
 import { ItemType } from "@/types/Cart";
 import React from "react";
 import {
@@ -8,7 +11,7 @@ import {
 } from "./BudgetItem.style";
 import ImageCarrousel from "../../Offers/ImageCarrousel/ImageCarrousel";
 import Quantity from "./Quantity/Quantity";
-import Image from "next/image";
+import { FiX } from "react-icons/fi";
 
 interface BudgetItemProps {
   item: ItemType;
@@ -21,6 +24,9 @@ const BudgetItem = ({
   deleteItem,
   handleChangeQuantity,
 }: BudgetItemProps) => {
+  const locale = useLocale();
+  const labels = useUiLabels();
+
   return (
     <BudgetItemWrapper>
       <ContainerImgText>
@@ -40,8 +46,8 @@ const BudgetItem = ({
       <ContainerEnd>
         {item.newPrice && item.oldPrice && (
           <div className="container-price">
-            <p className="old-price">{item.oldPrice}€</p>
-            <p className="new-price">{item.newPrice}€</p>
+            <p className="old-price">{formatPrice(item.oldPrice, locale)}</p>
+            <p className="new-price">{formatPrice(item.newPrice, locale)}</p>
           </div>
         )}
         <Quantity
@@ -54,18 +60,12 @@ const BudgetItem = ({
           error="La quantitat mínima és "
         />
       </ContainerEnd>
-      <CloseButton onClick={() => deleteItem(item)}>
-        <Image 
-          src="/images/crossIcon.svg" 
-          alt="Close" 
-          width={24} 
-          height={24}
-          style={{
-            width: '24px',
-            height: '24px',
-            objectFit: 'contain'
-          }}
-        />
+      <CloseButton
+        type="button"
+        onClick={() => deleteItem(item)}
+        aria-label={labels.removeFromQuote}
+      >
+        <FiX aria-hidden="true" size={18} strokeWidth={2.2} />
       </CloseButton>
     </BudgetItemWrapper>
   );

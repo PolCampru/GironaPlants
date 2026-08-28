@@ -1,27 +1,29 @@
 "use client";
 
 import React from "react";
-import {
-  BudgetContainer,
-  BudgetAndLanguageWrapper,
-  Line,
-  LanguageContainer,
-  LanguageButton,
-  DropdownMenu,
-  DropdownItem,
-  BudgetDrawer,
-  Overlay,
-  CloseButton,
-} from "./BudgetAndLanguage.style";
 import { AnimatePresence } from "framer-motion";
+import { FiChevronDown, FiFileText, FiX } from "react-icons/fi";
+import {
+  BudgetAndLanguageWrapper,
+  BudgetButton,
+  BudgetDrawer,
+  CloseButton,
+  CountBadge,
+  DrawerBody,
+  DrawerHeader,
+  DropdownItem,
+  DropdownMenu,
+  LanguageButton,
+  LanguageContainer,
+  Overlay,
+} from "./BudgetAndLanguage.style";
 import BudgetNavbar from "./BudgetNavbar/BudgetNavbar";
-import Image from "next/image";
+import useUiLabels from "@/hooks/useUiLabels";
 
 interface LanguageSelectorProps {
-  i18n: any;
+  i18n: unknown;
   data: { [key: string]: string };
   setHideModal: () => void;
-
   isLanguageOpen: boolean;
   isBudgetOpen: boolean;
   toggleLanguageMenu: () => void;
@@ -29,7 +31,7 @@ interface LanguageSelectorProps {
   handleLanguageSelect: (lng: string) => void;
   languages: string[];
   currentLanguage: string;
-  items: any[];
+  items: unknown[];
 }
 
 const BudgetAndLanguage = ({
@@ -43,85 +45,64 @@ const BudgetAndLanguage = ({
   currentLanguage,
   items,
 }: LanguageSelectorProps) => {
+  // i18n.language is undefined during the server render, and this component
+  // now renders on the server (the navbar no longer hides behind a spinner),
+  // so the old `currentLanguage.toUpperCase()` threw and 500'd every page.
+  const activeLanguage = currentLanguage || "es";
+  const labels = useUiLabels();
+  const budgetLabel = data?.title ?? "";
+
   return (
     <BudgetAndLanguageWrapper>
-      <BudgetContainer
+      <BudgetButton
         id="budget-container"
+        type="button"
         onClick={() => setIsBudgetOpen(true)}
+        aria-label={`${budgetLabel} (${items.length})`}
       >
-        <Image 
-          src={data.srcList} 
-          alt={data.altList} 
-          width={24} 
-          height={24}
-          style={{
-            width: '24px',
-            height: '24px',
-            objectFit: 'contain'
-          }}
-        />
-        <p>{data.title}</p>
-        <span>{items.length}</span>
-      </BudgetContainer>
+        {/* Was an <img> of a list icon that had to be fetched and optimised
+            for a 24px glyph. */}
+        <FiFileText aria-hidden="true" size={17} />
+        <span data-label>{budgetLabel}</span>
+        <CountBadge>{items.length}</CountBadge>
+      </BudgetButton>
 
-      <Line />
-
-      <LanguageContainer
-        style={{ position: "relative" }}
-        id="language-container"
-      >
+      <LanguageContainer id="language-container">
         <LanguageButton
-          isOpen={isLanguageOpen}
+          type="button"
+          $isOpen={isLanguageOpen}
           onClick={toggleLanguageMenu}
-          initial={false}
-          animate={{
-            backgroundColor: isLanguageOpen
-              ? "rgba(17, 139, 80, 1)"
-              : "rgba(250, 247, 240, 1)",
-          }}
-          role="button"
-          aria-haspopup="true"
+          aria-haspopup="menu"
           aria-expanded={isLanguageOpen}
+          aria-label={`${labels.language}: ${activeLanguage.toUpperCase()}`}
         >
-          {currentLanguage.toUpperCase()}
-          <Image
-            src={data.srcVector}
-            alt={data.altVector}
-            width={16}
-            height={16}
-            style={{
-              width: '16px',
-              height: '16px',
-              objectFit: 'contain'
-            }}
-          />
+          {activeLanguage.toUpperCase()}
+          <FiChevronDown aria-hidden="true" size={15} />
         </LanguageButton>
 
         <AnimatePresence>
           {isLanguageOpen && (
             <DropdownMenu
-              initial={{ opacity: 0, y: -10 }}
+              initial={{ opacity: 0, y: -6 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.15 }}
               role="menu"
             >
               {languages.map((lng: string) => (
                 <DropdownItem
                   key={lng}
+                  $active={activeLanguage === lng}
                   onClick={() => handleLanguageSelect(lng)}
-                  role="menuitem"
-                  tabIndex={0}
-                  style={{
-                    backgroundColor:
-                      currentLanguage === lng
-                        ? "rgba(17, 139, 80, 1)"
-                        : undefined,
-                    color:
-                      currentLanguage === lng
-                        ? "rgba(250, 247, 240, 1)"
-                        : undefined,
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      handleLanguageSelect(lng);
+                    }
                   }}
+                  role="menuitemradio"
+                  aria-checked={activeLanguage === lng}
+                  tabIndex={0}
                 >
                   {lng.toUpperCase()}
                 </DropdownItem>
@@ -136,31 +117,34 @@ const BudgetAndLanguage = ({
           <>
             <Overlay
               initial={{ opacity: 0 }}
-              animate={{ opacity: 0.5 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               onClick={() => setIsBudgetOpen(false)}
             />
             <BudgetDrawer
               id="budget-drawer"
+              role="dialog"
+              aria-modal="true"
+              aria-label={budgetLabel}
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.3 }}
+              transition={{ type: "tween", duration: 0.25 }}
             >
-              <CloseButton onClick={() => setIsBudgetOpen(false)}>
-                <Image
-                  src="/images/crossIcon.svg"
-                  alt="Close"
-                  width={24}
-                  height={24}
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    objectFit: 'contain'
-                  }}
-                />
-              </CloseButton>
-              <BudgetNavbar setHideModal={setIsBudgetOpen} />
+              <DrawerHeader>
+                <h2>{budgetLabel}</h2>
+                <CloseButton
+                  type="button"
+                  onClick={() => setIsBudgetOpen(false)}
+                  aria-label={labels.close}
+                >
+                  <FiX aria-hidden="true" size={20} />
+                </CloseButton>
+              </DrawerHeader>
+              <DrawerBody>
+                <BudgetNavbar setHideModal={setIsBudgetOpen} />
+              </DrawerBody>
             </BudgetDrawer>
           </>
         )}

@@ -21,16 +21,26 @@ export type CatalogueItem = {
 };
 
 export type HeroCataloguesProps = {
+  label?: string;
   main_title: string;
   main_subtitle: string;
   main_button: string;
   /** Absolute URL of the main catalogue file, "" if none. */
   catalogue_url: string;
+  /** Absolute URL of the cover image, "" to fall back to the local one. */
+  cover_url: string;
+  updated_label?: string;
+  /** Shown instead of the download when no PDF has been uploaded yet. */
+  browse_button: string;
+  request_button: string;
+  locale: string;
 };
 
 export type SectionCataloguesProps = {
+  label?: string;
   section_title: string;
   section_subtitle: string;
+  download_label: string;
   items: CatalogueItem[];
 };
 
@@ -40,6 +50,8 @@ export type CataloguesPageData = {
   main_subtitle: string;
   main_button: string;
   main_catalogue_url: string;
+  /** Absolute URL of the main catalogue's cover image, "" if none. */
+  main_cover_url: string;
   section_title: string;
   section_subtitle: string;
   contact_title: string;

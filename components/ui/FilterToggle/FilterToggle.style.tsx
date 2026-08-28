@@ -1,49 +1,42 @@
+"use client";
+
 import styled from "styled-components";
 
-const FilterToggleWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
-  padding: 1px 10px;
-  min-height: 40px;
-  max-height: 45px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-color: ${(props) => props.theme.colors.lightGray};
-  gap: 5px;
+export const FilterToggleWrapper = styled.div`
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.25rem;
 
-  .filter {
-    display: flex;
-    padding: 0.4rem 0.6rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-
-    border-radius: 0.4375rem;
-
-    cursor: pointer;
-
-    color: ${(props) => props.theme.colors.mediumGray};
-
-    transition: background 0.3s ease;
-
-    &:hover {
-      background: ${(props) => props.theme.colors.hoverGreen};
-    }
-  }
-
-  .selected {
-    background: ${(props) => props.theme.colors.white};
-    color: ${(props) => props.theme.colors.dark};
-    transition: background 0.3s ease;
-
-    cursor: pointer;
-
-    &:hover {
-      background: ${(props) => props.theme.colors.white};
-    }
-  }
+  background: ${({ theme }) => theme.colors.paper};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.pill};
 `;
 
-export { FilterToggleWrapper };
+export const ToggleOption = styled.button<{ $selected: boolean }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 2.5rem;
+  padding-inline: 1.375rem;
+
+  border: 0;
+  border-radius: ${({ theme }) => theme.radii.pill};
+
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.18s ease, color 0.18s ease;
+
+  background-color: ${({ $selected, theme }) =>
+    $selected ? theme.colors.moss : "transparent"};
+  color: ${({ $selected, theme }) =>
+    $selected ? theme.colors.white : theme.colors.muted};
+
+  &:hover {
+    color: ${({ $selected, theme }) =>
+      $selected ? theme.colors.white : theme.colors.dark};
+  }
+`;

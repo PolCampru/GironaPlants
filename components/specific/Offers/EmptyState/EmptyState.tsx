@@ -2,54 +2,39 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
-
-import { useRouter } from "next/navigation";
+import { FiArrowRight, FiTag } from "react-icons/fi";
 import {
   ButtonsContainer,
   EmptyStateContainer,
-  EmptyStateContent,
   EmptyStateDescription,
+  EmptyStateIcon,
   EmptyStateTitle,
-  StyledButton,
 } from "./EmptyState.style";
+import CtaLink from "@/components/ui/CtaLink/CtaLink";
 
-interface EmptyStateProps {
-  lng: string;
-}
+const EmptyState = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation("offers");
 
-const EmptyState = ({ lng }: EmptyStateProps) => {
-  const { t, i18n } = useTranslation("offers");
-  const router = useRouter();
-
-  // Forzar el idioma actual
-  React.useEffect(() => {
-    if (i18n.language !== lng) {
-      i18n.changeLanguage(lng);
-    }
-  }, [lng, i18n]);
-
+  // The locale comes from the route; forcing i18n.changeLanguage from inside
+  // this component (as it used to) fought the language selector.
   return (
     <EmptyStateContainer>
-      <EmptyStateContent>
-        <EmptyStateTitle>{t("emptyState.title")}</EmptyStateTitle>
-        <EmptyStateDescription>
-          {t("emptyState.description")}
-        </EmptyStateDescription>
-        <ButtonsContainer>
-          <StyledButton
-            onClick={() => router.push(`/${lng}/products`)}
-            variant="primary"
-          >
-            {t("emptyState.productsButton")}
-          </StyledButton>
-          <StyledButton
-            onClick={() => router.push(`/${lng}/contact`)}
-            variant="secondary"
-          >
-            {t("emptyState.contactButton")}
-          </StyledButton>
-        </ButtonsContainer>
-      </EmptyStateContent>
+      <EmptyStateIcon>
+        <FiTag aria-hidden="true" size={22} />
+      </EmptyStateIcon>
+      <EmptyStateTitle>{t("emptyState.title")}</EmptyStateTitle>
+      <EmptyStateDescription>
+        {t("emptyState.description")}
+      </EmptyStateDescription>
+      <ButtonsContainer>
+        <CtaLink href={`/${lng}/products`} $variant="solid">
+          {t("emptyState.productsButton")}
+          <FiArrowRight aria-hidden="true" />
+        </CtaLink>
+        <CtaLink href={`/${lng}/contact`} $variant="outline">
+          {t("emptyState.contactButton")}
+        </CtaLink>
+      </ButtonsContainer>
     </EmptyStateContainer>
   );
 };

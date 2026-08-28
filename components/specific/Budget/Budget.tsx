@@ -1,3 +1,6 @@
+"use client";
+
+import useUiLabels from "@/hooks/useUiLabels";
 import React, { useState } from "react";
 import { ItemType } from "@/types/Cart";
 import {
@@ -27,6 +30,7 @@ const Budget = ({
   deleteItem,
   handleChangeQuantity,
 }: BudgetProps) => {
+  const labels = useUiLabels();
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredItems = items.filter((item) =>
@@ -37,13 +41,15 @@ const Budget = ({
     <BudgetWrapper>
       <ContainerHeader>
         <Search
-          placeholder="Cerca..."
+          placeholder={labels.searchInList}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e)}
+          clearLabel={labels.clearSearch}
         />
-        <p className="empty-cart" onClick={handleClearCart}>
+        {/* Was a clickable <p>: not focusable and not announced as an action. */}
+        <button type="button" className="empty-cart" onClick={handleClearCart}>
           {data.emptyCard}
-        </p>
+        </button>
       </ContainerHeader>
 
       {items.length === 0 ? (

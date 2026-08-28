@@ -1,45 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
-  NavbarWrapper,
-  LogoContainer,
-  MenuContainer,
-  NavItem,
-  RightContainer,
-  SelectedBackground,
   Hamburger,
+  LogoLink,
+  MenuContainer,
+  MobileItem,
   MobileMenu,
+  MobileScrim,
+  NavBackdrop,
+  NavItem,
+  NavShell,
+  NavbarWrapper,
+  RightContainer,
 } from "./Navbar.style";
 import BudgetAndLanguage from "@/components/specific/BudgetAndLanguageSelector/BudgetAndLanguage";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import Loader from "@/components/ui/Loader/Loader";
-import {
-  itemVariants,
-  menuVariants,
-  navbarVariants,
-} from "@/animations/NavBar";
+import { AnimatePresence } from "framer-motion";
 import useModal from "@/hooks/useModal";
 import Modal from "../Modal/Modal";
 import ModalAddPlant from "../Modal/ModalAddPlant/ModalAddPlant";
 import { FiMenu, FiX } from "react-icons/fi";
 import useBudgetAndLanguage from "@/hooks/useBudgetAndLanguage";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { LOGO, getNavigation, navHref } from "@/data/navigation";
+import { getUiLabels } from "@/data/uiLabels";
+import { getLanguages } from "@/lib/languages";
 
 const Navbar = () => {
-  const {
-    modalState,
-    setHideModal,
-    ready,
-    scrollDirection,
-    logo,
-    navbarItems,
-    pathname,
-    LanguageSelectorData,
-    i18n,
-  } = useModal();
+  const { modalState, setHideModal, scrollDirection, i18n } = useModal();
 
   const {
     isLanguageOpen,
@@ -52,174 +41,175 @@ const Navbar = () => {
     items,
   } = useBudgetAndLanguage({ i18n });
 
-  const router = useRouter();
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const currentPath = usePathname();
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen((prev) => !prev);
-  };
+  // The locale comes from the URL, so the navbar renders identically on the
+  // server and on the client. It used to come from react-i18next, which
+  // resolves nothing during SSR: the server emitted an empty nav, the client
+  // emitted six links, and React discarded the whole page on hydration.
+  const locales = getLanguages();
+  const segment = currentPath?.split("/")[1] ?? "";
+  const lng = locales.includes(segment) ? segment : "es";
+  const { items: menuItems, budgetLabel } = getNavigation(lng);
+  const labels = getUiLabels(lng);
 
-  if (!ready) {
-    return (
-      <div aria-hidden="true">
-        <Loader />
-      </div>
-    );
-  }
+  // Route changes must close the menu; otherwise it stays open over the new
+  // page after a tap.
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [currentPath]);
+
+  // Lock the page behind the open menu and let Escape close it.
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMobileMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isMobileMenuOpen]);
+
+  const homeHref = `/${lng}`;
 
   return (
     <>
-      <motion.nav
-        variants={navbarVariants}
-        initial="visible"
-        animate={
-          scrollDirection === "down" && !isBudgetOpen ? "hidden" : "visible"
-        }
-        style={{ width: "100%", position: "fixed", top: 0, zIndex: 999 }}
-        role="navigation"
-        aria-label="Navegación principal"
+      <NavShell
+        initial={false}
+        animate={{
+          y:
+            scrollDirection === "down" && !isBudgetOpen && !isMobileMenuOpen
+              ? "-100%"
+              : "0%",
+        }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
       >
-        <NavbarWrapper>
-          <LogoContainer
-            as={motion.div}
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            onClick={() => {
-              router.push(`/${currentLanguage}`);
-            }}
-          >
-            <Image
-              src={logo.src}
-              alt={`Logo de Girona Plants - ${logo.alt}`}
-              width={120}
-              height={60}
-              style={{
-                width: 'auto',
-                height: '40px',
-                maxWidth: '120px',
-                objectFit: 'contain'
-              }}
-              sizes="(max-width: 768px) 100px, 120px"
-              priority
-            />
-          </LogoContainer>
+        <NavBackdrop>
+          <NavbarWrapper aria-label={labels.mainNav}>
+            <LogoLink href={homeHref} aria-label={LOGO.alt}>
+              <Image
+                src={LOGO.src}
+                alt={LOGO.alt}
+                width={120}
+                height={60}
+                style={{
+                  width: "auto",
+                  height: "2.375rem",
+                  maxWidth: "7.5rem",
+                  objectFit: "contain",
+                }}
+                sizes="(max-width: 768px) 100px, 120px"
+                priority
+              />
+            </LogoLink>
 
-          <MenuContainer
-            as={motion.nav}
-            variants={menuVariants}
-            initial="hidden"
-            animate="visible"
-            aria-label="Menú principal"
-          >
-            {Array.isArray(navbarItems) &&
-              navbarItems.map((item) => {
-                const isSelected = pathname === item.url;
+            {/* The nav used to be replaced by a full-page spinner until
+                translations resolved, which shifted the whole layout on every
+                first paint. */}
+            <MenuContainer>
+              {menuItems.map((item) => {
+                const href = navHref(lng, item.slug);
+                const isSelected = currentPath === href;
                 return (
                   <NavItem
-                    as={motion.div}
-                    key={item.name}
-                    variants={itemVariants}
-                    selected={isSelected}
-                  >
-                    <Link
-                      href={item.url}
-                      aria-current={isSelected ? "page" : undefined}
-                    >
-                      {item.name}
-                      {isSelected && (
-                        <SelectedBackground
-                          initial={false}
-                          transition={{
-                            type: "spring",
-                            stiffness: 400,
-                            damping: 30,
-                          }}
-                        />
-                      )}
-                    </Link>
-                  </NavItem>
-                );
-              })}
-          </MenuContainer>
-
-          <RightContainer
-            as={motion.div}
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-          >
-            <BudgetAndLanguage
-              i18n={i18n}
-              data={LanguageSelectorData}
-              setHideModal={setHideModal}
-              isLanguageOpen={isLanguageOpen}
-              isBudgetOpen={isBudgetOpen}
-              toggleLanguageMenu={toggleLanguageMenu}
-              setIsBudgetOpen={setIsBudgetOpen}
-              handleLanguageSelect={handleLanguageSelect}
-              languages={languages}
-              currentLanguage={currentLanguage}
-              items={items}
-            />
-
-            <Hamburger
-              onClick={toggleMobileMenu}
-              aria-expanded={isMobileMenuOpen}
-              aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
-            >
-              {isMobileMenuOpen ? (
-                <FiX size={24} color="black" aria-hidden="true" />
-              ) : (
-                <FiMenu size={24} color="black" aria-hidden="true" />
-              )}
-            </Hamburger>
-          </RightContainer>
-        </NavbarWrapper>
-
-        {modalState.value === "addPlant" && (
-          <Modal closeModal={setHideModal}>
-            <ModalAddPlant closeModal={setHideModal} />
-          </Modal>
-        )}
-      </motion.nav>
-
-      {isMobileMenuOpen && (
-        <MobileMenu
-          as={motion.nav}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          aria-label="Menú móvil"
-        >
-          {Array.isArray(navbarItems) &&
-            navbarItems.map((item) => {
-              const isSelected = pathname === item.url;
-              return (
-                <NavItem
-                  key={item.name}
-                  selected={isSelected}
-                  onClick={toggleMobileMenu}
-                >
-                  <Link
-                    href={item.url}
+                    key={item.slug}
+                    href={href}
+                    $selected={isSelected}
                     aria-current={isSelected ? "page" : undefined}
                   >
                     {item.name}
-                    {isSelected && (
-                      <SelectedBackground
-                        initial={false}
-                        transition={{
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 30,
-                        }}
-                      />
-                    )}
-                  </Link>
-                </NavItem>
-              );
-            })}
-        </MobileMenu>
+                  </NavItem>
+                );
+              })}
+            </MenuContainer>
+
+            <RightContainer>
+              <BudgetAndLanguage
+                i18n={i18n}
+                data={{ title: budgetLabel }}
+                setHideModal={setHideModal}
+                isLanguageOpen={isLanguageOpen}
+                isBudgetOpen={isBudgetOpen}
+                toggleLanguageMenu={toggleLanguageMenu}
+                setIsBudgetOpen={setIsBudgetOpen}
+                handleLanguageSelect={handleLanguageSelect}
+                languages={languages}
+                currentLanguage={currentLanguage}
+                items={items}
+              />
+
+              <Hamburger
+                onClick={() => setIsMobileMenuOpen((open) => !open)}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-menu"
+                aria-label={isMobileMenuOpen ? labels.closeMenu : labels.openMenu}
+              >
+                {isMobileMenuOpen ? (
+                  <FiX size={22} aria-hidden="true" />
+                ) : (
+                  <FiMenu size={22} aria-hidden="true" />
+                )}
+              </Hamburger>
+            </RightContainer>
+          </NavbarWrapper>
+        </NavBackdrop>
+
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <MobileMenu
+              id="mobile-menu"
+              key="mobile-menu"
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.18 }}
+              aria-label={labels.mobileNav}
+            >
+              {menuItems.map((item) => {
+                const href = navHref(lng, item.slug);
+                const isSelected = currentPath === href;
+                return (
+                  <MobileItem
+                    key={item.slug}
+                    href={href}
+                    $selected={isSelected}
+                    aria-current={isSelected ? "page" : undefined}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </MobileItem>
+                );
+              })}
+            </MobileMenu>
+          )}
+        </AnimatePresence>
+      </NavShell>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <MobileScrim
+            key="scrim"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18 }}
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        )}
+      </AnimatePresence>
+
+      {modalState.value === "addPlant" && (
+        <Modal closeModal={setHideModal}>
+          <ModalAddPlant closeModal={setHideModal} />
+        </Modal>
       )}
     </>
   );

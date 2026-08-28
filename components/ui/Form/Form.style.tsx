@@ -1,89 +1,76 @@
+"use client";
+
 import styled from "styled-components";
 
-export const FormWrapper = styled.div`
-  width: 100%;
-  height: 100%;
+export const FormCard = styled.div`
   display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 0.4rem;
   flex-direction: column;
+  gap: 1.75rem;
 
-  .subtitle {
-    color: ${(props) => props.theme.colors.dark};
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: 0.00875rem;
-    margin-bottom: 1rem;
-  }
-
-  @media (max-width: 1024px) {
-    .subtitle {
-      font-size: 0.85rem;
-      margin-bottom: 0.75rem;
-    }
-  }
+  padding: 2.5rem;
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.panel};
 
   @media (max-width: 768px) {
-    .subtitle {
-      font-size: 0.8rem;
-      margin-bottom: 0.5rem;
-    }
+    padding: 1.5rem;
   }
+`;
+
+export const FormHead = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: ${({ theme }) => theme.colors.muted};
+    max-width: 39rem;
+  }
+`;
+
+export const FormTitle = styled.h2`
+  font-family: ${({ theme }) => theme.font.display};
+  font-size: clamp(1.875rem, 3vw, 2.375rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: ${({ theme }) => theme.colors.dark};
+`;
+
+export const Label = styled.span`
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.muted};
 `;
 
 export const FormContainer = styled.form`
   display: flex;
-  gap: 1rem;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  gap: 1.5rem;
+`;
 
-  .submit {
-    display: flex;
-    width: 100%;
-    height: 3.125rem;
-    padding: 0.75rem 1.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
+/** Two columns on desktop; textarea/file/checkbox span both. */
+export const FieldGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
 
-    border: none;
-    border-radius: 6.25rem;
-    background-color: ${(props) => props.theme.colors.brandGreen};
-    color: ${(props) => props.theme.colors.white};
-
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-
-    &:hover {
-      background-color: ${(props) => props.theme.colors.hoverGreen2};
-      color: ${(props) => props.theme.colors.dark};
-    }
-
-    &:active {
-      transform: scale(0.98);
-    }
-
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: normal;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
   }
+`;
 
-  @media (max-width: 1024px) {
-    .submit {
-      font-size: 0.95rem;
-      height: 3rem;
-    }
-  }
+export const SubmitRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  flex-wrap: wrap;
 
-  @media (max-width: 768px) {
-    .submit {
-      font-size: 0.9rem;
-      height: 2.75rem;
-    }
+  p {
+    font-size: 0.875rem;
+    color: ${({ theme }) => theme.colors.muted};
   }
 `;

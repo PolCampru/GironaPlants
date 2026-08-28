@@ -1,6 +1,5 @@
 {
   "products": {
-    "title": "Products",
     "table": {
       "titleGenus": "GENUS",
       "titleDescription": "DESCRIPTION",
@@ -10,25 +9,70 @@
     },
     "filters": {
       "title": "Filters",
-      "searchPlaceholder": "Search...",
+      "searchPlaceholder": "Search a genus or species…",
       "offersTitle": "Offers",
       "potFilters": {
         "title": "Format",
         "seeAll": "See all",
         "options": [
-          { "id": 1, "value": "Rd", "label": "Bare-root" },
-          { "id": 2, "value": "AH", "label": "Horticultural cell" },
-          { "id": 3, "value": "AF", "label": "Forest cell" },
-          { "id": 4, "value": "M", "label": "Pot" },
-          { "id": 5, "value": "C", "label": "Container" }
+          {
+            "id": 1,
+            "value": "Rd",
+            "label": "Bare-root"
+          },
+          {
+            "id": 2,
+            "value": "AH",
+            "label": "Horticultural cell"
+          },
+          {
+            "id": 3,
+            "value": "AF",
+            "label": "Forest cell"
+          },
+          {
+            "id": 4,
+            "value": "M",
+            "label": "Pot"
+          },
+          {
+            "id": 5,
+            "value": "C",
+            "label": "Container"
+          }
         ]
-      }
+      },
+      "clear": "Clear"
     },
     "errorAddToCart": {
       "title": "The item is already in the cart"
     },
     "successAddToCart": {
       "title": "Item added to the cart"
+    },
+    "resultsOne": "result",
+    "resultsMany": "results",
+    "resultsFor": "for",
+    "showing": "Showing",
+    "sortLabel": "Sort",
+    "sortOptions": [
+      {
+        "value": "genus:asc",
+        "label": "Genus A-Z"
+      },
+      {
+        "value": "price:asc",
+        "label": "Price ↑"
+      },
+      {
+        "value": "price:desc",
+        "label": "Price ↓"
+      }
+    ],
+    "emptyState": {
+      "title": "Nothing matched",
+      "text": "Try another genus or drop a filter. If the species isn't in the catalogue, we'll source it for you.",
+      "button": "Ask us for this plant"
     }
   }
 }

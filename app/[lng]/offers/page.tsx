@@ -5,6 +5,7 @@ import React from "react";
 
 import { Metadata } from "next";
 import { buildPageMetadata } from "@/data/seoContent";
+import { getOffersHeading } from "@/data/pageHeadings";
 
 export async function generateMetadata({
   params,
@@ -18,14 +19,16 @@ export async function generateMetadata({
 const OffersPage = async ({ params }: OffersPageProps) => {
   const { lng } = await params;
 
-  const url = `offers?locale=${lng}&populate=*&fields[0]=genus&fields[1]=description&fields[2]=pot_size&fields[3]=height&fields[4]=discount&fields[5]=quantity&fields[6]=old_price&fields[7]=new_price&fields[8]=text&filters[online][$eq]=true&sort=genus:desc`;
+  const url = `offers?locale=${lng}&populate=*&fields[0]=genus&fields[1]=description&fields[2]=pot_size&fields[3]=height&fields[4]=discount&fields[5]=quantity&fields[6]=old_price&fields[7]=new_price&fields[8]=text&filters[online][$eq]=true&sort=genus:asc`;
 
   const offersData = await fetchStrapiData(url);
 
   return (
-    <section>
-      <Offers data={offersData} lng={lng} />
-    </section>
+    <Offers
+      data={offersData ?? []}
+      lng={lng}
+      heading={getOffersHeading(lng)}
+    />
   );
 };
 

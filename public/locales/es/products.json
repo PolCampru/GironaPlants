@@ -1,6 +1,5 @@
 {
   "products": {
-    "title": "Productos",
     "table": {
       "titleGenus": "GÉNERO",
       "titleDescription": "DESCRIPCIÓN",
@@ -10,25 +9,70 @@
     },
     "filters": {
       "title": "Filtros",
-      "searchPlaceholder": "Buscar...",
+      "searchPlaceholder": "Busca un género o una especie…",
       "offersTitle": "Ofertas",
       "potFilters": {
         "title": "Formato",
         "seeAll": "Ver todos",
         "options": [
-          { "id": 1, "value": "Rd", "label": "Raíz desnuda" },
-          { "id": 2, "value": "AH", "label": "Alvéolo hortícola" },
-          { "id": 3, "value": "AF", "label": "Alvéolo forestal" },
-          { "id": 4, "value": "M", "label": "Tiesto" },
-          { "id": 5, "value": "C", "label": "Contenedor" }
+          {
+            "id": 1,
+            "value": "Rd",
+            "label": "Raíz desnuda"
+          },
+          {
+            "id": 2,
+            "value": "AH",
+            "label": "Alvéolo hortícola"
+          },
+          {
+            "id": 3,
+            "value": "AF",
+            "label": "Alvéolo forestal"
+          },
+          {
+            "id": 4,
+            "value": "M",
+            "label": "Tiesto"
+          },
+          {
+            "id": 5,
+            "value": "C",
+            "label": "Contenedor"
+          }
         ]
-      }
+      },
+      "clear": "Limpiar"
     },
     "errorAddToCart": {
       "title": "El artículo ya está en el carrito"
     },
     "successAddToCart": {
       "title": "Artículo añadido al carrito"
+    },
+    "resultsOne": "resultado",
+    "resultsMany": "resultados",
+    "resultsFor": "para",
+    "showing": "Mostrando",
+    "sortLabel": "Ordenar",
+    "sortOptions": [
+      {
+        "value": "genus:asc",
+        "label": "Género A-Z"
+      },
+      {
+        "value": "price:asc",
+        "label": "Precio ↑"
+      },
+      {
+        "value": "price:desc",
+        "label": "Precio ↓"
+      }
+    ],
+    "emptyState": {
+      "title": "No hemos encontrado nada",
+      "text": "Prueba con otro género o quita algún filtro. Si la especie no está en el catálogo, la buscamos por ti.",
+      "button": "Pídenos esta planta"
     }
   }
 }

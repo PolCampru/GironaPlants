@@ -1,136 +1,151 @@
+"use client";
+
 import styled from "styled-components";
 
-export const OfferCardWrapper = styled.div`
-  width: 100%;
-  height: 15rem;
-  min-width: 50rem;
-  flex: 1;
-
+/**
+ * A card in the offers grid.
+ *
+ * This used to be a full-width row with `min-width: 50rem`, only overridden
+ * below 768px — so between 769px and ~830px it pushed the page sideways.
+ * It is fluid now and sits in the same card system as the catalogue and
+ * category cards.
+ */
+export const OfferCardWrapper = styled.article`
   position: relative;
-
   display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 1%;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
 
-  border-radius: 0.625rem;
-  background: ${(props) => props.theme.colors.white};
-  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.card};
+  overflow: hidden;
 
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 
   &:hover {
-    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
-    background-color: ${(props) => props.theme.colors.creamLight};
+    transform: translateY(-3px);
+    box-shadow: ${({ theme }) => theme.shadow.lg};
   }
 
-  .container-discount {
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-
-    height: 1.5rem;
-    padding: 0.25rem;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 0.25rem;
-    background: ${(props) => props.theme.colors.discountRed};
-    color: ${(props) => props.theme.colors.white};
-
-    z-index: 1;
-  }
-
-  .container-img-text {
-    width: 70%;
-    height: 100%;
-    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
-
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 3rem;
-
-    .container-text {
-      width: 100%;
-      height: 100%;
-
-      .description {
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 0.25rem;
-      }
-
-      .attributes {
-        font-size: 0.75rem;
-        font-weight: 300;
-      }
-
-      .text {
-        margin-top: 1rem;
-        font-size: 0.875rem;
-        font-weight: 400;
-      }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &:hover {
+      transform: none;
     }
   }
+`;
 
-  .container-price {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    padding: 1.5rem 1.5rem 1.5rem 0;
-    gap: 0.5rem;
+export const DiscountBadge = styled.span`
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
 
-    .new-price {
-      color: ${(props) => props.theme.colors.discountRed};
-      font-size: 1.25rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
+  display: inline-flex;
+  align-items: center;
+  height: 1.625rem;
+  padding-inline: 0.625rem;
 
-    .old-price {
-      color: ${(props) => props.theme.colors.grey};
-      text-decoration: line-through;
-      font-size: 1rem;
-      font-weight: 500;
-      text-decoration-line: strikethrough;
-      text-transform: uppercase;
-    }
+  border-radius: ${({ theme }) => theme.radii.pill};
+  background: ${({ theme }) => theme.colors.orange};
+  color: ${({ theme }) => theme.colors.white};
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+`;
+
+export const CardMedia = styled.div`
+  height: 11.25rem;
+  background: ${({ theme }) => theme.colors.lightGreen};
+  overflow: hidden;
+`;
+
+export const CardBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  padding: 1.25rem;
+  flex-grow: 1;
+
+  h3 {
+    font-family: ${({ theme }) => theme.font.body};
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.muted};
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    min-height: 25rem;
-    min-width: 100%;
-    margin: 0.25rem;
+  .description {
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: ${({ theme }) => theme.colors.dark};
+  }
 
-    .container-img-text {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-      padding: 1.5rem;
+  .text {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: ${({ theme }) => theme.colors.muted};
+  }
+`;
 
-      .container-text {
-        height: auto;
-        .attributes {
-          font-size: 0.625rem;
-        }
+export const AttributeRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.25rem;
+`;
 
-        .text {
-          margin-top: 0.5rem;
-          font-size: 0.75rem;
-        }
-      }
-    }
+export const Attribute = styled.span`
+  display: inline-flex;
+  align-items: center;
+  height: 1.5rem;
+  padding-inline: 0.5rem;
 
-    .container-price {
-      padding: 1.5rem;
-      width: 100%;
-      height: auto;
-    }
+  border-radius: ${({ theme }) => theme.radii.field};
+  background: ${({ theme }) => theme.colors.paper};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: ${({ theme }) => theme.colors.muted};
+  font-variant-numeric: tabular-nums;
+`;
+
+export const CardFooter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  padding: 1rem 1.25rem;
+  border-top: 1px solid ${({ theme }) => theme.colors.lineSoft};
+`;
+
+export const PriceBlock = styled.div`
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-width: 0;
+
+  .new-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: ${({ theme }) => theme.colors.dark};
+    font-variant-numeric: tabular-nums;
+  }
+
+  .old-price {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.muted};
+    text-decoration: line-through;
+    font-variant-numeric: tabular-nums;
   }
 `;

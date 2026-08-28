@@ -1,38 +1,43 @@
+"use client";
+
 import styled from "styled-components";
 
-export const FiltersWrapper = styled.div<{ $isOpen: boolean }>`
+export const FiltersWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: start;
-  width: 100%;
   gap: 0.5rem;
+`;
 
-  p {
-    color: ${(props) => props.theme.colors.brandGreen};
-    cursor: pointer;
-    padding-block: 0.5rem;
-  }
+export const FiltersTitle = styled.h3`
+  font-family: ${({ theme }) => theme.font.body};
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.muted};
+  margin-bottom: 0.25rem;
+`;
 
-  .filters-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 0.75rem;
-    cursor: pointer;
+export const OptionList = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
-    img {
-      width: 1rem;
-    }
-  }
+export const SeeAllButton = styled.button`
+  align-self: flex-start;
+  margin-top: 0.25rem;
 
-  .container-filters {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 0.5rem;
+  background: none;
+  border: 0;
+  padding: 0;
+
+  font-family: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.brandGreen};
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
   }
 `;

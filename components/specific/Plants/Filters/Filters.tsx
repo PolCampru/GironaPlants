@@ -1,9 +1,14 @@
+"use client";
+
 import React, { useState } from "react";
-import { FiltersWrapper } from "./Filters.style";
+import {
+  FiltersTitle,
+  FiltersWrapper,
+  OptionList,
+  SeeAllButton,
+} from "./Filters.style";
 import { potSizeOptionsType, QueryType } from "@/types/Products";
 import Checkbox from "@/components/ui/CheckBox/CheckBox";
-import { motion } from "framer-motion";
-import { containerVariants } from "@/animations/Products";
 
 interface FiltersProps {
   data: Record<number, string>;
@@ -16,49 +21,38 @@ interface FiltersProps {
   ) => void;
 }
 
-const Filters = ({ data, options, title, seeAll, onChange }: FiltersProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+const VISIBLE_WHEN_COLLAPSED = 5;
 
-  const SHOW_TOGGLE_THRESHOLD = 5;
-  const canCollapse = options.length > SHOW_TOGGLE_THRESHOLD;
+const Filters = ({ data, options, title, seeAll, onChange }: FiltersProps) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const canCollapse = options.length > VISIBLE_WHEN_COLLAPSED;
+  const visible =
+    canCollapse && !expanded ? options.slice(0, VISIBLE_WHEN_COLLAPSED) : options;
 
   return (
-    <FiltersWrapper $isOpen={canCollapse ? isOpen : true}>
-      {canCollapse ? (
-        <div className="filters-header" onClick={() => setIsOpen(!isOpen)}>
-          <h3>{title}</h3>
-          <motion.img
-            src="/images/vectorIcon.svg"
-            alt="vector"
-            animate={{ rotate: isOpen ? 0 : 180 }}
-            transition={{ duration: 0.3 }}
-          />
-        </div>
-      ) : (
-        <div className="filters-header" style={{ cursor: "default" }}>
-          <h3>{title}</h3>
-        </div>
-      )}
+    <FiltersWrapper>
+      <FiltersTitle>{title}</FiltersTitle>
 
-      <motion.div
-        className="container-filters"
-        variants={canCollapse ? containerVariants : {}}
-        animate={canCollapse ? (isOpen ? "expanded" : "collapsed") : "expanded"}
-        initial="collapsed"
-      >
-        {options.map((option) => (
+      {/* The collapsed state now renders fewer options rather than animating
+          a max-height on all of them — the old version left the hidden rows
+          in the tab order and clipped mid-row. */}
+      <OptionList>
+        {visible.map((option) => (
           <Checkbox
             key={option.id}
-            label={option.value + " (" + option.label + ")"}
+            label={`${option.value} — ${option.label}`}
             checked={!!data[option.id]}
             onChange={() => onChange("format", { [option.id]: option.value })}
             name={option.value}
           />
         ))}
-      </motion.div>
+      </OptionList>
 
-      {!isOpen && canCollapse && (
-        <p onClick={() => setIsOpen(!isOpen)}>{seeAll}</p>
+      {canCollapse && !expanded && (
+        <SeeAllButton type="button" onClick={() => setExpanded(true)}>
+          {seeAll}
+        </SeeAllButton>
       )}
     </FiltersWrapper>
   );

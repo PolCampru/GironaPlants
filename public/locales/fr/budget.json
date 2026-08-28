@@ -1,6 +1,5 @@
 {
   "budget": {
-    "title": "Demande de devis",
     "emptyCard": "Vider la demande",
     "emptyState": "Il n'y a aucun article dans la demande",
     "total": "Total",

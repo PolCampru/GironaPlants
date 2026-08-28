@@ -1,81 +1,69 @@
+"use client";
+
 import styled from "styled-components";
 
-export const StyledWrapper = styled.div`
-  .form button {
-    border: none;
-    background: none;
-    color: #8b8ba7;
-  }
-  .form {
-    --timing: 0.3s;
-    --width-of-input: 100%;
-    --height-of-input: 2rem;
-    --border-height: 2px;
-    --input-bg: ${(props) => props.theme.colors.hoverGreen};
-    --border-color: ${(props) => props.theme.colors.brandGreen};
-    --border-radius: 30px;
-    --after-border-radius: 1px;
-    position: relative;
-    width: var(--width-of-input);
-    height: var(--height-of-input);
-    display: flex;
-    align-items: center;
-    padding-inline: 0.8em;
-    border-radius: var(--border-radius);
-    transition: border-radius 0.5s ease;
-    background: var(--input-bg, ${(props) => props.theme.colors.hoverGreen});
-  }
-  .input {
-    font-size: 0.9rem;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    padding-inline: 0.5em;
-    padding-block: 0.7em;
-    border: none;
-  }
-  .form:before {
-    content: "";
+export const SearchField = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  > svg {
     position: absolute;
-    background: var(--border-color);
-    transform: scaleX(0);
-    transform-origin: center;
-    width: 100%;
-    height: var(--border-height);
-    left: 0;
-    bottom: 0;
-    border-radius: 1px;
-    transition: transform var(--timing) ease;
+    left: 0.875rem;
+    color: ${({ theme }) => theme.colors.muted};
+    pointer-events: none;
   }
-  .form:focus-within {
-    border-radius: var(--after-border-radius);
+`;
+
+export const SearchInput = styled.input`
+  width: 100%;
+  height: ${({ theme }) => theme.control.height};
+  padding: 0 2.25rem 0 2.375rem;
+
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.pill};
+
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: ${({ theme }) => theme.colors.dark};
+
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+
+  &::placeholder {
+    color: ${({ theme }) => theme.colors.mediumGray};
   }
 
-  input:focus {
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  &:focus {
     outline: none;
+    border-color: ${({ theme }) => theme.colors.brandGreen};
+    box-shadow: ${({ theme }) => theme.shadow.ring};
   }
-  .form:focus-within:before {
-    transform: scale(1);
-  }
+`;
 
-  .reset {
-    border: none;
-    background: none;
-    opacity: 0;
-    visibility: hidden;
-    cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+export const ResetButton = styled.button`
+  position: absolute;
+  right: 0.5rem;
 
-    &:hover {
-      transform: rotate(90deg);
-    }
-  }
-  input:not(:placeholder-shown) ~ .reset {
-    opacity: 1;
-    visibility: visible;
-  }
-  .form svg {
-    width: 17px;
-    margin-top: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.625rem;
+  height: 1.625rem;
+
+  background: ${({ theme }) => theme.colors.lightGray};
+  border: 0;
+  border-radius: ${({ theme }) => theme.radii.pill};
+  color: ${({ theme }) => theme.colors.muted};
+  cursor: pointer;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.line};
+    color: ${({ theme }) => theme.colors.dark};
   }
 `;

@@ -1,7 +1,7 @@
 // ModalAddPlant.tsx
 import useProducts from "@/hooks/useProducts";
-import { ModalAddPlantWrapper } from "./ModalAddPlant.style";
-import Title from "@/components/ui/Title/Title";
+import { ModalAddPlantWrapper, ModalFields } from "./ModalAddPlant.style";
+import Button from "@/components/ui/Button/Button";
 import { InputText } from "@/components/ui/Form/InputText/InputText";
 import { PlantType } from "@/types/Products";
 import { useState } from "react";
@@ -47,6 +47,12 @@ const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
     closeModal();
   };
 
+  // t() returns the bare key until the addProducts namespace loads, so
+  // `dataAddProduct.modal` can be undefined. This modal is mounted by the
+  // Navbar, which sits outside the ErrorBoundary — dereferencing it took the
+  // whole client tree down.
+  if (!dataAddProduct?.modal) return null;
+
   return (
     <ModalAddPlantWrapper
       initial={{ opacity: 0, y: 50 }}
@@ -54,12 +60,12 @@ const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
       exit={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.3 }}
     >
-      <Title title={dataAddProduct.modal.title} />
+      <h2>{dataAddProduct.modal.title}</h2>
       <p>{dataAddProduct.modal.subtitle}</p>
 
-      {dataAddProduct.modal.inputs?.map((input) => (
+      <ModalFields>
+        {dataAddProduct.modal.inputs?.map((input) => (
         <InputText
-          style={{ width: "100%" }}
           key={input.name}
           label={input.label}
           name={input.name}
@@ -70,9 +76,12 @@ const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
           }
           required={input.required}
         />
-      ))}
+        ))}
+      </ModalFields>
 
-      <button onClick={handleSubmit}>{dataAddProduct.modal.button}</button>
+      <Button type="button" onClick={handleSubmit} fullWidth>
+        {dataAddProduct.modal.button}
+      </Button>
     </ModalAddPlantWrapper>
   );
 };

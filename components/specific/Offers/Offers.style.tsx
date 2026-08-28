@@ -1,29 +1,20 @@
+"use client";
+
 import styled from "styled-components";
 
 export const OffersWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  padding-top: 8rem;
-  padding-bottom: 2rem;
-
+  padding-top: 3.5rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
 
-  .container-offers {
-    width: 100%;
-    margin-top: 2.8rem;
-    padding: 0.5rem;
-    padding-bottom: 1rem;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
-    gap: 1rem;
-
-    scroll-behavior: smooth;
-    overflow-y: auto;
+  @media (max-width: 768px) {
+    padding-top: 2.5rem;
   }
+`;
+
+export const OffersGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.25rem;
 `;

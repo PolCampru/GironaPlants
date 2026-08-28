@@ -1,40 +1,34 @@
+"use client";
+
 import styled from "styled-components";
 
 export const HeroWrapper = styled.div`
-  height: 83vh;
-  width: 100%;
-  margin-top: 14vh;
-  margin-bottom: 3vh;
-  padding: 8% 12%;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 4rem;
+  padding: 2.75rem;
+
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.panel};
+
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 3.5rem;
   align-items: center;
-  gap: 5%;
-  background-color: ${(props) => props.theme.colors.creamLight};
 
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    height: auto;
-    margin-top: 10vh;
-    padding: 8% 5%;
-    gap: 3rem;
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 14lvh;
-    padding: 6% 3%;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 1.75rem;
+    margin-top: 2.5rem;
   }
 `;
 
-export const ImageContainer = styled.div`
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+export const CoverFrame = styled.div`
+  border-radius: ${({ theme }) => theme.radii.card};
+  overflow: hidden;
+  box-shadow: ${({ theme }) => theme.shadow.lg};
+  aspect-ratio: 3 / 4;
+  background: ${({ theme }) => theme.colors.lightGreen};
 
   img {
     width: 100%;
@@ -42,67 +36,99 @@ export const ImageContainer = styled.div`
     object-fit: cover;
   }
 
-  &:hover {
-    transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  @media (max-width: 1024px) {
-    width: 80%;
-    height: auto;
-    img {
-      height: auto;
-    }
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 900px) {
+    max-width: 18rem;
+    aspect-ratio: 4 / 3;
   }
 `;
 
 export const InfoContainer = styled.div`
-  width: 60%;
-  height: 100%;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 1.125rem;
 
   h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: clamp(2rem, 3.6vw, 3rem);
+    font-weight: 400;
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    color: ${({ theme }) => theme.colors.dark};
   }
 
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    color: #4a443e;
+    max-width: 33rem;
   }
+`;
 
-  @media (max-width: 1024px) {
-    width: 80%;
-    align-items: center;
-    text-align: center;
+export const Label = styled.span`
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.muted};
+`;
 
-    h1 {
-      font-size: 2rem;
-    }
+export const MetaRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+`;
 
-    h2 {
-      font-size: 1.3rem;
-    }
+export const MetaChip = styled.span<{ $accent?: boolean }>`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  height: 2rem;
+  padding-inline: 0.8125rem;
+  border-radius: ${({ theme }) => theme.radii.pill};
+
+  font-size: 0.8125rem;
+  font-weight: ${({ $accent }) => ($accent ? 700 : 500)};
+
+  background: ${({ $accent, theme }) =>
+    $accent ? theme.colors.lime : theme.colors.paper};
+  color: ${({ $accent, theme }) =>
+    $accent ? theme.colors.moss : theme.colors.dark};
+  border: 1px solid
+    ${({ $accent, theme }) => ($accent ? theme.colors.lime : theme.colors.line)};
+
+  svg {
+    color: ${({ theme }) => theme.colors.brandGreen};
+    flex-shrink: 0;
   }
+`;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    gap: 1rem;
+export const ActionRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.375rem;
+`;
 
-    h1 {
-      font-size: 1.8rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-    }
+export const DownloadButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  height: ${({ theme }) => theme.control.heightLg};
+  padding-inline: 1.625rem;
+  border-radius: ${({ theme }) => theme.radii.pill};
+
+  background: ${({ theme }) => theme.colors.brandGreen};
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 0.9375rem;
+  font-weight: 600;
+
+  transition: background-color 0.18s ease, box-shadow 0.18s ease;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.greenDeep};
+    box-shadow: ${({ theme }) => theme.shadow.md};
   }
 `;

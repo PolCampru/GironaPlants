@@ -1,62 +1,66 @@
-import { AddProductType, QueryType } from "@/types/Products";
+"use client";
+
 import React from "react";
-import {
-  AddPlant,
-  AppliedFiltersWrapper,
-  FiltersWrapper,
-} from "./AppliedFilters.style";
+import { AnimatePresence } from "framer-motion";
+import { QueryType } from "@/types/Products";
+import { FiltersWrapper } from "./AppliedFilters.style";
 import FilterTag from "./FilterTag/FilterTag";
-import Loader from "@/components/ui/Loader/Loader";
 
 interface AppliedFiltersProps {
   filters: QueryType;
-  dataAddProduct: AddProductType;
   handleRemove: (
     name: keyof QueryType,
     value: string | boolean | Record<number, string>
   ) => void;
-  addPlant: () => void;
+  offersLabel: string;
+  removeLabel: string;
 }
 
+/**
+ * Chips for whatever is currently narrowing the table. Renders nothing when
+ * no filter is applied — it used to reserve a row and carry an unrelated
+ * "add a plant" link, which has moved up to the page header.
+ */
 const AppliedFilters = ({
   filters,
-  dataAddProduct,
   handleRemove,
-  addPlant,
+  offersLabel,
+  removeLabel,
 }: AppliedFiltersProps) => {
-  if (!dataAddProduct) return <Loader />;
+  const formatEntries = Object.entries(filters.format ?? {});
+  const hasAny = !!filters.search || filters.offers || formatEntries.length > 0;
+
+  if (!hasAny) return null;
+
   return (
-    <AppliedFiltersWrapper>
-      <FiltersWrapper>
+    <FiltersWrapper>
+      <AnimatePresence initial={false}>
         {filters.search && (
           <FilterTag
+            key="search"
             label={filters.search}
+            removeLabel={removeLabel}
             onRemove={() => handleRemove("search", "")}
           />
         )}
         {filters.offers && (
           <FilterTag
-            label="Ofertes"
+            key="offers"
+            label={offersLabel}
+            removeLabel={removeLabel}
             onRemove={() => handleRemove("offers", false)}
           />
         )}
-        {filters.format && (
-          <>
-            {Object.entries(filters.format).map(([key, value]) => (
-              <FilterTag
-                key={key}
-                label={value}
-                onRemove={() => handleRemove("format", { [key]: value })}
-              />
-            ))}
-          </>
-        )}
-      </FiltersWrapper>
-      <AddPlant>
-        {dataAddProduct.question}{" "}
-        <span onClick={addPlant}>{dataAddProduct.button}</span>
-      </AddPlant>
-    </AppliedFiltersWrapper>
+        {formatEntries.map(([key, value]) => (
+          <FilterTag
+            key={key}
+            label={value}
+            removeLabel={removeLabel}
+            onRemove={() => handleRemove("format", { [key]: value })}
+          />
+        ))}
+      </AnimatePresence>
+    </FiltersWrapper>
   );
 };
 

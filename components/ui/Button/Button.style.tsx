@@ -1,85 +1,108 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+"use client";
 
-export const StyledButton = styled(motion.button)`
-  position: relative;
+import styled, { css } from "styled-components";
+import type { CtaSize, CtaVariant } from "@/components/ui/CtaLink/CtaLink";
+
+/** Same visual language as CtaLink, for real <button> actions. */
+export const StyledButton = styled.button<{
+  $variant?: CtaVariant;
+  $size?: CtaSize;
+  $fullWidth?: boolean;
+}>`
   display: inline-flex;
   align-items: center;
-  cursor: pointer;
-  outline: none;
+  justify-content: center;
+  gap: 0.5rem;
+
+  width: ${({ $fullWidth }) => ($fullWidth ? "100%" : "auto")};
+
+  ${({ $size = "lg", theme }) => css`
+    height: ${$size === "lg" ? theme.control.heightLg : theme.control.height};
+    padding-inline: ${$size === "lg" ? "1.625rem" : "1.25rem"};
+    font-size: ${$size === "lg" ? "0.9375rem" : "0.875rem"};
+  `}
+
   border: 0;
-  background: transparent;
-  font-size: inherit;
+  border-radius: ${({ theme }) => theme.radii.pill};
   font-family: inherit;
+  font-weight: 600;
+  line-height: 1;
   white-space: nowrap;
-  height: 1rem;
+  cursor: pointer;
 
-  &:hover .circle {
-    width: 100%;
+  transition: background-color 0.18s ease, color 0.18s ease,
+    border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+
+  svg {
+    flex-shrink: 0;
+    transition: transform 0.18s ease;
   }
 
-  &:hover .circle .icon.arrow {
-    background: ${(props) => props.theme.colors.white};
-    transform: translate(1rem, 0);
+  &:hover:not(:disabled) svg {
+    transform: translateX(3px);
   }
 
-  &:hover .button-text {
-    color: ${(props) => props.theme.colors.white};
+  &:active:not(:disabled) {
+    transform: translateY(1px);
   }
-`;
 
-export const Circle = styled(motion.span)`
-  position: absolute;
-  left: 0;
-  z-index: 0;
-  display: block;
-  margin: 0;
-  width: 1.8rem;
-  height: 1.8rem;
-  background: ${(props) => props.theme.colors.brandGreen};
-  border-radius: 1.625rem;
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-`;
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 
-export const Icon = styled(motion.span)`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: ${(props) => props.theme.colors.white};
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-
-  &.arrow {
-    left: 0.02rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: -0.25rem;
-      right: 0.0625rem;
-      width: 0.5rem;
-      height: 0.5rem;
-      border-top: ${(props) => `0.125rem solid ${props.theme.colors.white}`};
-      border-right: ${(props) => `0.125rem solid ${props.theme.colors.white}`};
-      transform: rotate(45deg);
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &:hover:not(:disabled) svg,
+    &:active:not(:disabled) {
+      transform: none;
     }
   }
-`;
 
-export const ButtonText = styled(motion.span)`
-  position: relative;
-  z-index: 1;
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  color: ${(props) => props.theme.colors.dark};
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  padding: 0.65rem 1rem 0.65rem 1.9rem;
+  ${({ $variant = "solid", theme }) => {
+    switch ($variant) {
+      case "outline":
+        return css`
+          color: ${theme.colors.brandGreen};
+          border: 1.5px solid ${theme.colors.brandGreen};
+          background: transparent;
 
-  &:hover {
-    padding: 0.65rem 1rem 0.65rem 2.7rem;
-  }
+          &:hover:not(:disabled) {
+            background: ${theme.colors.hoverGreen};
+            border-color: ${theme.colors.greenDeep};
+            color: ${theme.colors.greenDeep};
+          }
+        `;
+      case "light":
+        return css`
+          color: ${theme.colors.moss};
+          background: ${theme.colors.white};
+
+          &:hover:not(:disabled) {
+            box-shadow: ${theme.shadow.lg};
+          }
+        `;
+      case "ghost":
+        return css`
+          color: ${theme.colors.dark};
+          background: ${theme.colors.white};
+          border: 1px solid ${theme.colors.line};
+
+          &:hover:not(:disabled) {
+            border-color: ${theme.colors.brandGreen};
+            color: ${theme.colors.brandGreen};
+          }
+        `;
+      default:
+        return css`
+          color: ${theme.colors.white};
+          background: ${theme.colors.brandGreen};
+
+          &:hover:not(:disabled) {
+            background: ${theme.colors.greenDeep};
+            box-shadow: ${theme.shadow.md};
+          }
+        `;
+    }
+  }}
 `;

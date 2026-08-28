@@ -59,12 +59,17 @@ export async function GET(
     const url = new URL(req.url);
     const searchParams = url.searchParams;
     
-    // Sanitize query parameters
+    // Sanitize query parameters.
+    // `$` must be allowed: every Strapi operator is a $-prefixed key
+    // (filters[description][$containsi], sort, filters[$or][0][...]). Without
+    // it the whole filters block was dropped here and the products page
+    // returned all 1530 rows however you searched or filtered.
+    const KEY_RE = /^[a-zA-Z0-9[\]$.,:_*&=%-]+$/;
+    const VALUE_RE = /^[\p{L}\p{N}[\]$.,:_*&=%\s/'()+-]*$/u;
+
     const sanitizedParams = new URLSearchParams();
     for (const [key, value] of searchParams.entries()) {
-      // Allow only safe characters
-      if (/^[a-zA-Z0-9\[\]\.\,\:\-\_\*\&\=\%]+$/.test(key) && 
-          /^[a-zA-Z0-9\[\]\.\,\:\-\_\*\&\=\%\s]+$/.test(value)) {
+      if (KEY_RE.test(key) && VALUE_RE.test(value)) {
         sanitizedParams.append(key, value);
       }
     }

@@ -1,45 +1,65 @@
 "use client";
 
-import { OurClientsProps } from "@/types/AboutUs";
+import React from "react";
+import type { IconType } from "react-icons";
 import {
-  ClientCart,
-  ContainerClients,
-  ContainerTitle,
-  OurClientsWrapper,
-} from "./OurClients.style";
-import Title from "@/components/ui/Title/Title";
-import Image from "next/image";
+  LuApple,
+  LuBuilding2,
+  LuDroplets,
+  LuLandmark,
+  LuPencilRuler,
+  LuShovel,
+  LuSprout,
+  LuStore,
+  LuTrees,
+  LuTruck,
+} from "react-icons/lu";
+import { ClientCard, ClientIcon, ClientsGrid } from "./OurClients.style";
+import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
+import Section from "@/components/ui/Section/Section";
+import { OurClientsProps } from "@/types/AboutUs";
 
-const OurClients = ({ data }: { data: OurClientsProps }) => {
-  return (
-    <OurClientsWrapper>
-      <ContainerTitle>
-        <Title title={data.our_clients.title} />
-        <p>{data.our_clients.subtitle}</p>
-      </ContainerTitle>
-
-      <ContainerClients>
-        {data.our_clients.clients.map((client) => (
-          <ClientCart key={client.name}>
-            <Image
-              src={client.image}
-              alt={client.name}
-              width={60}
-              height={60}
-              style={{
-                width: '60px',
-                height: '60px',
-                objectFit: 'contain'
-              }}
-              sizes="60px"
-            />
-            <p>{client.name}</p>
-            <p className="description">{client.description}</p>
-          </ClientCart>
-        ))}
-      </ContainerClients>
-    </OurClientsWrapper>
-  );
+/**
+ * Inline icons instead of the ten SVG files under /images/aboutUs. next/image
+ * is configured with `dangerouslyAllowSVG: false`, so those never rendered
+ * through the optimizer, and they carried no shared stroke weight or grid.
+ */
+const ICONS: Record<string, IconType> = {
+  nurseries: LuSprout,
+  garden: LuStore,
+  gardeners: LuShovel,
+  public: LuBuilding2,
+  sustainable: LuDroplets,
+  landscapers: LuPencilRuler,
+  distributors: LuTruck,
+  fruit: LuApple,
+  administrations: LuLandmark,
+  reforestation: LuTrees,
 };
+
+const OurClients = ({ data }: { data: OurClientsProps }) => (
+  <Section>
+    <SectionHeading
+      label={data.our_clients.title}
+      title={data.our_clients.headline}
+      lead={data.our_clients.subtitle}
+    />
+
+    <ClientsGrid>
+      {data.our_clients.clients.map((client) => {
+        const Icon = ICONS[client.icon ?? ""] ?? LuSprout;
+        return (
+          <ClientCard key={client.name}>
+            <ClientIcon>
+              <Icon aria-hidden="true" size={21} />
+            </ClientIcon>
+            <h3>{client.name}</h3>
+            <p>{client.description}</p>
+          </ClientCard>
+        );
+      })}
+    </ClientsGrid>
+  </Section>
+);
 
 export default OurClients;

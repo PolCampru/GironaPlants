@@ -8,7 +8,8 @@ import {
 } from "./ContainerOffers.style";
 import OffertCardMini from "../OffertCardMini/OffertCardMini";
 import { OfferType } from "@/types/Offers";
-import Image from "next/image";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import useUiLabels from "@/hooks/useUiLabels";
 
 interface OffersCarouselProps {
   query: { offers: boolean };
@@ -23,6 +24,7 @@ export function OffersCarousel({
   offersData,
   handleAddToCart,
 }: OffersCarouselProps) {
+  const labels = useUiLabels();
   const [leftValue, setLeftValue] = useState(0);
   const [maxLeft, setMaxLeft] = useState(0);
 
@@ -90,32 +92,24 @@ export function OffersCarousel({
       <ContainerHeader>
         <p>{data.filters.offersTitle}</p>
 
-        <ContainerArrow onClick={handlePrev} $isActive={leftValue < 0}>
-          <Image
-            src="/images/products/arrowIcon.svg"
-            alt="arrow"
-            width={24}
-            height={24}
-            style={{
-              width: "100%",
-              height: "100%",
-              transform: "rotate(180deg)",
-            }}
-          />
+        <ContainerArrow
+          as="button"
+          type="button"
+          onClick={handlePrev}
+          $isActive={leftValue < 0}
+          aria-label={labels.previous}
+        >
+          <FiChevronLeft aria-hidden="true" size={18} />
         </ContainerArrow>
 
-        <ContainerArrow onClick={handleNext} $isActive={leftValue > maxLeft}>
-          <Image
-            src="/images/products/arrowIcon.svg"
-            alt="arrow"
-            width={24}
-            height={24}
-            style={{
-              width: "100%",
-              height: "100%",
-              transform: "rotate(180deg)",
-            }}
-          />
+        <ContainerArrow
+          as="button"
+          type="button"
+          onClick={handleNext}
+          $isActive={leftValue > maxLeft}
+          aria-label={labels.next}
+        >
+          <FiChevronRight aria-hidden="true" size={18} />
         </ContainerArrow>
       </ContainerHeader>
 

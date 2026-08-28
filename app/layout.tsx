@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar/Navbar";
 import Footer from "@/components/layout/Footer/Footer";
 import ThemeClientProvider from "@/providers/ThemeClientProvider";
-import { Inter } from "next/font/google";
+import { Manrope, Newsreader } from "next/font/google";
 import * as React from "react";
 import { ReduxProvider } from "./reduxProvider";
 import CookiePrompt from "@/components/layout/Cookies/CookiePrompt";
@@ -16,10 +16,21 @@ interface RootLayoutProps {
   };
 }
 
-const inter = Inter({
+// Newsreader carries the headlines, Manrope the body and interface. Both are
+// self-hosted by next/font, so no render-blocking request to Google.
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-newsreader",
   display: "swap",
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -89,22 +100,23 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
     // reaches it — default the document language to the primary locale.
     // (robots and viewport come from the metadata API; the localized JSON-LD
     // lives in app/[lng]/layout.tsx.)
-    <html className={inter.variable} lang={params?.lng ?? "es"}>
+    <html
+      className={`${manrope.variable} ${newsreader.variable}`}
+      lang={params?.lng ?? "es"}
+    >
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body>
         <ThemeClientProvider>
           <ReduxProvider>
-            <header>
-              <Navbar />
-            </header>
+            <Navbar />
             <ErrorBoundary>
               <main className="layout-content">{children}</main>
             </ErrorBoundary>
             <CookiePrompt />
           </ReduxProvider>
-          <Footer />
+          <Footer year={new Date().getFullYear()} />
         </ThemeClientProvider>
       </body>
     </html>

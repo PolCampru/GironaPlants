@@ -1,116 +1,57 @@
+"use client";
+
 import styled from "styled-components";
 
 export const EmptyStateContainer = styled.div`
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
 
-  @media (max-width: 1024px) {
-    height: auto;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  margin-top: 2.25rem;
+  padding: 3rem 2.5rem;
+
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.panel};
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
   }
 `;
 
-export const EmptyStateContent = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+export const EmptyStateIcon = styled.span`
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  align-items: start;
-  gap: 2rem;
 
-  @media (max-width: 1024px) {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-  }
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+
+  border-radius: ${({ theme }) => theme.radii.pill};
+  background: ${({ theme }) => theme.colors.lightGreen};
+  color: ${({ theme }) => theme.colors.greenDeep};
 `;
 
 export const EmptyStateTitle = styled.h2`
-  font-size: 4rem;
-  font-weight: 700;
+  font-family: ${({ theme }) => theme.font.display};
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 400;
+  line-height: 1.15;
   color: ${({ theme }) => theme.colors.dark};
-
-  span {
-    color: ${({ theme }) => theme.colors.brandGreen};
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 3rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
-  }
 `;
 
 export const EmptyStateDescription = styled.p`
-  font-size: 2rem;
-  font-weight: 500;
-  color: ${({ theme }) => theme.colors.dark};
-  line-height: 1.4;
-  margin-bottom: 1rem;
-
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 1.25rem;
-  }
+  font-size: 1rem;
+  line-height: 1.6;
+  color: ${({ theme }) => theme.colors.muted};
+  max-width: 34rem;
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  gap: 1.5rem;
-  margin-top: 1rem;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-  }
-`;
-
-export const StyledButton = styled.button<{ variant: "primary" | "secondary" }>`
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: fit-content;
-  min-width: 200px;
-  border: 2px solid ${({ theme }) => theme.colors.brandGreen};
-
-  ${({ variant, theme }) =>
-    variant === "primary"
-      ? `
-    background-color: ${theme.colors.brandGreen};
-    color: ${theme.colors.white};
-    &:hover {
-      background-color: ${theme.colors.brandGreenDark};
-      border-color: ${theme.colors.brandGreenDark};
-    }
-  `
-      : `
-    background-color: transparent;
-    color: ${theme.colors.brandGreen};
-    &:hover {
-      background-color: ${theme.colors.brandGreenLight};
-    }
-  `}
-
-  @media (max-width: 1024px) {
-    width: 100%;
-    font-size: 1.1rem;
-  }
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
 `;

@@ -1,84 +1,100 @@
 "use client";
 
 import React from "react";
-import { motion, useInView } from "framer-motion";
-import {
-  CardArrow,
-  OurPlantsWrapper,
-  PlantCard,
-  PlantsContainer,
-  SectionFooter,
-} from "./OurPlants.style";
-import { OurPlantsType, PlantsHomeProps } from "@/types/Home";
-import Title from "@/components/ui/Title/Title";
-import CtaLink from "@/components/ui/CtaLink/CtaLink";
+import Image from "next/image";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-import { useTranslation } from "react-i18next";
 import {
-  fadeInUpVariants,
-  staggerContainerVariants,
-  staggerItemVariants,
-} from "@/animations/ScrollAnimations";
+  AskCard,
+  CardArrow,
+  CardBody,
+  CardText,
+  PlantCard,
+  PlantsGrid,
+} from "./OurPlants.style";
+import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
+import Section from "@/components/ui/Section/Section";
+import CtaLink from "@/components/ui/CtaLink/CtaLink";
+import { PlantsHomeProps } from "@/types/Home";
 
 const OurPlants = ({ data }: { data: PlantsHomeProps }) => {
-  const { t } = useTranslation(["home"]);
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const reduceMotion = useReducedMotion();
 
-  const translated = t("ourPlants", { returnObjects: true });
-  // Keep the wrapper mounted while translations load: useInView only attaches
-  // its observer to elements present on first render, so an early return
-  // would leave the section permanently invisible.
-  const ourPlants: OurPlantsType = Array.isArray(translated) ? translated : [];
+  // The categories come from the server as props. They used to be read from
+  // i18n inside this client component, which meant the server rendered zero
+  // cards and the client rendered nine — a hydration mismatch that made React
+  // throw away and re-render the whole subtree on every load.
+  const categories = data.categories;
 
   return (
-    <OurPlantsWrapper ref={ref}>
-      <motion.div
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={fadeInUpVariants}
-      >
-        <Title title={data.plants_title} />
-        <h2>{data.plants_subtitle}</h2>
-      </motion.div>
+    <Section ref={ref}>
+      <SectionHeading
+        label={data.plants_title}
+        title={data.plants_headline}
+        lead={data.plants_subtitle}
+        action={
+          <CtaLink href={`/${data.locale}/products`} $variant="outline">
+            {data.plants_button}
+            <FiArrowRight aria-hidden="true" />
+          </CtaLink>
+        }
+      />
 
-      <PlantsContainer
-        as={motion.div}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={staggerContainerVariants}
-      >
-        {ourPlants.map((plant, index) => {
-          return (
-            <motion.div key={plant.key} variants={staggerItemVariants}>
-              <PlantCard
-                href={`/${data.locale}/products`}
-                $image={plant.img}
-                $tone={index % 2 === 0 ? "cream" : "green"}
-              >
-                <h3>{plant.title}</h3>
-                {plant.description && <p>{plant.description}</p>}
+      <PlantsGrid>
+        {categories.map((plant, index) => (
+          <motion.div
+            key={plant.key}
+            initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : undefined}
+            transition={{ duration: 0.4, delay: Math.min(index, 5) * 0.06 }}
+          >
+            <PlantCard
+              href={`/${data.locale}/products?search=${encodeURIComponent(
+                plant.search ?? plant.title
+              )}`}
+            >
+              {plant.img && (
+                <Image
+                  src={plant.img}
+                  alt=""
+                  width={520}
+                  height={420}
+                  sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              )}
+              <CardBody>
+                <CardText>
+                  <h3>{plant.title}</h3>
+                  {plant.description && <p>{plant.description}</p>}
+                </CardText>
                 <CardArrow aria-hidden="true">
                   <FiArrowRight />
                 </CardArrow>
-              </PlantCard>
-            </motion.div>
-          );
-        })}
-      </PlantsContainer>
+              </CardBody>
+            </PlantCard>
+          </motion.div>
+        ))}
 
-      <SectionFooter
-        as={motion.div}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={fadeInUpVariants}
-      >
-        <CtaLink href={`/${data.locale}/products`} $variant="solid">
-          {data.plants_button}
-          <FiArrowRight aria-hidden="true" />
-        </CtaLink>
-      </SectionFooter>
-    </OurPlantsWrapper>
+        {data.ask && (
+          <AskCard>
+            <div>
+              <h3>{data.ask.title}</h3>
+              <p>{data.ask.text}</p>
+            </div>
+            <CtaLink
+              href={`/${data.locale}/contact`}
+              $variant="solid"
+              $size="md"
+            >
+              {data.ask.button}
+              <FiArrowRight aria-hidden="true" />
+            </CtaLink>
+          </AskCard>
+        )}
+      </PlantsGrid>
+    </Section>
   );
 };
 

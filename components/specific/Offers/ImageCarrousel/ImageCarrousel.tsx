@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Image } from "@/types/Offers";
@@ -14,12 +16,14 @@ import {
   NavButton,
 } from "./ImageCarrousel.style";
 import { strapiMediaUrl } from "@/lib/strapi";
+import useUiLabels from "@/hooks/useUiLabels";
 
 type ImageCarrouselProps = {
   images: Image[];
 };
 
 function ImageCarrousel({ images }: ImageCarrouselProps) {
+  const labels = useUiLabels();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -75,7 +79,7 @@ function ImageCarrousel({ images }: ImageCarrouselProps) {
       {isModalOpen && (
         <ModalOverlay onClick={closeModal}>
           <ModalContent onClick={(e) => e.stopPropagation()}>
-            <CloseButton onClick={closeModal} aria-label="Close">
+            <CloseButton onClick={closeModal} aria-label={labels.close}>
               &times;
             </CloseButton>
             <ModalImage
@@ -84,10 +88,10 @@ function ImageCarrousel({ images }: ImageCarrouselProps) {
             />
             {images.length > 1 && (
               <NavigationButtons>
-                <NavButton onClick={showPrevImage} aria-label="Previous image">
+                <NavButton onClick={showPrevImage} aria-label={labels.previous}>
                   ‹
                 </NavButton>
-                <NavButton onClick={showNextImage} aria-label="Next image">
+                <NavButton onClick={showNextImage} aria-label={labels.next}>
                   ›
                 </NavButton>
               </NavigationButtons>

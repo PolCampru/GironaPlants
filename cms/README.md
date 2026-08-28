@@ -1,182 +1,87 @@
-# Seeding localized site content (home + about-us)
+# Strapi content types and seeding
 
-Production Strapi serves published `home` and `about-us` entries in all four
-locales (es, ca, en, fr) — seeded on 2026-08-15 and re-seeded on 2026-08-27
-with the Europe-wide sourcing copy. **CMS values win over the frontend
-fallbacks in `data/homeContent.ts` and `data/aboutUsContent.ts`**, so editing
-those files alone no longer changes the live site: re-run the seed (below) or
-edit in the admin panel. The fallbacks still cover fields the CMS leaves
-empty, and the whole page if Strapi is unreachable.
+Production Strapi runs at `https://api.gironaplants.com` (container `gp-strapi`
+on the Hostinger VPS `46.202.135.74`, under `/opt/gironaplants`). It serves the
+`home`, `about-us` and `catalogue` single types plus the `plant` and `offer`
+collections, in four locales: es, ca, en, fr.
 
-`cms/scripts/seed-site-content.js` pushes the repo copy into the CMS for all
-four locales and publishes it.
+**CMS values win over the frontend fallbacks** in `data/homeContent.ts`,
+`data/aboutUsContent.ts` and `data/cataloguesContent.ts`, so editing those
+files alone does not change the live site — re-run the seed, or edit in the
+admin panel. The fallbacks still cover fields the CMS leaves empty, and the
+whole page if Strapi is unreachable.
 
-From the repo root (after pushing to `main`, since the runner syncs the
-server checkout from GitHub):
+## Where the copy lives
+
+There is one source of truth. The per-locale copy is authored in `data/*.ts`
+and compiled to `cms/scripts/site-content.json`, which the seed script reads:
 
 ```bash
-bash cms/seed-content-to-vps.sh              # fill empty fields only
-SEED_FORCE=1 bash cms/seed-content-to-vps.sh # overwrite existing CMS copy
+npm run seed:build     # data/*Content.ts -> cms/scripts/site-content.json
 ```
 
-The seed script only writes attributes that exist in the deployed schema
+Commit the generated JSON — the Strapi container has no TypeScript toolchain.
+(Before this, the seed script carried a second hand-maintained copy of every
+string and the two drifted.)
+
+## Deploying a schema change and seeding
+
+`cms/deploy-schema-to-vps.sh` uploads the schemas from this working tree,
+rebuilds the Strapi image, waits for it to come up and runs the seed:
+
+```bash
+bash cms/deploy-schema-to-vps.sh              # fill empty fields only
+SEED_FORCE=1 bash cms/deploy-schema-to-vps.sh # overwrite existing CMS copy
+```
+
+It backs up `data/data.db` first. It does **not** go through GitHub, so it
+works before the change is pushed — but push afterwards: the server also keeps
+a git checkout in `frontend/`, and `cms/seed-content-to-vps.sh` copies
+`frontend/` over `strapi/`, which would revert an unpushed schema.
+
+`cms/seed-content-to-vps.sh` is the git-based variant: it syncs the server's
+checkout from `origin/main` and re-runs only the seed.
+
+The seed only writes attributes that exist in the deployed schema
 (string/text/richtext/json) and reports anything it skipped. It never touches
-media, relations or components, and by default it never overwrites content
-that editors typed in the admin panel.
+media, relations or components, and by default never overwrites content typed
+in the admin panel.
 
-`hero_badge`, `hero_secondary_button` and `trust_items` (JSON) were added to
-the `home` single type on 2026-08-27, so the whole hero is now editable from
-the admin panel. If the schema needs another field, add it to
-`cms/app/src/api/<type>/content-types/<type>/schema.json` in this repo, push,
-then on the VPS:
+> Publishing publishes the whole draft. Make sure no half-finished draft edits
+> exist on these single types before running.
 
-```bash
-ssh root@46.202.135.74
-cd /opt/gironaplants
-cp data/data.db backups/data.db.bak-$(date +%Y%m%d-%H%M%S)
-cd frontend && git fetch --depth 1 origin main && git checkout -f -B main origin/main && cd ..
-cp frontend/cms/app/src/api/home/content-types/home/schema.json \
-   strapi/src/api/home/content-types/home/schema.json
-docker compose build strapi && docker compose up -d strapi   # tables are created on boot
-```
+## Schema state (2026-08-28)
 
-then re-run the seed from your machine. `cms/app/` is the source of truth for
-the Strapi project, but nothing syncs it to `/opt/gironaplants/strapi/`
-automatically — that copy step is manual.
+`cms/app/` is the source of truth for the Strapi project; the deploy script
+copies the schema files to `/opt/gironaplants/strapi/`.
 
-# CMS migration: catalogues as an array
+**Added** — `home`: `hero_tag`, `search_placeholder`, `search_button`,
+`search_suggestions` (json), `stats` (json), `plants_headline`, `how_title`,
+`how_steps` (json), `catalogues_headline`. `about-us`: `label`,
+`hero_secondary_button`, `stats` (json), `catalogues_headline`. `catalogue`:
+`main_cover` (image).
 
-The `catalogue` single type currently hardcodes exactly three catalogues as
-flat fields (`catalogue1_title`, `catalogue1`, `catalogue1_img`, …2, …3).
-This folder contains everything needed to replace that with a **repeatable
-component** — a true array with no upper limit — on the Strapi side.
+**Removed** — `home`: `hero_button`, `trust_items` (replaced by `stats`, which
+carries a value/label pair instead of a bare string). `catalogue`: the fifteen
+legacy `catalogue1_*` / `catalogue2_*` / `catalogue3_*` attributes, now that
+every locale uses the `catalogues` repeatable component. `offer`:
+`valid_until`, which nothing ever read.
 
-The frontend in this repo is already migrated and **works with both shapes**
-(`lib/catalogues.ts` normalizes either), so frontend and CMS can be deployed
-in any order. Until the CMS is migrated the site keeps working exactly as
-before.
+Removing an attribute stops Strapi serving it; the SQLite column stays until
+you drop it, so the data is still in the backups under `/opt/gironaplants/backups`.
 
-## What changes in Strapi
+## Still to do by hand
 
-1. **New component** `catalogue.catalogue-item` with fields:
-   `title`, `subtitle`, `button`, `file` (PDF/media), `image` (cover).
-2. **New attribute on the `catalogue` single type**: `catalogues`, a
-   *repeatable* `catalogue.catalogue-item`, localized.
-3. **Data migration** copying `catalogue1..3` values into the array for every
-   locale (idempotent, safe to re-run — including after the legacy fields
-   have been removed).
-4. Later (optional cleanup): remove the legacy `catalogueN_*` attributes.
+The `catalogue` single type exists and is published in all four locales (it
+never existed before, which is why `/catalogues` was a hard 404 in production
+while the navbar linked to it). Two things need the admin panel, because they
+are files rather than copy:
 
-## Server layout (Hostinger VPS 46.202.135.74)
-
-Everything runs under Docker Compose in `/opt/gironaplants`:
-
-- `strapi/` — Strapi source (image `gironaplants-strapi`, container `gp-strapi`,
-  bound to `127.0.0.1:1337`)
-- `frontend/` — Next.js app (container `gp-frontend`)
-- `data/` — SQLite database (bind-mounted into the container)
-- `uploads/` — Strapi media (bind-mounted)
-- `backups/` — existing backup directory
-- `docker-compose.yml`, `Caddyfile`
-
-## Step-by-step (on the VPS)
-
-### 1. Back up
-
-```bash
-cp /opt/gironaplants/data/data.db /opt/gironaplants/backups/data.db.bak-$(date +%Y%m%d-%H%M)
-```
-
-### 2. Add the component
-
-Copy `cms/src/components/catalogue/catalogue-item.json` from this repo to
-`/opt/gironaplants/strapi/src/components/catalogue/catalogue-item.json`.
-
-### 3. Add the `catalogues` attribute to the single type
-
-Edit `/opt/gironaplants/strapi/src/api/catalogue/content-types/catalogue/schema.json`
-and add inside `"attributes"` (keep the existing legacy fields for now — they
-are removed in step 7):
-
-```json
-"catalogues": {
-  "type": "component",
-  "repeatable": true,
-  "component": "catalogue.catalogue-item",
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  }
-}
-```
-
-> If the existing attributes carry `pluginOptions.i18n.localized: true`, keep
-> the same convention here (shown above). If the content type is not
-> localized, drop the `pluginOptions` block.
-
-### 4. Rebuild the image and restart
-
-```bash
-cd /opt/gironaplants
-docker compose build strapi
-docker compose up -d strapi
-docker logs -f gp-strapi   # wait until it's up; schema tables are created on boot
-```
-
-### 5. Run the data migration
-
-Copy `cms/scripts/migrate-catalogues.js` to
-`/opt/gironaplants/strapi/scripts/migrate-catalogues.js`, then run it inside
-the container (it needs the Strapi runtime and the DB):
-
-```bash
-docker compose exec strapi node scripts/migrate-catalogues.js
-```
-
-> If the script isn't in the image, either rebuild after copying it into
-> `strapi/`, or mount/copy it in:
-> `docker cp strapi/scripts/migrate-catalogues.js gp-strapi:/srv/app/scripts/`
-
-Notes:
-- **Publishing publishes the whole draft.** Make sure no half-finished draft
-  edits exist on the Catalogue single type before running.
-- Locales in `CATALOGUE_MIGRATION_EMPTY_LOCALES` (default `en,fr`) are
-  skipped entirely — their `catalogues` array stays empty, which hides the
-  section on the site (matching the old hardcoded behavior). Override with
-  `CATALOGUE_MIGRATION_EMPTY_LOCALES="" docker compose exec ...` to migrate
-  them too.
-
-### 6. Verify
-
-```bash
-curl "http://127.0.0.1:1337/api/catalogue?locale=es&populate[catalogues][populate]=*" \
-  -H "Authorization: Bearer $STRAPI_TOKEN"
-```
-
-`data.catalogues` should be an array with the migrated items, each with
-populated `file` and `image`. The website needs no redeploy — it picks the
-new shape automatically (allow up to 1 h of cache, or restart `gp-frontend`
-to see it immediately).
-
-Editors can now add/remove/reorder any number of catalogues per locale in
-the admin panel (Content Manager → Catalogue → `catalogues`).
-
-### 7. Cleanup (later, once verified in production)
-
-Remove the legacy attributes from
-`strapi/src/api/catalogue/content-types/catalogue/schema.json`:
-`catalogue1_title`, `catalogue1_subtitle`, `catalogue1_button`, `catalogue1`,
-`catalogue1_img` (and the same for 2 and 3), then rebuild + restart (step 4).
-The frontend does not reference them once `catalogues` is served.
-
-## Notes
-
-- The Content-Type Builder is disabled in production on purpose; that is why
-  the change is made by editing schema files + rebuild, exactly what the
-  builder would generate.
-- If you develop Strapi locally and deploy via git, apply steps 2–3 locally
-  through the Content-Type Builder UI instead (create component
-  `catalogue-item` in category `catalogue`, add repeatable `catalogues` field
-  to the Catalogue single type) — it produces the same JSON — then commit,
-  deploy, and run step 5 on the server.
+1. **Upload the catalogue PDFs.** `main_catalogue` (the general catalogue) and
+   the `catalogues` repeatable component (one entry per specific catalogue:
+   title, subtitle, button, `file`, `image`). Until then `/catalogues` shows
+   the hero and links to the live product catalogue instead of a download, and
+   the home and About Us pages show the catalogues section heading with no
+   cards.
+2. **Optionally upload `main_cover`** and `hero_images`; the frontend falls
+   back to the photographs in `public/images/`.

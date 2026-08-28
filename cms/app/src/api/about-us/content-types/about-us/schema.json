@@ -13,13 +13,19 @@
     "i18n": { "localized": true }
   },
   "attributes": {
+    "label":             { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
     "title":             { "type": "string", "required": true, "pluginOptions": { "i18n": { "localized": true } } },
     "subtitle":          { "type": "text",   "pluginOptions": { "i18n": { "localized": true } } },
     "hero_button":       { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "hero_secondary_button": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
     "hero_images":       { "type": "media", "multiple": true, "allowedTypes": ["images"], "pluginOptions": { "i18n": { "localized": false } } },
+
+    "stats":             { "type": "json",   "pluginOptions": { "i18n": { "localized": true } } },
     "our_clients":       { "type": "json",   "pluginOptions": { "i18n": { "localized": true } } },
-    "catalogues_title":  { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
-    "catalogues_subtitle": { "type": "text", "pluginOptions": { "i18n": { "localized": true } } },
-    "catalogues_button": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } }
+
+    "catalogues_title":     { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_headline":  { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_subtitle":  { "type": "text",   "pluginOptions": { "i18n": { "localized": true } } },
+    "catalogues_button":    { "type": "string", "pluginOptions": { "i18n": { "localized": true } } }
   }
 }

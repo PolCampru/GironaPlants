@@ -1,31 +1,36 @@
-import { FilterToggleWrapper } from "./FilterToggle.style";
+"use client";
 
-interface FilterToggle {
+import React from "react";
+import { FilterToggleWrapper, ToggleOption } from "./FilterToggle.style";
+
+interface FilterToggleProps {
   options: { label: string; value: string }[];
   onChange: (value: string) => void;
   selectedKey: string;
+  label?: string;
 }
 
-const FilterToggle = (props: FilterToggle) => {
-  const { options, onChange, selectedKey } = props;
-
-  return (
-    <FilterToggleWrapper>
-      {options?.map((option: { label: string; value: string }) => (
-        <div
-          key={option?.value}
-          className={
-            selectedKey === option?.value ? "selected filter" : "filter"
-          }
-          onClick={() => {
-            onChange(option?.value);
-          }}
-        >
-          {option?.label}
-        </div>
-      ))}
-    </FilterToggleWrapper>
-  );
-};
+/** Segmented control. The options are real buttons in a radiogroup now. */
+const FilterToggle = ({
+  options,
+  onChange,
+  selectedKey,
+  label,
+}: FilterToggleProps) => (
+  <FilterToggleWrapper role="radiogroup" aria-label={label}>
+    {options?.map((option) => (
+      <ToggleOption
+        key={option.value}
+        type="button"
+        role="radio"
+        aria-checked={selectedKey === option.value}
+        $selected={selectedKey === option.value}
+        onClick={() => onChange(option.value)}
+      >
+        {option.label}
+      </ToggleOption>
+    ))}
+  </FilterToggleWrapper>
+);
 
 export default FilterToggle;

@@ -1,9 +1,11 @@
-import Contact from "@/components/specific/Contact/Contact";
-import PhoneAndEmail from "@/components/specific/Contact/PhoneAndEmail/PhoneAndEmail";
 import React from "react";
-
 import { Metadata } from "next";
+import Contact from "@/components/specific/Contact/Contact";
+import { ContactPageProps } from "@/types/Contact";
 import { buildPageMetadata } from "@/data/seoContent";
+import { getContactHeading } from "@/data/pageHeadings";
+import { getFormContent } from "@/data/formContent";
+import { getContactAside } from "@/data/contactContent";
 
 export async function generateMetadata({
   params,
@@ -14,17 +16,17 @@ export async function generateMetadata({
   return buildPageMetadata(lng, "contact");
 }
 
-const ContactPage = () => {
-  return (
-    <>
-      <section>
-        <Contact />
-      </section>
-      <section>
-        <PhoneAndEmail />
-      </section>
-    </>
-  );
-};
+export default async function ContactPage({ params }: ContactPageProps) {
+  const { lng } = await params;
 
-export default ContactPage;
+  // The separate PhoneAndEmail section is gone: the phone number, email,
+  // opening hours and location now sit beside the form instead of below it.
+  return (
+    <Contact
+      locale={lng}
+      heading={getContactHeading(lng)}
+      formContent={getFormContent(lng)}
+      aside={getContactAside(lng)}
+    />
+  );
+}

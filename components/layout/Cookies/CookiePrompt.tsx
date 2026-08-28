@@ -2,8 +2,15 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import React from "react";
+import {
+  AcceptButton,
+  MoreInfoLink,
+  PromptActions,
+  PromptBar,
+  PromptInner,
+  RejectButton,
+} from "./CookiePrompt.style";
 
 interface TranslationTexts {
   message: string;
@@ -88,83 +95,19 @@ export default function CookiePrompt(): React.ReactNode {
       : "/en/cookie-policy";
 
   return (
-    <div className="cookie-prompt">
-      <div className="cookie-content">
+    <PromptBar role="region" aria-label="Cookies">
+      <PromptInner>
         <p>{texts.message}</p>
-        <div className="cookie-buttons">
-          <button onClick={handleAccept} className="accept-button">
+        <PromptActions>
+          <AcceptButton type="button" onClick={handleAccept}>
             {texts.accept}
-          </button>
-          <button onClick={handleReject} className="reject-button">
+          </AcceptButton>
+          <RejectButton type="button" onClick={handleReject}>
             {texts.reject}
-          </button>
-          <Link href={moreInfoPath}>
-            <button className="more-info-button">{texts.moreInfo}</button>
-          </Link>
-        </div>
-      </div>
-      <style jsx>{`
-        .cookie-prompt {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background-color: #333;
-          color: white;
-          padding: 1rem;
-          z-index: 1000;
-          box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .cookie-content {
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-
-        @media (min-width: 768px) {
-          .cookie-content {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-          }
-        }
-
-        p {
-          margin: 0;
-        }
-
-        .cookie-buttons {
-          display: flex;
-          gap: 0.5rem;
-          flex-wrap: wrap;
-        }
-
-        button {
-          padding: 0.5rem 1rem;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-
-        .accept-button {
-          background-color: #4caf50;
-          color: white;
-        }
-
-        .reject-button {
-          background-color: #f44336;
-          color: white;
-        }
-
-        .more-info-button {
-          background-color: transparent;
-          border: 1px solid white;
-          color: white;
-        }
-      `}</style>
-    </div>
+          </RejectButton>
+          <MoreInfoLink href={moreInfoPath}>{texts.moreInfo}</MoreInfoLink>
+        </PromptActions>
+      </PromptInner>
+    </PromptBar>
   );
 }

@@ -1,139 +1,73 @@
-// CheckBox.style.ts
+"use client";
 
-import styled, { keyframes, css } from "styled-components";
-import { motion } from "framer-motion";
+import styled, { css } from "styled-components";
 
-const jellyAnimation = keyframes`
-  from {
-    transform: scale(1, 1);
-  }
-  30% {
-    transform: scale(1.25, 0.75);
-  }
-  40% {
-    transform: scale(0.75, 1.25);
-  }
-  50% {
-    transform: scale(1.15, 0.85);
-  }
-  65% {
-    transform: scale(0.95, 1.05);
-  }
-  75% {
-    transform: scale(1.05, 0.95);
-  }
-  to {
-    transform: scale(1, 1);
-  }
-`;
+type Size = "small" | "medium" | "large";
+
+const boxSize: Record<Size, string> = {
+  small: "1rem",
+  medium: "1.25rem",
+  large: "1.5rem",
+};
 
 export const CheckboxContainer = styled.label`
   display: flex;
   align-items: center;
-  position: relative;
+  gap: 0.625rem;
   cursor: pointer;
+  /* The whole row is the target, so it clears 44px even though the box
+     itself is 20px. */
+  min-height: 2.25rem;
 `;
 
 export const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  margin: 0;
+
+  /* Keyboard focus has to be visible on the styled box, not the hidden one. */
+  &:focus-visible + span {
+    outline: 2px solid ${({ theme }) => theme.colors.brandGreen};
+    outline-offset: 2px;
+  }
 `;
 
-interface StyledCheckboxProps {
-  checked: boolean;
+export const StyledCheckbox = styled.span<{
+  $checked: boolean;
   $error: boolean;
-  $size: "small" | "medium" | "large";
-}
-
-const sizeStyles = {
-  small: {
-    checkboxSize: "1rem",
-    borderWidth: "0.08rem",
-    checkMarkSize: "0.18rem",
-    labelFontSize: "0.8rem",
-    labelMarginLeft: "0.4rem",
-  },
-  medium: {
-    checkboxSize: "1.25rem",
-    borderWidth: "0.1rem",
-    checkMarkSize: "0.22rem",
-    labelFontSize: "1rem",
-    labelMarginLeft: "0.5rem",
-  },
-  large: {
-    checkboxSize: "1.5rem",
-    borderWidth: "0.12rem",
-    checkMarkSize: "0.3rem",
-    labelFontSize: "1.2rem",
-    labelMarginLeft: "0.6rem",
-  },
-};
-
-export const StyledCheckbox = styled(motion.div)<StyledCheckboxProps>`
-  position: relative;
-  width: ${(props) => sizeStyles[props.$size].checkboxSize};
-  height: ${(props) => sizeStyles[props.$size].checkboxSize};
-  border: ${(props) =>
-    props.$error
-      ? `${sizeStyles[props.$size].borderWidth} solid ${
-          props.theme.colors.orange
-        }`
-      : `${sizeStyles[props.$size].borderWidth} solid ${
-          props.theme.colors.gray
-        }`};
-  border-radius: 0.2rem;
-  background: ${(props) =>
-    props.checked ? props.theme.colors.brandGreen : "transparent"};
-  transition: background 0.1s ease, border-color 0.3s ease;
-  display: flex;
+  $size: Size;
+}>`
+  flex-shrink: 0;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0.2rem;
-    width: ${(props) => sizeStyles[props.$size].checkMarkSize};
-    height: ${(props) =>
-      `calc(${sizeStyles[props.$size].checkMarkSize} * 2.72)`};
-    border-right: ${(props) =>
-      `calc(${sizeStyles[props.$size].checkMarkSize} / 1.8) solid ${
-        props.theme.colors.white
-      }`};
-    border-bottom: ${(props) =>
-      `calc(${sizeStyles[props.$size].checkMarkSize} / 1.8) solid ${
-        props.theme.colors.white
-      }`};
-    opacity: 0;
-    transform: rotate(45deg) scale(0);
-    transition: all 0.3s ease;
-    transition-delay: 0.15s;
-  }
+  width: ${({ $size }) => boxSize[$size]};
+  height: ${({ $size }) => boxSize[$size]};
+  border-radius: ${({ theme }) => theme.radii.field};
 
-  ${({ checked }) =>
-    checked &&
-    css`
-      border-color: transparent;
-      background: ${(props) => props.theme.colors.brandGreen};
-      animation: ${jellyAnimation} 0.6s ease forwards;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 
-      &::after {
-        opacity: 1;
-        transform: rotate(45deg) scale(1);
-      }
-    `}
+  ${({ $checked, $error, theme }) =>
+    $checked
+      ? css`
+          background: ${theme.colors.brandGreen};
+          border: 1.5px solid ${theme.colors.brandGreen};
+          color: ${theme.colors.white};
+        `
+      : css`
+          background: ${theme.colors.white};
+          border: 1.5px solid
+            ${$error ? theme.colors.danger : theme.colors.gray};
+          color: transparent;
+        `}
 `;
 
-interface LabelTextProps {
-  $error: boolean;
-  $size: "small" | "medium" | "large";
-}
-
-export const LabelText = styled.span<LabelTextProps>`
-  margin-left: ${(props) => sizeStyles[props.$size].labelMarginLeft};
-  font-size: ${(props) => sizeStyles[props.$size].labelFontSize};
-  font-style: normal;
-  font-weight: 500;
-  color: ${(props) =>
-    props.$error ? props.theme.colors.orange : props.theme.colors.dark};
-  cursor: pointer;
+export const LabelText = styled.span<{ $error: boolean; $size: Size }>`
+  font-size: ${({ $size }) => ($size === "small" ? "0.8125rem" : "0.875rem")};
+  line-height: 1.4;
+  color: ${({ $error, theme }) =>
+    $error ? theme.colors.danger : theme.colors.dark};
 `;

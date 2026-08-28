@@ -1,128 +1,147 @@
 "use client";
+
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
+export const NavShell = styled(motion.header)`
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 999;
+`;
 
 export const NavbarWrapper = styled.nav`
+  height: var(--nav-height);
   width: 100%;
-  height: 6.875rem;
+  max-width: calc(var(--content-max) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 2.4rem;
-  padding-top: 1rem;
-  position: fixed;
-  top: 0;
-  background-color: ${(props) => props.theme.colors.white};
-  z-index: 100;
+  gap: 1rem;
 `;
 
-export const LogoContainer = styled.div`
-  height: 100%;
-  cursor: pointer;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+export const NavBackdrop = styled.div`
+  background-color: rgba(250, 247, 240, 0.9);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid ${({ theme }) => theme.colors.line};
+`;
 
-  @media (max-width: 475px) {
-    width: 30%;
-  }
+export const LogoLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 `;
 
 export const MenuContainer = styled.div`
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0.25rem;
-  border-radius: 6.25rem;
-  background-color: ${(props) => props.theme.colors.creamLight};
+  gap: 0.125rem;
 
   @media (max-width: 1024px) {
     display: none;
   }
 `;
 
-export const NavItem = styled(motion.div)<{ selected: boolean }>`
-  height: 2.75rem;
-  display: flex;
-  justify-content: center;
+export const NavItem = styled(Link)<{ $selected: boolean }>`
+  display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  position: relative;
-  z-index: 10;
-  border-radius: 6.25rem;
+  height: 2.5rem;
+  padding-inline: 0.875rem;
+  border-radius: ${({ theme }) => theme.radii.pill};
 
-  a {
-    border-radius: 6.25rem;
-    padding: 0.8125rem 0.75rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: ${(props) => props.theme.colors.dark};
-    cursor: pointer;
-    transition: background-color 0.3s;
-    &:hover {
-      background-color: ${(props) => props.theme.colors.hoverGreen};
-    }
+  font-size: 0.875rem;
+  font-weight: ${({ $selected }) => ($selected ? 600 : 500)};
+  color: ${({ $selected, theme }) =>
+    $selected ? theme.colors.greenDeep : theme.colors.dark};
+  background-color: ${({ $selected, theme }) =>
+    $selected ? theme.colors.lightGreen : "transparent"};
+
+  transition: background-color 0.18s ease, color 0.18s ease;
+
+  &:hover {
+    background-color: ${({ $selected, theme }) =>
+      $selected ? theme.colors.lightGreen : theme.colors.hoverGreen};
+    color: ${({ theme }) => theme.colors.greenDeep};
   }
-
-  ${(props) =>
-    props.selected &&
-    `
-    a {
-      color: ${props.theme.colors.white};
-    }
-  `}
-`;
-
-export const SelectedBackground = styled(motion.div)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 6.25rem;
-  background-color: ${(props) => props.theme.colors.brandGreen};
-  z-index: -1;
 `;
 
 export const RightContainer = styled.div`
   display: inline-flex;
   align-items: center;
-  gap: 0.2rem;
-  border-radius: 6.25rem;
-  background-color: ${(props) => props.theme.colors.creamLight};
-
-  @media (max-width: 1024px) {
-    gap: 0;
-  }
+  gap: 0.5rem;
+  flex-shrink: 0;
 `;
 
 export const Hamburger = styled.button`
   display: none;
-  background: transparent;
-  border: none;
+
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.pill};
+  color: ${({ theme }) => theme.colors.dark};
   cursor: pointer;
-  padding: 0.5rem;
 
   @media (max-width: 1024px) {
-    display: block;
+    display: inline-flex;
   }
 `;
 
-export const MobileMenu = styled(motion.div)`
+export const MobileScrim = styled(motion.div)`
   position: fixed;
-  top: 6.875rem;
-  left: 0;
-  width: 100%;
-  background-color: ${(props) => props.theme.colors.white};
-  padding: 1rem 2.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  z-index: 98;
+  inset: 0;
+  background: rgba(10, 42, 53, 0.45);
+  z-index: 998;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     display: none;
   }
+`;
+
+export const MobileMenu = styled(motion.nav)`
+  position: fixed;
+  top: var(--nav-height);
+  inset-inline: 0;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  padding: 1rem var(--gutter) 1.5rem;
+  background-color: ${({ theme }) => theme.colors.paper};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.line};
+  box-shadow: ${({ theme }) => theme.shadow.md};
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+`;
+
+export const MobileItem = styled(Link)<{ $selected: boolean }>`
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+  padding-inline: 1rem;
+  border-radius: ${({ theme }) => theme.radii.field};
+
+  font-size: 1rem;
+  font-weight: ${({ $selected }) => ($selected ? 600 : 500)};
+  color: ${({ $selected, theme }) =>
+    $selected ? theme.colors.greenDeep : theme.colors.dark};
+  background-color: ${({ $selected, theme }) =>
+    $selected ? theme.colors.lightGreen : "transparent"};
+`;
+
+/** Reserves the fixed navbar's height so page content starts below it. */
+export const NavSpacer = styled.div`
+  height: var(--nav-height);
 `;

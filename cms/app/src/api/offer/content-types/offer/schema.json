@@ -97,7 +97,9 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -107,14 +109,6 @@
     "online": {
       "type": "boolean",
       "default": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "valid_until": {
-      "type": "date",
       "pluginOptions": {
         "i18n": {
           "localized": false

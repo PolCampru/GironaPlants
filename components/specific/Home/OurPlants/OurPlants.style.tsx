@@ -1,128 +1,155 @@
+"use client";
+
 import styled, { css } from "styled-components";
 import Link from "next/link";
 
-export const OurPlantsWrapper = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 3rem 0;
-  margin-bottom: 3rem;
+export const PlantsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
 
-  h2 {
-    max-width: 40rem;
-    margin-top: 1rem;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: ${({ theme }) => theme.colors.dark};
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
   }
 `;
 
-export const PlantsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.25rem;
-  width: 100%;
-  margin-top: 1.5rem;
-`;
-
-export const PlantCard = styled(Link)<{
-  $image?: string;
-  $tone: "cream" | "green";
-}>`
+const cardBase = css`
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 0.5rem;
 
-  height: 17.5rem;
-  padding: 1.5rem;
+  height: 16.25rem;
+  padding: 1.375rem;
 
-  border-radius: 1rem;
-  border-top-left-radius: 3rem;
+  border-radius: ${({ theme }) => theme.radii.card};
   overflow: hidden;
 
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 
-  ${({ $image, $tone, theme }) =>
-    $image
-      ? css`
-          background: linear-gradient(
-              180deg,
-              rgba(10, 42, 53, 0.05) 30%,
-              rgba(10, 42, 53, 0.82) 100%
-            ),
-            url(${$image}) center / cover no-repeat;
-          color: ${theme.colors.white};
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: ${({ theme }) => theme.shadow.lg};
+  }
 
-          p {
-            color: rgba(255, 255, 255, 0.85);
-          }
-        `
-      : css`
-          background-color: ${$tone === "green"
-            ? theme.colors.lightGreen
-            : theme.colors.creamLight};
-          color: ${theme.colors.dark};
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &:hover {
+      transform: none;
+    }
+  }
+`;
 
-          p {
-            color: rgba(32, 23, 22, 0.7);
-          }
-        `}
+export const PlantCard = styled(Link)`
+  ${cardBase};
+  background-color: ${({ theme }) => theme.colors.moss};
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Scrim so the title keeps 4.5:1 whatever the photograph does. */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 42, 53, 0) 36%,
+      rgba(10, 42, 53, 0.86) 100%
+    );
+  }
+`;
+
+export const CardBody = styled.div`
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.875rem;
+`;
+
+export const CardText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 
   h3 {
-    font-size: 1.35rem;
-    font-weight: 700;
-    line-height: 1.2;
-    padding-right: 3rem;
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: 1.4375rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: ${({ theme }) => theme.colors.white};
   }
 
   p {
-    font-size: 0.95rem;
-    font-weight: 400;
+    font-size: 0.875rem;
     line-height: 1.5;
-    padding-right: 3rem;
+    color: rgba(255, 255, 255, 0.78);
+
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(10, 42, 53, 0.18);
   }
 `;
 
 export const CardArrow = styled.span`
-  position: absolute;
-  right: 1.25rem;
-  bottom: 1.25rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
+  flex-shrink: 0;
+
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: ${({ theme }) => theme.radii.pill};
 
   background-color: ${({ theme }) => theme.colors.brandGreen};
   color: ${({ theme }) => theme.colors.white};
 
-  transition: transform 0.25s ease;
+  transition: transform 0.22s ease;
 
   ${PlantCard}:hover & {
-    transform: translateX(4px);
+    transform: translateX(3px);
   }
 `;
 
-export const SectionFooter = styled.div`
+/** Last cell of the grid: the "we'll source it" prompt. */
+export const AskCard = styled.div`
+  height: 16.25rem;
+  padding: 1.5rem;
+
+  border-radius: ${({ theme }) => theme.radii.card};
+  background-color: ${({ theme }) => theme.colors.lightGreen};
+
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  h3 {
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: 1.4375rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: ${({ theme }) => theme.colors.moss};
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: #3b4f45;
+  }
 `;

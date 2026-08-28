@@ -12,25 +12,19 @@ const languages = getLanguages();
 const i18nConfig: InitOptions = {
   fallbackLng: "ca",
   supportedLngs: languages,
-  ns: [
-    "aboutUs",
-    "addProducts",
-    "budget",
-    "common",
-    "contact",
-    "footer",
-    "form",
-    "home",
-    "navbar",
-    "offers",
-    "products",
-  ],
+  // "home" and "aboutUs" are gone: the home page categories now come from
+  // the server as props (they used to be read here, which desynced the server
+  // and client renders) and the About Us copy comes from Strapi.
+  // "privacy" was missing, so it was only ever fetched lazily on that page.
+  // Only namespaces still read in the browser. Everything that has to be in
+  // the server-rendered HTML moved to data/ modules — see data/navigation.ts.
+  ns: ["addProducts", "budget", "offers", "privacy", "products"],
   detection: {
     order: ["path"],
     lookupFromPathIndex: 0,
     caches: [],
   },
-  defaultNS: "common",
+  defaultNS: "products",
   backend: {
     loadPath: "/locales/{{lng}}/{{ns}}.json",
   },

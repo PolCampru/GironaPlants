@@ -1,6 +1,5 @@
 {
   "products": {
-    "title": "Productes",
     "table": {
       "titleGenus": "GÈNERE",
       "titleDescription": "DESCRIPCIÓ",
@@ -10,25 +9,70 @@
     },
     "filters": {
       "title": "Filtres",
-      "searchPlaceholder": "Cerca...",
+      "searchPlaceholder": "Busca un gènere o una espècie…",
       "offersTitle": "Ofertes",
       "potFilters": {
         "title": "Format",
         "seeAll": "Veure tots",
         "options": [
-          { "id": 1, "value": "Rd", "label": "Arrel nua" },
-          { "id": 2, "value": "AH", "label": "Alvèol hortícola" },
-          { "id": 3, "value": "AF", "label": "Alvèol forestal" },
-          { "id": 4, "value": "M", "label": "Test" },
-          { "id": 5, "value": "C", "label": "Contenidor" }
+          {
+            "id": 1,
+            "value": "Rd",
+            "label": "Arrel nua"
+          },
+          {
+            "id": 2,
+            "value": "AH",
+            "label": "Alvèol hortícola"
+          },
+          {
+            "id": 3,
+            "value": "AF",
+            "label": "Alvèol forestal"
+          },
+          {
+            "id": 4,
+            "value": "M",
+            "label": "Test"
+          },
+          {
+            "id": 5,
+            "value": "C",
+            "label": "Contenidor"
+          }
         ]
-      }
+      },
+      "clear": "Netejar"
     },
     "errorAddToCart": {
       "title": "L'article ja està al carret"
     },
     "successAddToCart": {
       "title": "Article afegit al carret"
+    },
+    "resultsOne": "resultat",
+    "resultsMany": "resultats",
+    "resultsFor": "per a",
+    "showing": "Mostrant",
+    "sortLabel": "Ordenar",
+    "sortOptions": [
+      {
+        "value": "genus:asc",
+        "label": "Gènere A-Z"
+      },
+      {
+        "value": "price:asc",
+        "label": "Preu ↑"
+      },
+      {
+        "value": "price:desc",
+        "label": "Preu ↓"
+      }
+    ],
+    "emptyState": {
+      "title": "No hem trobat res",
+      "text": "Prova amb un altre gènere o treu algun filtre. Si l'espècie no és al catàleg, la busquem per tu.",
+      "button": "Demana'ns aquesta planta"
     }
   }
 }

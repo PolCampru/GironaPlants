@@ -1,196 +1,217 @@
+"use client";
+
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const BudgetAndLanguageWrapper = styled.div`
-  display: flex;
+  display: inline-flex;
   align-items: center;
-
-  padding: 0.25rem 0.3rem;
-  border-radius: 6.25rem;
+  gap: 0.5rem;
 `;
 
-export const BudgetContainer = styled.div`
-  display: flex;
+export const BudgetButton = styled.button`
+  display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
 
-  padding: 0.8125rem 0.75rem;
+  height: ${({ theme }) => theme.control.height};
+  padding-inline: 1.25rem;
 
-  border-radius: 6.25rem;
+  border: 0;
+  border-radius: ${({ theme }) => theme.radii.pill};
+  background: ${({ theme }) => theme.colors.brandGreen};
+  color: ${({ theme }) => theme.colors.white};
 
-  position: relative;
-
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+
+  transition: background-color 0.18s ease;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.hoverGreen};
+    background: ${({ theme }) => theme.colors.greenDeep};
   }
 
-  &:active {
-    background-color: ${(props) => props.theme.colors.brandGreen};
-    color: ${(props) => props.theme.colors.white};
-
-    img {
-      filter: brightness(0) invert(1);
-    }
+  svg {
+    flex-shrink: 0;
   }
 
-  img {
-    transition: filter 0.3s;
-  }
-
-  p {
-    margin: 0;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: inherit;
-  }
-
-  span {
-    width: 1.2rem;
-    height: 1.2rem;
-    display: flex;
-    align-items: center;
+  /* Below the tablet breakpoint the label goes and the icon carries it, so
+     the navbar keeps the logo, the quote button and the menu on one line. */
+  @media (max-width: 560px) {
+    padding-inline: 0;
+    width: ${({ theme }) => theme.control.height};
     justify-content: center;
 
-    position: absolute;
-    top: 0;
-    right: -6px;
-
-    background-color: ${(props) => props.theme.colors.brandGreen};
-    color: ${(props) => props.theme.colors.white};
-    border-radius: 50%;
-
-    font-size: 0.7rem;
-    font-weight: 500;
-
-    z-index: 1;
-  }
-
-  @media (max-width: 768px) {
-    p {
+    span[data-label] {
       display: none;
     }
   }
 `;
 
-export const Line = styled.div`
-  height: 2.5rem;
-  width: 0.1rem;
-  background-color: ${(props) => props.theme.colors.cream};
-  margin: 0 1rem;
+export const CountBadge = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  @media (max-width: 768px) {
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding-inline: 0.3125rem;
+
+  border-radius: ${({ theme }) => theme.radii.pill};
+  background: ${({ theme }) => theme.colors.lime};
+  color: ${({ theme }) => theme.colors.moss};
+
+  font-size: 0.6875rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+`;
+
+export const LanguageContainer = styled.div`
+  position: relative;
+
+  @media (max-width: 560px) {
     display: none;
   }
 `;
 
-export const LanguageContainer = styled.div``;
-
-export const LanguageButton = styled(motion.div)<{ isOpen: boolean }>`
-  display: flex;
+export const LanguageButton = styled.button<{ $isOpen: boolean }>`
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
+  gap: 0.3125rem;
+
+  height: ${({ theme }) => theme.control.height};
+  padding-inline: 0.875rem;
+
+  border: 1px solid
+    ${({ $isOpen, theme }) =>
+      $isOpen ? theme.colors.brandGreen : "transparent"};
+  border-radius: ${({ theme }) => theme.radii.pill};
+  background: ${({ $isOpen, theme }) =>
+    $isOpen ? theme.colors.hoverGreen : "transparent"};
+  color: ${({ theme }) => theme.colors.dark};
+
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
   cursor: pointer;
-  border-radius: 6.25rem;
-  padding: 0.5rem 1rem;
-  background-color: ${(props) => props.theme.colors.creamLight};
-  transition: background-color 0.3s, color 0.3s;
-  position: relative;
-  color: ${(props) => props.isOpen && props.theme.colors.white};
+
+  transition: background-color 0.18s ease, border-color 0.18s ease;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.hoverGreen};
+    background: ${({ theme }) => theme.colors.hoverGreen};
   }
 
-  img {
-    width: 12px;
-    height: 12px;
-    transition: transform 0.3s ease;
-    transform: ${(props) =>
-      props.isOpen ? "rotate(-180deg)" : "rotate(0deg)"};
-    filter: ${(props) => props.isOpen && "brightness(0) invert(1)"};
+  svg {
+    flex-shrink: 0;
+    transition: transform 0.18s ease;
+    transform: rotate(${({ $isOpen }) => ($isOpen ? "180deg" : "0deg")});
   }
 `;
 
 export const DropdownMenu = styled(motion.ul)`
   position: absolute;
-  top: 100%;
+  top: calc(100% + 0.375rem);
   right: 0;
-  background-color: ${(props) => props.theme.colors.creamLight};
-  border-radius: 8px;
+  z-index: 20;
+
+  min-width: 6rem;
+  padding: 0.25rem;
   list-style: none;
-  padding: 0.5rem 0;
-  margin: 0.5rem 0 0 0;
-  box-shadow: 0 4px 12px ${(props) => props.theme.colors.creamLight};
-  z-index: 1000;
-  width: max-content;
+
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: 0.625rem;
+  box-shadow: ${({ theme }) => theme.shadow.md};
 `;
 
-export const DropdownItem = styled.li`
-  padding: 0.5rem 1.5rem;
+export const DropdownItem = styled.li<{ $active: boolean }>`
+  display: flex;
+  align-items: center;
+
+  height: 2.25rem;
+  padding-inline: 0.75rem;
+  border-radius: ${({ theme }) => theme.radii.field};
+
+  font-size: 0.875rem;
+  font-weight: ${({ $active }) => ($active ? 700 : 500)};
+  text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  font-size: 0.9rem;
-  color: ${(props) => props.theme.colors.text};
+
+  color: ${({ $active, theme }) =>
+    $active ? theme.colors.white : theme.colors.dark};
+  background-color: ${({ $active, theme }) =>
+    $active ? theme.colors.brandGreen : "transparent"};
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.hoverGreen};
+    background-color: ${({ $active, theme }) =>
+      $active ? theme.colors.brandGreen : theme.colors.hoverGreen};
   }
 `;
 
 export const Overlay = styled(motion.div)`
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  inset: 0;
+  background-color: rgba(10, 42, 53, 0.45);
+  z-index: 1000;
 `;
 
 export const BudgetDrawer = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;
-  width: 35%;
-  height: 100%;
-  background-color: ${({ theme }) => theme.colors.creamLight};
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 1rem;
+  width: min(32rem, 100%);
+  height: 100dvh;
+  z-index: 1001;
+
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 1024px) {
-    width: 50%;
-  }
-  @media (max-width: 768px) {
-    width: 95%;
+  background-color: ${({ theme }) => theme.colors.paper};
+  box-shadow: ${({ theme }) => theme.shadow.lg};
+`;
+
+export const DrawerHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.line};
+
+  h2 {
+    font-family: ${({ theme }) => theme.font.display};
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.dark};
   }
 `;
 
 export const CloseButton = styled.button`
-  width: 1.2rem;
-  height: 1.2rem;
-  align-self: flex-end;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: ${(props) => props.theme.colors.text};
-  padding: 0;
-  transition: transform 0.3s;
-  filter: brightness(0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background: transparent;
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.pill};
+  color: ${({ theme }) => theme.colors.dark};
+  cursor: pointer;
 
   &:hover {
-    transform: rotate(90deg);
+    background: ${({ theme }) => theme.colors.white};
   }
+`;
+
+export const DrawerBody = styled.div`
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem 1.5rem 1.5rem;
 `;

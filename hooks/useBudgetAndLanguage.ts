@@ -20,7 +20,13 @@ const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
     (lng: string) => lng !== "cimode"
   );
 
-  const currentLanguage = i18n.language;
+  // i18n.language is undefined on the server. The URL always carries the
+  // locale, so prefer it and let i18n be the fallback.
+  const localeFromPath = pathname?.split("/").filter(Boolean)[0];
+  const currentLanguage: string =
+    (localeFromPath && languages.includes(localeFromPath)
+      ? localeFromPath
+      : i18n.language) ?? "es";
 
   const toggleLanguageMenu = () => {
     setIsLanguageOpen((prev) => !prev);
@@ -41,21 +47,17 @@ const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
   };
 
   const updateURLWithLanguage = (lng: string) => {
-    console.log("updateURLWithLanguage", lng);
     const pathSegments = pathname.split("/").filter(Boolean);
 
-    console.log("pathSegments", pathSegments);
     if (pathSegments.length === 0) {
       router.push(`/${lng}`);
       return;
     }
 
-    console.log("pathSegments", pathSegments);
 
     const firstSegment = pathSegments[0];
     const isFirstSegmentLanguage = languages.includes(firstSegment);
 
-    console.log("isFirstSegmentLanguage", isFirstSegmentLanguage);
 
     let newPath;
     if (isFirstSegmentLanguage) {
@@ -65,7 +67,6 @@ const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
       newPath = `/${lng}/${pathSegments.join("/")}`;
     }
 
-    console.log("newPath", newPath);
 
     router.push(newPath);
   };

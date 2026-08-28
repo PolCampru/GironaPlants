@@ -92,19 +92,25 @@ export const ContainerHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 
   .empty-cart {
-    text-align: right;
-  }
+    flex-shrink: 0;
 
-  p {
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration-line: underline;
-    text-underline-position: from-font;
+    background: none;
+    border: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.muted};
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
 
     &:hover {
-      cursor: pointer;
+      color: ${({ theme }) => theme.colors.danger};
     }
   }
 `;

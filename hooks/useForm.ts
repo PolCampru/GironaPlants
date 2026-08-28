@@ -2,16 +2,17 @@
 
 import { useState, FormEvent, ChangeEvent } from "react";
 import Swal from "sweetalert2";
-import { useTranslation } from "react-i18next";
 
 import { initialFormValues } from "@/data/Form";
 import { FormValuesType } from "@/types/Form";
 import { FormType } from "@/types/Contact";
 import useBudget from "./useBudget";
 
-const useForm = () => {
-  const { t } = useTranslation(["form"]);
-  const data = t("form", { returnObjects: true }) as FormType;
+/**
+ * The form config arrives from the server (data/formContent.ts) instead of
+ * react-i18next, so the fields exist in the server-rendered HTML.
+ */
+const useForm = (data: FormType) => {
   const { items, handleClearCart } = useBudget();
 
   const [formValues, setFormValues] =

@@ -1,3 +1,28 @@
+:root {
+  --paper: #faf7f0;
+  --ink: #201716;
+  --muted: #635c55;
+  --line: #e7e2d8;
+  --brand: #118b50;
+
+  --nav-height: 4.75rem;
+  --gutter: 2.5rem;
+  --content-max: 77.5rem;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --gutter: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 1.25rem;
+    --nav-height: 3.75rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +30,43 @@
 }
 
 html {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-manrope), "Helvetica Neue", Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* The fixed navbar must not cover the target of an in-page anchor. */
+  scroll-padding-top: calc(var(--nav-height) + 1rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  text-wrap: pretty;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -18,14 +74,53 @@ img {
   display: block;
 }
 
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* One visible focus ring for the whole site. Keyboard users could not see
+   where they were before this. */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Page container: centred, capped, with responsive gutters. Every page sits
+   inside this, so sections no longer invent their own horizontal padding. */
+main.layout-content {
+  /* The navbar is fixed; reserve its height once here instead of every hero
+     inventing its own padding-top. */
+  padding-top: var(--nav-height);
+  padding-bottom: var(--space-page-bottom, 0);
+}
+
 .layout-content {
-  padding-inline: 2.4rem;
+  width: 100%;
+  max-width: calc(var(--content-max) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
 
-  @media (max-width: 1024px) {
-    padding-inline: 2rem;
-  }
+/* Full-bleed band inside .layout-content — escapes the gutters to paint edge
+   to edge, then re-applies them to its own children. */
+.bleed {
+  margin-inline: calc(var(--gutter) * -1);
+  padding-inline: var(--gutter);
+}
 
-  @media (max-width: 768px) {
-    padding-inline: 1rem;
-  }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

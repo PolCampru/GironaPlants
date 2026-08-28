@@ -1,8 +1,9 @@
-import BudgetScreen from "@/components/specific/BudgetScreen/BudgetScreen";
 import React from "react";
-
 import { Metadata } from "next";
+import BudgetScreen from "@/components/specific/BudgetScreen/BudgetScreen";
 import { buildPageMetadata } from "@/data/seoContent";
+import { getBudgetHeading, getContactHeading } from "@/data/pageHeadings";
+import { getFormContent } from "@/data/formContent";
 
 export async function generateMetadata({
   params,
@@ -13,12 +14,18 @@ export async function generateMetadata({
   return buildPageMetadata(lng, "budget");
 }
 
-const BudgetPage = () => {
-  return (
-    <section>
-      <BudgetScreen />
-    </section>
-  );
-};
+export default async function BudgetPage({
+  params,
+}: {
+  params: Promise<{ lng: string }>;
+}) {
+  const { lng } = await params;
 
-export default BudgetPage;
+  return (
+    <BudgetScreen
+      heading={getBudgetHeading(lng)}
+      formHeading={getContactHeading(lng)}
+      formContent={getFormContent(lng)}
+    />
+  );
+}

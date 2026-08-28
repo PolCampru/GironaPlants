@@ -1,6 +1,5 @@
 {
   "budget": {
-    "title": "Budget request",
     "emptyCard": "Clear the request",
     "emptyState": "There are no items in the request",
     "total": "Total",

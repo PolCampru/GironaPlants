@@ -1,31 +1,29 @@
 "use client";
 
+import React from "react";
 import { SectionCataloguesProps } from "@/types/Catalogues";
-import {
-  ContainerCatalogues,
-  SectionCataloguesWrapper,
-} from "./SectionCatalogues.style";
+import { CataloguesGrid } from "./SectionCatalogues.style";
 import CatalogueCard from "../CatalogueCard/CatalogueCard";
+import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
+import Section from "@/components/ui/Section/Section";
 
-const SectionCatalogues = ({ data }: { data: SectionCataloguesProps }) => {
-  return (
-    <SectionCataloguesWrapper>
-      <h1>{data.section_title}</h1>
-      <h2>{data.section_subtitle}</h2>
-      <ContainerCatalogues>
-        {data.items.map((item) => (
-          <CatalogueCard
-            key={item.id}
-            title={item.title}
-            description={item.subtitle}
-            catalogue={item.fileUrl}
-            imageUrl={item.imageUrl}
-            button={item.button}
-          />
-        ))}
-      </ContainerCatalogues>
-    </SectionCataloguesWrapper>
-  );
-};
+const SectionCatalogues = ({ data }: { data: SectionCataloguesProps }) => (
+  <Section>
+    <SectionHeading
+      label={data.label}
+      title={data.section_title}
+      lead={data.section_subtitle}
+    />
+    <CataloguesGrid>
+      {data.items.map((item) => (
+        <CatalogueCard
+          key={item.id}
+          item={item}
+          downloadLabel={data.download_label}
+        />
+      ))}
+    </CataloguesGrid>
+  </Section>
+);
 
 export default SectionCatalogues;

@@ -1,195 +1,124 @@
 "use client";
 
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-import {
-  FooterWrapper,
-  HorizontalLine,
-  ContactContainer,
-  Logo,
-  InfoContainer,
-  ImageFooter,
-} from "./Footer.style";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
+import {
+  BottomBar,
+  BrandColumn,
+  ColumnTitle,
+  ContactLink,
+  FooterColumn,
+  FooterGrid,
+  FooterInner,
+  FooterLink,
+  FooterNote,
+  FooterOuter,
+  LocaleLink,
+  LocaleRow,
+} from "./Footer.style";
+import { getLanguages } from "@/lib/languages";
+import {
+  CONTACT_LINKS,
+  LOGO,
+  getNavigation,
+  navHref,
+} from "@/data/navigation";
+import { getUiLabels } from "@/data/uiLabels";
 
-const footerVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut",
-      when: "beforeChildren",
-      staggerChildren: 0.2,
-    },
-  },
-};
+const CATALOGUE_SLUGS = ["products", "catalogues", "offers"];
+const COMPANY_SLUGS = ["about-us", "contact"];
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
-};
-
-const logoVariants = {
-  hover: {
-    scale: 1.05,
-    transition: { duration: 0.3, ease: "easeInOut" },
-  },
-};
-
-const Footer = () => {
-  const { t } = useTranslation(["footer", "common"]);
-  const router = useRouter();
+/**
+ * Copy comes from data/navigation.ts, not runtime i18n — see the note there.
+ */
+const Footer = ({ year }: { year: number }) => {
   const pathname = usePathname();
-  const [currentLanguage, setCurrentLanguage] = React.useState("");
+  const locales = getLanguages();
+  const segment = pathname?.split("/")[1] ?? "";
+  const lng = locales.includes(segment) ? segment : "es";
 
-  React.useEffect(() => {
-    if (pathname) {
-      const lang = pathname.split("/")[1];
-      setCurrentLanguage(lang);
-    }
-  }, [pathname]);
-
-  const data = t("footer", { returnObjects: true }) as {
-    contact?: {
-      email?: string;
-      phone?: string;
-      title?: string;
-      rights?: string;
-      privacyPolicy?: string;
-      termsOfService?: string;
-    };
-  };
-
-  const logo = t("logo", { ns: "common", returnObjects: true }) as {
-    src: string;
-    alt: string;
-  };
-
-  const contact = data.contact || {};
-
-  const handlePrivacyClick = () => {
-    if (currentLanguage) {
-      router.push(`/${currentLanguage}/privacy`);
-    }
-  };
+  const { items, footer } = getNavigation(lng);
+  const labels = getUiLabels(lng);
+  const pick = (slugs: string[]) =>
+    items.filter((item) => slugs.includes(item.slug));
 
   return (
-    <motion.footer
-      variants={footerVariants}
-      initial="hidden"
-      animate="visible"
-      style={{ position: "relative" }}
-      role="contentinfo"
-      aria-label="Información de contacto y enlaces relacionados"
-    >
-      <FooterWrapper>
-        <ContactContainer>
-          <Logo>
-            {logo.src && (
-              <motion.div variants={logoVariants} whileHover="hover">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt || "Logo de Girona Plants"}
-                  width={120}
-                  height={60}
-                  style={{
-                    width: 'auto',
-                    height: '50px',
-                    maxWidth: '120px',
-                    objectFit: 'contain'
-                  }}
-                  sizes="(max-width: 768px) 100px, 120px"
-                  priority={false}
-                  loading="lazy"
-                />
-              </motion.div>
-            )}
-          </Logo>
-          {contact.title && (
-            <motion.h2 variants={itemVariants}>{contact.title}</motion.h2>
-          )}
-          {contact.phone && (
-            <motion.a
-              href={`tel:${contact.phone}`}
-              variants={itemVariants}
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              aria-label={`Llamar a Girona Plants: ${contact.phone}`}
+    <FooterOuter aria-label={labels.footerNav}>
+      <FooterInner>
+        <FooterGrid>
+          <BrandColumn>
+            <Image
+              src={LOGO.src}
+              alt={LOGO.alt}
+              width={120}
+              height={60}
+              style={{ width: "auto", height: "2.5rem", objectFit: "contain" }}
+              sizes="120px"
+              loading="lazy"
+            />
+            <p>{footer.tagline}</p>
+          </BrandColumn>
+
+          <FooterColumn>
+            <ColumnTitle>{footer.columns.catalogue}</ColumnTitle>
+            {pick(CATALOGUE_SLUGS).map((item) => (
+              <FooterLink key={item.slug} href={navHref(lng, item.slug)}>
+                {item.name}
+              </FooterLink>
+            ))}
+          </FooterColumn>
+
+          <FooterColumn>
+            <ColumnTitle>{footer.columns.company}</ColumnTitle>
+            {pick(COMPANY_SLUGS).map((item) => (
+              <FooterLink key={item.slug} href={navHref(lng, item.slug)}>
+                {item.name}
+              </FooterLink>
+            ))}
+            <FooterLink href={`/${lng}/privacy`}>
+              {footer.privacyPolicy}
+            </FooterLink>
+          </FooterColumn>
+
+          <FooterColumn>
+            <ColumnTitle>{footer.columns.contact}</ColumnTitle>
+            <ContactLink
+              href={`tel:${CONTACT_LINKS.phone.replace(/\s/g, "")}`}
+              aria-label={`${footer.columns.contact}: ${CONTACT_LINKS.phone}`}
             >
-              {contact.phone}
-            </motion.a>
-          )}
-          {contact.email && (
-            <motion.a
-              href={`mailto:${contact.email}`}
-              variants={itemVariants}
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              aria-label={`Enviar email a Girona Plants: ${contact.email}`}
-            >
-              {contact.email}
-            </motion.a>
-          )}
-        </ContactContainer>
-        <HorizontalLine />
-        <InfoContainer>
-          {contact.rights && (
-            <motion.p variants={itemVariants}>
-              © {new Date().getFullYear()} {contact.rights}
-            </motion.p>
-          )}
-          <nav aria-label="Enlaces legales">
-            {contact.privacyPolicy && (
-              <motion.a
-                style={{
-                  cursor: "pointer",
-                  textDecoration: "none",
-                  color: "inherit",
-                }}
-                variants={itemVariants}
-                onClick={handlePrivacyClick}
-                onKeyDown={(e) => e.key === "Enter" && handlePrivacyClick()}
-                role="link"
-                tabIndex={0}
-                aria-label="Ir a la página de política de privacidad"
+              {CONTACT_LINKS.phone}
+            </ContactLink>
+            <ContactLink href={`mailto:${CONTACT_LINKS.email}`}>
+              {CONTACT_LINKS.email}
+            </ContactLink>
+            <FooterNote>{footer.location}</FooterNote>
+          </FooterColumn>
+        </FooterGrid>
+
+        <BottomBar>
+          {/* The year is resolved once on the server and passed in, so it
+              stays current without the server and the client each calling
+              new Date() and disagreeing. */}
+          <p>
+            © {year} Girona Plants. {footer.rights}
+          </p>
+          <LocaleRow aria-label={labels.language}>
+            {locales.map((locale) => (
+              <LocaleLink
+                key={locale}
+                href={`/${locale}`}
+                $active={locale === lng}
+                hrefLang={locale}
+                aria-current={locale === lng ? "true" : undefined}
               >
-                {contact.privacyPolicy}
-              </motion.a>
-            )}
-          </nav>
-        </InfoContainer>
-        <ImageFooter>
-          <Image
-            src="/images/imageFooter.png"
-            alt="Imagen decorativa de plantas en el vivero Girona Plants"
-            width={600}
-            height={400}
-            style={{ 
-              objectFit: "cover", 
-              width: "100%", 
-              height: "100%",
-              aspectRatio: '3/2'
-            }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            loading="lazy"
-          />
-        </ImageFooter>
-      </FooterWrapper>
-    </motion.footer>
+                {locale}
+              </LocaleLink>
+            ))}
+          </LocaleRow>
+        </BottomBar>
+      </FooterInner>
+    </FooterOuter>
   );
 };
 

@@ -1,36 +1,50 @@
 import { RootState } from "@/store";
 import { hideModal, showModal } from "@/store/features/modalSlice";
-import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 
+/**
+ * Modal state plus the scroll direction the navbar hides on.
+ *
+ * The navbar's own copy (links, logo, quote label) no longer comes from here:
+ * it is static per-locale data now, because resolving it through i18n meant
+ * the server rendered an empty navbar. See data/navigation.ts.
+ */
 const useModal = () => {
   const modalState = useSelector((state: RootState) => state.modal);
   const dispatch = useDispatch();
 
-  const { t, i18n, ready } = useTranslation(["navbar", "common"]);
-  const pathname = usePathname();
+  // Only the i18n instance is needed here, for the language switcher.
+  const { i18n } = useTranslation();
+
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
+    let ticking = false;
 
-    const updateScrollDirection = () => {
+    const update = () => {
       const scrollY = window.scrollY;
-      if (scrollY === 0 || scrollY < 0) {
-        setScrollDirection("up");
-      } else if (scrollY > lastScrollY) {
-        setScrollDirection("down");
-      } else if (scrollY < lastScrollY) {
-        setScrollDirection("up");
-      }
+      // Ignore the first sliver of scroll so the navbar does not flicker on
+      // small trackpad movements at the top of the page.
+      if (scrollY <= 80) setScrollDirection("up");
+      else if (scrollY > lastScrollY + 6) setScrollDirection("down");
+      else if (scrollY < lastScrollY - 6) setScrollDirection("up");
+
       lastScrollY = scrollY;
+      ticking = false;
     };
 
-    window.addEventListener("scroll", updateScrollDirection);
-    return () => {
-      window.removeEventListener("scroll", updateScrollDirection);
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      // The old handler ran layout-reading work on every scroll event.
+      window.requestAnimationFrame(update);
     };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const setShowModal = (modal: string) => {
@@ -41,29 +55,9 @@ const useModal = () => {
     dispatch(hideModal());
   };
 
-  const navbarItems = t("paths", {
-    returnObjects: true,
-  }) as { name: string; url: string }[];
-
-  const LanguageSelectorData = t("budgetAndLanguage", {
-    returnObjects: true,
-  }) as { [key: string]: string };
-
-  const logo = t("logo", { ns: "common", returnObjects: true }) as {
-    src: string;
-    alt: string;
-  };
-
-  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
-
   return {
     modalState,
-    pathname,
-    navbarItems,
-    LanguageSelectorData,
     scrollDirection,
-    ready,
-    logo,
     i18n,
     setShowModal,
     setHideModal,

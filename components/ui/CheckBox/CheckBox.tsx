@@ -1,14 +1,13 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
 
+import React from "react";
+import { FiCheck } from "react-icons/fi";
 import {
   CheckboxContainer,
   HiddenCheckbox,
-  StyledCheckbox,
   LabelText,
+  StyledCheckbox,
 } from "./CheckBox.style";
-import { shakeVariant, appearVariant } from "@/animations/CheckBox";
 
 interface CheckboxProps {
   className?: string;
@@ -20,6 +19,12 @@ interface CheckboxProps {
   size?: "small" | "medium" | "large";
 }
 
+/**
+ * The styled box is a sibling <span> of a visually hidden real checkbox, so
+ * the native control keeps the label association, keyboard behaviour and
+ * focus ring. The previous version animated a scale(1.2) on tick, which
+ * nudged the row's layout every time you filtered.
+ */
 const Checkbox = ({
   className,
   label,
@@ -30,29 +35,17 @@ const Checkbox = ({
   size = "medium",
   ...props
 }: CheckboxProps) => (
-  <CheckboxContainer
-    className={className}
-    as={motion.label}
-    variants={error ? shakeVariant : appearVariant}
-    initial="initial"
-    animate={error ? "shake" : "animate"}
-  >
+  <CheckboxContainer className={className}>
     <HiddenCheckbox
       name={name}
       checked={checked}
       onChange={onChange}
-      aria-invalid={error}
+      aria-invalid={error || undefined}
       {...props}
     />
-    <StyledCheckbox
-      checked={checked}
-      $error={error}
-      whileTap={{ scale: 0.95 }}
-      initial={{ scale: 1 }}
-      animate={{ scale: checked ? 1.2 : 1 }}
-      transition={{ type: "spring", stiffness: 300 }}
-      $size={size}
-    />
+    <StyledCheckbox $checked={checked} $error={error} $size={size}>
+      <FiCheck aria-hidden="true" size={13} strokeWidth={3} />
+    </StyledCheckbox>
     <LabelText $error={error} $size={size}>
       {label}
     </LabelText>

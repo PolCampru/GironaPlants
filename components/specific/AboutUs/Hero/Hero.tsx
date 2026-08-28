@@ -1,65 +1,80 @@
 "use client";
 
-import { HeroAboutUsProps } from "@/types/AboutUs";
 import React from "react";
-import { motion } from "framer-motion";
-import { ContainerData, ContainerImages, HeroWrapper } from "./Hero.style";
-import Box from "@/components/ui/Box/Box";
-import { HeroImageBox } from "@/data/AboutUs";
-import Title from "@/components/ui/Title/Title";
-import Button from "@/components/ui/Button/Button";
-import Link from "next/link";
+import Image from "next/image";
+import { FiArrowRight } from "react-icons/fi";
 import {
-  containerVariants,
-  boxVariants,
-  dataVariants,
-} from "@/animations/AboutUs";
+  ActionRow,
+  ContainerData,
+  HeroWrapper,
+  Label,
+  MediaMosaic,
+  MosaicStat,
+  MosaicTile,
+} from "./Hero.style";
+import CtaLink from "@/components/ui/CtaLink/CtaLink";
+import { HeroAboutUsProps } from "@/types/AboutUs";
 import { strapiMediaUrl } from "@/lib/strapi";
 
+const MOSAIC_FALLBACKS = [
+  { src: "/images/aboutUs/ilex.jpg", tall: true },
+  { src: "/images/plants/nursery.jpg", tall: false },
+  { src: "/images/lavenders.jpg", tall: false },
+  { src: "/images/redCedar.jpg", tall: false },
+];
+
 const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {
+  const tiles = MOSAIC_FALLBACKS.map((tile, index) => ({
+    ...tile,
+    // Strapi image if the editor uploaded one, otherwise the local photo, so
+    // a tile is never an empty coloured block.
+    src: strapiMediaUrl(data.hero_images?.[index]) || tile.src,
+  }));
+
   return (
     <HeroWrapper>
-      <ContainerImages
-        as={motion.div}
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-      >
-        {HeroImageBox.map((item, index) => {
-          const fullUrl = strapiMediaUrl(data.hero_images?.[index]);
-          const imageUrl = fullUrl || item.defaultImage;
+      {/* Above the fold: painted, not animated in. See Home/Hero. */}
+      <ContainerData>
+        <Label>{data.label}</Label>
+        <h1>{data.title}</h1>
+        {/* The brand name used to be spliced in as a <span> before this
+            sentence, so the copy in the CMS had to start mid-sentence and in
+            lowercase to read correctly. */}
+        <p>{data.subtitle}</p>
 
-          return (
-            <motion.div key={index} variants={boxVariants}>
-              <Box
-                imageUrl={imageUrl}
-                width={item.width}
-                height={item.height}
-                borderRadiusBottomLeft={item.borderRadiusBottomLeft}
-                borderRadiusBottomRight={item.borderRadiusBottomRight}
-                borderRadiusTopLeft={item.borderRadiusTopLeft}
-                borderRadiusTopRight={item.borderRadiusTopRight}
-              />
-            </motion.div>
-          );
-        })}
-      </ContainerImages>
-
-      <ContainerData
-        as={motion.div}
-        initial="hidden"
-        animate="visible"
-        variants={dataVariants}
-      >
-        <Title title={data.title} />
-        <p>
-          <span>Girona Plants </span>
-          {data.subtitle}
-        </p>
-        <Link href={`/${data.locale}/products`}>
-          <Button>{data.hero_button}</Button>
-        </Link>
+        <ActionRow>
+          <CtaLink href={`/${data.locale}/products`} $variant="solid">
+            {data.hero_button}
+            <FiArrowRight aria-hidden="true" />
+          </CtaLink>
+          {data.hero_secondary_button && (
+            <CtaLink href={`/${data.locale}/contact`} $variant="outline">
+              {data.hero_secondary_button}
+            </CtaLink>
+          )}
+        </ActionRow>
       </ContainerData>
+
+      <MediaMosaic>
+        {tiles.map((tile, index) => (
+          <MosaicTile key={tile.src + index} $tall={tile.tall}>
+            <Image
+              src={tile.src}
+              alt=""
+              width={520}
+              height={620}
+              priority={index === 0}
+              sizes="(max-width: 1024px) 50vw, 23vw"
+            />
+          </MosaicTile>
+        ))}
+        {data.founded && (
+          <MosaicStat>
+            <strong>{data.founded.value}</strong>
+            <span>{data.founded.label}</span>
+          </MosaicStat>
+        )}
+      </MediaMosaic>
     </HeroWrapper>
   );
 };

@@ -2,6 +2,37 @@ import { ItemType } from "@/types/Cart";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+/** Total attachment budget. Beyond this most SMTP servers reject the message. */
+const MAX_ATTACHMENT_BYTES = 10 * 1024 * 1024;
+
+/**
+ * Everything here goes into an HTML email. Interpolating raw form input built
+ * a message an author could inject markup into, and mangled any name or
+ * comment containing < or &.
+ */
+const escapeHtml = (value: unknown) =>
+  String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+const row = (label: string, value: unknown) =>
+  value
+    ? `<p style="margin: 0;"><strong>${label}:</strong> ${escapeHtml(value)}</p>`
+    : "";
+
+function parseItems(raw: FormDataEntryValue | null): ItemType[] {
+  if (typeof raw !== "string" || !raw) return [];
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    // A malformed cart must not take the whole enquiry down with it.
+    return [];
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
@@ -12,20 +43,31 @@ export async function POST(request: Request) {
     const phone = formData.get("phone") as string;
     const comment = formData.get("comment") as string;
 
-    const files = formData.getAll("files") as File[];
+    if (!name || !email) {
+      return NextResponse.json(
+        { message: "Missing required fields" },
+        { status: 400 }
+      );
+    }
 
-    const itemsString = formData.get("items") as string;
-    const items: ItemType[] = JSON.parse(itemsString);
+    const items = parseItems(formData.get("items"));
+
+    const files = (formData.getAll("files") as File[]).filter(
+      (file) => file && file.size > 0
+    );
+    const totalBytes = files.reduce((sum, file) => sum + file.size, 0);
+    if (totalBytes > MAX_ATTACHMENT_BYTES) {
+      return NextResponse.json(
+        { message: "Attachments too large" },
+        { status: 413 }
+      );
+    }
 
     const attachments = await Promise.all(
-      files.map(async (file) => {
-        const arrayBuffer = await file.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-        return {
-          filename: file.name,
-          content: buffer,
-        };
-      })
+      files.map(async (file) => ({
+        filename: file.name,
+        content: Buffer.from(await file.arrayBuffer()),
+      }))
     );
 
     const transporter = nodemailer.createTransport({
@@ -38,80 +80,58 @@ export async function POST(request: Request) {
       },
     });
 
-    const htmlContent = `
-      <div style="font-size: 14px; line-height: 1.3;">
-        <!-- Section with contact & company info -->
-        <div>
-          ${
-            company
-              ? `<p style="margin: 0;"><strong>Nom de l'empresa:</strong> ${company}</p>`
-              : ""
-          }
-          ${
-            name
-              ? `<p style="margin: 0;"><strong>Nom de contacte:</strong> ${name}</p>`
-              : ""
-          }
-          ${
-            email
-              ? `<p style="margin: 0;"><strong>Correu electrònic:</strong> ${email}</p>`
-              : ""
-          }
-          ${
-            phone
-              ? `<p style="margin: 0;"><strong>Telèfon:</strong> ${phone}</p>`
-              : ""
-          }
-          ${
-            comment
-              ? `<p style="margin: 0;"><strong>Comentari:</strong> ${comment}</p>`
-              : ""
-          }
-        </div>
-
-        <!-- Section with items -->
+    // The items block is only rendered when there is a cart. It used to be
+    // emitted unconditionally, and `${items && items.length > 0 && ...}`
+    // printed the literal word "false" under the heading on every plain
+    // enquiry from /contact.
+    const itemsHtml = items.length
+      ? `
         <h3 style="margin-top: 1rem; margin-bottom: 0.5rem;">Sol·licitud de pressupost:</h3>
         <div style="padding-left: 1em;">
-          ${
-            items &&
-            items.length > 0 &&
-            items
-              .map((item) => {
-                let itemHtml = "";
+          ${items
+            .map((item) => {
+              const lines = [
+                item.discount
+                  ? `<p style="margin: 0;"><strong>Producte en oferta</strong></p>`
+                  : "",
+                row("Gènere", item.genus),
+                row("Descripció", item.description),
+                row("Quantitat", item.quantity),
+                row("Mida de test", item.pot_size),
+                row("Alçada", item.height),
+              ].join("");
+              return `<div style="margin-bottom: 20px;">${lines}</div>`;
+            })
+            .join("")}
+        </div>`
+      : "";
 
-                if (item.discount) {
-                  itemHtml += `<p style="margin: 0;"><strong>Producte en oferta</strong></p>`;
-                }
-
-                itemHtml += `<p style="margin: 0;"><strong>Gènere:</strong> ${item.genus}</p>`;
-                itemHtml += `<p style="margin: 0;"><strong>Descripció:</strong> ${item.description}</p>`;
-                itemHtml += `<p style="margin: 0;"><strong>Quantitat:</strong> ${item.quantity}</p>`;
-
-                if (item.pot_size) {
-                  itemHtml += `<p style="margin: 0;"><strong>Mida de test:</strong> ${item.pot_size}</p>`;
-                }
-
-                if (item.height) {
-                  itemHtml += `<p style="margin: 0;"><strong>Alçada:</strong> ${item.height}</p>`;
-                }
-
-                return `<div style="margin-bottom: 20px;">${itemHtml}</div>`;
-              })
-              .join("")
-          }
+    const htmlContent = `
+      <div style="font-size: 14px; line-height: 1.3;">
+        <div>
+          ${row("Nom de l'empresa", company)}
+          ${row("Nom de contacte", name)}
+          ${row("Correu electrònic", email)}
+          ${row("Telèfon", phone)}
+          ${row("Comentari", comment)}
         </div>
+        ${itemsHtml}
       </div>
     `;
 
-    const mailOptions = {
-      from: email,
+    await transporter.sendMail({
+      // From must be the authenticated mailbox: putting the visitor's address
+      // here fails SPF/DMARC and gets the message binned or rejected. Their
+      // address goes in Reply-To, so hitting reply still answers them.
+      from: process.env.EMAIL_USER,
+      replyTo: email,
       to: process.env.MAIL_DESTINATION,
-      subject: `Nova sol·licitud de pressupost`,
+      subject: items.length
+        ? `Nova sol·licitud de pressupost — ${name}`
+        : `Nou contacte des de la web — ${name}`,
       html: htmlContent,
       attachments,
-    };
-
-    await transporter.sendMail(mailOptions);
+    });
 
     return NextResponse.json(
       { message: "Email enviado correctamente" },

@@ -16,7 +16,7 @@ import {
   QueryType,
 } from "@/types/Products";
 import { createColumnHelper } from "@tanstack/react-table";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AddToCart from "@/components/ui/AddToCart/AddToCart";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "@/store/features/cartSlice";
@@ -24,10 +24,22 @@ import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
 import { showModal } from "@/store/features/modalSlice";
 import { OfferType } from "@/types/Offers";
+import { formatPrice } from "@/lib/format";
+import useLocale from "@/hooks/useLocale";
 import React from "react";
 
-export default function useProducts() {
+const PAGE_SIZE = 25;
+
+/**
+ * @param initialSearch term from the page's ?search= query, resolved on the
+ *   server. Reading it here with useSearchParams() forced the whole products
+ *   route out of static rendering (and needed a Suspense boundary); only the
+ *   Plants component passes it, so the other consumers of this hook do not
+ *   re-trigger the initial fetch.
+ */
+export default function useProducts(initialSearch?: string) {
   const { t } = useTranslation(["products", "addProducts"]);
+  const locale = useLocale();
 
   const data = t("products", { returnObjects: true }) as productsDataType;
   const dataAddProduct = t("addProducts", {
@@ -57,30 +69,63 @@ export default function useProducts() {
     },
   });
 
+  const ownsInitialFetch = initialSearch !== undefined;
+  const appliedInitialSearch = useRef(false);
+
+  // The hero search box and the home page category cards link here with
+  // ?search=<term>. Without this the term was in the URL and silently
+  // ignored, so every one of those links landed on the unfiltered table.
   useEffect(() => {
-    if (!loading && plants.length < 1) getPlants(meta.query, meta.page, 25);
+    if (!ownsInitialFetch || appliedInitialSearch.current) return;
+    appliedInitialSearch.current = true;
+
+    if (initialSearch && initialSearch !== meta.query.search) {
+      const newQuery = { ...meta.query, search: initialSearch };
+      dispatch(resetPageScroll());
+      dispatch(setQuery(newQuery));
+      getPlants(newQuery, 1, PAGE_SIZE);
+      return;
+    }
+    if (!loading && plants.length < 1) {
+      getPlants(meta.query, meta.page, PAGE_SIZE);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const generateStrapiQuery = (query: QueryType) => {
-    let strapiQuery = "";
+    // Every clause goes under its own $and slot so they intersect: the search
+    // term matches genus OR description, and that result is then narrowed by
+    // the selected formats. The previous version only ever searched
+    // `description`, so searching a genus that is not repeated in the
+    // description text returned nothing.
+    const parts: string[] = [];
+    let slot = 0;
+
     if (query.search) {
-      strapiQuery += `filters[description][$containsi]=${encodeURIComponent(
-        query.search
-      )}`;
+      // Shared with lib/plants.ts so the count on a home page category card
+      // and the total on the page it links to are the same number.
+      const term = encodeURIComponent(query.search);
+      parts.push(`filters[$and][${slot}][$or][0][genus][$containsi]=${term}`);
+      parts.push(
+        `filters[$and][${slot}][$or][1][description][$containsi]=${term}`
+      );
+      slot += 1;
     }
 
     const formatValues = Object.values(query.format);
     if (formatValues.length > 0) {
       formatValues.forEach((value, index) => {
-        strapiQuery += `${
-          strapiQuery ? "&" : ""
-        }filters[$or][${index}][pot_size][$containsi]=${encodeURIComponent(
-          value
-        )}`;
+        parts.push(
+          `filters[$and][${slot}][$or][${index}][pot_size][$containsi]=` +
+            encodeURIComponent(value)
+        );
       });
+      slot += 1;
     }
 
-    return strapiQuery;
+    if (query.sort) parts.push(`sort=${encodeURIComponent(query.sort)}`);
+
+    return parts.join("&");
   };
 
   const getPlants = async (
@@ -92,7 +137,9 @@ export default function useProducts() {
       dispatch(setLoading(true));
       const strapiQuery = generateStrapiQuery(query);
       const response = await fetch(
-        `/api/strapi/plants?pagination[pageSize]=${pageSize}&pagination[page]=${newPage}&${strapiQuery}&fields[0]=genus&fields[1]=description&fields[2]=pot_size&fields[3]=height&fields[4]=price`
+        `/api/strapi/plants?pagination[pageSize]=${pageSize}&pagination[page]=${newPage}` +
+          `&${strapiQuery}` +
+          `&fields[0]=genus&fields[1]=description&fields[2]=pot_size&fields[3]=height&fields[4]=price`
       );
       const data = await response.json();
 
@@ -134,6 +181,8 @@ export default function useProducts() {
 
     if (name === "search") {
       newQuery.search = value as string;
+    } else if (name === "sort") {
+      newQuery.sort = value as string;
     } else if (name === "offers") {
       newQuery.offers = !newQuery.offers;
     } else if (name === "format") {
@@ -156,15 +205,27 @@ export default function useProducts() {
     dispatch(setQuery(newQuery));
 
     if (name !== "offers") {
-      getPlants(newQuery, 1, 25);
+      getPlants(newQuery, 1, PAGE_SIZE);
     }
   };
 
   const getScrollPlants = async () => {
     if (meta.total > plants.length && !loading) {
       dispatch(setPageScroll());
-      await getPlants(meta.query, meta.page + 1, 25);
+      await getPlants(meta.query, meta.page + 1, PAGE_SIZE);
     }
+  };
+
+  const clearFilters = () => {
+    const cleared: QueryType = {
+      search: "",
+      offers: false,
+      format: {},
+      sort: meta.query.sort,
+    };
+    dispatch(resetPageScroll());
+    dispatch(setQuery(cleared));
+    getPlants(cleared, 1, PAGE_SIZE);
   };
 
   const handleAddToCart = (plant: PlantType | OfferType) => {
@@ -204,7 +265,8 @@ export default function useProducts() {
   const columnHelper = createColumnHelper<PlantType>();
 
   const generateColumns = () => {
-    const windowWidth = window.innerWidth;
+    // This component is SSR'd; window only exists after hydration.
+    const windowWidth = typeof window === "undefined" ? 1280 : window.innerWidth;
 
     const addColumn = columnHelper.display({
       id: "add",
@@ -233,7 +295,9 @@ export default function useProducts() {
       }),
       columnHelper.accessor("price", {
         header: data.table.titlePrice,
-        cell: (info) => `${info.getValue()} €`,
+        // Was `${value} €`, which printed "13.6 €" — a decimal point and one
+        // decimal place, in locales that use a comma and two.
+        cell: (info) => formatPrice(info.getValue(), locale),
       }),
     ];
 
@@ -250,10 +314,13 @@ export default function useProducts() {
     query,
     data,
     dataAddProduct,
+    total: meta.total,
+    loaded: plants.length,
     getScrollPlants,
     generateColumns,
     handleFilter,
     handleAddToCart,
     addCostumPlant,
+    clearFilters,
   };
 }
