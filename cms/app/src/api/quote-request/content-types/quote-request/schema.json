@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quote_requests",
+  "info": {
+    "singularName": "quote-request",
+    "pluralName": "quote-requests",
+    "displayName": "Quote request",
+    "description": "Every enquiry sent from the web form. Written by the site (app/api/contact), never edited by hand — the email is only a notification, this is the record."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kind": {
+      "type": "enumeration",
+      "enum": ["quote", "contact"],
+      "default": "contact",
+      "required": true
+    },
+    "name": { "type": "string", "required": true },
+    "company": { "type": "string" },
+    "email": { "type": "string" },
+    "phone": { "type": "string" },
+    "customer_type": { "type": "string" },
+    "comment": { "type": "text" },
+    "page_locale": { "type": "string" },
+    "species_count": { "type": "integer", "default": 0 },
+    "unit_count": { "type": "integer", "default": 0 },
+    "items": { "type": "json" },
+    "submitted_at": { "type": "datetime" }
+  }
+}

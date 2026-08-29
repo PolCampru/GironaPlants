@@ -8,6 +8,7 @@ import * as React from "react";
 import { ReduxProvider } from "./reduxProvider";
 import CookiePrompt from "@/components/layout/Cookies/CookiePrompt";
 import ErrorBoundary from "@/components/layout/ErrorBoundary";
+import Analytics from "@/components/analytics/Analytics";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -118,6 +119,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
           </ReduxProvider>
           <Footer year={new Date().getFullYear()} />
         </ThemeClientProvider>
+        <Analytics />
       </body>
     </html>
   );

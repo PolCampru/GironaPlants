@@ -68,7 +68,7 @@ const cookiePolicyContent: CookiePolicyContentType = {
         "Estas cookies permiten al sitio web recordar elecciones que usted realiza para proporcionarle funcionalidades mejoradas y más personales.",
       statisticsTitle: "Cookies estadísticas",
       statisticsContent:
-        "Estas cookies nos ayudan a entender cómo los visitantes interactúan con el sitio web, recopilando y reportando información de forma anónima.",
+        "Estas cookies nos ayudan a entender cómo los visitantes interactúan con el sitio web, recopilando y reportando información de forma anónima. Para estas estadísticas utilizamos Umami, una herramienta de analítica alojada en nuestro propio servidor que no instala cookies ni recopila datos personales: mide páginas vistas y acciones agregadas, y los datos no se comparten con terceros.",
       marketingTitle: "Cookies de marketing",
       marketingContent:
         "Estas cookies se utilizan para rastrear a los visitantes en los sitios web. La intención es mostrar anuncios que sean relevantes y atractivos para el usuario individual.",
@@ -108,7 +108,7 @@ const cookiePolicyContent: CookiePolicyContentType = {
         "Aquestes cookies permeten al lloc web recordar eleccions que vostè realitza per proporcionar-li funcionalitats millorades i més personalitzades.",
       statisticsTitle: "Cookies estadístiques",
       statisticsContent:
-        "Aquestes cookies ens ajuden a entendre com els visitants interactuen amb el lloc web, recopilant i reportant informació de forma anònima.",
+        "Aquestes cookies ens ajuden a entendre com els visitants interactuen amb el lloc web, recopilant i reportant informació de forma anònima. Per a aquestes estadístiques fem servir Umami, una eina d'analítica allotjada al nostre propi servidor que no instal·la cookies ni recull dades personals: mesura pàgines vistes i accions agregades, i les dades no es comparteixen amb tercers.",
       marketingTitle: "Cookies de màrqueting",
       marketingContent:
         "Aquestes cookies s'utilitzen per rastrejar els visitants als llocs web. La intenció és mostrar anuncis que siguin rellevants i atractius per a l'usuari individual.",
@@ -148,7 +148,7 @@ const cookiePolicyContent: CookiePolicyContentType = {
         "These cookies allow the website to remember choices you make to provide enhanced, more personal features to you.",
       statisticsTitle: "Statistics cookies",
       statisticsContent:
-        "These cookies help us understand how visitors interact with the website by collecting and reporting information anonymously.",
+        "These cookies help us understand how visitors interact with the website by collecting and reporting information anonymously. For these statistics we use Umami, an analytics tool hosted on our own server that sets no cookies and collects no personal data: it measures page views and aggregate actions, and the data is not shared with third parties.",
       marketingTitle: "Marketing cookies",
       marketingContent:
         "These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user.",
@@ -188,7 +188,7 @@ const cookiePolicyContent: CookiePolicyContentType = {
         "Ces cookies permettent au site web de se souvenir des choix que vous faites pour vous offrir des fonctionnalités améliorées et plus personnelles.",
       statisticsTitle: "Cookies statistiques",
       statisticsContent:
-        "Ces cookies nous aident à comprendre comment les visiteurs interagissent avec le site web en collectant et en rapportant des informations de manière anonyme.",
+        "Ces cookies nous aident à comprendre comment les visiteurs interagissent avec le site web en collectant et en rapportant des informations de manière anonyme. Pour ces statistiques, nous utilisons Umami, un outil d'analyse hébergé sur notre propre serveur qui n'installe pas de cookies et ne collecte aucune donnée personnelle : il mesure les pages vues et les actions agrégées, et les données ne sont pas partagées avec des tiers.",
       marketingTitle: "Cookies de marketing",
       marketingContent:
         "Ces cookies sont utilisés pour suivre les visiteurs sur les sites web. L'intention est d'afficher des publicités qui sont pertinentes et attrayantes pour l'utilisateur individuel.",

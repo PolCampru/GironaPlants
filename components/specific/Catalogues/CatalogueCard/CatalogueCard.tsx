@@ -12,6 +12,7 @@ import {
   FormatTag,
 } from "./CatalogueCard.style";
 import { CatalogueItem } from "@/types/Catalogues";
+import { track } from "@/lib/analytics";
 
 type CatalogueCardProps = {
   item: CatalogueItem;
@@ -48,6 +49,7 @@ const CatalogueCard = ({ item, downloadLabel }: CatalogueCardProps) => (
           // The href is a PDF on the CMS host, so `download` alone would not
           // save it; opening in a new tab is what browsers actually honour.
           aria-label={`${item.button || downloadLabel}: ${item.title}`}
+          onClick={() => track("catalogue_download", { catalogue: item.title })}
         >
           {item.button || downloadLabel}
           <FiDownload aria-hidden="true" />

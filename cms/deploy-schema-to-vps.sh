@@ -32,6 +32,18 @@ for TYPE in home about-us catalogue offer plant; do
     "$HOST:$STRAPI/src/api/$TYPE/content-types/$TYPE/schema.json"
   echo "    $TYPE/schema.json"
 done
+# quote-request es una coleccion entera, no solo un esquema: el servidor no
+# tiene el directorio, asi que van tambien el controller, la ruta y el
+# servicio. Strapi no registra el tipo si falta cualquiera de los cuatro.
+QR="src/api/quote-request"
+ssh "$HOST" "mkdir -p $STRAPI/$QR/content-types/quote-request $STRAPI/$QR/controllers $STRAPI/$QR/routes $STRAPI/$QR/services"
+scp -q "$ROOT/cms/app/$QR/content-types/quote-request/schema.json" \
+  "$HOST:$STRAPI/$QR/content-types/quote-request/schema.json"
+for PART in controllers routes services; do
+  scp -q "$ROOT/cms/app/$QR/$PART/quote-request.ts" "$HOST:$STRAPI/$QR/$PART/quote-request.ts"
+done
+echo "    quote-request (schema + controller + route + service)"
+
 ssh "$HOST" "mkdir -p $STRAPI/src/components/catalogue"
 scp -q "$ROOT/cms/app/src/components/catalogue/catalogue-item.json" \
   "$HOST:$STRAPI/src/components/catalogue/catalogue-item.json"

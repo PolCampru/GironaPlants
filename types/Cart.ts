@@ -14,6 +14,9 @@ export type ItemType = {
   discount?: number;
 };
 
+/** Where a line was added from, for the quote funnel in Umami. */
+export type QuoteItemSource = "catalogue" | "offer" | "custom";
+
 export type CartStateType = {
   items: ItemType[];
   /** False until the browser's saved quote has been adopted after mount, so

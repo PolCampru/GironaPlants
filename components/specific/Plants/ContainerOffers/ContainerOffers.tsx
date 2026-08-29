@@ -8,6 +8,7 @@ import {
 } from "./ContainerOffers.style";
 import OffertCardMini from "../OffertCardMini/OffertCardMini";
 import { OfferType } from "@/types/Offers";
+import { QuoteItemSource } from "@/types/Cart";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useUiLabels from "@/hooks/useUiLabels";
 
@@ -15,7 +16,7 @@ interface OffersCarouselProps {
   query: { offers: boolean };
   data: { filters: { offersTitle: string } };
   offersData: OfferType[];
-  handleAddToCart: (product: OfferType) => void;
+  handleAddToCart: (product: OfferType, source?: QuoteItemSource) => void;
 }
 
 export function OffersCarousel({

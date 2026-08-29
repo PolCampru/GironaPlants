@@ -15,6 +15,7 @@ import {
 } from "./HeroCatalogues.style";
 import CtaLink from "@/components/ui/CtaLink/CtaLink";
 import { HeroCataloguesProps } from "@/types/Catalogues";
+import { track } from "@/lib/analytics";
 
 const MAIN_COVER = "/images/mainCatalogue.jpg";
 
@@ -60,6 +61,12 @@ const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => (
               href={data.catalogue_url}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                track("catalogue_download", {
+                  catalogue: "main",
+                  locale: data.locale,
+                })
+              }
             >
               {data.main_button}
               <FiDownload aria-hidden="true" />

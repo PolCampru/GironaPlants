@@ -7,6 +7,7 @@ import { initialFormValues } from "@/data/Form";
 import { FormValuesType } from "@/types/Form";
 import { FormType } from "@/types/Contact";
 import useBudget from "./useBudget";
+import { track } from "@/lib/analytics";
 
 /**
  * The form config arrives from the server (data/formContent.ts) instead of
@@ -181,10 +182,19 @@ const useForm = (data: FormType) => {
         }
       });
 
-      if (window.location.pathname.includes("/budget")) {
+      const isQuote = window.location.pathname.includes("/budget");
+      if (isQuote) {
         const itemsJson = JSON.stringify(items);
         formData.append("items", itemsJson);
       }
+
+      // The route stores the enquiry in Strapi and the locale is not
+      // otherwise recoverable there: /api/contact is called from the client,
+      // so the request path is /api/contact, not /es/budget.
+      formData.append(
+        "page_locale",
+        window.location.pathname.split("/").filter(Boolean)[0] ?? ""
+      );
 
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -195,13 +205,20 @@ const useForm = (data: FormType) => {
         throw new Error("Error sending form data");
       }
 
+      // Only after the POST succeeded: a submitted count that includes
+      // failures is worse than no count at all.
+      track(isQuote ? "quote_submitted" : "contact_submitted", {
+        species: items.length,
+        units: items.reduce((sum, item) => sum + (item.quantity || 0), 0),
+      });
+
       Swal.fire({
         icon: "success",
         title: data.messages.success.title,
         text: data.messages.success.text,
       });
 
-      if (window.location.pathname.includes("/budget")) {
+      if (isQuote) {
         handleClearCart();
       }
 

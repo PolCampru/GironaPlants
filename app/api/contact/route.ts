@@ -1,6 +1,7 @@
 import { ItemType } from "@/types/Cart";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { recordQuoteRequest } from "@/lib/quoteRequests";
 
 /** Total attachment budget. Beyond this most SMTP servers reject the message. */
 const MAX_ATTACHMENT_BYTES = 10 * 1024 * 1024;
@@ -42,6 +43,8 @@ export async function POST(request: Request) {
     const email = formData.get("email") as string;
     const phone = formData.get("phone") as string;
     const comment = formData.get("comment") as string;
+    const customerType = formData.get("type") as string;
+    const pageLocale = formData.get("page_locale") as string;
 
     if (!name || !email) {
       return NextResponse.json(
@@ -69,6 +72,22 @@ export async function POST(request: Request) {
         content: Buffer.from(await file.arrayBuffer()),
       }))
     );
+
+    // Stored before the mail goes out, on purpose: if SMTP is down or the
+    // credentials are stale, the enquiry still exists somewhere we can read
+    // it instead of being lost with the send. recordQuoteRequest never
+    // throws and times out at 5s, so it cannot cost us a delivery either.
+    await recordQuoteRequest({
+      kind: items.length ? "quote" : "contact",
+      name,
+      company,
+      email,
+      phone,
+      customerType,
+      comment,
+      pageLocale,
+      items,
+    });
 
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,

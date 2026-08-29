@@ -4,7 +4,21 @@
 
 gironaplants.com, www.gironaplants.com {
 	encode gzip
-	reverse_proxy frontend:3000
+
+	# Umami, servido en primera parte bajo /stats (BASE_PATH=/stats en el
+	# compose, asi que el prefijo se pasa tal cual). Va aqui y no en un
+	# subdominio por dos razones: no hace falta un registro DNS nuevo en
+	# PIMEC, y el script no cae en las listas de bloqueo, que filtran por
+	# hostname de analitica. El panel esta en /stats/login (protegido por
+	# contrasena); /stats/script.js y /stats/api/send son los dos unicos
+	# endpoints que usa la web.
+	handle /stats/* {
+		reverse_proxy umami:3000
+	}
+
+	handle {
+		reverse_proxy frontend:3000
+	}
 }
 
 # Strapi CMS, exposed publicly. Default-deny: only the read API and uploaded

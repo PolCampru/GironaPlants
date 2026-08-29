@@ -25,6 +25,8 @@ import { useTranslation } from "react-i18next";
 import { showModal } from "@/store/features/modalSlice";
 import { OfferType } from "@/types/Offers";
 import { formatPrice } from "@/lib/format";
+import { track } from "@/lib/analytics";
+import { QuoteItemSource } from "@/types/Cart";
 import useLocale from "@/hooks/useLocale";
 import React from "react";
 
@@ -228,7 +230,13 @@ export default function useProducts(initialSearch?: string) {
     getPlants(cleared, 1, PAGE_SIZE);
   };
 
-  const handleAddToCart = (plant: PlantType | OfferType) => {
+  /** Every add goes through here — the catalogue table, the offer cards and
+   *  the custom-plant modal — so it is the one place the funnel is measured.
+   *  `source` says which of the three it was. */
+  const handleAddToCart = (
+    plant: PlantType | OfferType,
+    source: QuoteItemSource = "catalogue"
+  ) => {
     if (items.find((item) => item.id === plant.id)) {
       Toast.fire({
         icon: "error",
@@ -236,6 +244,12 @@ export default function useProducts(initialSearch?: string) {
       });
       return;
     }
+
+    // Before the dispatch: `items` is this render's cart, so an empty one
+    // means this add is what starts the quote.
+    if (items.length === 0) track("quote_started", { source, locale });
+    track("quote_item_added", { source, genus: plant.genus ?? "", locale });
+
     dispatch(
       addItem({
         id: plant.id,

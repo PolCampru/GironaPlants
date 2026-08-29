@@ -62,7 +62,7 @@ const OfferCard = ({ data }: { data: OfferType }) => {
 
         <AddToCart
           size="2.5rem"
-          onClick={() => handleAddToCart({ ...data, id: -data.id })}
+          onClick={() => handleAddToCart({ ...data, id: -data.id }, "offer")}
         />
       </CardFooter>
     </OfferCardWrapper>

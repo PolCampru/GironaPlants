@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store";
+import { track } from "@/lib/analytics";
 
 interface UseBudgetAndLanguageProps {
   i18n: any;
@@ -39,6 +40,7 @@ const useBudgetAndLanguage = ({ i18n }: UseBudgetAndLanguageProps) => {
     }
 
     try {
+      track("language_switch", { from: currentLanguage, to: lng });
       await i18n.changeLanguage(lng);
       updateURLWithLanguage(lng);
     } finally {

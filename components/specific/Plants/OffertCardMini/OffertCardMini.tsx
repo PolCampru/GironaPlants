@@ -5,6 +5,7 @@ import { OfferType } from "@/types/Offers";
 import styled from "styled-components";
 import ImageCarrousel from "../../Offers/ImageCarrousel/ImageCarrousel";
 import AddToCart from "@/components/ui/AddToCart/AddToCart";
+import { QuoteItemSource } from "@/types/Cart";
 
 export const CardWrapper = styled.div`
   width: 17rem;
@@ -89,7 +90,7 @@ export const CardWrapper = styled.div`
 
 interface OffertCardMiniProps {
   offer: OfferType;
-  handleAddToCart: (product: OfferType) => void;
+  handleAddToCart: (product: OfferType, source?: QuoteItemSource) => void;
 }
 
 const OffertCardMini = ({ offer, handleAddToCart }: OffertCardMiniProps) => {
@@ -111,7 +112,7 @@ const OffertCardMini = ({ offer, handleAddToCart }: OffertCardMiniProps) => {
       <div className="container-add-to-cart">
         <AddToCart
           size="2rem"
-          onClick={() => handleAddToCart({ ...offer, id: -offer.id })}
+          onClick={() => handleAddToCart({ ...offer, id: -offer.id }, "offer")}
         />
       </div>
     </CardWrapper>

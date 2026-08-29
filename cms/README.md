@@ -50,6 +50,40 @@ in the admin panel.
 > Publishing publishes the whole draft. Make sure no half-finished draft edits
 > exist on these single types before running.
 
+## Quote request (2026-08-29)
+
+Coleccion nueva, `quote-request`: cada envio del formulario de la web queda
+guardado ahi. Antes solo existia como email, que no es un registro — no se
+puede buscar, ni agregar, ni sobrevive al buzon. El email sigue enviandose
+igual; esto es el archivo.
+
+La escribe `app/api/contact/route.ts` via `lib/quoteRequests.ts`, **antes** de
+mandar el correo: si el SMTP falla (las credenciales de PIMEC siguen sin rotar)
+la solicitud no se pierde. La escritura nunca lanza y corta a los 5s, asi que
+tampoco puede tumbar un envio.
+
+Campos: `kind` (quote/contact), `name`, `company`, `email`, `phone`,
+`customer_type`, `comment`, `page_locale`, `species_count`, `unit_count`,
+`items` (json con genero/descripcion/medida/cantidad de cada linea) y
+`submitted_at`. Sin draft & publish: las entradas salen directas en la lista.
+
+### Lo que hay que hacer a mano una vez
+
+1. Desplegar el esquema: `bash cms/deploy-schema-to-vps.sh` (la coleccion no
+   aparece en el panel hasta que Strapi se reconstruye).
+2. Settings → API Tokens → Create new: tipo **Custom**, y marcar unicamente
+   `quote-request: create`. Copiar el token a `STRAPI_WRITE_TOKEN` en
+   `/opt/gironaplants/frontend/.env`. El `STRAPI_TOKEN` actual es de solo
+   lectura a proposito y no debe ampliarse: lo usa el proxy publico
+   `/api/strapi/[resource]`.
+3. Comprobar que el rol **Public** NO tiene `find` ni `create` sobre
+   `quote-request` (por defecto no los tiene). Son datos personales de
+   clientes: no pueden quedar expuestos en la API abierta.
+
+Sin `STRAPI_WRITE_TOKEN` la escritura responde 403, se registra en los logs del
+frontend y el email sale igual — el fallo es silencioso para el visitante, a
+proposito.
+
 ## Schema state (2026-08-28)
 
 `cms/app/` is the source of truth for the Strapi project; the deploy script

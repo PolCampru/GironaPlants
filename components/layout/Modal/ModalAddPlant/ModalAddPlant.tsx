@@ -43,7 +43,7 @@ const ModalAddPlant = ({ closeModal }: { closeModal: () => void }) => {
     const newPlant = { ...plant } as PlantType;
     newPlant.id = Date.now();
 
-    handleAddToCart(newPlant as PlantType);
+    handleAddToCart(newPlant as PlantType, "custom");
     closeModal();
   };
 

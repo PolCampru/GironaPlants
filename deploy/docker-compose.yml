@@ -33,9 +33,49 @@ services:
         NEXT_PUBLIC_BASE_URL: "https://gironaplants.com"
         STRAPI_BASE_URL: "http://127.0.0.1:1337"
         STRAPI_TOKEN: "${STRAPI_TOKEN}"
+        NEXT_PUBLIC_UMAMI_WEBSITE_ID: "${UMAMI_WEBSITE_ID}"
     container_name: gp-frontend
     restart: unless-stopped
     env_file: ./frontend/.env
+    networks: [web]
+
+  # --- Analitica (Umami) -------------------------------------------------
+  # Cookieless: no identifica al visitante ni guarda datos personales, asi
+  # que no necesita el consentimiento del banner de cookies.
+  umami-db:
+    image: postgres:16-alpine
+    container_name: gp-umami-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: "${UMAMI_DB_PASSWORD}"
+    volumes:
+      - umami_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U umami -d umami"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [web]
+
+  # BASE_PATH hace que Umami se sirva bajo /stats; el Caddyfile le pasa el
+  # prefijo tal cual. Servirlo en el dominio principal (y no en un subdominio)
+  # evita depender de un registro DNS nuevo en PIMEC y esquiva los bloqueadores
+  # de anuncios, que filtran por hostname de analitica.
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: gp-umami
+    restart: unless-stopped
+    depends_on:
+      umami-db:
+        condition: service_healthy
+    environment:
+      DATABASE_TYPE: postgresql
+      DATABASE_URL: "postgresql://umami:${UMAMI_DB_PASSWORD}@umami-db:5432/umami"
+      APP_SECRET: "${UMAMI_APP_SECRET}"
+      BASE_PATH: /stats
+      DISABLE_TELEMETRY: "1"
     networks: [web]
 
 networks:
@@ -44,3 +84,4 @@ networks:
 volumes:
   caddy_data:
   caddy_config:
+  umami_db:

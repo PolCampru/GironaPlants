@@ -32,6 +32,8 @@ relativas del compose (`./frontend`, `./strapi`, `./data`) dependen de ello.
 | `gp-caddy` | 80, 443 | HTTPS automatico (Let's Encrypt) para gironaplants.com y www |
 | `gp-frontend` | 3000 (interno) | Next.js, solo accesible via Caddy |
 | `gp-strapi` | 1337 (via Caddy) | Publico en `srv656147.hstgr.cloud`. `/api` y `/uploads` abiertos; `/admin` restringido por IP |
+| `gp-umami` | 3000 (interno) | Analitica, servida en `gironaplants.com/stats` |
+| `gp-umami-db` | 5432 (interno) | Postgres de Umami, volumen `umami_db` |
 
 Los tres corren como usuario `node` sin privilegios y con `restart: unless-stopped`.
 
@@ -48,6 +50,71 @@ ssh root@46.202.135.74
 cd /opt/gironaplants/frontend && git fetch && git checkout -f -B main origin/main
 cd /opt/gironaplants && docker compose build frontend && docker compose up -d frontend
 ```
+
+## Analitica (Umami)
+
+Auto-alojada, cookieless, sin datos personales: no necesita el consentimiento
+del banner de cookies (la politica de cookies ya lo explica en los cuatro
+idiomas). Se sirve en **https://gironaplants.com/stats**, dentro del dominio
+principal y no en un subdominio, por dos motivos: no depende de un registro DNS
+nuevo en PIMEC — que es exactamente lo que lleva bloqueando a
+`api.gironaplants.com` — y el script en primera parte no cae en las listas de
+bloqueo de los bloqueadores de anuncios, que filtran por hostname.
+
+### Alta (una sola vez)
+
+```bash
+# 1. Secretos en /opt/gironaplants/.env
+ssh root@46.202.135.74
+cat >> /opt/gironaplants/.env <<EOF
+UMAMI_DB_PASSWORD=$(openssl rand -hex 24)
+UMAMI_APP_SECRET=$(openssl rand -hex 32)
+EOF
+
+# 2. Subir compose + Caddyfile y levantar
+exit
+scp deploy/docker-compose.yml deploy/Caddyfile root@46.202.135.74:/opt/gironaplants/
+ssh root@46.202.135.74 'cd /opt/gironaplants && docker compose up -d umami-db umami && docker exec gp-caddy caddy reload --config /etc/caddy/Caddyfile --adapter caddyfile'
+```
+
+3. Entrar en https://gironaplants.com/stats con el usuario por defecto
+   `admin` / `umami` y **cambiar la contrasena inmediatamente** (Settings →
+   Profile). El panel es publico: la contrasena es lo unico que lo protege.
+4. Settings → Websites → Add website: nombre `GironaPlants`, dominio
+   `gironaplants.com`. Copiar el **Website ID** que genera.
+5. Escribir ese id en `/opt/gironaplants/.env` como `UMAMI_WEBSITE_ID=...` y
+   reconstruir el frontend — es una variable `NEXT_PUBLIC_*`, o sea que se
+   incrusta en el build, no se lee en runtime:
+
+```bash
+ssh root@46.202.135.74 'cd /opt/gironaplants && docker compose build frontend && docker compose up -d frontend'
+```
+
+Sin `UMAMI_WEBSITE_ID` el frontend no renderiza ningun script: la web funciona
+igual, simplemente no mide.
+
+### Eventos que envia la web
+
+`lib/analytics.ts` define la lista cerrada; nunca se envia nada que haya
+escrito el visitante.
+
+| Evento | Donde | Datos |
+|---|---|---|
+| `quote_started` | primera linea anadida al presupuesto | `source`, `locale` |
+| `quote_item_added` | cada linea anadida | `source` (catalogue/offer/custom), `genus`, `locale` |
+| `quote_submitted` | envio desde `/budget` (solo si el POST fue bien) | `species`, `units` |
+| `contact_submitted` | envio desde `/contact` | `species`, `units` |
+| `catalogue_download` | descarga de PDF | `catalogue`, `locale` |
+| `language_switch` | selector de idioma | `from`, `to` |
+
+Si algun dia el script se bloquea o no carga, `track()` es un no-op: la
+analitica no puede romper un presupuesto.
+
+### Copias de seguridad
+
+El backup diario de las 03:15 cubre `data/data.db` (Strapi). Umami vive en el
+volumen `umami_db` y **no** esta incluido todavia; si sus datos importan, anadir
+un `docker exec gp-umami-db pg_dump -U umami umami` al mismo cron.
 
 ## Panel de Strapi
 
@@ -85,8 +152,9 @@ fichero exige `docker compose build strapi` (la fuente va dentro de la imagen).
 
 ## Variables de entorno (NO versionadas)
 
-- `/opt/gironaplants/.env` — `STRAPI_TOKEN` (lo consume el build del frontend)
-- `/opt/gironaplants/frontend/.env` — `STRAPI_BASE_URL`, `STRAPI_TOKEN`, `SECRET_TOKEN`, `EMAIL_*`
+- `/opt/gironaplants/.env` — `STRAPI_TOKEN` (lo consume el build del frontend),
+  `UMAMI_DB_PASSWORD`, `UMAMI_APP_SECRET`, `UMAMI_WEBSITE_ID`
+- `/opt/gironaplants/frontend/.env` — `STRAPI_BASE_URL`, `STRAPI_TOKEN`, `STRAPI_WRITE_TOKEN`, `SECRET_TOKEN`, `EMAIL_*`
 - `/opt/gironaplants/strapi/.env` — `APP_KEYS`, `API_TOKEN_SALT`, `ADMIN_JWT_SECRET`,
   `TRANSFER_TOKEN_SALT`, `ENCRYPTION_KEY`, `JWT_SECRET`, `DATABASE_FILENAME`
 
