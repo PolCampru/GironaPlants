@@ -12,7 +12,11 @@ gironaplants.com, www.gironaplants.com {
 	# hostname de analitica. El panel esta en /stats/login (protegido por
 	# contrasena); /stats/script.js y /stats/api/send son los dos unicos
 	# endpoints que usa la web.
-	handle /stats/* {
+	# Los dos patrones, no solo /stats/*: en Caddy ese matcher NO cubre la ruta
+	# exacta /stats, que es justo la que se teclea a mano. Sin la primera,
+	# /stats caia al frontend y devolvia su 404.
+	@umami path /stats /stats/*
+	handle @umami {
 		reverse_proxy umami:3000
 	}
 
