@@ -64,7 +64,20 @@ services:
   # evita depender de un registro DNS nuevo en PIMEC y esquiva los bloqueadores
   # de anuncios, que filtran por hostname de analitica.
   umami:
-    image: ghcr.io/umami-software/umami:postgresql-latest
+    # Construida desde fuente, no `image:`, porque BASE_PATH es un ARG de
+    # build: Next.js compila `basePath` dentro del bundle, asi que ninguna
+    # imagen publicada puede servirse bajo /stats. Las imagenes oficiales
+    # devuelven 404 en todo el prefijo (probado con postgresql-latest, que ya
+    # es v3, y con v2.19.0).
+    #
+    # El contexto es un clon del repo de Umami que vive solo en el VPS, igual
+    # que ./frontend y ./strapi — ver deploy/README.md.
+    build:
+      context: ./umami-src
+      args:
+        DATABASE_TYPE: postgresql
+        BASE_PATH: /stats
+    image: gironaplants/umami:2.19.0-stats
     container_name: gp-umami
     restart: unless-stopped
     depends_on:

@@ -14,6 +14,7 @@ Reinstalado desde cero el 2026-08-14 tras un compromiso del servidor anterior.
 │   ├── Dockerfile         <- /Dockerfile (raiz del repo)
 │   ├── .dockerignore      <- /.dockerignore
 │   └── .env               <- SOLO en el servidor
+├── umami-src/             <- clon de umami-software/umami v2.19.0 (solo VPS)
 ├── strapi/                <- app Strapi (fuente en cms/app/ de este repo)
 │   ├── Dockerfile         <- deploy/strapi.Dockerfile
 │   └── .env               <- SOLO en el servidor
@@ -53,45 +54,56 @@ cd /opt/gironaplants && docker compose build frontend && docker compose up -d fr
 
 ## Analitica (Umami)
 
-Auto-alojada, cookieless, sin datos personales: no necesita el consentimiento
-del banner de cookies (la politica de cookies ya lo explica en los cuatro
-idiomas). Se sirve en **https://gironaplants.com/stats**, dentro del dominio
-principal y no en un subdominio, por dos motivos: no depende de un registro DNS
-nuevo en PIMEC — que es exactamente lo que lleva bloqueando a
-`api.gironaplants.com` — y el script en primera parte no cae en las listas de
-bloqueo de los bloqueadores de anuncios, que filtran por hostname.
+En produccion desde el 2026-08-29, en **https://gironaplants.com/stats**.
+Cookieless y sin datos personales: no necesita el consentimiento del banner
+(la politica de cookies ya lo explica en los cuatro idiomas).
 
-### Alta (una sola vez)
+Va bajo `/stats` del dominio principal, no en un subdominio, por dos razones:
+no depende de un registro DNS nuevo en PIMEC — que es justo lo que lleva meses
+bloqueando a `api.gironaplants.com` — y un script en primera parte no cae en
+las listas de bloqueo, que filtran por hostname de analitica.
+
+### Se construye desde fuente, y no es opcional
+
+`BASE_PATH` es un **ARG de build**: Next.js compila `basePath` dentro del
+bundle. Ninguna imagen publicada de Umami puede servirse bajo un prefijo — se
+probo con `postgresql-latest` (ya es v3) y con `postgresql-v2.19.0`, y las dos
+devuelven 404 en todo `/stats`, incluido su propio `script.js`. De ahi que el
+compose use `build:` contra un clon del repo de Umami que vive solo en el VPS,
+igual que `./frontend` y `./strapi`.
+
+El clon lleva un parche de una linea. El Dockerfile de v2.19.0 hace
+`npm install -g pnpm`, que hoy instala pnpm 10, y pnpm 10 aborta con
+`ERR_PNPM_IGNORED_BUILDS` en el `pnpm add` del stage runner. Se fija a la 9.
+
+Reconstruir el clon desde cero (solo si se pierde o se sube de version):
 
 ```bash
-# 1. Secretos en /opt/gironaplants/.env
 ssh root@46.202.135.74
-cat >> /opt/gironaplants/.env <<EOF
-UMAMI_DB_PASSWORD=$(openssl rand -hex 24)
-UMAMI_APP_SECRET=$(openssl rand -hex 32)
-EOF
-
-# 2. Subir compose + Caddyfile y levantar
-exit
-scp deploy/docker-compose.yml deploy/Caddyfile root@46.202.135.74:/opt/gironaplants/
-ssh root@46.202.135.74 'cd /opt/gironaplants && docker compose up -d umami-db umami && docker exec gp-caddy caddy reload --config /etc/caddy/Caddyfile --adapter caddyfile'
+rm -rf /opt/gironaplants/umami-src
+git clone --depth 1 --branch v2.19.0 https://github.com/umami-software/umami.git /opt/gironaplants/umami-src
+sed -i 's/^RUN npm install -g pnpm$/RUN npm install -g pnpm@9/' /opt/gironaplants/umami-src/Dockerfile
+cd /opt/gironaplants && docker compose build umami && docker compose up -d umami
 ```
 
-3. Entrar en https://gironaplants.com/stats con el usuario por defecto
-   `admin` / `umami` y **cambiar la contrasena inmediatamente** (Settings →
-   Profile). El panel es publico: la contrasena es lo unico que lo protege.
-4. Settings → Websites → Add website: nombre `GironaPlants`, dominio
-   `gironaplants.com`. Copiar el **Website ID** que genera.
-5. Escribir ese id en `/opt/gironaplants/.env` como `UMAMI_WEBSITE_ID=...` y
-   reconstruir el frontend — es una variable `NEXT_PUBLIC_*`, o sea que se
-   incrusta en el build, no se lee en runtime:
+La build tarda unos 6 min en las 2 CPU del VPS.
 
-```bash
-ssh root@46.202.135.74 'cd /opt/gironaplants && docker compose build frontend && docker compose up -d frontend'
-```
+### Estado actual
 
-Sin `UMAMI_WEBSITE_ID` el frontend no renderiza ningun script: la web funciona
-igual, simplemente no mide.
+- Panel: https://gironaplants.com/stats — usuario `admin`. La contrasena por
+  defecto (`umami`) **esta cambiada**; la actual esta en el gestor de
+  contrasenas. Verificado: el login con la de por defecto responde 401.
+- Website ID: `260cce63-f401-4ba1-9dcf-7d6a207f6052`, en `UMAMI_WEBSITE_ID`
+  de `/opt/gironaplants/.env`.
+- El panel es publico: la contrasena es lo unico que lo protege. Si algun dia
+  molesta, se le puede aplicar el mismo `remote_ip` que al `/admin` de Strapi,
+  dejando fuera `/stats/script.js` y `/stats/api/send`, que tienen que seguir
+  abiertos.
+
+`UMAMI_WEBSITE_ID` es `NEXT_PUBLIC_*`: se incrusta en el build del frontend,
+no se lee en runtime. Cambiarlo obliga a `docker compose build frontend`. Si
+esta vacio, el frontend no renderiza ningun script y la web funciona igual,
+solo que no mide.
 
 ### Eventos que envia la web
 
@@ -107,14 +119,15 @@ escrito el visitante.
 | `catalogue_download` | descarga de PDF | `catalogue`, `locale` |
 | `language_switch` | selector de idioma | `from`, `to` |
 
-Si algun dia el script se bloquea o no carga, `track()` es un no-op: la
-analitica no puede romper un presupuesto.
+Si el script se bloquea o no carga, `track()` es un no-op: la analitica no
+puede romper un presupuesto.
 
 ### Copias de seguridad
 
-El backup diario de las 03:15 cubre `data/data.db` (Strapi). Umami vive en el
-volumen `umami_db` y **no** esta incluido todavia; si sus datos importan, anadir
-un `docker exec gp-umami-db pg_dump -U umami umami` al mismo cron.
+`/usr/local/bin/gp-backup.sh` (cron diario, 03:15) incluye desde hoy un
+`pg_dump` de Umami en `backups/umami-*.sql.gz`, con la misma retencion de 14
+dias que el resto. Va con `|| true` a proposito: un fallo de la analitica no
+puede abortar el backup del CMS.
 
 ## Panel de Strapi
 

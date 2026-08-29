@@ -67,21 +67,40 @@ Campos: `kind` (quote/contact), `name`, `company`, `email`, `phone`,
 `items` (json con genero/descripcion/medida/cantidad de cada linea) y
 `submitted_at`. Sin draft & publish: las entradas salen directas en la lista.
 
-### Lo que hay que hacer a mano una vez
+### Estado: desplegado el 2026-08-29
 
-1. Desplegar el esquema: `bash cms/deploy-schema-to-vps.sh` (la coleccion no
-   aparece en el panel hasta que Strapi se reconstruye).
-2. Settings → API Tokens → Create new: tipo **Custom**, y marcar unicamente
-   `quote-request: create`. Copiar el token a `STRAPI_WRITE_TOKEN` en
-   `/opt/gironaplants/frontend/.env`. El `STRAPI_TOKEN` actual es de solo
-   lectura a proposito y no debe ampliarse: lo usa el proxy publico
-   `/api/strapi/[resource]`.
-3. Comprobar que el rol **Public** NO tiene `find` ni `create` sobre
-   `quote-request` (por defecto no los tiene). Son datos personales de
-   clientes: no pueden quedar expuestos en la API abierta.
+El esquema esta en produccion (`bash cms/deploy-schema-to-vps.sh`) y el token
+de escritura creado y en `/opt/gironaplants/frontend/.env` como
+`STRAPI_WRITE_TOKEN`.
 
-Sin `STRAPI_WRITE_TOKEN` la escritura responde 403, se registra en los logs del
-frontend y el email sale igual — el fallo es silencioso para el visitante, a
+El token se creo con la consola de Strapi y no por el panel, porque el panel
+solo es accesible desde la IP de la allowlist:
+
+```bash
+echo 'strapi.service("admin::api-token").create({name:"Frontend quote-request writer",type:"custom",lifespan:null,permissions:["api::quote-request.quote-request.create"]}).then(t=>{console.log(t.accessKey);process.exit(0)})' > /tmp/t.js
+docker cp /tmp/t.js gp-strapi:/tmp/t.js
+docker exec -i -e PORT=1338 gp-strapi sh -c "cd /srv/app && node_modules/.bin/strapi console < /tmp/t.js"
+```
+
+`PORT=1338` es imprescindible: la consola arranca la app entera y choca con el
+1337 del contenedor en marcha.
+
+Comprobado tras crearlo:
+
+| Peticion | Respuesta | Que demuestra |
+|---|---|---|
+| `POST /api/quote-requests` con el token, sin datos | 400 ValidationError | el token autentica y tiene `create` |
+| `POST` con datos validos | 201 | la escritura real funciona |
+| `GET` con el token | 403 | es solo de escritura |
+| `GET` sin token | 403 | el rol Public no expone los datos |
+
+Esa ultima fila importa: son datos personales de clientes y no pueden quedar
+en la API abierta. El `STRAPI_TOKEN` de siempre sigue siendo de solo lectura a
+proposito — lo usa el proxy publico `/api/strapi/[resource]` — y no debe
+ampliarse.
+
+Sin `STRAPI_WRITE_TOKEN` la escritura responde 403, queda en los logs del
+frontend y el email sale igual: el fallo es silencioso para el visitante, a
 proposito.
 
 ## Schema state (2026-08-28)
