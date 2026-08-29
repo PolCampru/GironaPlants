@@ -36,9 +36,10 @@ export const CoverFrame = styled.div`
     object-fit: cover;
   }
 
+  /* Stays portrait on mobile: the cover is a book cover, and a 4/3 frame
+     cropped the wordmark clean off the middle of it. */
   @media (max-width: 900px) {
-    max-width: 18rem;
-    aspect-ratio: 4 / 3;
+    max-width: 17rem;
   }
 `;
 

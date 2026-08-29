@@ -18,6 +18,11 @@ oblige us to publish it.
 | `ferns.jpg` | Ferns | CC0 1.0 | stocksnap | [Ferns Green](https://stocksnap.io/photo/ferns-green-2G7YH4XHF5) |
 | `nursery.jpg` | Others | CC0 1.0 | rawpixel | [Plant nursery, Whitebark Pine restoration](https://www.rawpixel.com/image/8733874/photo-image-plants-tree-public-domain) |
 
-Pre-existing photos (`hazelnut.jpg`, `redCedar.jpg`, `lavenders.jpg`, the
-catalogue covers and the About Us images) are unchanged and are not covered
-by this file.
+`mainCatalogue.jpg` is ours: the general-catalogue cover is composed from
+`lavenders.jpg` (the same photograph the Lavandula card uses) under the brand
+green, set in the site's own faces — Newsreader for the wordmark, Manrope for
+everything else. It carries no third-party licence beyond that photograph's.
+
+Other pre-existing photos (`hazelnut.jpg`, `redCedar.jpg`, `lavenders.jpg`,
+the remaining catalogue covers and the About Us images) are unchanged and are
+not covered by this file.

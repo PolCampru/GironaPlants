@@ -25,8 +25,8 @@ const HeroCatalogues = ({ data }: { data: HeroCataloguesProps }) => (
       <Image
         src={data.cover_url || MAIN_COVER}
         alt=""
-        width={700}
-        height={930}
+        width={1200}
+        height={1600}
         priority
         sizes="(max-width: 900px) 60vw, 30vw"
       />
