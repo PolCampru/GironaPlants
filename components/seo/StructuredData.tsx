@@ -96,7 +96,15 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
     ],
     areaServed: ['Europe', 'Spain', 'France', 'Portugal', 'Italy', 'Germany', 'Andorra'],
     knowsLanguage: ['ca', 'es', 'en', 'fr'],
-    sameAs: ['https://www.linkedin.com/in/gironaplants/'],
+    sameAs: [
+      'https://www.linkedin.com/in/gironaplants/',
+      // The Google Business Profile, so the link from site to listing is
+      // stated rather than left for Google to infer from matching address and
+      // phone. By place ID, not the maps.app.goo.gl shortlink the nursery
+      // shares: shortlinks are opaque and can rot. Same place either way —
+      // CID 3744809856802255064, the id Google itself used to claim it.
+      'https://www.google.com/maps/place/?q=place_id:ChIJQTfeMwAvuxIR2HAUUrk8-DM'
+    ],
     priceRange: '€€',
     acceptedPaymentMethod: [
       'http://purl.org/goodrelations/v1#Cash',
