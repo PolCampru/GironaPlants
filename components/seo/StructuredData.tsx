@@ -62,16 +62,24 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
     telephone: '+34 639 811 560',
     email: 'gironaplants@gironaplants.com',
     foundingDate: '1992',
+    // The nursery, not the province capital. These used to be 41.9794, 2.8214
+    // — Girona city centre, some 28 km from where the plants actually are —
+    // which is the one fact about a local business Google most needs right.
+    // Matches the Google Business Profile, deliberately: a listing and a
+    // site's own markup disagreeing about the location is a conflict Google
+    // resolves on its own, and rarely in your favour.
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Girona',
-      addressRegion: 'Catalonia',
+      streetAddress: 'Carretera de Riells, Km 1',
+      addressLocality: 'Breda',
+      postalCode: '17400',
+      addressRegion: 'Girona',
       addressCountry: 'ES'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 41.9794,
-      longitude: 2.8214
+      latitude: 41.7591377,
+      longitude: 2.5510631
     },
     // Mon-Fri 8:00-18:00, confirmed by the nursery. This used to open at 09:00
     // and claim a Saturday morning, neither of which matched the hours the
