@@ -19,6 +19,9 @@ export type UiLabels = {
   mobileNav: string;
   footerNav: string;
   searchInList: string;
+  /** Toasts on the genus and species pages. */
+  addedToQuote: string;
+  alreadyInQuote: string;
 };
 
 const labels: Record<string, UiLabels> = {
@@ -37,6 +40,8 @@ const labels: Record<string, UiLabels> = {
     mobileNav: "Menú móvil",
     footerNav: "Pie de página",
     searchInList: "Buscar en la lista…",
+    addedToQuote: "Añadido al presupuesto",
+    alreadyInQuote: "Ya está en tu presupuesto",
   },
   ca: {
     close: "Tancar",
@@ -53,6 +58,8 @@ const labels: Record<string, UiLabels> = {
     mobileNav: "Menú mòbil",
     footerNav: "Peu de pàgina",
     searchInList: "Cerca a la llista…",
+    addedToQuote: "Afegit al pressupost",
+    alreadyInQuote: "Ja és al teu pressupost",
   },
   en: {
     close: "Close",
@@ -69,6 +76,8 @@ const labels: Record<string, UiLabels> = {
     mobileNav: "Mobile menu",
     footerNav: "Footer",
     searchInList: "Search this list…",
+    addedToQuote: "Added to your quote",
+    alreadyInQuote: "Already in your quote",
   },
   fr: {
     close: "Fermer",
@@ -85,6 +94,8 @@ const labels: Record<string, UiLabels> = {
     mobileNav: "Menu mobile",
     footerNav: "Pied de page",
     searchInList: "Rechercher dans la liste…",
+    addedToQuote: "Ajouté à votre devis",
+    alreadyInQuote: "Déjà dans votre devis",
   },
 };
 

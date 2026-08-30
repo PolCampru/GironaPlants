@@ -15,7 +15,7 @@ export type ItemType = {
 };
 
 /** Where a line was added from, for the quote funnel in Umami. */
-export type QuoteItemSource = "catalogue" | "offer" | "custom";
+export type QuoteItemSource = "catalogue" | "offer" | "custom" | "species";
 
 export type CartStateType = {
   items: ItemType[];

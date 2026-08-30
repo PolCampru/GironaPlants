@@ -4,18 +4,6 @@ interface BusinessStructuredDataProps {
   locale?: string
 }
 
-interface ProductStructuredDataProps {
-  product: {
-    id: string
-    name: string
-    description: string
-    price: number
-    image?: string
-    category?: string
-  }
-  locale?: string
-}
-
 interface BreadcrumbItem {
   name: string
   url: string
@@ -120,47 +108,6 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
   )
 }
 
-export function ProductStructuredData({ product, locale = 'ca' }: ProductStructuredDataProps) {
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    '@id': `https://gironaplants.com/products/${product.id}`,
-    name: product.name,
-    description: product.description,
-    image: product.image || 'https://gironaplants.com/images/default-plant.jpg',
-    brand: {
-      '@type': 'Brand',
-      name: 'GironaPlants'
-    },
-    manufacturer: {
-      '@type': 'Organization',
-      name: 'GironaPlants'
-    },
-    offers: {
-      '@type': 'Offer',
-      url: `https://gironaplants.com/${locale}/products/${product.id}`,
-      priceCurrency: 'EUR',
-      price: product.price,
-      availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'Organization',
-        name: 'GironaPlants'
-      }
-    },
-    category: product.category || 'Plants',
-    sku: product.id
-  }
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(structuredData),
-      }}
-    />
-  )
-}
-
 export function BreadcrumbStructuredData({ items }: BreadcrumbStructuredDataProps) {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -179,6 +126,104 @@ export function BreadcrumbStructuredData({ items }: BreadcrumbStructuredDataProp
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(structuredData),
       }}
+    />
+  )
+}
+
+interface SpeciesStructuredDataProps {
+  name: string
+  url: string
+  genus: string
+  lowPrice: number | null
+  highPrice: number | null
+  /** Rows that actually carry a price — see the offers block below. */
+  offerCount: number
+  description: string
+}
+
+/**
+ * One botanical name, sold in several pot sizes and heights — so the price is
+ * an AggregateOffer over the catalogue rows, never a single figure. The seller
+ * points at the LocalBusiness node emitted by BusinessStructuredData rather
+ * than repeating it on every one of the ~750 species pages.
+ */
+export function SpeciesStructuredData({
+  name,
+  url,
+  genus,
+  lowPrice,
+  highPrice,
+  offerCount,
+  description,
+}: SpeciesStructuredDataProps) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    '@id': `${url}#product`,
+    name,
+    description,
+    url,
+    category: genus,
+    // Required for a product rich result. The catalogue holds no per-species
+    // photography, so this is the site image rather than a picture of this
+    // plant — which is why it is the same one for every species page.
+    image: 'https://gironaplants.com/images/lavenders.jpg',
+    brand: { '@type': 'Brand', name: 'GironaPlants' },
+    ...(lowPrice != null && {
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'EUR',
+        lowPrice,
+        highPrice: highPrice ?? lowPrice,
+        // Rows without a price are not offers: counting them would advertise
+        // ten offers spanning a range computed from two.
+        offerCount,
+        availability: 'https://schema.org/InStock',
+        url,
+        seller: { '@id': 'https://gironaplants.com/#business' },
+      },
+    }),
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  )
+}
+
+interface GenusStructuredDataProps {
+  genus: string
+  url: string
+  items: { name: string; url: string }[]
+}
+
+/** The species a genus page lists, so the page is read as a catalogue listing. */
+export function GenusStructuredData({ genus, url, items }: GenusStructuredDataProps) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#collection`,
+    name: genus,
+    url,
+    isPartOf: { '@id': 'https://gironaplants.com/#business' },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        url: item.url,
+      })),
+    },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
     />
   )
 }

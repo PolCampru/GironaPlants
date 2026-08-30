@@ -379,3 +379,56 @@ export function buildPageMetadata(lng: string, page: SeoPageKey): Metadata {
     },
   };
 }
+
+/**
+ * Metadata for a page whose path is not known at build time — the genus and
+ * species catalogue pages, one per row group in Strapi.
+ *
+ * Same canonical + hreflang contract as buildPageMetadata: the plant data is
+ * not localised (botanical names are Latin in all four locales), so the four
+ * language versions of a species page are near-identical by nature and the
+ * alternates are what tells Google that is deliberate.
+ */
+export function buildDynamicMetadata({
+  lng,
+  path,
+  title,
+  description,
+  keywords,
+}: {
+  lng: string;
+  /** Locale-independent, leading slash: "/products/quercus". */
+  path: string;
+  title: string;
+  description: string;
+  keywords?: string[];
+}): Metadata {
+  const locale = resolveLocale(lng);
+  const canonical = `/${locale}${path}`;
+
+  const languages: Record<string, string> = {};
+  for (const l of SEO_LOCALES) languages[l] = `/${l}${path}`;
+  languages["x-default"] = `/es${path}`;
+
+  return {
+    title,
+    description,
+    keywords,
+    alternates: { canonical, languages },
+    openGraph: {
+      type: "website",
+      url: `${SITE_URL}${canonical}`,
+      siteName: SITE_NAME,
+      locale: OG_LOCALE[locale],
+      title,
+      description,
+      images: [{ url: OG_IMAGE, width: 1280, height: 853, alt: SITE_NAME }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [OG_IMAGE],
+    },
+  };
+}

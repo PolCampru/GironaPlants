@@ -6,6 +6,8 @@ import { fetchStrapiData } from "@/lib/strapi";
 import { Metadata } from "next";
 import { buildPageMetadata } from "@/data/seoContent";
 import { getProductsHeading } from "@/data/pageHeadings";
+import GenusDirectory from "@/components/specific/Catalogue/GenusDirectory";
+import { getCatalogue, toGenusSummary } from "@/lib/catalogue";
 
 export async function generateMetadata({
   params,
@@ -27,6 +29,12 @@ export default async function ProductsPage({
 
   const offersData = await fetchStrapiData(url);
 
+  // The table above is client-rendered and paginated, so nothing in it is a
+  // link a crawler can follow. The A-Z below is the only path into the ~1,100
+  // genus and species pages — and getCatalogue() degrades to an empty list
+  // rather than taking the catalogue page down with Strapi.
+  const catalogue = await getCatalogue();
+
   return (
     <section>
       <Plants
@@ -34,6 +42,11 @@ export default async function ProductsPage({
         locale={lng}
         heading={getProductsHeading(lng)}
         initialSearch={typeof search === "string" ? search : ""}
+      />
+
+      <GenusDirectory
+        genera={catalogue.map(toGenusSummary)}
+        locale={lng}
       />
     </section>
   );

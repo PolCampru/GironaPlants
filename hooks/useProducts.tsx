@@ -28,6 +28,8 @@ import { formatPrice } from "@/lib/format";
 import { track } from "@/lib/analytics";
 import { QuoteItemSource } from "@/types/Cart";
 import useLocale from "@/hooks/useLocale";
+import { slugify } from "@/lib/slug";
+import Link from "next/link";
 import React from "react";
 
 const PAGE_SIZE = 25;
@@ -295,9 +297,30 @@ export default function useProducts(initialSearch?: string) {
         header: data.table.titleGenus,
         cell: (info) => info.getValue(),
       }),
+      // The botanical name is the row's link to its own indexable page. The
+      // table itself is paginated and client-rendered, so this is also how a
+      // visitor gets from a search inside the catalogue to a URL they can
+      // share or come back to.
       columnHelper.accessor("description", {
         header: data.table.titleDescription,
-        cell: (info) => info.getValue(),
+        cell: (info) => {
+          const plant = info.row.original;
+          const name = info.getValue();
+
+          // Check the slugs, not the raw strings: lib/catalogue.ts skips any
+          // row whose genus or name slugifies to empty, so linking on the raw
+          // value alone would point at /products//name or silently at the
+          // genus page.
+          const genusSlug = plant.genus ? slugify(plant.genus) : "";
+          const nameSlug = name ? slugify(name) : "";
+          if (!genusSlug || !nameSlug) return name;
+
+          return (
+            <Link href={`/${locale}/products/${genusSlug}/${nameSlug}`}>
+              {name}
+            </Link>
+          );
+        },
       }),
       columnHelper.accessor("pot_size", {
         header: data.table.titlePotSize,

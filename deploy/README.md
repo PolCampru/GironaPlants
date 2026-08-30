@@ -113,7 +113,7 @@ escrito el visitante.
 | Evento | Donde | Datos |
 |---|---|---|
 | `quote_started` | primera linea anadida al presupuesto | `source`, `locale` |
-| `quote_item_added` | cada linea anadida | `source` (catalogue/offer/custom), `genus`, `locale` |
+| `quote_item_added` | cada linea anadida | `source` (catalogue/offer/custom/species), `genus`, `locale` |
 | `quote_submitted` | envio desde `/budget` (solo si el POST fue bien) | `species`, `units` |
 | `contact_submitted` | envio desde `/contact` | `species`, `units` |
 | `catalogue_download` | descarga de PDF | `catalogue`, `locale` |
