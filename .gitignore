@@ -44,3 +44,6 @@ next-env.d.ts
 
 
 package-lock.json
+# Salida del generador de catálogos (los PDF viven en Strapi)
+tools/catalogues/out/
+tools/catalogues/src/webrender
