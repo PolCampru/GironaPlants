@@ -73,18 +73,17 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
       latitude: 41.9794,
       longitude: 2.8214
     },
+    // Mon-Fri 8:00-18:00, confirmed by the nursery. This used to open at 09:00
+    // and claim a Saturday morning, neither of which matched the hours the
+    // contact page has shown in all four languages (data/contactContent.ts) —
+    // so Google was being handed opening times, and a day of the week, that
+    // nobody here actually works.
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
+        opens: '08:00',
         closes: '18:00'
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Saturday'],
-        opens: '09:00',
-        closes: '14:00'
       }
     ],
     areaServed: ['Europe', 'Spain', 'France', 'Portugal', 'Italy', 'Germany', 'Andorra'],
