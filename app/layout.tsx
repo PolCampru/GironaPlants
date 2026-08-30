@@ -83,6 +83,16 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  // Google Search Console, property https://gironaplants.com/ (URL prefix),
+  // owned by polcampru@gmail.com. The domain-property route needs a DNS TXT
+  // record and this zone lives at PIMEC, not Hostinger, so it is not an
+  // option. Kept alongside public/googleaf1ab68423747034.html: "/" 307s to
+  // "/ca", so the static file is what a verifier fetching the bare root sees,
+  // and this tag covers every rendered page. Removing either un-verifies the
+  // property.
+  verification: {
+    google: "Sa8ea1RrnuUtayw_v3HQIf2BcgkT-hciEEUlqfXUTKc",
+  },
   alternates: {
     canonical: "/",
     languages: {
