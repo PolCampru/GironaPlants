@@ -89,6 +89,27 @@ especie. Mantenerlas dejaria `/acer-pseudoplatanus-x` y
 `/acca-sellowiana-feijoa-sellowiana`, y en el cambio de 2025-2026 costaba 93
 URL de especie mas de las 90 que el propio listado ya se lleva.
 
+### Cuando solo cambia un nombre
+
+`load-plants.js` vacia la coleccion antes de reescribirla, y `getCatalogue()`
+cachea una hora: una revalidacion que caiga dentro de los 1.458 `create`
+sirve un indice A-Z vacio y da 404 en las paginas profundas durante la hora
+siguiente. Para una correccion de nombres — cambia `cleanName`, no el listado —
+eso no compra nada. `rename-plants.js` hace un UPDATE por nombre, sin ventana
+vacia, y se niega a escribir si el slug nuevo ya es de otro nombre:
+
+```bash
+# renames.json: [{ "from": "<description exacta>", "to": "..." }]
+scp cms/app/scripts/rename-plants.js renames.json root@46.202.135.74:/tmp/
+ssh root@46.202.135.74 'docker cp /tmp/rename-plants.js gp-strapi:/srv/app/scripts/rename-plants.js && \
+  docker cp /tmp/renames.json gp-strapi:/srv/app/renames.json && \
+  docker exec -e DRY_RUN=1 -w /srv/app gp-strapi node scripts/rename-plants.js renames.json && \
+  docker exec -w /srv/app gp-strapi node scripts/rename-plants.js renames.json'
+```
+
+Recrear el frontend despues, igual que tras una carga completa. La URL vieja
+queda retirada: `description` es el `<h1>` y la URL de la pagina de especie.
+
 > `app/api/seed-plants/route.ts` es el cargador **antiguo**, contra un XLSX que
 > ya no es la fuente. Su `STRAPI_TOKEN` es de solo lectura, asi que hoy falla en
 > el primer DELETE — pero si alguna vez recibe un token de escritura, revertiria

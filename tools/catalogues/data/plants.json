@@ -7071,21 +7071,21 @@
  },
  {
   "genus": "PINUS",
-  "description": "Pinus uncinata*=Pinus mugo var.Rostrata",
+  "description": "Pinus uncinata",
   "pot_size": "AF200",
   "height": "2 Savias",
   "price": 0.75
  },
  {
   "genus": "PINUS",
-  "description": "Pinus uncinata*=Pinus mugo var.Rostrata",
+  "description": "Pinus uncinata",
   "pot_size": "C3",
   "height": "30/40",
   "price": 5.5
  },
  {
   "genus": "PINUS",
-  "description": "Pinus uncinata*=Pinus mugo var.Rostrata",
+  "description": "Pinus uncinata",
   "pot_size": "C10",
   "height": "60/80",
   "price": 18.5
@@ -9402,28 +9402,28 @@
  },
  {
   "genus": "THUJA",
-  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "description": "Thuja occidentalis 'Smaragd'",
   "pot_size": "M9",
   "height": "20/30",
   "price": 1.4
  },
  {
   "genus": "THUJA",
-  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "description": "Thuja occidentalis 'Smaragd'",
   "pot_size": "C3",
   "height": "40/50",
   "price": 4.9
  },
  {
   "genus": "THUJA",
-  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "description": "Thuja occidentalis 'Smaragd'",
   "pot_size": "C5",
   "height": "50/60",
   "price": 8.5
  },
  {
   "genus": "THUJA",
-  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "description": "Thuja occidentalis 'Smaragd'",
   "pot_size": "C10",
   "height": "80/100",
   "price": 16

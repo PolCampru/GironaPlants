@@ -24,9 +24,13 @@
 import fs from 'fs';
 
 /** "Amelanchier ovalis ** = A. rotundifolia**" -> "Amelanchier ovalis". */
+// No `\s` after the `=`: the supplier does not always leave a space there
+// ("Pinus uncinata*=Pinus mugo var.Rostrata*"), and demanding one let the
+// whole synonym tail through — marks included, since the name no longer
+// ended in one for the next replace to catch.
 export const cleanName = (name) =>
   name
-    .replace(/\s*=\s.*$/, '')
+    .replace(/\s*=.*$/, '')
     .replace(/(\s*(\*+|-|X))+\s*$/, '')
     .replace(/\s+/g, ' ')
     .trim();
