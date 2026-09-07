@@ -1,0 +1,10208 @@
+[
+ {
+  "genus": "ABELIA",
+  "description": "Abelia 'Edward Goucher'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia 'Edward Goucher'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia 'Edward Goucher'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.75
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia 'Edward Goucher'",
+  "pot_size": "C10",
+  "height": "40/60",
+  "price": 15.5
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia chinensis 'Variegata'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora",
+  "pot_size": "C1,3",
+  "height": "40/60",
+  "price": 2.9
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.75
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora",
+  "pot_size": "C5",
+  "height": "40/50",
+  "price": 9.75
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora",
+  "pot_size": "C7",
+  "height": "40/60",
+  "price": 14.5
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora 'Prostrata'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora 'Prostrata'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora 'Prostrata'",
+  "pot_size": "C3",
+  "height": "25/30",
+  "price": 4.75
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora 'Prostrata'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 8.7
+ },
+ {
+  "genus": "ABELIA",
+  "description": "Abelia grandiflora 'Sherwoodii'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.95
+ },
+ {
+  "genus": "ABIES",
+  "description": "Abies alba",
+  "pot_size": "2/1 Rd",
+  "height": "4/8",
+  "price": 1.1
+ },
+ {
+  "genus": "ABIES",
+  "description": "Abies alba",
+  "pot_size": "2/2 Rd",
+  "height": "20/30",
+  "price": 1.9
+ },
+ {
+  "genus": "ABIES",
+  "description": "Abies alba",
+  "pot_size": "C1,5",
+  "height": "20/30",
+  "price": 4.5
+ },
+ {
+  "genus": "ABIES",
+  "description": "Abies nordmanniana",
+  "pot_size": "2/1 Rd",
+  "height": "10/15",
+  "price": 1.1
+ },
+ {
+  "genus": "ABIES",
+  "description": "Abies nordmanniana",
+  "pot_size": "2/2 Rd",
+  "height": "15/25",
+  "price": 1.7
+ },
+ {
+  "genus": "ACANTHUS",
+  "description": "Acanthus mollis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "ACANTHUS",
+  "description": "Acanthus mollis",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.25
+ },
+ {
+  "genus": "ACANTHUS",
+  "description": "Acanthus mollis",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "ACCA",
+  "description": "Acca sellowiana",
+  "pot_size": "M7",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "ACCA",
+  "description": "Acca sellowiana",
+  "pot_size": "C2",
+  "height": "",
+  "price": 5.75
+ },
+ {
+  "genus": "ACCA",
+  "description": "Acca sellowiana",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 19
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer campestre",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer campestre",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer campestre",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.5
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer campestre",
+  "pot_size": "AF300",
+  "height": "20/40",
+  "price": 0.75
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer campestre",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.6
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer campestre",
+  "pot_size": "C10",
+  "height": "150/175",
+  "price": 17.5
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer monspessulanum",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer monspessulanum",
+  "pot_size": "AF2000",
+  "height": "",
+  "price": 4.25
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer monspessulanum",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.9
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer negundo - (c)",
+  "pot_size": "1/0 Rd",
+  "height": "30/40",
+  "price": 0.52
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer negundo - (c)",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.2
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer opalus",
+  "pot_size": "AF200",
+  "height": "20/30",
+  "price": 0.95
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer palmatum",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer platanoides",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer platanoides",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.88
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer platanoides",
+  "pot_size": "1/1 Rd",
+  "height": "80/120",
+  "price": 1.85
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer platanoides",
+  "pot_size": "AF200",
+  "height": "20/30",
+  "price": 0.85
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer pseudoplatanus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer pseudoplatanus",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer pseudoplatanus",
+  "pot_size": "1/1 Rd",
+  "height": "80/120",
+  "price": 1.7
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer pseudoplatanus",
+  "pot_size": "AF200",
+  "height": "20/30",
+  "price": 0.85
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer pseudoplatanus",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.9
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer rubrum",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.3
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer rubrum",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 2.1
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer saccharinum",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer saccharinum",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 1.2
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer saccharinum",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 2.35
+ },
+ {
+  "genus": "ACER",
+  "description": "Acer saccharinum",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "ACHILLEA",
+  "description": "Achillea millefolium",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "ACHILLEA",
+  "description": "Achillea millefolium",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.25
+ },
+ {
+  "genus": "ACORUS",
+  "description": "Acorus calamus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 2.6
+ },
+ {
+  "genus": "ACORUS",
+  "description": "Acorus gramineus 'Ogon'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "ACTINIDIA",
+  "description": "Actinidia arguta 'Weiki'",
+  "pot_size": "M10",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "ACTINIDIA",
+  "description": "Actinidia deliciosa 'Hayward'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "ACTINIDIA",
+  "description": "Actinidia deliciosa 'Tomuri'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "AESCULUS",
+  "description": "Aesculus hippocastanum",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 1.3
+ },
+ {
+  "genus": "AESCULUS",
+  "description": "Aesculus hippocastanum",
+  "pot_size": "2/0 Rd",
+  "height": "30/50",
+  "price": 1.8
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus africanus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus africanus",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.85
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus 'Getty White'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus praecox",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 4.7
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus umbellatus",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus umbellatus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "AGAPANTHUS",
+  "description": "Agapanthus umbellatus",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "AGASTACHE",
+  "description": "Agastache rugosa 'Alabaster'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "AJANIA",
+  "description": "Ajania pacifica",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.5
+ },
+ {
+  "genus": "AJUGA",
+  "description": "Ajuga reptans",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.77
+ },
+ {
+  "genus": "AJUGA",
+  "description": "Ajuga reptans",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.05
+ },
+ {
+  "genus": "AJUGA",
+  "description": "Ajuga reptans",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "ALBIZIA",
+  "description": "Albizia julibrissin",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "ALCHEMILLA",
+  "description": "Alchemilla mollis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ALISMA",
+  "description": "Alisma plantago-aquatica",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus cordata",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus cordata",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.4
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.35
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.3
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "1/1 Rd",
+  "height": "90/120",
+  "price": 1.5
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.7
+ },
+ {
+  "genus": "ALNUS",
+  "description": "Alnus glutinosa",
+  "pot_size": "C10",
+  "height": "125/150",
+  "price": 17
+ },
+ {
+  "genus": "ALOYSIA",
+  "description": "Aloysia triphylla",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "ALOYSIA",
+  "description": "Aloysia triphylla",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "AMELANCHIER",
+  "description": "Amelanchier lamarckii",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "AMELANCHIER",
+  "description": "Amelanchier lamarckii",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.4
+ },
+ {
+  "genus": "AMELANCHIER",
+  "description": "Amelanchier ovalis",
+  "pot_size": "AF200",
+  "height": "15/20",
+  "price": 1.1
+ },
+ {
+  "genus": "AMELANCHIER",
+  "description": "Amelanchier ovalis",
+  "pot_size": "AF2000",
+  "height": "",
+  "price": 4.5
+ },
+ {
+  "genus": "AMMOPHILA",
+  "description": "Ammophila arenaria",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "AMPELODESMOS",
+  "description": "Ampelodesmos mauritanica",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "ANTHYLLIS",
+  "description": "Anthyllis cytisoides",
+  "pot_size": "AF200",
+  "height": "10/20",
+  "price": 0.75
+ },
+ {
+  "genus": "APTENIA",
+  "description": "Aptenia cordifolia - (c)",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "AQUILEGIA",
+  "description": "Aquilegia vulgaris",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ARAUCARIA",
+  "description": "Araucaria araucana",
+  "pot_size": "C1",
+  "height": "",
+  "price": 14
+ },
+ {
+  "genus": "ARBUTUS",
+  "description": "Arbutus unedo",
+  "pot_size": "AF200",
+  "height": "15/30",
+  "price": 0.85
+ },
+ {
+  "genus": "ARBUTUS",
+  "description": "Arbutus unedo",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.6
+ },
+ {
+  "genus": "ARBUTUS",
+  "description": "Arbutus unedo",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 8.9
+ },
+ {
+  "genus": "ARBUTUS",
+  "description": "Arbutus unedo",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 16.75
+ },
+ {
+  "genus": "ARCTOSTAPHYLOS",
+  "description": "Arctostaphylos uva-ursi",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "ARCTOSTAPHYLOS",
+  "description": "Arctostaphylos uva-ursi",
+  "pot_size": "C2",
+  "height": "",
+  "price": 5.6
+ },
+ {
+  "genus": "ARMERIA",
+  "description": "Armeria maritima",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ARMERIA",
+  "description": "Armeria maritima 'Alba'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.6
+ },
+ {
+  "genus": "ARONIA",
+  "description": "Aronia melanocarpa",
+  "pot_size": "1/0 Rd",
+  "height": "",
+  "price": 0.55
+ },
+ {
+  "genus": "ARONIA",
+  "description": "Aronia prunifolia 'Nero'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "ARTEMISIA",
+  "description": "Artemisia 'Powis Castle'",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.98
+ },
+ {
+  "genus": "ARTEMISIA",
+  "description": "Artemisia 'Powis Castle'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "ARTEMISIA",
+  "description": "Artemisia absinthium claveguera",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.98
+ },
+ {
+  "genus": "ARTEMISIA",
+  "description": "Artemisia absinthium claveguera",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.6
+ },
+ {
+  "genus": "ASPARRAGUS",
+  "description": "Asparragus acutifolius",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "ASPHODELUS",
+  "description": "Asphodelus albus",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "ASPHODELUS",
+  "description": "Asphodelus albus",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "ASPHODELUS",
+  "description": "Asphodelus fistulosus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "ASPHODELUS",
+  "description": "Asphodelus fistulosus",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.5
+ },
+ {
+  "genus": "ASTERISCUS",
+  "description": "Asteriscus maritimus",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "ASTERISCUS",
+  "description": "Asteriscus maritimus",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.3
+ },
+ {
+  "genus": "ATHYRIUM",
+  "description": "Athyrium filix-femina",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "ATRIPLEX",
+  "description": "Atriplex halimus",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "ATRIPLEX",
+  "description": "Atriplex halimus",
+  "pot_size": "C2",
+  "height": "20/40",
+  "price": 3.5
+ },
+ {
+  "genus": "AUCUBA",
+  "description": "Aucuba japonica Crotonifolia",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "AUCUBA",
+  "description": "Aucuba japonica Crotonifolia",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5
+ },
+ {
+  "genus": "BALLOTA",
+  "description": "Ballota pseudodictamnus",
+  "pot_size": "C2",
+  "height": "20/25",
+  "price": 4.4
+ },
+ {
+  "genus": "BAUHINIA",
+  "description": "Bauhinia variegata",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis buxifolia 'Nana'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis julianae",
+  "pot_size": "1/1 Rd",
+  "height": "15/30",
+  "price": 1.5
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis julianae",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis julianae",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.5
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis ottawensis 'Auricoma'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis ottawensis 'Auricoma'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.9
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis ottawensis 'Superba'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii",
+  "pot_size": "1/0 Rd",
+  "height": "10/15",
+  "price": 0.45
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii",
+  "pot_size": "1/1 Rd",
+  "height": "20/30",
+  "price": 1.2
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea'",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 0.45
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea'",
+  "pot_size": "1/1 Rd",
+  "height": "20/30",
+  "price": 1.2
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea'",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 5.2
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea Nana'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea Nana'",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Atropurpurea Nana'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.4
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Red Rocket'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis thunbergii 'Red Rocket'",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 5
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis vulgaris",
+  "pot_size": "1/0 Rd",
+  "height": "10/15",
+  "price": 0.55
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis vulgaris",
+  "pot_size": "AF250",
+  "height": "10/20",
+  "price": 0.85
+ },
+ {
+  "genus": "BERBERIS",
+  "description": "Berberis vulgaris",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "BERGENIA",
+  "description": "Bergenia crassifolia",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.15
+ },
+ {
+  "genus": "BERGENIA",
+  "description": "Bergenia crassifolia",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.8
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.35
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.15
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "1/1 Rd",
+  "height": "80/110",
+  "price": 1.5
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "AF250",
+  "height": "20/30",
+  "price": 0.75
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.7
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula alba",
+  "pot_size": "C10",
+  "height": "175/200",
+  "price": 22
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula pubescens",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.35
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula pubescens",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula pubescens",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.2
+ },
+ {
+  "genus": "BETULA",
+  "description": "Betula pubescens",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "BLECHNUM",
+  "description": "Blechnum spicant",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "BORONIA",
+  "description": "Boronia crenulata",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "BORONIA",
+  "description": "Boronia crenulata",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.5
+ },
+ {
+  "genus": "BORONIA",
+  "description": "Boronia crenulata",
+  "pot_size": "C10",
+  "height": "",
+  "price": 18.8
+ },
+ {
+  "genus": "BOUGAINVILLEA",
+  "description": "Bougainvillea sanderiana",
+  "pot_size": "C5",
+  "height": "80/100",
+  "price": 21
+ },
+ {
+  "genus": "BRACHYPODIUM",
+  "description": "Brachypodium phoenicoides",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "BRACHYPODIUM",
+  "description": "Brachypodium retusum",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "BRACHYPODIUM",
+  "description": "Brachypodium retusum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.5
+ },
+ {
+  "genus": "BULBINE",
+  "description": "Bulbine frutescens",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.98
+ },
+ {
+  "genus": "BULBINE",
+  "description": "Bulbine frutescens",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.55
+ },
+ {
+  "genus": "BULBINE",
+  "description": "Bulbine frutescens",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "BUPLEURUM",
+  "description": "Bupleurum fruticosum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "BUPLEURUM",
+  "description": "Bupleurum fruticosum",
+  "pot_size": "C3",
+  "height": "20/25",
+  "price": 5
+ },
+ {
+  "genus": "BUTOMUS",
+  "description": "Butomus umbellatus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens",
+  "pot_size": "0/1/2 Rd",
+  "height": "20/30",
+  "price": 2.3
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.4
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens",
+  "pot_size": "C10",
+  "height": "50/60",
+  "price": 15.75
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens 'Faulkner'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.35
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens 'Faulkner'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.75
+ },
+ {
+  "genus": "BUXUS",
+  "description": "Buxus sempervirens 'Suffruticosa'",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.55
+ },
+ {
+  "genus": "CALAMAGROSTIS",
+  "description": "Calamagrostis x acutiflora 'Karl Foerster'",
+  "pot_size": "AF400",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CALAMAGROSTIS",
+  "description": "Calamagrostis x acutiflora 'Karl Foerster'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "CALAMAGROSTIS",
+  "description": "Calamagrostis x acutiflora 'Karl Foerster'",
+  "pot_size": "C3",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "CALAMAGROSTIS",
+  "description": "Calamagrostis x acutiflora 'Overdam'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "CALAMAGROSTIS",
+  "description": "Calamagrostis arundinacea",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "CALENDULA",
+  "description": "Calendula officinalis",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "CALLA",
+  "description": "Calla palustris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon citrinus 'Splendens'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon citrinus 'Splendens'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 5
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon citrinus 'Splendens'",
+  "pot_size": "C5",
+  "height": "50/60",
+  "price": 9.75
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon laevis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon laevis",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon laevis",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 15
+ },
+ {
+  "genus": "CALLISTEMON",
+  "description": "Callistemon viminalis 'Captain Cook'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "CALLUNA",
+  "description": "Calluna vulgaris",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "CALLUNA",
+  "description": "Calluna vulgaris",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "CALLUNA",
+  "description": "Calluna vulgaris (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "CALTHA",
+  "description": "Caltha palustris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "CAMPANULA",
+  "description": "Campanula portenschlagiana",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.7
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex buchananii",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex buchananii",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex buchananii",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.8
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex buchananii 'Red Rooster'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex comans 'Bronze'",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex comans 'Bronze'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex comans 'Bronze Curls'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex comans 'Bronze Curls'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.25
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex grayi",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex morrowii",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex morrowii 'Ice Dance'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex morrowii 'Ice Dance'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex morrowii 'Ice Dance'",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex oshimensis 'Evergold'",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex oshimensis 'Evergold'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex pendula",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex pendula",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex pendula",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex pseudocyperus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex testacea",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex testacea",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "CAREX",
+  "description": "Carex testacea",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.7
+ },
+ {
+  "genus": "CARISSA",
+  "description": "Carissa macrocarpa",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.4
+ },
+ {
+  "genus": "CARPINUS",
+  "description": "Carpinus betulus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "CARPINUS",
+  "description": "Carpinus betulus",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.65
+ },
+ {
+  "genus": "CARPINUS",
+  "description": "Carpinus betulus",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.4
+ },
+ {
+  "genus": "CARPINUS",
+  "description": "Carpinus betulus",
+  "pot_size": "C1,3",
+  "height": "40/60",
+  "price": 2.9
+ },
+ {
+  "genus": "CARPINUS",
+  "description": "Carpinus betulus",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.2
+ },
+ {
+  "genus": "CARYOPTERIS",
+  "description": "Caryopteris clandonensis 'Heavenly Blue'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "CARYOPTERIS",
+  "description": "Caryopteris clandonensis 'Heavenly Blue'",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.25
+ },
+ {
+  "genus": "CASTANEA",
+  "description": "Castanea sativa",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 0.75
+ },
+ {
+  "genus": "CASTANEA",
+  "description": "Castanea sativa",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 0.95
+ },
+ {
+  "genus": "CASTANEA",
+  "description": "Castanea sativa",
+  "pot_size": "2/0 Rd",
+  "height": "50/80",
+  "price": 2
+ },
+ {
+  "genus": "CASTANEA",
+  "description": "Castanea sativa",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "CASTANEA",
+  "description": "Castanea sativa",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.75
+ },
+ {
+  "genus": "CASTANEA",
+  "description": "Castanea sativa",
+  "pot_size": "C10",
+  "height": "100/125",
+  "price": 17.7
+ },
+ {
+  "genus": "CASUARINA",
+  "description": "Casuarina cunninghamiana",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "CATALPA",
+  "description": "Catalpa bignonioides",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.65
+ },
+ {
+  "genus": "CATALPA",
+  "description": "Catalpa bignonioides",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.6
+ },
+ {
+  "genus": "CEANOTHUS",
+  "description": "Ceanothus griseus 'Yankee Point'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "CEANOTHUS",
+  "description": "Ceanothus griseus 'Yankee Point'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.4
+ },
+ {
+  "genus": "CEANOTHUS",
+  "description": "Ceanothus thyrsiflorus var. repens",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.98
+ },
+ {
+  "genus": "CEANOTHUS",
+  "description": "Ceanothus thyrsiflorus var. repens",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "CEANOTHUS",
+  "description": "Ceanothus thyrsiflorus var. repens",
+  "pot_size": "C1,3",
+  "height": "15/20",
+  "price": 2.9
+ },
+ {
+  "genus": "CEANOTHUS",
+  "description": "Ceanothus thyrsiflorus var. repens",
+  "pot_size": "C2",
+  "height": "15/20",
+  "price": 3.4
+ },
+ {
+  "genus": "CEDRUS",
+  "description": "Cedrus deodara",
+  "pot_size": "1/1 Rd",
+  "height": "10/20",
+  "price": 1.6
+ },
+ {
+  "genus": "CEDRUS",
+  "description": "Cedrus deodara",
+  "pot_size": "AF200",
+  "height": "10/15",
+  "price": 0.85
+ },
+ {
+  "genus": "CEDRUS",
+  "description": "Cedrus deodara",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 3.1
+ },
+ {
+  "genus": "CEDRUS",
+  "description": "Cedrus libani ssp. atlantica",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "CELTIS",
+  "description": "Celtis australis",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CELTIS",
+  "description": "Celtis australis",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.7
+ },
+ {
+  "genus": "CELTIS",
+  "description": "Celtis australis",
+  "pot_size": "C10",
+  "height": "100/125",
+  "price": 21
+ },
+ {
+  "genus": "CENTRANTHUS",
+  "description": "Centranthus ruber 'Albus'",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "CERASTIUM",
+  "description": "Cerastium tomentosum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "CERASTIUM",
+  "description": "Cerastium tomentosum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CERATONIA",
+  "description": "Ceratonia siliqua",
+  "pot_size": "AF200",
+  "height": "10/20",
+  "price": 0.85
+ },
+ {
+  "genus": "CERATONIA",
+  "description": "Ceratonia siliqua",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.5
+ },
+ {
+  "genus": "CERATOSTIGMA",
+  "description": "Ceratostigma plumbaginoides - (c)",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.1
+ },
+ {
+  "genus": "CERCIS",
+  "description": "Cercis siliquastrum",
+  "pot_size": "AF250",
+  "height": "10/20",
+  "price": 0.85
+ },
+ {
+  "genus": "CERCIS",
+  "description": "Cercis siliquastrum",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "CHAMAECYPARIS",
+  "description": "Chamaecyparis lawsoniana 'Columnaris'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CHAMAECYPARIS",
+  "description": "Chamaecyparis lawsoniana 'Ellwoodii'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CHAMAEROPS",
+  "description": "Chamaerops humilis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "CHAMAEROPS",
+  "description": "Chamaerops humilis",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CHAMAEROPS",
+  "description": "Chamaerops humilis",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 5
+ },
+ {
+  "genus": "CHAMAEROPS",
+  "description": "Chamaerops humilis",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 11
+ },
+ {
+  "genus": "CHOISYA",
+  "description": "Choisya ternata 'Aztec Pearl'",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 5
+ },
+ {
+  "genus": "CHOISYA",
+  "description": "Choisya ternata 'Aztec Pearl'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 9.75
+ },
+ {
+  "genus": "CHORISIA",
+  "description": "Chorisia speciosa",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "CINERARIA",
+  "description": "Cineraria maritima",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "CINERARIA",
+  "description": "Cineraria maritima",
+  "pot_size": "M10",
+  "height": "15/20",
+  "price": 0.95
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x aguilari",
+  "pot_size": "C1",
+  "height": "15/20",
+  "price": 2.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus albidus",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus albidus",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x corbariensis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x corbariensis",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.1
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus clusii",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus creticus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x florentinus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x florentinus",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.1
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x florentinus",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus ladanifer",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus ladanifer",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus laurifolius",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus laurifolius",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus monspeliensis",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus monspeliensis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus monspeliensis",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x pulverulentus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x pulverulentus",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.1
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x pulverulentus",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x purpureus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x purpureus",
+  "pot_size": "C1,3",
+  "height": "20/40",
+  "price": 3.1
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x purpureus",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus salviifolius",
+  "pot_size": "AF250",
+  "height": "15/20",
+  "price": 0.75
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus salviifolius",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.9
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x skanbergii",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.1
+ },
+ {
+  "genus": "CISTUS",
+  "description": "Cistus x skanbergii",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.9
+ },
+ {
+  "genus": "CLEMATIS",
+  "description": "Clematis vitalba",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.1
+ },
+ {
+  "genus": "CLEMATIS",
+  "description": "Clematis vitalba",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.3
+ },
+ {
+  "genus": "COLUTEA",
+  "description": "Colutea arborescens",
+  "pot_size": "1/0 Rd",
+  "height": "40/60",
+  "price": 0.75
+ },
+ {
+  "genus": "COLUTEA",
+  "description": "Colutea arborescens",
+  "pot_size": "AF200",
+  "height": "20/30",
+  "price": 0.85
+ },
+ {
+  "genus": "CONVOLVULUS",
+  "description": "Convolvulus cneorum",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "CONVOLVULUS",
+  "description": "Convolvulus cneorum",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "CONVOLVULUS",
+  "description": "Convolvulus cneorum",
+  "pot_size": "C2",
+  "height": "15/20",
+  "price": 4.4
+ },
+ {
+  "genus": "CONVOLVULUS",
+  "description": "Convolvulus Sabaticus",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "COPROSMA",
+  "description": "Coprosma 'Chocolate Soldier'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "COPROSMA",
+  "description": "Coprosma Kirkii 'Variegata'",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 5.1
+ },
+ {
+  "genus": "CORDYLINE",
+  "description": "Cordyline australis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "COREOPSIS",
+  "description": "Coreopsis grandiflora",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "CORIARIA",
+  "description": "Coriaria myrtifolia",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.4
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.4
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba 'Elegantissima'",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 5.4
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba 'Gouchaultii'",
+  "pot_size": "0/1 Rd",
+  "height": "30/50",
+  "price": 3.2
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba 'Sibirica'",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 1.8
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus alba 'Sibirica'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.75
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus sanguinea",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus sanguinea",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.55
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus sanguinea",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.5
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus sanguinea",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus sanguinea",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.6
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus stolonifera 'Flaviramea'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.5
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus stolonifera 'Kelseyi'",
+  "pot_size": "M8",
+  "height": "10/20",
+  "price": 1.5
+ },
+ {
+  "genus": "CORNUS",
+  "description": "Cornus stolonifera 'Kelseyi'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "CORONILLA",
+  "description": "Coronilla emerus",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "CORONILLA",
+  "description": "Coronilla glauca",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CORONILLA",
+  "description": "Coronilla glauca",
+  "pot_size": "C2",
+  "height": "20/25",
+  "price": 4.6
+ },
+ {
+  "genus": "CORYLUS",
+  "description": "Corylus avellana",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.6
+ },
+ {
+  "genus": "CORYLUS",
+  "description": "Corylus avellana",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.75
+ },
+ {
+  "genus": "CORYLUS",
+  "description": "Corylus avellana",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.5
+ },
+ {
+  "genus": "CORYLUS",
+  "description": "Corylus avellana",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "CORYLUS",
+  "description": "Corylus avellana",
+  "pot_size": "AF400",
+  "height": "60/100",
+  "price": 1.3
+ },
+ {
+  "genus": "CORYLUS",
+  "description": "Corylus avellana",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.75
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri",
+  "pot_size": "M9",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri",
+  "pot_size": "C1,5",
+  "height": "20/25",
+  "price": 1.6
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Coral Beauty'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.25
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Coral Beauty'",
+  "pot_size": "C1,5",
+  "height": "25/30",
+  "price": 1.6
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Coral Beauty'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.1
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri radicans",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.25
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri radicans",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.6
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Royal Carpet'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.25
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Skogholm'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.25
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Skogholm'",
+  "pot_size": "C1,3",
+  "height": "15/30",
+  "price": 2.7
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster dammeri 'Skogholm'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster franchetii",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster franchetii",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster franchetii",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster franchetii",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.5
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster horizontalis",
+  "pot_size": "1/0 Rd",
+  "height": "10/15",
+  "price": 0.65
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster horizontalis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.25
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster horizontalis",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster horizontalis",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.5
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster lacteus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster lacteus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster lacteus",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.8
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster lacteus",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.5
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster proc. 'Streib's Findling'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster proc. 'Streib's Findling'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.6
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster radicans 'Eichholz'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.25
+ },
+ {
+  "genus": "COTONEASTER",
+  "description": "Cotoneaster radicans 'Eichholz'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.7
+ },
+ {
+  "genus": "CRATAEGUS",
+  "description": "Crataegus monogyna",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 0.42
+ },
+ {
+  "genus": "CRATAEGUS",
+  "description": "Crataegus monogyna",
+  "pot_size": "1/0 Rd",
+  "height": "40/60",
+  "price": 0.6
+ },
+ {
+  "genus": "CRATAEGUS",
+  "description": "Crataegus monogyna",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.6
+ },
+ {
+  "genus": "CRATAEGUS",
+  "description": "Crataegus monogyna",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CRATAEGUS",
+  "description": "Crataegus monogyna",
+  "pot_size": "C2",
+  "height": "60/90",
+  "price": 4.75
+ },
+ {
+  "genus": "CRITHMUM",
+  "description": "Crithmum maritimum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "CRITHMUM",
+  "description": "Crithmum maritimum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.6
+ },
+ {
+  "genus": "CRYPTOMERIA",
+  "description": "Cryptomeria japonica",
+  "pot_size": "1/0 Rd",
+  "height": "10/15",
+  "price": 0.75
+ },
+ {
+  "genus": "CRYPTOMERIA",
+  "description": "Cryptomeria japonica 'Elegans'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "AH",
+  "height": "",
+  "price": 0.52
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "M9",
+  "height": "30/40",
+  "price": 1.3
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "C1,5",
+  "height": "60/80",
+  "price": 3.5
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.9
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "C3",
+  "height": "100/120",
+  "price": 5.5
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "C5",
+  "height": "120/140",
+  "price": 9.5
+ },
+ {
+  "genus": "CUPRESSOCYPARIS",
+  "description": "Cupressocyparis leylandii",
+  "pot_size": "C7",
+  "height": "140/160",
+  "price": 15
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus arizonica",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus arizonica",
+  "pot_size": "C1,5",
+  "height": "60/80",
+  "price": 2.9
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens",
+  "pot_size": "C1,5",
+  "height": "60/80",
+  "price": 2
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens",
+  "pot_size": "C3",
+  "height": "100/125",
+  "price": 4.5
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens",
+  "pot_size": "C5",
+  "height": "125/150",
+  "price": 9.5
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens",
+  "pot_size": "C10",
+  "height": "175/200",
+  "price": 19.5
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens 'Stricta'",
+  "pot_size": "M11 X/1/0",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens 'Stricta'",
+  "pot_size": "C10",
+  "height": "175/200",
+  "price": 30
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens 'Totem'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.9
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens 'Totem'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 6.5
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens 'Totem'",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 11.5
+ },
+ {
+  "genus": "CUPRESSUS",
+  "description": "Cupressus sempervirens 'Totem'",
+  "pot_size": "C10",
+  "height": "175/200",
+  "price": 38
+ },
+ {
+  "genus": "CYPERUS",
+  "description": "Cyperus alternifolius",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CYPERUS",
+  "description": "Cyperus longus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CYPERUS",
+  "description": "Cyperus maritimus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CYRTOMIUM",
+  "description": "Cyrtomium falcatum",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "CYRTOMIUM",
+  "description": "Cyrtomium falcatum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 5.6
+ },
+ {
+  "genus": "CYTISUS",
+  "description": "Cytisus 'Boskoop Ruby'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "CYTISUS",
+  "description": "Cytisus multiflorus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "CYTISUS",
+  "description": "Cytisus scoparius",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "CYTISUS",
+  "description": "Cytisus scoparius",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.1
+ },
+ {
+  "genus": "DELOSPERMA",
+  "description": "Delosperma hyrida (Variedades)",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "DESCHAMPSIA",
+  "description": "Deschampsia cespitosa",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "DESCHAMPSIA",
+  "description": "Deschampsia cespitosa",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 3.2
+ },
+ {
+  "genus": "DEUTZIA",
+  "description": "Deutzia gracilis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "DEUTZIA",
+  "description": "Deutzia gracilis",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.9
+ },
+ {
+  "genus": "DEUTZIA",
+  "description": "Deutzia gracilis",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.1
+ },
+ {
+  "genus": "DEUTZIA",
+  "description": "Deutzia gracilis 'Nikko'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "DEUTZIA",
+  "description": "Deutzia gracilis 'Nikko'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "DEUTZIA",
+  "description": "Deutzia x 'Perle Rose'",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.9
+ },
+ {
+  "genus": "DICHONDRIA",
+  "description": "Dichondria repens",
+  "pot_size": "AH60",
+  "height": "",
+  "price": 0.59
+ },
+ {
+  "genus": "DICHONDRIA",
+  "description": "Dichondria repens",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes bicolor",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes bicolor",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.65
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes bicolor",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes grandiflora",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes grandiflora",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes iridioides",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.65
+ },
+ {
+  "genus": "DIETES",
+  "description": "Dietes iridioides",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 3.75
+ },
+ {
+  "genus": "DIOSMA",
+  "description": "Diosma ericoides",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "DIOSMA",
+  "description": "Diosma hirsuta 'Pink Fountain'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "DIOSMA",
+  "description": "Diosma hirsuta 'Pink Fountain'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 5.6
+ },
+ {
+  "genus": "DODONEA",
+  "description": "Dodonea viscosa 'Purpurea'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "DODONEA",
+  "description": "Dodonea viscosa 'Purpurea'",
+  "pot_size": "C3",
+  "height": "",
+  "price": 4.9
+ },
+ {
+  "genus": "DORYCNIUM",
+  "description": "Dorycnium pentaphyllum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "DORYCNIUM",
+  "description": "Dorycnium pentaphyllum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "DROSANTHEMUM",
+  "description": "Drosanthemum floribundum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "DROSANTHEMUM",
+  "description": "Drosanthemum hispidum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "DRYOPTERIS",
+  "description": "Dryopteris erythrosora",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 5.5
+ },
+ {
+  "genus": "DRYOPTERIS",
+  "description": "Dryopteris filix-mas",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.8
+ },
+ {
+  "genus": "DYMONDIA",
+  "description": "Dymondia margaretae",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.05
+ },
+ {
+  "genus": "ECHINACEA",
+  "description": "Echinacea purpurea",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "ECHINACEA",
+  "description": "Echinacea purpurea",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.6
+ },
+ {
+  "genus": "ECHIUM",
+  "description": "Echium candicans",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei",
+  "pot_size": "M9",
+  "height": "15/30",
+  "price": 1.4
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.75
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.9
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 9.25
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei",
+  "pot_size": "C7",
+  "height": "50/70",
+  "price": 15
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei 'Limelight'",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei 'Limelight'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.4
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus ebbingei 'Limelight'",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 15
+ },
+ {
+  "genus": "ELAEAGNUS",
+  "description": "Elaeagnus pungens 'Maculata'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ELEOCHARIS",
+  "description": "Eleocharis palustris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "ELYMUS",
+  "description": "Elymus farctus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "ENKIATHUS",
+  "description": "Enkianthus campanulatus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "EPHEDRA",
+  "description": "Ephedra fragilis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "EQUISETUM",
+  "description": "Equisetum hyemale",
+  "pot_size": "C2",
+  "height": "",
+  "price": 7.4
+ },
+ {
+  "genus": "EQUISETUM",
+  "description": "Equisetum scirpoides",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.7
+ },
+ {
+  "genus": "ERICA",
+  "description": "Erica arborea",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ERICA",
+  "description": "Erica arborea",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "ERICA",
+  "description": "Erica multiflora",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ERICA",
+  "description": "Erica multiflora",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "ERICA",
+  "description": "Erica (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "ERIGERON",
+  "description": "Erigeron karvinskianus",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.79
+ },
+ {
+  "genus": "ERIGERON",
+  "description": "Erigeron karvinskianus",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ERIGERON",
+  "description": "Erigeron karvinskianus",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "ERYNGIUM",
+  "description": "Eryngium maritimum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "ESCALLONIA",
+  "description": "Escallonia 'Iveyi'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "ESCALLONIA",
+  "description": "Escallonia 'Red Dream'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ESCALLONIA",
+  "description": "Escallonia rubra var. macrantha",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "ESCALLONIA",
+  "description": "Escallonia rubra var. macrantha",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.75
+ },
+ {
+  "genus": "ESCALLONIA",
+  "description": "Escallonia rubra var. macrantha",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 9.75
+ },
+ {
+  "genus": "EUCALYPTUS",
+  "description": "Eucalyptus camaldulensis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "EUCALYPTUS",
+  "description": "Eucalyptus gunnii",
+  "pot_size": "C3",
+  "height": "50/60",
+  "price": 8.2
+ },
+ {
+  "genus": "EUGENIA",
+  "description": "Eugenia myrtifolia 'Newport'",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "EUGENIA",
+  "description": "Eugenia myrtifolia 'Newport'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.8
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus europaeus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus europaeus",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.2
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus europaeus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus europaeus",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Coloratus'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Coloratus'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Emerald Gaiety'",
+  "pot_size": "M8",
+  "height": "10/15",
+  "price": 1.4
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Emerald Gaiety'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Emerald'n Gold'",
+  "pot_size": "M8",
+  "height": "10/15",
+  "price": 1.4
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Emerald'n Gold'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus fortunei 'Sunspot'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus",
+  "pot_size": "C3",
+  "height": "20/40",
+  "price": 4.4
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus 'Benkomasaki'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus 'Benkomasaki'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus 'Benkomasaki'",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 9.5
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus 'Aureomarginatus'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.7
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus 'Aureomarginatus'",
+  "pot_size": "C3",
+  "height": "20/40",
+  "price": 4.9
+ },
+ {
+  "genus": "EUONYMUS",
+  "description": "Euonymus japonicus 'Aureomarginatus'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 8.25
+ },
+ {
+  "genus": "EUPHORBIA",
+  "description": "Euphorbia characias var. Wulfenii",
+  "pot_size": "AH28",
+  "height": "",
+  "price": 0.98
+ },
+ {
+  "genus": "EUPHORBIA",
+  "description": "Euphorbia characias var. Wulfenii",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "EUPHORBIA",
+  "description": "Euphorbia characias var. Wulfenii",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "EUPHORBIA",
+  "description": "Euphorbia palustris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "EURYOPS",
+  "description": "Euryops chrysanthemoides",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "EURYOPS",
+  "description": "Euryops pectinatus",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.1
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.4
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.65
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica",
+  "pot_size": "2/0 Rd",
+  "height": "50/80",
+  "price": 1.3
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 5.25
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica",
+  "pot_size": "C10",
+  "height": "100/125",
+  "price": 17.75
+ },
+ {
+  "genus": "FAGUS",
+  "description": "Fagus sylvatica 'Purpurea'",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 1.1
+ },
+ {
+  "genus": "FALKIA",
+  "description": "Falkia repens",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "FALKIA",
+  "description": "Falkia repens",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "FELICIA",
+  "description": "Felicia amelloides",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "FESTUCA",
+  "description": "Festuca glauca",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "FESTUCA",
+  "description": "Festuca glauca",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "FESTUCA",
+  "description": "Festuca glauca",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "FESTUCA",
+  "description": "Festuca glauca",
+  "pot_size": "C2",
+  "height": "15/20",
+  "price": 3.7
+ },
+ {
+  "genus": "FESTUCA",
+  "description": "Festuca glauca 'Elijah Blue'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "FESTUCA",
+  "description": "Festuca glauca 'Elijah Blue'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "FICUS",
+  "description": "Ficus australis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "FICUS",
+  "description": "Ficus carica",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "FICUS",
+  "description": "Ficus pumila",
+  "pot_size": "C2",
+  "height": "",
+  "price": 5.6
+ },
+ {
+  "genus": "FICUS",
+  "description": "Ficus repens",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "FICUS",
+  "description": "Ficus repens",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 5.6
+ },
+ {
+  "genus": "FILIPENDULA",
+  "description": "Filipendula magellanica",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "FILIPENDULA",
+  "description": "Filipendula ulmaria",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "FLUEGGEA",
+  "description": "Flueggea tinctoria",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "FORSYTHIA",
+  "description": "Forsythia intermedia 'Lynwood Gold'",
+  "pot_size": "0/1 Rd",
+  "height": "20/40",
+  "price": 1.2
+ },
+ {
+  "genus": "FORSYTHIA",
+  "description": "Forsythia intermedia 'Lynwood Gold'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.6
+ },
+ {
+  "genus": "FRAGARIA",
+  "description": "Fragaria vesca",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "FRAGARIA",
+  "description": "Fragaria vesca",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "FRANKENIA",
+  "description": "Frankenia laevis",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "FRANKENIA",
+  "description": "Frankenia laevis",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "FRANKENIA",
+  "description": "Frankenia laevis",
+  "pot_size": "C1",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus angustifolia",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.65
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus angustifolia",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.4
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus angustifolia",
+  "pot_size": "AF300",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus angustifolia",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.6
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus angustifolia",
+  "pot_size": "C10",
+  "height": "140/160",
+  "price": 16.5
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus excelsior",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.65
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus excelsior",
+  "pot_size": "2/0 Rd",
+  "height": "50/80",
+  "price": 1.4
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus excelsior",
+  "pot_size": "AF300",
+  "height": "15/25",
+  "price": 0.75
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus excelsior",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.75
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus excelsior",
+  "pot_size": "C10",
+  "height": "125/150",
+  "price": 17
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus ornus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus ornus",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.5
+ },
+ {
+  "genus": "FRAXINUS",
+  "description": "Fraxinus ornus",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "GARDENIA",
+  "description": "Gardenia jasminoides",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.7
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.9
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri 'Siskiyou Pink'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "GAURA",
+  "description": "Gaura lindheimeri 'Siskiyou Pink'",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 4.1
+ },
+ {
+  "genus": "GAZANIA",
+  "description": "Gazania rigens",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista hirsuta",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista hispanica",
+  "pot_size": "C2,5",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista lydia",
+  "pot_size": "C2",
+  "height": "15/20",
+  "price": 4.4
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista 'Porlock'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista scorpius",
+  "pot_size": "AF200",
+  "height": "15/25",
+  "price": 0.75
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista scorpius",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "GENISTA",
+  "description": "Genista umbellata",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "GERANIUM",
+  "description": "Geranium macrorrhizum 'Ingwersen's Variety'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "GERANIUM",
+  "description": "Geranium macrorrhizum 'Spessart'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "GERANIUM",
+  "description": "Geranium 'Rozanne'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.5
+ },
+ {
+  "genus": "GERANIUM",
+  "description": "Geranium sanguineum",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.7
+ },
+ {
+  "genus": "GINKGO",
+  "description": "Ginkgo biloba",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 1.2
+ },
+ {
+  "genus": "GINKGO",
+  "description": "Ginkgo biloba",
+  "pot_size": "1/1 Rd",
+  "height": "30/50",
+  "price": 1.9
+ },
+ {
+  "genus": "GINKGO",
+  "description": "Ginkgo biloba",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "GINKGO",
+  "description": "Ginkgo biloba",
+  "pot_size": "C10",
+  "height": "150/175",
+  "price": 32
+ },
+ {
+  "genus": "GLEDITZIA",
+  "description": "Gleditsia triacanthos",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "GLEDITZIA",
+  "description": "Gleditsia triacanthos",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.5
+ },
+ {
+  "genus": "GLEDITZIA",
+  "description": "Gleditsia triacanthos Inermis",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "GLEDITZIA",
+  "description": "Gleditsia triacanthos Inermis",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.97
+ },
+ {
+  "genus": "GLOBULARIA",
+  "description": "Globularia cordifolia",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.7
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea juniperina",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.35
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea juniperina",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea juniperina",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.5
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea juniperina",
+  "pot_size": "C5",
+  "height": "40/50",
+  "price": 9.75
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea lanigera 'Mount Tamboritha'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea lanigera 'Mount Tamboritha'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.3
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea lanigera 'Mount Tamboritha'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.6
+ },
+ {
+  "genus": "GREVILLEA",
+  "description": "Grevillea robusta",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "GRISELLINA",
+  "description": "Grisellina litoralis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.85
+ },
+ {
+  "genus": "GRISELLINA",
+  "description": "Grisellina litoralis",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "HAKONECHLOA",
+  "description": "Hakonechloa macra",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.75
+ },
+ {
+  "genus": "HALIMIUM",
+  "description": "Halimium atriplicifolium",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "HALIMIUM",
+  "description": "Halimium halimifolium",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "HEBE",
+  "description": "Hebe x franciscana 'Blue Gem'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "HEBE",
+  "description": "Hebe 'Wiri Charm'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera algeriensis",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.8
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera algeriensis 'Glorie Marengo'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera colchica",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera helix",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera helix",
+  "pot_size": "M9",
+  "height": "20/30",
+  "price": 1.4
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera helix",
+  "pot_size": "C1",
+  "height": "30/40",
+  "price": 2.25
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera helix",
+  "pot_size": "C1,5",
+  "height": "80/100",
+  "price": 3.5
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera helix",
+  "pot_size": "C3",
+  "height": "100/125",
+  "price": 5
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera helix minor",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera hibernica",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera hibernica",
+  "pot_size": "C1",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera hibernica",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.25
+ },
+ {
+  "genus": "HEDERA",
+  "description": "Hedera miniata 'Variegata'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "HELICRYSUM",
+  "description": "Helichrysum italicum",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "HELICRYSUM",
+  "description": "Helichrysum stoechas",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "HELICRYSUM",
+  "description": "Helichrysum stoechas",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "HEMEROCALLIS",
+  "description": "Hemerocallis (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "HEMEROCALLIS",
+  "description": "Hemerocallis (Variedades)",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "HESPERALOE",
+  "description": "Hesperaloe parviflora",
+  "pot_size": "C3",
+  "height": "",
+  "price": 6.5
+ },
+ {
+  "genus": "HEUCHERA",
+  "description": "Heuchera micrantha 'Palace Purple'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "HIBISCUS",
+  "description": "Hibiscus syriacus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "HIBISCUS",
+  "description": "Hibiscus syriacus",
+  "pot_size": "2/0 Rd",
+  "height": "40/60",
+  "price": 1.4
+ },
+ {
+  "genus": "HIBISCUS",
+  "description": "Hibiscus syriacus",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.4
+ },
+ {
+  "genus": "HIBISCUS",
+  "description": "Hibiscus syriacus (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2
+ },
+ {
+  "genus": "HIPPOPHAE",
+  "description": "Hippophae rhamnoides",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "HIPPOPHAE",
+  "description": "Hippophae rhamnoides",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.5
+ },
+ {
+  "genus": "HIPPOPHAE",
+  "description": "Hippophae rhamnoides",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.6
+ },
+ {
+  "genus": "HIPPURIS",
+  "description": "Hippuris vulgaris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "HISSOPUS",
+  "description": "Hissopus officinalis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1
+ },
+ {
+  "genus": "HOUTTUYNIA",
+  "description": "Houttuynia cordata 'Chameleon'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "HUMULUS",
+  "description": "Humulus lupulus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "HYDRANGEA",
+  "description": "Hydrangea macrophylla (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "HYDRANGEA",
+  "description": "Hydrangea macrophylla (Variedades)",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.4
+ },
+ {
+  "genus": "HYDROCOTYLE",
+  "description": "Hydrocotyle vulgaris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum calycinum",
+  "pot_size": "M8",
+  "height": "10/15",
+  "price": 1.4
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum calycinum",
+  "pot_size": "C1",
+  "height": "15/20",
+  "price": 2.1
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum calycinum",
+  "pot_size": "C2",
+  "height": "20/25",
+  "price": 3.6
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum 'Hidcote'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum 'Hidcote'",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.7
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum moserianum 'Tricolor'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum moserianum 'Tricolor'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "HYPERICUM",
+  "description": "Hypericum perforatum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1
+ },
+ {
+  "genus": "HYSSOPUS",
+  "description": "Hyssopus officinalis",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "IBERIS",
+  "description": "Iberis sempervirens",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex altaclarensis 'Golden King'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium",
+  "pot_size": "1/0 Rd",
+  "height": "5/10",
+  "price": 0.75
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium 'Alaska'",
+  "pot_size": "M8",
+  "height": "10/20",
+  "price": 1.8
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium 'Alaska'",
+  "pot_size": "C3",
+  "height": "20/40",
+  "price": 5.6
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium 'Argenteomarginata'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium 'Handsworth New Silver'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex aquifolium 'Madame Briot'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex crenata 'Convexa'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex crenata 'Fastigiata'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex crenata 'Fastigiata'",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 11.1
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex crenata 'Green Hedge'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex meserveae 'Blue Angel'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex meserveae 'Blue Angel'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 9.5
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex meserveae 'Blue Maid'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "ILEX",
+  "description": "Ilex 'Nellie R. Stevens'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "IMPERATA",
+  "description": "Imperata cylindrica 'Red Baron'",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "IMPERATA",
+  "description": "Imperata cylindrica 'Red Baron'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.9
+ },
+ {
+  "genus": "IMPERATA",
+  "description": "Imperata cylindrica 'Red Baron'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.25
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris germanica",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris germanica",
+  "pot_size": "C1",
+  "height": "15/20",
+  "price": 3.5
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris germanica",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.4
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris kaempferi",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.8
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris pseudacorus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris pseudacorus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris sibirica 'Blue King'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 5.4
+ },
+ {
+  "genus": "IRIS",
+  "description": "Iris versicolor",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "JACARANDA",
+  "description": "Jacaranda mimosifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "JASMINUM",
+  "description": "Jasminum fruticans",
+  "pot_size": "AF250",
+  "height": "10/20",
+  "price": 0.75
+ },
+ {
+  "genus": "JASMINUM",
+  "description": "Jasminum fruticans",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.2
+ },
+ {
+  "genus": "JASMINUM",
+  "description": "Jasminum nudiflorum",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans híbrido J. nigra x J. regia",
+  "pot_size": "1/0 Rd",
+  "height": "40/60",
+  "price": 9.25
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans híbrido J. nigra x J. regia",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 12.95
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans nigra",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 1.1
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans nigra",
+  "pot_size": "2/0 Rd",
+  "height": "60/90",
+  "price": 1.9
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans regia",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 1.1
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans regia",
+  "pot_size": "2/0 Rd",
+  "height": "40/60",
+  "price": 2.75
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans regia",
+  "pot_size": "2/0 Rd",
+  "height": "60/90",
+  "price": 3.5
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans regia",
+  "pot_size": "AF300",
+  "height": "10/15",
+  "price": 0.85
+ },
+ {
+  "genus": "JUGLANS",
+  "description": "Juglans regia",
+  "pot_size": "C3",
+  "height": "50/70",
+  "price": 4.75
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus acutus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus effusus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus effusus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus effusus 'Spiralis'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus inflexus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus inflexus",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "JUNCUS",
+  "description": "Juncus maritimus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 16.6
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis 'Green Carpet'",
+  "pot_size": "M8",
+  "height": "15/20",
+  "price": 1.7
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis 'Hibernica'",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.7
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis 'Hibernica'",
+  "pot_size": "C3",
+  "height": "40/50",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis 'Repanda'",
+  "pot_size": "M9",
+  "height": "10/15",
+  "price": 1.6
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus communis 'Repanda'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus conferta 'Blue Pacific'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus conferta 'Blue Pacific'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus chinensis 'Blue Alps'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus chinensis 'Stricta'",
+  "pot_size": "M9",
+  "height": "10/20",
+  "price": 1.6
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus chinensis 'Stricta'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus chinensis 'Stricta'",
+  "pot_size": "C10",
+  "height": "40/60",
+  "price": 16
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Andorra Compact'",
+  "pot_size": "M9",
+  "height": "15/20",
+  "price": 1.4
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Andorra Compact'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Andorra Variegata'",
+  "pot_size": "M9",
+  "height": "15/20",
+  "price": 1.4
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Andorra Variegata'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Blue Chip'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Blue Chip'",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Prince of Wales'",
+  "pot_size": "M9",
+  "height": "20/25",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Prince of Wales'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Wiltonii'",
+  "pot_size": "M8",
+  "height": "10/15",
+  "price": 1.6
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus horizontalis 'Wiltonii'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Hetzii'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Hetzii'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Mint Julep'",
+  "pot_size": "M8",
+  "height": "15/20",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Mint Julep'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Old Gold'",
+  "pot_size": "M8",
+  "height": "15/20",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Old Gold'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Pfitzeriana Aurea'",
+  "pot_size": "M8",
+  "height": "15/20",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Pfitzeriana Aurea'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Pfitzeriana Glauca'",
+  "pot_size": "M9",
+  "height": "10/20",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus media 'Pfitzeriana Glauca'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus oxycedrus",
+  "pot_size": "AF200",
+  "height": "10/20",
+  "price": 1.1
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus oxycedrus",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.4
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus phoenicea",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus phoenicea",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.6
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus phoenicea",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 15.8
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus procumbens 'Nana'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 2.7
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus procumbens 'Nana'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus sabina 'Tamariscifolia'",
+  "pot_size": "M9",
+  "height": "20/30",
+  "price": 1.5
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus sabina 'Tamariscifolia'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus squamata 'Blue Star'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "JUNIPERUS",
+  "description": "Juniperus thurifera",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.9
+ },
+ {
+  "genus": "KOELERIA",
+  "description": "Koeleria glauca",
+  "pot_size": "AF350",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "KOELERIA",
+  "description": "Koeleria glauca",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "KOELREUTERIA",
+  "description": "Koelreuteria paniculata",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.95
+ },
+ {
+  "genus": "KOELREUTERIA",
+  "description": "Koelreuteria paniculata",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.8
+ },
+ {
+  "genus": "KOELREUTERIA",
+  "description": "Koelreuteria paniculata",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "LABURNUM",
+  "description": "Laburnum anagyroides",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "LABURNUM",
+  "description": "Laburnum anagyroides",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 2.1
+ },
+ {
+  "genus": "LAGERSTROEMIA",
+  "description": "Lagerstroemia indica (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.8
+ },
+ {
+  "genus": "LAGERSTROEMIA",
+  "description": "Lagerstroemia indica (Variedades)",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 5.4
+ },
+ {
+  "genus": "LAMPRANTHUS",
+  "description": "Lampranthus spectabilis",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "LANTANA",
+  "description": "Lantana montevidensis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "LANTANA",
+  "description": "Lantana montevidensis",
+  "pot_size": "C1",
+  "height": "15/25",
+  "price": 2.7
+ },
+ {
+  "genus": "LANTANA",
+  "description": "Lantana montevidensis",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "LARIX",
+  "description": "Larix decidua",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 0.45
+ },
+ {
+  "genus": "LARIX",
+  "description": "Larix decidua",
+  "pot_size": "1/1 Rd",
+  "height": "20/30",
+  "price": 0.85
+ },
+ {
+  "genus": "LARIX",
+  "description": "Larix kaempferi",
+  "pot_size": "1/1 Rd",
+  "height": "20/40",
+  "price": 0.85
+ },
+ {
+  "genus": "LARIX",
+  "description": "Larix kaempferi",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.1
+ },
+ {
+  "genus": "LAURUS",
+  "description": "Laurus nobilis",
+  "pot_size": "AF200",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "LAURUS",
+  "description": "Laurus nobilis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "LAURUS",
+  "description": "Laurus nobilis",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "LAURUS",
+  "description": "Laurus nobilis",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.6
+ },
+ {
+  "genus": "LAURUS",
+  "description": "Laurus nobilis",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 14.9
+ },
+ {
+  "genus": "LAURUS",
+  "description": "Laurus nobilis",
+  "pot_size": "C15",
+  "height": "100/140",
+  "price": 28
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia",
+  "pot_size": "M10",
+  "height": "10/20",
+  "price": 1.1
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia",
+  "pot_size": "C1",
+  "height": "15/20",
+  "price": 2.1
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia",
+  "pot_size": "C1,5",
+  "height": "15/20",
+  "price": 2.55
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 3.5
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia 'Grosso'",
+  "pot_size": "C1,3",
+  "height": "15/20",
+  "price": 2.9
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula angustifolia (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula dentata",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula dentata",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 1.1
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula dentata",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula dentata",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.3
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula x intermedia 'Dutch'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula latifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "LAVANDULA",
+  "description": "Lavandula stoechas",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "LEPTOSPERMUM",
+  "description": "Leptospermum scoparium (Variedades)",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "LEUCOPHYLLUM",
+  "description": "Leucophyllum frutescens",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.5
+ },
+ {
+  "genus": "LEYMUS",
+  "description": "Leymus arenarius",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "LEYMUS",
+  "description": "Leymus arenarius",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.3
+ },
+ {
+  "genus": "LIBERTIA",
+  "description": "Libertia grandiflora",
+  "pot_size": "C2",
+  "height": "",
+  "price": 5.5
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum japonicum",
+  "pot_size": "1/0 Rd",
+  "height": "20/30",
+  "price": 0.65
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum japonicum",
+  "pot_size": "AF200",
+  "height": "20/40",
+  "price": 0.85
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum japonicum",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum japonicum",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.9
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum ovalifolium",
+  "pot_size": "0/1 Rd",
+  "height": "30/50",
+  "price": 1.2
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum ovalifolium",
+  "pot_size": "0/2 Rd",
+  "height": "60/80",
+  "price": 1.8
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum ovalifolium",
+  "pot_size": "C1,5",
+  "height": "50/60",
+  "price": 2.9
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum texanum",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum texanum",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 5.6
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum vulgare",
+  "pot_size": "0/1 Rd",
+  "height": "20/40",
+  "price": 0.75
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum vulgare",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 1.2
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum vulgare",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "LIGUSTRUM",
+  "description": "Ligustrum vulgare",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "LIMONIASTRUM",
+  "description": "Limoniastrum monopetalum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "LIMONIASTRUM",
+  "description": "Limoniastrum monopetalum",
+  "pot_size": "C1",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "LIMONIASTRUM",
+  "description": "Limoniastrum monopetalum",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "LINUM",
+  "description": "Linum perenne",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "LIPPIA",
+  "description": "Lippia repens",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "LIQUIDAMBAR",
+  "description": "Liquidambar styraciflua",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.7
+ },
+ {
+  "genus": "LIQUIDAMBAR",
+  "description": "Liquidambar styraciflua",
+  "pot_size": "1/1 Rd",
+  "height": "30/50",
+  "price": 1.6
+ },
+ {
+  "genus": "LIQUIDAMBAR",
+  "description": "Liquidambar styraciflua",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "LIQUIDAMBAR",
+  "description": "Liquidambar styraciflua",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "LIRIODENDRON",
+  "description": "Liriodendron tulipifera",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 1
+ },
+ {
+  "genus": "LIRIODENDRON",
+  "description": "Liriodendron tulipifera",
+  "pot_size": "1/1 Rd",
+  "height": "30/50",
+  "price": 2.35
+ },
+ {
+  "genus": "LIRIOPE",
+  "description": "Liriope muscari",
+  "pot_size": "AF400",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "LIRIOPE",
+  "description": "Liriope muscari (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "LIRIOPE",
+  "description": "Liriope muscari (Variedades)",
+  "pot_size": "C1",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "LOBELIA",
+  "description": "Lobelia cardinalis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "LOBULARIA",
+  "description": "Lobularia maritima",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera etrusca",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera etrusca",
+  "pot_size": "C2",
+  "height": "30/50",
+  "price": 4.2
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera implexa",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera implexa",
+  "pot_size": "C2",
+  "height": "30/50",
+  "price": 4.2
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera japonica 'Dart's World'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera japonica 'Dart's World'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.8
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida 'Elegant'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida 'Elegant'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 1.75
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida 'Maigrün'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida 'Maigrün'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera nitida 'Maigrün'",
+  "pot_size": "C1,5",
+  "height": "25/30",
+  "price": 1.75
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera peryclimemum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera peryclimemum",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera pileata",
+  "pot_size": "M8",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera pileata",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 1.75
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera pileata",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera xylosteum",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera xylosteum",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.5
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera xylosteum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "LONICERA",
+  "description": "Lonicera xylosteum",
+  "pot_size": "C3",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "LOROPETALUM",
+  "description": "Loropetalum chinensis 'Fire Dance'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "LOROPETALUM",
+  "description": "Loropetalum chinensis 'Fire Dance'",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.8
+ },
+ {
+  "genus": "LOTUS",
+  "description": "Lotus berthelotii",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.6
+ },
+ {
+  "genus": "LOTUS",
+  "description": "Lotus creticus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "LYCIUM",
+  "description": "Lycium barbarum",
+  "pot_size": "M7",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "LYGEUM",
+  "description": "Lygeum spartum",
+  "pot_size": "AF200",
+  "height": "20/30",
+  "price": 0.75
+ },
+ {
+  "genus": "LYGEUM",
+  "description": "Lygeum spartum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "LYSIMACHIA",
+  "description": "Lysimachia thyrsiflora",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "LYTRUM",
+  "description": "Lytrum salicaria",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "LYTRUM",
+  "description": "Lytrum salicaria",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "MAGNOLIA",
+  "description": "Magnolia grandiflora 'Gallisonensis'",
+  "pot_size": "M9",
+  "height": "20/30",
+  "price": 5.8
+ },
+ {
+  "genus": "MAGNOLIA",
+  "description": "Magnolia grandiflora 'Gallisonensis'",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 12.6
+ },
+ {
+  "genus": "MAGNOLIA",
+  "description": "Magnolia soulangiana",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "MAHONIA",
+  "description": "Mahonia aquifolium",
+  "pot_size": "1/1 Rd",
+  "height": "15/25",
+  "price": 1.1
+ },
+ {
+  "genus": "MAHONIA",
+  "description": "Mahonia aquifolium",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "MAHONIA",
+  "description": "Mahonia media 'Charity'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 6.5
+ },
+ {
+  "genus": "MAHONIA",
+  "description": "Mahonia media 'Winter Sun'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 11.2
+ },
+ {
+  "genus": "MALUS",
+  "description": "Malus sylvestris",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "MALUS",
+  "description": "Malus sylvestris",
+  "pot_size": "1/1 Rd",
+  "height": "60/100",
+  "price": 1.8
+ },
+ {
+  "genus": "MALUS",
+  "description": "Malus sylvestris",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "MEDICAGO",
+  "description": "Medicago arborea",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "MEDICAGO",
+  "description": "Medicago arborea",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.4
+ },
+ {
+  "genus": "MELIA",
+  "description": "Melia azedarach",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "MELIANTHUS",
+  "description": "Melianthus major",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.3
+ },
+ {
+  "genus": "MELISSA",
+  "description": "Melissa officinalis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "MENTHA",
+  "description": "Mentha aquatica",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "MENTHA",
+  "description": "Mentha piperita 'Chocolate'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "MENTHA",
+  "description": "Mentha piperita",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 1.1
+ },
+ {
+  "genus": "MENTHA",
+  "description": "Mentha pulegium",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "MENTHA",
+  "description": "Mentha spicata",
+  "pot_size": "C2",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "MESPILUS",
+  "description": "Mespilus germanica",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 2.65
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.8
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis 'Adagio'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis 'Gracillimus'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis 'Gracillimus'",
+  "pot_size": "C1,5",
+  "height": "20/30",
+  "price": 3.6
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis 'Gracillimus'",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis 'Morning Light'",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 3.6
+ },
+ {
+  "genus": "MISCANTHUS",
+  "description": "Miscanthus sinensis 'Zebrinus'",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "MOLINIA",
+  "description": "Molinia caerulea",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "MOLINIA",
+  "description": "Molinia caerulea (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "MORUS",
+  "description": "Morus alba",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 0.65
+ },
+ {
+  "genus": "MORUS",
+  "description": "Morus alba",
+  "pot_size": "1/0 Rd",
+  "height": "40/60",
+  "price": 0.95
+ },
+ {
+  "genus": "MORUS",
+  "description": "Morus alba",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "MORUS",
+  "description": "Morus alba 'Fruitless'",
+  "pot_size": "M9",
+  "height": "30/40",
+  "price": 6.25
+ },
+ {
+  "genus": "MORUS",
+  "description": "Morus kagayamae",
+  "pot_size": "C1,5",
+  "height": "20/40",
+  "price": 6.25
+ },
+ {
+  "genus": "MORUS",
+  "description": "Morus nigra",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "MUHLENBERGIA",
+  "description": "Muhlenbergia capillaris",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "MUHLENBERGIA",
+  "description": "Muhlenbergia capillaris",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "MUHLENBERGIA",
+  "description": "Muhlenbergia capillaris",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "MUHLENBERGIA",
+  "description": "Muhlenbergia complexa",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.9
+ },
+ {
+  "genus": "MYOPORUM",
+  "description": "Myoporum parvifolium",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.6
+ },
+ {
+  "genus": "MYOPORUM",
+  "description": "Myoporum parvifolium",
+  "pot_size": "C3",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "MYOPORUM",
+  "description": "Myoporum pictum",
+  "pot_size": "C1,5",
+  "height": "40/60",
+  "price": 2.6
+ },
+ {
+  "genus": "MYOSOTIS",
+  "description": "Myosotis palustris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "MYRSINE",
+  "description": "Myrsine africana",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 5.5
+ },
+ {
+  "genus": "MYRTUS",
+  "description": "Myrtus communis",
+  "pot_size": "AF200",
+  "height": "10/15",
+  "price": 0.82
+ },
+ {
+  "genus": "MYRTUS",
+  "description": "Myrtus communis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "MYRTUS",
+  "description": "Myrtus communis",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "MYRTUS",
+  "description": "Myrtus communis",
+  "pot_size": "C7",
+  "height": "30/40",
+  "price": 14
+ },
+ {
+  "genus": "MYRTUS",
+  "description": "Myrtus communis tarentina",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.6
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.95
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.5
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 5
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 9.75
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 18.6
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica 'Firepower'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.95
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica 'Firepower'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica 'Firepower'",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 10.5
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica 'Firepower'",
+  "pot_size": "C10",
+  "height": "30/50",
+  "price": 17
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica ''Gulfstream'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica ''Gulfstream'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 3.2
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica ''Gulfstream'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 6.7
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica ''Gulfstream'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 10.75
+ },
+ {
+  "genus": "NANDINA",
+  "description": "Nandina domestica 'Obsessed'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 9.5
+ },
+ {
+  "genus": "NEPETA",
+  "description": "Nepeta 'Six Hills Giant'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "NEPETA",
+  "description": "Nepeta 'Six Hills Giant'",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "NEPETA",
+  "description": "Nepeta x faassenii",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "NEPETA",
+  "description": "Nepeta x faassenii",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.8
+ },
+ {
+  "genus": "NEPETA",
+  "description": "Nepeta racemosa",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "NERIUM",
+  "description": "Nerium oleander",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "NERIUM",
+  "description": "Nerium oleander",
+  "pot_size": "C1,5",
+  "height": "40/60",
+  "price": 2.5
+ },
+ {
+  "genus": "NERIUM",
+  "description": "Nerium oleander",
+  "pot_size": "C3",
+  "height": "50/70",
+  "price": 4.2
+ },
+ {
+  "genus": "NERIUM",
+  "description": "Nerium oleander",
+  "pot_size": "C7",
+  "height": "60/100",
+  "price": 13.75
+ },
+ {
+  "genus": "NUPHAR",
+  "description": "Nuphar lutea",
+  "pot_size": "M11",
+  "height": "",
+  "price": 12.4
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Alba'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 16.5
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Attraction'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 20.6
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Aurora'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 22.4
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Gladstoniana'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 22.4
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'James Brydon'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 34.3
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'King of the Blues'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 34.3
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Marliacia Albida'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 20.6
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Marliacia Chromatella'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 20
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphaea 'Marliacia Rosea'",
+  "pot_size": "M11",
+  "height": "",
+  "price": 20.6
+ },
+ {
+  "genus": "NYMPHAEA",
+  "description": "Nymphoides peltata",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.3
+ },
+ {
+  "genus": "OCCINIUM",
+  "description": "Occinium basilicum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "OLEA",
+  "description": "Olea europaea var. Arbequina",
+  "pot_size": "C1,5",
+  "height": "60/80",
+  "price": 5.25
+ },
+ {
+  "genus": "OLEA",
+  "description": "Olea europaea var. sylvestris",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "OLEA",
+  "description": "Olea europaea var. sylvestris",
+  "pot_size": "C1,5",
+  "height": "40/60",
+  "price": 2.75
+ },
+ {
+  "genus": "OLEA",
+  "description": "Olea europaea var. sylvestris",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.2
+ },
+ {
+  "genus": "OPHIOPOGON",
+  "description": "Ophiopogon jaburans",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "OPHIOPOGON",
+  "description": "Ophiopogon jaburans",
+  "pot_size": "C1",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "OPHIOPOGON",
+  "description": "Ophiopogon japonicus",
+  "pot_size": "AF400",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "OPHIOPOGON",
+  "description": "Ophiopogon japonicus",
+  "pot_size": "C1",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "OPHIOPOGON",
+  "description": "Ophiopogon nigrescens",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ORIGANUM",
+  "description": "Origanum vulgare",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "ORIGANUM",
+  "description": "Origanum vulgare",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "OSMANTHUS",
+  "description": "Osmanthus burkwoodii",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.95
+ },
+ {
+  "genus": "OSMUNDA",
+  "description": "Osmunda regalis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.4
+ },
+ {
+  "genus": "PACHYSANDRA",
+  "description": "Pachysandra terminalis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "PANICUM",
+  "description": "Panicum virgatum",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "PANICUM",
+  "description": "Panicum virgatum",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "PANICUM",
+  "description": "Panicum virgatum",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "PARTHENOCISSUS",
+  "description": "Parthenocissus quinquefolia",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "PARTHENOCISSUS",
+  "description": "Parthenocissus tricuspidata",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PAULOWNIA",
+  "description": "Paulownia tomentosa",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.9
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum advena 'Rubrum'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.7
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.95
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.3
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides 'Hameln'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides 'Hameln'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.25
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides 'Hameln'",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.5
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides 'Little Bunny'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum alopecuroides 'Little Bunny'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.25
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum orientale",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.95
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum villosum",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "PENNISETUM",
+  "description": "Pennisetum villosum",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.5
+ },
+ {
+  "genus": "PEROVSKIA",
+  "description": "Perovskia atriplicifolia",
+  "pot_size": "C2,5",
+  "height": "",
+  "price": 3.8
+ },
+ {
+  "genus": "PEROVSKIA",
+  "description": "Perovskia atriplicifolia 'Blue Spire'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "PEROVSKIA",
+  "description": "Perovskia atriplicifolia 'Blue Spire'",
+  "pot_size": "C1",
+  "height": "15/20",
+  "price": 2.75
+ },
+ {
+  "genus": "PEROVSKIA",
+  "description": "Perovskia atriplicifolia 'Blue Spire'",
+  "pot_size": "C2,5",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "PETASITES",
+  "description": "Petasites hydridus",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "PHALARIS",
+  "description": "Phalaris arundinacea",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "PHYLADELPHUS",
+  "description": "Philadelphus (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea angustifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea angustifolia",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.2
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea angustifolia",
+  "pot_size": "C7",
+  "height": "60/80",
+  "price": 14
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea angustifolia",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 16.8
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea latifolia",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea latifolia",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.2
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea x media",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.5
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea x media",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 8.25
+ },
+ {
+  "genus": "PHILLYREA",
+  "description": "Phillyrea x media",
+  "pot_size": "C10",
+  "height": "40/60",
+  "price": 16.8
+ },
+ {
+  "genus": "PHLOMIS",
+  "description": "Phlomis fruticosa",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "PHLOMIS",
+  "description": "Phlomis fruticosa",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.6
+ },
+ {
+  "genus": "PHLOMIS",
+  "description": "Phlomis purpurea",
+  "pot_size": "AF200",
+  "height": "10/20",
+  "price": 0.85
+ },
+ {
+  "genus": "PHLOMIS",
+  "description": "Phlomis purpurea",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.4
+ },
+ {
+  "genus": "PHORNIUM",
+  "description": "Phornium tenax",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "PHORNIUM",
+  "description": "Phornium tenax 'Purpurea'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Carré Rouge'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Carré Rouge'",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.9
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Carré Rouge'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Carré Rouge'",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 10.5
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Little Red Robin'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Little Red Robin'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Little Red Robin'",
+  "pot_size": "C10",
+  "height": "30/40",
+  "price": 15
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Magical Vulcano'",
+  "pot_size": "C10",
+  "height": "40/60",
+  "price": 18
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Red Robin'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Red Robin'",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.9
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Red Robin'",
+  "pot_size": "C2,5",
+  "height": "40/60",
+  "price": 4.9
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Red Robin'",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 10.5
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Red Robin'",
+  "pot_size": "C7",
+  "height": "80/100",
+  "price": 14.6
+ },
+ {
+  "genus": "PHOTINIA",
+  "description": "Photinia fraseri 'Red Robin'",
+  "pot_size": "C10",
+  "height": "100/120",
+  "price": 18.8
+ },
+ {
+  "genus": "PHRAGMITES",
+  "description": "Phragmites australis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "PHRAGMITES",
+  "description": "Phragmites australis",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "PHYLLITIS",
+  "description": "Phyllitis scolopendrium",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "PHYLLOSTACHYS",
+  "description": "Phyllostachys aurea",
+  "pot_size": "C5",
+  "height": "100/125",
+  "price": 11.5
+ },
+ {
+  "genus": "PHYLLOSTACHYS",
+  "description": "Phyllostachys aurea",
+  "pot_size": "C10",
+  "height": "125/150",
+  "price": 18.8
+ },
+ {
+  "genus": "PHYLLOSTACHYS",
+  "description": "Phyllostachys aurea",
+  "pot_size": "C15",
+  "height": "150/200",
+  "price": 28
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea abies",
+  "pot_size": "2/0 Rd",
+  "height": "15/25",
+  "price": 0.3
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea abies",
+  "pot_size": "2/1 Rd",
+  "height": "25/40",
+  "price": 0.75
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea abies",
+  "pot_size": "2/2 Rd",
+  "height": "40/60",
+  "price": 0.98
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea glauca 'Conica'",
+  "pot_size": "M9",
+  "height": "20/25",
+  "price": 1.9
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea glauca 'Conica'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 6.7
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea glauca 'Conica'",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 12.5
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea omorika",
+  "pot_size": "2/0 Rd",
+  "height": "10/15",
+  "price": 0.45
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea omorika",
+  "pot_size": "2/1 Rd",
+  "height": "15/30",
+  "price": 1.1
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea pungens 'Glauca '",
+  "pot_size": "2/1 Rd",
+  "height": "10/15",
+  "price": 0.75
+ },
+ {
+  "genus": "PICEA",
+  "description": "Picea pungens 'Glauca '",
+  "pot_size": "M9",
+  "height": "15/20",
+  "price": 1.6
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus halepensis",
+  "pot_size": "AF200",
+  "height": "1 Savia",
+  "price": 0.65
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus halepensis",
+  "pot_size": "C1,5",
+  "height": "40/60",
+  "price": 3.5
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus halepensis",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.75
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus halepensis",
+  "pot_size": "C10",
+  "height": "100/125",
+  "price": 16.75
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus mugo 'Mughus'",
+  "pot_size": "2/2 Rd",
+  "height": "20/30",
+  "price": 2.1
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus mugo 'Pumilio'",
+  "pot_size": "2/2 Rd",
+  "height": "10/20",
+  "price": 2.1
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus nigra ssp. Salzmanni",
+  "pot_size": "AF200",
+  "height": "1 Savia",
+  "price": 0.65
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus nigra ssp. Salzmanni",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.8
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus nigra ssp. laricio",
+  "pot_size": "AF200",
+  "height": "1 Savia",
+  "price": 0.65
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus pinaster",
+  "pot_size": "AF200",
+  "height": "1 Savia",
+  "price": 0.65
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus pinea",
+  "pot_size": "AF200",
+  "height": "1 Savia",
+  "price": 0.65
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus pinea",
+  "pot_size": "C1,5",
+  "height": "40/60",
+  "price": 3
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus pinea",
+  "pot_size": "C3",
+  "height": "50/80",
+  "price": 4.6
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus pinea",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 16.5
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus radiata",
+  "pot_size": "AF150",
+  "height": "1 Savia",
+  "price": 0.55
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus sylvestris",
+  "pot_size": "AF200",
+  "height": "1 Savia",
+  "price": 0.65
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus sylvestris",
+  "pot_size": "C3",
+  "height": "40/50",
+  "price": 5
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus sylvestris",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 17.5
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus uncinata*=Pinus mugo var.Rostrata",
+  "pot_size": "AF200",
+  "height": "2 Savias",
+  "price": 0.75
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus uncinata*=Pinus mugo var.Rostrata",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 5.5
+ },
+ {
+  "genus": "PINUS",
+  "description": "Pinus uncinata*=Pinus mugo var.Rostrata",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 18.5
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia lentiscus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia lentiscus",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia lentiscus",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 2.7
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia lentiscus",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.6
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia lentiscus",
+  "pot_size": "C7",
+  "height": "60/80",
+  "price": 13.5
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia lentiscus",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 17
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia terebinthus",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PISTACIA",
+  "description": "Pistacia terebinthus",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tenuifolium 'Variegata'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tenuifolium 'Variegata'",
+  "pot_size": "C7",
+  "height": "30/40",
+  "price": 15.3
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira",
+  "pot_size": "C1,5",
+  "height": "20/30",
+  "price": 2.2
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira",
+  "pot_size": "C3",
+  "height": "30/50",
+  "price": 4.2
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira",
+  "pot_size": "C5",
+  "height": "80/100",
+  "price": 8.5
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira 'Nanum'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira 'Nanum'",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.4
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira 'Nanum'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 5.4
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira 'Nanum'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 9.8
+ },
+ {
+  "genus": "PITTOSPORUM",
+  "description": "Pittosporum tobira 'Nanum'",
+  "pot_size": "C10",
+  "height": "40/50",
+  "price": 16.8
+ },
+ {
+  "genus": "PLUMBAGO",
+  "description": "Plumbago auriculata",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 5
+ },
+ {
+  "genus": "PLUMBAGO",
+  "description": "Plumbago capensis",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "POLYGONIUM",
+  "description": "Polygonium capitatum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "POLYPODIUM",
+  "description": "Polypodium vulgare",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "POLYSTICHUM",
+  "description": "Polystichum aculeatum",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "PONTEDERIA",
+  "description": "Pontederia cordata",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.9
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus alba",
+  "pot_size": "0/1 Rd",
+  "height": "60/100",
+  "price": 1.2
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus alba",
+  "pot_size": "0/1 Rd",
+  "height": "100/150",
+  "price": 1.7
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus alba",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus alba",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.75
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus alba",
+  "pot_size": "C10",
+  "height": "150/175",
+  "price": 17
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus nigra 'Italica'",
+  "pot_size": "0/1 Rd",
+  "height": "60/100",
+  "price": 1.3
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus nigra 'Italica'",
+  "pot_size": "0/1 Rd",
+  "height": "100/125",
+  "price": 2
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus nigra ssp. nigra",
+  "pot_size": "AF300",
+  "height": "30/40",
+  "price": 0.85
+ },
+ {
+  "genus": "POPULUS",
+  "description": "Populus nigra ssp. nigra",
+  "pot_size": "C3",
+  "height": "",
+  "price": 5.4
+ },
+ {
+  "genus": "POTENTILLA",
+  "description": "Potentilla fruticosa (Variedades)",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "POTENTILLA",
+  "description": "Potentilla fruticosa (Variedades)",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "POTENTILLA",
+  "description": "Potentilla palustris",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus amygdalus",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus amygdalus",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.2
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus avium",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.65
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus avium",
+  "pot_size": "1/0 Rd",
+  "height": "40/60",
+  "price": 0.85
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus avium",
+  "pot_size": "1/0 Rd",
+  "height": "60/90",
+  "price": 1.2
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus avium",
+  "pot_size": "1/1 Rd",
+  "height": "90/120",
+  "price": 1.9
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus avium",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus avium",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.75
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus cerasifera",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus c. 'Atropurpurea'",
+  "pot_size": "C7",
+  "height": "80/100",
+  "price": 21
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Otto Luyken'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Novita'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Novita'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Rotundifolia'",
+  "pot_size": "M8",
+  "height": "20/35",
+  "price": 1.3
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Rotundifolia'",
+  "pot_size": "C2,5",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Rotundifolia'",
+  "pot_size": "C5",
+  "height": "60/80",
+  "price": 10.9
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus laurocerassus 'Rotundifolia'",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 15
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus lusitanica",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus lusitanica 'Angustifolia'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus lusitanica 'Angustifolia'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus mahaleb",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.75
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus mahaleb",
+  "pot_size": "1/0 Rd",
+  "height": "50/80",
+  "price": 1.1
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus mahaleb",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus mahaleb",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.3
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus padus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus padus",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.6
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus spinosa",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 0.42
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus spinosa",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.55
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus spinosa",
+  "pot_size": "AF250",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "PRUNUS",
+  "description": "Prunus spinosa",
+  "pot_size": "C2",
+  "height": "60/80",
+  "price": 4.2
+ },
+ {
+  "genus": "PSEUDOTSUGA",
+  "description": "Pseudotsuga menziesii",
+  "pot_size": "2/0 Rd",
+  "height": "15/25",
+  "price": 0.65
+ },
+ {
+  "genus": "PSEUDOTSUGA",
+  "description": "Pseudotsuga menziesii",
+  "pot_size": "AF150",
+  "height": "1 Savia",
+  "price": 0.7
+ },
+ {
+  "genus": "PUNICA",
+  "description": "Punica granatum",
+  "pot_size": "AF300",
+  "height": "20/30",
+  "price": 0.75
+ },
+ {
+  "genus": "PYRACANTHA",
+  "description": "Pyracantha angustifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PYRACANTHA",
+  "description": "Pyracantha coccinea",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "PYRACANTHA",
+  "description": "Pyracantha coccinea 'Red Column'",
+  "pot_size": "C2,5",
+  "height": "20/40",
+  "price": 4.75
+ },
+ {
+  "genus": "PYRACANTHA",
+  "description": "Pyracantha mohave",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "PYRACANTHA",
+  "description": "Pyracantha mohave",
+  "pot_size": "C2,5",
+  "height": "40/60",
+  "price": 4.75
+ },
+ {
+  "genus": "PYRUS",
+  "description": "Pyrus calleryana",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "PYRUS",
+  "description": "Pyrus communis",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 0.65
+ },
+ {
+  "genus": "PYRUS",
+  "description": "Pyrus communis",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.5
+ },
+ {
+  "genus": "PYRUS",
+  "description": "Pyrus communis",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus cerris",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus coccifera",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus coccifera",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus coccifera",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus faginea",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus faginea",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.6
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus faginea",
+  "pot_size": "C10",
+  "height": "100/125",
+  "price": 17.25
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus ilex",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus ilex",
+  "pot_size": "C1,5",
+  "height": "40/60",
+  "price": 3.6
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus ilex",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.9
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus ilex",
+  "pot_size": "C10",
+  "height": "125/150",
+  "price": 21.2
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus palustris",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.65
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus palustris",
+  "pot_size": "2/0 Rd",
+  "height": "40/60",
+  "price": 1.5
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus petraea",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus petraea",
+  "pot_size": "2/0 Rd",
+  "height": "30/50",
+  "price": 1.7
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus petraea",
+  "pot_size": "1/2 Rd",
+  "height": "90/120",
+  "price": 2.85
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus pubescens",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus pubescens",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.6
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus pubescens",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 16.2
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus pyrenaica",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.52
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.85
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "2/0 Rd",
+  "height": "50/80",
+  "price": 1.6
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "1/2 Rd",
+  "height": "90/120",
+  "price": 2.45
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 4.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus robur",
+  "pot_size": "C10",
+  "height": "175/200",
+  "price": 23
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus rubra",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus rubra",
+  "pot_size": "2/0 Rd",
+  "height": "40/60",
+  "price": 1.6
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus rubra",
+  "pot_size": "2/0 Rd",
+  "height": "60/90",
+  "price": 2.1
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus rubra",
+  "pot_size": "C10",
+  "height": "175/200",
+  "price": 24
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus suber",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus suber",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.6
+ },
+ {
+  "genus": "QUERCUS",
+  "description": "Quercus suber",
+  "pot_size": "C10",
+  "height": "150/175",
+  "price": 21.2
+ },
+ {
+  "genus": "RETAMA",
+  "description": "Retama monosperma",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "RETAMA",
+  "description": "Retama monosperma",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 3.8
+ },
+ {
+  "genus": "RETAMA",
+  "description": "Retama sphaerocarpa",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "RETAMA",
+  "description": "Retama sphaerocarpa",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 3.8
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus alaternus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus alaternus",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.7
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus alaternus",
+  "pot_size": "C7",
+  "height": "40/60",
+  "price": 14
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus alaternus",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 16
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus cathartica",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus cathartica",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus frangula",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus frangula",
+  "pot_size": "AF300",
+  "height": "20/30",
+  "price": 0.75
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus lycioides",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus lycioides",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "RHAMNUS",
+  "description": "Rhamnus lycioides",
+  "pot_size": "C10",
+  "height": "40/60",
+  "price": 12.3
+ },
+ {
+  "genus": "RHAPHIOLEPIS",
+  "description": "Rhaphiolepis x delacourii 'Springtime'",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 3.25
+ },
+ {
+  "genus": "RIBES",
+  "description": "Ribes alpinum",
+  "pot_size": "0/1 Rd",
+  "height": "30/60",
+  "price": 1.8
+ },
+ {
+  "genus": "RIBES",
+  "description": "Ribes crispa (Variedades)",
+  "pot_size": "M8",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "RIBES",
+  "description": "Ribes nigrum",
+  "pot_size": "0/1 Rd",
+  "height": "30/50",
+  "price": 2.25
+ },
+ {
+  "genus": "RIBES",
+  "description": "Ribes sanguineum",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 2
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'Rote The Fairy'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'Rote The Fairy'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'The Fairy'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'The Fairy'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'The Fairy'",
+  "pot_size": "C3",
+  "height": "40/50",
+  "price": 4.5
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'White Fairy'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'White Fairy'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa 'White Fairy'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.5
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa canina",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa canina",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.2
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa canina",
+  "pot_size": "AF200",
+  "height": "20/40",
+  "price": 0.75
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa canina",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.2
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa multiflora",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 0.45
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa multiflora",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.2
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa rubiginosa",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.2
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa rugosa",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa rugosa",
+  "pot_size": "1/1 Rd",
+  "height": "30/50",
+  "price": 1.1
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa rugosa",
+  "pot_size": "C3",
+  "height": "20/40",
+  "price": 4.5
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa sempervirens",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "ROSA",
+  "description": "Rosa sempervirens",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 8.6
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 2.1
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis",
+  "pot_size": "C1,5",
+  "height": "20/30",
+  "price": 2.3
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 3.6
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis 'Corsican Blue'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis 'Prostratus'",
+  "pot_size": "M11",
+  "height": "10/15",
+  "price": 0.95
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis 'Prostratus'",
+  "pot_size": "C1",
+  "height": "10/20",
+  "price": 2.1
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis 'Prostratus'",
+  "pot_size": "C1,5",
+  "height": "15/25",
+  "price": 2.2
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis 'Prostratus'",
+  "pot_size": "C2",
+  "height": "15/25",
+  "price": 3.25
+ },
+ {
+  "genus": "ROSMARINUS",
+  "description": "Rosmarinus officinalis 'Prostratus'",
+  "pot_size": "C3",
+  "height": "20/25",
+  "price": 3.6
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus 'Betty Ashburner'",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.4
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus 'Betty Ashburner'",
+  "pot_size": "C1,3",
+  "height": "40/60",
+  "price": 2.75
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus fruticosus",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 2
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus fruticosus 'Thornfree'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus fruticosus 'Thornless Evergreen'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.1
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus idaeus",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 2
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus tricolor",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.4
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus tricolor",
+  "pot_size": "C1,3",
+  "height": "40/60",
+  "price": 2.75
+ },
+ {
+  "genus": "RUBUS",
+  "description": "Rubus ulmifolius",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "RUSCUS",
+  "description": "Ruscus aculeatus",
+  "pot_size": "C1,5",
+  "height": "15/20",
+  "price": 3.5
+ },
+ {
+  "genus": "RUSCUS",
+  "description": "Ruscus aculeatus",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 7.7
+ },
+ {
+  "genus": "RUSSELIA",
+  "description": "Russelia equisetiformis",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "RUTA",
+  "description": "Ruta graveolens",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "RUTA",
+  "description": "Ruta graveolens",
+  "pot_size": "M11",
+  "height": "15/30",
+  "price": 1.2
+ },
+ {
+  "genus": "SACCHARUM",
+  "description": "Saccharum ravennae",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "SAGGITARIA",
+  "description": "Saggitaria latifolia",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.3
+ },
+ {
+  "genus": "SAGGITARIA",
+  "description": "Saggitaria sagittifolia",
+  "pot_size": "M9",
+  "height": "",
+  "price": 3.3
+ },
+ {
+  "genus": "SAGINA",
+  "description": "Sagina subulata",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix alba",
+  "pot_size": "0/1 Rd",
+  "height": "60/90",
+  "price": 0.95
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix alba",
+  "pot_size": "0/1 Rd",
+  "height": "90/120",
+  "price": 1.3
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix alba",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix alba",
+  "pot_size": "C3",
+  "height": "60/100",
+  "price": 4.7
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix alba",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 17.5
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix caprea",
+  "pot_size": "0/1 Rd",
+  "height": "60/90",
+  "price": 1.5
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix caprea",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix caprea",
+  "pot_size": "C2",
+  "height": "60/80",
+  "price": 4.5
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix cinerea",
+  "pot_size": "0/1 Rd",
+  "height": "60/90",
+  "price": 0.95
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix cinerea",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix cinerea",
+  "pot_size": "C2",
+  "height": "70/100",
+  "price": 4.25
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix fragilis",
+  "pot_size": "0/1 Rd",
+  "height": "60/90",
+  "price": 0.95
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix fragilis",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix fragilis",
+  "pot_size": "C2",
+  "height": "80/100",
+  "price": 4.25
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix purpurea",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 0.95
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix purpurea",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix purpurea",
+  "pot_size": "C2",
+  "height": "60/90",
+  "price": 4.25
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix purpurea 'Nana'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix purpurea 'Nana'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix purpurea 'Nana'",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.25
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix rosmarinifolia",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 1.1
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix rosmarinifolia",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix rosmarinifolia",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.9
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix rosmarinifolia",
+  "pot_size": "C3",
+  "height": "60/100",
+  "price": 4.7
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix salviifolia",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SALIX",
+  "description": "Salix viminalis",
+  "pot_size": "0/1 Rd",
+  "height": "60/90",
+  "price": 0.95
+ },
+ {
+  "genus": "SALSOLA",
+  "description": "Salsola vermiculata",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia chamaedryoides",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia farinacea",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia farinacea",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.1
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia greggyy (Variedades)",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.1
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia x jamensis 'James Compton'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia microphylla",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia microphylla",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.2
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia nemorosa",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia nemorosa",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.1
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia officinalis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia officinalis",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia officinalis",
+  "pot_size": "C1",
+  "height": "15/20",
+  "price": 2.1
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia officinalis",
+  "pot_size": "C2",
+  "height": "20/25",
+  "price": 3.5
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia pratensis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia 'Royal Bumble'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.9
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia 'Royal Bumble'",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.7
+ },
+ {
+  "genus": "SALVIA",
+  "description": "Salvia splendens",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "SAMBUCUS",
+  "description": "Sambucus nigra",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "SAMBUCUS",
+  "description": "Sambucus nigra",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.8
+ },
+ {
+  "genus": "SAMBUCUS",
+  "description": "Sambucus nigra",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SAMBUCUS",
+  "description": "Sambucus nigra",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "SAMBUCUS",
+  "description": "Sambucus racemosa",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.65
+ },
+ {
+  "genus": "SAMBUCUS",
+  "description": "Sambucus racemosa",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.8
+ },
+ {
+  "genus": "SANTOLINA",
+  "description": "Santolina chamaecyparissus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SANTOLINA",
+  "description": "Santolina chamaecyparissus",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "SANTOLINA",
+  "description": "Santolina chamaecyparissus",
+  "pot_size": "C1",
+  "height": "20/30",
+  "price": 2.1
+ },
+ {
+  "genus": "SANTOLINA",
+  "description": "Santolina chamaecyparissus",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.8
+ },
+ {
+  "genus": "SAPONARIA",
+  "description": "Saponaria ocymoides",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SATUREJA",
+  "description": "Satureja montana",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "SCABIOSA",
+  "description": "Scabiosa caucasica",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.8
+ },
+ {
+  "genus": "SCHINUS",
+  "description": "Schinus terebinthifolius",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "SCIRPUS",
+  "description": "Scirpus holoschoenus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SCIRPUS",
+  "description": "Scirpus lacustris",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "SEDUM",
+  "description": "Sedum (Variedades)",
+  "pot_size": "AH",
+  "height": "",
+  "price": 0.65
+ },
+ {
+  "genus": "SEDUM",
+  "description": "Sedum (Variedades)",
+  "pot_size": "AF150",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SEDUM",
+  "description": "Sedum (Variedades)",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "SEMPERVIVUM",
+  "description": "Sempervivm tectorum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SEQUOIA",
+  "description": "Sequoia gigantea",
+  "pot_size": "AF150",
+  "height": "10/20",
+  "price": 2
+ },
+ {
+  "genus": "SEQUOIA",
+  "description": "Sequoia sempervirens",
+  "pot_size": "AF150",
+  "height": "",
+  "price": 2
+ },
+ {
+  "genus": "SESLERIA",
+  "description": "Sesleria autumnalis",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "SMILAX",
+  "description": "Smilax aspera",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "SOLEIROLIA",
+  "description": "Soleirolia soleirolii",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "SOLEIROLIA",
+  "description": "Soleirolia soleirolii",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.5
+ },
+ {
+  "genus": "SOPHORA",
+  "description": "Sophora japonica",
+  "pot_size": "1/0 Rd",
+  "height": "20/40",
+  "price": 1.2
+ },
+ {
+  "genus": "SOPHORA",
+  "description": "Sophora japonica",
+  "pot_size": "1/0 Rd",
+  "height": "40/60",
+  "price": 1.4
+ },
+ {
+  "genus": "SOPHORA",
+  "description": "Sophora japonica",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "SOPHORA",
+  "description": "Sophora japonica",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aria",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aria",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 2
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aria",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aria",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 5.5
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aucuparia",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.45
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aucuparia",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.65
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aucuparia",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.6
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aucuparia",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus aucuparia",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 5.5
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus domestica",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 1.35
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus intermedia",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.3
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus intermedia",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.9
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus torminalis",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "SORBUS",
+  "description": "Sorbus torminalis",
+  "pot_size": "C3",
+  "height": "60/80",
+  "price": 5.5
+ },
+ {
+  "genus": "SPARTIUM",
+  "description": "Spartium junceum",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "SPARTIUM",
+  "description": "Spartium junceum",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 3.7
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea arguta",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea bumalda 'Anthony Waterer'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea bumalda 'Anthony Waterer'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea japonica 'Goldflame'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea japonica 'Goldflame'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea japonica 'Little Princess'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea japonica 'Little Princess'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea nipponica 'Snowmound'",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea vanhouttei",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "SPIRAEA",
+  "description": "Spiraea vanhouttei",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.6
+ },
+ {
+  "genus": "STACHYS",
+  "description": "Stachys byzantina",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "STACHYS",
+  "description": "Stachys byzantina",
+  "pot_size": "C2",
+  "height": "10/20",
+  "price": 4.2
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa gigantea",
+  "pot_size": "AF300",
+  "height": "20/30",
+  "price": 1.1
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa gigantea",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 4.4
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenacissima",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima",
+  "pot_size": "AF400",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.05
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.2
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima 'Pony tails'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima 'Pony tails'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 3
+ },
+ {
+  "genus": "STIPA",
+  "description": "Stipa tenuissima 'Pony tails'",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.75
+ },
+ {
+  "genus": "SUAEDA",
+  "description": "Suaeda vera",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "SYMPHORICARPOS",
+  "description": "Symphoricarpos x chenaultii 'Hancock'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "SYMPHORICARPOS",
+  "description": "Symphoricarpos x chenaultii 'Hancock'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "SYMPHORICARPOS",
+  "description": "Symphoricarpos x chenaultii 'Hancock'",
+  "pot_size": "C1,3",
+  "height": "",
+  "price": 2.25
+ },
+ {
+  "genus": "SYRINGA",
+  "description": "Syringa vulgaris",
+  "pot_size": "1/0 Rd",
+  "height": "10/15",
+  "price": 0.65
+ },
+ {
+  "genus": "SYRINGA",
+  "description": "Syringa vulgaris",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 9.5
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix africana",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix africana",
+  "pot_size": "C2",
+  "height": "60/80",
+  "price": 4.2
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix africana",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 14
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix gallica",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix gallica",
+  "pot_size": "C2",
+  "height": "60/80",
+  "price": 4.2
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix gallica",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 14
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix pentandra",
+  "pot_size": "0/1 Rd",
+  "height": "40/60",
+  "price": 1.7
+ },
+ {
+  "genus": "TAMARIX",
+  "description": "Tamarix pentandra",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.2
+ },
+ {
+  "genus": "TAXODIUM",
+  "description": "Taxodium distichum",
+  "pot_size": "1/0 Rd",
+  "height": "20/30",
+  "price": 1.5
+ },
+ {
+  "genus": "TAXODIUM",
+  "description": "Taxodium distichum",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 2.25
+ },
+ {
+  "genus": "TAXODIUM",
+  "description": "Taxodium distichum",
+  "pot_size": "AF400",
+  "height": "20/40",
+  "price": 2.3
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata",
+  "pot_size": "2/0 Rd",
+  "height": "",
+  "price": 0.65
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata",
+  "pot_size": "2/1 Rd",
+  "height": "15/25",
+  "price": 1.9
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.7
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 5.4
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata",
+  "pot_size": "C10",
+  "height": "40/60",
+  "price": 19
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata 'Fastigiata Robusta'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus baccata 'Fastigiata Robusta'",
+  "pot_size": "C5",
+  "height": "30/40",
+  "price": 11.8
+ },
+ {
+  "genus": "TAXUS",
+  "description": "Taxus media 'Hillii'",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 11.8
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium chamaedrys",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium chamaedrys",
+  "pot_size": "C2,5",
+  "height": "20/25",
+  "price": 4.9
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium fruticans",
+  "pot_size": "M8",
+  "height": "15/20",
+  "price": 1.3
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium fruticans",
+  "pot_size": "C1,5",
+  "height": "20/30",
+  "price": 2.4
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium fruticans",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.3
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium fruticans",
+  "pot_size": "C3",
+  "height": "25/30",
+  "price": 4.2
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium fruticans",
+  "pot_size": "C7",
+  "height": "30/40",
+  "price": 14.5
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium marum",
+  "pot_size": "C3",
+  "height": "",
+  "price": 4.4
+ },
+ {
+  "genus": "TEUCRIUM",
+  "description": "Teucrium marum subspinosum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 4.2
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja occidentalis",
+  "pot_size": "2/1 Rd",
+  "height": "20/40",
+  "price": 0.85
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "pot_size": "M9",
+  "height": "20/30",
+  "price": 1.4
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "pot_size": "C3",
+  "height": "40/50",
+  "price": 4.9
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "pot_size": "C5",
+  "height": "50/60",
+  "price": 8.5
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja occidentalis 'Smaragd' =T. occ. 'Esmeralda'",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 16
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja orientalis 'Aurea Nana'",
+  "pot_size": "M9",
+  "height": "15/20",
+  "price": 1.6
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja orientalis 'Aurea Nana'",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 4.9
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja orientalis 'Aurea Nana'",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 9.75
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja orientalis 'Aurea Nana'",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 17
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja orientalis 'Pyramidalis Aurea'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "THUJA",
+  "description": "Thuja plicata 'Atrovirens'",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.5
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus ciliatus",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.6
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus citriodorus",
+  "pot_size": "M11",
+  "height": "10/20",
+  "price": 0.95
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus citriodorus",
+  "pot_size": "C2",
+  "height": "20/25",
+  "price": 2.8
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus mastichina",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus serpyllum",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus serpyllum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus serpyllum",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.3
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus vulgaris",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.7
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus vulgaris",
+  "pot_size": "M11",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus vulgaris",
+  "pot_size": "C1,5",
+  "height": "10/20",
+  "price": 2.3
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus vulgaris",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 2.9
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus vulgaris 'Compacta'",
+  "pot_size": "C1",
+  "height": "",
+  "price": 1.8
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus vulgaris 'Compacta'",
+  "pot_size": "C2",
+  "height": "20/25",
+  "price": 3
+ },
+ {
+  "genus": "THYMUS",
+  "description": "Thymus zygis",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia cordata",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.75
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia cordata",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 0.95
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia cordata",
+  "pot_size": "1/1 Rd",
+  "height": "60/90",
+  "price": 1.8
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia cordata",
+  "pot_size": "AF400",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia cordata",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.2
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia platyphyllos",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.3
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia platyphyllos",
+  "pot_size": "1/0 Rd",
+  "height": "30/50",
+  "price": 1.9
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia platyphyllos",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 2.55
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia platyphyllos",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia platyphyllos",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.6
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia tomentosa",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.3
+ },
+ {
+  "genus": "TILIA",
+  "description": "Tilia tomentosa",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 2.65
+ },
+ {
+  "genus": "TRACHELOSPERMUM",
+  "description": "Trachelospermum asiaticum",
+  "pot_size": "M11",
+  "height": "",
+  "price": 3.25
+ },
+ {
+  "genus": "TRACHELOSPERMUM",
+  "description": "Trachelospermum jasminoides",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "TRACHELOSPERMUM",
+  "description": "Trachelospermum jasminoides",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 3
+ },
+ {
+  "genus": "TRACHELOSPERMUM",
+  "description": "Trachelospermum jasminoides",
+  "pot_size": "C3",
+  "height": "100/150",
+  "price": 6.5
+ },
+ {
+  "genus": "TRACHELOSPERMUM",
+  "description": "Trachelospermum jasminoides",
+  "pot_size": "C5",
+  "height": "150/170",
+  "price": 14.1
+ },
+ {
+  "genus": "TRACHELOSPERMUM",
+  "description": "Trachelospermum jasminoides",
+  "pot_size": "C10",
+  "height": "200/225",
+  "price": 28.1
+ },
+ {
+  "genus": "TRACHYCARPUS",
+  "description": "Trachycarpus fortunei",
+  "pot_size": "M7",
+  "height": "10/20",
+  "price": 1.3
+ },
+ {
+  "genus": "TRACHYCARPUS",
+  "description": "Trachycarpus fortunei",
+  "pot_size": "C1,5",
+  "height": "20/30",
+  "price": 3.8
+ },
+ {
+  "genus": "TULBAGHIA",
+  "description": "Tulbaghia violacea",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "TULBAGHIA",
+  "description": "Tulbaghia violacea",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "TULBAGHIA",
+  "description": "Tulbaghia violacea",
+  "pot_size": "C2",
+  "height": "20/30",
+  "price": 3.95
+ },
+ {
+  "genus": "TYPHA",
+  "description": "Typha angustifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "TYPHA",
+  "description": "Typha latifolia",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "TYPHA",
+  "description": "Typha latifolia",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.7
+ },
+ {
+  "genus": "ULEX",
+  "description": "Ulex europaeus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "ULEX",
+  "description": "Ulex parviflorus",
+  "pot_size": "AF250",
+  "height": "15/25",
+  "price": 0.85
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus campestris",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus campestris",
+  "pot_size": "1/1 Rd",
+  "height": "50/80",
+  "price": 1.7
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus campestris",
+  "pot_size": "AF250",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus campestris",
+  "pot_size": "C3",
+  "height": "80/100",
+  "price": 4.4
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus glabra",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.3
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus pumila",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "ULMUS",
+  "description": "Ulmus pumila",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.85
+ },
+ {
+  "genus": "VACCINIUM",
+  "description": "Vaccinium corymbosum 'Bluecrop'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "VERBENA",
+  "description": "Verbena bonariensis",
+  "pot_size": "AF400",
+  "height": "",
+  "price": 0.9
+ },
+ {
+  "genus": "VERBENA",
+  "description": "Verbena bonariensis",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.6
+ },
+ {
+  "genus": "VERBENA",
+  "description": "Verbena bonariensis",
+  "pot_size": "C1",
+  "height": "",
+  "price": 2.2
+ },
+ {
+  "genus": "VERBENA",
+  "description": "Verbena bonariensis",
+  "pot_size": "C2",
+  "height": "30/40",
+  "price": 3.35
+ },
+ {
+  "genus": "VERBENA",
+  "description": "Verbena tenuisecta",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "VERBENA",
+  "description": "Verbena tenuisecta",
+  "pot_size": "C2",
+  "height": "",
+  "price": 2.75
+ },
+ {
+  "genus": "VERONICA",
+  "description": "Veronica officinalis",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "VERONICA",
+  "description": "Veronica officinalis",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.1
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum lantana",
+  "pot_size": "1/0 Rd",
+  "height": "10/20",
+  "price": 0.55
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum lantana",
+  "pot_size": "1/1 Rd",
+  "height": "30/50",
+  "price": 1.4
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum lantana",
+  "pot_size": "AF200",
+  "height": "10/20",
+  "price": 0.85
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum lantana",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.3
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum odoratissimum",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum odoratissimum",
+  "pot_size": "C3",
+  "height": "30/50",
+  "price": 4.9
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum odoratissimum",
+  "pot_size": "C5",
+  "height": "40/60",
+  "price": 9.7
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum odoratissimum",
+  "pot_size": "C10",
+  "height": "70/100",
+  "price": 17
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum opulus",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 0.55
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum opulus",
+  "pot_size": "1/1 Rd",
+  "height": "40/60",
+  "price": 1.4
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum opulus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum opulus",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.6
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus",
+  "pot_size": "AF200",
+  "height": "",
+  "price": 0.95
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus",
+  "pot_size": "M8",
+  "height": "15/30",
+  "price": 1.3
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.2
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus",
+  "pot_size": "C10",
+  "height": "60/80",
+  "price": 17
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus 'Eve Price'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus 'Eve Price'",
+  "pot_size": "C3",
+  "height": "30/40",
+  "price": 4.9
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus 'Eve Price'",
+  "pot_size": "C5",
+  "height": "40/50",
+  "price": 9.2
+ },
+ {
+  "genus": "VIBURNUM",
+  "description": "Viburnum tinus 'Eve Price'",
+  "pot_size": "C10",
+  "height": "50/60",
+  "price": 15.9
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca acutiloba",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.4
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca acutiloba",
+  "pot_size": "C1,3",
+  "height": "30/40",
+  "price": 2.8
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca major",
+  "pot_size": "M8",
+  "height": "15/25",
+  "price": 1.3
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca major",
+  "pot_size": "C1,3",
+  "height": "20/30",
+  "price": 2.8
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca major 'Variegata'",
+  "pot_size": "M8",
+  "height": "10/20",
+  "price": 1.3
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca minor",
+  "pot_size": "M8",
+  "height": "20/30",
+  "price": 1.3
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca minor 'Alba'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca minor 'Atropurpurea'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.4
+ },
+ {
+  "genus": "VINCA",
+  "description": "Vinca minor 'Variegata'",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "VIOLA",
+  "description": "Viola odorata",
+  "pot_size": "C2",
+  "height": "",
+  "price": 3.7
+ },
+ {
+  "genus": "VITEX",
+  "description": "Vitex agnus-castus",
+  "pot_size": "AF300",
+  "height": "",
+  "price": 0.75
+ },
+ {
+  "genus": "VITEX",
+  "description": "Vitex agnus-castus",
+  "pot_size": "C2",
+  "height": "40/60",
+  "price": 4.5
+ },
+ {
+  "genus": "VITEX",
+  "description": "Vitex agnus-castus",
+  "pot_size": "C10",
+  "height": "80/100",
+  "price": 16.5
+ },
+ {
+  "genus": "WALDSTENIA",
+  "description": "Waldstenia ternata",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "WASHINGTONIA",
+  "description": "Washingtonia filifera",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "WASHINGTONIA",
+  "description": "Washingtonia robusta",
+  "pot_size": "M7",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "WEIGELA",
+  "description": "Weigela 'Bristol Ruby'",
+  "pot_size": "M9",
+  "height": "",
+  "price": 1.5
+ },
+ {
+  "genus": "WEIGELA",
+  "description": "Weigela 'Bristol Ruby'",
+  "pot_size": "C3",
+  "height": "40/60",
+  "price": 4.75
+ },
+ {
+  "genus": "WESTRINGIA",
+  "description": "Westringia fruticosa",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.3
+ },
+ {
+  "genus": "WESTRINGIA",
+  "description": "Westringia fruticosa",
+  "pot_size": "C3",
+  "height": "20/30",
+  "price": 5
+ },
+ {
+  "genus": "WESTRINGIA",
+  "description": "Westringia fruticosa",
+  "pot_size": "C10",
+  "height": "30/40",
+  "price": 16
+ },
+ {
+  "genus": "WESTRINGIA",
+  "description": "Westringia longifolia",
+  "pot_size": "M8",
+  "height": "",
+  "price": 1.2
+ },
+ {
+  "genus": "WISTERIA",
+  "description": "Wisteria floribunda (Var.)",
+  "pot_size": "M8",
+  "height": "",
+  "price": 2.5
+ },
+ {
+  "genus": "ZANTEDESCHIA",
+  "description": "Zantedeschia aethiopica",
+  "pot_size": "M11",
+  "height": "",
+  "price": 5.8
+ },
+ {
+  "genus": "ZELKOVA",
+  "description": "Zelkova serrata",
+  "pot_size": "1/0 Rd",
+  "height": "15/30",
+  "price": 1.5
+ },
+ {
+  "genus": "ZOYSIA",
+  "description": "Zoysia tenuifolia",
+  "pot_size": "M11",
+  "height": "",
+  "price": 1.1
+ }
+]

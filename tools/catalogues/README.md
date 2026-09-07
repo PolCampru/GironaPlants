@@ -51,8 +51,48 @@ lo único que no encuentra son los nombres largos que parten en dos líneas.
 
 ## Publicar en Strapi
 
-`cms/app/scripts/upload-catalogues.js`, ejecutado dentro del contenedor. Ver la
-cabecera de ese fichero.
+Los **PDF y las portadas**: `cms/app/scripts/upload-catalogues.js`, ejecutado
+dentro del contenedor. Ver la cabecera de ese fichero.
+
+Las **filas de la coleccion `plant`** (la tabla de `/products` y las paginas de
+genero y especie) salen del mismo `data/main.json`:
+
+```bash
+node src/plants-for-strapi.mjs data/main.json data/plants.json   # 1.458 filas
+
+scp cms/app/scripts/load-plants.js tools/catalogues/data/plants.json root@46.202.135.74:/tmp/
+ssh root@46.202.135.74 'cp /opt/gironaplants/data/data.db /opt/gironaplants/backups/data.db.pre-plants-$(date +%Y%m%d-%H%M%S)
+  docker cp /tmp/load-plants.js gp-strapi:/srv/app/scripts/load-plants.js
+  docker cp /tmp/plants.json    gp-strapi:/srv/app/plants.json
+  docker exec -e DRY_RUN=1 -w /srv/app gp-strapi node scripts/load-plants.js plants.json   # comprobar el delta
+  docker exec            -w /srv/app gp-strapi node scripts/load-plants.js plants.json'
+```
+
+El cargador borra la coleccion entera y la reescribe: el catalogo se importa en
+bloque, nunca fila a fila. Comprueba al final que la suma de precios publicada
+coincide con la del listado — 5.037,80 € en 2025-2026 — que es la misma que
+`verify.mjs` cuenta sobre el PDF de origen.
+
+Despues hay que **recrear el contenedor del frontend**, no reiniciarlo: la
+cache de datos de Next vive en la capa de escritura y sobrevive a `restart`, asi
+que el sitio seguiria sirviendo los precios viejos y dando 404 en los generos
+nuevos durante una hora.
+
+```bash
+ssh root@46.202.135.74 'cd /opt/gironaplants && docker compose up -d --force-recreate --no-deps frontend'
+```
+
+`plants-for-strapi.mjs` quita las marcas del proveedor de los nombres (`*`,
+`**`, `-` y `X` finales, y la cola `= sinonimo`). El PDF impreso las conserva,
+la base de datos no puede: ese texto es el `<h1>` y la URL de la pagina de
+especie. Mantenerlas dejaria `/acer-pseudoplatanus-x` y
+`/acca-sellowiana-feijoa-sellowiana`, y en el cambio de 2025-2026 costaba 93
+URL de especie mas de las 90 que el propio listado ya se lleva.
+
+> `app/api/seed-plants/route.ts` es el cargador **antiguo**, contra un XLSX que
+> ya no es la fuente. Su `STRAPI_TOKEN` es de solo lectura, asi que hoy falla en
+> el primer DELETE — pero si alguna vez recibe un token de escritura, revertiria
+> el catalogo. Usar este camino, no aquel.
 
 ## Decisiones que conviene recordar
 
