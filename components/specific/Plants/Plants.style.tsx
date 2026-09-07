@@ -62,7 +62,12 @@ export const LabelRow = styled.div`
   gap: 0.625rem;
 `;
 
-/** Which supplier campaign the listed prices come from. */
+/**
+ * Which supplier campaign the listed prices come from.
+ *
+ * greenDeep, not brandGreen: at 11px bold the brand green is 4.35:1 on white,
+ * under the 4.5:1 AA floor for text this size. The darker green is 6.3:1.
+ */
 export const CampaignBadge = styled.span`
   padding: 0.15rem 0.5rem;
   border: 1px solid ${({ theme }) => theme.colors.line};
@@ -71,7 +76,7 @@ export const CampaignBadge = styled.span`
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: ${({ theme }) => theme.colors.brandGreen};
+  color: ${({ theme }) => theme.colors.greenDeep};
   font-variant-numeric: tabular-nums;
 `;
 
