@@ -6,6 +6,7 @@ import { FiSliders, FiX } from "react-icons/fi";
 import useProducts from "@/hooks/useProducts";
 import {
   ActiveDot,
+  CampaignBadge,
   ClearButton,
   CloseButton,
   ContainerFilters,
@@ -21,6 +22,7 @@ import {
   HeadText,
   HorizontalLine,
   Label,
+  LabelRow,
   PageHead,
   PlantsWrapper,
   ResultsBar,
@@ -37,6 +39,7 @@ import Button from "@/components/ui/Button/Button";
 import useUiLabels from "@/hooks/useUiLabels";
 import { OffersDataType } from "@/types/Offers";
 import type { ProductsHeading } from "@/data/pageHeadings";
+import { getCampaignLabel } from "@/data/campaign";
 import { OffersCarousel } from "./ContainerOffers/ContainerOffers";
 
 export default function Plants({
@@ -80,7 +83,12 @@ export default function Plants({
   const pageHead = (
     <PageHead>
       <HeadText>
-        <Label>{heading.label}</Label>
+        {/* The prices below are the supplier's for one season, so the head
+            says which one instead of leaving the list undated. */}
+        <LabelRow>
+          <Label>{heading.label}</Label>
+          <CampaignBadge>{getCampaignLabel(locale)}</CampaignBadge>
+        </LabelRow>
         {/* The count is the live total from Strapi, so the page states
             exactly how much is on offer instead of a bare "Productos". */}
         <h1>

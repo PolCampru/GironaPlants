@@ -162,6 +162,18 @@ export const TableNote = styled.p`
   color: ${({ theme }) => theme.colors.muted};
 `;
 
+/** The campaign the prices belong to, stated ahead of the price note. */
+export const NoteTag = styled.strong`
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.dark};
+
+  &::after {
+    content: " · ";
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.mediumGray};
+  }
+`;
+
 /** Species links on a genus page — the main crawl path down the catalogue. */
 export const CardGrid = styled.div`
   display: grid;

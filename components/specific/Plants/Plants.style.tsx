@@ -55,6 +55,26 @@ export const Label = styled.span`
   color: ${({ theme }) => theme.colors.muted};
 `;
 
+export const LabelRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.625rem;
+`;
+
+/** Which supplier campaign the listed prices come from. */
+export const CampaignBadge = styled.span`
+  padding: 0.15rem 0.5rem;
+  border: 1px solid ${({ theme }) => theme.colors.line};
+  border-radius: ${({ theme }) => theme.radii.pill};
+  background: ${({ theme }) => theme.colors.white};
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: ${({ theme }) => theme.colors.brandGreen};
+  font-variant-numeric: tabular-nums;
+`;
+
 export const HeadAside = styled.div`
   display: flex;
   flex-direction: column;

@@ -5,8 +5,9 @@ import Link from "next/link";
 import { formatPrice } from "@/lib/format";
 import type { CatalogueRow } from "@/lib/catalogue";
 import type { CatalogueCopy } from "@/data/catalogueContent";
+import { getCampaignLabel } from "@/data/campaign";
 import AddRowToQuote from "./AddRowToQuote";
-import { Table, TableNote, TableScroll } from "./Catalogue.style";
+import { NoteTag, Table, TableNote, TableScroll } from "./Catalogue.style";
 
 type ReferenceTableProps = {
   rows: CatalogueRow[];
@@ -77,7 +78,11 @@ const ReferenceTable = ({
         </tbody>
       </Table>
     </TableScroll>
-    <TableNote>{copy.note}</TableNote>
+    {/* Prices hold for one supplier campaign, so the table says which. */}
+    <TableNote>
+      <NoteTag>{getCampaignLabel(locale)}</NoteTag>
+      {copy.note}
+    </TableNote>
   </>
 );
 
