@@ -18,22 +18,22 @@ const offers: Record<string, PageHeading> = {
   es: {
     label: "Ofertas",
     title: "Planta con precio especial",
-    lead: "Partidas concretas del vivero a precio reducido mientras dure el stock. Se actualizan cada semana.",
+    lead: "Partidas concretas a precio reducido mientras dure el stock. Se actualizan cada semana.",
   },
   ca: {
     label: "Ofertes",
     title: "Planta amb preu especial",
-    lead: "Partides concretes del viver a preu reduït mentre duri l'estoc. S'actualitzen cada setmana.",
+    lead: "Partides concretes a preu reduït mentre duri l'estoc. S'actualitzen cada setmana.",
   },
   en: {
     label: "Offers",
     title: "Plants at a special price",
-    lead: "Specific batches from the nursery at a reduced price while stock lasts. Updated every week.",
+    lead: "Specific batches at a reduced price while stock lasts. Updated every week.",
   },
   fr: {
     label: "Offres",
     title: "Plantes à prix spécial",
-    lead: "Des lots précis de la pépinière à prix réduit jusqu'à épuisement du stock. Mis à jour chaque semaine.",
+    lead: "Des lots précis à prix réduit jusqu'à épuisement du stock. Mis à jour chaque semaine.",
   },
 };
 

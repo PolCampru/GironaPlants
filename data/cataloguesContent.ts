@@ -26,7 +26,7 @@ export type CataloguesFallbackContent = {
 const content: Record<string, CataloguesFallbackContent> = {
   es: {
     label: "Catálogo general",
-    main_title: "Todo lo que cultivamos y todo lo que localizamos",
+    main_title: "Todo lo que te podemos servir, en un solo documento",
     main_subtitle:
       "La gama completa con género, formato, altura y precio de referencia. El documento que tu equipo de compras necesita para cerrar un proyecto entero de una sola vez.",
     main_button: "Descargar catálogo general",
@@ -45,7 +45,7 @@ const content: Record<string, CataloguesFallbackContent> = {
   },
   ca: {
     label: "Catàleg general",
-    main_title: "Tot el que cultivem i tot el que localitzem",
+    main_title: "Tot el que et podem servir, en un sol document",
     main_subtitle:
       "La gamma completa amb gènere, format, alçada i preu de referència. El document que el teu equip de compres necessita per tancar un projecte sencer d'un sol cop.",
     main_button: "Descarregar catàleg general",
@@ -64,7 +64,7 @@ const content: Record<string, CataloguesFallbackContent> = {
   },
   en: {
     label: "General catalogue",
-    main_title: "Everything we grow and everything we source",
+    main_title: "Everything we can supply, in a single document",
     main_subtitle:
       "The full range with genus, format, height and reference price. The document your purchasing team needs to close out a whole project in one go.",
     main_button: "Download the general catalogue",
@@ -83,7 +83,7 @@ const content: Record<string, CataloguesFallbackContent> = {
   },
   fr: {
     label: "Catalogue général",
-    main_title: "Tout ce que nous cultivons et tout ce que nous trouvons",
+    main_title: "Tout ce que nous pouvons livrer, en un seul document",
     main_subtitle:
       "La gamme complète avec genre, format, hauteur et prix de référence. Le document dont votre service achats a besoin pour boucler un projet entier en une fois.",
     main_button: "Télécharger le catalogue général",

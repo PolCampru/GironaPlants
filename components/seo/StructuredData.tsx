@@ -18,31 +18,31 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
     switch (locale) {
       case 'es':
         return {
-          name: 'GironaPlants - Vivero de plantas mediterráneas',
+          name: 'GironaPlants - Distribuidor de planta mediterránea',
           description:
-            'Empresa familiar con más de 30 años de experiencia. Cultivamos planta mediterránea en la provincia de Girona y conseguimos las plantas que cada proyecto necesita a través de una red de viveros de confianza en toda Europa.',
-          slogan: 'Si no la cultivamos, la encontramos.'
+            'Empresa familiar con más de 30 años comercializando planta. No tenemos producción propia: seleccionamos cada especie en el vivero de España o del resto de Europa que mejor la cultiva y servimos pedidos completos a profesionales.',
+          slogan: 'No la cultivamos: la encontramos.'
         }
       case 'en':
         return {
-          name: 'GironaPlants - Mediterranean Plants Nursery',
+          name: 'GironaPlants - Mediterranean plant supplier',
           description:
-            'Family-run company with more than 30 years of experience. We grow Mediterranean plants in the province of Girona, Catalonia, and source the plants every project needs through a trusted grower network across Europe.',
-          slogan: "If we don't grow it, we'll find it."
+            'Family-run company with more than 30 years in the plant trade. We have no production of our own: we select each species from the grower in Spain or the rest of Europe who raises it best, and supply complete orders to the trade.',
+          slogan: "We don't grow it. We find it."
         }
       case 'fr':
         return {
-          name: 'GironaPlants - Pépinière de plantes méditerranéennes',
+          name: 'GironaPlants - Fournisseur de plantes méditerranéennes',
           description:
-            'Entreprise familiale forte de plus de 30 ans d\'expérience. Nous cultivons des plantes méditerranéennes dans la province de Gérone, en Catalogne, et trouvons les plantes dont chaque projet a besoin grâce à un réseau de pépinières de confiance dans toute l\'Europe.',
-          slogan: 'Si nous ne la cultivons pas, nous la trouvons.'
+            'Entreprise familiale forte de plus de 30 ans dans le négoce de plantes. Sans production propre : nous sélectionnons chaque espèce chez le pépiniériste d\'Espagne ou du reste de l\'Europe qui la réussit le mieux et livrons des commandes complètes aux professionnels.',
+          slogan: 'Nous ne la cultivons pas : nous la trouvons.'
         }
       default: // Catalan
         return {
-          name: 'GironaPlants - Viver de plantes mediterrànies',
+          name: 'GironaPlants - Distribuïdor de planta mediterrània',
           description:
-            "Empresa familiar amb més de 30 anys d'experiència. Cultivem planta mediterrània a la província de Girona i aconseguim les plantes que cada projecte necessita a través d'una xarxa de vivers de confiança arreu d'Europa.",
-          slogan: 'Si no la cultivem, la trobem.'
+            "Empresa familiar amb més de 30 anys comercialitzant planta. No tenim producció pròpia: seleccionem cada espècie al viver d'Espanya o de la resta d'Europa que millor la cultiva i servim comandes completes a professionals.",
+          slogan: 'No la cultivem: la trobem.'
         }
     }
   }
@@ -51,7 +51,7 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
 
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'GardenStore'],
+    '@type': ['LocalBusiness', 'WholesaleStore', 'GardenStore'],
     '@id': 'https://gironaplants.com/#business',
     name: data.name,
     alternateName: 'Girona Plants',
@@ -62,8 +62,8 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
     telephone: '+34 639 811 560',
     email: 'gironaplants@gironaplants.com',
     foundingDate: '1992',
-    // The nursery, not the province capital. These used to be 41.9794, 2.8214
-    // — Girona city centre, some 28 km from where the plants actually are —
+    // The yard in Breda, not the province capital. These used to be 41.9794,
+    // 2.8214 — Girona city centre, some 28 km from where the business is —
     // which is the one fact about a local business Google most needs right.
     // Matches the Google Business Profile, deliberately: a listing and a
     // site's own markup disagreeing about the location is a conflict Google
@@ -81,7 +81,7 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
       latitude: 41.7591377,
       longitude: 2.5510631
     },
-    // Mon-Fri 8:00-18:00, confirmed by the nursery. This used to open at 09:00
+    // Mon-Fri 8:00-18:00, confirmed by the company. This used to open at 09:00
     // and claim a Saturday morning, neither of which matched the hours the
     // contact page has shown in all four languages (data/contactContent.ts) —
     // so Google was being handed opening times, and a day of the week, that
@@ -100,7 +100,7 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
       'https://www.linkedin.com/in/gironaplants/',
       // The Google Business Profile, so the link from site to listing is
       // stated rather than left for Google to infer from matching address and
-      // phone. By place ID, not the maps.app.goo.gl shortlink the nursery
+      // phone. By place ID, not the maps.app.goo.gl shortlink the company
       // shares: shortlinks are opaque and can rot. Same place either way —
       // CID 3744809856802255064, the id Google itself used to claim it.
       'https://www.google.com/maps/place/?q=place_id:ChIJQTfeMwAvuxIR2HAUUrk8-DM'

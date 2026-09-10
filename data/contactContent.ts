@@ -19,8 +19,8 @@ const content: Record<string, ContactAsideType> = {
       text: "Lun-Vie · 8:00-18:00",
     },
     location: {
-      title: "Vivero",
-      text: "Girona, Catalunya",
+      title: "Dónde estamos",
+      text: "Breda, Girona · Catalunya",
     },
     languagesTitle: "Te atendemos en",
     languages: [
@@ -50,8 +50,8 @@ const content: Record<string, ContactAsideType> = {
       text: "Dl-Dv · 8:00-18:00",
     },
     location: {
-      title: "Viver",
-      text: "Girona, Catalunya",
+      title: "On som",
+      text: "Breda, Girona · Catalunya",
     },
     languagesTitle: "T'atenem en",
     languages: [
@@ -81,8 +81,8 @@ const content: Record<string, ContactAsideType> = {
       text: "Mon-Fri · 8:00-18:00",
     },
     location: {
-      title: "Nursery",
-      text: "Girona, Catalonia",
+      title: "Where we are",
+      text: "Breda, Girona · Catalonia",
     },
     languagesTitle: "We answer in",
     languages: [
@@ -112,8 +112,8 @@ const content: Record<string, ContactAsideType> = {
       text: "Lun-Ven · 8h00-18h00",
     },
     location: {
-      title: "Pépinière",
-      text: "Gérone, Catalogne",
+      title: "Où nous sommes",
+      text: "Breda, Gérone · Catalogne",
     },
     languagesTitle: "Nous répondons en",
     languages: [

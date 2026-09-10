@@ -46,57 +46,58 @@ type PageSeo = {
 const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
   es: {
     home: {
-      title: "GironaPlants · Plantas para tu proyecto en toda Europa",
+      title: "GironaPlants · Plantas al por mayor en toda Europa",
       description:
-        "Más de 30 años consiguiendo plantas para profesionales. Cultivo propio en Girona y red de viveros en toda Europa. Presupuesto en 24-48 h.",
+        "Más de 30 años comercializando planta para profesionales. No la cultivamos: la seleccionamos en viveros de toda Europa y te servimos la lista completa. Presupuesto en 24-48 h.",
       keywords: [
+        "distribuidor de plantas al por mayor",
         "proveedor de plantas Europa",
-        "suministro de plantas al por mayor",
-        "plantas mediterráneas",
-        "proveedor de plantas para paisajistas",
-        "vivero Girona",
-        "buscamos cualquier especie de planta",
+        "comercializadora de planta",
+        "plantas al por mayor para paisajistas",
+        "suministro de planta ornamental",
+        "comprar plantas al por mayor Girona",
       ],
     },
     products: {
-      title: "Catálogo de plantas mediterráneas",
+      title: "Catálogo de plantas al por mayor",
       description:
-        "Árboles, arbustos, coníferas, gramíneas, cubresuelos y planta forestal cultivados en Girona. Y si no la cultivamos, la localizamos en Europa: pide tu oferta al por mayor sin compromiso.",
+        "Árboles, arbustos, coníferas, gramíneas, cubresuelos y planta forestal de viveros seleccionados de España y del resto de Europa. Pide tu oferta al por mayor sin compromiso.",
       keywords: [
-        "comprar plantas Girona",
+        "comprar plantas al por mayor",
         "plantas mediterráneas al por mayor",
-        "árboles y arbustos vivero",
+        "árboles y arbustos al por mayor",
         "planta forestal autóctona",
+        "proveedor de plantas Girona",
       ],
     },
     offers: {
-      title: "Ofertas de plantas de vivero",
+      title: "Ofertas de planta para profesionales",
       description:
-        "Ofertas de temporada y disponibilidad especial para profesionales de la jardinería y el paisajismo, directas de nuestro vivero en Girona.",
+        "Ofertas de temporada y disponibilidad especial para profesionales de la jardinería y el paisajismo, con precio cerrado mientras dure el stock.",
       keywords: [
-        "ofertas plantas vivero",
-        "plantas baratas al por mayor",
-        "ofertas jardinería Girona",
+        "ofertas plantas al por mayor",
+        "planta de temporada precio especial",
+        "ofertas jardinería profesional",
       ],
     },
     aboutUs: {
-      title: "Nosotros · Más de 30 años de experiencia en planta",
+      title: "Nosotros · 30 años comercializando planta",
       description:
-        "Más de 30 años y dos generaciones dedicadas a la planta. Cultivo propio en Girona y una red de viveros en toda Europa para conseguir cualquier especie.",
+        "Más de 30 años y dos generaciones dedicadas al comercio de planta. Sin producción propia: elegimos para cada especie el vivero de Europa que mejor la cultiva.",
       keywords: [
+        "comercializadora de planta",
         "proveedor de plantas Europa",
-        "empresa familiar plantas",
-        "vivero familiar Girona",
+        "empresa familiar de planta Girona",
       ],
     },
     catalogues: {
-      title: "Catálogos de disponibilidad y producción",
+      title: "Catálogos de disponibilidad y temporada",
       description:
-        "Descarga en PDF los catálogos actualizados de disponibilidad y producción del vivero GironaPlants.",
+        "Descarga en PDF los catálogos actualizados de GironaPlants: género, formato, altura y precio de referencia de toda la planta que servimos.",
       keywords: [
         "catálogo de plantas PDF",
-        "disponibilidad vivero Girona",
-        "catálogo producción plantas",
+        "lista de disponibilidad de planta",
+        "catálogo plantas al por mayor",
       ],
     },
     budget: {
@@ -112,63 +113,68 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     contact: {
       title: "Contacto",
       description:
-        "Habla con GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Vivero familiar en la provincia de Girona, envíos a toda España y Europa.",
-      keywords: ["contacto vivero Girona", "teléfono GironaPlants"],
+        "Habla con GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Empresa familiar en Breda (Girona), con envíos a toda España y Europa.",
+      keywords: [
+        "contacto GironaPlants",
+        "proveedor de plantas Breda Girona",
+        "teléfono GironaPlants",
+      ],
     },
   },
   ca: {
     home: {
-      title: "GironaPlants · Plantes per al teu projecte a tot Europa",
+      title: "GironaPlants · Plantes a l'engròs a tot Europa",
       description:
-        "Més de 30 anys aconseguint plantes per a professionals. Cultiu propi a Girona i xarxa de vivers a tot Europa. Pressupost en 24-48 h.",
+        "Més de 30 anys comercialitzant planta per a professionals. No la cultivem: la seleccionem en vivers de tot Europa i et servim la llista completa. Pressupost en 24-48 h.",
       keywords: [
+        "distribuïdor de plantes a l'engròs",
         "proveïdor de plantes Europa",
-        "plantes a l'engròs",
-        "plantes mediterrànies",
-        "proveïdor de plantes per a paisatgistes",
-        "viver Girona",
-        "busquem qualsevol espècie de planta",
+        "comercialitzadora de planta",
+        "plantes a l'engròs per a paisatgistes",
+        "subministrament de planta ornamental",
+        "comprar plantes a l'engròs Girona",
       ],
     },
     products: {
-      title: "Catàleg de plantes mediterrànies",
+      title: "Catàleg de plantes a l'engròs",
       description:
-        "Arbres, arbustos, coníferes, gramínies, entapissants i planta forestal cultivats a Girona. I si no la cultivem, la localitzem a Europa: demana la teva oferta a l'engròs sense compromís.",
+        "Arbres, arbustos, coníferes, gramínies, entapissants i planta forestal de vivers seleccionats d'Espanya i de la resta d'Europa. Demana la teva oferta a l'engròs sense compromís.",
       keywords: [
-        "comprar plantes Girona",
+        "comprar plantes a l'engròs",
         "plantes mediterrànies a l'engròs",
-        "arbres i arbustos viver",
+        "arbres i arbustos a l'engròs",
         "planta forestal autòctona",
+        "proveïdor de plantes Girona",
       ],
     },
     offers: {
-      title: "Ofertes de plantes de viver",
+      title: "Ofertes de planta per a professionals",
       description:
-        "Ofertes de temporada i disponibilitat especial per a professionals de la jardineria i el paisatgisme, directes del nostre viver a Girona.",
+        "Ofertes de temporada i disponibilitat especial per a professionals de la jardineria i el paisatgisme, amb preu tancat mentre duri l'estoc.",
       keywords: [
-        "ofertes plantes viver",
-        "plantes a bon preu a l'engròs",
-        "ofertes jardineria Girona",
+        "ofertes plantes a l'engròs",
+        "planta de temporada preu especial",
+        "ofertes jardineria professional",
       ],
     },
     aboutUs: {
-      title: "Nosaltres · Més de 30 anys d'experiència en planta",
+      title: "Nosaltres · 30 anys comercialitzant planta",
       description:
-        "Més de 30 anys i dues generacions dedicades a la planta. Cultiu propi a Girona i una xarxa de vivers a tot Europa per aconseguir qualsevol espècie.",
+        "Més de 30 anys i dues generacions dedicades al comerç de planta. Sense producció pròpia: triem per a cada espècie el viver d'Europa que millor la cultiva.",
       keywords: [
+        "comercialitzadora de planta",
         "proveïdor de plantes Europa",
-        "empresa familiar plantes",
-        "viver familiar Girona",
+        "empresa familiar de planta Girona",
       ],
     },
     catalogues: {
-      title: "Catàlegs de disponibilitat i producció",
+      title: "Catàlegs de disponibilitat i temporada",
       description:
-        "Descarrega en PDF els catàlegs actualitzats de disponibilitat i producció del viver GironaPlants.",
+        "Descarrega en PDF els catàlegs actualitzats de GironaPlants: gènere, format, alçada i preu de referència de tota la planta que servim.",
       keywords: [
         "catàleg de plantes PDF",
-        "disponibilitat viver Girona",
-        "catàleg producció plantes",
+        "llista de disponibilitat de planta",
+        "catàleg plantes a l'engròs",
       ],
     },
     budget: {
@@ -184,62 +190,67 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     contact: {
       title: "Contacte",
       description:
-        "Parla amb GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Viver familiar a la província de Girona, enviaments a tot Espanya i Europa.",
-      keywords: ["contacte viver Girona", "telèfon GironaPlants"],
+        "Parla amb GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Empresa familiar a Breda (Girona), amb enviaments a tot Espanya i Europa.",
+      keywords: [
+        "contacte GironaPlants",
+        "proveïdor de plantes Breda Girona",
+        "telèfon GironaPlants",
+      ],
     },
   },
   en: {
     home: {
-      title: "GironaPlants · Plant sourcing across Europe",
+      title: "GironaPlants · Wholesale plant supplier in Europe",
       description:
-        "More than 30 years sourcing plants for professionals. Own production in Girona, Spain, plus a grower network across Europe. Quote within 24-48 h.",
+        "More than 30 years supplying plants to the trade. We don't grow them — we select them from nurseries across Europe and deliver your whole list. Quote within 24-48 h.",
       keywords: [
-        "plant sourcing Europe",
         "wholesale plant supplier Europe",
-        "Mediterranean plants supplier",
+        "plant distributor Spain",
+        "plant sourcing Europe",
+        "Mediterranean plants wholesale",
         "plants for landscaping projects",
-        "Girona plant nursery",
         "buy plants wholesale Europe",
       ],
     },
     products: {
-      title: "Mediterranean plants catalogue",
+      title: "Wholesale plant catalogue",
       description:
-        "Trees, shrubs, conifers, ornamental grasses, ground covers and forest plants grown in Girona, Spain. Anything we don't grow, we source across Europe. Request a wholesale quote.",
+        "Trees, shrubs, conifers, ornamental grasses, ground covers and forest plants from selected growers in Spain and the rest of Europe. Request a wholesale quote.",
       keywords: [
-        "buy Mediterranean plants",
+        "buy Mediterranean plants wholesale",
         "wholesale trees and shrubs Spain",
         "native forest plants",
+        "plant supplier Girona",
       ],
     },
     offers: {
-      title: "Nursery plant offers",
+      title: "Plant offers for the trade",
       description:
-        "Seasonal offers and special availability for landscaping and gardening professionals, straight from our nursery in Girona, Spain.",
+        "Seasonal offers and special availability for landscaping and gardening professionals, at a firm price while stock lasts.",
       keywords: [
-        "plant nursery offers",
+        "wholesale plant offers",
         "wholesale plant deals Spain",
         "landscaping plant offers",
       ],
     },
     aboutUs: {
-      title: "About us · 30 years sourcing plants",
+      title: "About us · 30 years in the plant trade",
       description:
-        "More than 30 years and two generations devoted to plants. Our own production in Girona plus a grower network across Europe to source any species.",
+        "More than 30 years and two generations in the plant trade. No production of our own: for every species we pick the European grower who raises it best.",
       keywords: [
-        "plant supplier Europe",
-        "family plant nursery Spain",
+        "wholesale plant supplier Europe",
+        "family plant merchant Spain",
         "plant supplier Girona",
       ],
     },
     catalogues: {
-      title: "Availability & production catalogues",
+      title: "Availability & seasonal catalogues",
       description:
-        "Download GironaPlants' up-to-date availability and production catalogues in PDF.",
+        "Download GironaPlants' up-to-date catalogues in PDF: genus, format, height and reference price for every plant we supply.",
       keywords: [
         "plant catalogue PDF",
-        "nursery availability list Spain",
-        "plant production catalogue",
+        "plant availability list Spain",
+        "wholesale plant catalogue",
       ],
     },
     budget: {
@@ -255,62 +266,67 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     contact: {
       title: "Contact",
       description:
-        "Talk to GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Family nursery in the province of Girona, shipping across Spain and Europe.",
-      keywords: ["contact plant nursery Girona", "GironaPlants phone"],
+        "Talk to GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Family business in Breda (Girona, Spain), shipping across Spain and Europe.",
+      keywords: [
+        "contact GironaPlants",
+        "plant supplier Breda Girona",
+        "GironaPlants phone",
+      ],
     },
   },
   fr: {
     home: {
-      title: "GironaPlants · Plantes pour vos projets partout en Europe",
+      title: "GironaPlants · Fournisseur de plantes en gros",
       description:
-        "Plus de 30 ans à trouver des plantes pour les professionnels. Production propre à Gérone et réseau de pépinières dans toute l'Europe. Devis sous 24-48 h.",
+        "Plus de 30 ans à fournir des plantes aux professionnels. Nous ne les cultivons pas : nous les sélectionnons dans les pépinières d'Europe. Devis sous 24-48 h.",
       keywords: [
-        "fournisseur de plantes Europe",
+        "fournisseur de plantes en gros",
+        "négociant en plantes Europe",
         "plantes méditerranéennes en gros",
         "fournisseur de plantes paysagistes",
-        "pépinière Gérone",
-        "sourcing de plantes Europe",
         "plantes pour projets paysagers",
+        "acheter des plantes en gros Espagne",
       ],
     },
     products: {
-      title: "Catalogue de plantes méditerranéennes",
+      title: "Catalogue de plantes en gros",
       description:
-        "Arbres, arbustes, conifères, graminées, couvre-sols et plants forestiers cultivés à Gérone, en Espagne. Ce que nous ne cultivons pas, nous le trouvons en Europe. Demandez votre devis en gros.",
+        "Arbres, arbustes, conifères, graminées, couvre-sols et plants forestiers de pépinières sélectionnées en Espagne et dans le reste de l'Europe. Demandez votre devis en gros.",
       keywords: [
-        "acheter plantes méditerranéennes",
+        "acheter plantes méditerranéennes en gros",
         "arbres et arbustes en gros Espagne",
         "plants forestiers indigènes",
+        "fournisseur de plantes Gérone",
       ],
     },
     offers: {
-      title: "Offres de plantes de pépinière",
+      title: "Offres de plantes pour professionnels",
       description:
-        "Offres de saison et disponibilités spéciales pour les professionnels du paysage et du jardin, directement de notre pépinière à Gérone.",
+        "Offres de saison et disponibilités spéciales pour les professionnels du paysage et du jardin, à prix ferme jusqu'à épuisement du stock.",
       keywords: [
-        "offres plantes pépinière",
+        "offres plantes en gros",
         "plantes en gros pas chères",
         "offres paysagistes Espagne",
       ],
     },
     aboutUs: {
-      title: "À propos · Plus de 30 ans d'expérience",
+      title: "À propos · 30 ans de négoce de plantes",
       description:
-        "Plus de 30 ans et deux générations consacrées aux plantes. Production propre à Gérone et réseau de pépinières dans toute l'Europe pour trouver chaque espèce.",
+        "Plus de 30 ans et deux générations dans le négoce de plantes. Sans production propre : pour chaque espèce, nous choisissons le pépiniériste européen qui la réussit le mieux.",
       keywords: [
         "fournisseur de plantes Europe",
-        "pépinière familiale Espagne",
+        "négociant en plantes familial Espagne",
         "fournisseur plantes Gérone",
       ],
     },
     catalogues: {
-      title: "Catalogues de disponibilité et de production",
+      title: "Catalogues de disponibilité et de saison",
       description:
-        "Téléchargez en PDF les catalogues de disponibilité et de production à jour de la pépinière GironaPlants.",
+        "Téléchargez en PDF les catalogues à jour de GironaPlants : genre, format, hauteur et prix de référence de toutes les plantes que nous livrons.",
       keywords: [
         "catalogue de plantes PDF",
-        "disponibilité pépinière",
-        "catalogue production plantes",
+        "liste de disponibilité de plantes",
+        "catalogue plantes en gros",
       ],
     },
     budget: {
@@ -326,8 +342,12 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     contact: {
       title: "Contact",
       description:
-        "Contactez GironaPlants : +34 639 811 560 · gironaplants@gironaplants.com. Pépinière familiale dans la province de Gérone, livraison en France et en Europe.",
-      keywords: ["contact pépinière Gérone", "téléphone GironaPlants"],
+        "Contactez GironaPlants : +34 639 811 560 · gironaplants@gironaplants.com. Entreprise familiale à Breda (Gérone), livraison en France et en Europe.",
+      keywords: [
+        "contact GironaPlants",
+        "fournisseur de plantes Breda Gérone",
+        "téléphone GironaPlants",
+      ],
     },
   },
 };

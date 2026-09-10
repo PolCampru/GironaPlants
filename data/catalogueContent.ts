@@ -7,9 +7,10 @@
  * interpolate counts are functions rather than templates so each locale keeps
  * control of its own plurals and word order.
  *
- * Nothing here states a horticultural fact. Everything interpolated (species
- * counts, pot sizes, heights, prices) comes from the catalogue rows, so a page
- * can never claim something the nursery does not actually hold.
+ * Nothing here states a horticultural fact, and nothing claims own production:
+ * Girona Plants trades plants, it does not grow them. Everything interpolated
+ * (species counts, pot sizes, heights, prices) comes from the catalogue rows,
+ * so a page can never claim something the company does not actually supply.
  */
 
 type Plural = (n: number, one: string, many: string) => string;
@@ -81,7 +82,7 @@ const es: CatalogueCopy = {
     lead: ({ genus, species, references, formats }) =>
       `${references} ${plural(references, "referencia disponible", "referencias disponibles")} de ${species} ${plural(species, "especie", "especies")} del género ${genus}` +
       (formats ? `, en formatos ${formats}` : "") +
-      `. Cultivo propio en Girona y red de viveros en toda Europa para lo que no tenemos en stock.`,
+      `. Comercializamos planta de viveros seleccionados en España y el resto de Europa.`,
     speciesHeading: "Especies y variedades",
     speciesLead: "Cada ficha reúne los formatos, alturas y precios disponibles.",
     referencesHeading: "Todas las referencias",
@@ -110,7 +111,7 @@ const es: CatalogueCopy = {
   },
   cta: {
     title: "¿Necesitas esta planta para tu proyecto?",
-    body: "Dinos formato, altura y cantidad y te devolvemos un presupuesto cerrado en 24-48 h. Si no la cultivamos, la localizamos en nuestra red de viveros europea.",
+    body: "Dinos formato, altura y cantidad y te devolvemos un presupuesto cerrado en 24-48 h. Si no está en stock, la localizamos en nuestra red de viveros europea.",
     quote: "Pedir presupuesto",
     contact: "Hablar con nosotros",
   },
@@ -131,12 +132,12 @@ const es: CatalogueCopy = {
       `${name} en ${formats} ${plural(formats, "formato", "formatos")}` +
       (formatList ? ` (${formatList})` : "") +
       (price ? `, desde ${price} por unidad` : "") +
-      `. Vivero en Girona con envío a toda Europa. Pide presupuesto.`,
+      `. Proveedor en Girona (España) con envío a toda Europa. Pide presupuesto.`,
     genusKeywords: (genus) => [
       genus,
       `comprar ${genus}`,
       `${genus} al por mayor`,
-      `${genus} vivero`,
+      `proveedor de ${genus}`,
       `precio ${genus}`,
     ],
     speciesKeywords: (name) => [
@@ -144,7 +145,7 @@ const es: CatalogueCopy = {
       `comprar ${name}`,
       `${name} precio`,
       `${name} al por mayor`,
-      `${name} vivero Girona`,
+      `proveedor de ${name}`,
     ],
   },
 };
@@ -156,7 +157,7 @@ const ca: CatalogueCopy = {
     lead: ({ genus, species, references, formats }) =>
       `${references} ${plural(references, "referència disponible", "referències disponibles")} de ${species} ${plural(species, "espècie", "espècies")} del gènere ${genus}` +
       (formats ? `, en formats ${formats}` : "") +
-      `. Cultiu propi a Girona i xarxa de vivers arreu d'Europa per al que no tenim en estoc.`,
+      `. Comercialitzem planta de vivers seleccionats a Espanya i la resta d'Europa.`,
     speciesHeading: "Espècies i varietats",
     speciesLead: "Cada fitxa recull els formats, alçades i preus disponibles.",
     referencesHeading: "Totes les referències",
@@ -185,7 +186,7 @@ const ca: CatalogueCopy = {
   },
   cta: {
     title: "Necessites aquesta planta per al teu projecte?",
-    body: "Digues-nos format, alçada i quantitat i et tornem un pressupost tancat en 24-48 h. Si no la cultivem, la localitzem a la nostra xarxa de vivers europea.",
+    body: "Digues-nos format, alçada i quantitat i et tornem un pressupost tancat en 24-48 h. Si no la tenim en estoc, la localitzem a la nostra xarxa de vivers europea.",
     quote: "Demanar pressupost",
     contact: "Parlar amb nosaltres",
   },
@@ -206,12 +207,12 @@ const ca: CatalogueCopy = {
       `${name} en ${formats} ${plural(formats, "format", "formats")}` +
       (formatList ? ` (${formatList})` : "") +
       (price ? `, des de ${price} per unitat` : "") +
-      `. Viver a Girona amb enviament a tot Europa. Demana pressupost.`,
+      `. Proveïdor a Girona amb enviament a tot Europa. Demana pressupost.`,
     genusKeywords: (genus) => [
       genus,
       `comprar ${genus}`,
       `${genus} a l'engròs`,
-      `${genus} viver`,
+      `proveïdor de ${genus}`,
       `preu ${genus}`,
     ],
     speciesKeywords: (name) => [
@@ -219,7 +220,7 @@ const ca: CatalogueCopy = {
       `comprar ${name}`,
       `${name} preu`,
       `${name} a l'engròs`,
-      `${name} viver Girona`,
+      `proveïdor de ${name}`,
     ],
   },
 };
@@ -231,7 +232,7 @@ const en: CatalogueCopy = {
     lead: ({ genus, species, references, formats }) =>
       `${references} ${plural(references, "reference", "references")} of ${species} ${plural(species, "species", "species")} in the genus ${genus}` +
       (formats ? `, in ${formats} formats` : "") +
-      `. Grown at our own nursery in Girona, Spain, and sourced through a grower network across Europe for whatever we don't hold in stock.`,
+      `. Sourced from specialist growers across Spain and the rest of Europe.`,
     speciesHeading: "Species and varieties",
     speciesLead: "Each page lists the pot sizes, heights and prices available.",
     referencesHeading: "All references",
@@ -260,7 +261,7 @@ const en: CatalogueCopy = {
   },
   cta: {
     title: "Need this plant for your project?",
-    body: "Tell us the format, height and quantity and we'll send a firm quote within 24-48 h. If we don't grow it, we'll find it through our European grower network.",
+    body: "Tell us the format, height and quantity and we'll send a firm quote within 24-48 h. If it isn't in stock, we'll find it through our European grower network.",
     quote: "Request a quote",
     contact: "Talk to us",
   },
@@ -281,12 +282,12 @@ const en: CatalogueCopy = {
       `${name} in ${formats} ${plural(formats, "format", "formats")}` +
       (formatList ? ` (${formatList})` : "") +
       (price ? `, from ${price} per unit` : "") +
-      `. Nursery in Girona, Spain, shipping across Europe. Request a quote.`,
+      `. Wholesale supplier in Girona, Spain, shipping across Europe. Request a quote.`,
     genusKeywords: (genus) => [
       genus,
       `buy ${genus}`,
       `${genus} wholesale`,
-      `${genus} nursery`,
+      `${genus} supplier`,
       `${genus} price`,
     ],
     speciesKeywords: (name) => [
@@ -294,7 +295,7 @@ const en: CatalogueCopy = {
       `buy ${name}`,
       `${name} price`,
       `${name} wholesale`,
-      `${name} nursery Spain`,
+      `${name} supplier Spain`,
     ],
   },
 };
@@ -306,7 +307,7 @@ const fr: CatalogueCopy = {
     lead: ({ genus, species, references, formats }) =>
       `${references} ${plural(references, "référence disponible", "références disponibles")} de ${species} ${plural(species, "espèce", "espèces")} du genre ${genus}` +
       (formats ? `, en formats ${formats}` : "") +
-      `. Production propre à Gérone et réseau de pépinières dans toute l'Europe pour ce que nous n'avons pas en stock.`,
+      `. Nous commercialisons des plantes de pépinières sélectionnées en Espagne et dans le reste de l'Europe.`,
     speciesHeading: "Espèces et variétés",
     speciesLead: "Chaque fiche réunit les formats, hauteurs et prix disponibles.",
     referencesHeading: "Toutes les références",
@@ -335,7 +336,7 @@ const fr: CatalogueCopy = {
   },
   cta: {
     title: "Besoin de cette plante pour votre projet ?",
-    body: "Indiquez-nous le format, la hauteur et la quantité et nous vous envoyons un devis ferme sous 24-48 h. Ce que nous ne cultivons pas, nous le trouvons via notre réseau européen.",
+    body: "Indiquez-nous le format, la hauteur et la quantité et nous vous envoyons un devis ferme sous 24-48 h. Ce que nous n'avons pas en stock, nous le trouvons via notre réseau européen.",
     quote: "Demander un devis",
     contact: "Nous contacter",
   },
@@ -356,12 +357,12 @@ const fr: CatalogueCopy = {
       `${name} en ${formats} ${plural(formats, "format", "formats")}` +
       (formatList ? ` (${formatList})` : "") +
       (price ? `, à partir de ${price} l'unité` : "") +
-      `. Pépinière à Gérone, livraison dans toute l'Europe. Demandez un devis.`,
+      `. Fournisseur à Gérone, livraison dans toute l'Europe. Demandez un devis.`,
     genusKeywords: (genus) => [
       genus,
       `acheter ${genus}`,
       `${genus} en gros`,
-      `${genus} pépinière`,
+      `fournisseur de ${genus}`,
       `prix ${genus}`,
     ],
     speciesKeywords: (name) => [
@@ -369,7 +370,7 @@ const fr: CatalogueCopy = {
       `acheter ${name}`,
       `${name} prix`,
       `${name} en gros`,
-      `${name} pépinière Espagne`,
+      `fournisseur de ${name}`,
     ],
   },
 };

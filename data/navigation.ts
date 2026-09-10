@@ -43,8 +43,8 @@ const nav: Record<string, NavCopy> = {
     languageLabel: "Idioma",
     footer: {
       tagline:
-        "Empresa familiar de Girona. Cultivo propio de planta mediterránea y suministro a profesionales en toda Europa desde 1992.",
-      location: "Girona, Catalunya · España",
+        "Empresa familiar de Girona. Comercializamos planta mediterránea y suministramos a profesionales de toda Europa desde 1992.",
+      location: "Breda, Girona · Catalunya, España",
       columns: { catalogue: "Catálogo", company: "Empresa", contact: "Contacto" },
       privacyPolicy: "Política de privacidad",
       rights: "Todos los derechos reservados",
@@ -63,8 +63,8 @@ const nav: Record<string, NavCopy> = {
     languageLabel: "Idioma",
     footer: {
       tagline:
-        "Empresa familiar de Girona. Cultiu propi de planta mediterrània i subministrament a professionals arreu d'Europa des del 1992.",
-      location: "Girona, Catalunya · Espanya",
+        "Empresa familiar de Girona. Comercialitzem planta mediterrània i subministrem a professionals d'arreu d'Europa des del 1992.",
+      location: "Breda, Girona · Catalunya, Espanya",
       columns: { catalogue: "Catàleg", company: "Empresa", contact: "Contacte" },
       privacyPolicy: "Política de privacitat",
       rights: "Tots els drets reservats",
@@ -83,8 +83,8 @@ const nav: Record<string, NavCopy> = {
     languageLabel: "Language",
     footer: {
       tagline:
-        "A family business from Girona. Our own Mediterranean plant production, supplying professionals across Europe since 1992.",
-      location: "Girona, Catalonia · Spain",
+        "A family business from Girona, Spain. We trade in Mediterranean plants, supplying professionals across Europe since 1992.",
+      location: "Breda, Girona · Catalonia, Spain",
       columns: { catalogue: "Catalogue", company: "Company", contact: "Contact" },
       privacyPolicy: "Privacy policy",
       rights: "All rights reserved",
@@ -103,8 +103,8 @@ const nav: Record<string, NavCopy> = {
     languageLabel: "Langue",
     footer: {
       tagline:
-        "Entreprise familiale de Gérone. Production propre de plantes méditerranéennes et approvisionnement des professionnels dans toute l'Europe depuis 1992.",
-      location: "Gérone, Catalogne · Espagne",
+        "Entreprise familiale de Gérone. Nous commercialisons des plantes méditerranéennes et fournissons les professionnels dans toute l'Europe depuis 1992.",
+      location: "Breda, Gérone · Catalogne, Espagne",
       columns: {
         catalogue: "Catalogue",
         company: "Entreprise",

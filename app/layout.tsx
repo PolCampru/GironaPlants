@@ -37,11 +37,11 @@ const manrope = Manrope({
 export const metadata = {
   metadataBase: new URL("https://gironaplants.com"),
   title: {
-    default: "GironaPlants - Plant sourcing across Europe",
+    default: "GironaPlants - Wholesale plant supplier across Europe",
     template: "%s | GironaPlants"
   },
-  description: "More than 30 years sourcing plants for professionals. We grow Mediterranean plants at our nursery in Girona and source any other species through our grower network across Europe.",
-  keywords: ["plant sourcing Europe", "wholesale plants Europe", "plant supplier", "plants", "nursery", "Girona", "Mediterranean", "trees", "shrubs", "gardening", "Catalonia", "landscaping"],
+  description: "More than 30 years supplying plants to the trade. We don't grow them — we select every species from the growers who raise it best across Spain and the rest of Europe, and deliver your whole list.",
+  keywords: ["wholesale plant supplier Europe", "plant distributor Spain", "plant sourcing Europe", "wholesale plants Europe", "Mediterranean plants", "trees", "shrubs", "landscaping plants", "Breda", "Girona", "Catalonia"],
   authors: [{ name: "GironaPlants" }],
   creator: "GironaPlants",
   publisher: "GironaPlants",
@@ -55,21 +55,21 @@ export const metadata = {
     locale: "ca_ES",
     url: "https://gironaplants.com",
     siteName: "GironaPlants",
-    title: "GironaPlants - Plant sourcing across Europe",
-    description: "More than 30 years sourcing plants for professionals. Own production in Girona plus a grower network across Europe.",
+    title: "GironaPlants - Wholesale plant supplier across Europe",
+    description: "More than 30 years supplying plants to the trade. We select every species from the growers across Europe who raise it best.",
     images: [
       {
         url: "/images/lavenders.jpg",
         width: 1280,
         height: 853,
-        alt: "GironaPlants - Plant sourcing across Europe",
+        alt: "GironaPlants - Wholesale plant supplier across Europe",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GironaPlants - Plant sourcing across Europe",
-    description: "More than 30 years sourcing plants for professionals. Own production in Girona plus a grower network across Europe.",
+    title: "GironaPlants - Wholesale plant supplier across Europe",
+    description: "More than 30 years supplying plants to the trade. We select every species from the growers across Europe who raise it best.",
     images: ["/images/lavenders.jpg"],
   },
   robots: {

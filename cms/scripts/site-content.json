@@ -10,9 +10,9 @@
     "es": {
       "hero_badge": "Suministro de plantas en toda Europa",
       "hero_title": "Las plantas que tu proyecto necesita, en toda Europa",
-      "hero_subtitle": "Más de 30 años consiguiendo planta para profesionales. Cultivamos planta mediterránea en Girona y localizamos cualquier otra especie a través de nuestra red de viveros. Si no la cultivamos, la encontramos.",
+      "hero_subtitle": "Más de 30 años comercializando planta para profesionales. No la cultivamos: la seleccionamos. Compramos en los viveros que mejor cultivan cada especie —en España y en el resto de Europa— y te servimos la lista completa desde un solo proveedor.",
       "hero_secondary_button": "¿Prefieres que lo busquemos nosotros? Solicita un presupuesto",
-      "hero_tag": "Cultivo propio en Girona",
+      "hero_tag": "Comercializadora independiente desde 1992",
       "search_placeholder": "Busca una especie: Quercus, Lavandula, Festuca…",
       "search_button": "Buscar",
       "search_suggestions": [
@@ -24,7 +24,7 @@
       "stats": [
         {
           "value": "+30 años",
-          "label": "sirviendo a profesionales del verde"
+          "label": "comercializando planta para profesionales"
         },
         {
           "value": "336",
@@ -36,7 +36,7 @@
         },
         {
           "value": "Europa",
-          "label": "red de viveros de confianza"
+          "label": "viveros proveedores seleccionados"
         }
       ],
       "plants_title": "Nuestras plantas",
@@ -50,8 +50,8 @@
           "text": "Marca especies del catálogo o adjunta tu propio listado en Excel. Sin registro y sin mínimo de pedido."
         },
         {
-          "title": "Buscamos lo que falte",
-          "text": "Lo que no está en nuestro vivero lo localizamos en la red de viveros de confianza en España y el resto de Europa."
+          "title": "Buscamos cada planta",
+          "text": "Localizamos cada especie en el vivero que mejor la cultiva, en España y en el resto de Europa, y negociamos el precio por ti."
         },
         {
           "title": "Recibes un pedido completo",
@@ -60,7 +60,7 @@
       ],
       "catalogues_title": "Catálogos",
       "catalogues_headline": "Descárgalos y compártelos con tu equipo",
-      "catalogues_subtitle": "PDF actualizados de disponibilidad y producción, listos para pasar a obra o a compras.",
+      "catalogues_subtitle": "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
       "catalogues_button": "Ver catálogos",
       "contact_title": "¿Preparamos tu oferta?",
       "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos un presupuesto a medida en 24-48 h, sin compromiso. Servimos en toda Europa.",
@@ -69,9 +69,9 @@
     "ca": {
       "hero_badge": "Subministrament de plantes a tot Europa",
       "hero_title": "Les plantes que el teu projecte necessita, a tot Europa",
-      "hero_subtitle": "Més de 30 anys aconseguint planta per a professionals. Cultivem planta mediterrània a Girona i localitzem qualsevol altra espècie a través de la nostra xarxa de vivers. Si no la cultivem, la trobem.",
+      "hero_subtitle": "Més de 30 anys comercialitzant planta per a professionals. No la cultivem: la seleccionem. Comprem als vivers que millor cultiven cada espècie —a Espanya i a la resta d'Europa— i et servim la llista completa des d'un sol proveïdor.",
       "hero_secondary_button": "Prefereixes que la busquem nosaltres? Demana un pressupost",
-      "hero_tag": "Cultiu propi a Girona",
+      "hero_tag": "Comercialitzadora independent des del 1992",
       "search_placeholder": "Busca una espècie: Quercus, Lavandula, Festuca…",
       "search_button": "Cercar",
       "search_suggestions": [
@@ -83,7 +83,7 @@
       "stats": [
         {
           "value": "+30 anys",
-          "label": "servint professionals del verd"
+          "label": "comercialitzant planta per a professionals"
         },
         {
           "value": "336",
@@ -95,7 +95,7 @@
         },
         {
           "value": "Europa",
-          "label": "xarxa de vivers de confiança"
+          "label": "vivers proveïdors seleccionats"
         }
       ],
       "plants_title": "Les nostres plantes",
@@ -109,8 +109,8 @@
           "text": "Marca espècies del catàleg o adjunta el teu llistat en Excel. Sense registre i sense comanda mínima."
         },
         {
-          "title": "Busquem el que falti",
-          "text": "El que no tenim al viver ho localitzem a la xarxa de vivers de confiança a Espanya i la resta d'Europa."
+          "title": "Busquem cada planta",
+          "text": "Localitzem cada espècie al viver que millor la cultiva, a Espanya i a la resta d'Europa, i negociem el preu per tu."
         },
         {
           "title": "Reps una comanda completa",
@@ -119,7 +119,7 @@
       ],
       "catalogues_title": "Catàlegs",
       "catalogues_headline": "Descarrega'ls i comparteix-los amb el teu equip",
-      "catalogues_subtitle": "PDF actualitzats de disponibilitat i producció, a punt per passar a obra o a compres.",
+      "catalogues_subtitle": "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
       "catalogues_button": "Veure catàlegs",
       "contact_title": "Preparem la teva oferta?",
       "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem un pressupost a mida en 24-48 h, sense compromís. Servim a tot Europa.",
@@ -128,9 +128,9 @@
     "en": {
       "hero_badge": "Plant sourcing across Europe",
       "hero_title": "The plants your project needs, anywhere in Europe",
-      "hero_subtitle": "More than 30 years sourcing plants for professionals. We grow Mediterranean species at our own nursery in Girona and track down everything else through our grower network. If we don't grow it, we'll find it.",
+      "hero_subtitle": "More than 30 years supplying plants to the trade. We don't grow them — we select them, from the growers who raise each species best in Spain and the rest of Europe, and deliver your whole list from a single supplier.",
       "hero_secondary_button": "Rather we did the looking? Request a quote",
-      "hero_tag": "Grown at our own nursery",
+      "hero_tag": "An independent plant merchant since 1992",
       "search_placeholder": "Search a species: Quercus, Lavandula, Festuca…",
       "search_button": "Search",
       "search_suggestions": [
@@ -154,7 +154,7 @@
         },
         {
           "value": "Europe",
-          "label": "network of trusted growers"
+          "label": "hand-picked partner nurseries"
         }
       ],
       "plants_title": "Our plants",
@@ -168,8 +168,8 @@
           "text": "Tick species from the catalogue or attach your own spreadsheet. No account, no minimum order."
         },
         {
-          "title": "We source what's missing",
-          "text": "Anything we don't grow ourselves we track down through our network of trusted growers in Spain and the rest of Europe."
+          "title": "We source every plant",
+          "text": "We track down each species at the nursery that raises it best, in Spain and the rest of Europe, and negotiate the price for you."
         },
         {
           "title": "You get a complete order",
@@ -178,7 +178,7 @@
       ],
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Download them and share with your team",
-      "catalogues_subtitle": "Up-to-date availability and production PDFs, ready to pass on to site or to purchasing.",
+      "catalogues_subtitle": "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
       "catalogues_button": "View catalogues",
       "contact_title": "Ready for your quote?",
       "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll send a tailored quote within 24-48 h, no obligation. We deliver across Europe.",
@@ -187,9 +187,9 @@
     "fr": {
       "hero_badge": "Approvisionnement en plantes en Europe",
       "hero_title": "Les plantes dont votre projet a besoin, partout en Europe",
-      "hero_subtitle": "Plus de 30 ans à trouver des plantes pour les professionnels. Nous cultivons des plantes méditerranéennes dans notre pépinière de Gérone et localisons toutes les autres espèces grâce à notre réseau de pépinières. Si nous ne la cultivons pas, nous la trouvons.",
+      "hero_subtitle": "Plus de 30 ans à fournir des plantes aux professionnels. Nous ne les cultivons pas : nous les sélectionnons chez les pépiniéristes qui réussissent le mieux chaque espèce, en Espagne et dans le reste de l'Europe, et nous livrons votre liste complète depuis un seul fournisseur.",
       "hero_secondary_button": "Vous préférez que nous cherchions ? Demandez un devis",
-      "hero_tag": "Production dans notre pépinière",
+      "hero_tag": "Négociant indépendant depuis 1992",
       "search_placeholder": "Cherchez une espèce : Quercus, Lavandula, Festuca…",
       "search_button": "Rechercher",
       "search_suggestions": [
@@ -213,7 +213,7 @@
         },
         {
           "value": "Europe",
-          "label": "réseau de pépinières de confiance"
+          "label": "pépinières partenaires sélectionnées"
         }
       ],
       "plants_title": "Nos plantes",
@@ -227,8 +227,8 @@
           "text": "Cochez des espèces au catalogue ou joignez votre propre listing Excel. Sans inscription et sans commande minimale."
         },
         {
-          "title": "Nous cherchons ce qui manque",
-          "text": "Ce que nous ne cultivons pas, nous le localisons dans notre réseau de pépinières de confiance en Espagne et dans le reste de l'Europe."
+          "title": "Nous cherchons chaque plante",
+          "text": "Nous localisons chaque espèce chez le pépiniériste qui la réussit le mieux, en Espagne et dans le reste de l'Europe, et nous négocions le prix pour vous."
         },
         {
           "title": "Vous recevez une commande complète",
@@ -237,7 +237,7 @@
       ],
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Téléchargez-les et partagez-les avec votre équipe",
-      "catalogues_subtitle": "PDF à jour de disponibilité et de production, prêts à transmettre au chantier ou aux achats.",
+      "catalogues_subtitle": "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
       "catalogues_button": "Voir les catalogues",
       "contact_title": "On prépare votre devis ?",
       "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
@@ -248,13 +248,13 @@
     "es": {
       "label": "Nosotros · desde 1992",
       "title": "Una familia dedicada a las plantas",
-      "subtitle": "Girona Plants es una empresa familiar con más de 30 años de experiencia en el sector de la planta. Cultivamos planta mediterránea en la provincia de Girona y, cuando un proyecto necesita una especie que no tenemos, la conseguimos: trabajamos con una red de viveros de confianza en España y el resto de Europa para servir pedidos completos, de la primera planta a la última.",
+      "subtitle": "Girona Plants es una empresa familiar con más de 30 años de experiencia en el comercio de planta. No tenemos producción propia, y es deliberado: nos permite elegir, especie por especie, el vivero que mejor la cultiva. Compramos en una red de viveros de confianza en España y el resto de Europa y servimos pedidos completos, de la primera planta a la última.",
       "hero_button": "Ver nuestras plantas",
       "hero_secondary_button": "Hablar con nosotros",
       "stats": [
         {
           "value": "1992",
-          "label": "Primera planta servida desde el vivero familiar"
+          "label": "Primer pedido servido por la familia"
         },
         {
           "value": "336",
@@ -266,7 +266,7 @@
         },
         {
           "value": "Europa",
-          "label": "Red de viveros colaboradores para lo que no cultivamos"
+          "label": "Viveros proveedores seleccionados en toda Europa"
         }
       ],
       "our_clients": {
@@ -276,7 +276,7 @@
         "clients": [
           {
             "name": "Viveros",
-            "description": "Suministro entre viveros y planta joven para engorde.",
+            "description": "Suministro entre profesionales y planta joven para engorde.",
             "icon": "nurseries"
           },
           {
@@ -311,7 +311,7 @@
           },
           {
             "name": "Fruticultores",
-            "description": "Frutales y planta de producción adaptada al clima.",
+            "description": "Frutales y planta destinada a producción, adaptada al clima.",
             "icon": "fruit"
           },
           {
@@ -328,19 +328,19 @@
       },
       "catalogues_title": "Catálogos",
       "catalogues_headline": "Descárgalos y compártelos con tu equipo",
-      "catalogues_subtitle": "PDF actualizados de disponibilidad y producción, listos para pasar a obra o a compras.",
+      "catalogues_subtitle": "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
       "catalogues_button": "Ver catálogos"
     },
     "ca": {
       "label": "Nosaltres · des del 1992",
       "title": "Una família dedicada a les plantes",
-      "subtitle": "Girona Plants és una empresa familiar amb més de 30 anys d'experiència en el sector de la planta. Cultivem planta mediterrània a la província de Girona i, quan un projecte necessita una espècie que no tenim, l'aconseguim: treballem amb una xarxa de vivers de confiança a Espanya i la resta d'Europa per servir comandes completes, de la primera planta a l'última.",
+      "subtitle": "Girona Plants és una empresa familiar amb més de 30 anys d'experiència en el comerç de planta. No tenim producció pròpia, i és deliberat: ens permet triar, espècie per espècie, el viver que millor la cultiva. Comprem en una xarxa de vivers de confiança a Espanya i la resta d'Europa i servim comandes completes, de la primera planta a l'última.",
       "hero_button": "Veure les nostres plantes",
       "hero_secondary_button": "Parlar amb nosaltres",
       "stats": [
         {
           "value": "1992",
-          "label": "Primera planta servida des del viver familiar"
+          "label": "Primera comanda servida per la família"
         },
         {
           "value": "336",
@@ -352,7 +352,7 @@
         },
         {
           "value": "Europa",
-          "label": "Xarxa de vivers col·laboradors per al que no cultivem"
+          "label": "Vivers proveïdors seleccionats arreu d'Europa"
         }
       ],
       "our_clients": {
@@ -362,7 +362,7 @@
         "clients": [
           {
             "name": "Vivers",
-            "description": "Subministrament entre vivers i planta jove per engreixar.",
+            "description": "Subministrament entre professionals i planta jove per engreixar.",
             "icon": "nurseries"
           },
           {
@@ -397,7 +397,7 @@
           },
           {
             "name": "Fruticultors",
-            "description": "Fruiters i planta de producció adaptada al clima.",
+            "description": "Fruiters i planta destinada a producció, adaptada al clima.",
             "icon": "fruit"
           },
           {
@@ -414,19 +414,19 @@
       },
       "catalogues_title": "Catàlegs",
       "catalogues_headline": "Descarrega'ls i comparteix-los amb el teu equip",
-      "catalogues_subtitle": "PDF actualitzats de disponibilitat i producció, a punt per passar a obra o a compres.",
+      "catalogues_subtitle": "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
       "catalogues_button": "Veure catàlegs"
     },
     "en": {
       "label": "About us · since 1992",
       "title": "A family devoted to plants",
-      "subtitle": "Girona Plants is a family-run company with more than 30 years of experience in the plant trade. We grow Mediterranean plants in the province of Girona, Catalonia — and when a project calls for a species we don't grow, we source it through our trusted network of nurseries across Spain and the rest of Europe, delivering complete orders wherever the project is.",
+      "subtitle": "Girona Plants is a family-run company with more than 30 years in the plant trade. We have no production of our own, and that is deliberate: it lets us pick, species by species, the grower who raises it best. We buy through a trusted network of nurseries across Spain and the rest of Europe, delivering complete orders wherever the project is.",
       "hero_button": "See our plants",
       "hero_secondary_button": "Talk to us",
       "stats": [
         {
           "value": "1992",
-          "label": "First plant supplied from the family nursery"
+          "label": "First order supplied by the family"
         },
         {
           "value": "336",
@@ -438,7 +438,7 @@
         },
         {
           "value": "Europe",
-          "label": "Partner nurseries for everything we don't grow"
+          "label": "Hand-picked partner nurseries across Europe"
         }
       ],
       "our_clients": {
@@ -448,7 +448,7 @@
         "clients": [
           {
             "name": "Nurseries",
-            "description": "Trade supply and young plants for growing on.",
+            "description": "Trade-to-trade supply and young plants for growing on.",
             "icon": "nurseries"
           },
           {
@@ -500,19 +500,19 @@
       },
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Download them and share with your team",
-      "catalogues_subtitle": "Up-to-date availability and production PDFs, ready to pass on to site or to purchasing.",
+      "catalogues_subtitle": "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
       "catalogues_button": "View catalogues"
     },
     "fr": {
       "label": "À propos · depuis 1992",
       "title": "Une famille passionnée de plantes",
-      "subtitle": "Girona Plants est une entreprise familiale forte de plus de 30 ans d'expérience dans le secteur végétal. Nous cultivons des plantes méditerranéennes dans la province de Gérone, en Catalogne — et lorsqu'un projet demande une espèce que nous ne cultivons pas, nous la trouvons grâce à notre réseau de pépinières de confiance en Espagne et dans le reste de l'Europe, pour livrer des commandes complètes.",
+      "subtitle": "Girona Plants est une entreprise familiale forte de plus de 30 ans d'expérience dans le négoce de plantes. Nous n'avons pas de production propre, et c'est délibéré : cela nous permet de choisir, espèce par espèce, le pépiniériste qui la réussit le mieux. Nous achetons auprès d'un réseau de pépinières de confiance en Espagne et dans le reste de l'Europe, pour livrer des commandes complètes.",
       "hero_button": "Voir nos plantes",
       "hero_secondary_button": "Nous contacter",
       "stats": [
         {
           "value": "1992",
-          "label": "Première plante livrée depuis la pépinière familiale"
+          "label": "Première commande livrée par la famille"
         },
         {
           "value": "336",
@@ -524,7 +524,7 @@
         },
         {
           "value": "Europe",
-          "label": "Réseau de pépinières partenaires pour ce que nous ne cultivons pas"
+          "label": "Pépinières partenaires sélectionnées dans toute l'Europe"
         }
       ],
       "our_clients": {
@@ -586,13 +586,13 @@
       },
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Téléchargez-les et partagez-les avec votre équipe",
-      "catalogues_subtitle": "PDF à jour de disponibilité et de production, prêts à transmettre au chantier ou aux achats.",
+      "catalogues_subtitle": "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
       "catalogues_button": "Voir les catalogues"
     }
   },
   "catalogue": {
     "es": {
-      "main_title": "Todo lo que cultivamos y todo lo que localizamos",
+      "main_title": "Todo lo que te podemos servir, en un solo documento",
       "main_subtitle": "La gama completa con género, formato, altura y precio de referencia. El documento que tu equipo de compras necesita para cerrar un proyecto entero de una sola vez.",
       "main_button": "Descargar catálogo general",
       "section_title": "Si solo necesitas una parte",
@@ -602,7 +602,7 @@
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
-      "main_title": "Tot el que cultivem i tot el que localitzem",
+      "main_title": "Tot el que et podem servir, en un sol document",
       "main_subtitle": "La gamma completa amb gènere, format, alçada i preu de referència. El document que el teu equip de compres necessita per tancar un projecte sencer d'un sol cop.",
       "main_button": "Descarregar catàleg general",
       "section_title": "Si només necessites una part",
@@ -612,7 +612,7 @@
       "contact_button": "Demanar pressupost"
     },
     "en": {
-      "main_title": "Everything we grow and everything we source",
+      "main_title": "Everything we can supply, in a single document",
       "main_subtitle": "The full range with genus, format, height and reference price. The document your purchasing team needs to close out a whole project in one go.",
       "main_button": "Download the general catalogue",
       "section_title": "If you only need one part of it",
@@ -622,7 +622,7 @@
       "contact_button": "Request a quote"
     },
     "fr": {
-      "main_title": "Tout ce que nous cultivons et tout ce que nous trouvons",
+      "main_title": "Tout ce que nous pouvons livrer, en un seul document",
       "main_subtitle": "La gamme complète avec genre, format, hauteur et prix de référence. Le document dont votre service achats a besoin pour boucler un projet entier en une fois.",
       "main_button": "Télécharger le catalogue général",
       "section_title": "Si vous n'avez besoin que d'une partie",

@@ -56,13 +56,13 @@ const content: Record<string, HomeFallbackContent> = {
     hero_badge: "Suministro de plantas en toda Europa",
     hero_title: "Las plantas que tu proyecto necesita, en toda Europa",
     hero_subtitle:
-      "Más de 30 años consiguiendo planta para profesionales. Cultivamos planta mediterránea en Girona y localizamos cualquier otra especie a través de nuestra red de viveros. Si no la cultivamos, la encontramos.",
+      "Más de 30 años comercializando planta para profesionales. No la cultivamos: la seleccionamos. Compramos en los viveros que mejor cultivan cada especie —en España y en el resto de Europa— y te servimos la lista completa desde un solo proveedor.",
     hero_secondary_button:
       "¿Prefieres que lo busquemos nosotros? Solicita un presupuesto",
-    hero_tag: "Cultivo propio en Girona",
-    hero_image_alt: "Campo de lavanda en el vivero de Girona Plants",
+    hero_tag: "Comercializadora independiente desde 1992",
+    hero_image_alt: "Campo de lavanda en uno de los viveros que suministran a Girona Plants",
     hero_stat_label: "referencias disponibles",
-    hero_stat_note: "Catálogo actualizado desde el vivero",
+    hero_stat_note: "Disponibilidad actualizada de nuestros viveros proveedores",
 
     search_placeholder: "Busca una especie: Quercus, Lavandula, Festuca…",
     search_button: "Buscar",
@@ -70,10 +70,10 @@ const content: Record<string, HomeFallbackContent> = {
     search_suggestions_label: "Más buscadas:",
 
     stats: [
-      { value: "+30 años", label: "sirviendo a profesionales del verde" },
+      { value: "+30 años", label: "comercializando planta para profesionales" },
       { value: "336", label: "géneros distintos en el catálogo" },
       { value: "24-48 h", label: "para recibir tu presupuesto" },
-      { value: "Europa", label: "red de viveros de confianza" },
+      { value: "Europa", label: "viveros proveedores seleccionados" },
     ],
 
     plants_title: "Nuestras plantas",
@@ -95,8 +95,8 @@ const content: Record<string, HomeFallbackContent> = {
         text: "Marca especies del catálogo o adjunta tu propio listado en Excel. Sin registro y sin mínimo de pedido.",
       },
       {
-        title: "Buscamos lo que falte",
-        text: "Lo que no está en nuestro vivero lo localizamos en la red de viveros de confianza en España y el resto de Europa.",
+        title: "Buscamos cada planta",
+        text: "Localizamos cada especie en el vivero que mejor la cultiva, en España y en el resto de Europa, y negociamos el precio por ti.",
       },
       {
         title: "Recibes un pedido completo",
@@ -107,7 +107,7 @@ const content: Record<string, HomeFallbackContent> = {
     catalogues_title: "Catálogos",
     catalogues_headline: "Descárgalos y compártelos con tu equipo",
     catalogues_subtitle:
-      "PDF actualizados de disponibilidad y producción, listos para pasar a obra o a compras.",
+      "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
     catalogues_button: "Ver catálogos",
     download_label: "Descargar",
 
@@ -121,13 +121,13 @@ const content: Record<string, HomeFallbackContent> = {
     hero_badge: "Subministrament de plantes a tot Europa",
     hero_title: "Les plantes que el teu projecte necessita, a tot Europa",
     hero_subtitle:
-      "Més de 30 anys aconseguint planta per a professionals. Cultivem planta mediterrània a Girona i localitzem qualsevol altra espècie a través de la nostra xarxa de vivers. Si no la cultivem, la trobem.",
+      "Més de 30 anys comercialitzant planta per a professionals. No la cultivem: la seleccionem. Comprem als vivers que millor cultiven cada espècie —a Espanya i a la resta d'Europa— i et servim la llista completa des d'un sol proveïdor.",
     hero_secondary_button:
       "Prefereixes que la busquem nosaltres? Demana un pressupost",
-    hero_tag: "Cultiu propi a Girona",
-    hero_image_alt: "Camp de lavanda al viver de Girona Plants",
+    hero_tag: "Comercialitzadora independent des del 1992",
+    hero_image_alt: "Camp de lavanda en un dels vivers que subministren a Girona Plants",
     hero_stat_label: "referències disponibles",
-    hero_stat_note: "Catàleg actualitzat des del viver",
+    hero_stat_note: "Disponibilitat actualitzada dels nostres vivers proveïdors",
 
     search_placeholder: "Busca una espècie: Quercus, Lavandula, Festuca…",
     search_button: "Cercar",
@@ -135,10 +135,10 @@ const content: Record<string, HomeFallbackContent> = {
     search_suggestions_label: "Més buscades:",
 
     stats: [
-      { value: "+30 anys", label: "servint professionals del verd" },
+      { value: "+30 anys", label: "comercialitzant planta per a professionals" },
       { value: "336", label: "gèneres diferents al catàleg" },
       { value: "24-48 h", label: "per rebre el teu pressupost" },
-      { value: "Europa", label: "xarxa de vivers de confiança" },
+      { value: "Europa", label: "vivers proveïdors seleccionats" },
     ],
 
     plants_title: "Les nostres plantes",
@@ -160,8 +160,8 @@ const content: Record<string, HomeFallbackContent> = {
         text: "Marca espècies del catàleg o adjunta el teu llistat en Excel. Sense registre i sense comanda mínima.",
       },
       {
-        title: "Busquem el que falti",
-        text: "El que no tenim al viver ho localitzem a la xarxa de vivers de confiança a Espanya i la resta d'Europa.",
+        title: "Busquem cada planta",
+        text: "Localitzem cada espècie al viver que millor la cultiva, a Espanya i a la resta d'Europa, i negociem el preu per tu.",
       },
       {
         title: "Reps una comanda completa",
@@ -172,7 +172,7 @@ const content: Record<string, HomeFallbackContent> = {
     catalogues_title: "Catàlegs",
     catalogues_headline: "Descarrega'ls i comparteix-los amb el teu equip",
     catalogues_subtitle:
-      "PDF actualitzats de disponibilitat i producció, a punt per passar a obra o a compres.",
+      "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
     catalogues_button: "Veure catàlegs",
     download_label: "Descarregar",
 
@@ -186,12 +186,12 @@ const content: Record<string, HomeFallbackContent> = {
     hero_badge: "Plant sourcing across Europe",
     hero_title: "The plants your project needs, anywhere in Europe",
     hero_subtitle:
-      "More than 30 years sourcing plants for professionals. We grow Mediterranean species at our own nursery in Girona and track down everything else through our grower network. If we don't grow it, we'll find it.",
+      "More than 30 years supplying plants to the trade. We don't grow them — we select them, from the growers who raise each species best in Spain and the rest of Europe, and deliver your whole list from a single supplier.",
     hero_secondary_button: "Rather we did the looking? Request a quote",
-    hero_tag: "Grown at our own nursery",
-    hero_image_alt: "Lavender field at the Girona Plants nursery",
+    hero_tag: "An independent plant merchant since 1992",
+    hero_image_alt: "Lavender field at one of the nurseries that supply Girona Plants",
     hero_stat_label: "references available",
-    hero_stat_note: "Catalogue kept up to date from the nursery",
+    hero_stat_note: "Live availability from the growers we buy from",
 
     search_placeholder: "Search a species: Quercus, Lavandula, Festuca…",
     search_button: "Search",
@@ -202,7 +202,7 @@ const content: Record<string, HomeFallbackContent> = {
       { value: "30+ years", label: "serving green-sector professionals" },
       { value: "336", label: "distinct genera in the catalogue" },
       { value: "24-48 h", label: "to get your quote back" },
-      { value: "Europe", label: "network of trusted growers" },
+      { value: "Europe", label: "hand-picked partner nurseries" },
     ],
 
     plants_title: "Our plants",
@@ -224,8 +224,8 @@ const content: Record<string, HomeFallbackContent> = {
         text: "Tick species from the catalogue or attach your own spreadsheet. No account, no minimum order.",
       },
       {
-        title: "We source what's missing",
-        text: "Anything we don't grow ourselves we track down through our network of trusted growers in Spain and the rest of Europe.",
+        title: "We source every plant",
+        text: "We track down each species at the nursery that raises it best, in Spain and the rest of Europe, and negotiate the price for you.",
       },
       {
         title: "You get a complete order",
@@ -236,7 +236,7 @@ const content: Record<string, HomeFallbackContent> = {
     catalogues_title: "Catalogues",
     catalogues_headline: "Download them and share with your team",
     catalogues_subtitle:
-      "Up-to-date availability and production PDFs, ready to pass on to site or to purchasing.",
+      "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
     catalogues_button: "View catalogues",
     download_label: "Download",
 
@@ -250,13 +250,13 @@ const content: Record<string, HomeFallbackContent> = {
     hero_badge: "Approvisionnement en plantes en Europe",
     hero_title: "Les plantes dont votre projet a besoin, partout en Europe",
     hero_subtitle:
-      "Plus de 30 ans à trouver des plantes pour les professionnels. Nous cultivons des plantes méditerranéennes dans notre pépinière de Gérone et localisons toutes les autres espèces grâce à notre réseau de pépinières. Si nous ne la cultivons pas, nous la trouvons.",
+      "Plus de 30 ans à fournir des plantes aux professionnels. Nous ne les cultivons pas : nous les sélectionnons chez les pépiniéristes qui réussissent le mieux chaque espèce, en Espagne et dans le reste de l'Europe, et nous livrons votre liste complète depuis un seul fournisseur.",
     hero_secondary_button:
       "Vous préférez que nous cherchions ? Demandez un devis",
-    hero_tag: "Production dans notre pépinière",
-    hero_image_alt: "Champ de lavande dans la pépinière Girona Plants",
+    hero_tag: "Négociant indépendant depuis 1992",
+    hero_image_alt: "Champ de lavande dans l'une des pépinières qui fournissent Girona Plants",
     hero_stat_label: "références disponibles",
-    hero_stat_note: "Catalogue mis à jour depuis la pépinière",
+    hero_stat_note: "Disponibilité à jour de nos pépinières partenaires",
 
     search_placeholder: "Cherchez une espèce : Quercus, Lavandula, Festuca…",
     search_button: "Rechercher",
@@ -267,7 +267,7 @@ const content: Record<string, HomeFallbackContent> = {
       { value: "+30 ans", label: "au service des professionnels du végétal" },
       { value: "336", label: "genres différents au catalogue" },
       { value: "24-48 h", label: "pour recevoir votre devis" },
-      { value: "Europe", label: "réseau de pépinières de confiance" },
+      { value: "Europe", label: "pépinières partenaires sélectionnées" },
     ],
 
     plants_title: "Nos plantes",
@@ -289,8 +289,8 @@ const content: Record<string, HomeFallbackContent> = {
         text: "Cochez des espèces au catalogue ou joignez votre propre listing Excel. Sans inscription et sans commande minimale.",
       },
       {
-        title: "Nous cherchons ce qui manque",
-        text: "Ce que nous ne cultivons pas, nous le localisons dans notre réseau de pépinières de confiance en Espagne et dans le reste de l'Europe.",
+        title: "Nous cherchons chaque plante",
+        text: "Nous localisons chaque espèce chez le pépiniériste qui la réussit le mieux, en Espagne et dans le reste de l'Europe, et nous négocions le prix pour vous.",
       },
       {
         title: "Vous recevez une commande complète",
@@ -301,7 +301,7 @@ const content: Record<string, HomeFallbackContent> = {
     catalogues_title: "Catalogues",
     catalogues_headline: "Téléchargez-les et partagez-les avec votre équipe",
     catalogues_subtitle:
-      "PDF à jour de disponibilité et de production, prêts à transmettre au chantier ou aux achats.",
+      "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
     catalogues_button: "Voir les catalogues",
     download_label: "Télécharger",
 
