@@ -27,15 +27,20 @@ ssh "$HOST" "cd $FRONTEND \
   && echo \"    now at: \$(git log --oneline -1)\""
 
 echo "==> 3/5 Installing the seed script into the Strapi project"
+# The JSON is the copy itself; without it the seed re-writes whatever
+# site-content.json the container happens to still hold, which is how a
+# rewrite of every string once seeded the previous month's text back in.
 ssh "$HOST" "mkdir -p $STRAPI/scripts \
   && cp $FRONTEND/cms/scripts/seed-site-content.js $STRAPI/scripts/seed-site-content.js \
-  && echo '    seed script in place'"
+  && cp $FRONTEND/cms/scripts/site-content.json $STRAPI/scripts/site-content.json \
+  && echo '    seed script and content in place'"
 
 echo "==> 4/5 Running the seed inside the container"
 # docker cp covers the case where scripts/ isn't baked into the image.
 ssh "$HOST" "cd $BASE \
   && { docker compose exec -T strapi mkdir -p scripts || true; } \
   && docker cp strapi/scripts/seed-site-content.js gp-strapi:/srv/app/scripts/ \
+  && docker cp strapi/scripts/site-content.json gp-strapi:/srv/app/scripts/ \
   && docker compose exec -T -e SEED_FORCE=$FORCE strapi node scripts/seed-site-content.js"
 
 echo "==> 5/5 Verifying the API"
