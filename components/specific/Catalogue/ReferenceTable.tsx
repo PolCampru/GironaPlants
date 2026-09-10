@@ -6,6 +6,7 @@ import { formatPrice } from "@/lib/format";
 import type { CatalogueRow } from "@/lib/catalogue";
 import type { CatalogueCopy } from "@/data/catalogueContent";
 import { getCampaignLabel } from "@/data/campaign";
+import { getPriceAudienceNote } from "@/data/pricing";
 import AddRowToQuote from "./AddRowToQuote";
 import { NoteTag, Table, TableNote, TableScroll } from "./Catalogue.style";
 
@@ -78,10 +79,12 @@ const ReferenceTable = ({
         </tbody>
       </Table>
     </TableScroll>
-    {/* Prices hold for one supplier campaign, so the table says which. */}
+    {/* Prices hold for one supplier campaign, so the table says which — and
+        they are that supplier's trade prices, so it says who they are for.
+        A particular reading a figure here is not reading their own. */}
     <TableNote>
       <NoteTag>{getCampaignLabel(locale)}</NoteTag>
-      {copy.note}
+      {copy.note} {getPriceAudienceNote(locale)}
     </TableNote>
   </>
 );

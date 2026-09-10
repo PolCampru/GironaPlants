@@ -318,3 +318,14 @@ export const Skeleton = styled.div<{ $compact: boolean }>`
     }
   }
 `;
+
+/**
+ * Sits under the quote lines: the prices on them were copied from the trade
+ * catalogue, so they are not a particular's price. Same weight as KeptLocal —
+ * a footnote to the list, not a warning about it.
+ */
+export const PriceAudienceNote = styled.p`
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: ${({ theme }) => theme.colors.muted};
+`;

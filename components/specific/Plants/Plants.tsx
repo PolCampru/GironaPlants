@@ -25,6 +25,7 @@ import {
   LabelRow,
   PageHead,
   PlantsWrapper,
+  PriceAudienceNote,
   ResultsBar,
   ResultsCount,
   SortSelect,
@@ -40,6 +41,7 @@ import useUiLabels from "@/hooks/useUiLabels";
 import { OffersDataType } from "@/types/Offers";
 import type { ProductsHeading } from "@/data/pageHeadings";
 import { getCampaignLabel } from "@/data/campaign";
+import { getPriceAudienceNote } from "@/data/pricing";
 import { OffersCarousel } from "./ContainerOffers/ContainerOffers";
 
 export default function Plants({
@@ -97,6 +99,9 @@ export default function Plants({
             : heading.fallbackTitle}
         </h1>
         <p>{heading.lead}</p>
+        {/* The table below prices the supplier's trade catalogue, so the head
+            says who those figures are for before anyone reads one. */}
+        <PriceAudienceNote>{getPriceAudienceNote(locale)}</PriceAudienceNote>
       </HeadText>
 
       <HeadAside>

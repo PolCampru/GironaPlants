@@ -2,11 +2,12 @@
 
 import React from "react";
 import { OfferType } from "@/types/Offers";
-import { OffersGrid, OffersWrapper } from "./Offers.style";
+import { OffersGrid, OffersWrapper, PriceAudienceNote } from "./Offers.style";
 import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
 import OfferCard from "./OfferCard/OfferCard";
 import EmptyState from "./EmptyState/EmptyState";
 import type { PageHeading } from "@/data/pageHeadings";
+import { getPriceAudienceNote } from "@/data/pricing";
 
 const Offers = ({
   data,
@@ -31,11 +32,17 @@ const Offers = ({
     {data.length === 0 ? (
       <EmptyState lng={lng} />
     ) : (
-      <OffersGrid>
-        {data.map((offer) => (
-          <OfferCard key={offer.id} data={offer} />
-        ))}
-      </OffersGrid>
+      <>
+        {/* A page that is nothing but prices, and the likeliest one for a
+            particular to land on from search — so it says, before the first
+            card, that those are trade prices. */}
+        <PriceAudienceNote>{getPriceAudienceNote(lng)}</PriceAudienceNote>
+        <OffersGrid>
+          {data.map((offer) => (
+            <OfferCard key={offer.id} data={offer} />
+          ))}
+        </OffersGrid>
+      </>
     )}
   </OffersWrapper>
 );

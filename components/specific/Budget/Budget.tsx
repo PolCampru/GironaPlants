@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FiLock, FiPlus } from "react-icons/fi";
 import { ItemType } from "@/types/Cart";
 import { fill, plural, type QuoteCopy } from "@/data/budgetContent";
+import { getPriceAudienceNote } from "@/data/pricing";
 import { formatNumber } from "@/lib/format";
 import useLocale from "@/hooks/useLocale";
 import useUiLabels from "@/hooks/useUiLabels";
@@ -21,6 +22,7 @@ import {
   NoMatches,
   PanelFooter,
   PanelHead,
+  PriceAudienceNote,
   Skeleton,
   Summary,
   UndoBar,
@@ -209,6 +211,14 @@ const Budget = ({
       </ItemList>
 
       {filteredItems.length === 0 && <NoMatches>{copy.noMatches}</NoMatches>}
+
+      {/* The line prices are the ones carried over from the catalogue, so
+          they are trade prices — said here, under the lines themselves,
+          because this list reads as "your" quote. Not under a search that
+          matched nothing: there are no prices on screen to qualify. */}
+      {filteredItems.length > 0 && (
+        <PriceAudienceNote>{getPriceAudienceNote(locale)}</PriceAudienceNote>
+      )}
 
       {undo && (
         <UndoBar role="status">

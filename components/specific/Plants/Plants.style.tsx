@@ -337,3 +337,17 @@ export const CloseButton = styled.button`
   color: ${({ theme }) => theme.colors.dark};
   cursor: pointer;
 `;
+
+/**
+ * Who the listed prices are for. The catalogue behind them is a trade
+ * catalogue, so a particular's price can differ — smaller than the lead, and
+ * under it, because it qualifies the table rather than introducing it.
+ */
+export const PriceAudienceNote = styled.p`
+  && {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: ${({ theme }) => theme.colors.muted};
+    max-width: 38rem;
+  }
+`;

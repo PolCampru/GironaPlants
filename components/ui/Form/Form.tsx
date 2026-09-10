@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiInfo } from "react-icons/fi";
 import {
   FieldGrid,
   FormCard,
@@ -9,12 +9,15 @@ import {
   FormHead,
   FormTitle,
   Label,
+  PriceNotice,
   SubmitRow,
 } from "./Form.style";
 import { InputText } from "./InputText/InputText";
 import Checkbox from "../CheckBox/CheckBox";
 import Button from "../Button/Button";
 import useForm from "@/hooks/useForm";
+import useLocale from "@/hooks/useLocale";
+import { getParticularPriceNotice } from "@/data/pricing";
 import type { PageHeading } from "@/data/pageHeadings";
 import type { FormType } from "@/types/Contact";
 import FilterToggle from "../FilterToggle/FilterToggle";
@@ -47,6 +50,7 @@ const Form = ({
     formErrors,
   } = useForm(content);
 
+  const locale = useLocale();
   const inputs = data?.inputs ?? [];
   const isParticular = (formValues["type"]?.value as unknown) === "particular";
 
@@ -157,6 +161,22 @@ const Form = ({
         }}
       >
         {restInputs.filter((i) => i.type === "toggle").map(renderInput)}
+
+        {/* The prices on the site come from a trade catalogue, so a
+            particular has to be told they are not the ones being quoted —
+            here, right under the choice that says so.
+
+            The region is always in the DOM and only its content changes:
+            a live region that mounts together with its text is announced by
+            almost nothing, so switching to "Particular" would be silent. */}
+        <PriceNotice role="status">
+          {isParticular && (
+            <>
+              <FiInfo aria-hidden="true" size={17} />
+              <span>{getParticularPriceNotice(locale)}</span>
+            </>
+          )}
+        </PriceNotice>
 
         <FieldGrid>{gridInputs.map(renderInput)}</FieldGrid>
 
