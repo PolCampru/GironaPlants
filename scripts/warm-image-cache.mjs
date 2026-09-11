@@ -81,7 +81,20 @@ async function main() {
   const started = Date.now();
   const server = spawn("node_modules/.bin/next", ["start", "--port", PORT], {
     stdio: "ignore",
-    env: { ...process.env, NODE_ENV: "production" },
+    env: {
+      ...process.env,
+      NODE_ENV: "production",
+      // fetchStrapiData() asks NEXT_PUBLIC_BASE_URL for the CMS, so a page
+      // renders its data by calling back into a server. Left alone that is
+      // gironaplants.com, which would make this build's cache depend on the
+      // live site being up -- and warm the wrong images if it were not, since
+      // a failed lookup renders fallbacks. Point it at the server we just
+      // started so the crawl reads through this build's own proxy route.
+      // Only the server reads it at runtime; the client bundle already has
+      // the real value compiled in, and this server is thrown away. Image
+      // URLs come from STRAPI_MEDIA_URL, so the variants are unchanged.
+      NEXT_PUBLIC_BASE_URL: ORIGIN,
+    },
   });
   server.on("error", (err) => log(`could not start server: ${err.message}`));
 
