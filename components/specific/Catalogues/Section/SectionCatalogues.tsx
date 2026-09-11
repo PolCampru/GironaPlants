@@ -15,10 +15,11 @@ const SectionCatalogues = ({ data }: { data: SectionCataloguesProps }) => (
       lead={data.section_subtitle}
     />
     <CataloguesGrid>
-      {data.items.map((item) => (
+      {data.items.map((item, index) => (
         <CatalogueCard
           key={item.id}
           item={item}
+          index={index}
           downloadLabel={data.download_label}
         />
       ))}

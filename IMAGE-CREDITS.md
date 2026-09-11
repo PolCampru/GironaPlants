@@ -11,11 +11,11 @@ oblige us to publish it.
 
 | File | Card | Licence | Source | Original |
 | --- | --- | --- | --- | --- |
-| `rootedCuttings.jpg` | Rooted cuttings | CC0 1.0 | rawpixel | [Potted plants](https://www.rawpixel.com/image/8726059/potted-plants) |
+| `rootedCuttings.jpg` | Catalogue card, no cover | CC0 1.0 | rawpixel | [Potted plants](https://www.rawpixel.com/image/8726059/potted-plants) |
 | `groundcovers.jpg` | Groundcovers | CC0 1.0 | wordpress | [The green ground cover plant Periwinkle (en), Immergrün (de) (Vinca minor) with a single purple flower in detail.](https://wordpress.org/photos/photo/419660d058/) |
 | `grasses.jpg` | Grasses | CC0 1.0 | wordpress | [Lush ornamental grass with green and white variegated leaves flowing outward. Photographed in Washington Park, Portland.](https://wordpress.org/photos/photo/12468d2a1a/) |
 | `aquatic.jpg` | Aquatic plants | CC0 1.0 | rawpixel | [Pink water lily](https://www.rawpixel.com/image/6019804/pink-water-lily-free-public-domain-cc0-image) |
-| `ferns.jpg` | Ferns | CC0 1.0 | stocksnap | [Ferns Green](https://stocksnap.io/photo/ferns-green-2G7YH4XHF5) |
+| `ferns.jpg` | Catalogue card, no cover | CC0 1.0 | stocksnap | [Ferns Green](https://stocksnap.io/photo/ferns-green-2G7YH4XHF5) |
 | `nursery.jpg` | Others | CC0 1.0 | rawpixel | [Plant nursery, Whitebark Pine restoration](https://www.rawpixel.com/image/8733874/photo-image-plants-tree-public-domain) |
 
 Photos added to `public/images/` for the home hero and to
@@ -40,10 +40,15 @@ CC0/PD, then centre-cropped to the slot's aspect and re-encoded at JPEG q82.
 green, set in the site's own faces — Newsreader for the wordmark, Manrope for
 everything else. It carries no third-party licence beyond that photograph's.
 
-Other pre-existing photos (`hazelnut.jpg`, `redCedar.jpg`, `lavenders.jpg`,
-`aboutUs/ilex.jpg` and the remaining catalogue covers) are unchanged and are
-not covered by this file.
+Other pre-existing photos (`hazelnut.jpg`, `redCedar.jpg`, `lavenders.jpg`
+and `aboutUs/ilex.jpg`) are unchanged and are not covered by this file. The
+local catalogue covers that Strapi's uploads replaced — `productionCatalogue`,
+`availableCatalog` and `perennialsCatalog` — were deleted once nothing
+referenced them; they are in the git history if they are ever wanted back.
 
 Each photograph is now used in exactly one on-page slot. `lavenders.jpg` is
 the only one that appears twice, and the second use is the Open Graph /
 structured-data image, which never renders next to the Lavandula card.
+
+The two `plants/` photographs left over from the category cards are the
+fallback covers a catalogue gets when the CMS has none — see `CatalogueCard`.

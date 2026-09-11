@@ -17,15 +17,28 @@ import { track } from "@/lib/analytics";
 type CatalogueCardProps = {
   item: CatalogueItem;
   downloadLabel: string;
+  /** Position in the grid, used only to pick a fallback cover. */
+  index?: number;
 };
 
-const CATALOGUE_FALLBACK_COVER = "/images/mainCatalogue.jpg";
+// A catalogue published without a cover used to fall back to
+// mainCatalogue.jpg — every coverless card showed the same picture, and the
+// catalogues hero falls back to that same file, so a card echoed the hero
+// too. Index into a small pool instead, so the cards stay distinct from each
+// other and from the hero. Both grids render the list in the same order, so a
+// given catalogue keeps the same photograph on the home teaser and on
+// /catalogues. Past the end of the pool it cycles: the real fix for a fourth
+// coverless catalogue is to upload its cover.
+const FALLBACK_COVERS = [
+  "/images/plants/rootedCuttings.jpg",
+  "/images/plants/ferns.jpg",
+];
 
-const CatalogueCard = ({ item, downloadLabel }: CatalogueCardProps) => (
+const CatalogueCard = ({ item, downloadLabel, index = 0 }: CatalogueCardProps) => (
   <CardWrapper>
     <CardCover>
       <Image
-        src={item.imageUrl || CATALOGUE_FALLBACK_COVER}
+        src={item.imageUrl || FALLBACK_COVERS[index % FALLBACK_COVERS.length]}
         alt=""
         width={520}
         height={420}

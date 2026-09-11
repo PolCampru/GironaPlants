@@ -44,7 +44,11 @@ const CataloguesTeaser = ({ data }: { data: CataloguesTeaserProps }) => {
               animate={isInView ? { opacity: 1, y: 0 } : undefined}
               transition={{ duration: 0.4, delay: index * 0.08 }}
             >
-              <CatalogueCard item={item} downloadLabel={data.download_label} />
+              <CatalogueCard
+                item={item}
+                index={index}
+                downloadLabel={data.download_label}
+              />
             </motion.div>
           ))}
         </CardsGrid>
