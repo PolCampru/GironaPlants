@@ -25,15 +25,31 @@ previously reused a photograph that already appeared elsewhere on the site
 and Juniperus cards, plus the Contact aside). All are **CC0 1.0 or public
 domain** (US federal works are PD by statute): free for commercial use, no
 attribution required. Found through the Wikimedia Commons API filtered to
-CC0/PD, then centre-cropped to the slot's aspect and re-encoded at JPEG q82.
+CC0/PD, then cropped to the slot's aspect and re-encoded at JPEG q82. The
+crop is centred except where a person stood in frame — see `containerRows.jpg`
+below.
 
 | File | Slot | Licence | Author | Original |
 | --- | --- | --- | --- | --- |
-| `nurseryRows.jpg` | Home hero | Public domain (USDA) | U.S. Department of Agriculture | [20170831-OSEC-LSC-0144](https://commons.wikimedia.org/wiki/File:20170831-OSEC-LSC-0144_(36915132991).jpg) |
+| `containerRows.jpg` | Home hero | Public domain (USDA) | U.S. Department of Agriculture | [20170831-OSEC-LSC-0144](https://commons.wikimedia.org/wiki/File:20170831-OSEC-LSC-0144_(36915132991).jpg) |
 | `aboutUs/glasshouse.jpg` | About Us mosaic, tall tile | CC0 1.0 | Faust002 | [The interior of small Greenhouse in Hortus Botanicus of Amsterdam](https://commons.wikimedia.org/wiki/File:The_interior_of_small_Greenhouse_in_Hortus_Botanicus_of_Amsterdam.jpg) |
 | `aboutUs/seedlingTrays.jpg` | About Us mosaic | Public domain (USFS) | Forest Service Northern Region | [Aspen seedlings at the Coeur d'Alene Nursery](https://commons.wikimedia.org/wiki/File:Aspen_seedlings_at_the_Coeur_d%27Alene_Nursery_(50826119622).jpg) |
 | `aboutUs/potRows.jpg` | About Us mosaic | CC0 1.0 | Rohitjahnavi | [Olea dioica seedlings nursery, restoration](https://commons.wikimedia.org/wiki/File:Olea_dioica_seedlings_nursery,_restoration.jpg) |
 | `aboutUs/conifers.jpg` | About Us mosaic | CC0 1.0 | Daderot | [Picea pungens - witch's broom seedlings - Stanley M. Rowe Arboretum](https://commons.wikimedia.org/wiki/File:Picea_pungens_-_witch%27s_broom_seedlings_-_Stanley_M._Rowe_Arboretum_-_DSC03514.JPG) |
+
+`containerRows.jpg` is not a centre crop. The 7360x4912 original has a worker
+standing in the middle of the rows, and the hero is the one photograph on the
+site that showed a recognisable person — so the 1400x1050 frame is taken from
+the left of the original (x 0-3800, y 600-3450), which keeps the potted rows,
+the sprinkler line and the treeline but leaves the worker outside the frame.
+Same photograph, same licence; only the crop changed.
+
+It is also why the file is no longer called `nurseryRows.jpg`. Re-cropping in
+place changed nothing for anyone who had already loaded the page: the image
+optimiser keys its cache on the URL, `minimumCacheTTL` is a year, and it
+serves the variant with `max-age=31536000`, so both `.next/cache/images` and
+every visitor's browser kept the old frame. Renaming the file is the cache
+bust — a new URL has nothing cached against it.
 
 `mainCatalogue.jpg` is ours: the general-catalogue cover is composed from
 `lavenders.jpg` (the same photograph the Lavandula card uses) under the brand

@@ -22,7 +22,7 @@ import { strapiMediaUrl } from "@/lib/strapi";
 
 // Not lavenders.jpg: that photograph is the Lavandula category card a few
 // hundred pixels further down the same page, so the hero repeated it.
-const HERO_FALLBACK_IMAGE = "/images/nurseryRows.jpg";
+const HERO_FALLBACK_IMAGE = "/images/containerRows.jpg";
 
 const HeroHome = ({ data }: { data: HeroHomeProps }) => {
   // One photograph, not a 2x2 grid of four. Strapi has never had hero images,
