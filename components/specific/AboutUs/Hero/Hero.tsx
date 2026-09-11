@@ -16,11 +16,15 @@ import CtaLink from "@/components/ui/CtaLink/CtaLink";
 import { HeroAboutUsProps } from "@/types/AboutUs";
 import { strapiMediaUrl } from "@/lib/strapi";
 
+// Four photographs used nowhere else on the site. The previous set was
+// borrowed from other pages — ilex is the Quercus card, nursery.jpg is the
+// Contact aside, lavenders and redCedar are the Lavandula and Juniperus
+// cards — so the mosaic read as a recap of the home page.
 const MOSAIC_FALLBACKS = [
-  { src: "/images/aboutUs/ilex.jpg", tall: true },
-  { src: "/images/plants/nursery.jpg", tall: false },
-  { src: "/images/lavenders.jpg", tall: false },
-  { src: "/images/redCedar.jpg", tall: false },
+  { src: "/images/aboutUs/glasshouse.jpg", tall: true },
+  { src: "/images/aboutUs/seedlingTrays.jpg", tall: false },
+  { src: "/images/aboutUs/potRows.jpg", tall: false },
+  { src: "/images/aboutUs/conifers.jpg", tall: false },
 ];
 
 const HeroAboutUs = ({ data }: { data: HeroAboutUsProps }) => {

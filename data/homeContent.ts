@@ -60,7 +60,7 @@ const content: Record<string, HomeFallbackContent> = {
     hero_secondary_button:
       "¿Prefieres que lo busquemos nosotros? Solicita un presupuesto",
     hero_tag: "Comercializadora independiente desde 1992",
-    hero_image_alt: "Campo de lavanda en uno de los viveros que suministran a Girona Plants",
+    hero_image_alt: "Hileras de arbustos en contenedor en un vivero, listos para seleccionar",
     hero_stat_label: "referencias disponibles",
     hero_stat_note: "Disponibilidad actualizada de nuestros viveros proveedores",
 
@@ -125,7 +125,7 @@ const content: Record<string, HomeFallbackContent> = {
     hero_secondary_button:
       "Prefereixes que la busquem nosaltres? Demana un pressupost",
     hero_tag: "Comercialitzadora independent des del 1992",
-    hero_image_alt: "Camp de lavanda en un dels vivers que subministren a Girona Plants",
+    hero_image_alt: "Fileres d'arbustos en contenidor en un viver, a punt per seleccionar",
     hero_stat_label: "referències disponibles",
     hero_stat_note: "Disponibilitat actualitzada dels nostres vivers proveïdors",
 
@@ -189,7 +189,7 @@ const content: Record<string, HomeFallbackContent> = {
       "More than 30 years supplying plants to the trade. We don't grow them — we select them, from the growers who raise each species best in Spain and the rest of Europe, and deliver your whole list from a single supplier.",
     hero_secondary_button: "Rather we did the looking? Request a quote",
     hero_tag: "An independent plant merchant since 1992",
-    hero_image_alt: "Lavender field at one of the nurseries that supply Girona Plants",
+    hero_image_alt: "Rows of containerised shrubs at a nursery, ready to be selected",
     hero_stat_label: "references available",
     hero_stat_note: "Live availability from the growers we buy from",
 
@@ -254,7 +254,7 @@ const content: Record<string, HomeFallbackContent> = {
     hero_secondary_button:
       "Vous préférez que nous cherchions ? Demandez un devis",
     hero_tag: "Négociant indépendant depuis 1992",
-    hero_image_alt: "Champ de lavande dans l'une des pépinières qui fournissent Girona Plants",
+    hero_image_alt: "Rangées d'arbustes en conteneur dans une pépinière, prêts à être sélectionnés",
     hero_stat_label: "références disponibles",
     hero_stat_note: "Disponibilité à jour de nos pépinières partenaires",
 
