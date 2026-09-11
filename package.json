@@ -11,7 +11,8 @@
     "prod:reload": "pm2 reload ecosystem.config.js",
     "prod:stop": "pm2 stop ecosystem.config.js",
     "prod:status": "pm2 status",
-    "seed:build": "node --experimental-strip-types cms/scripts/build-seed-content.mts"
+    "seed:build": "node --experimental-strip-types cms/scripts/build-seed-content.mts",
+    "warm:images": "node scripts/warm-image-cache.mjs"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",

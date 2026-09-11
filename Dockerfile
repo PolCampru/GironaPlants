@@ -14,7 +14,13 @@ ENV STRAPI_BASE_URL=$STRAPI_BASE_URL
 ENV STRAPI_TOKEN=$STRAPI_TOKEN
 ENV NEXT_PUBLIC_UMAMI_WEBSITE_ID=$NEXT_PUBLIC_UMAMI_WEBSITE_ID
 ENV NODE_ENV=production
-RUN npm run build && chown -R node:node /srv/app
+# The image cache is built here, not left for the first visitor: `next build`
+# does not encode any variant, so a fresh container would make whoever lands
+# first wait on an AVIF encode per photograph. Same layer as the build so the
+# chown below covers the cache and the runtime user can keep writing to it.
+RUN npm run build \
+ && npm run warm:images \
+ && chown -R node:node /srv/app
 USER node
 EXPOSE 3000
 CMD ["npm","run","start"]
