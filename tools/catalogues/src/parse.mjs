@@ -18,27 +18,10 @@ async function rowsOf(file){
 }
 const pick=(cells,lo,hi)=>cells.filter(c=>c.x>=lo&&c.x<hi).map(c=>c.s).join('').replace(/\s+/g,' ').trim();
 
-// ---------- MAIN price list ----------
-{
-  const pages = await rowsOf(process.argv[2]);
-  const genera=[]; let curG=null, curItem=null;
-  for(const rows of pages){
-    for(const {cells} of rows){
-      const line = cells.map(c=>c.s).join('').trim();
-      if(/^GIRONA PLANTS SL/.test(line)||/^P[áa]gina \d+/.test(line)) continue;
-      const g=pick(cells,-20,140), d=pick(cells,140,335), f=pick(cells,335,412), h=pick(cells,412,480), pr=pick(cells,480,600);
-      if(!f && !pr) continue;                    // header/legend noise
-      if(g){ curG={genus:g, items:[]}; genera.push(curG); }
-      if(!curG) continue;
-      if(d){ curItem={name:d, rows:[]}; curG.items.push(curItem); }
-      if(!curItem) continue;
-      if(f||h||pr) curItem.rows.push({format:f, height:h, price:pr});
-    }
-  }
-  fs.writeFileSync(process.argv[5]+'/main.json', JSON.stringify(genera,null,1));
-  const n=genera.reduce((a,g)=>a+g.items.length,0), r=genera.reduce((a,g)=>a+g.items.reduce((b,i)=>b+i.rows.length,0),0);
-  console.log(`MAIN: ${genera.length} genera, ${n} taxa, ${r} price rows`);
-}
+// The general (MAIN) price list is no longer parsed here: it arrives as an
+// XLSX since 2026-2027 (src/parse-main-xlsx.mjs; src/parse-main.mjs for the
+// older PDFs). argv[2] is kept in the CLI signature and ignored, so the README
+// invocation stays the same and this can never overwrite data/main.json.
 // ---------- ESQUEJES ----------
 {
   const pages = await rowsOf(process.argv[3]);

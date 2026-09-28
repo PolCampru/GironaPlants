@@ -26,7 +26,7 @@ cd tools/catalogues
 node src/parse-main-xlsx.mjs "…/GIRONA PLANTS - 2026-2027.xlsx"                  data/main.json
 node src/parse-vivaces.mjs  "…/DISPONIBLE VIVACES GRAMÍNEAS Y HELECHOS ….pdf"    data/vivaces.json
 node src/clean-vivaces.mjs  data/vivaces.json data/vivaces.clean.json
-node src/parse.mjs          "…main…" "…esquejes…" "…vivaces…" data   # esquejes.json
+node src/parse.mjs          -        "…esquejes…" "…vivaces…" data   # esquejes.json (1er arg ignorado)
 
 # 2. Componer el HTML de imprenta y las portadas
 node src/gen.mjs
@@ -57,7 +57,11 @@ lo único que no encuentra son los nombres largos que parten en dos líneas.
 ## Publicar en Strapi
 
 Los **PDF y las portadas**: `cms/app/scripts/upload-catalogues.js`, ejecutado
-dentro del contenedor. Ver la cabecera de ese fichero.
+dentro del contenedor. Ver la cabecera de ese fichero. El PDF general cambia
+de nombre cada temporada y sube solo; la portada conserva el nombre, así que
+hay que pasar `FORCE_NAMES=girona-plants-catalogo-general-portada.jpg` o el
+web seguirá mostrando la portada (y los recuentos) de la temporada anterior.
+El PDF de la temporada anterior queda huérfano en la biblioteca de medios.
 
 Las **filas de la coleccion `plant`** (la tabla de `/products` y las paginas de
 genero y especie) salen del mismo `data/main.json`:
@@ -97,7 +101,7 @@ URL de especie mas de las 90 que el propio listado ya se lleva.
 ### Cuando solo cambia un nombre
 
 `load-plants.js` vacia la coleccion antes de reescribirla, y `getCatalogue()`
-cachea una hora: una revalidacion que caiga dentro de los 1.458 `create`
+cachea una hora: una revalidacion que caiga dentro de los ~1.500 `create`
 sirve un indice A-Z vacio y da 404 en las paginas profundas durante la hora
 siguiente. Para una correccion de nombres — cambia `cleanName`, no el listado —
 eso no compra nada. `rename-plants.js` hace un UPDATE por nombre, sin ventana

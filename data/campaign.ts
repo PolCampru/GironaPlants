@@ -21,6 +21,6 @@ const LABEL: Record<string, string> = {
   fr: `Campagne ${CATALOGUE_CAMPAIGN}`,
 };
 
-/** Short badge, e.g. "Campaña 2025/26". */
+/** Short badge, e.g. "Campaña 2026/27". */
 export const getCampaignLabel = (locale: string): string =>
   LABEL[locale] ?? LABEL.es;

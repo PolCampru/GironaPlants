@@ -48,7 +48,9 @@ for (const r of grid) {
   if (/^Precios sin IVA|^SIMBOLOS|^SÍMBOLS|^SYMBOLS|^CONDICIONES DE VENTA/i.test(g)) ended = true;
   if (ended) break;
 
-  const hasPrice = typeof p0 === 'number' ? p0 > 0 : !!str(p0);
+  // a price cell stored as text ("0", "1,30") is read the same way as a number
+  const pn = typeof p0 === 'number' ? p0 : Number(str(p0).replace(',', '.'));
+  const hasPrice = Number.isFinite(pn) && pn > 0;
   if (!g && !d && !f && !h && !hasPrice) continue;                // separator (0 price) / blank
 
   if (g) { curG = { genus: g, items: [] }; genera.push(curG); curItem = null; }
