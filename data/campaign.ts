@@ -3,7 +3,7 @@
  *
  * Every price on a product page comes from one supplier PDF per campaign (see
  * tools/catalogues), so a price is only true for that campaign — the last
- * import repriced 693 rows. Saying which campaign it is on the page itself is
+ * import repriced 1,314 rows. Saying which campaign it is on the page itself is
  * what stops a stale figure from reading as a current one.
  *
  * It lives here, as plain per-locale copy, rather than in public/locales: the
@@ -12,7 +12,7 @@
  */
 
 /** Bump this — and only this — when the next supplier catalogue is loaded. */
-export const CATALOGUE_CAMPAIGN = "2025/26";
+export const CATALOGUE_CAMPAIGN = "2026/27";
 
 const LABEL: Record<string, string> = {
   es: `Campaña ${CATALOGUE_CAMPAIGN}`,

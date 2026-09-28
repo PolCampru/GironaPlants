@@ -21,8 +21,9 @@ rutas a esos ficheros:
 ```bash
 cd tools/catalogues
 
-# 1. Extraer los listados. Cada parser verifica lo que extrae contra el PDF.
-node src/parse-main.mjs     "…/GIRONA PLANTS - 2025-2026.pdf"                    data/main.json
+# 1. Extraer los listados. Cada parser verifica lo que extrae contra el origen.
+#    El catálogo general llega en XLSX desde 2026-2027 (antes, PDF: parse-main.mjs).
+node src/parse-main-xlsx.mjs "…/GIRONA PLANTS - 2026-2027.xlsx"                  data/main.json
 node src/parse-vivaces.mjs  "…/DISPONIBLE VIVACES GRAMÍNEAS Y HELECHOS ….pdf"    data/vivaces.json
 node src/clean-vivaces.mjs  data/vivaces.json data/vivaces.clean.json
 node src/parse.mjs          "…main…" "…esquejes…" "…vivaces…" data   # esquejes.json
@@ -44,7 +45,11 @@ node src/qa.mjs
 ```
 
 `src/verify.mjs` hace la comprobación equivalente sobre el parser del catálogo
-general: cuenta y suma los precios del PDF de origen contra `data/main.json`.
+general en PDF: cuenta y suma los precios del PDF de origen contra
+`data/main.json`. Con el XLSX no hace falta: el parser lee celdas, no texto
+posicionado, y falla en cuanto encuentra una fila sin precio o un precio con
+más de dos decimales. La suma que imprime (5.384,46 € en 2026-2027) es la que
+`load-plants.js` tiene que dar al final.
 
 `qa.mjs` vuelve a leer los PDF generados y compara fila por fila con los JSON:
 lo único que no encuentra son los nombres largos que parten en dos líneas.
@@ -58,7 +63,7 @@ Las **filas de la coleccion `plant`** (la tabla de `/products` y las paginas de
 genero y especie) salen del mismo `data/main.json`:
 
 ```bash
-node src/plants-for-strapi.mjs data/main.json data/plants.json   # 1.458 filas
+node src/plants-for-strapi.mjs data/main.json data/plants.json   # 1.471 filas en 2026-2027
 
 scp cms/app/scripts/load-plants.js tools/catalogues/data/plants.json root@46.202.135.74:/tmp/
 ssh root@46.202.135.74 'cp /opt/gironaplants/data/data.db /opt/gironaplants/backups/data.db.pre-plants-$(date +%Y%m%d-%H%M%S)

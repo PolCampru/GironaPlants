@@ -330,7 +330,7 @@ ${textCSS}
     }) + indexPages(data, 3);
 
   const back = `<section class="page">
-    <header class="rh"><span class="mark">Girona Plants</span><span class="doc">Catálogo general · 2025—2026</span></header>
+    <header class="rh"><span class="mark">Girona Plants</span><span class="doc">Catálogo general · 2026—2027</span></header>
     <div class="tp">
       <div class="tp-kicker">Fuera de catálogo · Fora de catàleg · Not listed</div>
       <h2 class="tp-title">Si no está en la lista,<br>lo buscamos</h2>
@@ -351,7 +351,7 @@ ${textCSS}
       kicker: "Catálogo · Catàleg · Catalogue",
       title: "Girona<br>Plants",
       sub: [
-        "Precios de plantas 2025—2026",
+        "Precios de plantas 2026—2027",
         "Preus de plantes · Plant prices",
       ],
       stats: [
@@ -366,7 +366,7 @@ ${textCSS}
   fs.writeFileSync(
     path.join(OUT, "main.html"),
     doc({
-      title: "Girona Plants — Catálogo general 2025-2026",
+      title: "Girona Plants — Catálogo general 2026-2027",
       css,
       cover,
       front,
@@ -374,7 +374,7 @@ ${textCSS}
       back,
       cfg: {
         firstFolio: 5,
-        doc: "Catálogo general · Catàleg general · General catalogue 2025—2026",
+        doc: "Catálogo general · Catàleg general · General catalogue 2026—2027",
         foot: contact,
         columnHead,
         headBlocks: 1,
@@ -842,7 +842,7 @@ const webCovers = {
     photo: dataURI(path.join(PHOTOS, "lavenders.jpg")),
     kicker: "Catálogo · Catàleg · Catalogue",
     title: "Girona<br>Plants",
-    sub: ["Precios de plantas 2025—2026", "Preus de plantes · Plant prices"],
+    sub: ["Precios de plantas 2026—2027", "Preus de plantes · Plant prices"],
     stats: [
       { v: num(mainData.length), l: "Géneros · Genera" },
       {

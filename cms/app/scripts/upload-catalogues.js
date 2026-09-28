@@ -36,7 +36,7 @@ const MIME = { ".pdf": "application/pdf", ".jpg": "image/jpeg", ".png": "image/p
 
 /** The files, and the alt/caption they carry into the media library. */
 const ASSET_LIST = [
-  ["girona-plants-catalogo-general-2025-2026.pdf", "main.pdf"],
+  ["girona-plants-catalogo-general-2026-2027.pdf", "main.pdf"],
   ["girona-plants-catalogo-general-portada.jpg", "cover-main.jpg"],
   ["girona-plants-esquejes-enraizados-2026.pdf", "cuttings.pdf"],
   ["girona-plants-esquejes-enraizados-portada.jpg", "card-cuttings.jpg"],
