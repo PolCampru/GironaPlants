@@ -40,6 +40,7 @@ interface CookiePolicyContentType {
   ca: CookieContentType;
   en: CookieContentType;
   fr: CookieContentType;
+  it: CookieContentType;
   [key: string]: CookieContentType;
 }
 
@@ -202,6 +203,46 @@ const cookiePolicyContent: CookiePolicyContentType = {
       title: "Plus d'informations",
       content:
         "Pour des informations plus détaillées sur les cookies et comment les gérer, visitez aboutcookies.org ou allaboutcookies.org.",
+    },
+  },
+  it: {
+    title: "Cookie Policy",
+    intro:
+      "La presente cookie policy spiega che cosa sono i cookie e come li utilizziamo sul nostro sito web.",
+    whatAreCookies: {
+      title: "Che cosa sono i cookie?",
+      content:
+        "I cookie sono piccoli file di testo che i siti web memorizzano sul dispositivo dell'utente durante la navigazione. Servono a far funzionare il sito, o a farlo funzionare in modo più efficiente, nonché a fornire informazioni ai titolari del sito.",
+    },
+    howWeUse: {
+      title: "Come utilizziamo i cookie",
+      content:
+        "Utilizziamo i cookie per diverse finalità, descritte di seguito. Purtroppo, nella maggior parte dei casi, non esistono opzioni standard per disattivare i cookie senza disattivare completamente le funzionalità e le caratteristiche che essi aggiungono a questo sito.",
+    },
+    typesOfCookies: {
+      title: "Tipologie di cookie utilizzati",
+      essentialTitle: "Cookie tecnici (necessari)",
+      essentialContent:
+        "I cookie tecnici sono necessari per il funzionamento di base del sito web e non possono essere disattivati nei nostri sistemi.",
+      preferenceTitle: "Cookie di preferenza",
+      preferenceContent:
+        "Questi cookie consentono al sito web di ricordare le scelte effettuate dall'utente, al fine di offrirgli funzionalità avanzate e più personalizzate.",
+      statisticsTitle: "Cookie statistici",
+      statisticsContent:
+        "Questi cookie ci aiutano a comprendere come i visitatori interagiscono con il sito web, raccogliendo e comunicando informazioni in forma anonima. Per queste statistiche utilizziamo Umami, uno strumento di analisi ospitato sul nostro server che non installa cookie né raccoglie dati personali: misura le pagine visualizzate e le azioni in forma aggregata, e i dati non vengono condivisi con terzi.",
+      marketingTitle: "Cookie di marketing",
+      marketingContent:
+        "Questi cookie vengono utilizzati per tracciare i visitatori sui siti web, allo scopo di mostrare annunci pertinenti e interessanti per il singolo utente.",
+    },
+    controlCookies: {
+      title: "Come gestire i cookie",
+      content:
+        "È possibile gestire e/o eliminare i cookie a propria discrezione. È possibile eliminare tutti i cookie già presenti sul proprio dispositivo e configurare la maggior parte dei browser per impedirne l'installazione. In tal caso, tuttavia, potrebbe essere necessario regolare manualmente alcune preferenze a ogni visita di un sito e alcuni servizi e funzionalità potrebbero non funzionare.",
+    },
+    moreInfo: {
+      title: "Maggiori informazioni",
+      content:
+        "Per informazioni più dettagliate sui cookie e su come gestirli, visita aboutcookies.org o allaboutcookies.org.",
     },
   },
 };

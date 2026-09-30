@@ -8,7 +8,7 @@ export const SITE_URL = "https://gironaplants.com";
 export const SITE_NAME = "GironaPlants";
 export const OG_IMAGE = "/images/lavenders.jpg";
 
-export const SEO_LOCALES = ["es", "ca", "en", "fr"] as const;
+export const SEO_LOCALES = ["es", "ca", "en", "fr", "it"] as const;
 export type SeoLocale = (typeof SEO_LOCALES)[number];
 
 const OG_LOCALE: Record<SeoLocale, string> = {
@@ -16,6 +16,7 @@ const OG_LOCALE: Record<SeoLocale, string> = {
   ca: "ca_ES",
   en: "en_GB",
   fr: "fr_FR",
+  it: "it_IT",
 };
 
 export type SeoPageKey =
@@ -350,6 +351,83 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
       ],
     },
   },
+  it: {
+    home: {
+      title: "GironaPlants · Piante all'ingrosso in tutta Europa",
+      description:
+        "Da oltre 30 anni forniamo piante ai professionisti. Non le coltiviamo: le selezioniamo nei vivai di tutta Europa e ti consegniamo l'elenco completo. Preventivo in 24-48 h.",
+      keywords: [
+        "distributore di piante all'ingrosso",
+        "fornitore di piante Europa",
+        "commercio di piante all'ingrosso",
+        "piante all'ingrosso per paesaggisti",
+        "fornitura di piante ornamentali",
+        "piante all'ingrosso dalla Spagna",
+      ],
+    },
+    products: {
+      title: "Catalogo di piante all'ingrosso",
+      description:
+        "Alberi, arbusti, conifere, graminacee, tappezzanti e piante forestali da vivai selezionati in Spagna e nel resto d'Europa. Richiedi il tuo preventivo all'ingrosso senza impegno.",
+      keywords: [
+        "comprare piante all'ingrosso",
+        "piante mediterranee all'ingrosso",
+        "alberi e arbusti all'ingrosso",
+        "piante forestali autoctone",
+        "fornitore di piante Girona",
+      ],
+    },
+    offers: {
+      title: "Offerte di piante per professionisti",
+      description:
+        "Offerte stagionali e disponibilità speciali per i professionisti del giardinaggio e del paesaggio, a prezzo bloccato fino a esaurimento scorte.",
+      keywords: [
+        "offerte piante all'ingrosso",
+        "piante stagionali a prezzo speciale",
+        "offerte giardinaggio professionale",
+      ],
+    },
+    aboutUs: {
+      title: "Chi siamo · 30 anni nel commercio di piante",
+      description:
+        "Oltre 30 anni e due generazioni dedicate al commercio di piante. Senza produzione propria: per ogni specie scegliamo il vivaio europeo che la coltiva meglio.",
+      keywords: [
+        "commercio di piante all'ingrosso",
+        "fornitore di piante Europa",
+        "azienda familiare di piante Girona",
+      ],
+    },
+    catalogues: {
+      title: "Cataloghi di disponibilità e di stagione",
+      description:
+        "Scarica in PDF i cataloghi aggiornati di GironaPlants: genere, formato, altezza e prezzo di riferimento di tutte le piante che forniamo.",
+      keywords: [
+        "catalogo di piante PDF",
+        "lista di disponibilità piante",
+        "catalogo piante all'ingrosso",
+      ],
+    },
+    budget: {
+      title: "Richiedi un preventivo di piante",
+      description:
+        "Indicaci specie, misure e quantità di cui ha bisogno il tuo progetto e ti invieremo un preventivo su misura in 24-48 h, senza impegno.",
+      keywords: [
+        "preventivo piante",
+        "prezzi piante all'ingrosso",
+        "preventivo piante per paesaggisti",
+      ],
+    },
+    contact: {
+      title: "Contatti",
+      description:
+        "Contatta GironaPlants: +34 639 811 560 · gironaplants@gironaplants.com. Azienda familiare a Breda (Girona), con spedizioni in Italia e in tutta Europa.",
+      keywords: [
+        "contatti GironaPlants",
+        "fornitore di piante Breda Girona",
+        "telefono GironaPlants",
+      ],
+    },
+  },
 };
 
 function resolveLocale(lng: string): SeoLocale {
@@ -405,7 +483,7 @@ export function buildPageMetadata(lng: string, page: SeoPageKey): Metadata {
  * species catalogue pages, one per row group in Strapi.
  *
  * Same canonical + hreflang contract as buildPageMetadata: the plant data is
- * not localised (botanical names are Latin in all four locales), so the four
+ * not localised (botanical names are Latin in every locale), so the
  * language versions of a species page are near-identical by nature and the
  * alternates are what tells Google that is deliberate.
  */

@@ -100,6 +100,7 @@ export const metadata = {
       ca: "/ca",
       en: "/en",
       fr: "/fr",
+      it: "/it",
       "x-default": "/es",
     },
   },

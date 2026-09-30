@@ -207,6 +207,45 @@ const content: Record<string, AboutUsFallbackContent> = {
       "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
     catalogues_button: "Voir les catalogues",
   },
+
+  it: {
+    label: "Chi siamo · dal 1992",
+    title: "Una famiglia dedicata alle piante",
+    subtitle:
+      "Girona Plants è un'azienda familiare con oltre 30 anni di esperienza nel commercio di piante. Non abbiamo una produzione propria, ed è una scelta: ci permette di scegliere, specie per specie, il vivaio che la coltiva meglio. Acquistiamo da una rete di vivai di fiducia in Spagna e nel resto d'Europa e forniamo ordini completi, dalla prima all'ultima pianta.",
+    hero_button: "Vedi le nostre piante",
+    hero_secondary_button: "Parla con noi",
+    founded: { value: "30+", label: "anni di mestiere" },
+    stats: [
+      { value: "1992", label: "Primo ordine evaso dalla famiglia" },
+      { value: "336", label: "Generi diversi nel catalogo attuale" },
+      { value: "4 lingue", label: "Assistenza in spagnolo, catalano, inglese e francese" },
+      { value: "Europa", label: "Vivai fornitori selezionati in tutta Europa" },
+    ],
+    our_clients: {
+      title: "I nostri clienti",
+      headline: "Dal vivaista all'ente pubblico",
+      subtitle:
+        "Serviamo ogni tipo di progetto del verde in tutta Europa. Ogni profilo chiede qualcosa di diverso, e questo cambia il modo in cui prepariamo l'ordine.",
+      clients: withIcons([
+        { name: "Vivai", description: "Fornitura tra professionisti e piante giovani da coltivare." },
+        { name: "Garden center", description: "Piante finite e di stagione, pronte per la vendita." },
+        { name: "Giardinieri", description: "Ordini su misura per nuove realizzazioni e manutenzione." },
+        { name: "Opere pubbliche", description: "Piante per gare d'appalto e progetti di opere civili." },
+        { name: "Giardino sostenibile", description: "Specie a basso consumo idrico che favoriscono la biodiversità." },
+        { name: "Paesaggisti", description: "Troviamo gli esemplari esatti richiesti da ogni progetto." },
+        { name: "Distributori", description: "Grandi volumi a condizioni all'ingrosso." },
+        { name: "Frutticoltori", description: "Alberi da frutto e piante da produzione, adatti al clima." },
+        { name: "Amministrazioni", description: "Comuni ed enti che gestiscono aree verdi." },
+        { name: "Rimboschimento", description: "Piante forestali autoctone per rimboschimenti." },
+      ]),
+    },
+    catalogues_title: "Cataloghi",
+    catalogues_headline: "Scaricali e condividili con il tuo team",
+    catalogues_subtitle:
+      "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+    catalogues_button: "Vedi i cataloghi",
+  },
 };
 
 export function getAboutUsContent(locale: string): AboutUsFallbackContent {

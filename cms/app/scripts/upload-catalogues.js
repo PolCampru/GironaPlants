@@ -102,6 +102,20 @@ const CARDS = {
       button: "Télécharger le PDF",
     },
   ],
+  it: [
+    {
+      title: "Talee radicate",
+      subtitle:
+        "Stock reale al 14 aprile 2026: 2.084 referenze di arbusti, conifere, rampicanti, graminacee e perenni, con le unità disponibili per vassoio.",
+      button: "Scarica il PDF",
+    },
+    {
+      title: "Perenni, graminacee e felci",
+      subtitle:
+        "Piante giovani in alveolo da 4 cm: 1.192 referenze con fioritura, altezza e settimana di disponibilità per la stagione 2026.",
+      button: "Scarica il PDF",
+    },
+  ],
 };
 
 async function findOrUpload(app, name, source) {

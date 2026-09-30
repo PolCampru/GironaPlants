@@ -35,6 +35,11 @@ const offers: Record<string, PageHeading> = {
     title: "Plantes à prix spécial",
     lead: "Des lots précis à prix réduit jusqu'à épuisement du stock. Mis à jour chaque semaine.",
   },
+  it: {
+    label: "Offerte",
+    title: "Piante a prezzo speciale",
+    lead: "Lotti specifici a prezzo ridotto fino a esaurimento scorte. Aggiornati ogni settimana.",
+  },
 };
 
 export type ProductsHeading = PageHeading & {
@@ -76,6 +81,14 @@ const products: Record<string, ProductsHeading> = {
     askButton: "Ajoutez-la à votre devis",
     lead: "Filtrez par format ou cherchez par genre, cochez ce qu'il vous faut et envoyez-nous la liste. Nous revenons avec un devis ferme sous 24-48 h.",
   },
+  it: {
+    label: "Catalogo aggiornato",
+    title: "referenze disponibili",
+    fallbackTitle: "Il nostro catalogo",
+    askQuestion: "Non trovi la specie che cerchi?",
+    askButton: "Aggiungila al tuo preventivo",
+    lead: "Filtra per formato o cerca per genere, seleziona ciò che ti serve e inviaci l'elenco. Ti inviamo un preventivo definitivo entro 24-48 h.",
+  },
 };
 
 const contact: Record<string, PageHeading> = {
@@ -99,6 +112,11 @@ const contact: Record<string, PageHeading> = {
     title: "Dites-nous ce qu'il vous faut",
     lead: "Espèces, tailles et quantités. Nous revenons avec un devis ferme sous 24-48 h ouvrées, sans engagement.",
   },
+  it: {
+    label: "Richiesta di preventivo",
+    title: "Dicci di cosa hai bisogno",
+    lead: "Specie, misure e quantità. Ti rispondiamo con un preventivo definitivo entro 24-48 ore lavorative, senza impegno.",
+  },
 };
 
 const budget: Record<string, PageHeading> = {
@@ -121,6 +139,11 @@ const budget: Record<string, PageHeading> = {
     label: "Votre sélection",
     title: "Demande de devis",
     lead: "Vérifiez les espèces et les quantités, renseignez vos coordonnées et nous revenons avec un devis ferme sous 24-48 h.",
+  },
+  it: {
+    label: "La tua selezione",
+    title: "Richiesta di preventivo",
+    lead: "Controlla le specie e le quantità, completa i tuoi dati e ti inviamo un preventivo definitivo entro 24-48 h.",
   },
 };
 

@@ -349,6 +349,91 @@ const content: Record<string, FormType> = {
     ],
     responseNote: "Réponse sous 24-48 h ouvrées",
   },
+  it: {
+    submit: "Invia",
+    remove: "Elimina",
+    messages: {
+      inProgress: {
+        title: "Invio della richiesta in corso...",
+        text: "Attendi qualche secondo.",
+      },
+      success: {
+        title: "Richiesta inviata",
+        text: "Grazie per la fiducia. Abbiamo ricevuto la tua richiesta e ti contatteremo al più presto.",
+      },
+      error: {
+        title: "Errore durante l'invio",
+        text: "Si è verificato un errore durante l'invio della richiesta. Riprova.",
+      },
+    },
+    inputs: [
+      {
+        type: "toggle",
+        name: "type",
+        options: [
+          {
+            label: "Azienda",
+            value: "company",
+          },
+          {
+            label: "Privato",
+            value: "particular",
+          },
+        ],
+        label: "Richiesta di preventivo",
+      },
+      {
+        type: "text",
+        label: "Azienda",
+        name: "company",
+        required: true,
+        requiredError: "L'azienda è un campo obbligatorio",
+      },
+      {
+        type: "text",
+        label: "Nome e cognome",
+        name: "name",
+        required: true,
+        requiredError: "Nome e cognome sono obbligatori",
+        formatError: "Nome e cognome devono contenere almeno 3 caratteri",
+      },
+      {
+        type: "text",
+        label: "E-mail",
+        name: "email",
+        required: true,
+        requiredError: "L'e-mail è un campo obbligatorio",
+        formatError: "Il formato dell'e-mail non è valido",
+      },
+      {
+        type: "text",
+        label: "Telefono",
+        name: "phone",
+        required: true,
+        requiredError: "Il telefono è un campo obbligatorio",
+        formatError: "Il formato del telefono non è valido",
+      },
+      {
+        type: "textarea",
+        label: "Commento",
+        name: "comment",
+        placeholder: "Es.: 300 Quercus ilex AF 300 in 40/60, 150 Lavandula angustifolia C2, consegna a ottobre…",
+      },
+      {
+        type: "file",
+        label: "Allega la tua lista",
+        name: "files",
+        hint: "Excel, PDF o immagine. È la via più rapida per un preventivo preciso.",
+      },
+      {
+        type: "checkbox",
+        label: "Accetto l'Informativa sulla privacy",
+        name: "privacyPolicy",
+        required: true,
+      },
+    ],
+    responseNote: "Risposta entro 24-48 ore lavorative",
+  },
 };
 
 export function getFormContent(locale: string): FormType {

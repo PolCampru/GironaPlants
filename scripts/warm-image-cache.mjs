@@ -19,7 +19,7 @@ const PORT = process.env.WARM_PORT || "3000";
 const ORIGIN = `http://127.0.0.1:${PORT}`;
 
 /** Locales share their photographs today, but a cover could be localised. */
-const LOCALES = ["en", "es", "ca", "fr"];
+const LOCALES = ["en", "es", "ca", "fr", "it"];
 const PAGES = ["", "/about-us", "/catalogues", "/contact"];
 
 /**

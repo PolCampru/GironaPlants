@@ -10,6 +10,7 @@ const LOCALE_TAGS: Record<string, string> = {
   ca: "ca-ES",
   en: "en-IE",
   fr: "fr-FR",
+  it: "it-IT",
 };
 
 export function formatPrice(value: number | string | undefined | null, locale = "es") {

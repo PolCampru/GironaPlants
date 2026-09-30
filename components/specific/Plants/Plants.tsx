@@ -79,7 +79,7 @@ export default function Plants({
   const activeCount =
     Object.keys(query.format ?? {}).length + (query.search ? 1 : 0);
   const numberFormat = new Intl.NumberFormat(
-    locale === "en" ? "en-GB" : locale === "fr" ? "fr-FR" : "es-ES"
+    locale === "en" ? "en-GB" : locale === "fr" ? "fr-FR" : locale === "it" ? "it-IT" : "es-ES"
   );
 
   const pageHead = (

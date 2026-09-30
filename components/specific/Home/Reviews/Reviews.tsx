@@ -118,7 +118,7 @@ const Reviews = ({ copy, data, writeUrl, allUrl, locale }: ReviewsProps) => {
   };
 
   const intlLocale =
-    locale === "en" ? "en-GB" : locale === "fr" ? "fr-FR" : "es-ES";
+    locale === "en" ? "en-GB" : locale === "fr" ? "fr-FR" : locale === "it" ? "it-IT" : "es-ES";
   const numberFormat = new Intl.NumberFormat(intlLocale, {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,

@@ -78,6 +78,21 @@ const content: Record<string, ReviewsContent> = {
       "Votre avis aide d'autres paysagistes, entreprises et pépinières à nous trouver. Laissez-le sur Google : une minute suffit.",
     stars_label: "{rating} sur 5 étoiles",
   },
+  it: {
+    label: "Recensioni",
+    title: "Cosa dice chi lavora già con noi",
+    based_on: "{count} recensioni su Google",
+    write_button: "Scrivi una recensione",
+    all_button: "Vedi tutte su Google",
+    read_more: "Leggi su Google",
+    translated: "Tradotta da Google",
+    previous: "Recensioni precedenti",
+    next: "Recensioni successive",
+    empty_title: "Hai già lavorato con noi?",
+    empty_text:
+      "La tua opinione aiuta altri paesaggisti, imprese edili e vivai a trovarci. Lasciala su Google: basta un minuto.",
+    stars_label: "{rating} su 5 stelle",
+  },
 };
 
 export function getReviewsContent(locale: string): ReviewsContent {

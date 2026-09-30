@@ -51,6 +51,12 @@ const COPY: Record<string, PricingCopy> = {
     particularNotice:
       "Le catalogue s'adresse aux entreprises et aux professionnels : le prix affiché peut donc varier pour une commande de particulier. Nous confirmons le prix final dans le devis, sans engagement.",
   },
+  it: {
+    audienceNote:
+      "I prezzi del catalogo sono riservati ad aziende e professionisti; per i privati possono variare.",
+    particularNotice:
+      "Il catalogo è pensato per aziende e professionisti, quindi il prezzo indicato può variare per un ordine da privato. Ti confermiamo il prezzo finale nel preventivo, senza impegno.",
+  },
 };
 
 const get = (locale: string): PricingCopy => COPY[locale] ?? COPY.es;

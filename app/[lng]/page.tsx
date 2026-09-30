@@ -81,7 +81,7 @@ export default async function HomePage({ params }: HomePageProps) {
     ]);
 
   const numberFormat = new Intl.NumberFormat(
-    lng === "en" ? "en-GB" : lng === "fr" ? "fr-FR" : "es-ES"
+    lng === "en" ? "en-GB" : lng === "fr" ? "fr-FR" : lng === "it" ? "it-IT" : "es-ES"
   );
 
   const heroHomeData: HeroHomeProps = {

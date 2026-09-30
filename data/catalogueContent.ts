@@ -375,7 +375,82 @@ const fr: CatalogueCopy = {
   },
 };
 
-const COPY: Record<string, CatalogueCopy> = { es, ca, en, fr };
+const it: CatalogueCopy = {
+  breadcrumb: { home: "Home", products: "Catalogo" },
+  genus: {
+    label: "Genere",
+    lead: ({ genus, species, references, formats }) =>
+      `${references} ${plural(references, "referenza disponibile", "referenze disponibili")} di ${species} ${plural(species, "specie", "specie")} del genere ${genus}` +
+      (formats ? `, nei formati ${formats}` : "") +
+      `. Commercializziamo piante di vivai selezionati in Spagna e nel resto d'Europa.`,
+    speciesHeading: "Specie e varietà",
+    speciesLead: "Ogni scheda riunisce i formati, le altezze e i prezzi disponibili.",
+    referencesHeading: "Tutte le referenze",
+    neighboursHeading: "Altri generi del catalogo",
+    neighboursLead: "Oltre 300 generi disponibili per i professionisti.",
+  },
+  species: {
+    label: "Specie",
+    lead: ({ name, formats, formatList, heightList, price }) =>
+      `${name} disponibile in ${formats} ${plural(formats, "formato", "formati")}` +
+      (formatList ? ` (${formatList})` : "") +
+      (heightList ? `, con altezze di ${heightList}` : "") +
+      (price ? `. Prezzo all'ingrosso a partire da ${price} al pezzo` : "") +
+      `. Ti confermiamo disponibilità e prezzo definitivo entro 24-48 h.`,
+    formatsHeading: "Formati disponibili",
+    siblingsHeading: (genus) => `Altre specie di ${genus}`,
+    seeGenus: (genus) => `Vedi tutto il genere ${genus}`,
+  },
+  table: {
+    species: "Specie",
+    potSize: "Formato",
+    height: "Altezza",
+    price: "Prezzo",
+    addLabel: "Aggiungi al preventivo",
+    note: "Prezzo unitario indicativo. La disponibilità e il prezzo finale vengono confermati nel preventivo.",
+  },
+  cta: {
+    title: "Ti serve questa pianta per il tuo progetto?",
+    body: "Indicaci formato, altezza e quantità e ti inviamo un preventivo definitivo entro 24-48 h. Se non è disponibile a magazzino, la troviamo nella nostra rete europea di vivai.",
+    quote: "Richiedi un preventivo",
+    contact: "Parla con noi",
+  },
+  directory: {
+    label: "Indice",
+    title: "Tutti i generi del catalogo",
+    lead: "Sfoglia il catalogo per genere botanico: ognuno porta alle sue specie, ai formati e ai prezzi.",
+    all: "Vedi tutte le referenze",
+  },
+  meta: {
+    genusTitle: (genus) => `${genus} · Vendita all'ingrosso`,
+    genusDescription: ({ genus, species, references, formats }) =>
+      `${references} referenze di ${genus} in ${species} ${plural(species, "specie", "specie")}` +
+      (formats ? `, formati ${formats}` : "") +
+      `. Prezzi all'ingrosso per paesaggisti e garden center. Preventivo in 24-48 h.`,
+    speciesTitle: (name) => `${name} · Prezzo all'ingrosso`,
+    speciesDescription: ({ name, formats, formatList, price }) =>
+      `${name} in ${formats} ${plural(formats, "formato", "formati")}` +
+      (formatList ? ` (${formatList})` : "") +
+      (price ? `, a partire da ${price} al pezzo` : "") +
+      `. Fornitore a Girona (Spagna) con spedizione in tutta Europa. Richiedi un preventivo.`,
+    genusKeywords: (genus) => [
+      genus,
+      `comprare ${genus}`,
+      `${genus} all'ingrosso`,
+      `fornitore di ${genus}`,
+      `prezzo ${genus}`,
+    ],
+    speciesKeywords: (name) => [
+      name,
+      `comprare ${name}`,
+      `${name} prezzo`,
+      `${name} all'ingrosso`,
+      `fornitore di ${name}`,
+    ],
+  },
+};
+
+const COPY: Record<string, CatalogueCopy> = { es, ca, en, fr, it };
 
 export function getCatalogueCopy(lng: string): CatalogueCopy {
   return COPY[lng] ?? COPY.es;

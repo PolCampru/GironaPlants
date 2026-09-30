@@ -50,6 +50,12 @@ const translations: Translations = {
     reject: "Refuser",
     moreInfo: "Plus d'informations",
   },
+  it: {
+    message: "Questo sito utilizza i cookie per migliorare la tua esperienza.",
+    accept: "Accetta",
+    reject: "Rifiuta",
+    moreInfo: "Maggiori informazioni",
+  },
 };
 
 export default function CookiePrompt(): React.ReactNode {

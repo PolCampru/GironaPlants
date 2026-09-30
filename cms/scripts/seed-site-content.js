@@ -2,7 +2,7 @@
 
 /**
  * Seeds localized marketing content into the `home`, `about-us` and
- * `catalogue` single types for every site locale (es, ca, en, fr).
+ * `catalogue` single types for every site locale (es, ca, en, fr, it).
  *
  * The copy is NOT written here. It comes from site-content.json, which is
  * generated from the frontend fallbacks in data/*Content.ts by

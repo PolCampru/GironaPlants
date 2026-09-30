@@ -4,7 +4,8 @@
     "es",
     "ca",
     "en",
-    "fr"
+    "fr",
+    "it"
   ],
   "home": {
     "es": {
@@ -242,6 +243,65 @@
       "contact_title": "On prépare votre devis ?",
       "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
       "contact_button": "Demander un devis"
+    },
+    "it": {
+      "hero_badge": "Fornitura di piante in tutta Europa",
+      "hero_title": "Le piante di cui il tuo progetto ha bisogno, in tutta Europa",
+      "hero_subtitle": "Oltre 30 anni di commercio di piante per professionisti. Non le coltiviamo: le selezioniamo. Acquistiamo dai vivai che coltivano meglio ogni specie — in Spagna e nel resto d'Europa — e ti forniamo l'intera lista da un unico fornitore.",
+      "hero_secondary_button": "Preferisci che la cerchiamo noi? Richiedi un preventivo",
+      "hero_tag": "Commerciante indipendente di piante dal 1992",
+      "search_placeholder": "Cerca una specie: Quercus, Lavandula, Festuca…",
+      "search_button": "Cerca",
+      "search_suggestions": [
+        "Quercus",
+        "Lavandula",
+        "Juniperus",
+        "Acer"
+      ],
+      "stats": [
+        {
+          "value": "+30 anni",
+          "label": "di commercio di piante per professionisti"
+        },
+        {
+          "value": "336",
+          "label": "generi diversi in catalogo"
+        },
+        {
+          "value": "24-48 h",
+          "label": "per ricevere il tuo preventivo"
+        },
+        {
+          "value": "Europa",
+          "label": "vivai fornitori selezionati"
+        }
+      ],
+      "plants_title": "Le nostre piante",
+      "plants_headline": "Dall'albero forestale alla graminacea ornamentale",
+      "plants_subtitle": "Questi sono i generi che ci richiedono di più. E se il tuo non c'è, lo troviamo per te.",
+      "plants_button": "Vedi tutto il catalogo",
+      "how_title": "Tre passi tra la tua lista e il camion",
+      "how_steps": [
+        {
+          "title": "Ci invii la tua lista",
+          "text": "Seleziona le specie dal catalogo o allega il tuo elenco in Excel. Senza registrazione e senza ordine minimo."
+        },
+        {
+          "title": "Cerchiamo ogni pianta",
+          "text": "Individuiamo ogni specie presso il vivaio che la coltiva meglio, in Spagna e nel resto d'Europa, e negoziamo il prezzo per te."
+        },
+        {
+          "title": "Ricevi un ordine completo",
+          "text": "Preventivo definitivo entro 24-48 h e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione."
+        }
+      ],
+      "catalogues_title": "Cataloghi",
+      "catalogues_headline": "Scaricali e condividili con il tuo team",
+      "catalogues_subtitle": "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+      "catalogues_button": "Vedi i cataloghi",
+      "contact_title": "Prepariamo il tuo preventivo?",
+      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo un preventivo su misura entro 24-48 h, senza impegno. Consegniamo in tutta Europa.",
+      "contact_button": "Richiedi un preventivo"
     }
   },
   "about-us": {
@@ -588,6 +648,92 @@
       "catalogues_headline": "Téléchargez-les et partagez-les avec votre équipe",
       "catalogues_subtitle": "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
       "catalogues_button": "Voir les catalogues"
+    },
+    "it": {
+      "label": "Chi siamo · dal 1992",
+      "title": "Una famiglia dedicata alle piante",
+      "subtitle": "Girona Plants è un'azienda familiare con oltre 30 anni di esperienza nel commercio di piante. Non abbiamo una produzione propria, ed è una scelta: ci permette di scegliere, specie per specie, il vivaio che la coltiva meglio. Acquistiamo da una rete di vivai di fiducia in Spagna e nel resto d'Europa e forniamo ordini completi, dalla prima all'ultima pianta.",
+      "hero_button": "Vedi le nostre piante",
+      "hero_secondary_button": "Parla con noi",
+      "stats": [
+        {
+          "value": "1992",
+          "label": "Primo ordine evaso dalla famiglia"
+        },
+        {
+          "value": "336",
+          "label": "Generi diversi nel catalogo attuale"
+        },
+        {
+          "value": "4 lingue",
+          "label": "Assistenza in spagnolo, catalano, inglese e francese"
+        },
+        {
+          "value": "Europa",
+          "label": "Vivai fornitori selezionati in tutta Europa"
+        }
+      ],
+      "our_clients": {
+        "title": "I nostri clienti",
+        "headline": "Dal vivaista all'ente pubblico",
+        "subtitle": "Serviamo ogni tipo di progetto del verde in tutta Europa. Ogni profilo chiede qualcosa di diverso, e questo cambia il modo in cui prepariamo l'ordine.",
+        "clients": [
+          {
+            "name": "Vivai",
+            "description": "Fornitura tra professionisti e piante giovani da coltivare.",
+            "icon": "nurseries"
+          },
+          {
+            "name": "Garden center",
+            "description": "Piante finite e di stagione, pronte per la vendita.",
+            "icon": "garden"
+          },
+          {
+            "name": "Giardinieri",
+            "description": "Ordini su misura per nuove realizzazioni e manutenzione.",
+            "icon": "gardeners"
+          },
+          {
+            "name": "Opere pubbliche",
+            "description": "Piante per gare d'appalto e progetti di opere civili.",
+            "icon": "public"
+          },
+          {
+            "name": "Giardino sostenibile",
+            "description": "Specie a basso consumo idrico che favoriscono la biodiversità.",
+            "icon": "sustainable"
+          },
+          {
+            "name": "Paesaggisti",
+            "description": "Troviamo gli esemplari esatti richiesti da ogni progetto.",
+            "icon": "landscapers"
+          },
+          {
+            "name": "Distributori",
+            "description": "Grandi volumi a condizioni all'ingrosso.",
+            "icon": "distributors"
+          },
+          {
+            "name": "Frutticoltori",
+            "description": "Alberi da frutto e piante da produzione, adatti al clima.",
+            "icon": "fruit"
+          },
+          {
+            "name": "Amministrazioni",
+            "description": "Comuni ed enti che gestiscono aree verdi.",
+            "icon": "administrations"
+          },
+          {
+            "name": "Rimboschimento",
+            "description": "Piante forestali autoctone per rimboschimenti.",
+            "icon": "reforestation"
+          }
+        ]
+      },
+      "catalogues_title": "Cataloghi",
+      "catalogues_headline": "Scaricali e condividili con il tuo team",
+      "catalogues_subtitle": "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+      "catalogues_button": "Vedi i cataloghi"
     }
   },
   "catalogue": {
@@ -630,6 +776,16 @@
       "contact_title": "On prépare votre devis ?",
       "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
       "contact_button": "Demander un devis"
+    },
+    "it": {
+      "main_title": "Tutto ciò che possiamo fornire, in un unico documento",
+      "main_subtitle": "La gamma completa con genere, formato, altezza e prezzo di riferimento. Il documento di cui il tuo ufficio acquisti ha bisogno per chiudere un intero progetto in una sola volta.",
+      "main_button": "Scarica il catalogo generale",
+      "section_title": "Se ti serve solo una parte",
+      "section_subtitle": "Documenti più brevi per famiglia e per stagione, pensati per essere inoltrati direttamente al cantiere.",
+      "contact_title": "Prepariamo il tuo preventivo?",
+      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo un preventivo su misura entro 24-48 h, senza impegno. Consegniamo in tutta Europa.",
+      "contact_button": "Richiedi un preventivo"
     }
   }
 }

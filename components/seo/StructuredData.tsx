@@ -37,6 +37,13 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
             'Entreprise familiale forte de plus de 30 ans dans le négoce de plantes. Sans production propre : nous sélectionnons chaque espèce chez le pépiniériste d\'Espagne ou du reste de l\'Europe qui la réussit le mieux et livrons des commandes complètes aux professionnels.',
           slogan: 'Nous ne la cultivons pas : nous la trouvons.'
         }
+      case 'it':
+        return {
+          name: 'GironaPlants - Fornitore di piante mediterranee',
+          description:
+            "Azienda familiare con oltre 30 anni di esperienza nel commercio di piante. Non abbiamo produzione propria: selezioniamo ogni specie presso il vivaio, in Spagna o nel resto d'Europa, che la coltiva meglio e forniamo ordini completi ai professionisti.",
+          slogan: 'Non la coltiviamo: la troviamo.'
+        }
       default: // Catalan
         return {
           name: 'GironaPlants - Distribuïdor de planta mediterrània',
@@ -83,7 +90,7 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
     },
     // Mon-Fri 8:00-18:00, confirmed by the company. This used to open at 09:00
     // and claim a Saturday morning, neither of which matched the hours the
-    // contact page has shown in all four languages (data/contactContent.ts) —
+    // contact page has shown in every language (data/contactContent.ts) —
     // so Google was being handed opening times, and a day of the week, that
     // nobody here actually works.
     openingHoursSpecification: [
@@ -95,7 +102,7 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
       }
     ],
     areaServed: ['Europe', 'Spain', 'France', 'Portugal', 'Italy', 'Germany', 'Andorra'],
-    knowsLanguage: ['ca', 'es', 'en', 'fr'],
+    knowsLanguage: ['ca', 'es', 'en', 'fr', 'it'],
     sameAs: [
       'https://www.linkedin.com/in/gironaplants/',
       // The Google Business Profile, so the link from site to listing is

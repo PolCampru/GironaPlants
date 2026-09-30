@@ -18,7 +18,7 @@ import { getHomeContent } from "../../data/homeContent.ts";
 import { getAboutUsContent } from "../../data/aboutUsContent.ts";
 import { getCataloguesContent } from "../../data/cataloguesContent.ts";
 
-const LOCALES = ["es", "ca", "en", "fr"] as const;
+const LOCALES = ["es", "ca", "en", "fr", "it"] as const;
 
 const home = Object.fromEntries(
   LOCALES.map((locale) => {

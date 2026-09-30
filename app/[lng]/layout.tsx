@@ -20,7 +20,7 @@ export default async function LanguageLayout({
 }) {
   const { lng } = await params;
 
-  // Anything that is not one of the four locales is a 404, not the home page
+  // Anything that is not one of the five locales is a 404, not the home page
   // rendered with a nonsense locale. Every unmatched path — /sw.js, /favicon
   // probes, a mistyped URL — used to fall through to this segment and render
   // a full page, which also sent requests like `?locale=sw.js` to Strapi and

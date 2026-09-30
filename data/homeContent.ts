@@ -310,6 +310,71 @@ const content: Record<string, HomeFallbackContent> = {
       "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
     contact_button: "Demander un devis",
   },
+
+  it: {
+    hero_badge: "Fornitura di piante in tutta Europa",
+    hero_title: "Le piante di cui il tuo progetto ha bisogno, in tutta Europa",
+    hero_subtitle:
+      "Oltre 30 anni di commercio di piante per professionisti. Non le coltiviamo: le selezioniamo. Acquistiamo dai vivai che coltivano meglio ogni specie — in Spagna e nel resto d'Europa — e ti forniamo l'intera lista da un unico fornitore.",
+    hero_secondary_button:
+      "Preferisci che la cerchiamo noi? Richiedi un preventivo",
+    hero_tag: "Commerciante indipendente di piante dal 1992",
+    hero_image_alt: "File di arbusti in vaso in un vivaio, pronti per la selezione",
+    hero_stat_label: "referenze disponibili",
+    hero_stat_note: "Disponibilità aggiornata dei nostri vivai fornitori",
+
+    search_placeholder: "Cerca una specie: Quercus, Lavandula, Festuca…",
+    search_button: "Cerca",
+    search_suggestions: ["Quercus", "Lavandula", "Juniperus", "Acer"],
+    search_suggestions_label: "Le più cercate:",
+
+    stats: [
+      { value: "+30 anni", label: "di commercio di piante per professionisti" },
+      { value: "336", label: "generi diversi in catalogo" },
+      { value: "24-48 h", label: "per ricevere il tuo preventivo" },
+      { value: "Europa", label: "vivai fornitori selezionati" },
+    ],
+
+    plants_title: "Le nostre piante",
+    plants_headline: "Dall'albero forestale alla graminacea ornamentale",
+    plants_subtitle:
+      "Questi sono i generi che ci richiedono di più. E se il tuo non c'è, lo troviamo per te.",
+    plants_button: "Vedi tutto il catalogo",
+    plants_count_label: "referenze",
+    ask_title: "Non la trovi?",
+    ask_text:
+      "Dicci quale specie, misura e quantità ti servono. La cerchiamo nella nostra rete di vivai e ti rispondiamo entro 24-48 h.",
+    ask_button: "Chiedicela",
+
+    how_label: "Come lavoriamo",
+    how_title: "Tre passi tra la tua lista e il camion",
+    how_steps: [
+      {
+        title: "Ci invii la tua lista",
+        text: "Seleziona le specie dal catalogo o allega il tuo elenco in Excel. Senza registrazione e senza ordine minimo.",
+      },
+      {
+        title: "Cerchiamo ogni pianta",
+        text: "Individuiamo ogni specie presso il vivaio che la coltiva meglio, in Spagna e nel resto d'Europa, e negoziamo il prezzo per te.",
+      },
+      {
+        title: "Ricevi un ordine completo",
+        text: "Preventivo definitivo entro 24-48 h e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione.",
+      },
+    ],
+
+    catalogues_title: "Cataloghi",
+    catalogues_headline: "Scaricali e condividili con il tuo team",
+    catalogues_subtitle:
+      "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+    catalogues_button: "Vedi i cataloghi",
+    download_label: "Scarica",
+
+    contact_title: "Prepariamo il tuo preventivo?",
+    contact_subtitle:
+      "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo un preventivo su misura entro 24-48 h, senza impegno. Consegniamo in tutta Europa.",
+    contact_button: "Richiedi un preventivo",
+  },
 };
 
 export function getHomeContent(locale: string): HomeFallbackContent {

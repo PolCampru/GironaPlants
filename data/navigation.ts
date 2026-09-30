@@ -114,6 +114,30 @@ const nav: Record<string, NavCopy> = {
       rights: "Tous droits réservés",
     },
   },
+  it: {
+    items: [
+      { name: "Home", slug: "" },
+      { name: "Prodotti", slug: "products" },
+      { name: "Offerte", slug: "offers" },
+      { name: "Chi siamo", slug: "about-us" },
+      { name: "Cataloghi", slug: "catalogues" },
+      { name: "Contatti", slug: "contact" },
+    ],
+    budgetLabel: "Preventivo",
+    languageLabel: "Lingua",
+    footer: {
+      tagline:
+        "Azienda familiare di Girona. Commercializziamo piante mediterranee e riforniamo professionisti in tutta Europa dal 1992.",
+      location: "Breda, Girona · Catalogna, Spagna",
+      columns: {
+        catalogue: "Catalogo",
+        company: "Azienda",
+        contact: "Contatti",
+      },
+      privacyPolicy: "Informativa sulla privacy",
+      rights: "Tutti i diritti riservati",
+    },
+  },
 };
 
 export const CONTACT_LINKS = {

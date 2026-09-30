@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Seeds the localized home + about-us content into the production Strapi on
-# the GironaPlants VPS (all four locales: es, ca, en, fr).
+# the GironaPlants VPS (all five locales: es, ca, en, fr, it).
 #
 # Run from anywhere:  bash cms/seed-content-to-vps.sh
 # Overwrite existing CMS content instead of only filling empty fields:
@@ -45,7 +45,7 @@ ssh "$HOST" "cd $BASE \
 
 echo "==> 5/5 Verifying the API"
 TOKEN=$(ssh "$HOST" "grep '^STRAPI_TOKEN=' $BASE/.env | cut -d= -f2-")
-for LOCALE in es ca en fr; do
+for LOCALE in es ca en fr it; do
   for RES in home about-us; do
     FIELD=$([ "$RES" = "home" ] && echo hero_title || echo title)
     RESP=$(ssh "$HOST" "curl -s \"http://127.0.0.1:1337/api/$RES?locale=$LOCALE\" -H \"Authorization: Bearer $TOKEN\"")

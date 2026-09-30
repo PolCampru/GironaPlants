@@ -1,0 +1,78 @@
+{
+  "products": {
+    "table": {
+      "titleGenus": "GENERE",
+      "titleDescription": "DESCRIZIONE",
+      "titlePotSize": "FORMATO",
+      "titleHeight": "ALTEZZA",
+      "titlePrice": "PREZZO"
+    },
+    "filters": {
+      "title": "Filtri",
+      "searchPlaceholder": "Cerca un genere o una specie…",
+      "offersTitle": "Offerte",
+      "potFilters": {
+        "title": "Formato",
+        "seeAll": "Vedi tutto",
+        "options": [
+          {
+            "id": 1,
+            "value": "Rd",
+            "label": "Radice nuda"
+          },
+          {
+            "id": 2,
+            "value": "AH",
+            "label": "Alveolo orticolo"
+          },
+          {
+            "id": 3,
+            "value": "AF",
+            "label": "Alveolo forestale"
+          },
+          {
+            "id": 4,
+            "value": "M",
+            "label": "Vaso"
+          },
+          {
+            "id": 5,
+            "value": "C",
+            "label": "Contenitore"
+          }
+        ]
+      },
+      "clear": "Cancella"
+    },
+    "errorAddToCart": {
+      "title": "L'articolo è già nel preventivo"
+    },
+    "successAddToCart": {
+      "title": "Articolo aggiunto al preventivo"
+    },
+    "resultsOne": "risultato",
+    "resultsMany": "risultati",
+    "resultsFor": "per",
+    "showing": "Visualizzazione",
+    "sortLabel": "Ordina",
+    "sortOptions": [
+      {
+        "value": "genus:asc",
+        "label": "Genere A-Z"
+      },
+      {
+        "value": "price:asc",
+        "label": "Prezzo ↑"
+      },
+      {
+        "value": "price:desc",
+        "label": "Prezzo ↓"
+      }
+    ],
+    "emptyState": {
+      "title": "Nessun risultato",
+      "text": "Prova un altro genere o rimuovi un filtro. Se la specie non è a catalogo, la cerchiamo noi per te.",
+      "button": "Chiedici questa pianta"
+    }
+  }
+}

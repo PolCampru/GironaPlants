@@ -170,6 +170,36 @@ const copy: Record<string, QuoteCopy> = {
     drawerCta: "Formulaire de demande",
     pricedIn: "Devis en 24-48 h",
   },
+  it: {
+    inRequest: "In questa richiesta",
+    speciesOne: "{n} specie",
+    speciesMany: "{n} specie",
+    unitsOne: "{n} unità",
+    unitsMany: "{n} unità",
+    searchPlaceholder: "Cerca nella tua lista…",
+    clear: "Svuota la richiesta",
+    noMatches: "Nessun articolo della tua lista corrisponde a questa ricerca.",
+    minimum: "L'ordine minimo è di {n} unità",
+    minimumShort: "min. {n} unità",
+    setToMin: "Imposta {n}",
+    fewer: "Meno unità",
+    more: "Più unità",
+    quantityOf: "Unità di {name}",
+    removed: "{name} rimosso dalla richiesta.",
+    cleared: "Richiesta svuotata.",
+    undo: "Annulla",
+    emptyTitle: "Non ci sono articoli nella richiesta",
+    emptyLead:
+      "Scegli le specie dal catalogo: compariranno qui con formato, altezza e ordine minimo, pronte per il preventivo.",
+    emptyCta: "Vedi il catalogo",
+    addQuestion: "Non hai trovato quello che cerchi?",
+    addButton: "Aggiungilo qui",
+    keptLocal:
+      "La tua selezione resta salvata in questo browser finché non la invii.",
+    travelWithForm: "accompagnano questo modulo",
+    drawerCta: "Modulo di richiesta",
+    pricedIn: "Preventivo in 24-48 h",
+  },
 };
 
 export function getQuoteCopy(locale: string): QuoteCopy {

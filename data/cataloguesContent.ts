@@ -100,6 +100,25 @@ const content: Record<string, CataloguesFallbackContent> = {
       "Envoyez-nous votre liste et nous la cherchons dans notre réseau de pépinières en Espagne et dans le reste de l'Europe.",
     contact_button: "Demander un devis",
   },
+  it: {
+    label: "Catalogo generale",
+    main_title: "Tutto ciò che possiamo fornire, in un unico documento",
+    main_subtitle:
+      "La gamma completa con genere, formato, altezza e prezzo di riferimento. Il documento di cui il tuo ufficio acquisti ha bisogno per chiudere un intero progetto in una sola volta.",
+    main_button: "Scarica il catalogo generale",
+    browse_button: "Consulta il catalogo online",
+    request_button: "Richiedi il PDF",
+    updated_label: "Aggiornato",
+    section_label: "Cataloghi specifici",
+    section_title: "Se ti serve solo una parte",
+    section_subtitle:
+      "Documenti più brevi per famiglia e per stagione, pensati per essere inoltrati direttamente al cantiere.",
+    download_label: "Scarica",
+    contact_title: "Ti serve qualcosa che non è nei cataloghi?",
+    contact_subtitle:
+      "Inviaci la tua lista e la cerchiamo nella nostra rete di vivai in Spagna e nel resto d'Europa.",
+    contact_button: "Richiedi un preventivo",
+  },
 };
 
 export function getCataloguesContent(

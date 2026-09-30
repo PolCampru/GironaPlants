@@ -2,7 +2,7 @@
 //
 // These are read by screen readers on every page, so they cannot go through
 // runtime i18n (which resolves nothing on the server) and they must not be
-// hardcoded Spanish on /ca, /en and /fr — which is what they were.
+// hardcoded Spanish on /ca, /en, /fr and /it — which is what they were.
 
 export type UiLabels = {
   close: string;
@@ -96,6 +96,24 @@ const labels: Record<string, UiLabels> = {
     searchInList: "Rechercher dans la liste…",
     addedToQuote: "Ajouté à votre devis",
     alreadyInQuote: "Déjà dans votre devis",
+  },
+  it: {
+    close: "Chiudi",
+    openMenu: "Apri il menu",
+    closeMenu: "Chiudi il menu",
+    previous: "Precedente",
+    next: "Successivo",
+    addToQuote: "Aggiungi al preventivo",
+    removeFromQuote: "Rimuovi dal preventivo",
+    clearSearch: "Cancella la ricerca",
+    remove: "Rimuovi",
+    language: "Lingua",
+    mainNav: "Navigazione principale",
+    mobileNav: "Menu mobile",
+    footerNav: "Piè di pagina",
+    searchInList: "Cerca nell'elenco…",
+    addedToQuote: "Aggiunto al preventivo",
+    alreadyInQuote: "Già nel tuo preventivo",
   },
 };
 

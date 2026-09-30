@@ -30,7 +30,7 @@ const PrivacyContent = ({ lng }: PrivacyContentProps) => {
           rel="canonical"
           href={`https://gironaplants.com/${lng}/privacy`}
         />
-        {["es", "en", "fr", "ca"].map((lang) => (
+        {["es", "en", "fr", "ca", "it"].map((lang) => (
           <link
             key={lang}
             rel="alternate"

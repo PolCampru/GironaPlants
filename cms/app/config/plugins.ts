@@ -5,7 +5,7 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
     enabled: true,
     config: {
       defaultLocale: 'ca',
-      locales: ['ca', 'es', 'en', 'fr'],
+      locales: ['ca', 'es', 'en', 'fr', 'it'],
     },
   },
 });

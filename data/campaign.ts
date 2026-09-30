@@ -19,6 +19,7 @@ const LABEL: Record<string, string> = {
   ca: `Campanya ${CATALOGUE_CAMPAIGN}`,
   en: `${CATALOGUE_CAMPAIGN} campaign`,
   fr: `Campagne ${CATALOGUE_CAMPAIGN}`,
+  it: `Campagna ${CATALOGUE_CAMPAIGN}`,
 };
 
 /** Short badge, e.g. "Campaña 2026/27". */

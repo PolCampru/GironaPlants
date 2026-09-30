@@ -71,6 +71,15 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Vinca: "Pervenches, couvre-sol d'ombre",
     Corylus: "Noisetiers pour haie et fruit",
   },
+  it: {
+    Quercus: "Lecci, querce e sughere",
+    Juniperus: "Ginepri e sabine",
+    Lavandula: "Lavande e lavande ibride",
+    Carex: "Carici e graminacee da ombra",
+    Nymphaea: "Ninfee e piante ripariali",
+    Vinca: "Pervinche, tappezzanti da ombra",
+    Corylus: "Noccioli per siepe e frutto",
+  },
 };
 
 export function getGenusGloss(locale: string, genus: string): string {

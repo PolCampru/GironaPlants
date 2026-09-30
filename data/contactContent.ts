@@ -128,6 +128,37 @@ const content: Record<string, ContactAsideType> = {
       button: "Aller au catalogue",
     },
   },
+  it: {
+    phone: {
+      title: "Telefono",
+      text: "+34 639 811 560",
+    },
+    email: {
+      title: "E-mail",
+      text: "gironaplants@gironaplants.com",
+    },
+    title: "Preferisco parlarne",
+    hours: {
+      title: "Orari",
+      text: "Lun-Ven · 8:00-18:00",
+    },
+    location: {
+      title: "Dove siamo",
+      text: "Breda, Girona · Catalogna",
+    },
+    languagesTitle: "Rispondiamo in",
+    languages: [
+      "English",
+      "Español",
+      "Català",
+      "Français",
+    ],
+    catalogue: {
+      title: "Hai già la tua lista?",
+      text: "Selezionala direttamente dal catalogo: ci arriva con formati e altezze già compilati.",
+      button: "Vai al catalogo",
+    },
+  },
 };
 
 export function getContactAside(locale: string): ContactAsideType {

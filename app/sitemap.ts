@@ -12,7 +12,7 @@ import { getCatalogue } from '@/lib/catalogue'
  * were never routes: every dynamic URL in it was a 404.
  *
  * What is here now is what the site actually serves: the static pages, one
- * page per genus and one per botanical name, in each of the four locales.
+ * page per genus and one per botanical name, in each of the five locales.
  */
 /** Rebuilt hourly, so a build that could not reach Strapi heals itself. */
 export const revalidate = 3600

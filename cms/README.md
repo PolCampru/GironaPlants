@@ -3,7 +3,7 @@
 Production Strapi runs at `https://api.gironaplants.com` (container `gp-strapi`
 on the Hostinger VPS `46.202.135.74`, under `/opt/gironaplants`). It serves the
 `home`, `about-us` and `catalogue` single types plus the `plant` and `offer`
-collections, in four locales: es, ca, en, fr.
+collections, in five locales: es, ca, en, fr, it.
 
 **CMS values win over the frontend fallbacks** in `data/homeContent.ts`,
 `data/aboutUsContent.ts` and `data/cataloguesContent.ts`, so editing those
