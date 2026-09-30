@@ -63,7 +63,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     stats: [
       { value: "1992", label: "Primer pedido servido por la familia" },
       { value: "336", label: "Géneros distintos en el catálogo actual" },
-      { value: "4 idiomas", label: "Atención en castellano, catalán, inglés y francés" },
+      { value: "5 idiomas", label: "Atención en castellano, catalán, inglés, francés e italiano" },
       { value: "Europa", label: "Viveros proveedores seleccionados en toda Europa" },
     ],
     our_clients: {
@@ -102,7 +102,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     stats: [
       { value: "1992", label: "Primera comanda servida per la família" },
       { value: "336", label: "Gèneres diferents al catàleg actual" },
-      { value: "4 idiomes", label: "Atenció en català, castellà, anglès i francès" },
+      { value: "5 idiomes", label: "Atenció en català, castellà, anglès, francès i italià" },
       { value: "Europa", label: "Vivers proveïdors seleccionats arreu d'Europa" },
     ],
     our_clients: {
@@ -141,7 +141,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     stats: [
       { value: "1992", label: "First order supplied by the family" },
       { value: "336", label: "Distinct genera in the current catalogue" },
-      { value: "4 languages", label: "We answer in Spanish, Catalan, English and French" },
+      { value: "5 languages", label: "We answer in Spanish, Catalan, English, French and Italian" },
       { value: "Europe", label: "Hand-picked partner nurseries across Europe" },
     ],
     our_clients: {
@@ -180,7 +180,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     stats: [
       { value: "1992", label: "Première commande livrée par la famille" },
       { value: "336", label: "Genres différents au catalogue actuel" },
-      { value: "4 langues", label: "Nous répondons en espagnol, catalan, anglais et français" },
+      { value: "5 langues", label: "Nous répondons en espagnol, catalan, anglais, français et italien" },
       { value: "Europe", label: "Pépinières partenaires sélectionnées dans toute l'Europe" },
     ],
     our_clients: {
@@ -219,7 +219,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     stats: [
       { value: "1992", label: "Primo ordine evaso dalla famiglia" },
       { value: "336", label: "Generi diversi nel catalogo attuale" },
-      { value: "4 lingue", label: "Assistenza in spagnolo, catalano, inglese e francese" },
+      { value: "5 lingue", label: "Assistenza in italiano, spagnolo, catalano, inglese e francese" },
       { value: "Europa", label: "Vivai fornitori selezionati in tutta Europa" },
     ],
     our_clients: {

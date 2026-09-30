@@ -28,6 +28,7 @@ const content: Record<string, ContactAsideType> = {
       "Català",
       "English",
       "Français",
+      "Italiano",
     ],
     catalogue: {
       title: "¿Ya tienes tu lista?",
@@ -59,6 +60,7 @@ const content: Record<string, ContactAsideType> = {
       "Castellano",
       "English",
       "Français",
+      "Italiano",
     ],
     catalogue: {
       title: "Ja tens la teva llista?",
@@ -90,6 +92,7 @@ const content: Record<string, ContactAsideType> = {
       "Español",
       "Català",
       "Français",
+      "Italiano",
     ],
     catalogue: {
       title: "Already have your list?",
@@ -121,6 +124,7 @@ const content: Record<string, ContactAsideType> = {
       "Español",
       "Català",
       "English",
+      "Italiano",
     ],
     catalogue: {
       title: "Vous avez déjà votre liste ?",
@@ -148,6 +152,7 @@ const content: Record<string, ContactAsideType> = {
     },
     languagesTitle: "Rispondiamo in",
     languages: [
+      "Italiano",
       "English",
       "Español",
       "Català",
