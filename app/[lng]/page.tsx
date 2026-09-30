@@ -5,6 +5,7 @@ import OurPlants from "@/components/specific/Home/OurPlants/OurPlants";
 import HowWeWork from "@/components/specific/Home/HowWeWork/HowWeWork";
 import CataloguesTeaser from "@/components/specific/Home/CataloguesTeaser/CataloguesTeaser";
 import Contact from "@/components/specific/Home/Contact/Contact";
+import Reviews from "@/components/specific/Home/Reviews/Reviews";
 import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
@@ -13,6 +14,12 @@ import {
 import { PLANT_CATEGORIES, getGenusGloss } from "@/data/plantCategories";
 import { getGenusCounts, getTotalReferences } from "@/lib/plants";
 import { getCataloguesPage } from "@/lib/catalogues";
+import {
+  GOOGLE_ALL_REVIEWS_URL,
+  GOOGLE_WRITE_REVIEW_URL,
+  getGoogleReviews,
+} from "@/lib/googleReviews";
+import { getReviewsContent } from "@/data/reviewsContent";
 import { CataloguesTeaserProps } from "@/types/AboutUs";
 import {
   HeroHomeProps,
@@ -64,12 +71,13 @@ export default async function HomePage({ params }: HomePageProps) {
 
   // Everything the page needs, in parallel — the catalogue cards and the
   // reference counts used to not exist at all, so this must not serialise.
-  const [homeData, catalogues, totalReferences, genusCounts] =
+  const [homeData, catalogues, totalReferences, genusCounts, googleReviews] =
     await Promise.all([
       getHomeData(lng),
       getCataloguesPage(lng).catch(() => null),
       getTotalReferences(),
       getGenusCounts(PLANT_CATEGORIES.map((category) => category.genus)),
+      getGoogleReviews(lng),
     ]);
 
   const numberFormat = new Intl.NumberFormat(
@@ -183,6 +191,13 @@ export default async function HomePage({ params }: HomePageProps) {
       <OurPlants data={plantsHomeData} />
       <HowWeWork data={howWeWorkData} />
       <CataloguesTeaser data={cataloguesData} />
+      <Reviews
+        copy={getReviewsContent(lng)}
+        data={googleReviews}
+        writeUrl={GOOGLE_WRITE_REVIEW_URL}
+        allUrl={GOOGLE_ALL_REVIEWS_URL}
+        locale={lng}
+      />
       <Contact data={contactHomeData} />
     </>
   );
