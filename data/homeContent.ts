@@ -72,7 +72,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "+30 años", label: "comercializando planta para profesionales" },
       { value: "336", label: "géneros distintos en el catálogo" },
-      { value: "Express", label: "respuesta a tu presupuesto" },
+      { value: "Express", label: "respuesta a tu solicitud de presupuesto" },
       { value: "Europa", label: "viveros proveedores seleccionados" },
     ],
 
@@ -84,7 +84,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "referencias",
     ask_title: "¿No la encuentras?",
     ask_text:
-      "Dinos qué especie, medida y cantidad necesitas. La buscamos en nuestra red de viveros y te respondemos enseguida.",
+      "Dinos qué especie, medida y cantidad necesitas. La buscamos en nuestra red de viveros y te respondemos en breve.",
     ask_button: "Pídenosla",
 
     how_label: "Cómo trabajamos",
@@ -113,7 +113,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "¿Preparamos tu oferta?",
     contact_subtitle:
-      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos enseguida un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
+      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
     contact_button: "Solicitar presupuesto",
   },
 
@@ -137,7 +137,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "+30 anys", label: "comercialitzant planta per a professionals" },
       { value: "336", label: "gèneres diferents al catàleg" },
-      { value: "Express", label: "resposta al teu pressupost" },
+      { value: "Express", label: "resposta a la teva sol·licitud de pressupost" },
       { value: "Europa", label: "vivers proveïdors seleccionats" },
     ],
 
@@ -149,7 +149,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "referències",
     ask_title: "No la trobes?",
     ask_text:
-      "Digues-nos quina espècie, mida i quantitat necessites. La busquem a la nostra xarxa de vivers i et responem de seguida.",
+      "Digues-nos quina espècie, mida i quantitat necessites. La busquem a la nostra xarxa de vivers i et responem aviat.",
     ask_button: "Demana-la",
 
     how_label: "Com treballem",
@@ -178,7 +178,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "Preparem la teva oferta?",
     contact_subtitle:
-      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem de seguida un pressupost a mida, sense compromís. Servim a tot Europa.",
+      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim a tot Europa.",
     contact_button: "Demanar pressupost",
   },
 
@@ -279,7 +279,7 @@ const content: Record<string, HomeFallbackContent> = {
     ask_title: "Vous ne la trouvez pas ?",
     ask_text:
       "Dites-nous l'espèce, la taille et la quantité. Nous la cherchons dans notre réseau de pépinières et vous répondons rapidement.",
-    ask_button: "Demandez-la nous",
+    ask_button: "Demandez-la-nous",
 
     how_label: "Comment nous travaillons",
     how_title: "Trois étapes entre votre liste et le camion",

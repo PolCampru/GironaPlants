@@ -96,7 +96,7 @@ const es: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, con alturas de ${heightList}` : "") +
       (price ? `. Precio al por mayor desde ${price} por unidad` : "") +
-      `. Te confirmamos disponibilidad y precio cerrado enseguida.`,
+      `. Te confirmamos disponibilidad y precio cerrado en breve.`,
     formatsHeading: "Formatos disponibles",
     siblingsHeading: (genus) => `Otras especies de ${genus}`,
     seeGenus: (genus) => `Ver todo el género ${genus}`,
@@ -111,7 +111,7 @@ const es: CatalogueCopy = {
   },
   cta: {
     title: "¿Necesitas esta planta para tu proyecto?",
-    body: "Dinos formato, altura y cantidad y te devolvemos un presupuesto cerrado enseguida. Si no está en stock, la localizamos en nuestra red de viveros europea.",
+    body: "Dinos formato, altura y cantidad y te devolvemos un presupuesto cerrado en breve. Si no está en stock, la localizamos en nuestra red de viveros europea.",
     quote: "Pedir presupuesto",
     contact: "Hablar con nosotros",
   },
@@ -171,7 +171,7 @@ const ca: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, amb alçades de ${heightList}` : "") +
       (price ? `. Preu a l'engròs des de ${price} per unitat` : "") +
-      `. Et confirmem disponibilitat i preu tancat de seguida.`,
+      `. Et confirmem disponibilitat i preu tancat aviat.`,
     formatsHeading: "Formats disponibles",
     siblingsHeading: (genus) => `Altres espècies de ${genus}`,
     seeGenus: (genus) => `Veure tot el gènere ${genus}`,
@@ -186,7 +186,7 @@ const ca: CatalogueCopy = {
   },
   cta: {
     title: "Necessites aquesta planta per al teu projecte?",
-    body: "Digues-nos format, alçada i quantitat i et tornem un pressupost tancat de seguida. Si no la tenim en estoc, la localitzem a la nostra xarxa de vivers europea.",
+    body: "Digues-nos format, alçada i quantitat i et tornem un pressupost tancat aviat. Si no la tenim en estoc, la localitzem a la nostra xarxa de vivers europea.",
     quote: "Demanar pressupost",
     contact: "Parlar amb nosaltres",
   },
@@ -246,7 +246,7 @@ const en: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, in heights of ${heightList}` : "") +
       (price ? `. Wholesale price from ${price} per unit` : "") +
-      `. We confirm availability and a firm price fast.`,
+      `. We'll quickly confirm availability and a firm price.`,
     formatsHeading: "Available formats",
     siblingsHeading: (genus) => `Other ${genus} species`,
     seeGenus: (genus) => `See the whole ${genus} genus`,

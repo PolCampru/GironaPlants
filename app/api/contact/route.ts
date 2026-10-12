@@ -138,7 +138,9 @@ export async function POST(request: Request) {
       : "";
 
     const locale = (pageLocale || "").toLowerCase();
-    const replyLanguage = REPLY_LANGUAGES[locale];
+    const replyLanguage = Object.hasOwn(REPLY_LANGUAGES, locale)
+      ? REPLY_LANGUAGES[locale]
+      : undefined;
     const languageTag = replyLanguage ? `[${locale.toUpperCase()}] ` : "";
     const languageHtml = replyLanguage
       ? `<p style="display: inline-block; margin: 0 0 1rem; padding: 6px 12px; border-radius: 4px; background: #2f5d3a; color: #fff; font-weight: bold;">Respondre en: ${escapeHtml(replyLanguage)} (${escapeHtml(locale.toUpperCase())})</p>`

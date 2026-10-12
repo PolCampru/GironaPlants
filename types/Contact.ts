@@ -21,7 +21,7 @@ export type FormType = {
   subtitle?: string;
   remove: string;
   submit: string;
-  /** Reassurance next to the submit button, e.g. "Reply within 24-48 h". */
+  /** Reassurance next to the submit button, e.g. "Fast response". */
   responseNote?: string;
   messages: {
     inProgress: { title: string; text: string };

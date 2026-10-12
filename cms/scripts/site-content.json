@@ -33,7 +33,7 @@
         },
         {
           "value": "Express",
-          "label": "respuesta a tu presupuesto"
+          "label": "respuesta a tu solicitud de presupuesto"
         },
         {
           "value": "Europa",
@@ -64,7 +64,7 @@
       "catalogues_subtitle": "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
       "catalogues_button": "Ver catálogos",
       "contact_title": "¿Preparamos tu oferta?",
-      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos enseguida un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
+      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
@@ -92,7 +92,7 @@
         },
         {
           "value": "Express",
-          "label": "resposta al teu pressupost"
+          "label": "resposta a la teva sol·licitud de pressupost"
         },
         {
           "value": "Europa",
@@ -123,7 +123,7 @@
       "catalogues_subtitle": "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
       "catalogues_button": "Veure catàlegs",
       "contact_title": "Preparem la teva oferta?",
-      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem de seguida un pressupost a mida, sense compromís. Servim a tot Europa.",
+      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim a tot Europa.",
       "contact_button": "Demanar pressupost"
     },
     "en": {
@@ -744,7 +744,7 @@
       "section_title": "Si solo necesitas una parte",
       "section_subtitle": "Documentos más cortos por familia y por temporada, pensados para enviar directamente a obra.",
       "contact_title": "¿Preparamos tu oferta?",
-      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos enseguida un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
+      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
@@ -754,7 +754,7 @@
       "section_title": "Si només necessites una part",
       "section_subtitle": "Documents més curts per família i per temporada, pensats per enviar directament a obra.",
       "contact_title": "Preparem la teva oferta?",
-      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem de seguida un pressupost a mida, sense compromís. Servim a tot Europa.",
+      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim a tot Europa.",
       "contact_button": "Demanar pressupost"
     },
     "en": {

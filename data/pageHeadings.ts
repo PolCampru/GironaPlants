@@ -55,7 +55,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "Nuestro catálogo",
     askQuestion: "¿No encuentras la especie que buscas?",
     askButton: "Añádela a tu presupuesto",
-    lead: "Filtra por formato o busca por género, márcalas y envíanos la lista. Te devolvemos un presupuesto cerrado enseguida.",
+    lead: "Filtra por formato o busca por género, márcalas y envíanos la lista. Te devolvemos un presupuesto cerrado en breve.",
   },
   ca: {
     label: "Catàleg viu",
@@ -63,7 +63,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "El nostre catàleg",
     askQuestion: "No trobes l'espècie que busques?",
     askButton: "Afegeix-la al teu pressupost",
-    lead: "Filtra per format o busca per gènere, marca-les i envia'ns la llista. Et tornem un pressupost tancat de seguida.",
+    lead: "Filtra per format o busca per gènere, marca-les i envia'ns la llista. Et tornem un pressupost tancat aviat.",
   },
   en: {
     label: "Live catalogue",
@@ -123,12 +123,12 @@ const budget: Record<string, PageHeading> = {
   es: {
     label: "Tu selección",
     title: "Solicitud de presupuesto",
-    lead: "Revisa las especies y las cantidades, completa tus datos y te devolvemos un presupuesto cerrado enseguida.",
+    lead: "Revisa las especies y las cantidades, completa tus datos y te devolvemos un presupuesto cerrado en breve.",
   },
   ca: {
     label: "La teva selecció",
     title: "Sol·licitud de pressupost",
-    lead: "Revisa les espècies i les quantitats, completa les teves dades i et tornem un pressupost tancat de seguida.",
+    lead: "Revisa les espècies i les quantitats, completa les teves dades i et tornem un pressupost tancat aviat.",
   },
   en: {
     label: "Your selection",

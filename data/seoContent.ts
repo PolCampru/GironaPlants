@@ -104,7 +104,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Solicitar presupuesto de plantas",
       description:
-        "Dinos qué especies, medidas y cantidades necesita tu proyecto y te enviamos enseguida un presupuesto a medida, sin compromiso.",
+        "Dinos qué especies, medidas y cantidades necesita tu proyecto y te enviamos en breve un presupuesto a medida, sin compromiso.",
       keywords: [
         "presupuesto plantas",
         "presupuesto jardinería Girona",
@@ -181,7 +181,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Demanar pressupost de plantes",
       description:
-        "Digue'ns quines espècies, mides i quantitats necessita el teu projecte i t'enviem de seguida un pressupost a mida, sense compromís.",
+        "Digue'ns quines espècies, mides i quantitats necessita el teu projecte i t'enviem aviat un pressupost a mida, sense compromís.",
       keywords: [
         "pressupost plantes",
         "pressupost jardineria Girona",
