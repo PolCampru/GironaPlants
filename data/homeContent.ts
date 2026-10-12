@@ -72,7 +72,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "+30 años", label: "comercializando planta para profesionales" },
       { value: "336", label: "géneros distintos en el catálogo" },
-      { value: "24-48 h", label: "para recibir tu presupuesto" },
+      { value: "Express", label: "respuesta a tu presupuesto" },
       { value: "Europa", label: "viveros proveedores seleccionados" },
     ],
 
@@ -84,7 +84,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "referencias",
     ask_title: "¿No la encuentras?",
     ask_text:
-      "Dinos qué especie, medida y cantidad necesitas. La buscamos en nuestra red de viveros y te respondemos en 24-48 h.",
+      "Dinos qué especie, medida y cantidad necesitas. La buscamos en nuestra red de viveros y te respondemos enseguida.",
     ask_button: "Pídenosla",
 
     how_label: "Cómo trabajamos",
@@ -100,7 +100,7 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Recibes un pedido completo",
-        text: "Presupuesto cerrado en 24-48 h y entrega en toda Europa. De la primera planta a la última, en un solo envío.",
+        text: "Respuesta rápida, presupuesto cerrado y entrega en toda Europa. De la primera planta a la última, en un solo envío.",
       },
     ],
 
@@ -113,7 +113,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "¿Preparamos tu oferta?",
     contact_subtitle:
-      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos un presupuesto a medida en 24-48 h, sin compromiso. Servimos en toda Europa.",
+      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos enseguida un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
     contact_button: "Solicitar presupuesto",
   },
 
@@ -137,7 +137,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "+30 anys", label: "comercialitzant planta per a professionals" },
       { value: "336", label: "gèneres diferents al catàleg" },
-      { value: "24-48 h", label: "per rebre el teu pressupost" },
+      { value: "Express", label: "resposta al teu pressupost" },
       { value: "Europa", label: "vivers proveïdors seleccionats" },
     ],
 
@@ -149,7 +149,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "referències",
     ask_title: "No la trobes?",
     ask_text:
-      "Digues-nos quina espècie, mida i quantitat necessites. La busquem a la nostra xarxa de vivers i et responem en 24-48 h.",
+      "Digues-nos quina espècie, mida i quantitat necessites. La busquem a la nostra xarxa de vivers i et responem de seguida.",
     ask_button: "Demana-la",
 
     how_label: "Com treballem",
@@ -165,7 +165,7 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Reps una comanda completa",
-        text: "Pressupost tancat en 24-48 h i entrega a tot Europa. De la primera planta a l'última, en un sol enviament.",
+        text: "Resposta ràpida, pressupost tancat i entrega a tot Europa. De la primera planta a l'última, en un sol enviament.",
       },
     ],
 
@@ -178,7 +178,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "Preparem la teva oferta?",
     contact_subtitle:
-      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem un pressupost a mida en 24-48 h, sense compromís. Servim a tot Europa.",
+      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem de seguida un pressupost a mida, sense compromís. Servim a tot Europa.",
     contact_button: "Demanar pressupost",
   },
 
@@ -201,7 +201,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "30+ years", label: "serving green-sector professionals" },
       { value: "336", label: "distinct genera in the catalogue" },
-      { value: "24-48 h", label: "to get your quote back" },
+      { value: "Express", label: "replies to your quote request" },
       { value: "Europe", label: "hand-picked partner nurseries" },
     ],
 
@@ -213,7 +213,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "references",
     ask_title: "Can't find it?",
     ask_text:
-      "Tell us the species, size and quantity you need. We'll look through our grower network and come back to you within 24-48 h.",
+      "Tell us the species, size and quantity you need. We'll look through our grower network and come back to you fast.",
     ask_button: "Ask us for it",
 
     how_label: "How we work",
@@ -229,7 +229,7 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "You get a complete order",
-        text: "A firm quote within 24-48 h and delivery across Europe. First plant to last, in a single shipment.",
+        text: "A fast, firm quote and delivery across Europe. First plant to last, in a single shipment.",
       },
     ],
 
@@ -242,7 +242,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "Ready for your quote?",
     contact_subtitle:
-      "Tell us what your project needs — species, sizes and quantities — and we'll send a tailored quote within 24-48 h, no obligation. We deliver across Europe.",
+      "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver across Europe.",
     contact_button: "Request a quote",
   },
 
@@ -266,7 +266,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "+30 ans", label: "au service des professionnels du végétal" },
       { value: "336", label: "genres différents au catalogue" },
-      { value: "24-48 h", label: "pour recevoir votre devis" },
+      { value: "Express", label: "réponse à votre demande de devis" },
       { value: "Europe", label: "pépinières partenaires sélectionnées" },
     ],
 
@@ -278,7 +278,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "références",
     ask_title: "Vous ne la trouvez pas ?",
     ask_text:
-      "Dites-nous l'espèce, la taille et la quantité. Nous la cherchons dans notre réseau de pépinières et vous répondons sous 24-48 h.",
+      "Dites-nous l'espèce, la taille et la quantité. Nous la cherchons dans notre réseau de pépinières et vous répondons rapidement.",
     ask_button: "Demandez-la nous",
 
     how_label: "Comment nous travaillons",
@@ -294,7 +294,7 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Vous recevez une commande complète",
-        text: "Devis ferme sous 24-48 h et livraison dans toute l'Europe. De la première à la dernière plante, en un seul envoi.",
+        text: "Devis ferme rapide et livraison dans toute l'Europe. De la première à la dernière plante, en un seul envoi.",
       },
     ],
 
@@ -307,7 +307,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "On prépare votre devis ?",
     contact_subtitle:
-      "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
+      "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons dans toute l'Europe.",
     contact_button: "Demander un devis",
   },
 
@@ -331,7 +331,7 @@ const content: Record<string, HomeFallbackContent> = {
     stats: [
       { value: "+30 anni", label: "di commercio di piante per professionisti" },
       { value: "336", label: "generi diversi in catalogo" },
-      { value: "24-48 h", label: "per ricevere il tuo preventivo" },
+      { value: "Express", label: "risposta alla tua richiesta di preventivo" },
       { value: "Europa", label: "vivai fornitori selezionati" },
     ],
 
@@ -343,7 +343,7 @@ const content: Record<string, HomeFallbackContent> = {
     plants_count_label: "referenze",
     ask_title: "Non la trovi?",
     ask_text:
-      "Dicci quale specie, misura e quantità ti servono. La cerchiamo nella nostra rete di vivai e ti rispondiamo entro 24-48 h.",
+      "Dicci quale specie, misura e quantità ti servono. La cerchiamo nella nostra rete di vivai e ti rispondiamo rapidamente.",
     ask_button: "Chiedicela",
 
     how_label: "Come lavoriamo",
@@ -359,7 +359,7 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Ricevi un ordine completo",
-        text: "Preventivo definitivo entro 24-48 h e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione.",
+        text: "Preventivo definitivo rapido e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione.",
       },
     ],
 
@@ -372,7 +372,7 @@ const content: Record<string, HomeFallbackContent> = {
 
     contact_title: "Prepariamo il tuo preventivo?",
     contact_subtitle:
-      "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo un preventivo su misura entro 24-48 h, senza impegno. Consegniamo in tutta Europa.",
+      "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo in tutta Europa.",
     contact_button: "Richiedi un preventivo",
   },
 };

@@ -92,7 +92,7 @@ const content: Record<string, FormType> = {
         required: true,
       },
     ],
-    responseNote: "Respuesta en 24-48 h laborables",
+    responseNote: "Respuesta rápida",
   },
   ca: {
     submit: "Enviar",
@@ -177,7 +177,7 @@ const content: Record<string, FormType> = {
         required: true,
       },
     ],
-    responseNote: "Resposta en 24-48 h laborables",
+    responseNote: "Resposta ràpida",
   },
   en: {
     submit: "Submit",
@@ -262,7 +262,7 @@ const content: Record<string, FormType> = {
         required: true,
       },
     ],
-    responseNote: "Reply within 24-48 working hours",
+    responseNote: "Fast response",
   },
   fr: {
     submit: "Envoyer",
@@ -347,7 +347,7 @@ const content: Record<string, FormType> = {
         required: true,
       },
     ],
-    responseNote: "Réponse sous 24-48 h ouvrées",
+    responseNote: "Réponse rapide",
   },
   it: {
     submit: "Invia",
@@ -432,7 +432,7 @@ const content: Record<string, FormType> = {
         required: true,
       },
     ],
-    responseNote: "Risposta entro 24-48 ore lavorative",
+    responseNote: "Risposta rapida",
   },
 };
 

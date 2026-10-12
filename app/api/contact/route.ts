@@ -23,6 +23,18 @@ const row = (label: string, value: unknown) =>
     ? `<p style="margin: 0;"><strong>${label}:</strong> ${escapeHtml(value)}</p>`
     : "";
 
+/**
+ * The language the visitor browsed the site in, which is the language the
+ * reply should be written in. Labels are in Catalan like the rest of the mail.
+ */
+const REPLY_LANGUAGES: Record<string, string> = {
+  es: "Castellà",
+  ca: "Català",
+  en: "Anglès",
+  fr: "Francès",
+  it: "Italià",
+};
+
 function parseItems(raw: FormDataEntryValue | null): ItemType[] {
   if (typeof raw !== "string" || !raw) return [];
   try {
@@ -125,8 +137,16 @@ export async function POST(request: Request) {
         </div>`
       : "";
 
+    const locale = (pageLocale || "").toLowerCase();
+    const replyLanguage = REPLY_LANGUAGES[locale];
+    const languageTag = replyLanguage ? `[${locale.toUpperCase()}] ` : "";
+    const languageHtml = replyLanguage
+      ? `<p style="display: inline-block; margin: 0 0 1rem; padding: 6px 12px; border-radius: 4px; background: #2f5d3a; color: #fff; font-weight: bold;">Respondre en: ${escapeHtml(replyLanguage)} (${escapeHtml(locale.toUpperCase())})</p>`
+      : "";
+
     const htmlContent = `
       <div style="font-size: 14px; line-height: 1.3;">
+        ${languageHtml}
         <div>
           ${row("Nom de l'empresa", company)}
           ${row("Nom de contacte", name)}
@@ -146,8 +166,8 @@ export async function POST(request: Request) {
       replyTo: email,
       to: process.env.MAIL_DESTINATION,
       subject: items.length
-        ? `Nova sol·licitud de pressupost — ${name}`
-        : `Nou contacte des de la web — ${name}`,
+        ? `${languageTag}Nova sol·licitud de pressupost — ${name}`
+        : `${languageTag}Nou contacte des de la web — ${name}`,
       html: htmlContent,
       attachments,
     });

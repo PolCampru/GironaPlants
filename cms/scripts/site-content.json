@@ -32,8 +32,8 @@
           "label": "géneros distintos en el catálogo"
         },
         {
-          "value": "24-48 h",
-          "label": "para recibir tu presupuesto"
+          "value": "Express",
+          "label": "respuesta a tu presupuesto"
         },
         {
           "value": "Europa",
@@ -56,7 +56,7 @@
         },
         {
           "title": "Recibes un pedido completo",
-          "text": "Presupuesto cerrado en 24-48 h y entrega en toda Europa. De la primera planta a la última, en un solo envío."
+          "text": "Respuesta rápida, presupuesto cerrado y entrega en toda Europa. De la primera planta a la última, en un solo envío."
         }
       ],
       "catalogues_title": "Catálogos",
@@ -64,7 +64,7 @@
       "catalogues_subtitle": "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
       "catalogues_button": "Ver catálogos",
       "contact_title": "¿Preparamos tu oferta?",
-      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos un presupuesto a medida en 24-48 h, sin compromiso. Servimos en toda Europa.",
+      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos enseguida un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
@@ -91,8 +91,8 @@
           "label": "gèneres diferents al catàleg"
         },
         {
-          "value": "24-48 h",
-          "label": "per rebre el teu pressupost"
+          "value": "Express",
+          "label": "resposta al teu pressupost"
         },
         {
           "value": "Europa",
@@ -115,7 +115,7 @@
         },
         {
           "title": "Reps una comanda completa",
-          "text": "Pressupost tancat en 24-48 h i entrega a tot Europa. De la primera planta a l'última, en un sol enviament."
+          "text": "Resposta ràpida, pressupost tancat i entrega a tot Europa. De la primera planta a l'última, en un sol enviament."
         }
       ],
       "catalogues_title": "Catàlegs",
@@ -123,7 +123,7 @@
       "catalogues_subtitle": "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
       "catalogues_button": "Veure catàlegs",
       "contact_title": "Preparem la teva oferta?",
-      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem un pressupost a mida en 24-48 h, sense compromís. Servim a tot Europa.",
+      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem de seguida un pressupost a mida, sense compromís. Servim a tot Europa.",
       "contact_button": "Demanar pressupost"
     },
     "en": {
@@ -150,8 +150,8 @@
           "label": "distinct genera in the catalogue"
         },
         {
-          "value": "24-48 h",
-          "label": "to get your quote back"
+          "value": "Express",
+          "label": "replies to your quote request"
         },
         {
           "value": "Europe",
@@ -174,7 +174,7 @@
         },
         {
           "title": "You get a complete order",
-          "text": "A firm quote within 24-48 h and delivery across Europe. First plant to last, in a single shipment."
+          "text": "A fast, firm quote and delivery across Europe. First plant to last, in a single shipment."
         }
       ],
       "catalogues_title": "Catalogues",
@@ -182,7 +182,7 @@
       "catalogues_subtitle": "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
       "catalogues_button": "View catalogues",
       "contact_title": "Ready for your quote?",
-      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll send a tailored quote within 24-48 h, no obligation. We deliver across Europe.",
+      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver across Europe.",
       "contact_button": "Request a quote"
     },
     "fr": {
@@ -209,8 +209,8 @@
           "label": "genres différents au catalogue"
         },
         {
-          "value": "24-48 h",
-          "label": "pour recevoir votre devis"
+          "value": "Express",
+          "label": "réponse à votre demande de devis"
         },
         {
           "value": "Europe",
@@ -233,7 +233,7 @@
         },
         {
           "title": "Vous recevez une commande complète",
-          "text": "Devis ferme sous 24-48 h et livraison dans toute l'Europe. De la première à la dernière plante, en un seul envoi."
+          "text": "Devis ferme rapide et livraison dans toute l'Europe. De la première à la dernière plante, en un seul envoi."
         }
       ],
       "catalogues_title": "Catalogues",
@@ -241,7 +241,7 @@
       "catalogues_subtitle": "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
       "catalogues_button": "Voir les catalogues",
       "contact_title": "On prépare votre devis ?",
-      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
+      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons dans toute l'Europe.",
       "contact_button": "Demander un devis"
     },
     "it": {
@@ -268,8 +268,8 @@
           "label": "generi diversi in catalogo"
         },
         {
-          "value": "24-48 h",
-          "label": "per ricevere il tuo preventivo"
+          "value": "Express",
+          "label": "risposta alla tua richiesta di preventivo"
         },
         {
           "value": "Europa",
@@ -292,7 +292,7 @@
         },
         {
           "title": "Ricevi un ordine completo",
-          "text": "Preventivo definitivo entro 24-48 h e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione."
+          "text": "Preventivo definitivo rapido e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione."
         }
       ],
       "catalogues_title": "Cataloghi",
@@ -300,7 +300,7 @@
       "catalogues_subtitle": "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
       "catalogues_button": "Vedi i cataloghi",
       "contact_title": "Prepariamo il tuo preventivo?",
-      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo un preventivo su misura entro 24-48 h, senza impegno. Consegniamo in tutta Europa.",
+      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo in tutta Europa.",
       "contact_button": "Richiedi un preventivo"
     }
   },
@@ -744,7 +744,7 @@
       "section_title": "Si solo necesitas una parte",
       "section_subtitle": "Documentos más cortos por familia y por temporada, pensados para enviar directamente a obra.",
       "contact_title": "¿Preparamos tu oferta?",
-      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos un presupuesto a medida en 24-48 h, sin compromiso. Servimos en toda Europa.",
+      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos enseguida un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
@@ -754,7 +754,7 @@
       "section_title": "Si només necessites una part",
       "section_subtitle": "Documents més curts per família i per temporada, pensats per enviar directament a obra.",
       "contact_title": "Preparem la teva oferta?",
-      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem un pressupost a mida en 24-48 h, sense compromís. Servim a tot Europa.",
+      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem de seguida un pressupost a mida, sense compromís. Servim a tot Europa.",
       "contact_button": "Demanar pressupost"
     },
     "en": {
@@ -764,7 +764,7 @@
       "section_title": "If you only need one part of it",
       "section_subtitle": "Shorter documents by family and by season, made to forward straight to site.",
       "contact_title": "Ready for your quote?",
-      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll send a tailored quote within 24-48 h, no obligation. We deliver across Europe.",
+      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver across Europe.",
       "contact_button": "Request a quote"
     },
     "fr": {
@@ -774,7 +774,7 @@
       "section_title": "Si vous n'avez besoin que d'une partie",
       "section_subtitle": "Des documents plus courts par famille et par saison, à transmettre directement au chantier.",
       "contact_title": "On prépare votre devis ?",
-      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons un devis sur mesure sous 24-48 h, sans engagement. Nous livrons dans toute l'Europe.",
+      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons dans toute l'Europe.",
       "contact_button": "Demander un devis"
     },
     "it": {
@@ -784,7 +784,7 @@
       "section_title": "Se ti serve solo una parte",
       "section_subtitle": "Documenti più brevi per famiglia e per stagione, pensati per essere inoltrati direttamente al cantiere.",
       "contact_title": "Prepariamo il tuo preventivo?",
-      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo un preventivo su misura entro 24-48 h, senza impegno. Consegniamo in tutta Europa.",
+      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo in tutta Europa.",
       "contact_button": "Richiedi un preventivo"
     }
   }

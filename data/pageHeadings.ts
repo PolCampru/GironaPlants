@@ -55,7 +55,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "Nuestro catálogo",
     askQuestion: "¿No encuentras la especie que buscas?",
     askButton: "Añádela a tu presupuesto",
-    lead: "Filtra por formato o busca por género, márcalas y envíanos la lista. Te devolvemos un presupuesto cerrado en 24-48 h.",
+    lead: "Filtra por formato o busca por género, márcalas y envíanos la lista. Te devolvemos un presupuesto cerrado enseguida.",
   },
   ca: {
     label: "Catàleg viu",
@@ -63,7 +63,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "El nostre catàleg",
     askQuestion: "No trobes l'espècie que busques?",
     askButton: "Afegeix-la al teu pressupost",
-    lead: "Filtra per format o busca per gènere, marca-les i envia'ns la llista. Et tornem un pressupost tancat en 24-48 h.",
+    lead: "Filtra per format o busca per gènere, marca-les i envia'ns la llista. Et tornem un pressupost tancat de seguida.",
   },
   en: {
     label: "Live catalogue",
@@ -71,7 +71,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "Our catalogue",
     askQuestion: "Can't find the species you need?",
     askButton: "Add it to your quote",
-    lead: "Filter by format or search by genus, tick what you need and send us the list. We come back with a firm quote within 24-48 h.",
+    lead: "Filter by format or search by genus, tick what you need and send us the list. We come back with a firm quote, fast.",
   },
   fr: {
     label: "Catalogue vivant",
@@ -79,7 +79,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "Notre catalogue",
     askQuestion: "Vous ne trouvez pas l'espèce recherchée ?",
     askButton: "Ajoutez-la à votre devis",
-    lead: "Filtrez par format ou cherchez par genre, cochez ce qu'il vous faut et envoyez-nous la liste. Nous revenons avec un devis ferme sous 24-48 h.",
+    lead: "Filtrez par format ou cherchez par genre, cochez ce qu'il vous faut et envoyez-nous la liste. Nous revenons avec un devis ferme, rapidement.",
   },
   it: {
     label: "Catalogo aggiornato",
@@ -87,7 +87,7 @@ const products: Record<string, ProductsHeading> = {
     fallbackTitle: "Il nostro catalogo",
     askQuestion: "Non trovi la specie che cerchi?",
     askButton: "Aggiungila al tuo preventivo",
-    lead: "Filtra per formato o cerca per genere, seleziona ciò che ti serve e inviaci l'elenco. Ti inviamo un preventivo definitivo entro 24-48 h.",
+    lead: "Filtra per formato o cerca per genere, seleziona ciò che ti serve e inviaci l'elenco. Ti inviamo rapidamente un preventivo definitivo.",
   },
 };
 
@@ -95,27 +95,27 @@ const contact: Record<string, PageHeading> = {
   es: {
     label: "Solicitud de presupuesto",
     title: "Dinos qué necesitas",
-    lead: "Especies, medidas y cantidades. Te respondemos con un presupuesto cerrado en 24-48 h laborables, sin compromiso.",
+    lead: "Especies, medidas y cantidades. Te respondemos rápido con un presupuesto cerrado, sin compromiso.",
   },
   ca: {
     label: "Sol·licitud de pressupost",
     title: "Digues-nos què necessites",
-    lead: "Espècies, mides i quantitats. Et responem amb un pressupost tancat en 24-48 h laborables, sense compromís.",
+    lead: "Espècies, mides i quantitats. Et responem ràpid amb un pressupost tancat, sense compromís.",
   },
   en: {
     label: "Quote request",
     title: "Tell us what you need",
-    lead: "Species, sizes and quantities. We come back with a firm quote within 24-48 working hours, no obligation.",
+    lead: "Species, sizes and quantities. We reply fast with a firm quote, no obligation.",
   },
   fr: {
     label: "Demande de devis",
     title: "Dites-nous ce qu'il vous faut",
-    lead: "Espèces, tailles et quantités. Nous revenons avec un devis ferme sous 24-48 h ouvrées, sans engagement.",
+    lead: "Espèces, tailles et quantités. Nous revenons rapidement avec un devis ferme, sans engagement.",
   },
   it: {
     label: "Richiesta di preventivo",
     title: "Dicci di cosa hai bisogno",
-    lead: "Specie, misure e quantità. Ti rispondiamo con un preventivo definitivo entro 24-48 ore lavorative, senza impegno.",
+    lead: "Specie, misure e quantità. Ti rispondiamo rapidamente con un preventivo definitivo, senza impegno.",
   },
 };
 
@@ -123,27 +123,27 @@ const budget: Record<string, PageHeading> = {
   es: {
     label: "Tu selección",
     title: "Solicitud de presupuesto",
-    lead: "Revisa las especies y las cantidades, completa tus datos y te devolvemos un presupuesto cerrado en 24-48 h.",
+    lead: "Revisa las especies y las cantidades, completa tus datos y te devolvemos un presupuesto cerrado enseguida.",
   },
   ca: {
     label: "La teva selecció",
     title: "Sol·licitud de pressupost",
-    lead: "Revisa les espècies i les quantitats, completa les teves dades i et tornem un pressupost tancat en 24-48 h.",
+    lead: "Revisa les espècies i les quantitats, completa les teves dades i et tornem un pressupost tancat de seguida.",
   },
   en: {
     label: "Your selection",
     title: "Quote request",
-    lead: "Check the species and quantities, fill in your details and we come back with a firm quote within 24-48 h.",
+    lead: "Check the species and quantities, fill in your details and we come back with a firm quote, fast.",
   },
   fr: {
     label: "Votre sélection",
     title: "Demande de devis",
-    lead: "Vérifiez les espèces et les quantités, renseignez vos coordonnées et nous revenons avec un devis ferme sous 24-48 h.",
+    lead: "Vérifiez les espèces et les quantités, renseignez vos coordonnées et nous revenons avec un devis ferme, rapidement.",
   },
   it: {
     label: "La tua selezione",
     title: "Richiesta di preventivo",
-    lead: "Controlla le specie e le quantità, completa i tuoi dati e ti inviamo un preventivo definitivo entro 24-48 h.",
+    lead: "Controlla le specie e le quantità, completa i tuoi dati e ti inviamo rapidamente un preventivo definitivo.",
   },
 };
 

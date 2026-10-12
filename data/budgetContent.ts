@@ -79,7 +79,7 @@ const copy: Record<string, QuoteCopy> = {
     keptLocal: "Tu selección se guarda en este navegador hasta que la envíes.",
     travelWithForm: "viajan con este formulario",
     drawerCta: "Formulario de solicitud",
-    pricedIn: "Presupuesto en 24-48 h",
+    pricedIn: "Presupuesto rápido",
   },
   ca: {
     inRequest: "En aquesta sol·licitud",
@@ -109,7 +109,7 @@ const copy: Record<string, QuoteCopy> = {
       "La teva selecció es guarda en aquest navegador fins que l'enviïs.",
     travelWithForm: "viatgen amb aquest formulari",
     drawerCta: "Formulari de sol·licitud",
-    pricedIn: "Pressupost en 24-48 h",
+    pricedIn: "Pressupost ràpid",
   },
   en: {
     inRequest: "In this request",
@@ -138,7 +138,7 @@ const copy: Record<string, QuoteCopy> = {
     keptLocal: "Your selection is kept in this browser until you send it.",
     travelWithForm: "travel with this form",
     drawerCta: "Request form",
-    pricedIn: "Priced in 24-48 h",
+    pricedIn: "Fast quote",
   },
   fr: {
     inRequest: "Dans cette demande",
@@ -168,7 +168,7 @@ const copy: Record<string, QuoteCopy> = {
       "Votre sélection est conservée dans ce navigateur jusqu'à l'envoi.",
     travelWithForm: "accompagnent ce formulaire",
     drawerCta: "Formulaire de demande",
-    pricedIn: "Devis en 24-48 h",
+    pricedIn: "Devis rapide",
   },
   it: {
     inRequest: "In questa richiesta",
@@ -198,7 +198,7 @@ const copy: Record<string, QuoteCopy> = {
       "La tua selezione resta salvata in questo browser finché non la invii.",
     travelWithForm: "accompagnano questo modulo",
     drawerCta: "Modulo di richiesta",
-    pricedIn: "Preventivo in 24-48 h",
+    pricedIn: "Preventivo rapido",
   },
 };
 

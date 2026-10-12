@@ -96,7 +96,7 @@ const es: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, con alturas de ${heightList}` : "") +
       (price ? `. Precio al por mayor desde ${price} por unidad` : "") +
-      `. Te confirmamos disponibilidad y precio cerrado en 24-48 h.`,
+      `. Te confirmamos disponibilidad y precio cerrado enseguida.`,
     formatsHeading: "Formatos disponibles",
     siblingsHeading: (genus) => `Otras especies de ${genus}`,
     seeGenus: (genus) => `Ver todo el género ${genus}`,
@@ -111,7 +111,7 @@ const es: CatalogueCopy = {
   },
   cta: {
     title: "¿Necesitas esta planta para tu proyecto?",
-    body: "Dinos formato, altura y cantidad y te devolvemos un presupuesto cerrado en 24-48 h. Si no está en stock, la localizamos en nuestra red de viveros europea.",
+    body: "Dinos formato, altura y cantidad y te devolvemos un presupuesto cerrado enseguida. Si no está en stock, la localizamos en nuestra red de viveros europea.",
     quote: "Pedir presupuesto",
     contact: "Hablar con nosotros",
   },
@@ -126,7 +126,7 @@ const es: CatalogueCopy = {
     genusDescription: ({ genus, species, references, formats }) =>
       `${references} referencias de ${genus} en ${species} ${plural(species, "especie", "especies")}` +
       (formats ? `, formatos ${formats}` : "") +
-      `. Precios al por mayor para paisajistas y garden centers. Presupuesto en 24-48 h.`,
+      `. Precios al por mayor para paisajistas y garden centers. Presupuesto rápido.`,
     speciesTitle: (name) => `${name} · Precio al por mayor`,
     speciesDescription: ({ name, formats, formatList, price }) =>
       `${name} en ${formats} ${plural(formats, "formato", "formatos")}` +
@@ -171,7 +171,7 @@ const ca: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, amb alçades de ${heightList}` : "") +
       (price ? `. Preu a l'engròs des de ${price} per unitat` : "") +
-      `. Et confirmem disponibilitat i preu tancat en 24-48 h.`,
+      `. Et confirmem disponibilitat i preu tancat de seguida.`,
     formatsHeading: "Formats disponibles",
     siblingsHeading: (genus) => `Altres espècies de ${genus}`,
     seeGenus: (genus) => `Veure tot el gènere ${genus}`,
@@ -186,7 +186,7 @@ const ca: CatalogueCopy = {
   },
   cta: {
     title: "Necessites aquesta planta per al teu projecte?",
-    body: "Digues-nos format, alçada i quantitat i et tornem un pressupost tancat en 24-48 h. Si no la tenim en estoc, la localitzem a la nostra xarxa de vivers europea.",
+    body: "Digues-nos format, alçada i quantitat i et tornem un pressupost tancat de seguida. Si no la tenim en estoc, la localitzem a la nostra xarxa de vivers europea.",
     quote: "Demanar pressupost",
     contact: "Parlar amb nosaltres",
   },
@@ -201,7 +201,7 @@ const ca: CatalogueCopy = {
     genusDescription: ({ genus, species, references, formats }) =>
       `${references} referències de ${genus} en ${species} ${plural(species, "espècie", "espècies")}` +
       (formats ? `, formats ${formats}` : "") +
-      `. Preus a l'engròs per a paisatgistes i garden centers. Pressupost en 24-48 h.`,
+      `. Preus a l'engròs per a paisatgistes i garden centers. Pressupost ràpid.`,
     speciesTitle: (name) => `${name} · Preu a l'engròs`,
     speciesDescription: ({ name, formats, formatList, price }) =>
       `${name} en ${formats} ${plural(formats, "format", "formats")}` +
@@ -246,7 +246,7 @@ const en: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, in heights of ${heightList}` : "") +
       (price ? `. Wholesale price from ${price} per unit` : "") +
-      `. We confirm availability and a firm price within 24-48 h.`,
+      `. We confirm availability and a firm price fast.`,
     formatsHeading: "Available formats",
     siblingsHeading: (genus) => `Other ${genus} species`,
     seeGenus: (genus) => `See the whole ${genus} genus`,
@@ -261,7 +261,7 @@ const en: CatalogueCopy = {
   },
   cta: {
     title: "Need this plant for your project?",
-    body: "Tell us the format, height and quantity and we'll send a firm quote within 24-48 h. If it isn't in stock, we'll find it through our European grower network.",
+    body: "Tell us the format, height and quantity and we'll quickly send a firm quote. If it isn't in stock, we'll find it through our European grower network.",
     quote: "Request a quote",
     contact: "Talk to us",
   },
@@ -276,7 +276,7 @@ const en: CatalogueCopy = {
     genusDescription: ({ genus, species, references, formats }) =>
       `${references} ${genus} references across ${species} ${plural(species, "species", "species")}` +
       (formats ? `, ${formats} formats` : "") +
-      `. Wholesale prices for landscapers and garden centres. Quote in 24-48 h.`,
+      `. Wholesale prices for landscapers and garden centres. Fast quotes.`,
     speciesTitle: (name) => `${name} · Wholesale price`,
     speciesDescription: ({ name, formats, formatList, price }) =>
       `${name} in ${formats} ${plural(formats, "format", "formats")}` +
@@ -321,7 +321,7 @@ const fr: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, avec des hauteurs de ${heightList}` : "") +
       (price ? `. Prix de gros à partir de ${price} l'unité` : "") +
-      `. Nous confirmons la disponibilité et un prix ferme sous 24-48 h.`,
+      `. Nous confirmons la disponibilité et un prix ferme rapidement.`,
     formatsHeading: "Formats disponibles",
     siblingsHeading: (genus) => `Autres espèces de ${genus}`,
     seeGenus: (genus) => `Voir tout le genre ${genus}`,
@@ -336,7 +336,7 @@ const fr: CatalogueCopy = {
   },
   cta: {
     title: "Besoin de cette plante pour votre projet ?",
-    body: "Indiquez-nous le format, la hauteur et la quantité et nous vous envoyons un devis ferme sous 24-48 h. Ce que nous n'avons pas en stock, nous le trouvons via notre réseau européen.",
+    body: "Indiquez-nous le format, la hauteur et la quantité et nous vous envoyons rapidement un devis ferme. Ce que nous n'avons pas en stock, nous le trouvons via notre réseau européen.",
     quote: "Demander un devis",
     contact: "Nous contacter",
   },
@@ -351,7 +351,7 @@ const fr: CatalogueCopy = {
     genusDescription: ({ genus, species, references, formats }) =>
       `${references} références de ${genus} en ${species} ${plural(species, "espèce", "espèces")}` +
       (formats ? `, formats ${formats}` : "") +
-      `. Prix de gros pour paysagistes et jardineries. Devis sous 24-48 h.`,
+      `. Prix de gros pour paysagistes et jardineries. Devis rapide.`,
     speciesTitle: (name) => `${name} · Prix de gros`,
     speciesDescription: ({ name, formats, formatList, price }) =>
       `${name} en ${formats} ${plural(formats, "format", "formats")}` +
@@ -396,7 +396,7 @@ const it: CatalogueCopy = {
       (formatList ? ` (${formatList})` : "") +
       (heightList ? `, con altezze di ${heightList}` : "") +
       (price ? `. Prezzo all'ingrosso a partire da ${price} al pezzo` : "") +
-      `. Ti confermiamo disponibilità e prezzo definitivo entro 24-48 h.`,
+      `. Ti confermiamo disponibilità e prezzo definitivo in tempi rapidi.`,
     formatsHeading: "Formati disponibili",
     siblingsHeading: (genus) => `Altre specie di ${genus}`,
     seeGenus: (genus) => `Vedi tutto il genere ${genus}`,
@@ -411,7 +411,7 @@ const it: CatalogueCopy = {
   },
   cta: {
     title: "Ti serve questa pianta per il tuo progetto?",
-    body: "Indicaci formato, altezza e quantità e ti inviamo un preventivo definitivo entro 24-48 h. Se non è disponibile a magazzino, la troviamo nella nostra rete europea di vivai.",
+    body: "Indicaci formato, altezza e quantità e ti inviamo rapidamente un preventivo definitivo. Se non è disponibile a magazzino, la troviamo nella nostra rete europea di vivai.",
     quote: "Richiedi un preventivo",
     contact: "Parla con noi",
   },
@@ -426,7 +426,7 @@ const it: CatalogueCopy = {
     genusDescription: ({ genus, species, references, formats }) =>
       `${references} referenze di ${genus} in ${species} ${plural(species, "specie", "specie")}` +
       (formats ? `, formati ${formats}` : "") +
-      `. Prezzi all'ingrosso per paesaggisti e garden center. Preventivo in 24-48 h.`,
+      `. Prezzi all'ingrosso per paesaggisti e garden center. Preventivo rapido.`,
     speciesTitle: (name) => `${name} · Prezzo all'ingrosso`,
     speciesDescription: ({ name, formats, formatList, price }) =>
       `${name} in ${formats} ${plural(formats, "formato", "formati")}` +

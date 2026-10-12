@@ -49,7 +49,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     home: {
       title: "GironaPlants · Plantas al por mayor en toda Europa",
       description:
-        "Más de 30 años comercializando planta para profesionales. No la cultivamos: la seleccionamos en viveros de toda Europa y te servimos la lista completa. Presupuesto en 24-48 h.",
+        "Más de 30 años comercializando planta para profesionales. No la cultivamos: la seleccionamos en viveros de toda Europa y te servimos la lista completa. Presupuesto rápido.",
       keywords: [
         "distribuidor de plantas al por mayor",
         "proveedor de plantas Europa",
@@ -104,7 +104,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Solicitar presupuesto de plantas",
       description:
-        "Dinos qué especies, medidas y cantidades necesita tu proyecto y te enviamos un presupuesto a medida en 24-48 h, sin compromiso.",
+        "Dinos qué especies, medidas y cantidades necesita tu proyecto y te enviamos enseguida un presupuesto a medida, sin compromiso.",
       keywords: [
         "presupuesto plantas",
         "presupuesto jardinería Girona",
@@ -126,7 +126,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     home: {
       title: "GironaPlants · Plantes a l'engròs a tot Europa",
       description:
-        "Més de 30 anys comercialitzant planta per a professionals. No la cultivem: la seleccionem en vivers de tot Europa i et servim la llista completa. Pressupost en 24-48 h.",
+        "Més de 30 anys comercialitzant planta per a professionals. No la cultivem: la seleccionem en vivers de tot Europa i et servim la llista completa. Pressupost ràpid.",
       keywords: [
         "distribuïdor de plantes a l'engròs",
         "proveïdor de plantes Europa",
@@ -181,7 +181,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Demanar pressupost de plantes",
       description:
-        "Digue'ns quines espècies, mides i quantitats necessita el teu projecte i t'enviem un pressupost a mida en 24-48 h, sense compromís.",
+        "Digue'ns quines espècies, mides i quantitats necessita el teu projecte i t'enviem de seguida un pressupost a mida, sense compromís.",
       keywords: [
         "pressupost plantes",
         "pressupost jardineria Girona",
@@ -203,7 +203,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     home: {
       title: "GironaPlants · Wholesale plant supplier in Europe",
       description:
-        "More than 30 years supplying plants to the trade. We don't grow them — we select them from nurseries across Europe and deliver your whole list. Quote within 24-48 h.",
+        "More than 30 years supplying plants to the trade. We don't grow them — we select them from nurseries across Europe and deliver your whole list. Fast quotes.",
       keywords: [
         "wholesale plant supplier Europe",
         "plant distributor Spain",
@@ -257,7 +257,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Request a plant quote",
       description:
-        "Tell us the species, sizes and quantities your project needs and we'll send a tailored quote within 24-48 h, with no obligation.",
+        "Tell us the species, sizes and quantities your project needs and we'll quickly send a tailored quote, with no obligation.",
       keywords: [
         "plant quote",
         "wholesale plant prices Spain",
@@ -279,7 +279,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     home: {
       title: "GironaPlants · Fournisseur de plantes en gros",
       description:
-        "Plus de 30 ans à fournir des plantes aux professionnels. Nous ne les cultivons pas : nous les sélectionnons dans les pépinières d'Europe. Devis sous 24-48 h.",
+        "Plus de 30 ans à fournir des plantes aux professionnels. Nous ne les cultivons pas : nous les sélectionnons dans les pépinières d'Europe. Devis rapide.",
       keywords: [
         "fournisseur de plantes en gros",
         "négociant en plantes Europe",
@@ -333,7 +333,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Demander un devis de plantes",
       description:
-        "Indiquez-nous les espèces, tailles et quantités dont votre projet a besoin et recevez un devis sur mesure sous 24-48 h, sans engagement.",
+        "Indiquez-nous les espèces, tailles et quantités dont votre projet a besoin et recevez rapidement un devis sur mesure, sans engagement.",
       keywords: [
         "devis plantes",
         "prix plantes en gros",
@@ -355,7 +355,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     home: {
       title: "GironaPlants · Piante all'ingrosso in tutta Europa",
       description:
-        "Da oltre 30 anni forniamo piante ai professionisti. Non le coltiviamo: le selezioniamo nei vivai di tutta Europa e ti consegniamo l'elenco completo. Preventivo in 24-48 h.",
+        "Da oltre 30 anni forniamo piante ai professionisti. Non le coltiviamo: le selezioniamo nei vivai di tutta Europa e ti consegniamo l'elenco completo. Preventivo rapido.",
       keywords: [
         "distributore di piante all'ingrosso",
         "fornitore di piante Europa",
@@ -410,7 +410,7 @@ const SEO: Record<SeoLocale, Record<SeoPageKey, PageSeo>> = {
     budget: {
       title: "Richiedi un preventivo di piante",
       description:
-        "Indicaci specie, misure e quantità di cui ha bisogno il tuo progetto e ti invieremo un preventivo su misura in 24-48 h, senza impegno.",
+        "Indicaci specie, misure e quantità di cui ha bisogno il tuo progetto e ti invieremo rapidamente un preventivo su misura, senza impegno.",
       keywords: [
         "preventivo piante",
         "prezzi piante all'ingrosso",
