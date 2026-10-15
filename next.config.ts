@@ -25,12 +25,6 @@ const mediaOrigins = mediaHosts.map((h) => `https://${h}`).join(" ");
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // The production container's root filesystem is read-only (see
-  // deploy/docker-compose.yml), so ISR keeps regenerated pages in memory
-  // instead of writing them under .next/server.
-  experimental: {
-    isrFlushToDisk: false,
-  },
   compiler: {
     styledComponents: true,
   },

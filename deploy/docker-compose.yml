@@ -54,12 +54,13 @@ services:
     restart: unless-stopped
     env_file: ./frontend/.env
     # Read-only root: the only writable paths are these noexec tmpfs mounts.
-    # .next/cache is seeded from .next/cache-seed at start (see Dockerfile).
+    # .next/cache and .next/server/app are seeded at start (see Dockerfile).
     read_only: true
     tmpfs:
       - /tmp:noexec,nosuid,nodev,size=64m
       - /home/node:noexec,nosuid,nodev,size=16m,uid=1000,gid=1000
-      - /srv/app/.next/cache:noexec,nosuid,nodev,size=768m,uid=1000,gid=1000
+      - /srv/app/.next/cache:noexec,nosuid,nodev,size=512m,uid=1000,gid=1000
+      - /srv/app/.next/server/app:noexec,nosuid,nodev,size=128m,uid=1000,gid=1000
     networks: [web]
 
   # --- Analitica (Umami) -------------------------------------------------

@@ -25,12 +25,15 @@ RUN npm run build \
       if [ -d .next/cache/$d ]; then mv .next/cache/$d .next/cache-seed/; fi; \
     done \
  && rm -rf .next/cache && mkdir .next/cache \
+ && mv .next/server/app .next/server/app-seed && mkdir .next/server/app \
  && chown -R node:node /srv/app
 USER node
 EXPOSE 3000
 # The container runs with a read-only root filesystem (see
 # deploy/docker-compose.yml) so a dropped binary has nowhere to live: the only
-# writable paths are noexec tmpfs mounts. .next/cache is one of them, so the
-# warmed image and fetch caches are baked in as cache-seed and copied in at
-# start. next is started directly because npm wants to write logs under $HOME.
-CMD ["sh","-c","cp -a .next/cache-seed/. .next/cache/ && exec node_modules/.bin/next start"]
+# writable paths are noexec tmpfs mounts. Two of them need content: the warmed
+# image and fetch caches (cache-seed -> .next/cache) and the prerendered pages
+# that ISR rewrites (server/app-seed -> server/app; Node still loads JS from a
+# noexec mount). Both are copied in at start. next is started directly
+# because npm wants to write logs under $HOME.
+CMD ["sh","-c","cp -a .next/cache-seed/. .next/cache/ && cp -a .next/server/app-seed/. .next/server/app/ && exec node_modules/.bin/next start"]
