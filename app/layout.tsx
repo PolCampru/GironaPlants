@@ -12,9 +12,6 @@ import Analytics from "@/components/analytics/Analytics";
 
 interface RootLayoutProps {
   children: ReactNode;
-  params: {
-    lng: string;
-  };
 }
 
 // Newsreader carries the headlines, Manrope the body and interface. Both are
@@ -106,7 +103,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children, params }: RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     // This layout sits above the [lng] segment, so the locale param never
     // reaches it — default the document language to the primary locale.
@@ -114,7 +111,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
     // lives in app/[lng]/layout.tsx.)
     <html
       className={`${manrope.variable} ${newsreader.variable}`}
-      lang={params?.lng ?? "es"}
+      lang="es"
     >
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
