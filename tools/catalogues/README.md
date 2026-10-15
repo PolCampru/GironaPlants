@@ -119,7 +119,7 @@ ssh root@46.202.135.74 'docker cp /tmp/rename-plants.js gp-strapi:/srv/app/scrip
 Recrear el frontend despues, igual que tras una carga completa. La URL vieja
 queda retirada: `description` es el `<h1>` y la URL de la pagina de especie.
 
-> `app/api/seed-plants/route.ts` es el cargador **antiguo**, contra un XLSX que
+> `app/api/seed-plants/route.ts` era el cargador **antiguo** (borrado el 2026-10-15), contra un XLSX que
 > ya no es la fuente. Su `STRAPI_TOKEN` es de solo lectura, asi que hoy falla en
 > el primer DELETE — pero si alguna vez recibe un token de escritura, revertiria
 > el catalogo. Usar este camino, no aquel.

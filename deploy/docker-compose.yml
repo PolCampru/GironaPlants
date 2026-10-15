@@ -1,3 +1,15 @@
+# Hardening shared by the three Node apps, added after the 2026-10-12 incident
+# (an RCE in Next.js dropped a scanner binary into gp-frontend's /tmp and ran
+# it as `node`). /tmp is noexec so a dropped ELF cannot be started, no process
+# can gain privileges, all Linux capabilities are dropped, and the CPU/PID caps
+# stop a miner or scanner from saturating the box before anyone notices.
+x-node-hardening: &node-hardening
+  security_opt:
+    - no-new-privileges:true
+  cap_drop: [ALL]
+  pids_limit: 512
+  cpus: "1.5"
+
 services:
   caddy:
     image: caddy:2-alpine
@@ -13,6 +25,7 @@ services:
     networks: [web]
 
   strapi:
+    <<: *node-hardening
     build:
       context: ./strapi
     container_name: gp-strapi
@@ -23,9 +36,12 @@ services:
     volumes:
       - ./data:/srv/app/data
       - ./uploads:/srv/app/public/uploads
+    tmpfs:
+      - /tmp:noexec,nosuid,nodev,size=256m
     networks: [web]
 
   frontend:
+    <<: *node-hardening
     build:
       context: ./frontend
       network: host
@@ -37,6 +53,13 @@ services:
     container_name: gp-frontend
     restart: unless-stopped
     env_file: ./frontend/.env
+    # Read-only root: the only writable paths are these noexec tmpfs mounts.
+    # .next/cache is seeded from .next/cache-seed at start (see Dockerfile).
+    read_only: true
+    tmpfs:
+      - /tmp:noexec,nosuid,nodev,size=64m
+      - /home/node:noexec,nosuid,nodev,size=16m,uid=1000,gid=1000
+      - /srv/app/.next/cache:noexec,nosuid,nodev,size=768m,uid=1000,gid=1000
     networks: [web]
 
   # --- Analitica (Umami) -------------------------------------------------
@@ -64,6 +87,7 @@ services:
   # evita depender de un registro DNS nuevo en PIMEC y esquiva los bloqueadores
   # de anuncios, que filtran por hostname de analitica.
   umami:
+    <<: *node-hardening
     # Construida desde fuente, no `image:`, porque BASE_PATH es un ARG de
     # build: Next.js compila `basePath` dentro del bundle, asi que ninguna
     # imagen publicada puede servirse bajo /stats. Las imagenes oficiales
@@ -71,13 +95,15 @@ services:
     # es v3, y con v2.19.0).
     #
     # El contexto es un clon del repo de Umami que vive solo en el VPS, igual
-    # que ./frontend y ./strapi — ver deploy/README.md.
+    # que ./frontend y ./strapi — ver deploy/README.md. Esta en el tag v2.20.2
+    # con `next` fijado a 15.5.28 en package.json (v2.20.2 trae ^15.5.9, aun
+    # vulnerable a la RCE del optimizador de imagenes).
     build:
       context: ./umami-src
       args:
         DATABASE_TYPE: postgresql
         BASE_PATH: /stats
-    image: gironaplants/umami:2.19.0-stats
+    image: gironaplants/umami:2.20.2-stats
     container_name: gp-umami
     restart: unless-stopped
     depends_on:
@@ -89,6 +115,8 @@ services:
       APP_SECRET: "${UMAMI_APP_SECRET}"
       BASE_PATH: /stats
       DISABLE_TELEMETRY: "1"
+    tmpfs:
+      - /tmp:noexec,nosuid,nodev,size=64m
     networks: [web]
 
 networks:

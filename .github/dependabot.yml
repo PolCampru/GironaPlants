@@ -1,0 +1,16 @@
+# Weekly dependency PRs plus GitHub's security-update PRs. The 2026-10-12
+# compromise came through an unpatched Next.js, so the npm ecosystem is the
+# one that matters; grouped so a week's bumps arrive as one PR.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      npm-minor-and-patch:
+        update-types: [minor, patch]
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly

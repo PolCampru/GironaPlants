@@ -15,8 +15,17 @@ gironaplants.com, www.gironaplants.com {
 	# Los dos patrones, no solo /stats/*: en Caddy ese matcher NO cubre la ruta
 	# exacta /stats, que es justo la que se teclea a mano. Sin la primera,
 	# /stats caia al frontend y devolvia su 404.
+	#
+	# Tras el incidente del 2026-10-12 (RCE en Next.js), solo el tracker es
+	# publico; el panel queda limitado a la IP de Pol, igual que el /admin de
+	# Strapi. Desde otra red, anadir la IP aqui y hacer `caddy reload`.
 	@umami path /stats /stats/*
 	handle @umami {
+		@umami_panel {
+			not path /stats/script.js /stats/api/send
+			not remote_ip 83.45.86.215 195.53.112.122
+		}
+		respond @umami_panel "Forbidden" 403
 		reverse_proxy umami:3000
 	}
 

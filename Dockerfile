@@ -20,7 +20,14 @@ ENV NODE_ENV=production
 # chown below covers the cache and the runtime user can keep writing to it.
 RUN npm run build \
  && npm run warm:images \
+ && mv .next/cache .next/cache-seed \
+ && mkdir .next/cache \
  && chown -R node:node /srv/app
 USER node
 EXPOSE 3000
-CMD ["npm","run","start"]
+# The container runs with a read-only root filesystem (see
+# deploy/docker-compose.yml) so a dropped binary has nowhere to live: the only
+# writable paths are noexec tmpfs mounts. .next/cache is one of them, so the
+# warmed image cache is baked in as cache-seed and copied in at start. next is
+# started directly because npm wants to write logs under $HOME.
+CMD ["sh","-c","cp -a .next/cache-seed/. .next/cache/ && exec node_modules/.bin/next start"]
