@@ -23,7 +23,7 @@ gironaplants.com, www.gironaplants.com {
 	handle @umami {
 		@umami_panel {
 			not path /stats/script.js /stats/api/send
-			not remote_ip 83.45.86.215 195.53.112.122
+			not remote_ip 83.45.86.215 195.53.112.122 79.155.146.67
 		}
 		respond @umami_panel "Forbidden" 403
 		reverse_proxy umami:3000
