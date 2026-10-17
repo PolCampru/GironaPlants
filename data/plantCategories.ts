@@ -30,9 +30,9 @@ export const PLANT_CATEGORIES: PlantCategory[] = [
   { genus: "Carex", img: "/images/plants/grasses.jpg", photo: "sedge and grass clumps" },
   { genus: "Iris", img: "/images/plants/irisSibirica.jpg", photo: "Iris sibirica in flower" },
   { genus: "Vinca", img: "/images/plants/groundcovers.jpg", photo: "periwinkle in flower" },
-  // Not a genus: "Leylandi" matches every Cupressocyparis leylandii row, and
+  // Not a genus: "Leylandii" matches every Cupressocyparis leylandii row, and
   // it is the name the trade asks for.
-  { genus: "Leylandi", img: "/images/plants/leylandiiHedge.jpg", photo: "clipped leylandii hedge" },
+  { genus: "Leylandii", img: "/images/plants/leylandiiColumns.jpg", photo: "clipped Leyland cypress columns along a walkway" },
 ];
 
 /** Plain-language gloss per genus, per locale. */
@@ -44,7 +44,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Carex: "Cárices y gramíneas de sombra",
     Iris: "Lirios de jardín y de ribera",
     Vinca: "Vincapervincas, cubresuelos de sombra",
-    Leylandi: "Plantas para seto: ciprés de Leyland",
+    Leylandii: "Plantas para seto: ciprés de Leyland",
   },
   ca: {
     Quercus: "Alzines, roures i suros",
@@ -53,7 +53,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Carex: "Càrexs i gramínies d'ombra",
     Iris: "Lliris de jardí i de ribera",
     Vinca: "Vincapervinques, entapissants d'ombra",
-    Leylandi: "Plantes per a tanca: xiprer de Leyland",
+    Leylandii: "Plantes per a tanca: xiprer de Leyland",
   },
   en: {
     Quercus: "Holm oaks, oaks and cork oaks",
@@ -62,7 +62,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Carex: "Sedges and shade grasses",
     Iris: "Garden and waterside irises",
     Vinca: "Periwinkles, groundcover for shade",
-    Leylandi: "Hedging plants: Leyland cypress",
+    Leylandii: "Hedging plants: Leyland cypress",
   },
   fr: {
     Quercus: "Chênes verts, chênes et chênes-lièges",
@@ -71,7 +71,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Carex: "Laîches et graminées d'ombre",
     Iris: "Iris de jardin et de berge",
     Vinca: "Pervenches, couvre-sol d'ombre",
-    Leylandi: "Plantes de haie : cyprès de Leyland",
+    Leylandii: "Plantes de haie : cyprès de Leyland",
   },
   it: {
     Quercus: "Lecci, querce e sughere",
@@ -80,7 +80,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Carex: "Carici e graminacee da ombra",
     Iris: "Iris da giardino e di riva",
     Vinca: "Pervinche, tappezzanti da ombra",
-    Leylandi: "Piante da siepe: cipresso di Leyland",
+    Leylandii: "Piante da siepe: cipresso di Leyland",
   },
 };
 
