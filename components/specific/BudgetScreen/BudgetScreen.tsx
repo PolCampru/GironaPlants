@@ -19,15 +19,19 @@ import { plural } from "@/data/budgetContent";
 import SectionHeading from "@/components/ui/SectionHeading/SectionHeading";
 import type { PageHeading } from "@/data/pageHeadings";
 import type { FormType } from "@/types/Contact";
+import ServiceTerms from "@/components/ui/ServiceTerms/ServiceTerms";
+import type { ServiceTermsContent } from "@/data/serviceTermsContent";
 
 const BudgetScreen = ({
   heading,
   formHeading,
   formContent,
+  terms,
 }: {
   heading: PageHeading;
   formHeading: PageHeading;
   formContent: FormType;
+  terms: ServiceTermsContent;
 }) => {
   const {
     items,
@@ -92,6 +96,7 @@ const BudgetScreen = ({
             </FormSummaryBand>
           )}
           <Form heading={formHeading} content={formContent} />
+          <ServiceTerms content={terms} variant="compact" />
         </ContactContainer>
       </FlexContainer>
     </BudgetScreenWrapper>

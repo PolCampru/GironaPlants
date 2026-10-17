@@ -48,7 +48,7 @@
       "how_steps": [
         {
           "title": "Nos envías tu lista",
-          "text": "Marca especies del catálogo o adjunta tu propio listado en Excel. Sin registro y sin mínimo de pedido."
+          "text": "Marca especies del catálogo o adjunta tu propio listado en Excel. Sin registro: con la lista basta."
         },
         {
           "title": "Buscamos cada planta",
@@ -56,15 +56,15 @@
         },
         {
           "title": "Recibes un pedido completo",
-          "text": "Respuesta rápida, presupuesto cerrado y entrega en toda Europa. De la primera planta a la última, en un solo envío."
+          "text": "Respuesta rápida, presupuesto cerrado y transporte paletizado a cualquier país de Europa. De la primera planta a la última, en un solo envío."
         }
       ],
       "catalogues_title": "Catálogos",
       "catalogues_headline": "Descárgalos y compártelos con tu equipo",
-      "catalogues_subtitle": "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
+      "catalogues_subtitle": "El catálogo general de la campaña 26-27 y, aparte, dos gamas de planta para hacer crecer: esquejes enraizados y vivaces.",
       "catalogues_button": "Ver catálogos",
       "contact_title": "¿Preparamos tu oferta?",
-      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
+      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en palé a toda Europa.",
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
@@ -107,7 +107,7 @@
       "how_steps": [
         {
           "title": "Ens envies la teva llista",
-          "text": "Marca espècies del catàleg o adjunta el teu llistat en Excel. Sense registre i sense comanda mínima."
+          "text": "Marca espècies del catàleg o adjunta el teu llistat en Excel. Sense registre: amb la llista n'hi ha prou."
         },
         {
           "title": "Busquem cada planta",
@@ -115,15 +115,15 @@
         },
         {
           "title": "Reps una comanda completa",
-          "text": "Resposta ràpida, pressupost tancat i entrega a tot Europa. De la primera planta a l'última, en un sol enviament."
+          "text": "Resposta ràpida, pressupost tancat i transport paletitzat a qualsevol país d'Europa. De la primera planta a l'última, en un sol enviament."
         }
       ],
       "catalogues_title": "Catàlegs",
       "catalogues_headline": "Descarrega'ls i comparteix-los amb el teu equip",
-      "catalogues_subtitle": "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
+      "catalogues_subtitle": "El catàleg general de la campanya 26-27 i, a part, dues gammes de planta per fer créixer: esqueixos arrelats i vivaces.",
       "catalogues_button": "Veure catàlegs",
       "contact_title": "Preparem la teva oferta?",
-      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim a tot Europa.",
+      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim en palet a tot Europa.",
       "contact_button": "Demanar pressupost"
     },
     "en": {
@@ -166,7 +166,7 @@
       "how_steps": [
         {
           "title": "You send us your list",
-          "text": "Tick species from the catalogue or attach your own spreadsheet. No account, no minimum order."
+          "text": "Tick species from the catalogue or attach your own spreadsheet. No account needed — the list is enough."
         },
         {
           "title": "We source every plant",
@@ -174,15 +174,15 @@
         },
         {
           "title": "You get a complete order",
-          "text": "A fast, firm quote and delivery across Europe. First plant to last, in a single shipment."
+          "text": "A fast, firm quote and palletised delivery to any country in Europe. First plant to last, in a single shipment."
         }
       ],
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Download them and share with your team",
-      "catalogues_subtitle": "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
+      "catalogues_subtitle": "The general catalogue for the 2026-27 campaign, plus a separate range of young plants to grow on: rooted cuttings.",
       "catalogues_button": "View catalogues",
       "contact_title": "Ready for your quote?",
-      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver across Europe.",
+      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver on pallets across Europe.",
       "contact_button": "Request a quote"
     },
     "fr": {
@@ -225,7 +225,7 @@
       "how_steps": [
         {
           "title": "Vous nous envoyez votre liste",
-          "text": "Cochez des espèces au catalogue ou joignez votre propre listing Excel. Sans inscription et sans commande minimale."
+          "text": "Cochez des espèces au catalogue ou joignez votre propre listing Excel. Sans inscription : la liste suffit."
         },
         {
           "title": "Nous cherchons chaque plante",
@@ -233,15 +233,15 @@
         },
         {
           "title": "Vous recevez une commande complète",
-          "text": "Devis ferme rapide et livraison dans toute l'Europe. De la première à la dernière plante, en un seul envoi."
+          "text": "Devis ferme rapide et livraison sur palette dans tous les pays d'Europe. De la première à la dernière plante, en un seul envoi."
         }
       ],
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Téléchargez-les et partagez-les avec votre équipe",
-      "catalogues_subtitle": "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
+      "catalogues_subtitle": "Le catalogue général de la campagne 2026-27 et, à part, une gamme de jeunes plants à cultiver : les boutures racinées.",
       "catalogues_button": "Voir les catalogues",
       "contact_title": "On prépare votre devis ?",
-      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons dans toute l'Europe.",
+      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons sur palette dans toute l'Europe.",
       "contact_button": "Demander un devis"
     },
     "it": {
@@ -284,7 +284,7 @@
       "how_steps": [
         {
           "title": "Ci invii la tua lista",
-          "text": "Seleziona le specie dal catalogo o allega il tuo elenco in Excel. Senza registrazione e senza ordine minimo."
+          "text": "Seleziona le specie dal catalogo o allega il tuo elenco in Excel. Senza registrazione: basta la lista."
         },
         {
           "title": "Cerchiamo ogni pianta",
@@ -292,15 +292,15 @@
         },
         {
           "title": "Ricevi un ordine completo",
-          "text": "Preventivo definitivo rapido e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione."
+          "text": "Preventivo definitivo rapido e trasporto su pallet in qualsiasi paese d'Europa. Dalla prima all'ultima pianta, in un'unica spedizione."
         }
       ],
       "catalogues_title": "Cataloghi",
       "catalogues_headline": "Scaricali e condividili con il tuo team",
-      "catalogues_subtitle": "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+      "catalogues_subtitle": "Il catalogo generale della campagna 2026-27 e, a parte, una gamma di giovani piante da coltivare: le talee radicate.",
       "catalogues_button": "Vedi i cataloghi",
       "contact_title": "Prepariamo il tuo preventivo?",
-      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo in tutta Europa.",
+      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo su pallet in tutta Europa.",
       "contact_button": "Richiedi un preventivo"
     }
   },
@@ -388,7 +388,7 @@
       },
       "catalogues_title": "Catálogos",
       "catalogues_headline": "Descárgalos y compártelos con tu equipo",
-      "catalogues_subtitle": "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
+      "catalogues_subtitle": "El catálogo general de la campaña 26-27 y, aparte, dos gamas de planta para hacer crecer: esquejes enraizados y vivaces.",
       "catalogues_button": "Ver catálogos"
     },
     "ca": {
@@ -474,7 +474,7 @@
       },
       "catalogues_title": "Catàlegs",
       "catalogues_headline": "Descarrega'ls i comparteix-los amb el teu equip",
-      "catalogues_subtitle": "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
+      "catalogues_subtitle": "El catàleg general de la campanya 26-27 i, a part, dues gammes de planta per fer créixer: esqueixos arrelats i vivaces.",
       "catalogues_button": "Veure catàlegs"
     },
     "en": {
@@ -560,7 +560,7 @@
       },
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Download them and share with your team",
-      "catalogues_subtitle": "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
+      "catalogues_subtitle": "The general catalogue for the 2026-27 campaign, plus a separate range of young plants to grow on: rooted cuttings.",
       "catalogues_button": "View catalogues"
     },
     "fr": {
@@ -646,7 +646,7 @@
       },
       "catalogues_title": "Catalogues",
       "catalogues_headline": "Téléchargez-les et partagez-les avec votre équipe",
-      "catalogues_subtitle": "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
+      "catalogues_subtitle": "Le catalogue général de la campagne 2026-27 et, à part, une gamme de jeunes plants à cultiver : les boutures racinées.",
       "catalogues_button": "Voir les catalogues"
     },
     "it": {
@@ -732,7 +732,7 @@
       },
       "catalogues_title": "Cataloghi",
       "catalogues_headline": "Scaricali e condividili con il tuo team",
-      "catalogues_subtitle": "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+      "catalogues_subtitle": "Il catalogo generale della campagna 2026-27 e, a parte, una gamma di giovani piante da coltivare: le talee radicate.",
       "catalogues_button": "Vedi i cataloghi"
     }
   },
@@ -741,50 +741,50 @@
       "main_title": "Todo lo que te podemos servir, en un solo documento",
       "main_subtitle": "La gama completa con género, formato, altura y precio de referencia. El documento que tu equipo de compras necesita para cerrar un proyecto entero de una sola vez.",
       "main_button": "Descargar catálogo general",
-      "section_title": "Si solo necesitas una parte",
-      "section_subtitle": "Documentos más cortos por familia y por temporada, pensados para enviar directamente a obra.",
+      "section_title": "Dos catálogos más, dos gamas distintas",
+      "section_subtitle": "No son extractos del catálogo general: es planta joven para hacer crecer, con su propio stock y su propio calendario. Esquejes enraizados en bandeja y vivaces en alvéolo.",
       "contact_title": "¿Preparamos tu oferta?",
-      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
+      "contact_subtitle": "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en palé a toda Europa.",
       "contact_button": "Solicitar presupuesto"
     },
     "ca": {
       "main_title": "Tot el que et podem servir, en un sol document",
       "main_subtitle": "La gamma completa amb gènere, format, alçada i preu de referència. El document que el teu equip de compres necessita per tancar un projecte sencer d'un sol cop.",
       "main_button": "Descarregar catàleg general",
-      "section_title": "Si només necessites una part",
-      "section_subtitle": "Documents més curts per família i per temporada, pensats per enviar directament a obra.",
+      "section_title": "Dos catàlegs més, dues gammes diferents",
+      "section_subtitle": "No són extractes del catàleg general: és planta jove per fer créixer, amb el seu propi estoc i calendari. Esqueixos arrelats en safata i vivaces en alvèol.",
       "contact_title": "Preparem la teva oferta?",
-      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim a tot Europa.",
+      "contact_subtitle": "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim en palet a tot Europa.",
       "contact_button": "Demanar pressupost"
     },
     "en": {
       "main_title": "Everything we can supply, in a single document",
       "main_subtitle": "The full range with genus, format, height and reference price. The document your purchasing team needs to close out a whole project in one go.",
       "main_button": "Download the general catalogue",
-      "section_title": "If you only need one part of it",
-      "section_subtitle": "Shorter documents by family and by season, made to forward straight to site.",
+      "section_title": "A separate range, not an extract",
+      "section_subtitle": "Our rooted cuttings are not a slice of the general catalogue: they are young plants to grow on, supplied in trays, with their own stock list and availability.",
       "contact_title": "Ready for your quote?",
-      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver across Europe.",
+      "contact_subtitle": "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver on pallets across Europe.",
       "contact_button": "Request a quote"
     },
     "fr": {
       "main_title": "Tout ce que nous pouvons livrer, en un seul document",
       "main_subtitle": "La gamme complète avec genre, format, hauteur et prix de référence. Le document dont votre service achats a besoin pour boucler un projet entier en une fois.",
       "main_button": "Télécharger le catalogue général",
-      "section_title": "Si vous n'avez besoin que d'une partie",
-      "section_subtitle": "Des documents plus courts par famille et par saison, à transmettre directement au chantier.",
+      "section_title": "Une gamme à part, pas un extrait",
+      "section_subtitle": "Nos boutures racinées ne sont pas un extrait du catalogue général : ce sont des jeunes plants à cultiver, livrés en plaques, avec leur propre stock et leur propre disponibilité.",
       "contact_title": "On prépare votre devis ?",
-      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons dans toute l'Europe.",
+      "contact_subtitle": "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons sur palette dans toute l'Europe.",
       "contact_button": "Demander un devis"
     },
     "it": {
       "main_title": "Tutto ciò che possiamo fornire, in un unico documento",
       "main_subtitle": "La gamma completa con genere, formato, altezza e prezzo di riferimento. Il documento di cui il tuo ufficio acquisti ha bisogno per chiudere un intero progetto in una sola volta.",
       "main_button": "Scarica il catalogo generale",
-      "section_title": "Se ti serve solo una parte",
-      "section_subtitle": "Documenti più brevi per famiglia e per stagione, pensati per essere inoltrati direttamente al cantiere.",
+      "section_title": "Una gamma a parte, non un estratto",
+      "section_subtitle": "Le nostre talee radicate non sono un estratto del catalogo generale: sono giovani piante da coltivare, fornite in vassoio, con stock e disponibilità propri.",
       "contact_title": "Prepariamo il tuo preventivo?",
-      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo in tutta Europa.",
+      "contact_subtitle": "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo su pallet in tutta Europa.",
       "contact_button": "Richiedi un preventivo"
     }
   }

@@ -10,6 +10,7 @@ import {
   CardWrapper,
   DownloadLink,
   FormatTag,
+  KindTag,
 } from "./CatalogueCard.style";
 import { CatalogueItem } from "@/types/Catalogues";
 import { track } from "@/lib/analytics";
@@ -35,8 +36,8 @@ const FALLBACK_COVERS = [
 ];
 
 const CatalogueCard = ({ item, downloadLabel, index = 0 }: CatalogueCardProps) => (
-  <CardWrapper>
-    <CardCover>
+  <CardWrapper $featured={item.featured}>
+    <CardCover $featured={item.featured}>
       <Image
         src={item.imageUrl || FALLBACK_COVERS[index % FALLBACK_COVERS.length]}
         alt=""
@@ -48,6 +49,7 @@ const CatalogueCard = ({ item, downloadLabel, index = 0 }: CatalogueCardProps) =
 
     <CardInner>
       <CardMeta>
+        {item.tag && <KindTag $featured={item.featured}>{item.tag}</KindTag>}
         <FormatTag>PDF</FormatTag>
       </CardMeta>
 
@@ -56,13 +58,18 @@ const CatalogueCard = ({ item, downloadLabel, index = 0 }: CatalogueCardProps) =
 
       {item.fileUrl && (
         <DownloadLink
+          $featured={item.featured}
           href={item.fileUrl}
           target="_blank"
           rel="noopener noreferrer"
           // The href is a PDF on the CMS host, so `download` alone would not
           // save it; opening in a new tab is what browsers actually honour.
           aria-label={`${item.button || downloadLabel}: ${item.title}`}
-          onClick={() => track("catalogue_download", { catalogue: item.title })}
+          onClick={() =>
+            track("catalogue_download", {
+              catalogue: item.featured ? "main" : item.title,
+            })
+          }
         >
           {item.button || downloadLabel}
           <FiDownload aria-hidden="true" />

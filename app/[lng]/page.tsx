@@ -6,6 +6,8 @@ import HowWeWork from "@/components/specific/Home/HowWeWork/HowWeWork";
 import CataloguesTeaser from "@/components/specific/Home/CataloguesTeaser/CataloguesTeaser";
 import Contact from "@/components/specific/Home/Contact/Contact";
 import Reviews from "@/components/specific/Home/Reviews/Reviews";
+import ServiceTerms from "@/components/ui/ServiceTerms/ServiceTerms";
+import { getServiceTermsContent } from "@/data/serviceTermsContent";
 import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
@@ -13,7 +15,7 @@ import {
 } from "@/data/homeContent";
 import { PLANT_CATEGORIES, getGenusGloss } from "@/data/plantCategories";
 import { getGenusCounts, getTotalReferences } from "@/lib/plants";
-import { getCataloguesPage } from "@/lib/catalogues";
+import { getCataloguesPage, getTeaserItems } from "@/lib/catalogues";
 import {
   GOOGLE_ALL_REVIEWS_URL,
   GOOGLE_WRITE_REVIEW_URL,
@@ -168,7 +170,7 @@ export default async function HomePage({ params }: HomePageProps) {
       fallback.catalogues_button
     ),
     download_label: fallback.download_label,
-    items: catalogues?.items ?? [],
+    items: getTeaserItems(catalogues, lng),
     locale: lng,
   };
 
@@ -190,6 +192,7 @@ export default async function HomePage({ params }: HomePageProps) {
       <TrustBand stats={list(homeData?.stats, fallback.stats)} />
       <OurPlants data={plantsHomeData} />
       <HowWeWork data={howWeWorkData} />
+      <ServiceTerms content={getServiceTermsContent(lng)} />
       <CataloguesTeaser data={cataloguesData} />
       <Reviews
         copy={getReviewsContent(lng)}

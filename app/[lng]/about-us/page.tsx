@@ -18,7 +18,7 @@ import {
   CONTACT_PHONE,
   getHomeContent,
 } from "@/data/homeContent";
-import { getCataloguesPage } from "@/lib/catalogues";
+import { getCataloguesPage, getTeaserItems } from "@/lib/catalogues";
 import { buildPageMetadata } from "@/data/seoContent";
 
 export async function generateMetadata({
@@ -107,7 +107,7 @@ export default async function AboutUsPage({
       fallback.catalogues_button
     ),
     download_label: homeFallback.download_label,
-    items: catalogues?.items ?? [],
+    items: getTeaserItems(catalogues, lng),
     locale: lng,
   };
 

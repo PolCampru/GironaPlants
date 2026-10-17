@@ -87,7 +87,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     catalogues_title: "Catálogos",
     catalogues_headline: "Descárgalos y compártelos con tu equipo",
     catalogues_subtitle:
-      "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
+      "El catálogo general de la campaña 26-27 y, aparte, dos gamas de planta para hacer crecer: esquejes enraizados y vivaces.",
     catalogues_button: "Ver catálogos",
   },
 
@@ -126,7 +126,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     catalogues_title: "Catàlegs",
     catalogues_headline: "Descarrega'ls i comparteix-los amb el teu equip",
     catalogues_subtitle:
-      "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
+      "El catàleg general de la campanya 26-27 i, a part, dues gammes de planta per fer créixer: esqueixos arrelats i vivaces.",
     catalogues_button: "Veure catàlegs",
   },
 
@@ -165,7 +165,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     catalogues_title: "Catalogues",
     catalogues_headline: "Download them and share with your team",
     catalogues_subtitle:
-      "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
+      "The general catalogue for the 2026-27 campaign, plus a separate range of young plants to grow on: rooted cuttings.",
     catalogues_button: "View catalogues",
   },
 
@@ -204,7 +204,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     catalogues_title: "Catalogues",
     catalogues_headline: "Téléchargez-les et partagez-les avec votre équipe",
     catalogues_subtitle:
-      "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
+      "Le catalogue général de la campagne 2026-27 et, à part, une gamme de jeunes plants à cultiver : les boutures racinées.",
     catalogues_button: "Voir les catalogues",
   },
 
@@ -243,7 +243,7 @@ const content: Record<string, AboutUsFallbackContent> = {
     catalogues_title: "Cataloghi",
     catalogues_headline: "Scaricali e condividili con il tuo team",
     catalogues_subtitle:
-      "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+      "Il catalogo generale della campagna 2026-27 e, a parte, una gamma di giovani piante da coltivare: le talee radicate.",
     catalogues_button: "Vedi i cataloghi",
   },
 };

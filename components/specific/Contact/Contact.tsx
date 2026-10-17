@@ -21,6 +21,8 @@ import Form from "@/components/ui/Form/Form";
 import CtaLink from "@/components/ui/CtaLink/CtaLink";
 import { ContactAsideType, FormType } from "@/types/Contact";
 import type { PageHeading } from "@/data/pageHeadings";
+import ServiceTerms from "@/components/ui/ServiceTerms/ServiceTerms";
+import type { ServiceTermsContent } from "@/data/serviceTermsContent";
 
 /**
  * Form on the left, everything a visitor might prefer over a form on the
@@ -32,11 +34,13 @@ const Contact = ({
   heading,
   formContent,
   aside,
+  terms,
 }: {
   locale: string;
   heading: PageHeading;
   formContent: FormType;
   aside: ContactAsideType;
+  terms: ServiceTermsContent;
 }) => {
   const rows = [
     { key: "phone", icon: FiPhone, data: aside?.phone, href: aside?.phone?.text ? `tel:${aside.phone.text.replace(/\s/g, "")}` : undefined },
@@ -81,6 +85,8 @@ const Contact = ({
             </>
           )}
         </AsidePanel>
+
+        <ServiceTerms content={terms} variant="compact" />
 
         <AsideImage>
           <Image

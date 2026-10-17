@@ -5,6 +5,9 @@ import SectionCatalogues from "@/components/specific/Catalogues/Section/SectionC
 import Contact from "@/components/specific/Home/Contact/Contact";
 import { getCataloguesPage } from "@/lib/catalogues";
 import { getCataloguesContent } from "@/data/cataloguesContent";
+import { getCampaignCatalogueLabel } from "@/data/campaign";
+import { getServiceTermsContent } from "@/data/serviceTermsContent";
+import ServiceTerms from "@/components/ui/ServiceTerms/ServiceTerms";
 import { CONTACT_EMAIL, CONTACT_PHONE } from "@/data/homeContent";
 import { CataloguesPageProps } from "@/types/Catalogues";
 import { buildPageMetadata } from "@/data/seoContent";
@@ -43,7 +46,7 @@ export default async function CataloguesPage({ params }: CataloguesPageProps) {
           catalogue_url: data?.main_catalogue_url ?? "",
           cover_url: data?.main_cover_url ?? "",
           updated_label: data?.main_catalogue_url
-            ? fallback.updated_label
+            ? getCampaignCatalogueLabel(lng)
             : undefined,
           browse_button: fallback.browse_button,
           request_button: fallback.request_button,
@@ -65,6 +68,8 @@ export default async function CataloguesPage({ params }: CataloguesPageProps) {
           }}
         />
       )}
+
+      <ServiceTerms content={getServiceTermsContent(lng)} />
 
       <Contact
         data={{

@@ -11,12 +11,15 @@ export type CataloguesFallbackContent = {
   main_title: string;
   main_subtitle: string;
   main_button: string;
+  /** Short description of the general catalogue on the teaser card. */
+  main_card_subtitle: string;
   browse_button: string;
   request_button: string;
-  updated_label: string;
   section_label: string;
   section_title: string;
   section_subtitle: string;
+  /** Tag on the young-plant catalogues, so they don't read as extracts. */
+  grow_on_tag: string;
   download_label: string;
   contact_title: string;
   contact_subtitle: string;
@@ -30,13 +33,15 @@ const content: Record<string, CataloguesFallbackContent> = {
     main_subtitle:
       "La gama completa con género, formato, altura y precio de referencia. El documento que tu equipo de compras necesita para cerrar un proyecto entero de una sola vez.",
     main_button: "Descargar catálogo general",
+    main_card_subtitle:
+      "Nuestro catálogo principal: la gama completa con género, formato, altura y precio de referencia.",
     browse_button: "Ver el catálogo online",
     request_button: "Pedir el PDF",
-    updated_label: "Actualizado",
-    section_label: "Catálogos específicos",
-    section_title: "Si solo necesitas una parte",
+    section_label: "Planta para hacer crecer",
+    section_title: "Dos catálogos más, dos gamas distintas",
     section_subtitle:
-      "Documentos más cortos por familia y por temporada, pensados para enviar directamente a obra.",
+      "No son extractos del catálogo general: es planta joven para hacer crecer, con su propio stock y su propio calendario. Esquejes enraizados en bandeja y vivaces en alvéolo.",
+    grow_on_tag: "Planta para hacer crecer",
     download_label: "Descargar",
     contact_title: "¿Necesitas algo que no está en los catálogos?",
     contact_subtitle:
@@ -49,13 +54,15 @@ const content: Record<string, CataloguesFallbackContent> = {
     main_subtitle:
       "La gamma completa amb gènere, format, alçada i preu de referència. El document que el teu equip de compres necessita per tancar un projecte sencer d'un sol cop.",
     main_button: "Descarregar catàleg general",
+    main_card_subtitle:
+      "El nostre catàleg principal: la gamma completa amb gènere, format, alçada i preu de referència.",
     browse_button: "Veure el catàleg en línia",
     request_button: "Demanar el PDF",
-    updated_label: "Actualitzat",
-    section_label: "Catàlegs específics",
-    section_title: "Si només necessites una part",
+    section_label: "Planta per fer créixer",
+    section_title: "Dos catàlegs més, dues gammes diferents",
     section_subtitle:
-      "Documents més curts per família i per temporada, pensats per enviar directament a obra.",
+      "No són extractes del catàleg general: és planta jove per fer créixer, amb el seu propi estoc i calendari. Esqueixos arrelats en safata i vivaces en alvèol.",
+    grow_on_tag: "Planta per fer créixer",
     download_label: "Descarregar",
     contact_title: "Necessites alguna cosa que no és als catàlegs?",
     contact_subtitle:
@@ -68,13 +75,15 @@ const content: Record<string, CataloguesFallbackContent> = {
     main_subtitle:
       "The full range with genus, format, height and reference price. The document your purchasing team needs to close out a whole project in one go.",
     main_button: "Download the general catalogue",
+    main_card_subtitle:
+      "Our main catalogue: the full range with genus, format, height and reference price.",
     browse_button: "Browse the catalogue online",
     request_button: "Ask for the PDF",
-    updated_label: "Updated",
-    section_label: "Specific catalogues",
-    section_title: "If you only need one part of it",
+    section_label: "Young plants to grow on",
+    section_title: "A separate range, not an extract",
     section_subtitle:
-      "Shorter documents by family and by season, made to forward straight to site.",
+      "Our rooted cuttings are not a slice of the general catalogue: they are young plants to grow on, supplied in trays, with their own stock list and availability.",
+    grow_on_tag: "Young plants to grow on",
     download_label: "Download",
     contact_title: "Need something that isn't in the catalogues?",
     contact_subtitle:
@@ -87,13 +96,15 @@ const content: Record<string, CataloguesFallbackContent> = {
     main_subtitle:
       "La gamme complète avec genre, format, hauteur et prix de référence. Le document dont votre service achats a besoin pour boucler un projet entier en une fois.",
     main_button: "Télécharger le catalogue général",
+    main_card_subtitle:
+      "Notre catalogue principal : la gamme complète avec genre, format, hauteur et prix de référence.",
     browse_button: "Voir le catalogue en ligne",
     request_button: "Demander le PDF",
-    updated_label: "Mis à jour",
-    section_label: "Catalogues spécifiques",
-    section_title: "Si vous n'avez besoin que d'une partie",
+    section_label: "Jeunes plants à cultiver",
+    section_title: "Une gamme à part, pas un extrait",
     section_subtitle:
-      "Des documents plus courts par famille et par saison, à transmettre directement au chantier.",
+      "Nos boutures racinées ne sont pas un extrait du catalogue général : ce sont des jeunes plants à cultiver, livrés en plaques, avec leur propre stock et leur propre disponibilité.",
+    grow_on_tag: "Jeunes plants à cultiver",
     download_label: "Télécharger",
     contact_title: "Il vous faut quelque chose qui n'est pas au catalogue ?",
     contact_subtitle:
@@ -106,13 +117,15 @@ const content: Record<string, CataloguesFallbackContent> = {
     main_subtitle:
       "La gamma completa con genere, formato, altezza e prezzo di riferimento. Il documento di cui il tuo ufficio acquisti ha bisogno per chiudere un intero progetto in una sola volta.",
     main_button: "Scarica il catalogo generale",
+    main_card_subtitle:
+      "Il nostro catalogo principale: la gamma completa con genere, formato, altezza e prezzo di riferimento.",
     browse_button: "Consulta il catalogo online",
     request_button: "Richiedi il PDF",
-    updated_label: "Aggiornato",
-    section_label: "Cataloghi specifici",
-    section_title: "Se ti serve solo una parte",
+    section_label: "Giovani piante da coltivare",
+    section_title: "Una gamma a parte, non un estratto",
     section_subtitle:
-      "Documenti più brevi per famiglia e per stagione, pensati per essere inoltrati direttamente al cantiere.",
+      "Le nostre talee radicate non sono un estratto del catalogo generale: sono giovani piante da coltivare, fornite in vassoio, con stock e disponibilità propri.",
+    grow_on_tag: "Giovani piante da coltivare",
     download_label: "Scarica",
     contact_title: "Ti serve qualcosa che non è nei cataloghi?",
     contact_subtitle:
@@ -126,3 +139,13 @@ export function getCataloguesContent(
 ): CataloguesFallbackContent {
   return content[locale] ?? content.es;
 }
+
+/**
+ * The perennials & grasses catalogue is only offered in the Spanish and
+ * Catalan market. The CMS entry exists in every locale, so it is dropped here
+ * — matched on the PDF's file name, which the upload script keeps stable.
+ */
+const VIVACES_LOCALES = ["es", "ca"];
+
+export const isCatalogueOffered = (fileUrl: string, locale: string) =>
+  VIVACES_LOCALES.includes(locale) || !/vivaces/i.test(fileUrl);

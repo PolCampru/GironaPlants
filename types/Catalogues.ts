@@ -18,6 +18,10 @@ export type CatalogueItem = {
   fileUrl: string;
   /** Absolute URL of the card image, "" if none. */
   imageUrl: string;
+  /** Pill above the title, e.g. the campaign or "young plants to grow on". */
+  tag?: string;
+  /** The general catalogue: drawn larger and darker than the others. */
+  featured?: boolean;
 };
 
 export type HeroCataloguesProps = {

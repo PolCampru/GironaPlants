@@ -25,3 +25,18 @@ const LABEL: Record<string, string> = {
 /** Short badge, e.g. "Campaña 2026/27". */
 export const getCampaignLabel = (locale: string): string =>
   LABEL[locale] ?? LABEL.es;
+
+/** "26-27" — the short season form the catalogue tags use. */
+const SHORT_CAMPAIGN = CATALOGUE_CAMPAIGN.slice(2).replace("/", "-");
+
+const CATALOGUE_LABEL: Record<string, string> = {
+  es: `Catálogo campaña ${SHORT_CAMPAIGN}`,
+  ca: `Catàleg campanya ${SHORT_CAMPAIGN}`,
+  en: `${SHORT_CAMPAIGN} campaign catalogue`,
+  fr: `Catalogue campagne ${SHORT_CAMPAIGN}`,
+  it: `Catalogo campagna ${SHORT_CAMPAIGN}`,
+};
+
+/** Tag on the general catalogue, e.g. "Catàleg campanya 26-27". */
+export const getCampaignCatalogueLabel = (locale: string): string =>
+  CATALOGUE_LABEL[locale] ?? CATALOGUE_LABEL.es;

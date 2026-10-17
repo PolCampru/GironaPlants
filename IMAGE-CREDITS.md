@@ -68,3 +68,15 @@ structured-data image, which never renders next to the Lavandula card.
 
 The two `plants/` photographs left over from the category cards are the
 fallback covers a catalogue gets when the CMS has none — see `CatalogueCard`.
+
+Home "Our plants" cards replaced on 2026-10-17. Quercus used to show
+`aboutUs/ilex.jpg`, which was not a recognisable Quercus; Nymphaea became Iris
+and Corylus became Leylandi. All three are **public domain or CC0 1.0**, found
+through the Wikimedia Commons API, centre-cropped to 5:4 and re-encoded at
+1000x800, JPEG q82. New filenames, so no image-cache trap.
+
+| File | Card | Licence | Author | Original |
+| --- | --- | --- | --- | --- |
+| `plants/quercusIlexAcorns.jpg` | Quercus | Public domain | Javier martin | [Quercus ilex subsp. ballota leaves and acorn](https://commons.wikimedia.org/wiki/File:Quercus_ilex_subsp._ballota_var.9_LeavesandAcorn_2009November22_DehesaBoyaldePuertollano.jpg) |
+| `plants/irisSibirica.jpg` | Iris | Public domain | Rainer Theuer | [Iris sibirica DSC 0616](https://commons.wikimedia.org/wiki/File:Iris_sibirica_DSC_0616.jpg) |
+| `plants/leylandiiHedge.jpg` | Leylandi | CC0 1.0 | I.Sáček, senior | [Cupressocyparis leylandii hedge](https://commons.wikimedia.org/wiki/File:6.d%C3%ADl_html_a08b07c.jpg) |

@@ -31,31 +31,31 @@ const COPY: Record<string, PricingCopy> = {
     audienceNote:
       "Los precios del catálogo son para empresas y profesionales; para particulares pueden variar.",
     particularNotice:
-      "El catálogo está pensado para empresas y profesionales, así que el precio que ves puede variar en un pedido de particular. Te confirmamos el precio final en el presupuesto, sin compromiso.",
+      "¡Gracias por tu interés! Trabajamos con profesionales y solo enviamos en palé, así que no podemos atender pedidos pequeños. Si tu pedido es de volumen, envíanos la solicitud y te confirmamos precio y transporte; para unas pocas plantas, tu garden center de confianza te atenderá mejor.",
   },
   ca: {
     audienceNote:
       "Els preus del catàleg són per a empreses i professionals; per a particulars poden variar.",
     particularNotice:
-      "El catàleg està pensat per a empreses i professionals, així que el preu que veus pot variar en una comanda de particular. Et confirmem el preu final al pressupost, sense compromís.",
+      "Gràcies per l'interès! Treballem amb professionals i només enviem en palet, així que no podem atendre comandes petites. Si la teva comanda és de volum, envia'ns la sol·licitud i et confirmem preu i transport; per a unes quantes plantes, el teu garden center de confiança t'atendrà millor.",
   },
   en: {
     audienceNote:
       "Catalogue prices are for companies and professionals; for individuals they may vary.",
     particularNotice:
-      "The catalogue is meant for companies and professionals, so the price you see may vary on an individual order. We confirm the final price in your quote, with no obligation.",
+      "Thanks for your interest! We work with the trade and only ship on pallets, so we can't take on small orders. If yours is a volume order, send the request and we'll confirm price and transport; for a few plants, your local garden centre will look after you better.",
   },
   fr: {
     audienceNote:
       "Les prix du catalogue s'adressent aux entreprises et aux professionnels ; pour les particuliers, ils peuvent varier.",
     particularNotice:
-      "Le catalogue s'adresse aux entreprises et aux professionnels : le prix affiché peut donc varier pour une commande de particulier. Nous confirmons le prix final dans le devis, sans engagement.",
+      "Merci de votre intérêt ! Nous travaillons avec les professionnels et livrons uniquement sur palette : nous ne pouvons donc pas honorer les petites commandes. Pour une commande en volume, envoyez-nous la demande et nous confirmons prix et transport ; pour quelques plantes, votre jardinerie de proximité vous servira mieux.",
   },
   it: {
     audienceNote:
       "I prezzi del catalogo sono riservati ad aziende e professionisti; per i privati possono variare.",
     particularNotice:
-      "Il catalogo è pensato per aziende e professionisti, quindi il prezzo indicato può variare per un ordine da privato. Ti confermiamo il prezzo finale nel preventivo, senza impegno.",
+      "Grazie per l'interesse! Lavoriamo con i professionisti e spediamo solo su pallet, quindi non possiamo evadere ordini piccoli. Se il tuo ordine è di volume, inviaci la richiesta e ti confermiamo prezzo e trasporto; per poche piante, il tuo garden center di fiducia ti servirà meglio.",
   },
 };
 

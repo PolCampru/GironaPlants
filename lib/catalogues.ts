@@ -1,21 +1,61 @@
 import { fetchStrapiData, strapiMediaUrl, StrapiError } from "./strapi";
 import { CatalogueItem, CataloguesPageData } from "@/types/Catalogues";
+import {
+  getCataloguesContent,
+  isCatalogueOffered,
+} from "@/data/cataloguesContent";
+import { getCampaignCatalogueLabel } from "@/data/campaign";
 
 // Normalizes the `catalogues` repeatable component into CatalogueItem[].
 // The flat `catalogue1..3` fields this used to also read were removed from
 // the CMS schema once every locale had been migrated to the array.
 
-function normalizeItems(data: Record<string, unknown>): CatalogueItem[] {
+function normalizeItems(
+  data: Record<string, unknown>,
+  locale: string
+): CatalogueItem[] {
   if (!Array.isArray(data.catalogues)) return [];
+  const growOnTag = getCataloguesContent(locale).grow_on_tag;
 
-  return (data.catalogues as Record<string, unknown>[]).map((item, index) => ({
-    id: String(item.id ?? index),
-    title: (item.title as string) ?? "",
-    subtitle: (item.subtitle as string) ?? "",
-    button: (item.button as string) ?? "",
-    fileUrl: strapiMediaUrl(item.file as { url?: string } | null),
-    imageUrl: strapiMediaUrl(item.image as { url?: string } | null),
-  }));
+  return (data.catalogues as Record<string, unknown>[])
+    .map((item, index) => ({
+      id: String(item.id ?? index),
+      title: (item.title as string) ?? "",
+      subtitle: (item.subtitle as string) ?? "",
+      button: (item.button as string) ?? "",
+      fileUrl: strapiMediaUrl(item.file as { url?: string } | null),
+      imageUrl: strapiMediaUrl(item.image as { url?: string } | null),
+      tag: growOnTag,
+    }))
+    .filter((item) => isCatalogueOffered(item.fileUrl, locale));
+}
+
+/**
+ * The cards for the home and About Us teasers: the general catalogue first —
+ * it is the one most visitors want — then the young-plant catalogues. The
+ * general one only appears once its PDF is uploaded.
+ */
+export function getTeaserItems(
+  data: CataloguesPageData | null,
+  locale: string
+): CatalogueItem[] {
+  if (!data) return [];
+  const copy = getCataloguesContent(locale);
+  const main: CatalogueItem[] = data.main_catalogue_url
+    ? [
+        {
+          id: "main",
+          title: copy.label,
+          subtitle: copy.main_card_subtitle,
+          button: "",
+          fileUrl: data.main_catalogue_url,
+          imageUrl: data.main_cover_url,
+          tag: getCampaignCatalogueLabel(locale),
+          featured: true,
+        },
+      ]
+    : [];
+  return [...main, ...data.items];
 }
 
 export async function getCataloguesPage(
@@ -54,6 +94,6 @@ export async function getCataloguesPage(
     contact_title: str("contact_title"),
     contact_subtitle: str("contact_subtitle"),
     contact_button: str("contact_button"),
-    items: normalizeItems(data),
+    items: normalizeItems(data, locale),
   };
 }

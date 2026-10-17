@@ -4,6 +4,7 @@ import BudgetScreen from "@/components/specific/BudgetScreen/BudgetScreen";
 import { buildPageMetadata } from "@/data/seoContent";
 import { getBudgetHeading, getContactHeading } from "@/data/pageHeadings";
 import { getFormContent } from "@/data/formContent";
+import { getServiceTermsContent } from "@/data/serviceTermsContent";
 
 export async function generateMetadata({
   params,
@@ -26,6 +27,7 @@ export default async function BudgetPage({
       heading={getBudgetHeading(lng)}
       formHeading={getContactHeading(lng)}
       formContent={getFormContent(lng)}
+      terms={getServiceTermsContent(lng)}
     />
   );
 }

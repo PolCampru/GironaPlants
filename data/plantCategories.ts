@@ -11,7 +11,7 @@
  *    slots by size — Cistus got a picture of periwinkle, Acer a picture of a
  *    nursery yard — which is worse than no picture. Genera are chosen to fit
  *    the photographs available, not the other way round, so Cistus (31),
- *    Prunus (34) and Acer (28) are not cards; Vinca and Corylus are.
+ *    Prunus (34) and Acer (28) are not cards; Vinca is.
  *
  * Counts are read from Strapi at render time (lib/plants.ts), never hardcoded.
  */
@@ -24,13 +24,15 @@ export type PlantCategory = {
 };
 
 export const PLANT_CATEGORIES: PlantCategory[] = [
-  { genus: "Quercus", img: "/images/aboutUs/ilex.jpg", photo: "Quercus ilex in leaf and fruit" },
+  { genus: "Quercus", img: "/images/plants/quercusIlexAcorns.jpg", photo: "Quercus ilex leaves and acorns" },
   { genus: "Juniperus", img: "/images/redCedar.jpg", photo: "juniper foliage and berries" },
   { genus: "Lavandula", img: "/images/lavenders.jpg", photo: "lavender field in flower" },
   { genus: "Carex", img: "/images/plants/grasses.jpg", photo: "sedge and grass clumps" },
-  { genus: "Nymphaea", img: "/images/plants/aquatic.jpg", photo: "water lilies in flower" },
+  { genus: "Iris", img: "/images/plants/irisSibirica.jpg", photo: "Iris sibirica in flower" },
   { genus: "Vinca", img: "/images/plants/groundcovers.jpg", photo: "periwinkle in flower" },
-  { genus: "Corylus", img: "/images/hazelnut.jpg", photo: "hazel leaf and nuts" },
+  // Not a genus: "Leylandi" matches every Cupressocyparis leylandii row, and
+  // it is the name the trade asks for.
+  { genus: "Leylandi", img: "/images/plants/leylandiiHedge.jpg", photo: "clipped leylandii hedge" },
 ];
 
 /** Plain-language gloss per genus, per locale. */
@@ -38,47 +40,47 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
   es: {
     Quercus: "Encinas, robles y alcornoques",
     Juniperus: "Enebros y sabinas",
-    Lavandula: "Lavandas y lavandines",
+    Lavandula: "Lavandas, lavandines y aromáticas",
     Carex: "Cárices y gramíneas de sombra",
-    Nymphaea: "Nenúfares y planta de ribera",
+    Iris: "Lirios de jardín y de ribera",
     Vinca: "Vincapervincas, cubresuelos de sombra",
-    Corylus: "Avellanos para seto y fruto",
+    Leylandi: "Plantas para seto: ciprés de Leyland",
   },
   ca: {
     Quercus: "Alzines, roures i suros",
     Juniperus: "Ginebres i savines",
-    Lavandula: "Lavandes i lavandins",
+    Lavandula: "Lavandes, lavandins i aromàtiques",
     Carex: "Càrexs i gramínies d'ombra",
-    Nymphaea: "Nenúfars i planta de ribera",
-    Vinca: "Vincapervinques, cobertores d'ombra",
-    Corylus: "Avellaners per a tanca i fruit",
+    Iris: "Lliris de jardí i de ribera",
+    Vinca: "Vincapervinques, entapissants d'ombra",
+    Leylandi: "Plantes per a tanca: xiprer de Leyland",
   },
   en: {
     Quercus: "Holm oaks, oaks and cork oaks",
     Juniperus: "Junipers and savins",
-    Lavandula: "Lavenders and lavandins",
+    Lavandula: "Lavenders, lavandins and aromatics",
     Carex: "Sedges and shade grasses",
-    Nymphaea: "Water lilies and marginal plants",
+    Iris: "Garden and waterside irises",
     Vinca: "Periwinkles, groundcover for shade",
-    Corylus: "Hazels for hedging and nuts",
+    Leylandi: "Hedging plants: Leyland cypress",
   },
   fr: {
     Quercus: "Chênes verts, chênes et chênes-lièges",
     Juniperus: "Genévriers et sabines",
-    Lavandula: "Lavandes et lavandins",
+    Lavandula: "Lavandes, lavandins et aromatiques",
     Carex: "Laîches et graminées d'ombre",
-    Nymphaea: "Nénuphars et plantes de berge",
+    Iris: "Iris de jardin et de berge",
     Vinca: "Pervenches, couvre-sol d'ombre",
-    Corylus: "Noisetiers pour haie et fruit",
+    Leylandi: "Plantes de haie : cyprès de Leyland",
   },
   it: {
     Quercus: "Lecci, querce e sughere",
     Juniperus: "Ginepri e sabine",
-    Lavandula: "Lavande e lavande ibride",
+    Lavandula: "Lavande, lavande ibride e aromatiche",
     Carex: "Carici e graminacee da ombra",
-    Nymphaea: "Ninfee e piante ripariali",
+    Iris: "Iris da giardino e di riva",
     Vinca: "Pervinche, tappezzanti da ombra",
-    Corylus: "Noccioli per siepe e frutto",
+    Leylandi: "Piante da siepe: cipresso di Leyland",
   },
 };
 

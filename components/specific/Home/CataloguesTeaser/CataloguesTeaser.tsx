@@ -36,7 +36,7 @@ const CataloguesTeaser = ({ data }: { data: CataloguesTeaserProps }) => {
       />
 
       {items.length > 0 && (
-        <CardsGrid>
+        <CardsGrid $count={items.length}>
           {items.map((item, index) => (
             <motion.div
               key={item.id}

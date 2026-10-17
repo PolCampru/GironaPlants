@@ -92,7 +92,7 @@ const content: Record<string, HomeFallbackContent> = {
     how_steps: [
       {
         title: "Nos envías tu lista",
-        text: "Marca especies del catálogo o adjunta tu propio listado en Excel. Sin registro y sin mínimo de pedido.",
+        text: "Marca especies del catálogo o adjunta tu propio listado en Excel. Sin registro: con la lista basta.",
       },
       {
         title: "Buscamos cada planta",
@@ -100,20 +100,20 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Recibes un pedido completo",
-        text: "Respuesta rápida, presupuesto cerrado y entrega en toda Europa. De la primera planta a la última, en un solo envío.",
+        text: "Respuesta rápida, presupuesto cerrado y transporte paletizado a cualquier país de Europa. De la primera planta a la última, en un solo envío.",
       },
     ],
 
     catalogues_title: "Catálogos",
     catalogues_headline: "Descárgalos y compártelos con tu equipo",
     catalogues_subtitle:
-      "PDF actualizados de disponibilidad y temporada, listos para pasar a obra o a compras.",
+      "El catálogo general de la campaña 26-27 y, aparte, dos gamas de planta para hacer crecer: esquejes enraizados y vivaces.",
     catalogues_button: "Ver catálogos",
     download_label: "Descargar",
 
     contact_title: "¿Preparamos tu oferta?",
     contact_subtitle:
-      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en toda Europa.",
+      "Cuéntanos qué necesita tu proyecto —especies, medidas y cantidades— y te enviamos en breve un presupuesto a medida, sin compromiso. Servimos en palé a toda Europa.",
     contact_button: "Solicitar presupuesto",
   },
 
@@ -157,7 +157,7 @@ const content: Record<string, HomeFallbackContent> = {
     how_steps: [
       {
         title: "Ens envies la teva llista",
-        text: "Marca espècies del catàleg o adjunta el teu llistat en Excel. Sense registre i sense comanda mínima.",
+        text: "Marca espècies del catàleg o adjunta el teu llistat en Excel. Sense registre: amb la llista n'hi ha prou.",
       },
       {
         title: "Busquem cada planta",
@@ -165,20 +165,20 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Reps una comanda completa",
-        text: "Resposta ràpida, pressupost tancat i entrega a tot Europa. De la primera planta a l'última, en un sol enviament.",
+        text: "Resposta ràpida, pressupost tancat i transport paletitzat a qualsevol país d'Europa. De la primera planta a l'última, en un sol enviament.",
       },
     ],
 
     catalogues_title: "Catàlegs",
     catalogues_headline: "Descarrega'ls i comparteix-los amb el teu equip",
     catalogues_subtitle:
-      "PDF actualitzats de disponibilitat i temporada, a punt per passar a obra o a compres.",
+      "El catàleg general de la campanya 26-27 i, a part, dues gammes de planta per fer créixer: esqueixos arrelats i vivaces.",
     catalogues_button: "Veure catàlegs",
     download_label: "Descarregar",
 
     contact_title: "Preparem la teva oferta?",
     contact_subtitle:
-      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim a tot Europa.",
+      "Explica'ns què necessita el teu projecte —espècies, mides i quantitats— i t'enviem aviat un pressupost a mida, sense compromís. Servim en palet a tot Europa.",
     contact_button: "Demanar pressupost",
   },
 
@@ -221,7 +221,7 @@ const content: Record<string, HomeFallbackContent> = {
     how_steps: [
       {
         title: "You send us your list",
-        text: "Tick species from the catalogue or attach your own spreadsheet. No account, no minimum order.",
+        text: "Tick species from the catalogue or attach your own spreadsheet. No account needed — the list is enough.",
       },
       {
         title: "We source every plant",
@@ -229,20 +229,20 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "You get a complete order",
-        text: "A fast, firm quote and delivery across Europe. First plant to last, in a single shipment.",
+        text: "A fast, firm quote and palletised delivery to any country in Europe. First plant to last, in a single shipment.",
       },
     ],
 
     catalogues_title: "Catalogues",
     catalogues_headline: "Download them and share with your team",
     catalogues_subtitle:
-      "Up-to-date availability and seasonal PDFs, ready to pass on to site or to purchasing.",
+      "The general catalogue for the 2026-27 campaign, plus a separate range of young plants to grow on: rooted cuttings.",
     catalogues_button: "View catalogues",
     download_label: "Download",
 
     contact_title: "Ready for your quote?",
     contact_subtitle:
-      "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver across Europe.",
+      "Tell us what your project needs — species, sizes and quantities — and we'll quickly send a tailored quote, no obligation. We deliver on pallets across Europe.",
     contact_button: "Request a quote",
   },
 
@@ -286,7 +286,7 @@ const content: Record<string, HomeFallbackContent> = {
     how_steps: [
       {
         title: "Vous nous envoyez votre liste",
-        text: "Cochez des espèces au catalogue ou joignez votre propre listing Excel. Sans inscription et sans commande minimale.",
+        text: "Cochez des espèces au catalogue ou joignez votre propre listing Excel. Sans inscription : la liste suffit.",
       },
       {
         title: "Nous cherchons chaque plante",
@@ -294,20 +294,20 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Vous recevez une commande complète",
-        text: "Devis ferme rapide et livraison dans toute l'Europe. De la première à la dernière plante, en un seul envoi.",
+        text: "Devis ferme rapide et livraison sur palette dans tous les pays d'Europe. De la première à la dernière plante, en un seul envoi.",
       },
     ],
 
     catalogues_title: "Catalogues",
     catalogues_headline: "Téléchargez-les et partagez-les avec votre équipe",
     catalogues_subtitle:
-      "PDF à jour de disponibilité et de saison, prêts à transmettre au chantier ou aux achats.",
+      "Le catalogue général de la campagne 2026-27 et, à part, une gamme de jeunes plants à cultiver : les boutures racinées.",
     catalogues_button: "Voir les catalogues",
     download_label: "Télécharger",
 
     contact_title: "On prépare votre devis ?",
     contact_subtitle:
-      "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons dans toute l'Europe.",
+      "Dites-nous ce qu'il faut à votre projet — espèces, tailles et quantités — et nous vous envoyons rapidement un devis sur mesure, sans engagement. Nous livrons sur palette dans toute l'Europe.",
     contact_button: "Demander un devis",
   },
 
@@ -351,7 +351,7 @@ const content: Record<string, HomeFallbackContent> = {
     how_steps: [
       {
         title: "Ci invii la tua lista",
-        text: "Seleziona le specie dal catalogo o allega il tuo elenco in Excel. Senza registrazione e senza ordine minimo.",
+        text: "Seleziona le specie dal catalogo o allega il tuo elenco in Excel. Senza registrazione: basta la lista.",
       },
       {
         title: "Cerchiamo ogni pianta",
@@ -359,20 +359,20 @@ const content: Record<string, HomeFallbackContent> = {
       },
       {
         title: "Ricevi un ordine completo",
-        text: "Preventivo definitivo rapido e consegna in tutta Europa. Dalla prima all'ultima pianta, in un'unica spedizione.",
+        text: "Preventivo definitivo rapido e trasporto su pallet in qualsiasi paese d'Europa. Dalla prima all'ultima pianta, in un'unica spedizione.",
       },
     ],
 
     catalogues_title: "Cataloghi",
     catalogues_headline: "Scaricali e condividili con il tuo team",
     catalogues_subtitle:
-      "PDF aggiornati di disponibilità e di stagione, pronti da girare al cantiere o all'ufficio acquisti.",
+      "Il catalogo generale della campagna 2026-27 e, a parte, una gamma di giovani piante da coltivare: le talee radicate.",
     catalogues_button: "Vedi i cataloghi",
     download_label: "Scarica",
 
     contact_title: "Prepariamo il tuo preventivo?",
     contact_subtitle:
-      "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo in tutta Europa.",
+      "Raccontaci di cosa ha bisogno il tuo progetto — specie, misure e quantità — e ti inviamo rapidamente un preventivo su misura, senza impegno. Consegniamo su pallet in tutta Europa.",
     contact_button: "Richiedi un preventivo",
   },
 };

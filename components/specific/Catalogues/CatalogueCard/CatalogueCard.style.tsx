@@ -1,8 +1,12 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const CardWrapper = styled.article`
+/** `$featured` is the general catalogue: dark ground, lime accents, so it
+ *  reads as the main document and the others as separate, smaller ranges. */
+type Featured = { $featured?: boolean };
+
+export const CardWrapper = styled.article<Featured>`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -19,6 +23,24 @@ export const CardWrapper = styled.article`
     box-shadow: ${({ theme }) => theme.shadow.lg};
   }
 
+  ${({ $featured, theme }) =>
+    $featured &&
+    css`
+      background: ${theme.colors.moss};
+      border-color: ${theme.colors.moss};
+      box-shadow: ${theme.shadow.lg};
+
+      /* && outranks CardInner's own h3/p rules. */
+      && h3 {
+        color: ${theme.colors.white};
+        font-size: 1.625rem;
+      }
+
+      && p {
+        color: rgba(255, 255, 255, 0.78);
+      }
+    `}
+
   @media (prefers-reduced-motion: reduce) {
     transition: none;
     &:hover {
@@ -27,7 +49,7 @@ export const CardWrapper = styled.article`
   }
 `;
 
-export const CardCover = styled.div`
+export const CardCover = styled.div<Featured>`
   height: 13.125rem;
   overflow: hidden;
   background: ${({ theme }) => theme.colors.lightGreen};
@@ -36,6 +58,8 @@ export const CardCover = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* The general catalogue's cover is a portrait page: keep its title. */
+    object-position: ${({ $featured }) => ($featured ? "top" : "center")};
   }
 `;
 
@@ -64,26 +88,39 @@ export const CardInner = styled.div`
 
 export const CardMeta = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
 `;
 
-export const FormatTag = styled.span`
+const pill = css`
   display: inline-flex;
   align-items: center;
-  height: 1.5rem;
-  padding-inline: 0.625rem;
+  min-height: 1.5rem;
+  padding: 0.125rem 0.625rem;
   border-radius: ${({ theme }) => theme.radii.pill};
-
-  background: ${({ theme }) => theme.colors.lime};
-  color: ${({ theme }) => theme.colors.moss};
 
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 `;
 
-export const DownloadLink = styled.a`
+export const FormatTag = styled.span`
+  ${pill}
+  background: ${({ theme }) => theme.colors.lime};
+  color: ${({ theme }) => theme.colors.moss};
+`;
+
+export const KindTag = styled.span<Featured>`
+  ${pill}
+  background: ${({ theme, $featured }) =>
+    $featured ? "rgba(228, 246, 142, 0.16)" : theme.colors.lightGreen};
+  color: ${({ theme, $featured }) =>
+    $featured ? theme.colors.lime : theme.colors.greenDeep};
+  text-transform: uppercase;
+`;
+
+export const DownloadLink = styled.a<Featured>`
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
@@ -94,15 +131,19 @@ export const DownloadLink = styled.a`
   margin-top: 0.5rem;
 
   border-radius: ${({ theme }) => theme.radii.pill};
-  background: ${({ theme }) => theme.colors.brandGreen};
-  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme, $featured }) =>
+    $featured ? theme.colors.lime : theme.colors.brandGreen};
+  color: ${({ theme, $featured }) =>
+    $featured ? theme.colors.moss : theme.colors.white};
 
   font-size: 0.875rem;
   font-weight: 600;
 
-  transition: background-color 0.18s ease;
+  transition: background-color 0.18s ease, filter 0.18s ease;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.greenDeep};
+    background: ${({ theme, $featured }) =>
+      $featured ? theme.colors.lime : theme.colors.greenDeep};
+    filter: ${({ $featured }) => ($featured ? "brightness(0.94)" : "none")};
   }
 `;

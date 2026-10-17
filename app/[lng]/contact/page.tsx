@@ -6,6 +6,7 @@ import { buildPageMetadata } from "@/data/seoContent";
 import { getContactHeading } from "@/data/pageHeadings";
 import { getFormContent } from "@/data/formContent";
 import { getContactAside } from "@/data/contactContent";
+import { getServiceTermsContent } from "@/data/serviceTermsContent";
 
 export async function generateMetadata({
   params,
@@ -27,6 +28,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
       heading={getContactHeading(lng)}
       formContent={getFormContent(lng)}
       aside={getContactAside(lng)}
+      terms={getServiceTermsContent(lng)}
     />
   );
 }
