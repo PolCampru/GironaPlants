@@ -20,6 +20,8 @@ type CatalogueCardProps = {
   downloadLabel: string;
   /** Position in the grid, used only to pick a fallback cover. */
   index?: number;
+  /** Alone in its row: lay the cover beside the text. */
+  wide?: boolean;
 };
 
 // A catalogue published without a cover used to fall back to
@@ -35,19 +37,28 @@ const FALLBACK_COVERS = [
   "/images/plants/ferns.jpg",
 ];
 
-const CatalogueCard = ({ item, downloadLabel, index = 0 }: CatalogueCardProps) => (
-  <CardWrapper $featured={item.featured}>
-    <CardCover $featured={item.featured}>
+const CatalogueCard = ({
+  item,
+  downloadLabel,
+  index = 0,
+  wide = false,
+}: CatalogueCardProps) => (
+  <CardWrapper $featured={item.featured} $wide={wide}>
+    <CardCover $featured={item.featured} $wide={wide}>
       <Image
         src={item.imageUrl || FALLBACK_COVERS[index % FALLBACK_COVERS.length]}
         alt=""
         width={520}
         height={420}
-        sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw"
+        sizes={
+          wide
+            ? "(max-width: 720px) 100vw, 40vw"
+            : "(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw"
+        }
       />
     </CardCover>
 
-    <CardInner>
+    <CardInner $wide={wide}>
       <CardMeta>
         {item.tag && <KindTag $featured={item.featured}>{item.tag}</KindTag>}
         <FormatTag>PDF</FormatTag>

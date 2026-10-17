@@ -32,7 +32,7 @@ export const PLANT_CATEGORIES: PlantCategory[] = [
   { genus: "Vinca", img: "/images/plants/groundcovers.jpg", photo: "periwinkle in flower" },
   // Not a genus: "Leylandii" matches every Cupressocyparis leylandii row, and
   // it is the name the trade asks for.
-  { genus: "Leylandii", img: "/images/plants/leylandiiColumns.jpg", photo: "clipped Leyland cypress columns along a walkway" },
+  { genus: "Leylandii", img: "/images/plants/leylandiiHedgeWalls.jpg", photo: "two tall clipped conifer hedges either side of a path" },
 ];
 
 /** Plain-language gloss per genus, per locale. */
@@ -43,7 +43,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Lavandula: "Lavandas, lavandines y aromáticas",
     Carex: "Cárices y gramíneas de sombra",
     Iris: "Lirios de jardín y de ribera",
-    Vinca: "Vincapervincas, cubresuelos de sombra",
+    Vinca: "Cubresuelos",
     Leylandii: "Plantas para seto: ciprés de Leyland",
   },
   ca: {
@@ -52,7 +52,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Lavandula: "Lavandes, lavandins i aromàtiques",
     Carex: "Càrexs i gramínies d'ombra",
     Iris: "Lliris de jardí i de ribera",
-    Vinca: "Vincapervinques, entapissants d'ombra",
+    Vinca: "Entapitzants",
     Leylandii: "Plantes per a tanca: xiprer de Leyland",
   },
   en: {
@@ -61,7 +61,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Lavandula: "Lavenders, lavandins and aromatics",
     Carex: "Sedges and shade grasses",
     Iris: "Garden and waterside irises",
-    Vinca: "Periwinkles, groundcover for shade",
+    Vinca: "Groundcover",
     Leylandii: "Hedging plants: Leyland cypress",
   },
   fr: {
@@ -70,7 +70,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Lavandula: "Lavandes, lavandins et aromatiques",
     Carex: "Laîches et graminées d'ombre",
     Iris: "Iris de jardin et de berge",
-    Vinca: "Pervenches, couvre-sol d'ombre",
+    Vinca: "Couvre-sol",
     Leylandii: "Plantes de haie : cyprès de Leyland",
   },
   it: {
@@ -79,7 +79,7 @@ export const GENUS_GLOSS: Record<string, Record<string, string>> = {
     Lavandula: "Lavande, lavande ibride e aromatiche",
     Carex: "Carici e graminacee da ombra",
     Iris: "Iris da giardino e di riva",
-    Vinca: "Pervinche, tappezzanti da ombra",
+    Vinca: "Tappezzanti",
     Leylandii: "Piante da siepe: cipresso di Leyland",
   },
 };

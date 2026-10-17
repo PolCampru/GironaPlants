@@ -13,7 +13,8 @@ export const CardsGrid = styled.div<{ $count: number }>`
   margin-top: 2.25rem;
 
   @media (max-width: 900px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: ${({ $count }) =>
+      $count === 1 ? "1fr" : "repeat(2, minmax(0, 1fr))"};
 
     /* Three cards on two columns: the main one takes the full first row. */
     > div:first-child:nth-last-child(3) {

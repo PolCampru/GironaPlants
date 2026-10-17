@@ -85,7 +85,7 @@ const content: Record<string, CataloguesFallbackContent> = {
       "Our rooted cuttings are not a slice of the general catalogue: they are young plants to grow on, supplied in trays, with their own stock list and availability.",
     grow_on_tag: "Young plants to grow on",
     download_label: "Download",
-    contact_title: "Need something that isn't in the catalogues?",
+    contact_title: "Need something that isn't in the catalogue?",
     contact_subtitle:
       "Send us your list and we'll look for it across our grower network in Spain and the rest of Europe.",
     contact_button: "Request a quote",
@@ -127,7 +127,7 @@ const content: Record<string, CataloguesFallbackContent> = {
       "Le nostre talee radicate non sono un estratto del catalogo generale: sono giovani piante da coltivare, fornite in vassoio, con stock e disponibilità propri.",
     grow_on_tag: "Giovani piante da coltivare",
     download_label: "Scarica",
-    contact_title: "Ti serve qualcosa che non è nei cataloghi?",
+    contact_title: "Ti serve qualcosa che non è nel catalogo?",
     contact_subtitle:
       "Inviaci la tua lista e la cerchiamo nella nostra rete di vivai in Spagna e nel resto d'Europa.",
     contact_button: "Richiedi un preventivo",
@@ -141,11 +141,12 @@ export function getCataloguesContent(
 }
 
 /**
- * The perennials & grasses catalogue is only offered in the Spanish and
- * Catalan market. The CMS entry exists in every locale, so it is dropped here
- * — matched on the PDF's file name, which the upload script keeps stable.
+ * The young-plant catalogues (rooted cuttings, perennials & grasses) are only
+ * offered in the Spanish and Catalan market; every other locale gets the
+ * general catalogue alone. The CMS entries exist in every locale, so they are
+ * dropped here rather than in Strapi.
  */
-const VIVACES_LOCALES = ["es", "ca"];
+const GROW_ON_LOCALES = ["es", "ca"];
 
-export const isCatalogueOffered = (fileUrl: string, locale: string) =>
-  VIVACES_LOCALES.includes(locale) || !/vivaces/i.test(fileUrl);
+export const offersGrowOnCatalogues = (locale: string) =>
+  GROW_ON_LOCALES.includes(locale);

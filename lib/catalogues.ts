@@ -2,7 +2,7 @@ import { fetchStrapiData, strapiMediaUrl, StrapiError } from "./strapi";
 import { CatalogueItem, CataloguesPageData } from "@/types/Catalogues";
 import {
   getCataloguesContent,
-  isCatalogueOffered,
+  offersGrowOnCatalogues,
 } from "@/data/cataloguesContent";
 import { getCampaignCatalogueLabel } from "@/data/campaign";
 
@@ -14,7 +14,8 @@ function normalizeItems(
   data: Record<string, unknown>,
   locale: string
 ): CatalogueItem[] {
-  if (!Array.isArray(data.catalogues)) return [];
+  if (!Array.isArray(data.catalogues) || !offersGrowOnCatalogues(locale))
+    return [];
   const growOnTag = getCataloguesContent(locale).grow_on_tag;
 
   return (data.catalogues as Record<string, unknown>[])
@@ -26,8 +27,7 @@ function normalizeItems(
       fileUrl: strapiMediaUrl(item.file as { url?: string } | null),
       imageUrl: strapiMediaUrl(item.image as { url?: string } | null),
       tag: growOnTag,
-    }))
-    .filter((item) => isCatalogueOffered(item.fileUrl, locale));
+    }));
 }
 
 /**

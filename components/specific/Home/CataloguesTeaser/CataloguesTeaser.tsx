@@ -48,6 +48,7 @@ const CataloguesTeaser = ({ data }: { data: CataloguesTeaserProps }) => {
                 item={item}
                 index={index}
                 downloadLabel={data.download_label}
+                wide={items.length === 1}
               />
             </motion.div>
           ))}

@@ -6,7 +6,13 @@ import styled, { css } from "styled-components";
  *  reads as the main document and the others as separate, smaller ranges. */
 type Featured = { $featured?: boolean };
 
-export const CardWrapper = styled.article<Featured>`
+/** `$wide` is a card alone in its row (outside es/ca only the general
+ *  catalogue is offered): cover beside the text instead of on top. */
+type Wide = { $wide?: boolean };
+
+const WIDE_FROM = "720px";
+
+export const CardWrapper = styled.article<Featured & Wide>`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -41,6 +47,14 @@ export const CardWrapper = styled.article<Featured>`
       }
     `}
 
+  ${({ $wide }) =>
+    $wide &&
+    css`
+      @media (min-width: ${WIDE_FROM}) {
+        flex-direction: row;
+      }
+    `}
+
   @media (prefers-reduced-motion: reduce) {
     transition: none;
     &:hover {
@@ -49,10 +63,20 @@ export const CardWrapper = styled.article<Featured>`
   }
 `;
 
-export const CardCover = styled.div<Featured>`
+export const CardCover = styled.div<Featured & Wide>`
   height: 13.125rem;
   overflow: hidden;
   background: ${({ theme }) => theme.colors.lightGreen};
+
+  ${({ $wide }) =>
+    $wide &&
+    css`
+      @media (min-width: ${WIDE_FROM}) {
+        flex: 0 0 38%;
+        height: auto;
+        min-height: 18rem;
+      }
+    `}
 
   img {
     width: 100%;
@@ -63,7 +87,7 @@ export const CardCover = styled.div<Featured>`
   }
 `;
 
-export const CardInner = styled.div`
+export const CardInner = styled.div<Wide>`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -84,6 +108,22 @@ export const CardInner = styled.div`
     color: ${({ theme }) => theme.colors.muted};
     flex-grow: 1;
   }
+
+  ${({ $wide }) =>
+    $wide &&
+    css`
+      @media (min-width: ${WIDE_FROM}) {
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 2.25rem 2.5rem;
+
+        p {
+          flex-grow: 0;
+          max-width: 34rem;
+          font-size: 0.9375rem;
+        }
+      }
+    `}
 `;
 
 export const CardMeta = styled.div`

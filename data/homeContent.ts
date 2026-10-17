@@ -233,11 +233,11 @@ const content: Record<string, HomeFallbackContent> = {
       },
     ],
 
-    catalogues_title: "Catalogues",
-    catalogues_headline: "Download them and share with your team",
+    catalogues_title: "Catalogue",
+    catalogues_headline: "Download it and share it with your team",
     catalogues_subtitle:
-      "The general catalogue for the 2026-27 campaign, plus a separate range of young plants to grow on: rooted cuttings.",
-    catalogues_button: "View catalogues",
+      "Every plant we can supply in the 2026-27 campaign, in a single PDF.",
+    catalogues_button: "View the catalogue",
     download_label: "Download",
 
     contact_title: "Ready for your quote?",
@@ -298,11 +298,11 @@ const content: Record<string, HomeFallbackContent> = {
       },
     ],
 
-    catalogues_title: "Catalogues",
-    catalogues_headline: "Téléchargez-les et partagez-les avec votre équipe",
+    catalogues_title: "Catalogue",
+    catalogues_headline: "Téléchargez-le et partagez-le avec votre équipe",
     catalogues_subtitle:
-      "Le catalogue général de la campagne 2026-27 et, à part, une gamme de jeunes plants à cultiver : les boutures racinées.",
-    catalogues_button: "Voir les catalogues",
+      "Toutes les plantes que nous pouvons livrer pendant la campagne 2026-27, en un seul PDF.",
+    catalogues_button: "Voir le catalogue",
     download_label: "Télécharger",
 
     contact_title: "On prépare votre devis ?",
@@ -363,11 +363,11 @@ const content: Record<string, HomeFallbackContent> = {
       },
     ],
 
-    catalogues_title: "Cataloghi",
-    catalogues_headline: "Scaricali e condividili con il tuo team",
+    catalogues_title: "Catalogo",
+    catalogues_headline: "Scaricalo e condividilo con il tuo team",
     catalogues_subtitle:
-      "Il catalogo generale della campagna 2026-27 e, a parte, una gamma di giovani piante da coltivare: le talee radicate.",
-    catalogues_button: "Vedi i cataloghi",
+      "Tutte le piante che possiamo fornire nella campagna 2026-27, in un unico PDF.",
+    catalogues_button: "Vedi il catalogo",
     download_label: "Scarica",
 
     contact_title: "Prepariamo il tuo preventivo?",

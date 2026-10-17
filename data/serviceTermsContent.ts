@@ -26,7 +26,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "europe",
         title: "Solo dentro de Europa",
-        text: "Servimos a cualquier país europeo. Fuera de Europa no podemos hacer envíos.",
+        text: "Servimos a cualquier país europeo.",
       },
       {
         key: "pallet",
@@ -51,7 +51,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "europe",
         title: "Només dins d'Europa",
-        text: "Servim a qualsevol país europeu. Fora d'Europa no podem fer enviaments.",
+        text: "Servim a qualsevol país europeu.",
       },
       {
         key: "pallet",
@@ -76,7 +76,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "europe",
         title: "Europe only",
-        text: "We deliver to any European country. We can't ship outside Europe.",
+        text: "We deliver to any European country.",
       },
       {
         key: "pallet",
@@ -101,7 +101,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "europe",
         title: "Uniquement en Europe",
-        text: "Nous livrons dans tous les pays européens. Hors d'Europe, nous ne pouvons pas expédier.",
+        text: "Nous livrons dans tous les pays européens.",
       },
       {
         key: "pallet",
@@ -126,7 +126,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "europe",
         title: "Solo in Europa",
-        text: "Consegniamo in qualsiasi paese europeo. Fuori dall'Europa non possiamo spedire.",
+        text: "Consegniamo in qualsiasi paese europeo.",
       },
       {
         key: "pallet",
