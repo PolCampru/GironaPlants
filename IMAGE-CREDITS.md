@@ -71,7 +71,8 @@ fallback covers a catalogue gets when the CMS has none — see `CatalogueCard`.
 
 Home "Our plants" cards replaced on 2026-10-17. Quercus used to show
 `aboutUs/ilex.jpg`, which was not a recognisable Quercus; Nymphaea became Iris
-and Corylus became Leylandii. Quercus and Iris are **public domain**, from the
+and Corylus became Leylandii. Quercus is **public domain** and Iris (a yellow
+Iris pseudacorus, swapped in later that day) is **CC0**, both from the
 Wikimedia Commons API; the Leylandii photo is **CC0**, from PxHere (it
 replaced a Pexels-licensed one the same day: only public-domain / CC0 photos
 from here on). All centre-cropped to 5:4 and re-encoded at
@@ -80,5 +81,5 @@ from here on). All centre-cropped to 5:4 and re-encoded at
 | File | Card | Licence | Author | Original |
 | --- | --- | --- | --- | --- |
 | `plants/quercusIlexAcorns.jpg` | Quercus | Public domain | Javier martin | [Quercus ilex subsp. ballota leaves and acorn](https://commons.wikimedia.org/wiki/File:Quercus_ilex_subsp._ballota_var.9_LeavesandAcorn_2009November22_DehesaBoyaldePuertollano.jpg) |
-| `plants/irisSibirica.jpg` | Iris | Public domain | Rainer Theuer | [Iris sibirica DSC 0616](https://commons.wikimedia.org/wiki/File:Iris_sibirica_DSC_0616.jpg) |
+| `plants/irisPseudacorus.jpg` | Iris | CC0 | AnRo0002 | [20160518Iris pseudacorus1](https://commons.wikimedia.org/wiki/File:20160518Iris_pseudacorus1.jpg) |
 | `plants/leylandiiHedgeWalls.jpg` | Leylandii | CC0 | PxHere contributor | [Pathway between tall clipped hedges](https://pxhere.com/en/photo/1291133) |
