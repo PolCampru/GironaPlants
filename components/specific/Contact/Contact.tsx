@@ -45,7 +45,7 @@ const Contact = ({
   const rows = [
     { key: "phone", icon: FiPhone, data: aside?.phone, href: aside?.phone?.text ? `tel:${aside.phone.text.replace(/\s/g, "")}` : undefined },
     { key: "email", icon: FiMail, data: aside?.email, href: aside?.email?.text ? `mailto:${aside.email.text}` : undefined },
-    { key: "hours", icon: FiClock, data: aside?.hours },
+    { key: "hours", icon: FiClock, data: aside?.hours, note: aside?.hours?.note },
     { key: "location", icon: FiMapPin, data: aside?.location },
   ].filter((row) => row.data?.text);
 
@@ -58,7 +58,7 @@ const Contact = ({
           {aside?.title && <h2>{aside.title}</h2>}
 
           <ContactRows>
-            {rows.map(({ key, icon: Icon, data, href }) => (
+            {rows.map(({ key, icon: Icon, data, href, note }) => (
               <ContactRow key={key} as={href ? "a" : "div"} href={href}>
                 <RowIcon>
                   <Icon aria-hidden="true" size={19} />
@@ -66,6 +66,7 @@ const Contact = ({
                 <RowText>
                   <span>{data!.title}</span>
                   <strong>{data!.text}</strong>
+                  {note && <span>{note}</span>}
                 </RowText>
               </ContactRow>
             ))}

@@ -88,17 +88,14 @@ export function BusinessStructuredData({ locale = 'ca' }: BusinessStructuredData
       latitude: 41.7591377,
       longitude: 2.5510631
     },
-    // Mon-Fri 8:00-18:00, confirmed by the company. This used to open at 09:00
-    // and claim a Saturday morning, neither of which matched the hours the
-    // contact page has shown in every language (data/contactContent.ts) —
-    // so Google was being handed opening times, and a day of the week, that
-    // nobody here actually works.
+    // Mon-Fri 9:00-17:00, confirmed by the company (October 2026); matches the
+    // contact page (data/contactContent.ts) and the Google Business Profile.
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '18:00'
+        opens: '09:00',
+        closes: '17:00'
       }
     ],
     areaServed: ['Europe', 'Spain', 'France', 'Portugal', 'Italy', 'Germany', 'Andorra'],

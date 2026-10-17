@@ -36,7 +36,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "trade",
         title: "Pedidos profesionales",
-        text: "Paisajistas, jardineros, garden centers, distribuidores y administraciones: precios y logística pensados para volumen.",
+        text: "Viveros, garden centers, jardineros, paisajistas, distribuidores, fruticultores, reforestadores, obra pública, administraciones y proyectos de jardín sostenible: precios y logística pensados para volumen.",
       },
     ],
     particular: {
@@ -61,7 +61,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "trade",
         title: "Comandes professionals",
-        text: "Paisatgistes, jardiners, garden centers, distribuïdors i administracions: preus i logística pensats per a volum.",
+        text: "Vivers, garden centers, jardiners, paisatgistes, distribuïdors, fruticultors, repobladors forestals, obra pública, administracions i projectes de jardí sostenible: preus i logística pensats per a volum.",
       },
     ],
     particular: {
@@ -86,7 +86,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "trade",
         title: "Trade orders",
-        text: "Landscapers, gardeners, garden centres, distributors and public bodies: prices and logistics built for volume.",
+        text: "Nurseries, garden centres, gardeners, landscapers, distributors, fruit growers, reforestation, public works, public bodies and sustainable planting projects: prices and logistics built for volume.",
       },
     ],
     particular: {
@@ -111,7 +111,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "trade",
         title: "Commandes professionnelles",
-        text: "Paysagistes, jardiniers, jardineries, distributeurs et collectivités : prix et logistique pensés pour le volume.",
+        text: "Pépinières, jardineries, jardiniers, paysagistes, distributeurs, arboriculteurs, reboisement, travaux publics, collectivités et projets de jardin durable : prix et logistique pensés pour le volume.",
       },
     ],
     particular: {
@@ -136,7 +136,7 @@ const content: Record<string, ServiceTermsContent> = {
       {
         key: "trade",
         title: "Ordini professionali",
-        text: "Paesaggisti, giardinieri, garden center, distributori ed enti pubblici: prezzi e logistica pensati per i volumi.",
+        text: "Vivai, garden center, giardinieri, paesaggisti, distributori, frutticoltori, rimboschimento, opere pubbliche, enti pubblici e progetti di giardino sostenibile: prezzi e logistica pensati per i volumi.",
       },
     ],
     particular: {

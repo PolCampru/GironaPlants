@@ -16,7 +16,8 @@ const content: Record<string, ContactAsideType> = {
     title: "Prefiero hablarlo",
     hours: {
       title: "Horario",
-      text: "Lun-Vie · 8:00-18:00",
+      text: "Lun-Vie · 9:00-17:00",
+      note: "Llámanos antes de venir",
     },
     location: {
       title: "Dónde estamos",
@@ -48,7 +49,8 @@ const content: Record<string, ContactAsideType> = {
     title: "Prefereixo parlar-ho",
     hours: {
       title: "Horari",
-      text: "Dl-Dv · 8:00-18:00",
+      text: "Dl-Dv · 9:00-17:00",
+      note: "Truca'ns abans de venir",
     },
     location: {
       title: "On som",
@@ -80,7 +82,8 @@ const content: Record<string, ContactAsideType> = {
     title: "I'd rather talk",
     hours: {
       title: "Hours",
-      text: "Mon-Fri · 8:00-18:00",
+      text: "Mon-Fri · 9:00-17:00",
+      note: "Please call before visiting",
     },
     location: {
       title: "Where we are",
@@ -112,7 +115,8 @@ const content: Record<string, ContactAsideType> = {
     title: "Je préfère en parler",
     hours: {
       title: "Horaires",
-      text: "Lun-Ven · 8h00-18h00",
+      text: "Lun-Ven · 9h00-17h00",
+      note: "Appelez-nous avant de venir",
     },
     location: {
       title: "Où nous sommes",
@@ -144,7 +148,8 @@ const content: Record<string, ContactAsideType> = {
     title: "Preferisco parlarne",
     hours: {
       title: "Orari",
-      text: "Lun-Ven · 8:00-18:00",
+      text: "Lun-Ven · 9:00-17:00",
+      note: "Chiamaci prima di venire",
     },
     location: {
       title: "Dove siamo",

@@ -35,7 +35,7 @@ export type ContactAsideType = {
   title: string;
   phone: { title: string; text: string };
   email: { title: string; text: string };
-  hours: { title: string; text: string };
+  hours: { title: string; text: string; note?: string };
   location: { title: string; text: string };
   languagesTitle: string;
   languages: string[];
