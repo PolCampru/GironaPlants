@@ -4,6 +4,24 @@
    "section": "perennials",
    "genus": "Acanthus",
    "pack": 100,
+   "name": "Acanthus 'Whitewater'",
+   "flowering": "6-8",
+   "height": "60/80",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Acanthus",
+   "pack": 100,
+   "name": "Acanthus hungaricus 'White Lips'",
+   "flowering": "6-8",
+   "height": "50/70",
+   "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Acanthus",
+   "pack": 100,
    "name": "Acanthus mollis",
    "flowering": "6-9",
    "height": "60/120",
@@ -52,7 +70,7 @@
    "name": "Achillea 'Pink Grapefruit'",
    "flowering": "6-8",
    "height": "45/60",
-   "weeks": "18-30"
+   "weeks": "20-30"
   },
   {
    "section": "perennials",
@@ -67,7 +85,7 @@
    "section": "perennials",
    "genus": "Achillea",
    "pack": 100,
-   "name": "Achillea 'Saucy Seduction'.",
+   "name": "Achillea 'Saucy Seduction'",
    "flowering": "6-9",
    "height": "60/75",
    "weeks": "18-30"
@@ -76,7 +94,7 @@
    "section": "perennials",
    "genus": "Achillea",
    "pack": 100,
-   "name": "Achillea 'Wonderful Wampee'.",
+   "name": "Achillea 'Wonderful Wampee'",
    "flowering": "6-8",
    "height": "45/60",
    "weeks": "18-30"
@@ -94,7 +112,7 @@
    "section": "perennials",
    "genus": "Achillea",
    "pack": 100,
-   "name": "Achillea mill.'Apricot Delight'.",
+   "name": "Achillea mill.'Apricot Delight'",
    "flowering": "6-8",
    "height": "45/60",
    "weeks": "18-30"
@@ -103,10 +121,19 @@
    "section": "perennials",
    "genus": "Achillea",
    "pack": 100,
+   "name": "Achillea mill.'Cerise Queen'",
+   "flowering": "6-8",
+   "height": "80/100",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Achillea",
+   "pack": 100,
    "name": "Achillea mill.'Lachsschönheit'",
    "flowering": "6-8",
    "height": "45/60",
-   "weeks": "18-30"
+   "weeks": "22-28"
   },
   {
    "section": "perennials",
@@ -211,7 +238,7 @@
    "section": "perennials",
    "genus": "Actaea",
    "pack": 100,
-   "name": "Actaea simpl.'Hillside Black Beauty",
+   "name": "Actaea simpl.'Hillside Black Beauty'",
    "flowering": "9-10",
    "height": "100",
    "weeks": "23-28"
@@ -238,28 +265,19 @@
    "section": "perennials",
    "genus": "Aegopodium",
    "pack": 100,
-   "name": "Aegopodium pod. 'Variegatum'",
+   "name": "Aegopodium pod.'Variegatum'",
    "flowering": "7-8",
    "height": "30",
-   "weeks": "20-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Aethionema",
-   "pack": 100,
-   "name": "Aethionema arm.'Warley Rose'",
-   "flowering": "6-9",
-   "height": "15",
-   "weeks": "23-28"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
    "genus": "Agapanthus",
    "pack": 100,
-   "name": "Agapanthus 'Black Pantha'",
-   "flowering": "7-9",
-   "height": "125",
-   "weeks": "23-30"
+   "name": "Agapanthus 'Arctic Star'",
+   "flowering": "6-9",
+   "height": "75",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -274,10 +292,73 @@
    "section": "perennials",
    "genus": "Agapanthus",
    "pack": 100,
+   "name": "Agapanthus 'Crystal Blue'",
+   "flowering": "7-9",
+   "height": "70",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
+   "name": "Agapanthus 'Ever Sapphire'",
+   "flowering": "6-8",
+   "height": "40",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
+   "name": "Agapanthus 'Ever White'",
+   "flowering": "6-10",
+   "height": "50",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
    "name": "Agapanthus 'Northern Star'",
    "flowering": "7-8",
    "height": "70",
    "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
+   "name": "Agapanthus 'Peter Pan'",
+   "flowering": "7-8",
+   "height": "40",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
+   "name": "Agapanthus 'Pichtoune Blue'",
+   "flowering": "6-9",
+   "height": "75",
+   "weeks": "25-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
+   "name": "Agapanthus 'Pitchoune White'",
+   "flowering": "6-9",
+   "height": "75",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agapanthus",
+   "pack": 100,
+   "name": "Agapanthus 'Poppin' Purple'",
+   "flowering": "6-9",
+   "height": "60/70",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -322,6 +403,33 @@
    "name": "Agastache 'After Eight'",
    "flowering": "7-9",
    "height": "70/120",
+   "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agastache",
+   "pack": 100,
+   "name": "Agastache 'Beelicious Blue'",
+   "flowering": "6-9",
+   "height": "70/90",
+   "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agastache",
+   "pack": 100,
+   "name": "Agastache 'Beelicious Pink'",
+   "flowering": "6-9",
+   "height": "70/90",
+   "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Agastache",
+   "pack": 100,
+   "name": "Agastache 'Beelicious Purple'",
+   "flowering": "6-9",
+   "height": "70/90",
    "weeks": "23-30"
   },
   {
@@ -391,19 +499,100 @@
    "section": "perennials",
    "genus": "Agastache",
    "pack": 100,
-   "name": "Agastache 'Tangerine Dream'",
-   "flowering": "6-10",
-   "height": "30/50",
-   "weeks": "23-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Agastache",
-   "pack": 100,
    "name": "Agastache rug.'Alabaster'",
    "flowering": "6-8",
    "height": "70/100",
    "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Alba'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Atropurpurea'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Black Scallop'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Braunherz'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Burgundy Glow'",
+   "flowering": "5-6",
+   "height": "15/20",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Catlin's Giant'",
+   "flowering": "5-6",
+   "height": "15/20",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Chocolate Chip'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Mahogany'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Rainbow'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Ajuga",
+   "pack": 100,
+   "name": "Ajuga rep.'Variegata'",
+   "flowering": "5-6",
+   "height": "10/15",
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -453,15 +642,6 @@
   {
    "section": "perennials",
    "genus": "Allium",
-   "pack": 28,
-   "name": "Allium 'Lavender Bubbles'",
-   "flowering": "7-9",
-   "height": "50",
-   "weeks": "18-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Allium",
    "pack": 100,
    "name": "Allium 'Millenium'",
    "flowering": "7-9",
@@ -490,15 +670,6 @@
    "section": "perennials",
    "genus": "Amsonia",
    "pack": 100,
-   "name": "Amsonia ciliata",
-   "flowering": "7-8",
-   "height": "60/70",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Amsonia",
-   "pack": 100,
    "name": "Amsonia tabernaemontana",
    "flowering": "5-8",
    "height": "40/50",
@@ -511,7 +682,7 @@
    "name": "Anaphalis trip.'Sommerschnee'",
    "flowering": "8-10",
    "height": "15/25",
-   "weeks": "23-30"
+   "weeks": "23-26"
   },
   {
    "section": "perennials",
@@ -520,7 +691,7 @@
    "name": "Anaphalis triplinervis",
    "flowering": "8-10",
    "height": "25/35",
-   "weeks": "23-30"
+   "weeks": "23-26"
   },
   {
    "section": "perennials",
@@ -529,7 +700,7 @@
    "name": "Anchusa az.'Loddon Royalist'",
    "flowering": "6-9",
    "height": "40/100",
-   "weeks": "23-30"
+   "weeks": "24-28"
   },
   {
    "section": "perennials",
@@ -548,6 +719,15 @@
    "flowering": "9-10",
    "height": "70/120",
    "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Anemone",
+   "pack": 100,
+   "name": "Anemone 'Dainty Swan'",
+   "flowering": "8-10",
+   "height": "65",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -628,7 +808,7 @@
    "name": "Anemone 'Hadspen Abundance'",
    "flowering": "9-10",
    "height": "40/60",
-   "weeks": "23-29"
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -646,15 +826,6 @@
    "name": "Anemone 'Honorine Jobert'",
    "flowering": "9-10",
    "height": "70/120",
-   "weeks": "21-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Anemone",
-   "pack": 100,
-   "name": "Anemone 'Koen. Charlotte'",
-   "flowering": "8-10",
-   "height": "50/90",
    "weeks": "21-28"
   },
   {
@@ -665,6 +836,15 @@
    "flowering": "9-10",
    "height": "50/90",
    "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Anemone",
+   "pack": 100,
+   "name": "Anemone 'Kön. Charlotte'",
+   "flowering": "8-10",
+   "height": "50/90",
+   "weeks": "21-28"
   },
   {
    "section": "perennials",
@@ -868,7 +1048,7 @@
    "section": "perennials",
    "genus": "Anthemis",
    "pack": 100,
-   "name": "Anthemis 'Sauce Hollandaise'(=Susanna Mitchel)",
+   "name": "Anthemis 'Sauce Hollandaise' (=Susanna Mitchel)",
    "flowering": "6-9",
    "height": "40/70",
    "weeks": "23-30"
@@ -889,7 +1069,7 @@
    "name": "Arabis cauc.'Variegata'",
    "flowering": "3-5",
    "height": "15/20",
-   "weeks": "20-30"
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -898,7 +1078,7 @@
    "name": "Arabis ferd.-cob.'Old Gold'",
    "flowering": "4-5",
    "height": "10/15",
-   "weeks": "20-30"
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -907,7 +1087,7 @@
    "name": "Arabis ferd.-cob.Variegata",
    "flowering": "4-5",
    "height": "10/15",
-   "weeks": "20-30"
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -929,6 +1109,15 @@
   },
   {
    "section": "perennials",
+   "genus": "Arenaria",
+   "pack": 100,
+   "name": "Arenaria montana 'Mont Blanc'",
+   "flowering": "5-8",
+   "height": "25/30",
+   "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
    "genus": "Armeria",
    "pack": 100,
    "name": "Armeria juniperifolia",
@@ -943,13 +1132,13 @@
    "name": "Armeria mar.'Alba'",
    "flowering": "5-8",
    "height": "10/15",
-   "weeks": "18-28"
+   "weeks": "18-26"
   },
   {
    "section": "perennials",
    "genus": "Armeria",
    "pack": 100,
-   "name": "Armeria mar.'Duesseldorfer Stolz'",
+   "name": "Armeria mar.'Düsseldorfer Stolz'",
    "flowering": "5-8",
    "height": "10/15",
    "weeks": "18-28"
@@ -1030,6 +1219,24 @@
    "section": "perennials",
    "genus": "Aruncus",
    "pack": 100,
+   "name": "Aruncus 'Chantilly Lace'",
+   "flowering": "6-7",
+   "height": "40/70",
+   "weeks": "26-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Aruncus",
+   "pack": 100,
+   "name": "Aruncus 'Fair Hair'",
+   "flowering": "5-7",
+   "height": "40/70",
+   "weeks": "28-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Aruncus",
+   "pack": 100,
    "name": "Aruncus 'Horatio'",
    "flowering": "5-7",
    "height": "40/70",
@@ -1048,15 +1255,6 @@
    "section": "perennials",
    "genus": "Aruncus",
    "pack": 100,
-   "name": "Aruncus 'Misty Lace'",
-   "flowering": "6-7",
-   "height": "35/45",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Aruncus",
-   "pack": 100,
    "name": "Aruncus aethusifolius",
    "flowering": "6-7",
    "height": "25/30",
@@ -1070,6 +1268,15 @@
    "flowering": "6-7",
    "height": "150/160",
    "weeks": "26-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Asarum",
+   "pack": 100,
+   "name": "Asarum europaeum",
+   "flowering": "4-5",
+   "height": "10/10",
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -1249,7 +1456,7 @@
    "name": "Aster frik.'Jungfrau'",
    "flowering": "7-9",
    "height": "30/70",
-   "weeks": "23-30"
+   "weeks": "25-30"
   },
   {
    "section": "perennials",
@@ -1258,7 +1465,7 @@
    "name": "Aster frik.'Moench'",
    "flowering": "7-9",
    "height": "30/70",
-   "weeks": "23-30"
+   "weeks": "25-30"
   },
   {
    "section": "perennials",
@@ -1267,7 +1474,7 @@
    "name": "Aster frik.'Wunder v. Staefa'",
    "flowering": "7-9",
    "height": "30/70",
-   "weeks": "23-30"
+   "weeks": "25-30"
   },
   {
    "section": "perennials",
@@ -1312,7 +1519,7 @@
    "name": "Aster macr.'Twilight'",
    "flowering": "8-10",
    "height": "60/80",
-   "weeks": "22-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -1321,7 +1528,7 @@
    "name": "Aster n.a.'And.an A.Pötschke'",
    "flowering": "8-10",
    "height": "80/120",
-   "weeks": "20-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -1330,7 +1537,7 @@
    "name": "Aster n.a.'Purple Dome'",
    "flowering": "8-10",
    "height": "30/60",
-   "weeks": "22-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -1390,15 +1597,6 @@
    "section": "perennials",
    "genus": "Astilbe",
    "pack": 100,
-   "name": "Astilbe 'Brautschleier'",
-   "flowering": "8-10",
-   "height": "60/80",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Astilbe",
-   "pack": 100,
    "name": "Astilbe 'Chocolate Shogun'",
    "flowering": "6-7",
    "height": "20/50",
@@ -1408,7 +1606,7 @@
    "section": "perennials",
    "genus": "Astilbe",
    "pack": 100,
-   "name": "Astilbe 'Fanal'",
+   "name": "Astilbe (A)'Brautschleier'",
    "flowering": "8-10",
    "height": "60/80",
    "weeks": "22-30"
@@ -1417,7 +1615,7 @@
    "section": "perennials",
    "genus": "Astilbe",
    "pack": 100,
-   "name": "Astilbe 'Peach Blossom'",
+   "name": "Astilbe (A)'Bressingham Beauty'",
    "flowering": "6-8",
    "height": "40/50",
    "weeks": "22-30"
@@ -1426,19 +1624,37 @@
    "section": "perennials",
    "genus": "Astilbe",
    "pack": 100,
-   "name": "Astilbe 'Sprite'",
-   "flowering": "8-9",
-   "height": "20/40",
+   "name": "Astilbe (A)'Fanal'",
+   "flowering": "8-10",
+   "height": "60/80",
    "weeks": "22-30"
   },
   {
    "section": "perennials",
    "genus": "Astilbe",
    "pack": 100,
-   "name": "Astilbe chinensis 'Pumila'",
+   "name": "Astilbe (ch)'Pumila'",
    "flowering": "7-9",
    "height": "20/50",
    "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Astilbe",
+   "pack": 100,
+   "name": "Astilbe (J)'Peach Blossom'",
+   "flowering": "6-8",
+   "height": "40/50",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Astilbe",
+   "pack": 100,
+   "name": "Astilbe (S)'Sprite'",
+   "flowering": "8-9",
+   "height": "20/40",
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -1498,6 +1714,15 @@
    "section": "perennials",
    "genus": "Astrantia",
    "pack": 100,
+   "name": "Astrantia major 'Cerise Button'",
+   "flowering": "6-8",
+   "height": "40/60",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Astrantia",
+   "pack": 100,
    "name": "Astrantia major 'Claret'",
    "flowering": "5-7",
    "height": "40/60",
@@ -1517,6 +1742,24 @@
    "genus": "Astrantia",
    "pack": 100,
    "name": "Astrantia major 'Moulin Rouge'",
+   "flowering": "6-8",
+   "height": "40/60",
+   "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Astrantia",
+   "pack": 100,
+   "name": "Astrantia major 'Pink Button'",
+   "flowering": "6-8",
+   "height": "40/60",
+   "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Astrantia",
+   "pack": 100,
+   "name": "Astrantia major 'Pink Pride'",
    "flowering": "6-8",
    "height": "40/60",
    "weeks": "25-30"
@@ -1553,24 +1796,6 @@
    "genus": "Astrantia",
    "pack": 100,
    "name": "Astrantia major 'Rosensinfonie'",
-   "flowering": "6-8",
-   "height": "40/60",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Astrantia",
-   "pack": 100,
-   "name": "Astrantia major 'Rubra'",
-   "flowering": "6-8",
-   "height": "40/60",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Astrantia",
-   "pack": 100,
-   "name": "Astrantia major 'Ruby Wedding'",
    "flowering": "6-8",
    "height": "40/60",
    "weeks": "25-30"
@@ -1634,15 +1859,6 @@
    "genus": "Baptisia",
    "pack": 100,
    "name": "Baptisia 'Blueberry Sunday'",
-   "flowering": "6-8",
-   "height": "80/120",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Baptisia",
-   "pack": 100,
-   "name": "Baptisia 'Dark Chocolate'",
    "flowering": "6-8",
    "height": "80/120",
    "weeks": "24-30"
@@ -1723,7 +1939,7 @@
    "section": "perennials",
    "genus": "Bergenia",
    "pack": 100,
-   "name": "Bergenia 'Bressingham Ruby' .",
+   "name": "Bergenia 'Bressingham Ruby'",
    "flowering": "4-5",
    "height": "25/30",
    "weeks": "22-30"
@@ -1779,7 +1995,7 @@
    "pack": 100,
    "name": "Bergenia 'Flirt'",
    "flowering": "8-10",
-   "height": "15",
+   "height": "15/25",
    "weeks": "23-28"
   },
   {
@@ -1790,6 +2006,15 @@
    "flowering": "3-5",
    "height": "25/30",
    "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Bergenia",
+   "pack": 100,
+   "name": "Bergenia 'Ice Queen'",
+   "flowering": "4-5",
+   "height": "25/30",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -1824,7 +2049,7 @@
    "pack": 100,
    "name": "Bergenia 'Pink Dragonfly'",
    "flowering": "3-4",
-   "height": "35",
+   "height": "25/35",
    "weeks": "23-28"
   },
   {
@@ -1849,7 +2074,7 @@
    "section": "perennials",
    "genus": "Bergenia",
    "pack": 100,
-   "name": "Bergenia 'Winterglut' (Vinterglöd)",
+   "name": "Bergenia 'Wintermaerchen'",
    "flowering": "4-5",
    "height": "25/30",
    "weeks": "22-30"
@@ -1880,15 +2105,6 @@
    "flowering": "5-6",
    "height": "40/50",
    "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Brunnera",
-   "pack": 100,
-   "name": "Brunnera macr.'Alexandria'",
-   "flowering": "4-5",
-   "height": "45",
-   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -1925,6 +2141,15 @@
    "flowering": "4-5",
    "height": "40/50",
    "weeks": "20-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Brunnera",
+   "pack": 100,
+   "name": "Brunnera macr.'Jack of Diamonds'",
+   "flowering": "4-5",
+   "height": "40/50",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -1997,15 +2222,6 @@
    "flowering": "6-7",
    "height": "35/40",
    "weeks": "23-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Campanula",
-   "pack": 100,
-   "name": "Campanula 'Dickson's Gold'",
-   "flowering": "6-8",
-   "height": "5/10",
-   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -2128,7 +2344,7 @@
    "section": "perennials",
    "genus": "Centaurea",
    "pack": 100,
-   "name": "Centaurea mont.'Amethyst in Snow'.",
+   "name": "Centaurea mont.'Amethyst in Snow'",
    "flowering": "6-8",
    "height": "50/70",
    "weeks": "22-28"
@@ -2144,12 +2360,30 @@
   },
   {
    "section": "perennials",
+   "genus": "Centranthus",
+   "pack": 100,
+   "name": "Centranthus ruber",
+   "flowering": "6-8",
+   "height": "60",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Centranthus",
+   "pack": 100,
+   "name": "Centranthus ruber 'Albus'",
+   "flowering": "6-8",
+   "height": "60",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
    "genus": "Ceratostigma",
    "pack": 100,
    "name": "Ceratostigma plumbaginoides",
    "flowering": "8-10",
    "height": "20/30",
-   "weeks": "20-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -2168,6 +2402,15 @@
    "flowering": "7-9",
    "height": "40/60",
    "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Chiastophyllum",
+   "pack": 100,
+   "name": "Chiastophyllum oppossitifolium",
+   "flowering": "6-7",
+   "height": "10/20",
+   "weeks": "24-28"
   },
   {
    "section": "perennials",
@@ -2256,7 +2499,7 @@
    "pack": 100,
    "name": "Corydalis 'Berry Exciting'",
    "flowering": "6-8",
-   "height": "35",
+   "height": "30/35",
    "weeks": "23-28"
   },
   {
@@ -2265,7 +2508,16 @@
    "pack": 100,
    "name": "Corydalis 'Blackberry Wine'",
    "flowering": "5-8",
-   "height": "40",
+   "height": "30/35",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Corydalis",
+   "pack": 100,
+   "name": "Corydalis 'Blue Heron'",
+   "flowering": "5-8",
+   "height": "30/35",
    "weeks": "23-28"
   },
   {
@@ -2290,19 +2542,28 @@
    "section": "perennials",
    "genus": "Cosmos",
    "pack": 100,
+   "name": "Cosmos atro. 'Cherry Chocolate'",
+   "flowering": "6-10",
+   "height": "50",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cosmos",
+   "pack": 100,
+   "name": "Cosmos atro. 'Chocamocha'",
+   "flowering": "6-10",
+   "height": "70",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cosmos",
+   "pack": 100,
    "name": "Cosmos atrosanguineus",
    "flowering": "6-10",
    "height": "50/70",
    "weeks": "23-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Crocosmia",
-   "pack": 100,
-   "name": "Crocosmia 'George Davidson'",
-   "flowering": "8-9",
-   "height": "60/75",
-   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -2315,12 +2576,57 @@
   },
   {
    "section": "perennials",
-   "genus": "Darmera",
-   "pack": 100,
-   "name": "Darmera peltata",
+   "genus": "Cyclamen",
+   "pack": 180,
+   "name": "Cyclamen coum",
    "flowering": "3-5",
-   "height": "70/80",
-   "weeks": "22-28"
+   "height": "10/15",
+   "weeks": "23-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cyclamen",
+   "pack": 180,
+   "name": "Cyclamen coum 'Album'",
+   "flowering": "3-5",
+   "height": "10/15",
+   "weeks": "23-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cyclamen",
+   "pack": 180,
+   "name": "Cyclamen coum 'Rubrum'",
+   "flowering": "3-5",
+   "height": "10/15",
+   "weeks": "23-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cyclamen",
+   "pack": 180,
+   "name": "Cyclamen hederifolium 'Album' ('Perlenteppich",
+   "flowering": "8-9",
+   "height": "10/15",
+   "weeks": "23-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cyclamen",
+   "pack": 180,
+   "name": "Cyclamen hederifolium 'Pink' ('Rosenteppich')",
+   "flowering": "8-9",
+   "height": "10/15",
+   "weeks": "23-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Cyclamen",
+   "pack": 180,
+   "name": "Cyclamen hederifolium 'Purple'",
+   "flowering": "8-9",
+   "height": "10/15",
+   "weeks": "23-26"
   },
   {
    "section": "perennials",
@@ -2330,6 +2636,15 @@
    "flowering": "5-7",
    "height": "10",
    "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Delphinium",
+   "pack": 100,
+   "name": "Delphinium 'Atlantis'",
+   "flowering": "6-7",
+   "height": "50/125",
+   "weeks": "22-26"
   },
   {
    "section": "perennials",
@@ -2371,7 +2686,7 @@
    "section": "perennials",
    "genus": "Delphinium",
    "pack": 100,
-   "name": "Delphinium 'Finsterahorn'",
+   "name": "Delphinium 'Finsteraarhorn'",
    "flowering": "6-7",
    "height": "40/125",
    "weeks": "22-26"
@@ -2380,10 +2695,28 @@
    "section": "perennials",
    "genus": "Delphinium",
    "pack": 100,
+   "name": "Delphinium 'Kleine Nachtmusik'",
+   "flowering": "6-7",
+   "height": "50/100",
+   "weeks": "22-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Delphinium",
+   "pack": 100,
    "name": "Delphinium 'Moonlight'",
    "flowering": "6-7",
-   "height": "75",
+   "height": "50/80",
    "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Delphinium",
+   "pack": 100,
+   "name": "Delphinium 'Piccolo'",
+   "flowering": "6-7",
+   "height": "40/125",
+   "weeks": "22-26"
   },
   {
    "section": "perennials",
@@ -2391,8 +2724,17 @@
    "pack": 100,
    "name": "Delphinium 'Samba'",
    "flowering": "6-8",
-   "height": "75",
+   "height": "50/80",
    "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Delphinium",
+   "pack": 100,
+   "name": "Delphinium 'Snowwhite'",
+   "flowering": "6-7",
+   "height": "40/125",
+   "weeks": "22-26"
   },
   {
    "section": "perennials",
@@ -2407,54 +2749,18 @@
    "section": "perennials",
    "genus": "Delphinium",
    "pack": 100,
+   "name": "Delphinium 'Voelkerfrieden'",
+   "flowering": "6-7",
+   "height": "40/125",
+   "weeks": "22-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Delphinium",
+   "pack": 100,
    "name": "Delphinium ruysii 'Pink Sensation'",
    "flowering": "6-7",
    "height": "30/100",
-   "weeks": "22-26"
-  },
-  {
-   "section": "perennials",
-   "genus": "Delphinium(B)",
-   "pack": 100,
-   "name": "Delphinium(B)'Atlantis'",
-   "flowering": "6-7",
-   "height": "50/125",
-   "weeks": "22-26"
-  },
-  {
-   "section": "perennials",
-   "genus": "Delphinium(B)",
-   "pack": 100,
-   "name": "Delphinium(B)'Kleine Nachtmusik'",
-   "flowering": "6-7",
-   "height": "50/100",
-   "weeks": "22-26"
-  },
-  {
-   "section": "perennials",
-   "genus": "Delphinium(B)",
-   "pack": 100,
-   "name": "Delphinium(B)'Piccolo'",
-   "flowering": "6-7",
-   "height": "40/125",
-   "weeks": "22-26"
-  },
-  {
-   "section": "perennials",
-   "genus": "Delphinium(B)",
-   "pack": 100,
-   "name": "Delphinium(B)'Snowwhite'",
-   "flowering": "6-7",
-   "height": "40/125",
-   "weeks": "22-26"
-  },
-  {
-   "section": "perennials",
-   "genus": "Delphinium(B)",
-   "pack": 100,
-   "name": "Delphinium(B)'Voelkerfrieden'",
-   "flowering": "6-7",
-   "height": "40/125",
    "weeks": "22-26"
   },
   {
@@ -2464,7 +2770,7 @@
    "name": "Dicentra 'Valentine'",
    "flowering": "4-6",
    "height": "50/70",
-   "weeks": "22-28"
+   "weeks": "21-26"
   },
   {
    "section": "perennials",
@@ -2473,7 +2779,7 @@
    "name": "Dicentra spectabilis 'Alba'",
    "flowering": "4-6",
    "height": "50/70",
-   "weeks": "22-28"
+   "weeks": "21-26"
   },
   {
    "section": "perennials",
@@ -2482,7 +2788,7 @@
    "name": "Dicentra spectablis",
    "flowering": "4-6",
    "height": "50/70",
-   "weeks": "22-28"
+   "weeks": "21-26"
   },
   {
    "section": "perennials",
@@ -2500,7 +2806,7 @@
    "name": "Echinacea 'Augustkoenigin'",
    "flowering": "7-9",
    "height": "45/70",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2510,6 +2816,15 @@
    "flowering": "6-8",
    "height": "40",
    "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Echinacea",
+   "pack": 100,
+   "name": "Echinacea 'Delicious Strawberry'",
+   "flowering": "6-8",
+   "height": "65/75",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -2551,7 +2866,7 @@
    "section": "perennials",
    "genus": "Echinacea",
    "pack": 100,
-   "name": "Echinacea 'Glowing Dream' .",
+   "name": "Echinacea 'Glowing Dream'",
    "flowering": "6-9",
    "height": "50",
    "weeks": "23-29"
@@ -2563,7 +2878,7 @@
    "name": "Echinacea 'Green Jewel'",
    "flowering": "6-8",
    "height": "50",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2572,7 +2887,7 @@
    "name": "Echinacea 'Harvest Moon'",
    "flowering": "6-8",
    "height": "50",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2581,7 +2896,7 @@
    "name": "Echinacea 'Hot Lava'",
    "flowering": "7-9",
    "height": "95",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2590,7 +2905,7 @@
    "name": "Echinacea 'Hot Summer'",
    "flowering": "6-9",
    "height": "70",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2608,7 +2923,7 @@
    "name": "Echinacea 'Little Magnus'",
    "flowering": "7-9",
    "height": "60",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2617,7 +2932,7 @@
    "name": "Echinacea 'Meditation White'",
    "flowering": "7-9",
    "height": "60",
-   "weeks": "20-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2635,7 +2950,7 @@
    "name": "Echinacea 'Pica Bella'",
    "flowering": "7-9",
    "height": "60",
-   "weeks": "23-29"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -2653,6 +2968,15 @@
    "name": "Echinacea 'Purity'",
    "flowering": "4-9",
    "height": "65",
+   "weeks": "23-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Echinacea",
+   "pack": 100,
+   "name": "Echinacea 'Ruby Giant'",
+   "flowering": "7-9",
+   "height": "80",
    "weeks": "23-29"
   },
   {
@@ -2731,15 +3055,6 @@
    "section": "perennials",
    "genus": "Echinacea",
    "pack": 100,
-   "name": "Echinacea 'Vintage Wine'",
-   "flowering": "7-9",
-   "height": "120",
-   "weeks": "22-29"
-  },
-  {
-   "section": "perennials",
-   "genus": "Echinacea",
-   "pack": 100,
    "name": "Echinacea 'Virgin'",
    "flowering": "7-9",
    "height": "120",
@@ -2752,7 +3067,7 @@
    "name": "Echinacea pallida",
    "flowering": "6-8",
    "height": "50/80",
-   "weeks": "22-26"
+   "weeks": "20-29"
   },
   {
    "section": "perennials",
@@ -2770,7 +3085,7 @@
    "name": "Echinacea purp.'Rubinstern'",
    "flowering": "6-8",
    "height": "50/80",
-   "weeks": "22-29"
+   "weeks": "20-29"
   },
   {
    "section": "perennials",
@@ -2788,7 +3103,7 @@
    "name": "Echinacea purpurea",
    "flowering": "6-8",
    "height": "50/80",
-   "weeks": "22-29"
+   "weeks": "20-29"
   },
   {
    "section": "perennials",
@@ -2857,6 +3172,15 @@
    "section": "perennials",
    "genus": "Echinacea",
    "pack": 100,
+   "name": "Echinacea SunSeeker 'Rosy'",
+   "flowering": "7-9",
+   "height": "60",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Echinacea",
+   "pack": 100,
    "name": "Echinacea SunSeeker 'Salmon'",
    "flowering": "7-9",
    "height": "40",
@@ -2878,6 +3202,15 @@
    "name": "Echinops bann.'Taplow Blue'",
    "flowering": "7-9",
    "height": "25/100",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Echinops",
+   "pack": 100,
+   "name": "Echinops ritro 'Veitch's Blue'",
+   "flowering": "7-9",
+   "height": "25/80",
    "weeks": "24-30"
   },
   {
@@ -2938,25 +3271,7 @@
    "section": "perennials",
    "genus": "Epimedium",
    "pack": 100,
-   "name": "Epimedium perral. 'Frohnleiten'",
-   "flowering": "4-5",
-   "height": "20/25",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Epimedium",
-   "pack": 100,
-   "name": "Epimedium pubig. 'Orangeköningin'",
-   "flowering": "4-5",
-   "height": "20/25",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Epimedium",
-   "pack": 100,
-   "name": "Epimedium rubrum",
+   "name": "Epimedium perr.'Frohnleiten'",
    "flowering": "4-5",
    "height": "20/25",
    "weeks": "25-30"
@@ -2974,7 +3289,7 @@
    "section": "perennials",
    "genus": "Epimedium",
    "pack": 100,
-   "name": "Epimedium young.'Niveum'",
+   "name": "Epimedium young. 'Niveum'",
    "flowering": "4-5",
    "height": "25/25",
    "weeks": "25-30"
@@ -3001,10 +3316,19 @@
    "section": "perennials",
    "genus": "Erigeron",
    "pack": 100,
-   "name": "Erigeron karvin.'Lavander Lady'",
+   "name": "Erigeron karvin.'Lavender Lady'",
    "flowering": "5-7",
    "height": "20/30",
-   "weeks": "20-30"
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Erigeron",
+   "pack": 100,
+   "name": "Erigeron karvin.'White Profusion'",
+   "flowering": "7-9",
+   "height": "20/50",
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -3049,15 +3373,6 @@
    "name": "Eryngium 'Pen Blue'",
    "flowering": "7-8",
    "height": "90",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Eryngium",
-   "pack": 100,
-   "name": "Eryngium 'Violetta'",
-   "flowering": "7-9",
-   "height": "70",
    "weeks": "25-30"
   },
   {
@@ -3129,7 +3444,7 @@
    "pack": 100,
    "name": "Euphorbia 'Miners Merlot'",
    "flowering": "3-5",
-   "height": "60",
+   "height": "40/60",
    "weeks": "23-30"
   },
   {
@@ -3235,6 +3550,15 @@
    "section": "perennials",
    "genus": "Euphorbia",
    "pack": 100,
+   "name": "Euphorbia martinii 'Little Treasure'",
+   "flowering": "3-6",
+   "height": "50",
+   "weeks": "20-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Euphorbia",
+   "pack": 100,
    "name": "Euphorbia myrsinites",
    "flowering": "5-8",
    "height": "10/15",
@@ -3262,7 +3586,7 @@
    "section": "perennials",
    "genus": "Euphorbia",
    "pack": 100,
-   "name": "Euphorbia polychroma",
+   "name": "Euphorbia polychroma (epithymoides)",
    "flowering": "4-5",
    "height": "35/45",
    "weeks": "25-30"
@@ -3289,6 +3613,24 @@
    "section": "perennials",
    "genus": "Fuchsia",
    "pack": 100,
+   "name": "Fuchsia 'Lady Thumb'",
+   "flowering": "7-10",
+   "height": "70/80",
+   "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Fuchsia",
+   "pack": 100,
+   "name": "Fuchsia 'Mme.Cornelissen'",
+   "flowering": "7-10",
+   "height": "70/80",
+   "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Fuchsia",
+   "pack": 100,
    "name": "Fuchsia 'Mrs. Popple'",
    "flowering": "7-10",
    "height": "80/100",
@@ -3307,7 +3649,16 @@
    "section": "perennials",
    "genus": "Fuchsia",
    "pack": 100,
-   "name": "Fuchsia magell.'Alba'(=Hawkshead)",
+   "name": "Fuchsia 'Tom Thumb'",
+   "flowering": "7-10",
+   "height": "40/50",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Fuchsia",
+   "pack": 100,
+   "name": "Fuchsia magell.'Alba' (=Hawkshead)",
    "flowering": "7-10",
    "height": "70/80",
    "weeks": "20-30"
@@ -3343,7 +3694,7 @@
    "section": "perennials",
    "genus": "Gaura",
    "pack": 100,
-   "name": "Gaura lind.'Crimson Butterfly.'",
+   "name": "Gaura lind.'Crimson Butterfly'",
    "flowering": "7-10",
    "height": "20/30",
    "weeks": "18-30"
@@ -3496,9 +3847,27 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
+   "name": "Geranium 'Dusky Crug'",
+   "flowering": "6-8",
+   "height": "30/40",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
    "name": "Geranium 'Elizabeth Ann'",
    "flowering": "6-9",
    "height": "40/50",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium 'Elworthy Eyecatcher'",
+   "flowering": "6-9",
+   "height": "30/40",
    "weeks": "22-28"
   },
   {
@@ -3516,7 +3885,7 @@
    "pack": 100,
    "name": "Geranium 'Hocus Pocus'",
    "flowering": "6-9",
-   "height": "40",
+   "height": "30/40",
    "weeks": "24-28"
   },
   {
@@ -3541,7 +3910,7 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium 'Jolly Bees' (= 'Rozanne)'",
+   "name": "Geranium 'Jolly Bees' ( = 'Rozanne')",
    "flowering": "6-10",
    "height": "35/45",
    "weeks": "14-30"
@@ -3570,7 +3939,7 @@
    "pack": 100,
    "name": "Geranium 'Lilac Ice'",
    "flowering": "6-10",
-   "height": "25",
+   "height": "30/40",
    "weeks": "22-29"
   },
   {
@@ -3658,10 +4027,19 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
+   "name": "Geranium cin. subcaulescens",
+   "flowering": "5-8",
+   "height": "10/15",
+   "weeks": "18-23"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
    "name": "Geranium cin.'Ballerina'",
    "flowering": "5-8",
    "height": "10/15",
-   "weeks": "23-28"
+   "weeks": "18-23"
   },
   {
    "section": "perennials",
@@ -3676,10 +4054,10 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium cin.subcaulescens",
-   "flowering": "5-8",
-   "height": "10/15",
-   "weeks": "18-23"
+   "name": "Geranium endr.'Wargrave Pink'",
+   "flowering": "6-8",
+   "height": "30",
+   "weeks": "20-26"
   },
   {
    "section": "perennials",
@@ -3697,7 +4075,7 @@
    "name": "Geranium himalayense 'Derrick Cook'",
    "flowering": "6-8",
    "height": "30/40",
-   "weeks": "20-23"
+   "weeks": "20-26"
   },
   {
    "section": "perennials",
@@ -3706,13 +4084,13 @@
    "name": "Geranium himalayense 'Gravetye'",
    "flowering": "6-8",
    "height": "30/40",
-   "weeks": "20-23"
+   "weeks": "20-26"
   },
   {
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium magn. 'Rosemoor'",
+   "name": "Geranium magn.'Rosemoor'",
    "flowering": "6-8",
    "height": "40/60",
    "weeks": "23-30"
@@ -3730,7 +4108,7 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium nod. 'Clos du Coudray'",
+   "name": "Geranium nod.'Clos du Coudray'",
    "flowering": "5-8",
    "height": "25/30",
    "weeks": "23-30"
@@ -3769,6 +4147,15 @@
    "name": "Geranium phaeum 'Joseph Green'",
    "flowering": "5-8",
    "height": "60/80",
+   "weeks": "20-26"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium phaeum 'Lily Lovell'",
+   "flowering": "4-8",
+   "height": "50/60",
    "weeks": "20-26"
   },
   {
@@ -3838,15 +4225,6 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium renardii",
-   "flowering": "6-7",
-   "height": "20/25",
-   "weeks": "22-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Geranium",
-   "pack": 100,
    "name": "Geranium riv.'Mavis Simpson'",
    "flowering": "5-11",
    "height": "30/45",
@@ -3865,10 +4243,55 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium sang. striatum",
-   "flowering": "6-8",
+   "name": "Geranium sang. 'Frivolius Blanca'",
+   "flowering": "6-9",
+   "height": "25",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium sang. 'Frivolius Candy'",
+   "flowering": "5-9",
+   "height": "35",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium sang. 'Frivolius Giant'",
+   "flowering": "5-8",
    "height": "15/25",
-   "weeks": "23-30"
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium sang. 'Frivolius Lilac'",
+   "flowering": "5-8",
+   "height": "15/25",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium sang. 'Frivolius Pink'",
+   "flowering": "5-8",
+   "height": "15/25",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geranium",
+   "pack": 100,
+   "name": "Geranium sang. 'Frivolius Purple'",
+   "flowering": "5-8",
+   "height": "15/25",
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -3901,51 +4324,6 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium sang.'Frivolius Flashing Pink'",
-   "flowering": "5-8",
-   "height": "15/25",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Geranium",
-   "pack": 100,
-   "name": "Geranium sang.'Frivolius Giant'",
-   "flowering": "5-8",
-   "height": "15/25",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Geranium",
-   "pack": 100,
-   "name": "Geranium sang.'Frivolius Lilac'",
-   "flowering": "5-8",
-   "height": "15/25",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Geranium",
-   "pack": 100,
-   "name": "Geranium sang.'Frivolius Pink'",
-   "flowering": "5-8",
-   "height": "15/25",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Geranium",
-   "pack": 100,
-   "name": "Geranium sang.'Frivolius Purple'",
-   "flowering": "5-8",
-   "height": "15/25",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Geranium",
-   "pack": 100,
    "name": "Geranium sang.'Max Frei'",
    "flowering": "6-8",
    "height": "15/25",
@@ -3973,19 +4351,19 @@
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium sanguineum",
-   "flowering": "6-9",
-   "height": "20/30",
+   "name": "Geranium sang.striatum",
+   "flowering": "6-8",
+   "height": "15/25",
    "weeks": "23-30"
   },
   {
    "section": "perennials",
    "genus": "Geranium",
    "pack": 100,
-   "name": "Geranium sylv.'Album'",
-   "flowering": "5-7",
-   "height": "40/70",
-   "weeks": "23-28"
+   "name": "Geranium sanguineum",
+   "flowering": "6-9",
+   "height": "20/30",
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -4004,6 +4382,15 @@
    "flowering": "6-9",
    "height": "25/50",
    "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Geum",
+   "pack": 100,
+   "name": "Geum 'Banana Daiquiri'",
+   "flowering": "4-5",
+   "height": "60",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -4056,7 +4443,7 @@
    "pack": 100,
    "name": "Geum 'Firestarter'",
    "flowering": "4-9",
-   "height": "70",
+   "height": "50/70",
    "weeks": "18-30"
   },
   {
@@ -4156,7 +4543,7 @@
    "name": "Gypsophila 'Rosenschleier'",
    "flowering": "7-8",
    "height": "15/35",
-   "weeks": "26-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -4165,7 +4552,7 @@
    "name": "Gypsophila pan.'Bristol Fairy'",
    "flowering": "7-8",
    "height": "55/100",
-   "weeks": "26-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -4174,7 +4561,7 @@
    "name": "Gypsophila pan.'Flamingo'",
    "flowering": "7-8",
    "height": "60/100",
-   "weeks": "26-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -4183,16 +4570,7 @@
    "name": "Gypsophila pan.'Pink Festival'",
    "flowering": "7-8",
    "height": "60/70",
-   "weeks": "26-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Hakonochloa",
-   "pack": 100,
-   "name": "Hakonochloa macra 'Sunflare'",
-   "flowering": "7-9",
-   "height": "40",
-   "weeks": "23-28"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -4234,15 +4612,6 @@
    "section": "perennials",
    "genus": "Helenium",
    "pack": 100,
-   "name": "Helenium aut.'Pumilum Magnificum'",
-   "flowering": "6-9",
-   "height": "40/60",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Helenium",
-   "pack": 100,
    "name": "Helenium big.'The Bishop'",
    "flowering": "6-9",
    "height": "40/60",
@@ -4253,15 +4622,6 @@
    "genus": "Helianthemum",
    "pack": 100,
    "name": "Helianthemum 'Amabile Plenum'",
-   "flowering": "5-8",
-   "height": "20/25",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Helianthemum",
-   "pack": 100,
-   "name": "Helianthemum 'Ben Fhada'",
    "flowering": "5-8",
    "height": "20/25",
    "weeks": "22-30"
@@ -4459,7 +4819,16 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'MixedDouble'",
+   "name": "Helleborus or.'Green Double '",
+   "flowering": "2-4",
+   "height": "30/50",
+   "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Helleborus",
+   "pack": 100,
+   "name": "Helleborus or.'Mixed Double'",
    "flowering": "1-4",
    "height": "30/40",
    "weeks": "18-30"
@@ -4468,7 +4837,16 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'PicoteeDouble'",
+   "name": "Helleborus or.'Picotee Double '",
+   "flowering": "1-4",
+   "height": "30/40",
+   "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Helleborus",
+   "pack": 100,
+   "name": "Helleborus or.'Pink Double '",
    "flowering": "1-4",
    "height": "30/40",
    "weeks": "18-30"
@@ -4486,16 +4864,7 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'Pink SpottedDouble",
-   "flowering": "1-4",
-   "height": "30/40",
-   "weeks": "18-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Helleborus",
-   "pack": 100,
-   "name": "Helleborus or.'PinkDouble",
+   "name": "Helleborus or.'Pink Spotted Double '",
    "flowering": "1-4",
    "height": "30/40",
    "weeks": "18-30"
@@ -4540,7 +4909,16 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'PurpleDouble",
+   "name": "Helleborus or.'Purple Double'",
+   "flowering": "1-4",
+   "height": "30/40",
+   "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Helleborus",
+   "pack": 100,
+   "name": "Helleborus or.'Red Double '",
    "flowering": "1-4",
    "height": "30/40",
    "weeks": "18-30"
@@ -4576,7 +4954,7 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'RedDouble",
+   "name": "Helleborus or.'White Double'",
    "flowering": "1-4",
    "height": "30/40",
    "weeks": "18-30"
@@ -4603,6 +4981,15 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
+   "name": "Helleborus or.'White Spotted Double",
+   "flowering": "1-4",
+   "height": "30/40",
+   "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Helleborus",
+   "pack": 100,
    "name": "Helleborus or.'White Spotted'",
    "flowering": "12-4",
    "height": "30/40",
@@ -4612,16 +4999,7 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'White SpottedDouble",
-   "flowering": "1-4",
-   "height": "30/40",
-   "weeks": "18-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Helleborus",
-   "pack": 100,
-   "name": "Helleborus or.'WhiteDouble",
+   "name": "Helleborus or.'Yellow Double '",
    "flowering": "1-4",
    "height": "30/40",
    "weeks": "18-30"
@@ -4639,15 +5017,6 @@
    "section": "perennials",
    "genus": "Helleborus",
    "pack": 100,
-   "name": "Helleborus or.'YellowDouble",
-   "flowering": "1-4",
-   "height": "30/40",
-   "weeks": "18-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Helleborus",
-   "pack": 100,
    "name": "Helleborus orientalis",
    "flowering": "12-4",
    "height": "30/40",
@@ -4656,11 +5025,11 @@
   {
    "section": "perennials",
    "genus": "Hemerocallis",
-   "pack": 100,
+   "pack": 60,
    "name": "Hemerocallis 'American Revolution'",
    "flowering": "6-7",
    "height": "50/90",
-   "weeks": "22-29"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -4701,7 +5070,16 @@
   {
    "section": "perennials",
    "genus": "Hemerocallis",
-   "pack": 100,
+   "pack": 60,
+   "name": "Hemerocallis 'Rosy Returns'",
+   "flowering": "6-9",
+   "height": "40",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Hemerocallis",
+   "pack": 60,
    "name": "Hemerocallis 'Stella d'Oro'",
    "flowering": "5-10",
    "height": "25/30",
@@ -4723,7 +5101,7 @@
    "name": "Heuchera 'Amber Waves'",
    "flowering": "6-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4731,8 +5109,8 @@
    "pack": 100,
    "name": "Heuchera 'Amethyst Myst'",
    "flowering": "6-7",
-   "height": "40",
-   "weeks": "23-28"
+   "height": "30/40",
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4741,7 +5119,7 @@
    "name": "Heuchera 'Apple Crisp'",
    "flowering": "5-6",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4749,8 +5127,8 @@
    "pack": 100,
    "name": "Heuchera 'Beaujolais'",
    "flowering": "5-9",
-   "height": "40",
-   "weeks": "23-28"
+   "height": "30/40",
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4759,7 +5137,7 @@
    "name": "Heuchera 'Berry Smoothie'",
    "flowering": "6-7",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4768,7 +5146,7 @@
    "name": "Heuchera 'Binoche'",
    "flowering": "6-7",
    "height": "30/40",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4777,7 +5155,7 @@
    "name": "Heuchera 'Black Beauty'",
    "flowering": "6-7",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4786,7 +5164,7 @@
    "name": "Heuchera 'Brownies'",
    "flowering": "7-11",
    "height": "30/40",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4795,7 +5173,7 @@
    "name": "Heuchera 'Cajun Fire'",
    "flowering": "6-8",
    "height": "15/50",
-   "weeks": "23-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4804,7 +5182,7 @@
    "name": "Heuchera 'Caramel'",
    "flowering": "5-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4813,7 +5191,7 @@
    "name": "Heuchera 'Cherry Cola'",
    "flowering": "5-6",
    "height": "30/40",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4822,7 +5200,7 @@
    "name": "Heuchera 'Chocolate Ruffles'",
    "flowering": "5-7",
    "height": "30/40",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4831,7 +5209,7 @@
    "name": "Heuchera 'Cinnabar Silver'",
    "flowering": "5-7",
    "height": "30/40",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4840,7 +5218,7 @@
    "name": "Heuchera 'Citronella'",
    "flowering": "5-7",
    "height": "30/40",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4849,7 +5227,7 @@
    "name": "Heuchera 'Ebony & Ivory'",
    "flowering": "6-8",
    "height": "25/35",
-   "weeks": "23-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4858,7 +5236,7 @@
    "name": "Heuchera 'Electra'",
    "flowering": "6-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4867,7 +5245,7 @@
    "name": "Heuchera 'Fire Alarm'",
    "flowering": "6-8",
    "height": "25/35",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4876,7 +5254,7 @@
    "name": "Heuchera 'Fire Chief'",
    "flowering": "6-9",
    "height": "25/35",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4885,7 +5263,7 @@
    "name": "Heuchera 'Forever Purple'",
    "flowering": "4-6",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4894,7 +5272,7 @@
    "name": "Heuchera 'Forever Red'",
    "flowering": "4-9",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4903,7 +5281,7 @@
    "name": "Heuchera 'Frosted Violet'",
    "flowering": "6-9",
    "height": "50/60",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4912,7 +5290,7 @@
    "name": "Heuchera 'Georgia Peach'",
    "flowering": "5-8",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4921,7 +5299,7 @@
    "name": "Heuchera 'Georgia Plum'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4930,7 +5308,7 @@
    "name": "Heuchera 'Ginger Ale'",
    "flowering": "6-7",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4939,7 +5317,7 @@
    "name": "Heuchera 'Glitter'",
    "flowering": "6-8",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4948,7 +5326,7 @@
    "name": "Heuchera 'Green Spice'",
    "flowering": "6-7",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4957,7 +5335,7 @@
    "name": "Heuchera 'Lime Marmalade'",
    "flowering": "6-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4966,7 +5344,7 @@
    "name": "Heuchera 'Lime Ricky'",
    "flowering": "6-7",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4975,7 +5353,7 @@
    "name": "Heuchera 'Lipstick'",
    "flowering": "5-6",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4984,7 +5362,7 @@
    "name": "Heuchera 'Marmalade'",
    "flowering": "5-9",
    "height": "50/60",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -4993,7 +5371,7 @@
    "name": "Heuchera 'Midnight Rose'",
    "flowering": "6-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5002,16 +5380,7 @@
    "name": "Heuchera 'Mint Frost'",
    "flowering": "5-6",
    "height": "30/40",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Heuchera",
-   "pack": 100,
-   "name": "Heuchera 'Mocha'",
-   "flowering": "6-7",
-   "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5020,7 +5389,7 @@
    "name": "Heuchera 'Obsidian'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5029,7 +5398,7 @@
    "name": "Heuchera 'Paprika'",
    "flowering": "5-6",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5038,7 +5407,7 @@
    "name": "Heuchera 'Paris'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5047,7 +5416,7 @@
    "name": "Heuchera 'Peach Flambe'",
    "flowering": "5-6",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5056,7 +5425,7 @@
    "name": "Heuchera 'Pinot Gris'",
    "flowering": "6-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5065,7 +5434,7 @@
    "name": "Heuchera 'Plum Pudding'",
    "flowering": "5-8",
    "height": "45/55",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5074,25 +5443,7 @@
    "name": "Heuchera 'Plum Royale'",
    "flowering": "5-7",
    "height": "45/55",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Heuchera",
-   "pack": 100,
-   "name": "Heuchera 'Prince'",
-   "flowering": "5-7",
-   "height": "35",
-   "weeks": "23-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Heuchera",
-   "pack": 100,
-   "name": "Heuchera 'Rachel'",
-   "flowering": "6-7",
-   "height": "45/55",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5100,8 +5451,8 @@
    "pack": 100,
    "name": "Heuchera 'Red Lightning'",
    "flowering": "6-9",
-   "height": "45",
-   "weeks": "23-28"
+   "height": "25/35",
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5110,7 +5461,7 @@
    "name": "Heuchera 'Shanghai'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5119,7 +5470,7 @@
    "name": "Heuchera 'Silver Gumdrop'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5128,7 +5479,7 @@
    "name": "Heuchera 'Silver Scrolls'",
    "flowering": "5-7",
    "height": "25/35",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5137,16 +5488,7 @@
    "name": "Heuchera 'Southern Comfort'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Heuchera",
-   "pack": 100,
-   "name": "Heuchera 'Spellbound'",
-   "flowering": "5-9",
-   "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5155,7 +5497,7 @@
    "name": "Heuchera 'Sugar Plum'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5164,7 +5506,7 @@
    "name": "Heuchera 'Sweet Tart'",
    "flowering": "5-9",
    "height": "25/35",
-   "weeks": "24-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5173,7 +5515,7 @@
    "name": "Heuchera 'Tiramisu'",
    "flowering": "6-7",
    "height": "25/35",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5182,7 +5524,7 @@
    "name": "Heuchera 'Wild Rose'",
    "flowering": "6-8",
    "height": "25/35",
-   "weeks": "22-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5191,7 +5533,7 @@
    "name": "Heuchera 'Wildberry'",
    "flowering": "6-8",
    "height": "30",
-   "weeks": "23-28"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5200,7 +5542,7 @@
    "name": "Heuchera briz.'Pluie de Feu'",
    "flowering": "6-8",
    "height": "15/50",
-   "weeks": "22-30"
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -5224,10 +5566,28 @@
    "section": "perennials",
    "genus": "Heucherella",
    "pack": 100,
+   "name": "Heucherella 'Alabama Sunrise'",
+   "flowering": "7-9",
+   "height": "50",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Heucherella",
+   "pack": 100,
    "name": "Heucherella 'Brass Lantern'",
    "flowering": "4-6",
    "height": "45/55",
    "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Heucherella",
+   "pack": 100,
+   "name": "Heucherella 'Copper Cascade'",
+   "flowering": "5-6",
+   "height": "40",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -5312,6 +5672,15 @@
   },
   {
    "section": "perennials",
+   "genus": "Heucherella",
+   "pack": 100,
+   "name": "Heucherella 'Yellowstone Falls'",
+   "flowering": "4-6",
+   "height": "40",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
    "genus": "Hosta",
    "pack": 100,
    "name": "Hosta 'Big Daddy'",
@@ -5326,15 +5695,6 @@
    "name": "Hosta 'Blue Angel'",
    "flowering": "7-9",
    "height": "110",
-   "weeks": "23-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Hosta",
-   "pack": 100,
-   "name": "Hosta 'Blue Cadet'",
-   "flowering": "7-9",
-   "height": "50",
    "weeks": "23-30"
   },
   {
@@ -5413,9 +5773,9 @@
    "section": "perennials",
    "genus": "Hosta",
    "pack": 100,
-   "name": "Hosta 'Minuteman'",
-   "flowering": "7-9",
-   "height": "45",
+   "name": "Hosta 'Krossa Regal'",
+   "flowering": "6-8",
+   "height": "80",
    "weeks": "23-30"
   },
   {
@@ -5431,7 +5791,7 @@
    "section": "perennials",
    "genus": "Hosta",
    "pack": 100,
-   "name": "Hosta 'Purple Heart'.",
+   "name": "Hosta 'Purple Heart'",
    "flowering": "8-9",
    "height": "60",
    "weeks": "25-30"
@@ -5467,7 +5827,16 @@
    "section": "perennials",
    "genus": "Hosta",
    "pack": 100,
-   "name": "Hosta plant. grandiflora",
+   "name": "Hosta 'Wulala'",
+   "flowering": "7-8",
+   "height": "120",
+   "weeks": "23-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Hosta",
+   "pack": 100,
+   "name": "Hosta plant.'Grandiflora'",
    "flowering": "7-9",
    "height": "60",
    "weeks": "25-30"
@@ -5478,7 +5847,7 @@
    "pack": 100,
    "name": "Hosta sieb.'Elegans'",
    "flowering": "7-8",
-   "height": "55/70",
+   "height": "55",
    "weeks": "23-30"
   },
   {
@@ -5487,7 +5856,7 @@
    "pack": 100,
    "name": "Hosta sieb.'Frances Williams'",
    "flowering": "7-8",
-   "height": "55/70",
+   "height": "55",
    "weeks": "23-30"
   },
   {
@@ -5505,7 +5874,7 @@
    "pack": 100,
    "name": "Hosta und.'Albomarginata'",
    "flowering": "7-9",
-   "height": "30/70",
+   "height": "30",
    "weeks": "23-30"
   },
   {
@@ -5528,12 +5897,21 @@
   },
   {
    "section": "perennials",
+   "genus": "Hyssopus",
+   "pack": 100,
+   "name": "Hyssopus officinalis",
+   "flowering": "7-9",
+   "height": "40/60",
+   "weeks": ""
+  },
+  {
+   "section": "perennials",
    "genus": "Iberis",
    "pack": 100,
    "name": "Iberis semp.'Appen-Etz'",
    "flowering": "3-5",
    "height": "10/15",
-   "weeks": "20-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -5542,7 +5920,7 @@
    "name": "Iberis semp.'Snowflake'",
    "flowering": "4-6",
    "height": "20/25",
-   "weeks": "20-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -5551,7 +5929,7 @@
    "name": "Iberis semp.'Weisser Zwerg'",
    "flowering": "4-6",
    "height": "15/20",
-   "weeks": "20-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -5605,7 +5983,7 @@
    "name": "Knautia 'Green Lightning'",
    "flowering": "6-10",
    "height": "50/70",
-   "weeks": "23-28"
+   "weeks": "22-28"
   },
   {
    "section": "perennials",
@@ -5620,10 +5998,28 @@
    "section": "perennials",
    "genus": "Knautia",
    "pack": 100,
+   "name": "Knautia mac.'Melton Pastels'",
+   "flowering": "7-9",
+   "height": "90",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Knautia",
+   "pack": 100,
    "name": "Knautia macedonica",
    "flowering": "7-9",
    "height": "50/70",
    "weeks": "20-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Kniphofia",
+   "pack": 100,
+   "name": "Kniphofia 'Banana Popsicle'",
+   "flowering": "7-10",
+   "height": "60",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -5701,8 +6097,26 @@
    "section": "perennials",
    "genus": "Kniphofia",
    "pack": 100,
-   "name": "Kniphofia 'Pineapple Popsicle'",
-   "flowering": "4-9",
+   "name": "Kniphofia 'Poco Citron'",
+   "flowering": "6-10",
+   "height": "55",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Kniphofia",
+   "pack": 100,
+   "name": "Kniphofia 'Poco Red'",
+   "flowering": "6-10",
+   "height": "40/50",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Kniphofia",
+   "pack": 100,
+   "name": "Kniphofia 'Poco Sunset'",
+   "flowering": "7-10",
    "height": "40/50",
    "weeks": "22-30"
   },
@@ -5719,9 +6133,9 @@
    "section": "perennials",
    "genus": "Kniphofia",
    "pack": 100,
-   "name": "Kniphofia uvaria nobilis",
-   "flowering": "8-10",
-   "height": "160",
+   "name": "Kniphofia 'Tawny King'",
+   "flowering": "7-10",
+   "height": "125",
    "weeks": "23-28"
   },
   {
@@ -5731,7 +6145,7 @@
    "name": "Lamiastrum gal.'Herman's Pride'",
    "flowering": "5-6",
    "height": "20/30",
-   "weeks": "22-30"
+   "weeks": "22-26"
   },
   {
    "section": "perennials",
@@ -5827,15 +6241,6 @@
    "section": "perennials",
    "genus": "Lavandula",
    "pack": 100,
-   "name": "Lavandula ang.'Hidcote White'",
-   "flowering": "6-8",
-   "height": "40/60",
-   "weeks": "18-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Lavandula",
-   "pack": 100,
    "name": "Lavandula ang.'Hidcote'",
    "flowering": "6-8",
    "height": "20/40",
@@ -5872,7 +6277,7 @@
    "section": "perennials",
    "genus": "Lavandula",
    "pack": 100,
-   "name": "Lavandula ang.'White Fragrance'",
+   "name": "Lavandula ang.'White Essence'",
    "flowering": "6-8",
    "height": "40/60",
    "weeks": "18-30"
@@ -5912,6 +6317,15 @@
    "flowering": "6-8",
    "height": "25/40",
    "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Lavandula",
+   "pack": 100,
+   "name": "Lavandula stoechas 'Papillon'",
+   "flowering": "6-8",
+   "height": "50/70",
+   "weeks": "22-28"
   },
   {
    "section": "perennials",
@@ -6059,6 +6473,15 @@
   },
   {
    "section": "perennials",
+   "genus": "Linaria",
+   "pack": 100,
+   "name": "Linaria 'Peachy'",
+   "flowering": "6-9",
+   "height": "100",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
    "genus": "Liriope",
    "pack": 100,
    "name": "Liriope 'Moneymaker'",
@@ -6125,7 +6548,7 @@
    "genus": "Lobelia",
    "pack": 100,
    "name": "Lobelia 'Queen Victoria'",
-   "flowering": "####",
+   "flowering": "8/10",
    "height": "60/80",
    "weeks": "23-28"
   },
@@ -6160,8 +6583,8 @@
    "section": "perennials",
    "genus": "Lychnis",
    "pack": 100,
-   "name": "Lychnis cor.'Gardener's World'",
-   "flowering": "6-9",
+   "name": "Lychnis flos-cuculi 'Jenny'",
+   "flowering": "5-8",
    "height": "30/45",
    "weeks": "23-29"
   },
@@ -6169,10 +6592,10 @@
    "section": "perennials",
    "genus": "Lychnis",
    "pack": 100,
-   "name": "Lychnis flos-cuculi 'Jenny'",
-   "flowering": "5-8",
+   "name": "Lychnis visc.'Plena'",
+   "flowering": "6-8",
    "height": "30/45",
-   "weeks": "23-29"
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -6196,10 +6619,19 @@
    "section": "perennials",
    "genus": "Lysimachia",
    "pack": 100,
-   "name": "Lysimachia punct.'Alexander'",
-   "flowering": "6-8",
-   "height": "50/80",
-   "weeks": "20-30"
+   "name": "Lysimachia num.'Aurea'",
+   "flowering": "5-7",
+   "height": "10/10",
+   "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Lysimachia",
+   "pack": 100,
+   "name": "Lysimachia nummularia",
+   "flowering": "5-7",
+   "height": "10/10",
+   "weeks": "22-29"
   },
   {
    "section": "perennials",
@@ -6208,7 +6640,7 @@
    "name": "Lythrum sal.'Blush'",
    "flowering": "7-8",
    "height": "30/80",
-   "weeks": "20-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -6217,7 +6649,7 @@
    "name": "Lythrum sal.'Robert'",
    "flowering": "6-7",
    "height": "30/90",
-   "weeks": "20-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -6226,7 +6658,7 @@
    "name": "Lythrum sal.'Zigeunerblut'",
    "flowering": "6-7",
    "height": "100/120",
-   "weeks": "22-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -6235,7 +6667,7 @@
    "name": "Lythrum virg.'Dropmore Purple'",
    "flowering": "6-7",
    "height": "40/90",
-   "weeks": "22-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -6298,7 +6730,7 @@
    "name": "Monarda 'Jacob Cline'",
    "flowering": "6-8",
    "height": "80/100",
-   "weeks": "22-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -6329,6 +6761,15 @@
   },
   {
    "section": "perennials",
+   "genus": "Muhlenbergia",
+   "pack": 100,
+   "name": "Muhlenbergia capillaris",
+   "flowering": "7-9",
+   "height": "50/100",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
    "genus": "Mukdenia",
    "pack": 100,
    "name": "Mukdenia 'Nova Flame'",
@@ -6338,21 +6779,12 @@
   },
   {
    "section": "perennials",
-   "genus": "Mukdenia",
-   "pack": 100,
-   "name": "Mukdenia (ros.)'Karasuba'",
-   "flowering": "4-5",
-   "height": "35",
-   "weeks": "20-26"
-  },
-  {
-   "section": "perennials",
    "genus": "Myrrhis",
    "pack": 100,
    "name": "Myrrhis odorata",
    "flowering": "5-9",
    "height": "60/80",
-   "weeks": "18-30"
+   "weeks": "20-30"
   },
   {
    "section": "perennials",
@@ -6371,24 +6803,6 @@
    "flowering": "6-8",
    "height": "20/40",
    "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Nepeta",
-   "pack": 100,
-   "name": "Nepeta 'Neptune'",
-   "flowering": "5-9",
-   "height": "30/45",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Nepeta",
-   "pack": 100,
-   "name": "Nepeta faas.'Blauknirps'",
-   "flowering": "6-9",
-   "height": "15/20",
-   "weeks": "20-30"
   },
   {
    "section": "perennials",
@@ -6482,12 +6896,12 @@
   },
   {
    "section": "perennials",
-   "genus": "Oenothera",
+   "genus": "Nepeta",
    "pack": 100,
-   "name": "Oenothera spec.'Alba'",
-   "flowering": "6-8",
-   "height": "20/25",
-   "weeks": "20-30"
+   "name": "Nepeta Neptune",
+   "flowering": "5-9",
+   "height": "30/45",
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -6520,7 +6934,7 @@
    "section": "perennials",
    "genus": "Ophiopogon",
    "pack": 100,
-   "name": "Ophiopogon 'Black Dragon'",
+   "name": "Ophiopogon 'Black Dragon' (=Kokuryu)",
    "flowering": "8-9",
    "height": "20/30",
    "weeks": "18-30"
@@ -6532,7 +6946,7 @@
    "name": "Ophiopogon plan.'Niger'",
    "flowering": "8-9",
    "height": "20/30",
-   "weeks": "22-30"
+   "weeks": "18-30"
   },
   {
    "section": "perennials",
@@ -6560,6 +6974,15 @@
    "flowering": "8-9",
    "height": "25/45",
    "weeks": "18-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Origanum",
+   "pack": 100,
+   "name": "Origanum vulgare",
+   "flowering": "6-8",
+   "height": "15/25",
+   "weeks": "20-30"
   },
   {
    "section": "perennials",
@@ -6646,7 +7069,7 @@
    "section": "perennials",
    "genus": "Penstemon",
    "pack": 100,
-   "name": "Penstemon 'Garnet'(Andenken an F.Hahn)",
+   "name": "Penstemon 'Garnet' (Andenken an F.Hahn)",
    "flowering": "6-9",
    "height": "60/80",
    "weeks": "23-30"
@@ -6658,7 +7081,7 @@
    "name": "Penstemon 'Purple Passion'",
    "flowering": "6-9",
    "height": "40/80",
-   "weeks": "21-30"
+   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -6709,6 +7132,15 @@
    "section": "perennials",
    "genus": "Perovskia",
    "pack": 100,
+   "name": "Perovskia atrip. 'Bluesette'",
+   "flowering": "6-10",
+   "height": "30/55",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Perovskia",
+   "pack": 100,
    "name": "Perovskia atrip.'Blue Spire'",
    "flowering": "8-10",
    "height": "100/120",
@@ -6739,7 +7171,7 @@
    "name": "Perovskia atrip.'Prime Time'",
    "flowering": "6-9",
    "height": "80",
-   "weeks": "18-30"
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -6783,7 +7215,7 @@
    "pack": 100,
    "name": "Persicaria ampl.'Bonfire'",
    "flowering": "6-10",
-   "height": "70",
+   "height": "60/90",
    "weeks": "25-30"
   },
   {
@@ -6801,7 +7233,7 @@
    "pack": 100,
    "name": "Persicaria ampl.'Golden Arrow'",
    "flowering": "6-11",
-   "height": "120",
+   "height": "80/120",
    "weeks": "22-29"
   },
   {
@@ -6880,6 +7312,15 @@
    "section": "perennials",
    "genus": "Persicaria",
    "pack": 100,
+   "name": "Persicaria ampl.'Vesuvius'",
+   "flowering": "7-10",
+   "height": "60/80",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Persicaria",
+   "pack": 100,
    "name": "Persicaria ampl.'White Eastfield'",
    "flowering": "7-10",
    "height": "60/90",
@@ -6909,7 +7350,7 @@
    "pack": 100,
    "name": "Phlomis tub.'Amazone'",
    "flowering": "6-7",
-   "height": "140",
+   "height": "50/140",
    "weeks": "22-29"
   },
   {
@@ -6952,15 +7393,6 @@
    "section": "perennials",
    "genus": "Phlox",
    "pack": 100,
-   "name": "Phlox (D)'Ochsenblut'",
-   "flowering": "4-5",
-   "height": "10/10",
-   "weeks": "26-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
    "name": "Phlox (D)'Red Admiral'",
    "flowering": "4-5",
    "height": "10/10",
@@ -6970,43 +7402,7 @@
    "section": "perennials",
    "genus": "Phlox",
    "pack": 100,
-   "name": "Phlox (M)'Alpha'",
-   "flowering": "6-9",
-   "height": "25/80",
-   "weeks": "22-29"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
-   "name": "Phlox (M)'Delta'",
-   "flowering": "6-9",
-   "height": "25/80",
-   "weeks": "22-29"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
    "name": "Phlox (M)'Natascha'",
-   "flowering": "6-9",
-   "height": "25/80",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
-   "name": "Phlox (M)'Omega'",
-   "flowering": "6-9",
-   "height": "25/80",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
-   "name": "Phlox (M)'Rosalinde'",
    "flowering": "6-9",
    "height": "25/80",
    "weeks": "25-30"
@@ -7078,15 +7474,6 @@
    "section": "perennials",
    "genus": "Phlox",
    "pack": 100,
-   "name": "Phlox (P)'Rijnstroom'",
-   "flowering": "7-9",
-   "height": "60/90",
-   "weeks": "20-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
    "name": "Phlox (P)'Starfire'",
    "flowering": "7-9",
    "height": "70/100",
@@ -7117,7 +7504,7 @@
    "name": "Phlox (S)'Amazing Grace'",
    "flowering": "4-5",
    "height": "15/15",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -7126,7 +7513,7 @@
    "name": "Phlox (S)'Atropurpurea'",
    "flowering": "4-5",
    "height": "15/15",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -7135,7 +7522,7 @@
    "name": "Phlox (S)'Bavaria'",
    "flowering": "5-6",
    "height": "15/15",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -7144,7 +7531,7 @@
    "name": "Phlox (S)'Candy Stripes'",
    "flowering": "4-5",
    "height": "15/15",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -7153,7 +7540,7 @@
    "name": "Phlox (S)'Emerald Cushion Blue'",
    "flowering": "4-5",
    "height": "15/15",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -7180,15 +7567,6 @@
    "name": "Phlox (S)'MacDaniel's Cushion'",
    "flowering": "4-5",
    "height": "10/10",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
-   "name": "Phlox (S)'Maischnee'",
-   "flowering": "4-5",
-   "height": "15/15",
    "weeks": "25-30"
   },
   {
@@ -7258,10 +7636,19 @@
    "section": "perennials",
    "genus": "Phlox",
    "pack": 100,
+   "name": "Phlox (S)'Zwergenteppich'",
+   "flowering": "4-6",
+   "height": "10/10",
+   "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Phlox",
+   "pack": 100,
    "name": "Phlox div.'Blue Moon'",
    "flowering": "4-5",
    "height": "15/30",
-   "weeks": "25-30"
+   "weeks": "23-26"
   },
   {
    "section": "perennials",
@@ -7270,7 +7657,7 @@
    "name": "Phlox div.'Chattahoochee'",
    "flowering": "5-7",
    "height": "10/30",
-   "weeks": "25-30"
+   "weeks": "23-26"
   },
   {
    "section": "perennials",
@@ -7279,15 +7666,6 @@
    "name": "Phlox div.'Clouds of Perfume'",
    "flowering": "5-6",
    "height": "10/30",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Phlox",
-   "pack": 100,
-   "name": "Phlox div.'May Breeze'",
-   "flowering": "5-7",
-   "height": "30/40",
    "weeks": "25-30"
   },
   {
@@ -7301,12 +7679,12 @@
   },
   {
    "section": "perennials",
-   "genus": "Podophyllum",
+   "genus": "Pimpinella",
    "pack": 100,
-   "name": "Podophyllum 'Spotty Dotty' .",
-   "flowering": "7-8",
-   "height": "50",
-   "weeks": "23-28"
+   "name": "Pimpinella major 'Rosea'",
+   "flowering": "6-8",
+   "height": "90",
+   "weeks": "23-29"
   },
   {
    "section": "perennials",
@@ -7315,15 +7693,6 @@
    "name": "Polemonium 'Bressingham Purple'.",
    "flowering": "6-7",
    "height": "20/50",
-   "weeks": "22-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Polemonium",
-   "pack": 100,
-   "name": "Polemonium 'Brise d'Anjou'",
-   "flowering": "4-5",
-   "height": "25/40",
    "weeks": "22-30"
   },
   {
@@ -7357,7 +7726,7 @@
    "section": "perennials",
    "genus": "Pratia",
    "pack": 100,
-   "name": "Pratia ped. 'County Park'",
+   "name": "Pratia ped.'County Park'",
    "flowering": "4-6",
    "height": "5/10",
    "weeks": "22-30"
@@ -7411,6 +7780,15 @@
    "section": "perennials",
    "genus": "Pulmonaria",
    "pack": 100,
+   "name": "Pulmonaria 'High Contrast'.",
+   "flowering": "3-5",
+   "height": "35",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Pulmonaria",
+   "pack": 100,
    "name": "Pulmonaria 'Ice Ballet'",
    "flowering": "3-5",
    "height": "25/35",
@@ -7431,8 +7809,17 @@
    "pack": 100,
    "name": "Pulmonaria 'Miss Elly'",
    "flowering": "3-4",
-   "height": "30",
+   "height": "25/35",
    "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Pulmonaria",
+   "pack": 100,
+   "name": "Pulmonaria 'Moonshine'",
+   "flowering": "3-5",
+   "height": "35",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -7442,6 +7829,15 @@
    "flowering": "3-5",
    "height": "25/35",
    "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Pulmonaria",
+   "pack": 100,
+   "name": "Pulmonaria 'Pretty in Pink'",
+   "flowering": "4-5",
+   "height": "30",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -7474,10 +7870,37 @@
    "section": "perennials",
    "genus": "Pulmonaria",
    "pack": 100,
+   "name": "Pulmonaria 'Silver Scimitar'",
+   "flowering": "3-5",
+   "height": "20/25",
+   "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Pulmonaria",
+   "pack": 100,
    "name": "Pulmonaria 'Trevi Fountain'.",
    "flowering": "3-5",
    "height": "25/35",
    "weeks": "22-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Pulmonaria",
+   "pack": 100,
+   "name": "Pulmonaria 'Twinkle Toes'",
+   "flowering": "3-4",
+   "height": "20/30",
+   "weeks": "23-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Pulmonaria",
+   "pack": 100,
+   "name": "Pulmonaria 'Victorian Brooch'",
+   "flowering": "3-5",
+   "height": "35",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -7522,6 +7945,15 @@
    "name": "Rodgersia aesculifolia",
    "flowering": "5-6",
    "height": "80/120",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Rodgersia",
+   "pack": 100,
+   "name": "Rodgersia pinnata",
+   "flowering": "5-6",
+   "height": "60/80",
    "weeks": "24-30"
   },
   {
@@ -7603,7 +8035,7 @@
    "name": "Sagina sub.'Green Moss'",
    "flowering": "6-8",
    "height": "5",
-   "weeks": "22-28"
+   "weeks": "22-26"
   },
   {
    "section": "perennials",
@@ -7611,17 +8043,8 @@
    "pack": 100,
    "name": "Salvia 'Amistad'",
    "flowering": "5-10",
-   "height": "60/80",
+   "height": "70/150",
    "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Salvia",
-   "pack": 84,
-   "name": "Salvia 'Ember's Wish'",
-   "flowering": "6-10",
-   "height": "60/80",
-   "weeks": "23-30"
   },
   {
    "section": "perennials",
@@ -7629,13 +8052,13 @@
    "pack": 100,
    "name": "Salvia 'Royal Bumble'",
    "flowering": "6-11",
-   "height": "50",
+   "height": "40/60",
    "weeks": "20-30"
   },
   {
    "section": "perennials",
    "genus": "Salvia",
-   "pack": 84,
+   "pack": 100,
    "name": "Salvia 'Wendy's Wish'",
    "flowering": "6-10",
    "height": "60/80",
@@ -7780,6 +8203,15 @@
    "section": "perennials",
    "genus": "Salvia",
    "pack": 100,
+   "name": "Salvia off.'Aurea'",
+   "flowering": "6-8",
+   "height": "30/60",
+   "weeks": "22-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Salvia",
+   "pack": 100,
    "name": "Salvia off.'Berggarten'",
    "flowering": "6-8",
    "height": "40/60",
@@ -7807,18 +8239,36 @@
    "section": "perennials",
    "genus": "Sanguisorba",
    "pack": 100,
-   "name": "Sanguisorba 'Blackthorn'",
-   "flowering": "6-11",
-   "height": "50",
+   "name": "Sanguisorba 'Pink Brushes'",
+   "flowering": "6-9",
+   "height": "150",
+   "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Sanguisorba",
+   "pack": 100,
+   "name": "Sanguisorba 'Plum Drops'",
+   "flowering": "6-9",
+   "height": "100",
+   "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Sanguisorba",
+   "pack": 100,
+   "name": "Sanguisorba 'Proud Mary'",
+   "flowering": "6-10",
+   "height": "70",
    "weeks": "23-28"
   },
   {
    "section": "perennials",
    "genus": "Sanguisorba",
    "pack": 100,
-   "name": "Sanguisorba 'Pink Brushes'",
+   "name": "Sanguisorba hak.'Lilac Squirrel'",
    "flowering": "6-9",
-   "height": "150",
+   "height": "40/80",
    "weeks": "23-30"
   },
   {
@@ -7852,9 +8302,18 @@
    "section": "perennials",
    "genus": "Sanguisorba",
    "pack": 100,
-   "name": "Sanguisorba off.'White Tanna'",
+   "name": "Sanguisorba off.'White Brushes",
    "flowering": "6-9",
    "height": "80",
+   "weeks": "23-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Sanguisorba",
+   "pack": 100,
+   "name": "Sanguisorba ten.'All Time High'",
+   "flowering": "6-9",
+   "height": "180",
    "weeks": "23-30"
   },
   {
@@ -7888,15 +8347,6 @@
    "section": "perennials",
    "genus": "Santolina",
    "pack": 100,
-   "name": "Santolina rosm.'Lemon Fizz'",
-   "flowering": "7-9",
-   "height": "25/30",
-   "weeks": "20-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Santolina",
-   "pack": 100,
    "name": "Santolina rosmarinifolia",
    "flowering": "7-8",
    "height": "30/40",
@@ -7909,7 +8359,7 @@
    "name": "Saponaria 'Bressingham'",
    "flowering": "5-7",
    "height": "25",
-   "weeks": "18-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8000,6 +8450,15 @@
    "flowering": "5-7",
    "height": "5",
    "weeks": "20-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Sedum",
+   "pack": 100,
+   "name": "Sedum 'Bertram Anderson'",
+   "flowering": "8-9",
+   "height": "15/20",
+   "weeks": "22-30"
   },
   {
    "section": "perennials",
@@ -8156,21 +8615,21 @@
   },
   {
    "section": "perennials",
-   "genus": "Stachys",
+   "genus": "Sidalcea",
    "pack": 100,
-   "name": "Stachys 'Pink Cotton Candy'",
-   "flowering": "5-7",
-   "height": "50",
+   "name": "Sidalcea 'Little Princess'",
+   "flowering": "7-9",
+   "height": "60/85",
    "weeks": "23-28"
   },
   {
    "section": "perennials",
    "genus": "Stachys",
    "pack": 100,
-   "name": "Stachys 'Summer Crush'",
-   "flowering": "6-7",
-   "height": "30/60",
-   "weeks": "24-30"
+   "name": "Stachys 'Pink Cotton Candy'",
+   "flowering": "5-7",
+   "height": "50",
+   "weeks": "23-28"
   },
   {
    "section": "perennials",
@@ -8246,6 +8705,15 @@
   },
   {
    "section": "perennials",
+   "genus": "Tellima",
+   "pack": 100,
+   "name": "Tellima grandiflora",
+   "flowering": "5-6",
+   "height": "40/60",
+   "weeks": "24-30"
+  },
+  {
+   "section": "perennials",
    "genus": "Teucrium",
    "pack": 100,
    "name": "Teucrium chamaedrys 'Album'",
@@ -8284,6 +8752,15 @@
    "section": "perennials",
    "genus": "Thalictrum",
    "pack": 100,
+   "name": "Thalictrum 'Fairy Wings'",
+   "flowering": "7-9",
+   "height": "50",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
+   "genus": "Thalictrum",
+   "pack": 100,
    "name": "Thalictrum 'Nimbus Pink'",
    "flowering": "7-8",
    "height": "130",
@@ -8297,15 +8774,6 @@
    "flowering": "7-8",
    "height": "130",
    "weeks": "23-29"
-  },
-  {
-   "section": "perennials",
-   "genus": "Thalictrum",
-   "pack": 100,
-   "name": "Thalictrum 'Purplelicious'",
-   "flowering": "6-9",
-   "height": "50",
-   "weeks": "25-30"
   },
   {
    "section": "perennials",
@@ -8338,7 +8806,7 @@
    "section": "perennials",
    "genus": "Thalictrum",
    "pack": 100,
-   "name": "Thalictrum del.'Splendide' .",
+   "name": "Thalictrum del.'Splendide'",
    "flowering": "6-9",
    "height": "175",
    "weeks": "25-30"
@@ -8363,28 +8831,10 @@
   },
   {
    "section": "perennials",
-   "genus": "Thalictrum",
-   "pack": 100,
-   "name": "Thalictrum kiusianum",
-   "flowering": "6-8",
-   "height": "15",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
    "genus": "Thymus",
    "pack": 100,
    "name": "Thymus 'Doone Valley'",
    "flowering": "6-8",
-   "height": "10/10",
-   "weeks": "20-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Thymus",
-   "pack": 100,
-   "name": "Thymus citr.'Aureus'",
-   "flowering": "7-8",
    "height": "10/10",
    "weeks": "20-30"
   },
@@ -8480,6 +8930,24 @@
   },
   {
    "section": "perennials",
+   "genus": "Thymus",
+   "pack": 100,
+   "name": "Thymus vulg.'Silver Posie'",
+   "flowering": "6-7",
+   "height": "25",
+   "weeks": "20-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Tiarella",
+   "pack": 100,
+   "name": "Tiarella 'Angel Wings'",
+   "flowering": "5-6",
+   "height": "15",
+   "weeks": "22-28"
+  },
+  {
+   "section": "perennials",
    "genus": "Tiarella",
    "pack": 100,
    "name": "Tiarella 'Candy Striper'",
@@ -8495,15 +8963,6 @@
    "flowering": "5-6",
    "height": "15",
    "weeks": "22-29"
-  },
-  {
-   "section": "perennials",
-   "genus": "Tiarella",
-   "pack": 100,
-   "name": "Tiarella 'Pink Bouquet'",
-   "flowering": "4-5",
-   "height": "20",
-   "weeks": "22-28"
   },
   {
    "section": "perennials",
@@ -8539,33 +8998,6 @@
    "name": "Tiarella 'Sugar and Spice'",
    "flowering": "5-7",
    "height": "15",
-   "weeks": "22-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Tiarella",
-   "pack": 100,
-   "name": "Tiarella 'Sunset Ridge'",
-   "flowering": "4-6",
-   "height": "40",
-   "weeks": "22-29"
-  },
-  {
-   "section": "perennials",
-   "genus": "Tiarella",
-   "pack": 100,
-   "name": "Tiarella 'Tiger Stripe'",
-   "flowering": "4-6",
-   "height": "20",
-   "weeks": "24-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Tiarella",
-   "pack": 100,
-   "name": "Tiarella 'Timbuktu'",
-   "flowering": "8-10",
-   "height": "50",
    "weeks": "22-28"
   },
   {
@@ -8618,9 +9050,18 @@
    "genus": "Trollius",
    "pack": 100,
    "name": "Trollius 'Lemon Queen'",
-   "flowering": "####",
+   "flowering": "5/6",
    "height": "50/70",
    "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Tulbaghia",
+   "pack": 100,
+   "name": "Tulbaghia viol.' Silver Lace'",
+   "flowering": "6-9",
+   "height": "50/60",
+   "weeks": "20-30"
   },
   {
    "section": "perennials",
@@ -8629,16 +9070,25 @@
    "name": "Tulbaghia violacea",
    "flowering": "6-9",
    "height": "60/80",
-   "weeks": "18-29"
+   "weeks": "20-30"
   },
   {
    "section": "perennials",
    "genus": "Tulbaghia",
    "pack": 100,
-   "name": "Tulbaghia violacea Alba",
+   "name": "Tulbaghia violacea 'Alba'",
    "flowering": "6-9",
    "height": "60/80",
-   "weeks": "18-29"
+   "weeks": "20-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Verbena",
+   "pack": 100,
+   "name": "Verbena 'Homestead Purple'",
+   "flowering": "6-8",
+   "height": "15/30",
+   "weeks": "23-29"
   },
   {
    "section": "perennials",
@@ -8648,6 +9098,15 @@
    "flowering": "6-11",
    "height": "150",
    "weeks": "23-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Verbena",
+   "pack": 100,
+   "name": "Verbena 'Purple Haze'",
+   "flowering": "6-11",
+   "height": "120",
+   "weeks": "20-30"
   },
   {
    "section": "perennials",
@@ -8678,20 +9137,29 @@
   },
   {
    "section": "perennials",
-   "genus": "Veronica",
+   "genus": "Verbena",
    "pack": 100,
-   "name": "Veronica austriaca Knallblau",
-   "flowering": "5-7",
-   "height": "10/30",
-   "weeks": "25-30"
+   "name": "Verbena rigida",
+   "flowering": "7-10",
+   "height": "70/100",
+   "weeks": "23-29"
+  },
+  {
+   "section": "perennials",
+   "genus": "Verbena",
+   "pack": 100,
+   "name": "Verbena rigida Polaris",
+   "flowering": "6-10",
+   "height": "40",
+   "weeks": "23-29"
   },
   {
    "section": "perennials",
    "genus": "Veronica",
    "pack": 100,
-   "name": "Veronica long.'Blauriesin'",
-   "flowering": "7-9",
-   "height": "40/80",
+   "name": "Veronica austriaca Knallblau",
+   "flowering": "5-7",
+   "height": "10/30",
    "weeks": "25-30"
   },
   {
@@ -8752,19 +9220,10 @@
    "section": "perennials",
    "genus": "Veronicastrum",
    "pack": 100,
-   "name": "Veronicastrum virg.'Adoration'",
-   "flowering": "7-8",
-   "height": "150",
-   "weeks": "25-30"
-  },
-  {
-   "section": "perennials",
-   "genus": "Veronicastrum",
-   "pack": 100,
    "name": "Veronicastrum virg.'Album'",
    "flowering": "7-8",
    "height": "100/110",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8773,7 +9232,7 @@
    "name": "Veronicastrum virg.'Apollo'",
    "flowering": "7-8",
    "height": "100/110",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8782,7 +9241,7 @@
    "name": "Veronicastrum virg.'Diana'",
    "flowering": "7-8",
    "height": "100/120",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8791,7 +9250,7 @@
    "name": "Veronicastrum virg.'Erika'",
    "flowering": "7-8",
    "height": "100/110",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8800,7 +9259,7 @@
    "name": "Veronicastrum virg.'Fascination'",
    "flowering": "7-8",
    "height": "100/110",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8809,7 +9268,7 @@
    "name": "Veronicastrum virg.'Lavendelturm'",
    "flowering": "7-8",
    "height": "100/110",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8818,7 +9277,7 @@
    "name": "Veronicastrum virg.'Pink Glow'",
    "flowering": "7-8",
    "height": "100/120",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8827,7 +9286,7 @@
    "name": "Veronicastrum virg.'Red Arrows'",
    "flowering": "7-8",
    "height": "100/120",
-   "weeks": "25-30"
+   "weeks": "24-30"
   },
   {
    "section": "perennials",
@@ -8923,15 +9382,6 @@
    "section": "perennials",
    "genus": "Viola",
    "pack": 100,
-   "name": "Viola (C)'Boughton Blue'",
-   "flowering": "4-9",
-   "height": "15/20",
-   "weeks": "22-28"
-  },
-  {
-   "section": "perennials",
-   "genus": "Viola",
-   "pack": 100,
    "name": "Viola (C)'Martin'",
    "flowering": "4-9",
    "height": "15/20",
@@ -8986,10 +9436,37 @@
    "section": "perennials",
    "genus": "Waldsteinia",
    "pack": 100,
+   "name": "Waldsteinia geoides",
+   "flowering": "4-5",
+   "height": "15/20",
+   "weeks": "25-30"
+  },
+  {
+   "section": "perennials",
+   "genus": "Waldsteinia",
+   "pack": 100,
    "name": "Waldsteinia ternata",
    "flowering": "4-5",
    "height": "10/15",
+   "weeks": "25-30"
+  },
+  {
+   "section": "grasses",
+   "genus": "Anemanthele",
+   "pack": 100,
+   "name": "Anemanthele lessoniana",
+   "flowering": "6-9",
+   "height": "60",
    "weeks": "25-28"
+  },
+  {
+   "section": "grasses",
+   "genus": "Briza",
+   "pack": 100,
+   "name": "Briza media",
+   "flowering": "6-8",
+   "height": "40",
+   "weeks": "24-30"
   },
   {
    "section": "grasses",
@@ -9013,7 +9490,7 @@
    "section": "grasses",
    "genus": "Calamagrostis",
    "pack": 100,
-   "name": "Calamagrostis brachytricha",
+   "name": "Calamagrostis brachytricha (Stipa)",
    "flowering": "9-12",
    "height": "50/80",
    "weeks": "22-30"
@@ -9031,7 +9508,7 @@
    "section": "grasses",
    "genus": "Carex",
    "pack": 100,
-   "name": "Carex buch. 'Red Rooster'",
+   "name": "Carex buch.'Red Rooster'",
    "flowering": "5-6",
    "height": "40/50",
    "weeks": "23-30"
@@ -9044,15 +9521,6 @@
    "flowering": "7-8",
    "height": "40/50",
    "weeks": "24-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Carex",
-   "pack": 100,
-   "name": "Carex JS Greenwell'",
-   "flowering": "5-6",
-   "height": "30/40",
-   "weeks": "23-28"
   },
   {
    "section": "grasses",
@@ -9119,42 +9587,6 @@
   },
   {
    "section": "grasses",
-   "genus": "Cortaderia",
-   "pack": 100,
-   "name": "Cortaderia 'Evita'",
-   "flowering": "9-11",
-   "height": "150",
-   "weeks": "25-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Cortaderia",
-   "pack": 100,
-   "name": "Cortaderia 'Pumila'",
-   "flowering": "8-10",
-   "height": "120",
-   "weeks": "22-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Cortaderia",
-   "pack": 100,
-   "name": "Cortaderia 'Sunningdale Silver'",
-   "flowering": "8-10",
-   "height": "175",
-   "weeks": "25-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Cortaderia",
-   "pack": 100,
-   "name": "Cortaderia 'White Mistral'",
-   "flowering": "9-11",
-   "height": "150",
-   "weeks": "25-30"
-  },
-  {
-   "section": "grasses",
    "genus": "Deschampsia",
    "pack": 100,
    "name": "Deschampsia cesp.'Bronzeschleier'",
@@ -9205,7 +9637,7 @@
    "name": "Festuca glauca 'Elijah Blue'",
    "flowering": "5-6",
    "height": "35/50",
-   "weeks": "23-30"
+   "weeks": "25-30"
   },
   {
    "section": "grasses",
@@ -9254,9 +9686,18 @@
   },
   {
    "section": "grasses",
+   "genus": "Hakonechloa",
+   "pack": 100,
+   "name": "Hakonechloa macra 'Sunflare'",
+   "flowering": "7-9",
+   "height": "40",
+   "weeks": "23-28"
+  },
+  {
+   "section": "grasses",
    "genus": "Helictotrichon",
    "pack": 100,
-   "name": "Helictotrichon semp. 'Saphirsprudel'",
+   "name": "Helictotrichon sem.'Saphirsprudel'",
    "flowering": "5-7",
    "height": "60/80",
    "weeks": "23-30"
@@ -9304,15 +9745,6 @@
    "name": "Miscanthus floridulus=giganteus",
    "flowering": "9-10",
    "height": "250/300",
-   "weeks": "25-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Miscanthus",
-   "pack": 60,
-   "name": "Miscanthus sin. purpurascens",
-   "flowering": "8-10",
-   "height": "90/150",
    "weeks": "25-30"
   },
   {
@@ -9427,15 +9859,6 @@
    "section": "grasses",
    "genus": "Miscanthus",
    "pack": 60,
-   "name": "Miscanthus sin.'Punktchen'",
-   "flowering": "8-10",
-   "height": "100/170",
-   "weeks": "25-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Miscanthus",
-   "pack": 60,
    "name": "Miscanthus sin.'Purple Fall'",
    "flowering": "8-10",
    "height": "110",
@@ -9493,15 +9916,6 @@
    "name": "Miscanthus sin.'Strictus'",
    "flowering": "8-10",
    "height": "120/160",
-   "weeks": "25-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Miscanthus",
-   "pack": 60,
-   "name": "Miscanthus sin.'Vanilla Sky'",
-   "flowering": "8-10",
-   "height": "150/200",
    "weeks": "25-30"
   },
   {
@@ -9823,15 +10237,6 @@
    "section": "grasses",
    "genus": "Pennisetum",
    "pack": 100,
-   "name": "Pennisetum alop.'Reborn'",
-   "flowering": "9-10",
-   "height": "50/70",
-   "weeks": "22-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Pennisetum",
-   "pack": 100,
    "name": "Pennisetum alop.'Redhead'",
    "flowering": "6-8",
    "height": "75/90",
@@ -9884,12 +10289,12 @@
   },
   {
    "section": "grasses",
-   "genus": "Phalaris",
+   "genus": "Schizachyrium",
    "pack": 100,
-   "name": "Phalaris arundinacea 'Picta'",
-   "flowering": "7-9",
-   "height": "60/80",
-   "weeks": "22-30"
+   "name": "Schizachyrium 'Ha Ha Tonka'",
+   "flowering": "8-10",
+   "height": "120",
+   "weeks": "26-30"
   },
   {
    "section": "grasses",
@@ -9904,19 +10309,10 @@
    "section": "grasses",
    "genus": "Sesleria",
    "pack": 100,
-   "name": "Sesleria 'Greenlee's hybrid'",
+   "name": "Sesleria 'Greenlee's Hybrid'",
    "flowering": "4-6",
    "height": "30/40",
    "weeks": "20-28"
-  },
-  {
-   "section": "grasses",
-   "genus": "Sesleria",
-   "pack": 100,
-   "name": "Sesleria 'Greenlee's hybrid'",
-   "flowering": "4-6",
-   "height": "30/40",
-   "weeks": "23-28"
   },
   {
    "section": "grasses",
@@ -9931,15 +10327,6 @@
    "section": "grasses",
    "genus": "Sesleria",
    "pack": 100,
-   "name": "Sesleria autumnalis",
-   "flowering": "7-8",
-   "height": "15/45",
-   "weeks": "20-26"
-  },
-  {
-   "section": "grasses",
-   "genus": "Sesleria",
-   "pack": 100,
    "name": "Sesleria caerulea",
    "flowering": "4-6",
    "height": "30/40",
@@ -9949,37 +10336,10 @@
    "section": "grasses",
    "genus": "Sesleria",
    "pack": 100,
-   "name": "Sesleria caerulea",
-   "flowering": "4-6",
-   "height": "30/40",
-   "weeks": "20-26"
-  },
-  {
-   "section": "grasses",
-   "genus": "Sesleria",
-   "pack": 100,
    "name": "Sesleria heufleriana",
    "flowering": "4-6",
    "height": "25/60",
    "weeks": "20-28"
-  },
-  {
-   "section": "grasses",
-   "genus": "Sesleria",
-   "pack": 100,
-   "name": "Sesleria heufleriana",
-   "flowering": "4-6",
-   "height": "25/60",
-   "weeks": "20-26"
-  },
-  {
-   "section": "grasses",
-   "genus": "Sesleria",
-   "pack": 100,
-   "name": "Sesleria nitida",
-   "flowering": "4-6",
-   "height": "25/60",
-   "weeks": "26-30"
   },
   {
    "section": "grasses",
@@ -9994,19 +10354,10 @@
    "section": "grasses",
    "genus": "Stipa",
    "pack": 100,
-   "name": "Stipa calam. 'Allgau'",
+   "name": "Stipa calam.'Allgau'",
    "flowering": "6-8",
    "height": "75/90",
    "weeks": "22-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Stipa",
-   "pack": 100,
-   "name": "Stipa calam. 'Allgau'",
-   "flowering": "6-8",
-   "height": "75/90",
-   "weeks": "22-29"
   },
   {
    "section": "grasses",
@@ -10016,24 +10367,6 @@
    "flowering": "6-9",
    "height": "70/200",
    "weeks": "23-30"
-  },
-  {
-   "section": "grasses",
-   "genus": "Stipa",
-   "pack": 60,
-   "name": "Stipa gigantea",
-   "flowering": "6-9",
-   "height": "70/200",
-   "weeks": "23-28"
-  },
-  {
-   "section": "grasses",
-   "genus": "Stipa",
-   "pack": 100,
-   "name": "Stipa tenuissima 'Pony Tails'",
-   "flowering": "8-10",
-   "height": "40/60",
-   "weeks": "20-30"
   },
   {
    "section": "grasses",
@@ -10051,16 +10384,25 @@
    "name": "Adiantum ped.'Imbricatum'",
    "flowering": "",
    "height": "30",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Adiantum",
    "pack": 100,
-   "name": "Adiantum venustum",
+   "name": "Adiantum venustrum",
    "flowering": "",
    "height": "15",
-   "weeks": "14-29"
+   "weeks": "14-30"
+  },
+  {
+   "section": "ferns",
+   "genus": "Arachnoides",
+   "pack": 100,
+   "name": "Arachnoides aristata Variegata (Rumohra)",
+   "flowering": "",
+   "height": "30",
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10069,43 +10411,43 @@
    "name": "Asplenium ebenoides",
    "flowering": "",
    "height": "30",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Asplenium",
    "pack": 100,
-   "name": "Asplenium scol. 'Angustifolia'",
+   "name": "Asplenium scol. 'Angustifolia' (=Phylittis)",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Asplenium",
    "pack": 100,
-   "name": "Asplenium scol. 'Cristatum'",
+   "name": "Asplenium scol. 'Cristatum' (=Phylittis)",
    "flowering": "",
    "height": "30",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Asplenium",
    "pack": 100,
-   "name": "Asplenium scol. 'Undulatum'",
+   "name": "Asplenium scol. 'Undulatum' (=Phylittis)",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Asplenium",
    "pack": 100,
-   "name": "Asplenium scolopendrium",
+   "name": "Asplenium scolopendrium (=Phylittis)",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10114,7 +10456,7 @@
    "name": "Asplenium trichomanes",
    "flowering": "",
    "height": "15",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10123,7 +10465,7 @@
    "name": "Athyrium fil.-f.'Lady in Red'",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10132,7 +10474,7 @@
    "name": "Athyrium fil.-f.'Rotstiel'",
    "flowering": "",
    "height": "75",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10141,7 +10483,7 @@
    "name": "Athyrium fil.-f.'Victoriae'",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10150,16 +10492,16 @@
    "name": "Athyrium filix-femina",
    "flowering": "",
    "height": "75",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Athyrium",
    "pack": 100,
-   "name": "Athyrium nip.'Pictum'(=Metalic)",
+   "name": "Athyrium nip.'Pictum' (=Metalicum)",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10168,7 +10510,7 @@
    "name": "Athyrium nip.'Red Beauty'",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10177,7 +10519,7 @@
    "name": "Athyrium nip.pictum 'Burgundy Lace'",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10186,7 +10528,7 @@
    "name": "Athyrium nip.pictum 'Pewter Lace'",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10195,7 +10537,7 @@
    "name": "Athyrium otop.'Okanum'",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10204,7 +10546,7 @@
    "name": "Blechnum penna-marina",
    "flowering": "",
    "height": "15",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10213,7 +10555,7 @@
    "name": "Blechnum spicant",
    "flowering": "",
    "height": "40",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10222,7 +10564,7 @@
    "name": "Ceterach officinarum",
    "flowering": "",
    "height": "45",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10231,7 +10573,7 @@
    "name": "Cheilanthes lanosa",
    "flowering": "",
    "height": "40",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10240,7 +10582,7 @@
    "name": "Currania 'Dryopteris Plumosum'",
    "flowering": "",
    "height": "40",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10249,7 +10591,7 @@
    "name": "Cyrtomium falcatum",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10258,7 +10600,7 @@
    "name": "Cyrtomium fort. clivicola",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10267,16 +10609,7 @@
    "name": "Cyrtomium fortunei",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
-  },
-  {
-   "section": "ferns",
-   "genus": "Cyrtomium",
-   "pack": 100,
-   "name": "Cyrtomium macrophyllum",
-   "flowering": "",
-   "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10285,7 +10618,7 @@
    "name": "Dicksonia antartica",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10294,7 +10627,7 @@
    "name": "Dryopteris af.'Angustata Crispata'",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10303,7 +10636,7 @@
    "name": "Dryopteris af.'Crispa Congesta'",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10312,7 +10645,7 @@
    "name": "Dryopteris af.'Crispa'",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10321,7 +10654,7 @@
    "name": "Dryopteris af.'Cristata The King'",
    "flowering": "",
    "height": "90",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10330,7 +10663,7 @@
    "name": "Dryopteris af.'Pinderi'",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10339,7 +10672,7 @@
    "name": "Dryopteris af.'Polydactyla Dadds'",
    "flowering": "",
    "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10348,16 +10681,16 @@
    "name": "Dryopteris affinis",
    "flowering": "",
    "height": "100",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Dryopteris",
    "pack": 100,
-   "name": "Dryopteris atrata(cycadina)",
+   "name": "Dryopteris atrata (cycadina)",
    "flowering": "",
    "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10366,7 +10699,7 @@
    "name": "Dryopteris austr.'Cr. Whiteside'",
    "flowering": "",
    "height": "40",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10375,7 +10708,7 @@
    "name": "Dryopteris austriaca",
    "flowering": "",
    "height": "90",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10384,7 +10717,7 @@
    "name": "Dryopteris buschiana",
    "flowering": "",
    "height": "40",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10393,7 +10726,16 @@
    "name": "Dryopteris clintoniana",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
+  },
+  {
+   "section": "ferns",
+   "genus": "Dryopteris",
+   "pack": 100,
+   "name": "Dryopteris cycadina",
+   "flowering": "",
+   "height": "70",
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10402,7 +10744,7 @@
    "name": "Dryopteris er.'Prolifica'",
    "flowering": "",
    "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10411,7 +10753,7 @@
    "name": "Dryopteris erythrosora",
    "flowering": "",
    "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10420,7 +10762,7 @@
    "name": "Dryopteris f.-m.'Barnesii'",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10429,7 +10771,7 @@
    "name": "Dryopteris f.-m.'Crispa Cristata'",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10438,7 +10780,7 @@
    "name": "Dryopteris f.-m.'Lin. Polydactylon'",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10447,7 +10789,7 @@
    "name": "Dryopteris filix-mas",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10456,7 +10798,7 @@
    "name": "Dryopteris goldiana",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10465,7 +10807,7 @@
    "name": "Dryopteris lepidopoda",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10474,7 +10816,7 @@
    "name": "Dryopteris sieboldii",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10483,7 +10825,7 @@
    "name": "Dryopteris wallichiana",
    "flowering": "",
    "height": "100",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10492,7 +10834,7 @@
    "name": "Matteuccia orientalis",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10501,7 +10843,7 @@
    "name": "Matteuccia struthiopteris",
    "flowering": "",
    "height": "100",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10510,7 +10852,7 @@
    "name": "Onoclea sensibilis",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10519,7 +10861,7 @@
    "name": "Osmunda reg.'Purpurascens'",
    "flowering": "",
    "height": "100",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10528,7 +10870,7 @@
    "name": "Osmunda regalis",
    "flowering": "",
    "height": "100",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10537,7 +10879,7 @@
    "name": "Polypodium vulgare",
    "flowering": "",
    "height": "30",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10546,7 +10888,7 @@
    "name": "Polystichum acrostichoides",
    "flowering": "",
    "height": "45",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10555,7 +10897,7 @@
    "name": "Polystichum aculeatum",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10564,16 +10906,7 @@
    "name": "Polystichum braunii",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
-  },
-  {
-   "section": "ferns",
-   "genus": "Polystichum",
-   "pack": 100,
-   "name": "Polystichum makinoi",
-   "flowering": "",
-   "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10582,7 +10915,7 @@
    "name": "Polystichum munitum",
    "flowering": "",
    "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10591,6 +10924,15 @@
    "name": "Polystichum polyblepharum",
    "flowering": "",
    "height": "60",
+   "weeks": "14-30"
+  },
+  {
+   "section": "ferns",
+   "genus": "Polystichum",
+   "pack": 100,
+   "name": "Polystichum rigens",
+   "flowering": "",
+   "height": "50",
    "weeks": "14-29"
   },
   {
@@ -10600,7 +10942,7 @@
    "name": "Polystichum set.'Congestum'",
    "flowering": "",
    "height": "30",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10609,7 +10951,7 @@
    "name": "Polystichum set.'Dahlem'",
    "flowering": "",
    "height": "90",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10618,7 +10960,7 @@
    "name": "Polystichum set.'Herrenhausen'",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10627,7 +10969,7 @@
    "name": "Polystichum set.'Plumosum'",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10636,7 +10978,7 @@
    "name": "Polystichum set.'Prol. Wollastonii",
    "flowering": "",
    "height": "70",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10645,7 +10987,7 @@
    "name": "Polystichum set.'Proliferum'",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10654,7 +10996,7 @@
    "name": "Polystichum set.Plumoso-densum'",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10663,7 +11005,7 @@
    "name": "Polystichum setiferum",
    "flowering": "",
    "height": "80",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10672,7 +11014,7 @@
    "name": "Polystichum tsus-simense",
    "flowering": "",
    "height": "30",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10681,25 +11023,16 @@
    "name": "Pteridium aquilinum",
    "flowering": "",
    "height": "150",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
    "genus": "Rumohra",
    "pack": 100,
-   "name": "Rumohra aristata 'Variegata'",
+   "name": "Rumohra aristata 'Variegata' =Arachnoides",
    "flowering": "",
    "height": "50",
-   "weeks": "14-29"
-  },
-  {
-   "section": "ferns",
-   "genus": "Thelypteris",
-   "pack": 100,
-   "name": "Thelypteris decursiva-pinnata",
-   "flowering": "",
-   "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10708,7 +11041,7 @@
    "name": "Thelypteris palustris=Dryop.thelypt",
    "flowering": "",
    "height": "60",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10717,7 +11050,7 @@
    "name": "Woodsia obtusa",
    "flowering": "",
    "height": "35",
-   "weeks": "14-29"
+   "weeks": "14-30"
   },
   {
    "section": "ferns",
@@ -10726,15 +11059,19 @@
    "name": "Woodwardia fimbriata",
    "flowering": "",
    "height": "35",
-   "weeks": "14-29"
+   "weeks": "14-30"
   }
  ],
  "syn": {
+  "Actaea": "Cimicifuga",
   "Aster": "Symphyotrichum",
   "Dicentra": "Lamprocapnos",
   "Eupatorium": "=Eutrochium",
+  "Pachyphragma": "=Thlaspi",
+  "Persicaria": "Bistorta",
   "Schizostylis": "=Hesperantha",
   "Sedum": "Hylotelephium",
+  "Stachys": "=Betonica",
   "Galium": "=Asperula",
   "Podophyllum": "",
   "Filipendula": ""

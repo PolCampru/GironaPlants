@@ -26,7 +26,7 @@ cd tools/catalogues
 node src/parse-main-xlsx.mjs "…/GIRONA PLANTS - 2026-2027.xlsx"                  data/main.json
 node src/parse-vivaces.mjs  "…/DISPONIBLE VIVACES GRAMÍNEAS Y HELECHOS ….pdf"    data/vivaces.json
 node src/clean-vivaces.mjs  data/vivaces.json data/vivaces.clean.json
-node src/parse.mjs          -        "…esquejes…" "…vivaces…" data   # esquejes.json (1er arg ignorado)
+node src/parse.mjs          -        "…esquejes…" -       data   # esquejes.json (1er y 3er arg ignorados)
 
 # 2. Componer el HTML de imprenta y las portadas
 node src/gen.mjs
@@ -61,6 +61,10 @@ dentro del contenedor. Ver la cabecera de ese fichero. El PDF general cambia
 de nombre cada temporada y sube solo; la portada conserva el nombre, así que
 hay que pasar `FORCE_NAMES=girona-plants-catalogo-general-portada.jpg` o el
 web seguirá mostrando la portada (y los recuentos) de la temporada anterior.
+Lo mismo con las fichas de las dos listas de disponibilidad: sus PDF cambian de
+nombre con cada lista, pero las portadas no, así que hay que forzarlas
+(`FORCE_NAMES=girona-plants-esquejes-enraizados-portada.jpg,girona-plants-vivaces-gramineas-helechos-portada.jpg`)
+o las tarjetas seguirán mostrando los recuentos viejos.
 El PDF de la temporada anterior queda huérfano en la biblioteca de medios.
 
 Las **filas de la coleccion `plant`** (la tabla de `/products` y las paginas de
@@ -137,8 +141,9 @@ queda retirada: `description` es el `<h1>` y la URL de la pagina de especie.
 - **El CSS de portada se acota a `.cover-page`** antes de entrar en el
   documento: comparte nombres de clase con el interior (`.sub`, `.body`,
   `.title`) y sin acotar deshacía las filas de continuación de la tabla.
-- **Los helechos salen dos veces en el PDF de vivaces** (semanas 14-30 y 14-29,
-  75 y 76 filas). `clean-vivaces.mjs` se queda con el segundo bloque, que es el
-  posterior y el más completo. Si el proveedor lo corrige, revisar eso.
+- **Desde la lista de noviembre de 2026** las secciones (vivaces, gramíneas,
+  helechos) salen de los propios encabezados del PDF («Graminées:», «Fougères:»)
+  y los helechos ya no se repiten. Ese mes el proveedor movió las columnas de
+  las dos listas: si un parser devuelve 0 filas, volcar las posiciones x primero.
 - La columna sin cabecera del listado de vivaces (100 / 84 / 60 / 28) se publica
   como «unidades»; el origen no la titula.

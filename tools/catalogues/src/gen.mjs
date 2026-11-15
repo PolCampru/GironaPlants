@@ -516,7 +516,7 @@ ${textCSS}
     folio: 2,
     doc: "Esquejes enraizados · Esqueixos arrelats · Rooted cuttings",
     kicker: "Disponibilidad · Disponibilitat · Availability",
-    title: "Stock real a<br>14 de abril de 2026",
+    title: "Stock real a<br>5 de noviembre de 2026",
     lede: `Todo lo que aparece aquí está enraizado y contado en bandeja. Las cantidades son las del día de la lista y se sirven por bandeja completa. <em>Les quantitats són les del dia de la llista — quantities are those of the listing date.</em>`,
     blocks: `<div class="defs">
         <div class="def"><div class="k">ALV.</div><div class="v"><div class="es">Alvéolo de multiplicación; el número es el modelo de bandeja</div><div class="alt">Alvèol de multiplicació · Propagation plug tray</div></div></div>
@@ -543,7 +543,7 @@ ${textCSS}
     typeCover({
       w: PAGE.w,
       h: PAGE.h,
-      year: "14.04.2026",
+      year: "05.11.2026",
       lines: coverLines(rows.map((r) => r.name.split(" ")[0])),
       kicker: "Disponible · Disponible · Available",
       title: "Esquejes<br>enraizados",
@@ -563,7 +563,7 @@ ${textCSS}
   fs.writeFileSync(
     path.join(OUT, "cuttings.html"),
     doc({
-      title: "Girona Plants — Esquejes enraizados 14.04.2026",
+      title: "Girona Plants — Esquejes enraizados 05.11.2026",
       css,
       cover,
       front,
@@ -571,7 +571,7 @@ ${textCSS}
       back,
       cfg: {
         firstFolio: 3,
-        doc: "Esquejes enraizados · Esqueixos arrelats · Rooted cuttings — 14.04.2026",
+        doc: "Esquejes enraizados · Esqueixos arrelats · Rooted cuttings — 05.11.2026",
         foot: contact,
         columnHead,
         headBlocks: 1,
@@ -644,7 +644,7 @@ ${textCSS}
     folio: 2,
     doc: "Vivaces, gramíneas y helechos · Perennials, grasses & ferns",
     kicker: "Disponibilidad · Disponibilitat · Availability",
-    title: "Alvéolo de 4 cm,<br>temporada 2026",
+    title: "Alvéolo de 4 cm,<br>servicio mayo 2027",
     lede: `Planta joven en alvéolo de 4 cm, lista para trasplante. La última columna es la semana del año en la que cada partida está disponible. <em>La darrera columna és la setmana de l'any — the last column is the week of the year.</em>`,
     blocks: `<div class="defs">
         <div class="def"><div class="k">Flor.</div><div class="v"><div class="es">Meses de floración</div><div class="alt">Mesos de floració · Flowering months</div></div></div>
@@ -673,13 +673,13 @@ ${textCSS}
     typeCover({
       w: PAGE.w,
       h: PAGE.h,
-      year: "Mayo 2026",
+      year: "Mayo 2027",
       lines: coverLines(rows.map((r) => r.genus)),
       kicker: "Disponible · Disponible · Available",
       title: "Vivaces,<br>gramíneas<br>y helechos",
       sub: [
         "Vivaces, gramínies i falgueres · Perennials, grasses & ferns",
-        "Alvéolo de 4 cm · Temporada 2026",
+        "Alvéolo de 4 cm · Temporada 2027",
       ],
       stats: [
         { v: num(rows.length), l: "Referencias · References" },
@@ -693,7 +693,7 @@ ${textCSS}
   fs.writeFileSync(
     path.join(OUT, "perennials.html"),
     doc({
-      title: "Girona Plants — Vivaces, gramíneas y helechos 2026",
+      title: "Girona Plants — Vivaces, gramíneas y helechos 2027",
       css,
       cover,
       front,
@@ -701,7 +701,7 @@ ${textCSS}
       back,
       cfg: {
         firstFolio: 3,
-        doc: "Vivaces, gramíneas y helechos · Alvéolo 4 cm · 2026",
+        doc: "Vivaces, gramíneas y helechos · Alvéolo 4 cm · 2027",
         foot: contact,
         columnHead,
         headBlocks: 1,
@@ -791,7 +791,7 @@ const cuttingsCover = (w, h, compact = false) =>
     w,
     h,
     compact,
-    year: "14.04.2026",
+    year: "05.11.2026",
     lines: coverLines(cut.map((r) => r.name.split(" ")[0])),
     kicker: "Disponible · Disponible · Available",
     title: "Esquejes<br>enraizados",
@@ -815,13 +815,13 @@ const perennialsCover = (w, h, compact = false) =>
     w,
     h,
     compact,
-    year: "Mayo 2026",
+    year: "Mayo 2027",
     lines: coverLines(per.map((r) => r.genus)),
     kicker: "Disponible · Disponible · Available",
     title: "Vivaces,<br>gramíneas<br>y helechos",
     sub: [
       "Vivaces, gramínies i falgueres · Perennials, grasses & ferns",
-      "Alvéolo de 4 cm · Temporada 2026",
+      "Alvéolo de 4 cm · Temporada 2027",
     ],
     stats: [
       { v: num(per.length), l: "Referencias · References" },

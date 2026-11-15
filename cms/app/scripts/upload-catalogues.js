@@ -38,9 +38,9 @@ const MIME = { ".pdf": "application/pdf", ".jpg": "image/jpeg", ".png": "image/p
 const ASSET_LIST = [
   ["girona-plants-catalogo-general-2026-2027.pdf", "main.pdf"],
   ["girona-plants-catalogo-general-portada.jpg", "cover-main.jpg"],
-  ["girona-plants-esquejes-enraizados-2026.pdf", "cuttings.pdf"],
+  ["girona-plants-esquejes-enraizados-2026-11.pdf", "cuttings.pdf"],
   ["girona-plants-esquejes-enraizados-portada.jpg", "card-cuttings.jpg"],
-  ["girona-plants-vivaces-gramineas-helechos-2026.pdf", "perennials.pdf"],
+  ["girona-plants-vivaces-gramineas-helechos-2027.pdf", "perennials.pdf"],
   ["girona-plants-vivaces-gramineas-helechos-portada.jpg", "card-perennials.jpg"],
 ];
 
@@ -50,13 +50,13 @@ const CARDS = {
     {
       title: "Esquejes enraizados",
       subtitle:
-        "Stock real a 14 de abril de 2026: 2.084 referencias de arbustos, coníferas, trepadoras, gramíneas y vivaces, con las unidades disponibles en bandeja.",
+        "Stock real a 5 de noviembre de 2026: 2.334 referencias de arbustos, coníferas, trepadoras, gramíneas y vivaces, con las unidades disponibles en bandeja.",
       button: "Descargar PDF",
     },
     {
       title: "Vivaces, gramíneas y helechos",
       subtitle:
-        "Planta joven en alvéolo de 4 cm: 1.192 referencias con floración, altura y semana de disponibilidad para la temporada 2026.",
+        "Planta joven en alvéolo de 4 cm: 1.229 referencias con floración, altura y semana de disponibilidad, para servir en mayo de 2027.",
       button: "Descargar PDF",
     },
   ],
@@ -64,13 +64,13 @@ const CARDS = {
     {
       title: "Esqueixos arrelats",
       subtitle:
-        "Estoc real a 14 d'abril de 2026: 2.084 referències d'arbusts, coníferes, enfiladisses, gramínies i vivaces, amb les unitats disponibles en safata.",
+        "Estoc real a 5 de novembre de 2026: 2.334 referències d'arbusts, coníferes, enfiladisses, gramínies i vivaces, amb les unitats disponibles en safata.",
       button: "Descarregar PDF",
     },
     {
       title: "Vivaces, gramínies i falgueres",
       subtitle:
-        "Planta jove en alvèol de 4 cm: 1.192 referències amb floració, alçada i setmana de disponibilitat per a la temporada 2026.",
+        "Planta jove en alvèol de 4 cm: 1.229 referències amb floració, alçada i setmana de disponibilitat, per servir el maig de 2027.",
       button: "Descarregar PDF",
     },
   ],
@@ -78,13 +78,13 @@ const CARDS = {
     {
       title: "Rooted cuttings",
       subtitle:
-        "Live stock at 14 April 2026: 2,084 references across shrubs, conifers, climbers, grasses and perennials, with the units available per tray.",
+        "Live stock at 5 November 2026: 2,334 references across shrubs, conifers, climbers, grasses and perennials, with the units available per tray.",
       button: "Download PDF",
     },
     {
       title: "Perennials, grasses and ferns",
       subtitle:
-        "Young plants in 4 cm plugs: 1,192 references with flowering months, mature height and the week each batch is available in 2026.",
+        "Young plants in 4 cm plugs: 1,229 references with flowering months, mature height and the week each batch is available, for delivery in May 2027.",
       button: "Download PDF",
     },
   ],
@@ -92,13 +92,13 @@ const CARDS = {
     {
       title: "Boutures racinées",
       subtitle:
-        "Stock réel au 14 avril 2026 : 2 084 références d'arbustes, conifères, grimpantes, graminées et vivaces, avec les quantités disponibles par plaque.",
+        "Stock réel au 5 novembre 2026 : 2 334 références d'arbustes, conifères, grimpantes, graminées et vivaces, avec les quantités disponibles par plaque.",
       button: "Télécharger le PDF",
     },
     {
       title: "Vivaces, graminées et fougères",
       subtitle:
-        "Jeunes plants en alvéole de 4 cm : 1 192 références avec floraison, hauteur et semaine de disponibilité pour la saison 2026.",
+        "Jeunes plants en alvéole de 4 cm : 1 229 références avec floraison, hauteur et semaine de disponibilité, pour livraison en mai 2027.",
       button: "Télécharger le PDF",
     },
   ],
@@ -106,13 +106,13 @@ const CARDS = {
     {
       title: "Talee radicate",
       subtitle:
-        "Stock reale al 14 aprile 2026: 2.084 referenze di arbusti, conifere, rampicanti, graminacee e perenni, con le unità disponibili per vassoio.",
+        "Stock reale al 5 novembre 2026: 2.334 referenze di arbusti, conifere, rampicanti, graminacee e perenni, con le unità disponibili per vassoio.",
       button: "Scarica il PDF",
     },
     {
       title: "Perenni, graminacee e felci",
       subtitle:
-        "Piante giovani in alveolo da 4 cm: 1.192 referenze con fioritura, altezza e settimana di disponibilità per la stagione 2026.",
+        "Piante giovani in alveolo da 4 cm: 1.229 referenze con fioritura, altezza e settimana di disponibilità, per consegna a maggio 2027.",
       button: "Scarica il PDF",
     },
   ],
