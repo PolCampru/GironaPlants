@@ -106,8 +106,25 @@ function coverPage(html, w = PAGE.w, h = PAGE.h) {
     .replace(/html\s*\{[^}]*\}/, "")
     .replace(/html,\s*body\s*\{[^}]*\}/, "")
     .replace(/\bbody\s*\{[^}]*\}/, "");
+  /* On a phone the PDF opens at page width, so only the top third of the
+     cover is on screen: with the title at the foot it read as a blank page.
+     In print the title block sits at the top and the texture/photo goes
+     below it. The web cover JPG and the /catalogues cards keep their layout. */
+  const printTop = `
+.cover-page .body { margin-top: 0; padding-top: 4.6rem; }
+.cover-page .photo { inset: auto 0 0 0; height: 46%; }
+.cover-page .photo::after { background: linear-gradient(to top,
+    rgba(11,59,34,0.30) 0%, rgba(11,59,34,0.16) 34%,
+    rgba(11,59,34,0.72) 78%, ${T.forest} 100%); }
+/* No mask in print: the WKWebView PDF export flattens a masked layer to
+   black, which turned the whole cover black. The genus texture fills the
+   lower half at a flat low opacity instead. */
+.cover-page .grid { top: 52%; bottom: 2.6rem; justify-content: flex-start; padding: 0 2.6rem;
+  -webkit-mask-image: none; mask-image: none; }
+.cover-page .grid .l { color: rgba(220,240,223,0.12); }
+`;
   return {
-    css: scopeCSS(stripped, ".cover-page"),
+    css: scopeCSS(stripped, ".cover-page") + printTop,
     html: `<section class="page cover-page" style="padding:0;width:${w}px;height:${h}px;font-size:${Math.min(
       w / 44,
       h / 25
